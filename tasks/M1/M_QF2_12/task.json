@@ -1,0 +1,78 @@
+{
+ "id": "M_QF2_12",
+ "stratum": "M",
+ "family": "QF2_DATETIME",
+ "generic_family": null,
+ "catalogue_row": "D02",
+ "files": [
+  {
+   "path": "QF2_DATETIME/clicks.csv",
+   "description": "Website clicks (500 rows): click_ref (seven-digit reference with leading zeros, e.g. \"0000011\"), epoch_s (Unix timestamp in seconds, UTC, whole number), epoch_ms (Unix timestamp in milliseconds, UTC, when the click was received, whole number), page (site path such as /home or /pricing), dwell_s (seconds on the page, one decimal; about 8% empty)."
+  }
+ ],
+ "task_text": "Find the median moment at which the clicks were received, using epoch_ms (Unix time in milliseconds). `result` should be that moment as a timestamp (UTC, without time zone).",
+ "allowed_task_words": [
+  "Unix time in milliseconds"
+ ],
+ "invited_ids_author": [
+  "D02"
+ ],
+ "order_significant": false,
+ "sort_keys": [],
+ "dtype_significant": false,
+ "intended_computation": "Take the median of the 500 epoch_ms values (average of the two middle values) and return it as a timezone-naive UTC timestamp in 2025.",
+ "acceptable_variants": {
+  "row_order": "any",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": ""
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "result_kind",
+   "args": {
+    "kind": "scalar"
+   }
+  },
+  {
+   "check": "date_year_in_range",
+   "args": {
+    "columns": [
+     "__values__"
+    ],
+    "min_year": 2025,
+    "max_year": 2025
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "HARM",
+  "reason": "on 3.x the integer cast of a date-time made from milliseconds is not in nanoseconds, so the median lands in 1970"
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M1",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 in package TASKS_M1; task text, card, naive solution, reference and predicted direction were prepared there."
+}

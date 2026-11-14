@@ -1,0 +1,12 @@
+You are given CSV file(s) in the current working directory:
+
+- returns_march.csv: Product returns in March (80 rows): return_id (whole number), quantity (whole number), refund (two decimals). Same columns as returns_april.csv.
+- returns_april.csv: Product returns in April: the header row (return_id, quantity, refund, as in returns_march.csv) and no data rows, because nothing was returned in April.
+
+Task: Combine the March and April returns. For each quantity value, give the average refund rounded to 2 decimals. `result` should be a table indexed by quantity with a column refund.
+
+Requirements:
+- Write a complete Python script that reads the file(s) from the current directory.
+- Use only pandas, numpy and the Python standard library.
+- Store the final answer in a top-level variable named `result`.
+- Reply with a single Python code block.

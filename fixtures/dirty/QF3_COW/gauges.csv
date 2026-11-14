@@ -1,0 +1,121 @@
+gauge,reading,level,site
+LA-01,3.764,21,lake
+DA-02,8.662,$49,dam
+DA-03,2.950,7,dam
+LA-04,6.092,12,lake
+CA-05,8.631,9, 
+CA-06,0.763,21,canal
+LA-07,9.242,43,lake
+DA-08,8.461,54,dam
+LA-09,6.544,54,lake
+DA-10,7.620,10,dam
+CA-11,2.003,69,canal
+CA-12,3.516,50,canal
+LA-13,7.662,30,lake
+CA-14,8.868,31, canal
+CA-15,0.520,44,canal
+DA-16,1.739,70,dam
+CA-17,1.121,37,canal
+CA-18,1.618,36,CANAL
+LA-19,5.591,21,lake
+LA-20,3.857,45, lake
+DA-21,0.512,26,dam
+DA-22,,3,dam
+DA-23,4.476,53,dam
+LA-24,6.786,51,lake
+CA-25,2.568,11,canal
+CA-26,7.363,70,canal
+CA-27,4.279,23,canal
+DA-28,4.527,57,dam
+LA-29,1.361,35,lake
+CA-30,5.471,38,canal
+LA-31,4.281,53,LAKE  
+CA-32,3.914,57, canal
+LA-33,3.337,$24,lake
+LA-34,0.802,47,lake
+DA-35,$9.076,46,dam
+CA-36,7.301,63,canal
+CA-37,3.251,28,canal
+DA-38,,44,dam
+DA-39,7.874,57,dam
+LA-40,5.414,75,lake
+DA-01,3.492,24,dam
+CA-02,N/A,68,canal
+CA-03,1.068,15,canal
+DA-04,3.057,62,dam
+LA-05,3.779,18,lake
+DA-06,1.605,77,dam
+DA-07,N/A,17, dam
+DA-08,0.949,78,dam
+DA-09,5.269,60,dam
+CA-10,4.437,58,canal
+LA-11,7.020,63, lake
+DA-12,8.638,68,dam
+CA-13,3.238,14,canal
+LA-14,7.419,14, lake 
+CA-15,2.070,$71,canal
+CA-16,N/A,15,canal
+DA-17,4.869,13,dam
+DA-18,N/A,14,dam
+LA-19,5.091,60,LAKE  
+LA-20,1.448,9,lake
+DA-21,7.624,54,dam
+CA-22,4.786,43,canal
+LA-23,2.649,47,lake
+DA-24,7.995,59,dam
+DA-25,5.654,68,dam
+LA-26,2.934,17,lake
+DA-27,2.335,67,dam
+LA-28,4.287,10,lake 
+DA-29,$1.093,25,dam
+CA-30,6.246,3, canal 
+LA-31,0.842,43,lake
+LA-32,N/A,24,lake
+LA-33,9.395,3,lake
+CA-34,1.554,29,CANAL
+LA-35,8.056,$15,lake
+DA-36,8.878,5,DAM  
+LA-37,2.696,$73,lake
+CA-38,6.678,5, canal 
+LA-39,0.855,50,lake
+CA-40,3.568,29,canal
+DA-01,8.438,9,dam
+LA-02,5.812,72,lake
+LA-03,5.620,38,lake
+LA-04,6.433,49,lake
+LA-05,4.637,11,lake
+LA-06,4.038,59,lake
+LA-07,2.384,66,lake
+LA-08,7.039,3,lake
+CA-09,1.294,41,canal
+CA-10,6.686,$31,canal
+DA-11,N/A,49,dam
+CA-12,5.237,52, canal 
+DA-13,1.135,67,DAM
+DA-14,2.565,29,dam
+LA-15,4.153,46,lake
+LA-16,8.243,12,lake
+CA-17,4.411,27,canal
+DA-18,5.803,N/A,dam
+LA-19,4.898,43,lake
+DA-20,3.769,67,dam
+DA-21,3.367,12,dam
+LA-22,5.807,44,lake
+DA-23,5.346,20,dam
+LA-24,8.416,57,lake
+DA-25,,9,dam
+DA-26,1.835,11, dam 
+DA-27,7.221,47,dam
+CA-28,3.160,28,canal 
+CA-29,4.963,58,canal
+LA-30,4.779,24,lake
+CA-31,8.039,78,canal
+LA-32,8.011,46,lake
+CA-33,2.386,48,canal
+CA-34,7.546,64,canal
+LA-35,,72,lake
+CA-36,5.389,9, canal
+CA-37,1.529,14, 
+CA-38,8.698,43,canal
+CA-39,4.951,28,canal
+DA-40,0.650,69,dam

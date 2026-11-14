@@ -1,0 +1,11 @@
+You are given CSV file(s) in the current working directory:
+
+- code_changes.csv: Product code changes (150 rows): product (name with model), stock_qty (whole number), old_code and new_code (four-digit whole numbers; the code is unchanged in 100 rows). No empty cells.
+
+Task: Index the table by old_code so that it can be used as a lookup of the new code. Build a table with one row per product row of the file: the column product and a column changed that is True where new_code differs from old_code. `result` should be this two-column table, in file order.
+
+Requirements:
+- Write a complete Python script that reads the file(s) from the current directory.
+- Use only pandas, numpy and the Python standard library.
+- Store the final answer in a top-level variable named `result`.
+- Reply with a single Python code block.

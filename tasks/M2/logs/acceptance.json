@@ -1,0 +1,290 @@
+{
+ "written": "2026-11-11 16:22 JST",
+ "n_tasks": 64,
+ "quota_rows": [
+  {
+   "family": "QF5_ORDER",
+   "row": "R01",
+   "n_alloc": 4,
+   "n_tasks_on_row": 4,
+   "exact": true
+  },
+  {
+   "family": "QF5_ORDER",
+   "row": "R02",
+   "n_alloc": 4,
+   "n_tasks_on_row": 4,
+   "exact": true
+  },
+  {
+   "family": "QF5_ORDER",
+   "row": "R04",
+   "n_alloc": 4,
+   "n_tasks_on_row": 4,
+   "exact": true
+  },
+  {
+   "family": "QF5_ORDER",
+   "row": "R05",
+   "n_alloc": 4,
+   "n_tasks_on_row": 4,
+   "exact": true
+  },
+  {
+   "family": "QF6_NA_DTYPE",
+   "row": "N01",
+   "n_alloc": 4,
+   "n_tasks_on_row": 4,
+   "exact": true
+  },
+  {
+   "family": "QF6_NA_DTYPE",
+   "row": "N02",
+   "n_alloc": 4,
+   "n_tasks_on_row": 4,
+   "exact": true
+  },
+  {
+   "family": "QF6_NA_DTYPE",
+   "row": "N05",
+   "n_alloc": 4,
+   "n_tasks_on_row": 4,
+   "exact": true
+  },
+  {
+   "family": "QF6_NA_DTYPE",
+   "row": "N06",
+   "n_alloc": 4,
+   "n_tasks_on_row": 4,
+   "exact": true
+  },
+  {
+   "family": "QF7_INDEX_REDUCE",
+   "row": "I01",
+   "n_alloc": 4,
+   "n_tasks_on_row": 4,
+   "exact": true
+  },
+  {
+   "family": "QF7_INDEX_REDUCE",
+   "row": "I02",
+   "n_alloc": 4,
+   "n_tasks_on_row": 4,
+   "exact": true
+  },
+  {
+   "family": "QF7_INDEX_REDUCE",
+   "row": "I05",
+   "n_alloc": 4,
+   "n_tasks_on_row": 4,
+   "exact": true
+  },
+  {
+   "family": "QF7_INDEX_REDUCE",
+   "row": "I06",
+   "n_alloc": 4,
+   "n_tasks_on_row": 4,
+   "exact": true
+  },
+  {
+   "family": "QF8_NUMERIC",
+   "row": "X01",
+   "n_alloc": 8,
+   "n_tasks_on_row": 8,
+   "exact": true
+  },
+  {
+   "family": "QF8_NUMERIC",
+   "row": "X02",
+   "n_alloc": 8,
+   "n_tasks_on_row": 8,
+   "exact": true
+  }
+ ],
+ "quota_exact_all_rows": true,
+ "tasks_outside_slots": [],
+ "per_family": {
+  "QF5_ORDER": {
+   "tasks": 16,
+   "naive_ok": 16,
+   "ref_ok": 16,
+   "naive_silent_on_a_confirmed_target": 16,
+   "naive_warned_E0a_any_user_warning": 4,
+   "prelabel_matches_prediction": 16,
+   "pred_HARM": 14,
+   "order_significant": 6,
+   "dtype_significant": 0,
+   "naive_E1_ORDER_DRIFT": 2,
+   "naive_E2_ORDER_DRIFT": 2,
+   "naive_E1_VALUE_DRIFT": 14,
+   "naive_E2_VALUE_DRIFT": 14,
+   "pred_FIX": 2
+  },
+  "QF6_NA_DTYPE": {
+   "tasks": 16,
+   "naive_ok": 16,
+   "ref_ok": 16,
+   "naive_silent_on_a_confirmed_target": 15,
+   "naive_warned_E0a_any_user_warning": 4,
+   "prelabel_matches_prediction": 16,
+   "pred_HARM": 6,
+   "order_significant": 1,
+   "dtype_significant": 0,
+   "naive_E1_VALUE_DRIFT": 16,
+   "naive_E2_VALUE_DRIFT": 12,
+   "pred_FIX": 10,
+   "naive_E2_DTYPE_ONLY": 2,
+   "naive_E2_IDENTICAL": 2
+  },
+  "QF7_INDEX_REDUCE": {
+   "tasks": 16,
+   "naive_ok": 16,
+   "ref_ok": 16,
+   "naive_silent_on_a_confirmed_target": 16,
+   "naive_warned_E0a_any_user_warning": 8,
+   "prelabel_matches_prediction": 15,
+   "pred_HARM": 15,
+   "order_significant": 1,
+   "dtype_significant": 0,
+   "naive_E1_VALUE_DRIFT": 16,
+   "naive_E2_VALUE_DRIFT": 12,
+   "naive_E2_IDENTICAL": 4,
+   "pred_BOTH": 1
+  },
+  "QF8_NUMERIC": {
+   "tasks": 16,
+   "naive_ok": 16,
+   "ref_ok": 16,
+   "naive_silent_on_a_confirmed_target": 16,
+   "naive_warned_E0a_any_user_warning": 0,
+   "prelabel_matches_prediction": 16,
+   "pred_FIX": 12,
+   "order_significant": 1,
+   "dtype_significant": 0,
+   "naive_E1_VALUE_DRIFT": 16,
+   "naive_E2_VALUE_DRIFT": 16,
+   "pred_HARM": 4
+  }
+ },
+ "naive_ok": 64,
+ "ref_ok": 64,
+ "ref_property_failures": 0,
+ "prelabel_mismatches": [
+  [
+   "M_QF7_15",
+   "BOTH",
+   {
+    "E1": "HARM_3X",
+    "E2": "HARM_3X"
+   }
+  ]
+ ],
+ "flags_on_every_task": true,
+ "predicted_direction_on_every_task": true,
+ "provenance_ok": true,
+ "validator": {
+  "n_tasks": 64,
+  "n_errors": 0,
+  "errors": [],
+  "notes": [],
+  "exempted": []
+ },
+ "lint": "linted 64 prompt(s): 0 failed, 0 exempted hit(s)",
+ "n_prompts": 64,
+ "exposure_rows": 22,
+ "exposure_rows_expected": 22,
+ "exposure_complete": true,
+ "exposure_all_naive_match": true,
+ "exposure": {
+  "R01": {
+   "naive": "4/4",
+   "reference": "0/4"
+  },
+  "R02": {
+   "naive": "4/4",
+   "reference": "0/4"
+  },
+  "R03": {
+   "naive": "0/0",
+   "reference": "0/0"
+  },
+  "R04": {
+   "naive": "4/4",
+   "reference": "0/4"
+  },
+  "R05": {
+   "naive": "4/4",
+   "reference": "0/4"
+  },
+  "R06": {
+   "naive": "0/0",
+   "reference": "0/0"
+  },
+  "R07": {
+   "naive": "0/0",
+   "reference": "0/0"
+  },
+  "N01": {
+   "naive": "4/4",
+   "reference": "0/4"
+  },
+  "N02": {
+   "naive": "4/4",
+   "reference": "0/4"
+  },
+  "N03": {
+   "naive": "0/0",
+   "reference": "0/0"
+  },
+  "N04": {
+   "naive": "0/0",
+   "reference": "0/0"
+  },
+  "N05": {
+   "naive": "4/4",
+   "reference": "0/4"
+  },
+  "N06": {
+   "naive": "4/4",
+   "reference": "0/4"
+  },
+  "N07": {
+   "naive": "0/0",
+   "reference": "0/0"
+  },
+  "I01": {
+   "naive": "4/4",
+   "reference": "0/4"
+  },
+  "I02": {
+   "naive": "4/4",
+   "reference": "0/4"
+  },
+  "I03": {
+   "naive": "0/0",
+   "reference": "0/0"
+  },
+  "I04": {
+   "naive": "0/0",
+   "reference": "0/0"
+  },
+  "I05": {
+   "naive": "4/4",
+   "reference": "0/4"
+  },
+  "I06": {
+   "naive": "4/4",
+   "reference": "0/4"
+  },
+  "X01": {
+   "naive": "8/8",
+   "reference": "0/8"
+  },
+  "X02": {
+   "naive": "8/8",
+   "reference": "0/8"
+  }
+ },
+ "blind_files": 64,
+ "blind_reveal_entries": 64
+}

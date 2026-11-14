@@ -1,0 +1,80 @@
+{
+ "id": "M_QF1_05",
+ "stratum": "M",
+ "family": "QF1_STRING",
+ "generic_family": null,
+ "catalogue_row": "O01",
+ "files": [
+  {
+   "path": "QF1_STRING/price_list.csv",
+   "description": "Shop price list (64 rows): sku (text code such as \"PL-0007\"), item (product name with size; several names have accented letters), section (dairy, pantry, drinks or bakery; capital letters and spaces are inconsistent), price (written with exactly two decimals, e.g. \"9.50\"; no empty cells)."
+  }
+ ],
+ "task_text": "Export the price list as JSON text: one JSON record per item holding the keys sku, item, section and price, in file order, leaving the text values as they are. Read the prices as exact decimal numbers (no binary rounding), and write them into the JSON as numbers, not as text. To check the export, `result` should be a pandas DataFrame built from the parsed JSON records.",
+ "allowed_task_words": [
+  "decimal numbers"
+ ],
+ "invited_ids_author": [
+  "O01"
+ ],
+ "order_significant": true,
+ "sort_keys": [
+  "__index__"
+ ],
+ "dtype_significant": false,
+ "intended_computation": "Produce 64 records in file order with sku, item and section unchanged and price as a JSON number (e.g. 9.5 for '9.50'); result is the DataFrame built from the parsed records (64 rows, columns sku, item, section, price).",
+ "acceptable_variants": {
+  "row_order": "ties_only",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": "a price number may be 9.5 or 9.50; text values keep their surrounding spaces as written in the file (stripped values are not an accepted variant)."
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 64
+   }
+  },
+  {
+   "check": "numeric_in_range",
+   "args": {
+    "columns": [
+     "price"
+    ],
+    "min": 0,
+    "max": null
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "HARM",
+  "reason": "on 3.x JSON export writes decimal values as text such as '9.50', against the request for numbers"
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M1",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 in package TASKS_M1; task text, card, naive solution, reference and predicted direction were prepared there."
+}

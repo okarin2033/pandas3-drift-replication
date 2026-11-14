@@ -1,0 +1,13 @@
+Using Python 3.12.13 environment at: pd233pa
+Resolved 7 packages in 111ms
+Downloading pyarrow (35.6MiB)
+ Downloaded pyarrow
+Prepared 1 package in 709ms
+Installed 7 packages in 39ms
+ + numpy==2.5.4
+ + pandas==2.3.3
+ + pyarrow==26.0.1
+ + python-dateutil==4.0.0
+ + pytz==2026.6
+ + six==1.17.0
+ + tzdata==2026.6

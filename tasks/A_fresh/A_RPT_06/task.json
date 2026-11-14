@@ -1,0 +1,92 @@
+{
+ "id": "A_RPT_06",
+ "stratum": "A",
+ "family": null,
+ "generic_family": "RPT",
+ "catalogue_row": null,
+ "files": [
+  {
+   "path": "GEN/stations.csv",
+   "description": "Bike-share stations (48 rows, one per station): station_code (four-digit code with leading zeros, e.g. \"0040\"), station_name (text, a few with accented letters), district (same 6 districts as riders.csv; capital letters and spaces are inconsistent), docks (whole number), opened_on (date as text, YYYY-MM-DD)."
+  }
+ ],
+ "task_text": "Write a per-district station report from stations.csv, using district trimmed and written with each word capitalised (e.g. Old Town). `result` should be a table indexed by district in alphabetical order with columns stations (count), total_docks, mean_docks (1 decimal), first_opened and last_opened (earliest and latest opened_on, as YYYY-MM-DD text).",
+ "allowed_task_words": [],
+ "invited_ids_author": [],
+ "order_significant": true,
+ "sort_keys": [
+  "__index__"
+ ],
+ "dtype_significant": false,
+ "intended_computation": "Read stations.csv; clean district (strip spaces, each word capitalised, e.g. Old Town); per district: stations = count, total_docks = sum of docks, mean_docks (1 decimal), first_opened and last_opened = earliest and latest opened_on as YYYY-MM-DD text. Index district, alphabetical.",
+ "acceptable_variants": {
+  "row_order": "ties_only",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": "district labels may differ in letter case; district may be a column"
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 6
+   }
+  },
+  {
+   "check": "counts_sum_to_rows",
+   "args": {
+    "column": "stations",
+    "expected": 48
+   }
+  },
+  {
+   "check": "date_year_in_range",
+   "args": {
+    "columns": [
+     "first_opened",
+     "last_opened"
+    ],
+    "min_year": 2000,
+    "max_year": 2025
+   }
+  },
+  {
+   "check": "sorted_by",
+   "args": {
+    "keys": [
+     "__index__"
+    ],
+    "ascending": [
+     true
+    ]
+   }
+  }
+ ],
+ "predicted_direction": null,
+ "naive_path": null,
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:REPAIR3_INTEGRATE",
+ "status": "prepared",
+ "notes": "Intent written in a separate step that did not use the catalogue or the pre-registration (Amendment 8 item 3; INTENTS_FRESH.tsv sha256 ffae987c...e666). Card, reference and invited_ids_author drafted 2026-11-11 by pkg:REPAIR3_INTEGRATE after the intents were sealed; intent not rewritten. Prepared (Amendment 9)."
+}

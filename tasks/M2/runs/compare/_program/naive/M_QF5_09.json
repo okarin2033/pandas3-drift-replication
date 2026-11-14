@@ -1,0 +1,72 @@
+{
+ "clean_on_233": true,
+ "exclusion": null,
+ "exclusion_detail": null,
+ "program_id": "naive/M_QF5_09",
+ "targets": {
+  "E0a~E1": {
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "drift_pilot_rule": true,
+   "excluded": null,
+   "first_diff": {
+    "a": "[\"TS:2025-09-01T00:00:00\", \"TS:2025-09-03T00:00:00\", \"TS:2025-09-04T00:00:00\", \"TS:2025-09-05T00:00:00\", \"TS:2025-09-06T00:00:00\", \"TS:2025-09-07T00:00:00\", \"TS:2025-09-08T00:00:00\", \"TS:2025-09-09T00...",
+    "b": "[\"TS:2025-10-06T00:00:00\", \"TS:2025-10-07T00:00:00\", \"TS:2025-10-03T00:00:00\", \"TS:2025-09-25T00:00:00\", \"TS:2025-09-10T00:00:00\", \"TS:2025-10-01T00:00:00\", \"TS:2025-09-19T00:00:00\", \"TS:2025-09-04T00...",
+    "column": "<index>",
+    "kind": "label",
+    "row": null
+   },
+   "first_divergent_line": null,
+   "locally_silent": null,
+   "magnitude": "SUBSTANTIVE",
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "silent_pilot_rule": true,
+   "silent_pilotdef": true,
+   "trace_truncated": null,
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warning_lines": [],
+   "warning_only": false
+  },
+  "E0a~E2": {
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "drift_pilot_rule": true,
+   "excluded": null,
+   "first_diff": {
+    "a": "[\"TS:2025-09-01T00:00:00\", \"TS:2025-09-03T00:00:00\", \"TS:2025-09-04T00:00:00\", \"TS:2025-09-05T00:00:00\", \"TS:2025-09-06T00:00:00\", \"TS:2025-09-07T00:00:00\", \"TS:2025-09-08T00:00:00\", \"TS:2025-09-09T00...",
+    "b": "[\"TS:2025-10-06T00:00:00\", \"TS:2025-10-07T00:00:00\", \"TS:2025-10-03T00:00:00\", \"TS:2025-09-25T00:00:00\", \"TS:2025-09-10T00:00:00\", \"TS:2025-10-01T00:00:00\", \"TS:2025-09-19T00:00:00\", \"TS:2025-09-04T00...",
+    "column": "<index>",
+    "kind": "label",
+    "row": null
+   },
+   "first_divergent_line": null,
+   "locally_silent": null,
+   "magnitude": "SUBSTANTIVE",
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "silent_pilot_rule": true,
+   "silent_pilotdef": true,
+   "trace_truncated": null,
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warning_lines": [],
+   "warning_only": false
+  }
+ },
+ "task_id": "M_QF5_09",
+ "three_x_only": false,
+ "warned_E0a": {
+  "pilot": false,
+  "prereg": false
+ }
+}

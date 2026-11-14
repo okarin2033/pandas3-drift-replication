@@ -1,0 +1,93 @@
+{
+ "id": "M_QF2_08",
+ "stratum": "M",
+ "family": "QF2_DATETIME",
+ "generic_family": null,
+ "catalogue_row": "D08",
+ "files": [
+  {
+   "path": "QF2_DATETIME/shipments.csv",
+   "description": "Shipments (400 rows): shipment_id (whole number), ordered_on and shipped_on (dates as text, YYYY-MM-DD, in 2025; shipped_on is empty for about 4% of rows that have not shipped yet), carrier (DHL, UPS, PostNord or GLS; capital letters and spaces are inconsistent), weight_kg (one decimal), value (order value, two decimals)."
+  }
+ ],
+ "task_text": "Read the shipments file with both date columns parsed as dates. Then, for every date column in the table, replace the date by the number of days since 2025-01-01 (missing dates stay missing). `result` should be the whole table with the converted columns.",
+ "allowed_task_words": [
+  "date columns",
+  "days since"
+ ],
+ "invited_ids_author": [
+  "D08"
+ ],
+ "order_significant": false,
+ "sort_keys": [],
+ "dtype_significant": false,
+ "intended_computation": "Convert ordered_on and shipped_on to whole days since 2025-01-01 (shipped_on empty for 16 rows stays missing), keep the other columns unchanged, 400 rows in file order.",
+ "acceptable_variants": {
+  "row_order": "any",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": "the day counts may be integers or floats."
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 400
+   }
+  },
+  {
+   "check": "numeric_in_range",
+   "args": {
+    "columns": [
+     "ordered_on",
+     "shipped_on"
+    ],
+    "min": 0,
+    "max": 400
+   }
+  },
+  {
+   "check": "columns_present",
+   "args": {
+    "columns": [
+     "shipment_id",
+     "ordered_on",
+     "shipped_on",
+     "carrier",
+     "weight_kg",
+     "value"
+    ]
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "HARM",
+  "reason": "on 3.1 the type name 'datetime64[ns]' no longer matches the parsed date columns, so nothing is converted"
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M1",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 in package TASKS_M1; task text, card, naive solution, reference and predicted direction were prepared there."
+}

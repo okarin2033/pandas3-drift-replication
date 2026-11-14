@@ -1,0 +1,3 @@
+unit	n_items	weights	weighted_kappa	lo	hi	dropped	tasks_without_both_ratings	raw_agreement
+tasks (quota row)	128	linear	0.055528	-0.019241	0.128374	0	0	0.281250
+pairs (task, invited idiom)	130	linear	0.051851	-0.022394	0.124277	0		0.284615

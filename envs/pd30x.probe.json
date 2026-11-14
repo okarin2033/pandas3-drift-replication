@@ -1,0 +1,28 @@
+{
+ "venv": "pd30x",
+ "python": "3.12.13",
+ "executable": "<workspace>/research/studies/pandas3_full/envs/pd30x/bin/python",
+ "errors": [],
+ "pandas": "3.0.6",
+ "numpy": "2.5.4",
+ "python_dateutil": "4.0.0",
+ "tzdata": "2026.6",
+ "pytz": null,
+ "pyarrow": null,
+ "scipy": null,
+ "statsmodels": null,
+ "jsonschema": null,
+ "pyarrow_spec_found": false,
+ "import_pyarrow": "fails: ModuleNotFoundError: No module named 'pyarrow'",
+ "default_string_dtype": {
+  "repr": "<StringDtype(storage='python', na_value=nan)>",
+  "str": "str",
+  "storage": "python",
+  "na_value": "nan",
+  "type": "StringDtype"
+ },
+ "default_df_columns_dtype": "<StringDtype(storage='python', na_value=nan)>",
+ "mode_string_storage_option": "auto",
+ "future_infer_string_option": "True",
+ "ok": true
+}

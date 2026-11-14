@@ -1,0 +1,11 @@
+You are given CSV file(s) in the current working directory:
+
+- purchases.csv: Shop purchases (900 rows): purchase_id (whole number), subscriber_id (refers to subscribers.csv; most subscribers have several purchases), store_city (city name; the same city is written with different capitals and extra spaces, e.g. "lisbon" and "LISBON"; about 2% empty), quantity (whole number), spend (two decimals).
+
+Task: For each subscriber, show their first purchase, meaning the one with the lowest purchase_id, with all of its details. `result` should be a table holding one row per subscriber that includes the subscriber_id.
+
+Requirements:
+- Write a complete Python script that reads the file(s) from the current directory.
+- Use only pandas, numpy and the Python standard library.
+- Store the final answer in a top-level variable named `result`.
+- Reply with a single Python code block.

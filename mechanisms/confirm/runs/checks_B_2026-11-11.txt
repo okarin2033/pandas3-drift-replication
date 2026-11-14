@@ -1,0 +1,86 @@
+2026-11-11 14:31 JST
+# MECH_B acceptance evidence (pkg:MECH_B)
+## status_B.py
+rows: 30
+QF4_GROUPBY {'CONFIRMED': 6, 'NOT_REPRODUCED': 2} ['G01', 'G02', 'G03', 'G04', 'G05', 'G06']
+QF5_ORDER {'CONFIRMED': 4, 'NOT_REPRODUCED': 3} ['R01', 'R02', 'R04', 'R05']
+QF6_NA_DTYPE {'CONFIRMED': 4, 'NOT_REPRODUCED': 3} ['N01', 'N02', 'N05', 'N06']
+QF7_INDEX_REDUCE {'CONFIRMED': 4, 'NOT_REPRODUCED': 2} ['I01', 'I02', 'I05', 'I06']
+QF8_NUMERIC {'CONFIRMED': 2} ['X01', 'X02']
+E0a~E0b classes: ['IDENTICAL']
+status_B.tsv schema check: OK
+data_needs_B.tsv schema check: OK | confirmed rows without data needs: [] | non-confirmed listed: []
+## validate_records.py per runs/<id>
+-- G01: 7 records checked, 0 invalid
+-- G02: 7 records checked, 0 invalid
+-- G03: 7 records checked, 0 invalid
+-- G04: 7 records checked, 0 invalid
+-- G05: 7 records checked, 0 invalid
+-- G06: 14 records checked, 0 invalid
+-- G07: 14 records checked, 0 invalid
+-- G08: 14 records checked, 0 invalid
+-- R01: 7 records checked, 0 invalid
+-- R02: 7 records checked, 0 invalid
+-- R03: 14 records checked, 0 invalid
+-- R04: 7 records checked, 0 invalid
+-- R05: 7 records checked, 0 invalid
+-- R06: 14 records checked, 0 invalid
+-- R07: 14 records checked, 0 invalid
+-- N01: 14 records checked, 0 invalid
+-- N02: 7 records checked, 0 invalid
+-- N03: 14 records checked, 0 invalid
+-- N04: 14 records checked, 0 invalid
+-- N05: 14 records checked, 0 invalid
+-- N06: 7 records checked, 0 invalid
+-- N07: 14 records checked, 0 invalid
+-- I01: 7 records checked, 0 invalid
+-- I02: 7 records checked, 0 invalid
+-- I03: 14 records checked, 0 invalid
+-- I04: 14 records checked, 0 invalid
+-- I05: 14 records checked, 0 invalid
+-- I06: 14 records checked, 0 invalid
+-- X01: 7 records checked, 0 invalid
+-- X02: 7 records checked, 0 invalid
+## run record counts
+G01 programs=       1 records=       7 expected=7
+G02 programs=       1 records=       7 expected=7
+G03 programs=       1 records=       7 expected=7
+G04 programs=       1 records=       7 expected=7
+G05 programs=       1 records=       7 expected=7
+G06 programs=       2 records=      14 expected=14
+G07 programs=       2 records=      14 expected=14
+G08 programs=       2 records=      14 expected=14
+R01 programs=       1 records=       7 expected=7
+R02 programs=       1 records=       7 expected=7
+R03 programs=       2 records=      14 expected=14
+R04 programs=       1 records=       7 expected=7
+R05 programs=       1 records=       7 expected=7
+R06 programs=       2 records=      14 expected=14
+R07 programs=       2 records=      14 expected=14
+N01 programs=       2 records=      14 expected=14
+N02 programs=       1 records=       7 expected=7
+N03 programs=       2 records=      14 expected=14
+N04 programs=       2 records=      14 expected=14
+N05 programs=       2 records=      14 expected=14
+N06 programs=       1 records=       7 expected=7
+N07 programs=       2 records=      14 expected=14
+I01 programs=       1 records=       7 expected=7
+I02 programs=       1 records=       7 expected=7
+I03 programs=       2 records=      14 expected=14
+I04 programs=       2 records=      14 expected=14
+I05 programs=       2 records=      14 expected=14
+I06 programs=       2 records=      14 expected=14
+X01 programs=       1 records=       7 expected=7
+X02 programs=       1 records=       7 expected=7
+## workers / mem flags used (run_B.sh)
+## disk
+8.0K	mechanisms/confirm/data/R07
+4.0K	mechanisms/confirm/data/X01
+ 12K	mechanisms/confirm/data/X02
+3.8M	total
+## workers / mem flags used (run_B.sh lines)
+18:    --configs E0a,E0b,E1,E2,E0pa,E3,E4 --out-root "mechanisms/confirm/runs/$ID" --work "$WORK" --workers 2 --compare \
+19:    --mem-limit-gb 2 2>&1 | sed "s/^/[$ID $ATT] /"
+## data regeneration (sha256 over all MECH_B csv before / after re-running make_data_B.py)
+before: 9f20c0e2f17ff47ae7f8bb3525ac457d234413e280ca01f6cc22f55769ab687c  -
+after:  9f20c0e2f17ff47ae7f8bb3525ac457d234413e280ca01f6cc22f55769ab687c  -

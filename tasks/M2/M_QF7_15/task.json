@@ -1,0 +1,74 @@
+{
+ "id": "M_QF7_15",
+ "stratum": "M",
+ "family": "QF7_INDEX_REDUCE",
+ "generic_family": null,
+ "catalogue_row": "I05",
+ "files": [
+  {
+   "path": "QF7_INDEX_REDUCE/code_changes.csv",
+   "description": "Product code changes (150 rows): product (name with model), stock_qty (whole number), old_code and new_code (four-digit whole numbers; the code is unchanged in 100 rows). No empty cells."
+  }
+ ],
+ "task_text": "Index the table by old_code so that it can be used as a lookup of the new code. For every row, in file order, tell whether the new code is higher than the old code. `result` should be the sequence of True/False values.",
+ "allowed_task_words": [],
+ "invited_ids_author": [
+  "I05"
+ ],
+ "order_significant": true,
+ "sort_keys": [
+  "__index__"
+ ],
+ "dtype_significant": false,
+ "intended_computation": "150 booleans in file order: new_code > old_code.",
+ "acceptable_variants": {
+  "row_order": "ties_only",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": "a list, array or Series of 150 booleans is acceptable; labels of a Series are free."
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 150
+   }
+  },
+  {
+   "check": "no_nulls",
+   "args": {
+    "columns": []
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "BOTH",
+  "reason": "The values are the same on both versions; only the container changes (NumPy array on 2.x, Series labelled by old codes on 3.x), and the task accepts either."
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M2",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 by pkg:TASKS_M2 for catalogue row I05; naive.py shows the invited idiom, reference.py is the version-robust reference."
+}

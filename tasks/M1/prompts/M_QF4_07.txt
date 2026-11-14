@@ -1,0 +1,11 @@
+You are given CSV file(s) in the current working directory:
+
+- subscribers.csv: Streaming subscribers, one per row (320 rows): subscriber_id (whole number), age (years, from 19 to 87; about 1% empty), tier (basic, plus or premium; capital letters and spaces are inconsistent), monthly_fee (two decimals; about 3% empty), joined_year (whole number).
+
+Task: Group the subscribers by monthly fee band: 'under 5', '5-10' (5 to below 10), '10-20', '20-30' and '30+'. Report how many subscribers fall into each band; bands without subscribers must be listed with 0. Subscribers without a fee are left out. `result` should be a Series indexed by band label, in the band order above.
+
+Requirements:
+- Write a complete Python script that reads the file(s) from the current directory.
+- Use only pandas, numpy and the Python standard library.
+- Store the final answer in a top-level variable named `result`.
+- Reply with a single Python code block.

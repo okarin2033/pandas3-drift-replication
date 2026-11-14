@@ -1,0 +1,64 @@
+{
+ "clean_on_233": true,
+ "exclusion": null,
+ "exclusion_detail": null,
+ "program_id": "m2probe/R01_default_sort",
+ "targets": {
+  "E0a~E1": {
+   "class": "DTYPE_ONLY",
+   "class_pilot_rule": "DTYPE_ONLY",
+   "drift": false,
+   "drift_pilot_rule": false,
+   "excluded": null,
+   "first_diff": null,
+   "first_divergent_line": null,
+   "locally_silent": null,
+   "magnitude": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "silent_pilot_rule": false,
+   "silent_pilotdef": false,
+   "trace_truncated": null,
+   "warned_target": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warning_lines": [
+    7
+   ],
+   "warning_only": true
+  },
+  "E0a~E2": {
+   "class": "DTYPE_ONLY",
+   "class_pilot_rule": "DTYPE_ONLY",
+   "drift": false,
+   "drift_pilot_rule": false,
+   "excluded": null,
+   "first_diff": null,
+   "first_divergent_line": null,
+   "locally_silent": null,
+   "magnitude": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "silent_pilot_rule": false,
+   "silent_pilotdef": false,
+   "trace_truncated": null,
+   "warned_target": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warning_lines": [
+    7
+   ],
+   "warning_only": true
+  }
+ },
+ "task_id": null,
+ "three_x_only": false,
+ "warned_E0a": {
+  "pilot": false,
+  "prereg": false
+ }
+}

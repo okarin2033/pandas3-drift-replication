@@ -1,0 +1,101 @@
+{
+ "id": "M_QF2_04",
+ "stratum": "M",
+ "family": "QF2_DATETIME",
+ "generic_family": null,
+ "catalogue_row": "D04",
+ "files": [
+  {
+   "path": "QF2_DATETIME/signups.csv",
+   "description": "Account sign-ups (300 rows, not in date order): account_id (whole number), signup_day (date as text, YYYY-MM-DD, between 2023 and 2025; no empty cells), channel (web, app, referral or partner; capital letters and spaces are inconsistent; about 2% empty), first_payment (amount with two decimals; about 5% empty)."
+  }
+ ],
+ "task_text": "Count the sign-ups for every calendar day from the earliest to the latest sign-up day, including days with no sign-ups (count 0). Identify each day by its Unix timestamp in seconds (midnight UTC). `result` should be a Series indexed by that number with the counts, in day order.",
+ "allowed_task_words": [
+  "Unix timestamp in seconds",
+  "midnight UTC",
+  "calendar day"
+ ],
+ "invited_ids_author": [
+  "D04",
+  "D01"
+ ],
+ "order_significant": true,
+ "sort_keys": [
+  "__index__"
+ ],
+ "dtype_significant": false,
+ "intended_computation": "Build every day from 2023-01-05 to 2025-12-28 (1089 days), count the sign-ups per day (0 where none) and index the counts by the day's midnight UTC in seconds since 1970, ascending; counts add up to 300.",
+ "acceptable_variants": {
+  "row_order": "ties_only",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": ""
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 1089
+   }
+  },
+  {
+   "check": "counts_sum_to_rows",
+   "args": {
+    "column": "__values__",
+    "expected": 300
+   }
+  },
+  {
+   "check": "numeric_in_range",
+   "args": {
+    "columns": [
+     "__index__"
+    ],
+    "min": 1672531200,
+    "max": 1767225600
+   }
+  },
+  {
+   "check": "sorted_by",
+   "args": {
+    "keys": [
+     "__index__"
+    ],
+    "ascending": [
+     true
+    ]
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "HARM",
+  "reason": "on 3.x the generated day range uses a coarser unit, so the integer cast divided by 10**9 is not Unix seconds"
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M1",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 in package TASKS_M1; task text, card, naive solution, reference and predicted direction were prepared there."
+}

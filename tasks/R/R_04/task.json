@@ -1,0 +1,88 @@
+{
+ "id": "R_04",
+ "stratum": "R",
+ "family": null,
+ "generic_family": null,
+ "catalogue_row": null,
+ "files": [
+  {
+   "path": "GEN/trips.csv",
+   "description": "Bike-share trips, 1 September to 1 November 2025 (1500 rows): trip_id (whole number), rider_id (refers to riders.csv), start_station and end_station (refer to station_code in stations.csv), started_at (timestamp written as YYYY-MM-DD HH:MM), duration_min (whole minutes; about 3% empty), distance_km (two decimals), fare (two decimals; about 3% empty), payment (card, app or cash; capital letters and spaces are inconsistent), rating (1-5 stars, whole number; about 19% empty)."
+  }
+ ],
+ "task_text": "In trips.csv, the started_at times of the trips that started on 2025-09-02 or on 2025-09-03 are one hour too late. Move those started_at values back by one hour and leave every other trip unchanged. `result` should be the corrected started_at column as timestamps, one value per trip in file order.",
+ "allowed_task_words": [],
+ "invited_ids_author": [
+  "D01",
+  "C01"
+ ],
+ "order_significant": true,
+ "sort_keys": [
+  "__index__"
+ ],
+ "dtype_significant": false,
+ "intended_computation": "Read trips.csv; parse started_at; subtract one hour from the trips whose started_at date is 2025-09-02 or 2025-09-03 (47 trips); all other values unchanged; one timestamp per trip in file order.",
+ "acceptable_variants": {
+  "row_order": "ties_only",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": "result may be a Series or one-column table"
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 1500
+   }
+  },
+  {
+   "check": "no_nulls",
+   "args": {
+    "columns": [
+     "__values__"
+    ]
+   }
+  },
+  {
+   "check": "date_year_in_range",
+   "args": {
+    "columns": [
+     "__values__"
+    ],
+    "min_year": 2025,
+    "max_year": 2025
+   }
+  }
+ ],
+ "predicted_direction": null,
+ "naive_path": null,
+ "reference_path": "reference.py",
+ "so_question_id": 79879978,
+ "so_url": "https://stackoverflow.com/q/79879978",
+ "so_creation_date": "2026-01-31",
+ "so_score": 1,
+ "so_licence": "CC BY-SA 4.0",
+ "intent_summary": "For the rows that fall on two particular dates, move the recorded time back by one hour and leave all other rows unchanged.",
+ "column_map": {
+  "date": "trips.csv:started_at (date part)",
+  "time of day": "trips.csv:started_at (time part)",
+  "the two dates to correct (2nd and 3rd date of the data)": "2025-09-02, 2025-09-03 (2nd and 3rd calendar day of trips.csv)"
+ },
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:R_BUILD",
+ "status": "prepared",
+ "notes": "Stratum R (real question, paraphrased onto the general fixtures under the section 4.3 rule). Intent, summary and column map sealed 2026-11-11T13:44:13Z (tasks/R/INTENTS_FROZEN.sha256) before the catalogue was opened; card, reference and invited_ids_author drafted 2026-11-11 by pkg:R_BUILD. Prepared (Amendment 9). No question text or code is stored in the study folder."
+}

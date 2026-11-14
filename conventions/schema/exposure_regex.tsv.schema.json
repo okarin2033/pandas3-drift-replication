@@ -1,0 +1,40 @@
+{
+ "$schema": "pandas3_full/tsv-schema/1",
+ "title": "tasks/M1/exposure_regex_part.tsv, tasks/M2/exposure_regex_part.tsv, tasks/exposure_regex.tsv",
+ "$comment": "Written 2026-11-11 by pkg:SHARED. FULL_PREREG 4.4(c): one frozen static regex per SILENT catalogue row of the surviving families; applied with Python re, flags re.MULTILINE, to the program text; a match means the program uses the invited idiom.",
+ "format": "tsv",
+ "encoding": "utf-8",
+ "header": true,
+ "columns": [
+  {
+   "name": "id",
+   "pattern": "^(S0[1-6]|O01|D(0[1-9]|10)|C0[1-6]|G0[1-8]|R0[1-7]|N0[1-7]|I0[1-6]|X0[1-2]|L0[1-6])$",
+   "description": "catalogue id"
+  },
+  {
+   "name": "family",
+   "pattern": "^(QF1_STRING|QF2_DATETIME|QF3_COW|QF4_GROUPBY|QF5_ORDER|QF6_NA_DTYPE|QF7_INDEX_REDUCE|QF8_NUMERIC)$",
+   "description": "quota family"
+  },
+  {
+   "name": "regex",
+   "pattern": "^[^\\t]+$",
+   "description": "Python regex (no tabs)"
+  },
+  {
+   "name": "matches_naive",
+   "pattern": "^[0-9]+/[0-9]+$",
+   "description": "naive solutions of tasks inviting the row that match / all such naive solutions"
+  },
+  {
+   "name": "matches_reference",
+   "pattern": "^[0-9]+/[0-9]+$",
+   "description": "references of tasks inviting the row that match / all"
+  },
+  {
+   "name": "note",
+   "pattern": "^[^\\t]*$",
+   "description": "free text"
+  }
+ ]
+}

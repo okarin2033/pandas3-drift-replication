@@ -1,0 +1,8 @@
+customer_id,city,amount
+1,Berlin,10.5
+2,-,20.0
+3,Paris,7.25
+4,,3.0
+5,-,12.0
+6,Berlin,8.5
+7,Rome,4.0

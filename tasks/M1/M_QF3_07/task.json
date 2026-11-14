@@ -1,0 +1,76 @@
+{
+ "id": "M_QF3_07",
+ "stratum": "M",
+ "family": "QF3_COW",
+ "generic_family": null,
+ "catalogue_row": "C01",
+ "files": [
+  {
+   "path": "QF3_COW/admissions.csv",
+   "description": "Hospital admissions (260 rows): admission_id (whole number), age (years, whole number; about 5% empty), ward (cardiology, oncology, maternity, orthopedics or neurology; capital letters and spaces are inconsistent), stay_days (whole number; about 3% empty), charge (two decimals; about 5% empty)."
+  }
+ ],
+ "task_text": "Stays longer than 14 days are billed as 14 days. Apply that cap to stay_days and then give the average billed stay per ward (ward names in lower case without extra spaces), rounded to two decimals; missing stays are ignored. `result` should be a Series indexed by ward.",
+ "allowed_task_words": [],
+ "invited_ids_author": [
+  "C01"
+ ],
+ "order_significant": false,
+ "sort_keys": [],
+ "dtype_significant": false,
+ "intended_computation": "Cap stay_days at 14, clean ward (5 wards) and return the mean capped stay per ward (missing stays skipped), rounded to 2 decimals; every value lies between 0 and 14.",
+ "acceptable_variants": {
+  "row_order": "any",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": ""
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 5
+   }
+  },
+  {
+   "check": "numeric_in_range",
+   "args": {
+    "columns": [
+     "__values__"
+    ],
+    "min": 0,
+    "max": 14
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "HARM",
+  "reason": "on 3.x the column-then-mask assignment does not reach the table, so stays are not capped"
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M1",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 in package TASKS_M1; task text, card, naive solution, reference and predicted direction were prepared there."
+}

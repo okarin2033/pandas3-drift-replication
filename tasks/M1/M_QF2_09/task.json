@@ -1,0 +1,81 @@
+{
+ "id": "M_QF2_09",
+ "stratum": "M",
+ "family": "QF2_DATETIME",
+ "generic_family": null,
+ "catalogue_row": "D09",
+ "files": [
+  {
+   "path": "QF2_DATETIME/quarterly_revenue.csv",
+   "description": "Company revenue per calendar quarter (30 rows, oldest first, one row per quarter with no gaps): quarter_start (first day of the quarter as text, YYYY-MM-DD, from 2019-01-01 to 2026-04-01), revenue (whole number), new_accounts (whole number)."
+  }
+ ],
+ "task_text": "The quarter_start dates should form a regular calendar series. Let pandas work out the spacing of these dates and report it as a frequency alias. `result` should be that alias (a short text code).",
+ "allowed_task_words": [
+  "frequency alias"
+ ],
+ "invited_ids_author": [
+  "D09"
+ ],
+ "order_significant": false,
+ "sort_keys": [],
+ "dtype_significant": false,
+ "intended_computation": "The dates are consecutive quarter starts (1 January, 1 April, 1 July, 1 October), so the answer is the alias for quarterly spacing anchored on quarter starts.",
+ "acceptable_variants": {
+  "row_order": "any",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": "any alias that means quarter-start spacing on calendar quarters is acceptable: 'QS', 'QS-JAN', 'QS-APR', 'QS-JUL' or 'QS-OCT'."
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "result_kind",
+   "args": {
+    "kind": "scalar"
+   }
+  },
+  {
+   "check": "values_in_set",
+   "args": {
+    "column": "__values__",
+    "values": [
+     "QS",
+     "QS-JAN",
+     "QS-APR",
+     "QS-JUL",
+     "QS-OCT"
+    ]
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "BOTH",
+  "reason": "3.1 reports the anchor month January instead of October; both aliases describe the same calendar-quarter starts"
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M1",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 in package TASKS_M1; task text, card, naive solution, reference and predicted direction were prepared there."
+}

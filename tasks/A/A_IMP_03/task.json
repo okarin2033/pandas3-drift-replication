@@ -1,0 +1,81 @@
+{
+ "id": "A_IMP_03",
+ "stratum": "A",
+ "family": null,
+ "generic_family": "IMP",
+ "catalogue_row": null,
+ "files": [
+  {
+   "path": "GEN/riders.csv",
+   "description": "Bike-share riders, one per row (400 rows): rider_id (six-digit id with leading zeros), display_name (person name, some with accented letters), home_district (one of 6 districts such as \"Old Town\"), membership (casual, monthly or annual) - these three text columns have inconsistent capital letters and stray spaces; joined_on (date as text, YYYY-MM-DD; about 2% empty), birth_year (whole number; about 4% empty), credit_balance (two decimals, can be negative; about 5% empty)."
+  }
+ ],
+ "task_text": "For riders without a birth_year, use the most common birth year among riders of the same home district (trim spaces and use title case for the district); if several years are equally common, take the earliest. `result` should be a table with the columns rider_id, home_district and birth_year.",
+ "allowed_task_words": [],
+ "invited_ids_author": [
+  "C02"
+ ],
+ "order_significant": false,
+ "sort_keys": [],
+ "dtype_significant": false,
+ "intended_computation": "Read riders.csv, normalise home_district (strip, title case); for each district find the most frequent non-empty birth_year (smallest year among ties); replace each empty birth_year by its district's value; return rider_id, home_district (normalised) and birth_year for every rider.",
+ "acceptable_variants": {
+  "row_order": "any",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": "id columns (rider_id, station codes) may be written as integers without leading zeros; home_district may be the original text; birth_year may be float"
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 400
+   }
+  },
+  {
+   "check": "no_nulls",
+   "args": {
+    "columns": [
+     "birth_year"
+    ]
+   }
+  },
+  {
+   "check": "numeric_in_range",
+   "args": {
+    "columns": [
+     "birth_year"
+    ],
+    "min": 1900,
+    "max": 2025
+   }
+  }
+ ],
+ "predicted_direction": null,
+ "naive_path": null,
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_RA",
+ "status": "prepared",
+ "notes": "invited_ids_author labelled by hand after the intents were frozen (step A2); intent not rewritten for it."
+}

@@ -1,0 +1,11 @@
+You are given CSV file(s) in the current working directory:
+
+- trips.csv: Bike-share trips, 1 September to 1 November 2025 (1500 rows): trip_id (whole number), rider_id (refers to riders.csv), start_station and end_station (refer to station_code in stations.csv), started_at (timestamp written as YYYY-MM-DD HH:MM), duration_min (whole minutes; about 3% empty), distance_km (two decimals), fare (two decimals; about 3% empty), payment (card, app or cash; capital letters and spaces are inconsistent), rating (1-5 stars, whole number; about 19% empty).
+
+Task: Produce a one-line overview of trips.csv. `result` should be a Series with the labels trips, riders (distinct rider_id), total_km (sum of distance_km, 2 decimals), mean_duration_min (non-empty values, 1 decimal), mean_rating (non-empty values, 2 decimals) and missing_fare (number of empty fares), in that order.
+
+Requirements:
+- Write a complete Python script that reads the file(s) from the current directory.
+- Use only pandas, numpy and the Python standard library.
+- Store the final answer in a top-level variable named `result`.
+- Reply with a single Python code block.

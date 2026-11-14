@@ -1,0 +1,11 @@
+You are given CSV file(s) in the current working directory:
+
+- subscribers.csv: Streaming subscribers, one per row (320 rows): subscriber_id (whole number), age (years, from 19 to 87; about 1% empty), tier (basic, plus or premium; capital letters and spaces are inconsistent), monthly_fee (two decimals; about 3% empty), joined_year (whole number).
+
+Task: Split the subscribers into the age bands 'under 18', '18-29', '30-44', '45-59' and '60+', and give for every band the number of subscribers and their mean monthly fee rounded to two decimals. Every band must appear in the answer, also when it is empty (0 subscribers). Subscribers without an age are left out. `result` should be a table indexed by band, in the band order above, with the columns subscribers and mean_fee.
+
+Requirements:
+- Write a complete Python script that reads the file(s) from the current directory.
+- Use only pandas, numpy and the Python standard library.
+- Store the final answer in a top-level variable named `result`.
+- Reply with a single Python code block.

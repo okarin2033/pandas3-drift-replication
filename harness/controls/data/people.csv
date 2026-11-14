@@ -1,0 +1,13 @@
+id,name,city,plan,signup,amount
+1,Ana,oslo,pro,2024-01-05,10.5
+2,Ben,rome,basic,2024-02-11,20.0
+3,Cy,oslo,pro,2024-03-01,5.25
+4,Di,bern,team,2024-03-17,7.0
+5,Ed,rome,basic,2024-04-02,12.5
+6,Flo,lima,pro,2024-05-09,3.0
+7,Gus,bern,team,2024-05-30,8.5
+8,Hal,oslo,basic,2024-06-21,9.0
+9,Ivy,lima,pro,2024-07-04,4.5
+10,Jo,kyiv,team,2024-08-15,6.0
+11,Kim,oslo,basic,2024-09-01,11.0
+12,Lu,kyiv,team,2024-09-30,2.5

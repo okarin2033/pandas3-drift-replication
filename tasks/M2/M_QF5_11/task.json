@@ -1,0 +1,74 @@
+{
+ "id": "M_QF5_11",
+ "stratum": "M",
+ "family": "QF5_ORDER",
+ "generic_family": null,
+ "catalogue_row": "R04",
+ "files": [
+  {
+   "path": "QF5_ORDER/exam_scores.csv",
+   "description": "Exam scores (60 rows, one per student): student (full name, unique, many with accented letters), then math, art and music (scores 35-100, whole numbers; about 9% of these score cells are empty, and one student has no score at all)."
+  }
+ ],
+ "task_text": "For each subject, what share of the recorded scores (cells that have a score) is below 50? `result` should be a Series indexed by subject (math, art, music) with shares between 0 and 1.",
+ "allowed_task_words": [],
+ "invited_ids_author": [
+  "R04"
+ ],
+ "order_significant": false,
+ "sort_keys": [],
+ "dtype_significant": false,
+ "intended_computation": "Per subject, the number of non-empty scores below 50 divided by the number of non-empty scores of that subject (math 16/55, art 8/54, music 12/55).",
+ "acceptable_variants": {
+  "row_order": "any",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": "shares may be rounded to 6 significant digits."
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 3
+   }
+  },
+  {
+   "check": "rate_in_unit_interval",
+   "args": {
+    "columns": [
+     "__values__"
+    ]
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "HARM",
+  "reason": "After stack(), the mean of (score < 50) per subject used only recorded scores on 2.x; on 3.x the empty cells stay in the stacked data and count as 'not below 50', lowering the shares."
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M2",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 by pkg:TASKS_M2 for catalogue row R04; naive.py shows the invited idiom, reference.py is the version-robust reference."
+}

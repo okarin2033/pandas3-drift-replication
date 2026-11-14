@@ -1,0 +1,42 @@
+{
+ "baseline_status": "ok",
+ "class": "VALUE_DRIFT",
+ "class_pilot_rule": "VALUE_DRIFT",
+ "class_raw": "VALUE_DRIFT",
+ "clean_on_233": true,
+ "drift": true,
+ "drift_pilot_rule": true,
+ "excluded": null,
+ "exclusion": null,
+ "first_diff": {
+  "a": 0.0,
+  "b": 20.0,
+  "column": "amount",
+  "kind": "cell",
+  "row": 1
+ },
+ "first_divergent_line": null,
+ "locally_silent": null,
+ "magnitude": "SUBSTANTIVE",
+ "pair": "E0pa~E3",
+ "program_id": "confirm/C01",
+ "run_problem": null,
+ "silent": false,
+ "silent_all_magnitudes": false,
+ "silent_pilot_rule": false,
+ "silent_pilotdef": false,
+ "target_status": "ok",
+ "task_id": null,
+ "warned_E0a": {
+  "pilot": true,
+  "prereg": true
+ },
+ "warned_target": {
+  "pilot": true,
+  "prereg": true
+ },
+ "warning_lines": [
+  6
+ ],
+ "warning_only": false
+}

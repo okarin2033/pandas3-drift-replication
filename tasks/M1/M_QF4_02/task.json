@@ -1,0 +1,85 @@
+{
+ "id": "M_QF4_02",
+ "stratum": "M",
+ "family": "QF4_GROUPBY",
+ "generic_family": null,
+ "catalogue_row": "G02",
+ "files": [
+  {
+   "path": "QF4_GROUPBY/unit_sales.csv",
+   "description": "Weekly unit sales (144 rows): region (north, south or west), channel (online, store or kiosk; the west region has no kiosk, so that pair never occurs), week (week number 1-18), units (whole number; about 2% empty)."
+  }
+ ],
+ "task_text": "Make a table of total units for every combination of region (north, south, west) and channel (online, store, kiosk), including combinations that never occur in the data, which have a total of 0. Missing unit figures are ignored. Treat region and channel as categories with these fixed values. `result` should be a table indexed by region and channel with one column units.",
+ "allowed_task_words": [
+  "categories",
+  "combination"
+ ],
+ "invited_ids_author": [
+  "G02"
+ ],
+ "order_significant": false,
+ "sort_keys": [],
+ "dtype_significant": false,
+ "intended_computation": "Sum units per (region, channel) over all 9 combinations of the fixed values; west-kiosk never occurs and gets 0; missing units are skipped.",
+ "acceptable_variants": {
+  "row_order": "any",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": "the combination order may differ."
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 9
+   }
+  },
+  {
+   "check": "no_nulls",
+   "args": {
+    "columns": []
+   }
+  },
+  {
+   "check": "numeric_in_range",
+   "args": {
+    "columns": [
+     "units"
+    ],
+    "min": 0,
+    "max": null
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "FIX",
+  "reason": "on 2.x the applied sum gives a missing value for the never-occurring combination; 3.x gives 0 as asked"
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M1",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 in package TASKS_M1; task text, card, naive solution, reference and predicted direction were prepared there."
+}

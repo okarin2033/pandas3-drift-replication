@@ -1,0 +1,78 @@
+{
+ "id": "M_QF3_14",
+ "stratum": "M",
+ "family": "QF3_COW",
+ "generic_family": null,
+ "catalogue_row": "C02",
+ "files": [
+  {
+   "path": "QF3_COW/gauges.csv",
+   "description": "Water gauge log (120 rows): gauge (gauge name such as \"LA-01\"), reading (meters, three decimals; about 3% empty), level (alert level, whole number from 3 to 80, no empty cells), site (dam, canal or lake; capital letters and spaces are inconsistent)."
+  }
+ ],
+ "task_text": "The gauge log is in time order. Where a reading is missing, use the most recent earlier reading in the log. Then return the mean reading per site (site names in lower case without extra spaces), rounded to three decimals. `result` should be a Series indexed by site.",
+ "allowed_task_words": [
+  "most recent earlier reading"
+ ],
+ "invited_ids_author": [
+  "C02"
+ ],
+ "order_significant": false,
+ "sort_keys": [],
+ "dtype_significant": false,
+ "intended_computation": "Forward-fill the 4 missing readings from the previous row of the log (the first row has a reading), clean site (3 sites) and return the mean reading per site rounded to 3 decimals.",
+ "acceptable_variants": {
+  "row_order": "any",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": ""
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 3
+   }
+  },
+  {
+   "check": "numeric_in_range",
+   "args": {
+    "columns": [
+     "__values__"
+    ],
+    "min": 0,
+    "max": null
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "HARM",
+  "reason": "on 3.x the in-place forward fill on the selected column is lost, so the gaps stay empty"
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M1",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 in package TASKS_M1; task text, card, naive solution, reference and predicted direction were prepared there."
+}

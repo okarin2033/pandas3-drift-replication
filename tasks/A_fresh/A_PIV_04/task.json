@@ -1,0 +1,89 @@
+{
+ "id": "A_PIV_04",
+ "stratum": "A",
+ "family": null,
+ "generic_family": "PIV",
+ "catalogue_row": null,
+ "files": [
+  {
+   "path": "GEN/riders.csv",
+   "description": "Bike-share riders, one per row (400 rows): rider_id (six-digit id with leading zeros), display_name (person name, some with accented letters), home_district (one of 6 districts such as \"Old Town\"), membership (casual, monthly or annual) - these three text columns have inconsistent capital letters and stray spaces; joined_on (date as text, YYYY-MM-DD; about 2% empty), birth_year (whole number; about 4% empty), credit_balance (two decimals, can be negative; about 5% empty)."
+  }
+ ],
+ "task_text": "Cross-tabulate the riders in riders.csv by home_district and membership, both trimmed and lower-cased. `result` should be a table of rider counts with home districts as rows in alphabetical order and membership levels as columns in the order annual, casual, monthly, plus a final row and a final column named total holding the row and column totals.",
+ "allowed_task_words": [],
+ "invited_ids_author": [
+  "R06"
+ ],
+ "order_significant": true,
+ "sort_keys": [
+  "__index__"
+ ],
+ "dtype_significant": false,
+ "intended_computation": "Read riders.csv; clean home_district and membership (strip, lower case); rider counts with home districts as rows (alphabetical) and membership levels as columns (annual, casual, monthly), plus a last row and a last column named total holding the row totals, the column totals and the grand total (400).",
+ "acceptable_variants": {
+  "row_order": "ties_only",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": "the margin row/column label may be spelled differently (e.g. All); counts may be float"
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 7
+   }
+  },
+  {
+   "check": "no_nulls",
+   "args": {
+    "columns": [
+     "annual",
+     "casual",
+     "monthly",
+     "total"
+    ]
+   }
+  },
+  {
+   "check": "numeric_in_range",
+   "args": {
+    "columns": [
+     "annual",
+     "casual",
+     "monthly",
+     "total"
+    ],
+    "min": 0,
+    "max": 400
+   }
+  }
+ ],
+ "predicted_direction": null,
+ "naive_path": null,
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:REPAIR3_INTEGRATE",
+ "status": "prepared",
+ "notes": "Intent written in a separate step that did not use the catalogue or the pre-registration (Amendment 8 item 3; INTENTS_FRESH.tsv sha256 ffae987c...e666). Card, reference and invited_ids_author drafted 2026-11-11 by pkg:REPAIR3_INTEGRATE after the intents were sealed; intent not rewritten. Prepared (Amendment 9)."
+}

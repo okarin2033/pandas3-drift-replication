@@ -1,0 +1,12 @@
+You are given CSV file(s) in the current working directory:
+
+- quiz_scores.csv: Quiz results (80 rows, one per student in seat order, no other columns): quiz_a and quiz_b (points 0-10, whole numbers, many equal values; about 9% and 6% of cells empty for absent students).
+
+Task: Read the scores as whole-number columns that allow empty cells. For quiz_a, give each student's percentile rank: rank the students who took the quiz from the lowest score (equal scores share the average of their ranks) and divide by the number of students who took it. Absent students (empty cell) get no rank. `result` should be a Series with one value per student in file order.
+
+Requirements:
+- Write a complete Python script that reads the file(s) from the current directory.
+- Use only pandas, numpy and the Python standard library.
+- Store the final answer in a top-level variable named `result`.
+- Reply with a single Python code block.
+- The script will run with the latest pandas 3 release.

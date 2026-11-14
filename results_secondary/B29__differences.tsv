@@ -1,0 +1,7 @@
+outcome	entering_models	difference	boot_lo	boot_hi	boot_dropped	invited_basis	pair
+silent	10	0.023527	-0.000700	0.066627	0	reviewer	E0a~E1
+drift	10	0.022882	-0.001444	0.065863	0	reviewer	E0a~E1
+drift_any	10	0.022882	-0.001444	0.065863	0	reviewer	E0a~E1
+silent	10	0.014448	-0.003185	0.044180	0	author	E0a~E1
+drift	10	0.014989	-0.002682	0.044861	0	author	E0a~E1
+drift_any	10	0.014989	-0.002682	0.044861	0	author	E0a~E1

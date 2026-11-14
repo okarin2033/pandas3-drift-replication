@@ -1,0 +1,93 @@
+{
+ "id": "M_QF2_14",
+ "stratum": "M",
+ "family": "QF2_DATETIME",
+ "generic_family": null,
+ "catalogue_row": "D04",
+ "files": [
+  {
+   "path": "QF2_DATETIME/shipments.csv",
+   "description": "Shipments (400 rows): shipment_id (whole number), ordered_on and shipped_on (dates as text, YYYY-MM-DD, in 2025; shipped_on is empty for about 4% of rows that have not shipped yet), carrier (DHL, UPS, PostNord or GLS; capital letters and spaces are inconsistent), weight_kg (one decimal), value (order value, two decimals)."
+  }
+ ],
+ "task_text": "Between the first and the last order date (both included), which calendar days had no orders at all? Give each such day as a day number counted from 1970-01-01 (that date is day 0). `result` should be a sorted Python list of these day numbers.",
+ "allowed_task_words": [
+  "calendar days",
+  "day number"
+ ],
+ "invited_ids_author": [
+  "D04",
+  "D01"
+ ],
+ "order_significant": true,
+ "sort_keys": [
+  "__values__"
+ ],
+ "dtype_significant": false,
+ "intended_computation": "List every day from 2025-01-02 to 2025-12-19 on which no shipment was ordered (117 days) as the number of days since 1970-01-01 (2025-01-02 is day 20090), sorted ascending.",
+ "acceptable_variants": {
+  "row_order": "ties_only",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": ""
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 117
+   }
+  },
+  {
+   "check": "numeric_in_range",
+   "args": {
+    "columns": [
+     "__values__"
+    ],
+    "min": 20090,
+    "max": 20441
+   }
+  },
+  {
+   "check": "sorted_by",
+   "args": {
+    "keys": [
+     "__values__"
+    ],
+    "ascending": [
+     true
+    ]
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "HARM",
+  "reason": "on 3.x the generated day range uses a coarser unit, so integer division by a nanosecond day gives wrong day numbers"
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M1",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 in package TASKS_M1; task text, card, naive solution, reference and predicted direction were prepared there."
+}

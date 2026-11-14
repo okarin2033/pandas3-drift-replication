@@ -1,0 +1,66 @@
+{
+ "id": "M_QF4_15",
+ "stratum": "M",
+ "family": "QF4_GROUPBY",
+ "generic_family": null,
+ "catalogue_row": "G03",
+ "files": [
+  {
+   "path": "QF4_GROUPBY/purchases.csv",
+   "description": "Shop purchases (900 rows): purchase_id (whole number), subscriber_id (refers to subscribers.csv; most subscribers have several purchases), store_city (city name; the same city is written with different capitals and extra spaces, e.g. \"lisbon\" and \"LISBON\"; about 2% empty), quantity (whole number), spend (two decimals)."
+  }
+ ],
+ "task_text": "For each subscriber, show their first purchase, meaning the one with the lowest purchase_id, with all of its details. `result` should be a table holding one row per subscriber that includes the subscriber_id.",
+ "allowed_task_words": [],
+ "invited_ids_author": [
+  "G03"
+ ],
+ "order_significant": false,
+ "sort_keys": [],
+ "dtype_significant": false,
+ "intended_computation": "For each of the 302 subscribers return the full purchase row (purchase_id, subscriber_id, store_city, quantity, spend) with the smallest purchase_id.",
+ "acceptable_variants": {
+  "row_order": "any",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": "subscriber_id may be the index instead of (or as well as) a column; row order may differ."
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 302
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "BOTH",
+  "reason": "on 3.x the grouping column is no longer passed to the function, so subscriber_id is only in the index; both carry it"
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M1",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 in package TASKS_M1; task text, card, naive solution, reference and predicted direction were prepared there."
+}

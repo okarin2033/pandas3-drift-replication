@@ -1,0 +1,6 @@
+order_id,city,status
+1,oslo,shipped
+2,rome,pending
+3,oslo,shipped
+4,rome,shipped
+5,bern,pending

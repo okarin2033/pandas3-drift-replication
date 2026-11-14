@@ -1,0 +1,6 @@
+program	det_E0a_E0b	st_E0a	st_E0b	st_E1	st_E2	st_E0pa	st_E3	st_E4	class_E0a~E0b	drift_E0a~E0b	silent_E0a~E0b	mag_E0a~E0b	class_E0a~E1	drift_E0a~E1	silent_E0a~E1	mag_E0a~E1	class_E0a~E2	drift_E0a~E2	silent_E0a~E2	mag_E0a~E2	class_E0pa~E3	drift_E0pa~E3	silent_E0pa~E3	mag_E0pa~E3	class_E0pa~E4	drift_E0pa~E4	silent_E0pa~E4	mag_E0pa~E4	warn233_prereg	warn233_pilot	warn3x_prereg	warn3xpa_prereg	loud_E1	loud_E2
+S04_b	yes	ok	ok	ok	ok	ok	ok	ok	IDENTICAL	no	no	-	DTYPE_ONLY	no	no	-	DTYPE_ONLY	no	no	-	DTYPE_ONLY	no	no	-	DTYPE_ONLY	no	no	-	no	no	no	no	no	no
+S05_b	yes	ok	ok	ok	ok	ok	ok	ok	IDENTICAL	no	no	-	DTYPE_ONLY	no	no	-	DTYPE_ONLY	no	no	-	DTYPE_ONLY	no	no	-	DTYPE_ONLY	no	no	-	no	no	no	no	no	no
+D05_b	yes	ok	ok	ok	ok	ok	ok	ok	IDENTICAL	no	no	-	VALUE_DRIFT	yes	yes	SUBSTANTIVE	VALUE_DRIFT	yes	yes	SUBSTANTIVE	VALUE_DRIFT	yes	yes	SUBSTANTIVE	VALUE_DRIFT	yes	yes	SUBSTANTIVE	no	no	no	no	no	no
+D07_b	yes	ok	ok	ok	ok	ok	ok	ok	IDENTICAL	no	no	-	VALUE_DRIFT	yes	yes	SUBSTANTIVE	VALUE_DRIFT	yes	yes	SUBSTANTIVE	VALUE_DRIFT	yes	yes	SUBSTANTIVE	VALUE_DRIFT	yes	yes	SUBSTANTIVE	yes	yes	no	no	no	no
+C06_b	yes	ok	ok	ok	ok	ok	ok	ok	IDENTICAL	no	no	-	VALUE_DRIFT	yes	yes	SUBSTANTIVE	VALUE_DRIFT	yes	yes	SUBSTANTIVE	VALUE_DRIFT	yes	yes	SUBSTANTIVE	VALUE_DRIFT	yes	yes	SUBSTANTIVE	no	no	no	no	no	no

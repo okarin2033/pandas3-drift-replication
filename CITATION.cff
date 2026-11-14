@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this package, please cite it as below."
+type: dataset
+title: "Replication package: Born Legacy: Silent Result Drift of LLM-Generated pandas Code under pandas 3"
+version: 1.0.0
+date-released: 2026-11-14
+authors:
+  - family-names: "Palii"
+    given-names: "Evgenii"
+    orcid: "https://orcid.org/0009-0003-9031-0431"
+repository-code: "https://github.com/okarin2033/pandas3-drift-replication"
+license:
+  - MIT
+  - CC-BY-4.0
+keywords:
+  - large language models
+  - code generation
+  - library evolution
+  - pandas
+  - silent result drift
+  - pre-registration
+abstract: >-
+  Harness and analysis code, study materials (tasks, fixtures, mechanism catalogue), per-program outcome tables, secondary analyses,
+  harm coding and the hash table of the generated programs of a pre-registered study of silent result drift of LLM-generated pandas
+  programs under pandas 3.

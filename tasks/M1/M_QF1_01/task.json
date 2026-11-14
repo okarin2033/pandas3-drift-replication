@@ -1,0 +1,85 @@
+{
+ "id": "M_QF1_01",
+ "stratum": "M",
+ "family": "QF1_STRING",
+ "generic_family": null,
+ "catalogue_row": "S01",
+ "files": [
+  {
+   "path": "QF1_STRING/members.csv",
+   "description": "Club members, one per row (240 rows): member_id (whole number), full_name (first and last name; many names have accented letters; capital letters and spaces around the name are inconsistent), home_city (city name, several with accented letters; capital letters and spaces around the name are inconsistent; about 3% of cells are empty and about 3% hold \"-\" for an unknown city), fee (yearly fee, two decimals)."
+  }
+ ],
+ "task_text": "Tidy the members file: in every text column remove the spaces around the values and write each word with a leading capital letter (for example 'ZÜRICH  ' becomes 'Zürich'). Then, for each home city, count the members and add up their fees. Leave out members whose city is empty or '-'. `result` should be a table with the columns home_city, members and total_fee, one row per city.",
+ "allowed_task_words": [
+  "text column"
+ ],
+ "invited_ids_author": [
+  "S01"
+ ],
+ "order_significant": false,
+ "sort_keys": [],
+ "dtype_significant": false,
+ "intended_computation": "Read members.csv, strip surrounding spaces and title-case the text columns (home_city is the one that matters), drop rows whose city is missing or '-', then group by the tidied city and report the number of members and the sum of fee per city: 8 cities, 226 members in total.",
+ "acceptable_variants": {
+  "row_order": "any",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": "fee totals may be rounded to 2 decimals."
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 8
+   }
+  },
+  {
+   "check": "counts_sum_to_rows",
+   "args": {
+    "column": "members",
+    "expected": 226
+   }
+  },
+  {
+   "check": "columns_present",
+   "args": {
+    "columns": [
+     "home_city",
+     "members",
+     "total_fee"
+    ]
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "HARM",
+  "reason": "on 3.x the text columns are no longer detected by the type test, so city names stay untidied and split into many groups"
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M1",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 in package TASKS_M1; task text, card, naive solution, reference and predicted direction were prepared there."
+}

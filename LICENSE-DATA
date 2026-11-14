@@ -1,0 +1,7 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+Scope: the data files, tables, figures and text of this package, including the task texts, specification cards, reference and naive
+solutions (tasks/*/*/task.json, reference.py, naive.py) and the fixtures; everything else that is code is under the MIT licence in LICENSE.
+Copyright holder and year: Evgenii Palii, 2026.
+Full legal text: https://creativecommons.org/licenses/by/4.0/legalcode
+You may share and adapt the material for any purpose, including commercially, if you give appropriate credit, link to the licence and indicate changes.

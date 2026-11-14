@@ -1,0 +1,83 @@
+{
+ "id": "A_ENC_05",
+ "stratum": "A",
+ "family": null,
+ "generic_family": "ENC",
+ "catalogue_row": null,
+ "files": [
+  {
+   "path": "GEN/trips.csv",
+   "description": "Bike-share trips, 1 September to 1 November 2025 (1500 rows): trip_id (whole number), rider_id (refers to riders.csv), start_station and end_station (refer to station_code in stations.csv), started_at (timestamp written as YYYY-MM-DD HH:MM), duration_min (whole minutes; about 3% empty), distance_km (two decimals), fare (two decimals; about 3% empty), payment (card, app or cash; capital letters and spaces are inconsistent), rating (1-5 stars, whole number; about 19% empty)."
+  }
+ ],
+ "task_text": "In trips.csv, encode the payment method (trimmed and lower-cased) by its frequency: replace it with the share of all 1500 trips that used that method, rounded to 4 decimals. `result` should be a Series of these shares indexed by trip_id, in file order.",
+ "allowed_task_words": [],
+ "invited_ids_author": [],
+ "order_significant": false,
+ "sort_keys": [],
+ "dtype_significant": false,
+ "intended_computation": "Read trips.csv; clean payment (strip, lower case); replace it by the share of all 1500 trips with that payment (4 decimals); a Series indexed by trip_id in file order.",
+ "acceptable_variants": {
+  "row_order": "any",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": "trip_id index may be text"
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "result_kind",
+   "args": {
+    "kind": "series"
+   }
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 1500
+   }
+  },
+  {
+   "check": "no_nulls",
+   "args": {
+    "columns": [
+     "__values__"
+    ]
+   }
+  },
+  {
+   "check": "rate_in_unit_interval",
+   "args": {
+    "columns": [
+     "__values__"
+    ]
+   }
+  }
+ ],
+ "predicted_direction": null,
+ "naive_path": null,
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:REPAIR3_INTEGRATE",
+ "status": "prepared",
+ "notes": "Intent written in a separate step that did not use the catalogue or the pre-registration (Amendment 8 item 3; INTENTS_FRESH.tsv sha256 ffae987c...e666). Card, reference and invited_ids_author drafted 2026-11-11 by pkg:REPAIR3_INTEGRATE after the intents were sealed; intent not rewritten. Prepared (Amendment 9)."
+}

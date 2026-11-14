@@ -1,0 +1,793 @@
+==================== S01
+statuses: {"E0a": "ok", "E0b": "ok", "E0pa": "ok", "E1": "ok", "E2": "ok", "E3": "ok", "E4": "ok"}
+classes: {"E0a~E0b": "IDENTICAL", "E0a~E1": "VALUE_DRIFT", "E0a~E2": "VALUE_DRIFT", "E0pa~E3": "VALUE_DRIFT", "E0pa~E4": "VALUE_DRIFT"} magnitude: {"E0a~E0b": null, "E0a~E1": "SUBSTANTIVE", "E0a~E2": "SUBSTANTIVE", "E0pa~E3": "SUBSTANTIVE", "E0pa~E4": "SUBSTANTIVE"}
+E0a ok
+   result: {"data": [29.75, 31.5], "index": ["Berlin", "Paris"], "index_names": ["city"], "k": "s", "name": "amount"}
+   dtypes: {"dtype": "float64", "index": "object", "k": "s"} type pandas.core.series.Series
+E0b ok
+E1 ok
+   result: {"data": [20.0, 8.5, 10.5, 7.25, 3.0, 12.0], "index": ["  paris", " Paris", "BERLIN", "Berlin ", "PARIS", "berlin"], "index_names": ["city"], "k": "s", "name": "amount"}
+   dtypes: {"dtype": "float64", "index": "str", "k": "s"} type pandas.Series
+E2 ok
+   result: {"data": [20.0, 8.5, 10.5, 7.25, 3.0, 12.0], "index": ["  paris", " Paris", "BERLIN", "Berlin ", "PARIS", "berlin"], "index_names": ["city"], "k": "s", "name": "amount"}
+   dtypes: {"dtype": "float64", "index": "str", "k": "s"} type pandas.Series
+E0pa ok
+   result: {"data": [29.75, 31.5], "index": ["Berlin", "Paris"], "index_names": ["city"], "k": "s", "name": "amount"}
+   dtypes: {"dtype": "float64", "index": "object", "k": "s"} type pandas.core.series.Series
+E3 ok
+E4 ok
+   result: {"data": [20.0, 8.5, 10.5, 7.25, 3.0, 12.0], "index": ["  paris", " Paris", "BERLIN", "Berlin ", "PARIS", "berlin"], "index_names": ["city"], "k": "s", "name": "amount"}
+   dtypes: {"dtype": "float64", "index": "str", "k": "s"} type pandas.Series
+   first_diff E0a~E1: {"a": 2, "b": 6, "column": "<rows>", "kind": "shape", "row": null}
+   first_diff E0a~E2: {"a": 2, "b": 6, "column": "<rows>", "kind": "shape", "row": null}
+   first_diff E0pa~E3: {"a": 2, "b": 6, "column": "<rows>", "kind": "shape", "row": null}
+   first_diff E0pa~E4: {"a": 2, "b": 6, "column": "<rows>", "kind": "shape", "row": null}
+==================== S02
+statuses: {"E0a": "ok", "E0b": "ok", "E0pa": "ok", "E1": "ok", "E2": "ok", "E3": "ok", "E4": "ok"}
+classes: {"E0a~E0b": "IDENTICAL", "E0a~E1": "VALUE_DRIFT", "E0a~E2": "VALUE_DRIFT", "E0pa~E3": "VALUE_DRIFT", "E0pa~E4": "VALUE_DRIFT"} magnitude: {"E0a~E0b": null, "E0a~E1": "SUBSTANTIVE", "E0a~E2": "SUBSTANTIVE", "E0pa~E3": "SUBSTANTIVE", "E0pa~E4": "SUBSTANTIVE"}
+E0a ok
+   result: {"data": [2, 1, 1, 2, 1], "index": ["Berlin", "Paris", "Rome", "unknown", null], "index_names": ["city_label"], "k": "s", "name": "count"}
+   dtypes: {"dtype": "int64", "index": "object", "k": "s"} type pandas.core.series.Series
+E0b ok
+E1 ok
+   result: {"data": [2, 1, 1, 3], "index": ["Berlin", "Paris", "Rome", null], "index_names": ["city_label"], "k": "s", "name": "count"}
+   dtypes: {"dtype": "int64", "index": "str", "k": "s"} type pandas.Series
+E2 ok
+   result: {"data": [2, 1, 1, 3], "index": ["Berlin", "Paris", "Rome", null], "index_names": ["city_label"], "k": "s", "name": "count"}
+   dtypes: {"dtype": "int64", "index": "str", "k": "s"} type pandas.Series
+E0pa ok
+   result: {"data": [2, 1, 1, 2, 1], "index": ["Berlin", "Paris", "Rome", "unknown", null], "index_names": ["city_label"], "k": "s", "name": "count"}
+   dtypes: {"dtype": "int64", "index": "object", "k": "s"} type pandas.core.series.Series
+E3 ok
+E4 ok
+   result: {"data": [2, 1, 1, 3], "index": ["Berlin", "Paris", "Rome", null], "index_names": ["city_label"], "k": "s", "name": "count"}
+   dtypes: {"dtype": "int64", "index": "str", "k": "s"} type pandas.Series
+   first_diff E0a~E1: {"a": 5, "b": 4, "column": "<rows>", "kind": "shape", "row": null}
+   first_diff E0a~E2: {"a": 5, "b": 4, "column": "<rows>", "kind": "shape", "row": null}
+   first_diff E0pa~E3: {"a": 5, "b": 4, "column": "<rows>", "kind": "shape", "row": null}
+   first_diff E0pa~E4: {"a": 5, "b": 4, "column": "<rows>", "kind": "shape", "row": null}
+==================== S03
+statuses: {"E0a": "ok", "E0b": "ok", "E0pa": "ok", "E1": "ok", "E2": "ok", "E3": "ok", "E4": "ok"}
+classes: {"E0a~E0b": "IDENTICAL", "E0a~E1": "VALUE_DRIFT", "E0a~E2": "VALUE_DRIFT", "E0pa~E3": "VALUE_DRIFT", "E0pa~E4": "VALUE_DRIFT"} magnitude: {"E0a~E0b": null, "E0a~E1": "SUBSTANTIVE", "E0a~E2": "SUBSTANTIVE", "E0pa~E3": "SUBSTANTIVE", "E0pa~E4": "SUBSTANTIVE"}
+E0a ok
+   result: {"data": [2, 2, 2, 1], "index": ["Berlin", "Nan", "Paris", "Rome"], "index_names": ["city"], "k": "s", "name": "count"}
+   dtypes: {"dtype": "int64", "index": "object", "k": "s"} type pandas.core.series.Series
+E0b ok
+E1 ok
+   result: {"data": [2, 2, 1], "index": ["Berlin", "Paris", "Rome"], "index_names": ["city"], "k": "s", "name": "count"}
+   dtypes: {"dtype": "int64", "index": "str", "k": "s"} type pandas.Series
+E2 ok
+   result: {"data": [2, 2, 1], "index": ["Berlin", "Paris", "Rome"], "index_names": ["city"], "k": "s", "name": "count"}
+   dtypes: {"dtype": "int64", "index": "str", "k": "s"} type pandas.Series
+E0pa ok
+   result: {"data": [2, 2, 2, 1], "index": ["Berlin", "Nan", "Paris", "Rome"], "index_names": ["city"], "k": "s", "name": "count"}
+   dtypes: {"dtype": "int64", "index": "object", "k": "s"} type pandas.core.series.Series
+E3 ok
+E4 ok
+   result: {"data": [2, 2, 1], "index": ["Berlin", "Paris", "Rome"], "index_names": ["city"], "k": "s", "name": "count"}
+   dtypes: {"dtype": "int64", "index": "str", "k": "s"} type pandas.Series
+   first_diff E0a~E1: {"a": 4, "b": 3, "column": "<rows>", "kind": "shape", "row": null}
+   first_diff E0a~E2: {"a": 4, "b": 3, "column": "<rows>", "kind": "shape", "row": null}
+   first_diff E0pa~E3: {"a": 4, "b": 3, "column": "<rows>", "kind": "shape", "row": null}
+   first_diff E0pa~E4: {"a": 4, "b": 3, "column": "<rows>", "kind": "shape", "row": null}
+==================== S04
+statuses: {"E0a": "ok", "E0b": "ok", "E0pa": "ok", "E1": "ok", "E2": "ok", "E3": "ok", "E4": "ok"}
+classes: {"E0a~E0b": "IDENTICAL", "E0a~E1": "DTYPE_ONLY", "E0a~E2": "DTYPE_ONLY", "E0pa~E3": "DTYPE_ONLY", "E0pa~E4": "DTYPE_ONLY"} magnitude: {"E0a~E0b": null, "E0a~E1": null, "E0a~E2": null, "E0pa~E3": null, "E0pa~E4": null}
+E0a ok
+   result: {"data": [0, 2, 1], "index": ["east", "north", "south"], "index_names": ["region"], "k": "s", "name": "is_shipped"}
+   dtypes: {"dtype": "int64", "index": "object", "k": "s"} type pandas.core.series.Series
+E0b ok
+E1 ok
+   result: {"data": [0, 2, 1], "index": ["east", "north", "south"], "index_names": ["region"], "k": "s", "name": "is_shipped"}
+   dtypes: {"dtype": "int64", "index": "str", "k": "s"} type pandas.Series
+E2 ok
+   result: {"data": [0, 2, 1], "index": ["east", "north", "south"], "index_names": ["region"], "k": "s", "name": "is_shipped"}
+   dtypes: {"dtype": "int64", "index": "str", "k": "s"} type pandas.Series
+E0pa ok
+   result: {"data": [0, 2, 1], "index": ["east", "north", "south"], "index_names": ["region"], "k": "s", "name": "is_shipped"}
+   dtypes: {"dtype": "int64", "index": "object", "k": "s"} type pandas.core.series.Series
+E3 ok
+E4 ok
+   result: {"data": [0, 2, 1], "index": ["east", "north", "south"], "index_names": ["region"], "k": "s", "name": "is_shipped"}
+   dtypes: {"dtype": "int64", "index": "str", "k": "s"} type pandas.Series
+==================== S04_b
+statuses: {"E0a": "ok", "E0b": "ok", "E0pa": "ok", "E1": "ok", "E2": "ok", "E3": "ok", "E4": "ok"}
+classes: {"E0a~E0b": "IDENTICAL", "E0a~E1": "DTYPE_ONLY", "E0a~E2": "DTYPE_ONLY", "E0pa~E3": "DTYPE_ONLY", "E0pa~E4": "DTYPE_ONLY"} magnitude: {"E0a~E0b": null, "E0a~E1": null, "E0a~E2": null, "E0pa~E3": null, "E0pa~E4": null}
+E0a ok
+   result: {"data": [1, 0, 1], "index": ["east", "north", "south"], "index_names": ["region"], "k": "s", "name": "status_missing"}
+   dtypes: {"dtype": "int64", "index": "object", "k": "s"} type pandas.core.series.Series
+E0b ok
+E1 ok
+   result: {"data": [1, 0, 1], "index": ["east", "north", "south"], "index_names": ["region"], "k": "s", "name": "status_missing"}
+   dtypes: {"dtype": "int64", "index": "str", "k": "s"} type pandas.Series
+E2 ok
+   result: {"data": [1, 0, 1], "index": ["east", "north", "south"], "index_names": ["region"], "k": "s", "name": "status_missing"}
+   dtypes: {"dtype": "int64", "index": "str", "k": "s"} type pandas.Series
+E0pa ok
+   result: {"data": [1, 0, 1], "index": ["east", "north", "south"], "index_names": ["region"], "k": "s", "name": "status_missing"}
+   dtypes: {"dtype": "int64", "index": "object", "k": "s"} type pandas.core.series.Series
+E3 ok
+E4 ok
+   result: {"data": [1, 0, 1], "index": ["east", "north", "south"], "index_names": ["region"], "k": "s", "name": "status_missing"}
+   dtypes: {"dtype": "int64", "index": "str", "k": "s"} type pandas.Series
+==================== S05
+statuses: {"E0a": "ok", "E0b": "ok", "E0pa": "ok", "E1": "ok", "E2": "ok", "E3": "ok", "E4": "ok"}
+classes: {"E0a~E0b": "IDENTICAL", "E0a~E1": "DTYPE_ONLY", "E0a~E2": "DTYPE_ONLY", "E0pa~E3": "DTYPE_ONLY", "E0pa~E4": "DTYPE_ONLY"} magnitude: {"E0a~E0b": null, "E0a~E1": null, "E0a~E2": null, "E0pa~E3": null, "E0pa~E4": null}
+E0a ok
+   result: {"columns": ["person_id", "first_word"], "columns_names": [null], "data": [[1, 2, 3, 4, 5, 6, 7], ["José", "Zoë", "Ana", "Łukasz", "John", "Ærø", "Müller"]], "index": [0, 1, 2, 3, 4, 5, 6], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "object", "dtypes": ["int64", "object"], "index": "int64", "k": "df"} type pandas.core.frame.DataFrame
+E0b ok
+E1 ok
+   result: {"columns": ["person_id", "first_word"], "columns_names": [null], "data": [[1, 2, 3, 4, 5, 6, 7], ["José", "Zoë", "Ana", "Łukasz", "John", "Ærø", "Müller"]], "index": [0, 1, 2, 3, 4, 5, 6], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "str", "dtypes": ["int64", "str"], "index": "int64", "k": "df"} type pandas.DataFrame
+E2 ok
+   result: {"columns": ["person_id", "first_word"], "columns_names": [null], "data": [[1, 2, 3, 4, 5, 6, 7], ["José", "Zoë", "Ana", "Łukasz", "John", "Ærø", "Müller"]], "index": [0, 1, 2, 3, 4, 5, 6], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "str", "dtypes": ["int64", "str"], "index": "int64", "k": "df"} type pandas.DataFrame
+E0pa ok
+   result: {"columns": ["person_id", "first_word"], "columns_names": [null], "data": [[1, 2, 3, 4, 5, 6, 7], ["José", "Zoë", "Ana", "Łukasz", "John", "Ærø", "Müller"]], "index": [0, 1, 2, 3, 4, 5, 6], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "object", "dtypes": ["int64", "object"], "index": "int64", "k": "df"} type pandas.core.frame.DataFrame
+E3 ok
+E4 ok
+   result: {"columns": ["person_id", "first_word"], "columns_names": [null], "data": [[1, 2, 3, 4, 5, 6, 7], ["José", "Zoë", "Ana", "Łukasz", "John", "Ærø", "Müller"]], "index": [0, 1, 2, 3, 4, 5, 6], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "str", "dtypes": ["int64", "str"], "index": "int64", "k": "df"} type pandas.DataFrame
+==================== S05_b
+statuses: {"E0a": "ok", "E0b": "ok", "E0pa": "ok", "E1": "ok", "E2": "ok", "E3": "ok", "E4": "ok"}
+classes: {"E0a~E0b": "IDENTICAL", "E0a~E1": "DTYPE_ONLY", "E0a~E2": "DTYPE_ONLY", "E0pa~E3": "DTYPE_ONLY", "E0pa~E4": "DTYPE_ONLY"} magnitude: {"E0a~E0b": null, "E0a~E1": null, "E0a~E2": null, "E0pa~E3": null, "E0pa~E4": null}
+E0a ok
+   result: {"columns": ["person_id", "first_is_word"], "columns_names": [null], "data": [[1, 2, 3, 4, 5, 6, 7], [true, true, false, true, true, true, true]], "index": [0, 1, 2, 3, 4, 5, 6], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "object", "dtypes": ["int64", "bool"], "index": "int64", "k": "df"} type pandas.core.frame.DataFrame
+E0b ok
+E1 ok
+   result: {"columns": ["person_id", "first_is_word"], "columns_names": [null], "data": [[1, 2, 3, 4, 5, 6, 7], [true, true, false, true, true, true, true]], "index": [0, 1, 2, 3, 4, 5, 6], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "str", "dtypes": ["int64", "bool"], "index": "int64", "k": "df"} type pandas.DataFrame
+E2 ok
+   result: {"columns": ["person_id", "first_is_word"], "columns_names": [null], "data": [[1, 2, 3, 4, 5, 6, 7], [true, true, false, true, true, true, true]], "index": [0, 1, 2, 3, 4, 5, 6], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "str", "dtypes": ["int64", "bool"], "index": "int64", "k": "df"} type pandas.DataFrame
+E0pa ok
+   result: {"columns": ["person_id", "first_is_word"], "columns_names": [null], "data": [[1, 2, 3, 4, 5, 6, 7], [true, true, false, true, true, true, true]], "index": [0, 1, 2, 3, 4, 5, 6], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "object", "dtypes": ["int64", "bool"], "index": "int64", "k": "df"} type pandas.core.frame.DataFrame
+E3 ok
+E4 ok
+   result: {"columns": ["person_id", "first_is_word"], "columns_names": [null], "data": [[1, 2, 3, 4, 5, 6, 7], [true, true, false, true, true, true, true]], "index": [0, 1, 2, 3, 4, 5, 6], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "str", "dtypes": ["int64", "bool"], "index": "int64", "k": "df"} type pandas.DataFrame
+==================== S06
+statuses: {"E0a": "ok", "E0b": "ok", "E0pa": "ok", "E1": "ok", "E2": "ok", "E3": "ok", "E4": "ok"}
+classes: {"E0a~E0b": "IDENTICAL", "E0a~E1": "VALUE_DRIFT", "E0a~E2": "IDENTICAL", "E0pa~E3": "VALUE_DRIFT", "E0pa~E4": "IDENTICAL"} magnitude: {"E0a~E0b": null, "E0a~E1": "SUBSTANTIVE", "E0a~E2": null, "E0pa~E3": "SUBSTANTIVE", "E0pa~E4": null}
+E0a ok
+   result: {"data": [17, 23, 5, 1], "index": ["00123", "00456", "01200", "09000"], "index_names": ["shop_code"], "k": "s", "name": "sales"}
+   dtypes: {"dtype": "int64", "index": "category", "k": "s"} type pandas.core.series.Series
+E0b ok
+E1 ok
+   result: {"data": [17, 23, 5, 1], "index": [123, 456, 1200, 9000], "index_names": ["shop_code"], "k": "s", "name": "sales"}
+   dtypes: {"dtype": "int64", "index": "category", "k": "s"} type pandas.Series
+E2 ok
+   result: {"data": [17, 23, 5, 1], "index": ["00123", "00456", "01200", "09000"], "index_names": ["shop_code"], "k": "s", "name": "sales"}
+   dtypes: {"dtype": "int64", "index": "category", "k": "s"} type pandas.Series
+E0pa ok
+   result: {"data": [17, 23, 5, 1], "index": ["00123", "00456", "01200", "09000"], "index_names": ["shop_code"], "k": "s", "name": "sales"}
+   dtypes: {"dtype": "int64", "index": "category", "k": "s"} type pandas.core.series.Series
+E3 ok
+E4 ok
+   result: {"data": [17, 23, 5, 1], "index": ["00123", "00456", "01200", "09000"], "index_names": ["shop_code"], "k": "s", "name": "sales"}
+   dtypes: {"dtype": "int64", "index": "category", "k": "s"} type pandas.Series
+   first_diff E0a~E1: {"a": ["00123", "00456", "01200", "09000"], "b": [123, 456, 1200, 9000], "column": "<index>", "kind": "label", "row": null}
+   first_diff E0pa~E3: {"a": ["00123", "00456", "01200", "09000"], "b": [123, 456, 1200, 9000], "column": "<index>", "kind": "label", "row": null}
+==================== O01
+statuses: {"E0a": "ok", "E0b": "ok", "E0pa": "ok", "E1": "ok", "E2": "ok", "E3": "ok", "E4": "ok"}
+classes: {"E0a~E0b": "IDENTICAL", "E0a~E1": "VALUE_DRIFT", "E0a~E2": "VALUE_DRIFT", "E0pa~E3": "VALUE_DRIFT", "E0pa~E4": "VALUE_DRIFT"} magnitude: {"E0a~E0b": null, "E0a~E1": "SUBSTANTIVE", "E0a~E2": "SUBSTANTIVE", "E0pa~E3": "SUBSTANTIVE", "E0pa~E4": "SUBSTANTIVE"}
+E0a ok
+   result: {"items": [{"items": [["item", "pen"], ["price", 1.25]], "k": "dict"}, {"items": [["item", "book"], ["price", 12.99]], "k": "dict"}, {"items": [["item", "lamp"], ["price", 30.1]], "k": "dict"}, {"items": [["item", "mug"], ["price", 4.05]], "k": "dict"}], "k": "list"}
+   dtypes: {"items": [{"items": [{"k": "scalar", "type": "builtins.str"}, {"k": "scalar", "type": "builtins.float"}], "k": "dict"}, {"items": [{"k": "scalar", "type": "builtins.str"}, {"k": "scalar", "type": "bu... type builtins.list
+E0b ok
+E1 ok
+   result: {"items": [{"items": [["item", "pen"], ["price", "1.25"]], "k": "dict"}, {"items": [["item", "book"], ["price", "12.99"]], "k": "dict"}, {"items": [["item", "lamp"], ["price", "30.10"]], "k": "dict"}, {"items": [["item", "mug"], ["price", "4.05"]], "k": "dict"}], "k": "list"}
+   dtypes: {"items": [{"items": [{"k": "scalar", "type": "builtins.str"}, {"k": "scalar", "type": "builtins.str"}], "k": "dict"}, {"items": [{"k": "scalar", "type": "builtins.str"}, {"k": "scalar", "type": "buil... type builtins.list
+E2 ok
+   result: {"items": [{"items": [["item", "pen"], ["price", "1.25"]], "k": "dict"}, {"items": [["item", "book"], ["price", "12.99"]], "k": "dict"}, {"items": [["item", "lamp"], ["price", "30.10"]], "k": "dict"}, {"items": [["item", "mug"], ["price", "4.05"]], "k": "dict"}], "k": "list"}
+   dtypes: {"items": [{"items": [{"k": "scalar", "type": "builtins.str"}, {"k": "scalar", "type": "builtins.str"}], "k": "dict"}, {"items": [{"k": "scalar", "type": "builtins.str"}, {"k": "scalar", "type": "buil... type builtins.list
+E0pa ok
+   result: {"items": [{"items": [["item", "pen"], ["price", 1.25]], "k": "dict"}, {"items": [["item", "book"], ["price", 12.99]], "k": "dict"}, {"items": [["item", "lamp"], ["price", 30.1]], "k": "dict"}, {"items": [["item", "mug"], ["price", 4.05]], "k": "dict"}], "k": "list"}
+   dtypes: {"items": [{"items": [{"k": "scalar", "type": "builtins.str"}, {"k": "scalar", "type": "builtins.float"}], "k": "dict"}, {"items": [{"k": "scalar", "type": "builtins.str"}, {"k": "scalar", "type": "bu... type builtins.list
+E3 ok
+E4 ok
+   result: {"items": [{"items": [["item", "pen"], ["price", "1.25"]], "k": "dict"}, {"items": [["item", "book"], ["price", "12.99"]], "k": "dict"}, {"items": [["item", "lamp"], ["price", "30.10"]], "k": "dict"}, {"items": [["item", "mug"], ["price", "4.05"]], "k": "dict"}], "k": "list"}
+   dtypes: {"items": [{"items": [{"k": "scalar", "type": "builtins.str"}, {"k": "scalar", "type": "builtins.str"}], "k": "dict"}, {"items": [{"k": "scalar", "type": "builtins.str"}, {"k": "scalar", "type": "buil... type builtins.list
+   first_diff E0a~E1: {"a": 1.25, "b": "1.25", "column": null, "kind": "cell", "row": 0}
+   first_diff E0a~E2: {"a": 1.25, "b": "1.25", "column": null, "kind": "cell", "row": 0}
+   first_diff E0pa~E3: {"a": 1.25, "b": "1.25", "column": null, "kind": "cell", "row": 0}
+   first_diff E0pa~E4: {"a": 1.25, "b": "1.25", "column": null, "kind": "cell", "row": 0}
+==================== D01
+statuses: {"E0a": "ok", "E0b": "ok", "E0pa": "ok", "E1": "ok", "E2": "ok", "E3": "ok", "E4": "ok"}
+classes: {"E0a~E0b": "IDENTICAL", "E0a~E1": "VALUE_DRIFT", "E0a~E2": "VALUE_DRIFT", "E0pa~E3": "VALUE_DRIFT", "E0pa~E4": "VALUE_DRIFT"} magnitude: {"E0a~E0b": null, "E0a~E1": "SUBSTANTIVE", "E0a~E2": "SUBSTANTIVE", "E0pa~E3": "SUBSTANTIVE", "E0pa~E4": "SUBSTANTIVE"}
+E0a ok
+   result: {"columns": ["user_id", "signup_unix"], "columns_names": [null], "data": [[1, 2, 3, 4], [1705276800, 1709337600, 1753833600, 1699660800]], "index": [0, 1, 2, 3], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "object", "dtypes": ["int64", "int64"], "index": "int64", "k": "df"} type pandas.core.frame.DataFrame
+E0b ok
+E1 ok
+   result: {"columns": ["user_id", "signup_unix"], "columns_names": [null], "data": [[1, 2, 3, 4], [1705276, 1709337, 1753833, 1699660]], "index": [0, 1, 2, 3], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "str", "dtypes": ["int64", "int64"], "index": "int64", "k": "df"} type pandas.DataFrame
+E2 ok
+   result: {"columns": ["user_id", "signup_unix"], "columns_names": [null], "data": [[1, 2, 3, 4], [1705276, 1709337, 1753833, 1699660]], "index": [0, 1, 2, 3], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "str", "dtypes": ["int64", "int64"], "index": "int64", "k": "df"} type pandas.DataFrame
+E0pa ok
+   result: {"columns": ["user_id", "signup_unix"], "columns_names": [null], "data": [[1, 2, 3, 4], [1705276800, 1709337600, 1753833600, 1699660800]], "index": [0, 1, 2, 3], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "object", "dtypes": ["int64", "int64"], "index": "int64", "k": "df"} type pandas.core.frame.DataFrame
+E3 ok
+E4 ok
+   result: {"columns": ["user_id", "signup_unix"], "columns_names": [null], "data": [[1, 2, 3, 4], [1705276, 1709337, 1753833, 1699660]], "index": [0, 1, 2, 3], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "str", "dtypes": ["int64", "int64"], "index": "int64", "k": "df"} type pandas.DataFrame
+   first_diff E0a~E1: {"a": 1705276800, "b": 1705276, "column": "signup_unix", "kind": "cell", "row": 0}
+   first_diff E0a~E2: {"a": 1705276800, "b": 1705276, "column": "signup_unix", "kind": "cell", "row": 0}
+   first_diff E0pa~E3: {"a": 1705276800, "b": 1705276, "column": "signup_unix", "kind": "cell", "row": 0}
+   first_diff E0pa~E4: {"a": 1705276800, "b": 1705276, "column": "signup_unix", "kind": "cell", "row": 0}
+==================== D02
+statuses: {"E0a": "ok", "E0b": "ok", "E0pa": "ok", "E1": "ok", "E2": "ok", "E3": "ok", "E4": "ok"}
+classes: {"E0a~E0b": "IDENTICAL", "E0a~E1": "VALUE_DRIFT", "E0a~E2": "VALUE_DRIFT", "E0pa~E3": "VALUE_DRIFT", "E0pa~E4": "VALUE_DRIFT"} magnitude: {"E0a~E0b": null, "E0a~E1": "SUBSTANTIVE", "E0a~E2": "SUBSTANTIVE", "E0pa~E3": "SUBSTANTIVE", "E0pa~E4": "SUBSTANTIVE"}
+E0a ok
+   result: {"data": [1700000000000000000, 1700003600000000000, 1710000000000000000, 1720000123000000000], "index": [0, 1, 2, 3], "index_names": [null], "k": "s", "name": "ts"}
+   dtypes: {"dtype": "int64", "index": "int64", "k": "s"} type pandas.core.series.Series
+E0b ok
+E1 ok
+   result: {"data": [1700000000000000, 1700003600000000, 1710000000000000, 1720000123000000], "index": [0, 1, 2, 3], "index_names": [null], "k": "s", "name": "ts"}
+   dtypes: {"dtype": "int64", "index": "int64", "k": "s"} type pandas.Series
+E2 ok
+   result: {"data": [1700000000, 1700003600, 1710000000, 1720000123], "index": [0, 1, 2, 3], "index_names": [null], "k": "s", "name": "ts"}
+   dtypes: {"dtype": "int64", "index": "int64", "k": "s"} type pandas.Series
+E0pa ok
+   result: {"data": [1700000000000000000, 1700003600000000000, 1710000000000000000, 1720000123000000000], "index": [0, 1, 2, 3], "index_names": [null], "k": "s", "name": "ts"}
+   dtypes: {"dtype": "int64", "index": "int64", "k": "s"} type pandas.core.series.Series
+E3 ok
+E4 ok
+   result: {"data": [1700000000, 1700003600, 1710000000, 1720000123], "index": [0, 1, 2, 3], "index_names": [null], "k": "s", "name": "ts"}
+   dtypes: {"dtype": "int64", "index": "int64", "k": "s"} type pandas.Series
+   first_diff E0a~E1: {"a": 1700000000000000000, "b": 1700000000000000, "column": "ts", "kind": "cell", "row": 0}
+   first_diff E0a~E2: {"a": 1700000000000000000, "b": 1700000000, "column": "ts", "kind": "cell", "row": 0}
+   first_diff E0pa~E3: {"a": 1700000000000000000, "b": 1700000000000000, "column": "ts", "kind": "cell", "row": 0}
+   first_diff E0pa~E4: {"a": 1700000000000000000, "b": 1700000000, "column": "ts", "kind": "cell", "row": 0}
+==================== D03
+statuses: {"E0a": "ok", "E0b": "ok", "E0pa": "ok", "E1": "ok", "E2": "ok", "E3": "ok", "E4": "ok"}
+classes: {"E0a~E0b": "IDENTICAL", "E0a~E1": "VALUE_DRIFT", "E0a~E2": "VALUE_DRIFT", "E0pa~E3": "VALUE_DRIFT", "E0pa~E4": "VALUE_DRIFT"} magnitude: {"E0a~E0b": null, "E0a~E1": "SUBSTANTIVE", "E0a~E2": "SUBSTANTIVE", "E0pa~E3": "SUBSTANTIVE", "E0pa~E4": "SUBSTANTIVE"}
+E0a ok
+   result: {"data": [15.5, 9.5, 9.0], "index": ["TS:2025-01-31T23:59:59.999999999", "TS:2025-02-28T23:59:59.999999999", "TS:2025-03-31T23:59:59.999999999"], "index_names": ["month_end"], "k": "s", "name": "amount"}
+   dtypes: {"dtype": "float64", "index": "datetime64[ns]", "k": "s"} type pandas.core.series.Series
+E0b ok
+E1 ok
+   result: {"data": [15.5, 9.5, 9.0], "index": ["TS:2025-01-31T23:59:59.999999", "TS:2025-02-28T23:59:59.999999", "TS:2025-03-31T23:59:59.999999"], "index_names": ["month_end"], "k": "s", "name": "amount"}
+   dtypes: {"dtype": "float64", "index": "datetime64[us]", "k": "s"} type pandas.Series
+E2 ok
+   result: {"data": [15.5, 9.5, 9.0], "index": ["TS:2025-01-31T23:59:59.999999", "TS:2025-02-28T23:59:59.999999", "TS:2025-03-31T23:59:59.999999"], "index_names": ["month_end"], "k": "s", "name": "amount"}
+   dtypes: {"dtype": "float64", "index": "datetime64[us]", "k": "s"} type pandas.Series
+E0pa ok
+   result: {"data": [15.5, 9.5, 9.0], "index": ["TS:2025-01-31T23:59:59.999999999", "TS:2025-02-28T23:59:59.999999999", "TS:2025-03-31T23:59:59.999999999"], "index_names": ["month_end"], "k": "s", "name": "amount"}
+   dtypes: {"dtype": "float64", "index": "datetime64[ns]", "k": "s"} type pandas.core.series.Series
+E3 ok
+E4 ok
+   result: {"data": [15.5, 9.5, 9.0], "index": ["TS:2025-01-31T23:59:59.999999", "TS:2025-02-28T23:59:59.999999", "TS:2025-03-31T23:59:59.999999"], "index_names": ["month_end"], "k": "s", "name": "amount"}
+   dtypes: {"dtype": "float64", "index": "datetime64[us]", "k": "s"} type pandas.Series
+   first_diff E0a~E1: {"a": ["TS:2025-01-31T23:59:59.999999999", "TS:2025-02-28T23:59:59.999999999", "TS:2025-03-31T23:59:59.999999999"], "b": ["TS:2025-01-31T23:59:59.999999", "TS:2025-02-28T23:59:59.999999", "TS:2025-03-31T23:59:59.999999"], "column": "<index>", "kind": "label", "row": null}
+   first_diff E0a~E2: {"a": ["TS:2025-01-31T23:59:59.999999999", "TS:2025-02-28T23:59:59.999999999", "TS:2025-03-31T23:59:59.999999999"], "b": ["TS:2025-01-31T23:59:59.999999", "TS:2025-02-28T23:59:59.999999", "TS:2025-03-31T23:59:59.999999"], "column": "<index>", "kind": "label", "row": null}
+   first_diff E0pa~E3: {"a": ["TS:2025-01-31T23:59:59.999999999", "TS:2025-02-28T23:59:59.999999999", "TS:2025-03-31T23:59:59.999999999"], "b": ["TS:2025-01-31T23:59:59.999999", "TS:2025-02-28T23:59:59.999999", "TS:2025-03-31T23:59:59.999999"], "column": "<index>", "kind": "label", "row": null}
+   first_diff E0pa~E4: {"a": ["TS:2025-01-31T23:59:59.999999999", "TS:2025-02-28T23:59:59.999999999", "TS:2025-03-31T23:59:59.999999999"], "b": ["TS:2025-01-31T23:59:59.999999", "TS:2025-02-28T23:59:59.999999", "TS:2025-03-31T23:59:59.999999"], "column": "<index>", "kind": "label", "row": null}
+==================== D04
+statuses: {"E0a": "ok", "E0b": "ok", "E0pa": "ok", "E1": "ok", "E2": "ok", "E3": "ok", "E4": "ok"}
+classes: {"E0a~E0b": "IDENTICAL", "E0a~E1": "VALUE_DRIFT", "E0a~E2": "VALUE_DRIFT", "E0pa~E3": "VALUE_DRIFT", "E0pa~E4": "VALUE_DRIFT"} magnitude: {"E0a~E0b": null, "E0a~E1": "SUBSTANTIVE", "E0a~E2": "SUBSTANTIVE", "E0pa~E3": "SUBSTANTIVE", "E0pa~E4": "SUBSTANTIVE"}
+E0a ok
+   result: {"data": [1746057600000000000, 1746144000000000000, 1746230400000000000, 1746316800000000000, 1746403200000000000, 1746489600000000000], "index": [0, 1, 2, 3, 4, 5], "index_names": [null], "k": "s", "name": "day_int"}
+   dtypes: {"dtype": "int64", "index": "int64", "k": "s"} type pandas.core.series.Series
+E0b ok
+E1 ok
+   result: {"data": [1746057600000000, 1746144000000000, 1746230400000000, 1746316800000000, 1746403200000000, 1746489600000000], "index": [0, 1, 2, 3, 4, 5], "index_names": [null], "k": "s", "name": "day_int"}
+   dtypes: {"dtype": "int64", "index": "int64", "k": "s"} type pandas.Series
+E2 ok
+   result: {"data": [1746057600000000, 1746144000000000, 1746230400000000, 1746316800000000, 1746403200000000, 1746489600000000], "index": [0, 1, 2, 3, 4, 5], "index_names": [null], "k": "s", "name": "day_int"}
+   dtypes: {"dtype": "int64", "index": "int64", "k": "s"} type pandas.Series
+E0pa ok
+   result: {"data": [1746057600000000000, 1746144000000000000, 1746230400000000000, 1746316800000000000, 1746403200000000000, 1746489600000000000], "index": [0, 1, 2, 3, 4, 5], "index_names": [null], "k": "s", "name": "day_int"}
+   dtypes: {"dtype": "int64", "index": "int64", "k": "s"} type pandas.core.series.Series
+E3 ok
+E4 ok
+   result: {"data": [1746057600000000, 1746144000000000, 1746230400000000, 1746316800000000, 1746403200000000, 1746489600000000], "index": [0, 1, 2, 3, 4, 5], "index_names": [null], "k": "s", "name": "day_int"}
+   dtypes: {"dtype": "int64", "index": "int64", "k": "s"} type pandas.Series
+   first_diff E0a~E1: {"a": 1746057600000000000, "b": 1746057600000000, "column": "day_int", "kind": "cell", "row": 0}
+   first_diff E0a~E2: {"a": 1746057600000000000, "b": 1746057600000000, "column": "day_int", "kind": "cell", "row": 0}
+   first_diff E0pa~E3: {"a": 1746057600000000000, "b": 1746057600000000, "column": "day_int", "kind": "cell", "row": 0}
+   first_diff E0pa~E4: {"a": 1746057600000000000, "b": 1746057600000000, "column": "day_int", "kind": "cell", "row": 0}
+==================== D05
+statuses: {"E0a": "ok", "E0b": "ok", "E0pa": "ok", "E1": "ok", "E2": "ok", "E3": "ok", "E4": "ok"}
+classes: {"E0a~E0b": "IDENTICAL", "E0a~E1": "IDENTICAL", "E0a~E2": "IDENTICAL", "E0pa~E3": "IDENTICAL", "E0pa~E4": "IDENTICAL"} magnitude: {"E0a~E0b": null, "E0a~E1": null, "E0a~E2": null, "E0pa~E3": null, "E0pa~E4": null}
+E0a ok
+   result: "US/Eastern"
+   dtypes: {"k": "scalar", "type": "builtins.str"} type builtins.str
+E0b ok
+E1 ok
+   result: "US/Eastern"
+   dtypes: {"k": "scalar", "type": "builtins.str"} type builtins.str
+E2 ok
+   result: "US/Eastern"
+   dtypes: {"k": "scalar", "type": "builtins.str"} type builtins.str
+E0pa ok
+   result: "US/Eastern"
+   dtypes: {"k": "scalar", "type": "builtins.str"} type builtins.str
+E3 ok
+E4 ok
+   result: "US/Eastern"
+   dtypes: {"k": "scalar", "type": "builtins.str"} type builtins.str
+==================== D05_b
+statuses: {"E0a": "ok", "E0b": "ok", "E0pa": "ok", "E1": "ok", "E2": "ok", "E3": "ok", "E4": "ok"}
+classes: {"E0a~E0b": "IDENTICAL", "E0a~E1": "VALUE_DRIFT", "E0a~E2": "VALUE_DRIFT", "E0pa~E3": "VALUE_DRIFT", "E0pa~E4": "VALUE_DRIFT"} magnitude: {"E0a~E0b": null, "E0a~E1": "SUBSTANTIVE", "E0a~E2": "SUBSTANTIVE", "E0pa~E3": "SUBSTANTIVE", "E0pa~E4": "SUBSTANTIVE"}
+E0a ok
+   result: {"columns": ["meeting_id", "reminder"], "columns_names": [null], "data": [[1, 2, 3], ["2025-03-09T09:00:00-05:00", "2025-03-13T14:30:00-04:00", "2025-11-02T10:15:00-04:00"]], "index": [0, 1, 2], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "object", "dtypes": ["int64", "object"], "index": "int64", "k": "df"} type pandas.core.frame.DataFrame
+E0b ok
+E1 ok
+   result: {"columns": ["meeting_id", "reminder"], "columns_names": [null], "data": [[1, 2, 3], ["2025-03-09T09:00:00-04:00", "2025-03-13T14:30:00-04:00", "2025-11-02T10:15:00-05:00"]], "index": [0, 1, 2], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "str", "dtypes": ["int64", "str"], "index": "int64", "k": "df"} type pandas.DataFrame
+E2 ok
+   result: {"columns": ["meeting_id", "reminder"], "columns_names": [null], "data": [[1, 2, 3], ["2025-03-09T09:00:00-04:00", "2025-03-13T14:30:00-04:00", "2025-11-02T10:15:00-05:00"]], "index": [0, 1, 2], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "str", "dtypes": ["int64", "str"], "index": "int64", "k": "df"} type pandas.DataFrame
+E0pa ok
+   result: {"columns": ["meeting_id", "reminder"], "columns_names": [null], "data": [[1, 2, 3], ["2025-03-09T09:00:00-05:00", "2025-03-13T14:30:00-04:00", "2025-11-02T10:15:00-04:00"]], "index": [0, 1, 2], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "object", "dtypes": ["int64", "object"], "index": "int64", "k": "df"} type pandas.core.frame.DataFrame
+E3 ok
+E4 ok
+   result: {"columns": ["meeting_id", "reminder"], "columns_names": [null], "data": [[1, 2, 3], ["2025-03-09T09:00:00-04:00", "2025-03-13T14:30:00-04:00", "2025-11-02T10:15:00-05:00"]], "index": [0, 1, 2], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "str", "dtypes": ["int64", "str"], "index": "int64", "k": "df"} type pandas.DataFrame
+   first_diff E0a~E1: {"a": "2025-03-09T09:00:00-05:00", "b": "2025-03-09T09:00:00-04:00", "column": "reminder", "kind": "cell", "row": 0}
+   first_diff E0a~E2: {"a": "2025-03-09T09:00:00-05:00", "b": "2025-03-09T09:00:00-04:00", "column": "reminder", "kind": "cell", "row": 0}
+   first_diff E0pa~E3: {"a": "2025-03-09T09:00:00-05:00", "b": "2025-03-09T09:00:00-04:00", "column": "reminder", "kind": "cell", "row": 0}
+   first_diff E0pa~E4: {"a": "2025-03-09T09:00:00-05:00", "b": "2025-03-09T09:00:00-04:00", "column": "reminder", "kind": "cell", "row": 0}
+==================== D06
+statuses: {"E0a": "ok", "E0b": "ok", "E0pa": "ok", "E1": "ok", "E2": "ok", "E3": "ok", "E4": "ok"}
+classes: {"E0a~E0b": "IDENTICAL", "E0a~E1": "VALUE_DRIFT", "E0a~E2": "VALUE_DRIFT", "E0pa~E3": "VALUE_DRIFT", "E0pa~E4": "VALUE_DRIFT"} magnitude: {"E0a~E0b": null, "E0a~E1": "SUBSTANTIVE", "E0a~E2": "SUBSTANTIVE", "E0pa~E3": "SUBSTANTIVE", "E0pa~E4": "SUBSTANTIVE"}
+E0a ok
+   result: {"columns": ["shift_id", "next_day_start"], "columns_names": [null], "data": [[1, 2, 3, 4, 5], ["TS:2025-03-08T08:00:00-05:00", "TS:2025-03-09T09:00:00-04:00", "TS:2025-03-10T08:00:00-04:00", "TS:2025-11-01T22:00:00-04:00", "TS:2025-11-02T21:00:00-05:00"]], "index": [0, 1, 2, 3, 4], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "object", "dtypes": ["int64", "datetime64[ns, US/Eastern]"], "index": "int64", "k": "df"} type pandas.core.frame.DataFrame
+E0b ok
+E1 ok
+   result: {"columns": ["shift_id", "next_day_start"], "columns_names": [null], "data": [[1, 2, 3, 4, 5], ["TS:2025-03-08T08:00:00-05:00", "TS:2025-03-09T08:00:00-04:00", "TS:2025-03-10T08:00:00-04:00", "TS:2025-11-01T22:00:00-04:00", "TS:2025-11-02T22:00:00-05:00"]], "index": [0, 1, 2, 3, 4], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "str", "dtypes": ["int64", "datetime64[us, US/Eastern]"], "index": "int64", "k": "df"} type pandas.DataFrame
+E2 ok
+   result: {"columns": ["shift_id", "next_day_start"], "columns_names": [null], "data": [[1, 2, 3, 4, 5], ["TS:2025-03-08T08:00:00-05:00", "TS:2025-03-09T08:00:00-04:00", "TS:2025-03-10T08:00:00-04:00", "TS:2025-11-01T22:00:00-04:00", "TS:2025-11-02T22:00:00-05:00"]], "index": [0, 1, 2, 3, 4], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "str", "dtypes": ["int64", "datetime64[us, US/Eastern]"], "index": "int64", "k": "df"} type pandas.DataFrame
+E0pa ok
+   result: {"columns": ["shift_id", "next_day_start"], "columns_names": [null], "data": [[1, 2, 3, 4, 5], ["TS:2025-03-08T08:00:00-05:00", "TS:2025-03-09T09:00:00-04:00", "TS:2025-03-10T08:00:00-04:00", "TS:2025-11-01T22:00:00-04:00", "TS:2025-11-02T21:00:00-05:00"]], "index": [0, 1, 2, 3, 4], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "object", "dtypes": ["int64", "datetime64[ns, US/Eastern]"], "index": "int64", "k": "df"} type pandas.core.frame.DataFrame
+E3 ok
+E4 ok
+   result: {"columns": ["shift_id", "next_day_start"], "columns_names": [null], "data": [[1, 2, 3, 4, 5], ["TS:2025-03-08T08:00:00-05:00", "TS:2025-03-09T08:00:00-04:00", "TS:2025-03-10T08:00:00-04:00", "TS:2025-11-01T22:00:00-04:00", "TS:2025-11-02T22:00:00-05:00"]], "index": [0, 1, 2, 3, 4], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "str", "dtypes": ["int64", "datetime64[us, US/Eastern]"], "index": "int64", "k": "df"} type pandas.DataFrame
+   first_diff E0a~E1: {"a": "TS:2025-03-09T09:00:00-04:00", "b": "TS:2025-03-09T08:00:00-04:00", "column": "next_day_start", "kind": "cell", "row": 1}
+   first_diff E0a~E2: {"a": "TS:2025-03-09T09:00:00-04:00", "b": "TS:2025-03-09T08:00:00-04:00", "column": "next_day_start", "kind": "cell", "row": 1}
+   first_diff E0pa~E3: {"a": "TS:2025-03-09T09:00:00-04:00", "b": "TS:2025-03-09T08:00:00-04:00", "column": "next_day_start", "kind": "cell", "row": 1}
+   first_diff E0pa~E4: {"a": "TS:2025-03-09T09:00:00-04:00", "b": "TS:2025-03-09T08:00:00-04:00", "column": "next_day_start", "kind": "cell", "row": 1}
+==================== D07
+statuses: {"E0a": "ok", "E0b": "ok", "E0pa": "ok", "E1": "error", "E2": "error", "E3": "error", "E4": "error"}
+classes: {"E0a~E0b": "IDENTICAL", "E0a~E1": "LOUD", "E0a~E2": "LOUD", "E0pa~E3": "LOUD", "E0pa~E4": "LOUD"} magnitude: {"E0a~E0b": null, "E0a~E1": null, "E0a~E2": null, "E0pa~E3": null, "E0pa~E4": null}
+E0a ok
+   W[FutureWarning|prereg=True|pilot=True] builtins line 6: The behavior of 'to_datetime' with 'unit' when parsing strings is deprecated. In a future version, strings will be parsed as datetime strings, matching the behavior without a 'unit'. To retain the old behavior, explicitl
+   result: {"columns": ["event_id", "ts"], "columns_names": [null], "data": [["E001", "E002", "E003"], ["TS:2023-11-14T22:13:20", "TS:2023-11-15T22:13:20", "TS:2024-03-09T16:00:00"]], "index": [0, 1, 2], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "object", "dtypes": ["object", "datetime64[ns]"], "index": "int64", "k": "df"} type pandas.core.frame.DataFrame
+E0b ok
+   W[FutureWarning|prereg=True|pilot=True] builtins line 6: The behavior of 'to_datetime' with 'unit' when parsing strings is deprecated. In a future version, strings will be parsed as datetime strings, matching the behavior without a 'unit'. To retain the old behavior, explicitl
+E1 error EXC DateParseError: year 1700000000 is out of range: 1700000000 (line 6)
+E2 error EXC DateParseError: year 1700000000 is out of range: 1700000000 (line 6)
+E0pa ok
+   W[FutureWarning|prereg=True|pilot=True] builtins line 6: The behavior of 'to_datetime' with 'unit' when parsing strings is deprecated. In a future version, strings will be parsed as datetime strings, matching the behavior without a 'unit'. To retain the old behavior, explicitl
+   result: {"columns": ["event_id", "ts"], "columns_names": [null], "data": [["E001", "E002", "E003"], ["TS:2023-11-14T22:13:20", "TS:2023-11-15T22:13:20", "TS:2024-03-09T16:00:00"]], "index": [0, 1, 2], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "object", "dtypes": ["object", "datetime64[ns]"], "index": "int64", "k": "df"} type pandas.core.frame.DataFrame
+E3 error EXC DateParseError: year 1700000000 is out of range: 1700000000 (line 6)
+E4 error EXC DateParseError: year 1700000000 is out of range: 1700000000 (line 6)
+   first_diff E0a~E1: {"a": "ok", "b": "error", "column": null, "kind": "status", "row": null}
+   first_diff E0a~E2: {"a": "ok", "b": "error", "column": null, "kind": "status", "row": null}
+   first_diff E0pa~E3: {"a": "ok", "b": "error", "column": null, "kind": "status", "row": null}
+   first_diff E0pa~E4: {"a": "ok", "b": "error", "column": null, "kind": "status", "row": null}
+==================== D07_b
+statuses: {"E0a": "ok", "E0b": "ok", "E0pa": "ok", "E1": "ok", "E2": "ok", "E3": "ok", "E4": "ok"}
+classes: {"E0a~E0b": "IDENTICAL", "E0a~E1": "VALUE_DRIFT", "E0a~E2": "VALUE_DRIFT", "E0pa~E3": "VALUE_DRIFT", "E0pa~E4": "VALUE_DRIFT"} magnitude: {"E0a~E0b": null, "E0a~E1": "SUBSTANTIVE", "E0a~E2": "SUBSTANTIVE", "E0pa~E3": "SUBSTANTIVE", "E0pa~E4": "SUBSTANTIVE"}
+E0a ok
+   W[FutureWarning|prereg=True|pilot=True] builtins line 6: The behavior of 'to_datetime' with 'unit' when parsing strings is deprecated. In a future version, strings will be parsed as datetime strings, matching the behavior without a 'unit'. To retain the old behavior, explicitl
+   result: {"columns": ["event_id", "ts"], "columns_names": [null], "data": [["E001", "E002", "E003"], ["TS:2023-11-14T22:13:20", "TS:2023-11-15T22:13:20", "TS:2024-03-09T16:00:00"]], "index": [0, 1, 2], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "object", "dtypes": ["object", "datetime64[ns]"], "index": "int64", "k": "df"} type pandas.core.frame.DataFrame
+E0b ok
+   W[FutureWarning|prereg=True|pilot=True] builtins line 6: The behavior of 'to_datetime' with 'unit' when parsing strings is deprecated. In a future version, strings will be parsed as datetime strings, matching the behavior without a 'unit'. To retain the old behavior, explicitl
+E1 ok
+   result: {"columns": ["event_id", "ts"], "columns_names": [null], "data": [["E001", "E002", "E003"], [null, null, null]], "index": [0, 1, 2], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "str", "dtypes": ["str", "datetime64[s]"], "index": "int64", "k": "df"} type pandas.DataFrame
+E2 ok
+   result: {"columns": ["event_id", "ts"], "columns_names": [null], "data": [["E001", "E002", "E003"], [null, null, null]], "index": [0, 1, 2], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "str", "dtypes": ["str", "datetime64[s]"], "index": "int64", "k": "df"} type pandas.DataFrame
+E0pa ok
+   W[FutureWarning|prereg=True|pilot=True] builtins line 6: The behavior of 'to_datetime' with 'unit' when parsing strings is deprecated. In a future version, strings will be parsed as datetime strings, matching the behavior without a 'unit'. To retain the old behavior, explicitl
+   result: {"columns": ["event_id", "ts"], "columns_names": [null], "data": [["E001", "E002", "E003"], ["TS:2023-11-14T22:13:20", "TS:2023-11-15T22:13:20", "TS:2024-03-09T16:00:00"]], "index": [0, 1, 2], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "object", "dtypes": ["object", "datetime64[ns]"], "index": "int64", "k": "df"} type pandas.core.frame.DataFrame
+E3 ok
+E4 ok
+   result: {"columns": ["event_id", "ts"], "columns_names": [null], "data": [["E001", "E002", "E003"], [null, null, null]], "index": [0, 1, 2], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "str", "dtypes": ["str", "datetime64[s]"], "index": "int64", "k": "df"} type pandas.DataFrame
+   first_diff E0a~E1: {"a": "TS:2023-11-14T22:13:20", "b": null, "column": "ts", "kind": "null", "row": 0}
+   first_diff E0a~E2: {"a": "TS:2023-11-14T22:13:20", "b": null, "column": "ts", "kind": "null", "row": 0}
+   first_diff E0pa~E3: {"a": "TS:2023-11-14T22:13:20", "b": null, "column": "ts", "kind": "null", "row": 0}
+   first_diff E0pa~E4: {"a": "TS:2023-11-14T22:13:20", "b": null, "column": "ts", "kind": "null", "row": 0}
+==================== D08
+statuses: {"E0a": "ok", "E0b": "ok", "E0pa": "ok", "E1": "ok", "E2": "ok", "E3": "ok", "E4": "ok"}
+classes: {"E0a~E0b": "IDENTICAL", "E0a~E1": "VALUE_DRIFT", "E0a~E2": "DTYPE_ONLY", "E0pa~E3": "VALUE_DRIFT", "E0pa~E4": "DTYPE_ONLY"} magnitude: {"E0a~E0b": null, "E0a~E1": "SUBSTANTIVE", "E0a~E2": null, "E0pa~E3": "SUBSTANTIVE", "E0pa~E4": null}
+E0a ok
+   result: {"columns": ["order_id", "order_date", "ship_date", "amount"], "columns_names": [null], "data": [[1, 2, 3], ["2025-01", "2025-02", "2025-03"], ["2025-01", "2025-02", "2025-03"], [10.0, 5.5, 7.0]], "index": [0, 1, 2], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "object", "dtypes": ["int64", "object", "object", "float64"], "index": "int64", "k": "df"} type pandas.core.frame.DataFrame
+E0b ok
+E1 ok
+   result: {"columns": ["order_id", "order_date", "ship_date", "amount"], "columns_names": [null], "data": [[1, 2, 3], ["TS:2025-01-05T00:00:00", "TS:2025-02-11T00:00:00", "TS:2025-03-20T00:00:00"], ["TS:2025-01-07T00:00:00", "TS:2025-02-15T00:00:00", "TS:2025-03-21T00:00:00"], [10.0, 5.5, 7.0]], "index": [0, 1, 2], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "str", "dtypes": ["int64", "datetime64[us]", "datetime64[us]", "float64"], "index": "int64", "k": "df"} type pandas.DataFrame
+E2 ok
+   result: {"columns": ["order_id", "order_date", "ship_date", "amount"], "columns_names": [null], "data": [[1, 2, 3], ["2025-01", "2025-02", "2025-03"], ["2025-01", "2025-02", "2025-03"], [10.0, 5.5, 7.0]], "index": [0, 1, 2], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "str", "dtypes": ["int64", "str", "str", "float64"], "index": "int64", "k": "df"} type pandas.DataFrame
+E0pa ok
+   result: {"columns": ["order_id", "order_date", "ship_date", "amount"], "columns_names": [null], "data": [[1, 2, 3], ["2025-01", "2025-02", "2025-03"], ["2025-01", "2025-02", "2025-03"], [10.0, 5.5, 7.0]], "index": [0, 1, 2], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "object", "dtypes": ["int64", "object", "object", "float64"], "index": "int64", "k": "df"} type pandas.core.frame.DataFrame
+E3 ok
+E4 ok
+   result: {"columns": ["order_id", "order_date", "ship_date", "amount"], "columns_names": [null], "data": [[1, 2, 3], ["2025-01", "2025-02", "2025-03"], ["2025-01", "2025-02", "2025-03"], [10.0, 5.5, 7.0]], "index": [0, 1, 2], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "str", "dtypes": ["int64", "str", "str", "float64"], "index": "int64", "k": "df"} type pandas.DataFrame
+   first_diff E0a~E1: {"a": "2025-01", "b": "TS:2025-01-05T00:00:00", "column": "order_date", "kind": "cell", "row": 0}
+   first_diff E0pa~E3: {"a": "2025-01", "b": "TS:2025-01-05T00:00:00", "column": "order_date", "kind": "cell", "row": 0}
+==================== D09
+statuses: {"E0a": "ok", "E0b": "ok", "E0pa": "ok", "E1": "ok", "E2": "ok", "E3": "ok", "E4": "ok"}
+classes: {"E0a~E0b": "IDENTICAL", "E0a~E1": "VALUE_DRIFT", "E0a~E2": "IDENTICAL", "E0pa~E3": "VALUE_DRIFT", "E0pa~E4": "IDENTICAL"} magnitude: {"E0a~E0b": null, "E0a~E1": "SUBSTANTIVE", "E0a~E2": null, "E0pa~E3": "SUBSTANTIVE", "E0pa~E4": null}
+E0a ok
+   result: "QS-OCT"
+   dtypes: {"k": "scalar", "type": "builtins.str"} type builtins.str
+E0b ok
+E1 ok
+   W[Pandas4Warning|prereg=True|pilot=True] pandas.errors line 6: A future version of pandas will return a BaseOffset object instead of a string from infer_freq. Use pd.set_option('future.infer_freq_returns_offset', True) to get the future behavior, or set to False to keep the old beha
+   result: "QS-JAN"
+   dtypes: {"k": "scalar", "type": "builtins.str"} type builtins.str
+E2 ok
+   result: "QS-OCT"
+   dtypes: {"k": "scalar", "type": "builtins.str"} type builtins.str
+E0pa ok
+   result: "QS-OCT"
+   dtypes: {"k": "scalar", "type": "builtins.str"} type builtins.str
+E3 ok
+   W[Pandas4Warning|prereg=True|pilot=True] pandas.errors line 6: A future version of pandas will return a BaseOffset object instead of a string from infer_freq. Use pd.set_option('future.infer_freq_returns_offset', True) to get the future behavior, or set to False to keep the old beha
+E4 ok
+   result: "QS-OCT"
+   dtypes: {"k": "scalar", "type": "builtins.str"} type builtins.str
+   first_diff E0a~E1: {"a": "QS-OCT", "b": "QS-JAN", "column": null, "kind": "cell", "row": 0}
+   first_diff E0pa~E3: {"a": "QS-OCT", "b": "QS-JAN", "column": null, "kind": "cell", "row": 0}
+==================== D10
+statuses: {"E0a": "ok", "E0b": "ok", "E0pa": "ok", "E1": "ok", "E2": "ok", "E3": "ok", "E4": "ok"}
+classes: {"E0a~E0b": "IDENTICAL", "E0a~E1": "VALUE_DRIFT", "E0a~E2": "IDENTICAL", "E0pa~E3": "VALUE_DRIFT", "E0pa~E4": "IDENTICAL"} magnitude: {"E0a~E0b": null, "E0a~E1": "SUBSTANTIVE", "E0a~E2": null, "E0pa~E3": "SUBSTANTIVE", "E0pa~E4": null}
+E0a ok
+   W[FutureWarning|prereg=True|pilot=True] builtins line 8: The behavior of DatetimeProperties.to_pydatetime is deprecated, in a future version this will return a Series containing python datetime objects instead of an ndarray. To retain the old behavior, call `np.array` on the r
+   result: "TS:2025-05-30T23:59:00"
+   dtypes: {"k": "scalar", "type": "datetime.datetime"} type datetime.datetime
+E0b ok
+   W[FutureWarning|prereg=True|pilot=True] builtins line 8: The behavior of DatetimeProperties.to_pydatetime is deprecated, in a future version this will return a Series containing python datetime objects instead of an ndarray. To retain the old behavior, call `np.array` on the r
+E1 ok
+   result: "TS:2025-06-03T10:00:00"
+   dtypes: {"k": "scalar", "type": "datetime.datetime"} type datetime.datetime
+E2 ok
+   result: "TS:2025-05-30T23:59:00"
+   dtypes: {"k": "scalar", "type": "datetime.datetime"} type datetime.datetime
+E0pa ok
+   W[FutureWarning|prereg=True|pilot=True] builtins line 8: The behavior of DatetimeProperties.to_pydatetime is deprecated, in a future version this will return a Series containing python datetime objects instead of an ndarray. To retain the old behavior, call `np.array` on the r
+   result: "TS:2025-05-30T23:59:00"
+   dtypes: {"k": "scalar", "type": "datetime.datetime"} type datetime.datetime
+E3 ok
+E4 ok
+   result: "TS:2025-05-30T23:59:00"
+   dtypes: {"k": "scalar", "type": "datetime.datetime"} type datetime.datetime
+   first_diff E0a~E1: {"a": "TS:2025-05-30T23:59:00", "b": "TS:2025-06-03T10:00:00", "column": null, "kind": "cell", "row": 0}
+   first_diff E0pa~E3: {"a": "TS:2025-05-30T23:59:00", "b": "TS:2025-06-03T10:00:00", "column": null, "kind": "cell", "row": 0}
+==================== C01
+statuses: {"E0a": "ok", "E0b": "ok", "E0pa": "ok", "E1": "ok", "E2": "ok", "E3": "ok", "E4": "ok"}
+classes: {"E0a~E0b": "IDENTICAL", "E0a~E1": "VALUE_DRIFT", "E0a~E2": "VALUE_DRIFT", "E0pa~E3": "VALUE_DRIFT", "E0pa~E4": "VALUE_DRIFT"} magnitude: {"E0a~E0b": null, "E0a~E1": "SUBSTANTIVE", "E0a~E2": "SUBSTANTIVE", "E0pa~E3": "SUBSTANTIVE", "E0pa~E4": "SUBSTANTIVE"}
+E0a ok
+   W[FutureWarning|prereg=True|pilot=True] builtins line 6: ChainedAssignmentError: behaviour will change in pandas 3.0! You are setting values through chained assignment. Currently this works in certain cases, but when using Copy-on-Write (which will become the default behaviour
+   W[SettingWithCopyWarning|prereg=True|pilot=True] pandas.errors line 6:  A value is trying to be set on a copy of a slice from a DataFrame  See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+   result: {"columns": ["order_id", "status", "amount"], "columns_names": [null], "data": [[1, 2, 3, 4, 5], ["paid", "cancelled", "paid", "cancelled", "paid"], [10.0, 0.0, 7.5, 0.0, 12.0]], "index": [0, 1, 2, 3, 4], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "object", "dtypes": ["int64", "object", "float64"], "index": "int64", "k": "df"} type pandas.core.frame.DataFrame
+E0b ok
+   W[FutureWarning|prereg=True|pilot=True] builtins line 6: ChainedAssignmentError: behaviour will change in pandas 3.0! You are setting values through chained assignment. Currently this works in certain cases, but when using Copy-on-Write (which will become the default behaviour
+   W[SettingWithCopyWarning|prereg=True|pilot=True] pandas.errors line 6:  A value is trying to be set on a copy of a slice from a DataFrame  See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+E1 ok
+   W[ChainedAssignmentError|prereg=True|pilot=True] pandas.errors line 6: A value is being set on a copy of a DataFrame or Series through chained assignment. Such chained assignment never works to update the original DataFrame or Series, because the intermediate object on which we are setting 
+   result: {"columns": ["order_id", "status", "amount"], "columns_names": [null], "data": [[1, 2, 3, 4, 5], ["paid", "cancelled", "paid", "cancelled", "paid"], [10.0, 20.0, 7.5, 3.0, 12.0]], "index": [0, 1, 2, 3, 4], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "str", "dtypes": ["int64", "str", "float64"], "index": "int64", "k": "df"} type pandas.DataFrame
+E2 ok
+   W[ChainedAssignmentError|prereg=True|pilot=True] pandas.errors line 6: A value is being set on a copy of a DataFrame or Series through chained assignment. Such chained assignment never works to update the original DataFrame or Series, because the intermediate object on which we are setting 
+   result: {"columns": ["order_id", "status", "amount"], "columns_names": [null], "data": [[1, 2, 3, 4, 5], ["paid", "cancelled", "paid", "cancelled", "paid"], [10.0, 20.0, 7.5, 3.0, 12.0]], "index": [0, 1, 2, 3, 4], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "str", "dtypes": ["int64", "str", "float64"], "index": "int64", "k": "df"} type pandas.DataFrame
+E0pa ok
+   W[FutureWarning|prereg=True|pilot=True] builtins line 6: ChainedAssignmentError: behaviour will change in pandas 3.0! You are setting values through chained assignment. Currently this works in certain cases, but when using Copy-on-Write (which will become the default behaviour
+   W[SettingWithCopyWarning|prereg=True|pilot=True] pandas.errors line 6:  A value is trying to be set on a copy of a slice from a DataFrame  See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+   result: {"columns": ["order_id", "status", "amount"], "columns_names": [null], "data": [[1, 2, 3, 4, 5], ["paid", "cancelled", "paid", "cancelled", "paid"], [10.0, 0.0, 7.5, 0.0, 12.0]], "index": [0, 1, 2, 3, 4], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "object", "dtypes": ["int64", "object", "float64"], "index": "int64", "k": "df"} type pandas.core.frame.DataFrame
+E3 ok
+   W[ChainedAssignmentError|prereg=True|pilot=True] pandas.errors line 6: A value is being set on a copy of a DataFrame or Series through chained assignment. Such chained assignment never works to update the original DataFrame or Series, because the intermediate object on which we are setting 
+E4 ok
+   W[ChainedAssignmentError|prereg=True|pilot=True] pandas.errors line 6: A value is being set on a copy of a DataFrame or Series through chained assignment. Such chained assignment never works to update the original DataFrame or Series, because the intermediate object on which we are setting 
+   result: {"columns": ["order_id", "status", "amount"], "columns_names": [null], "data": [[1, 2, 3, 4, 5], ["paid", "cancelled", "paid", "cancelled", "paid"], [10.0, 20.0, 7.5, 3.0, 12.0]], "index": [0, 1, 2, 3, 4], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "str", "dtypes": ["int64", "str", "float64"], "index": "int64", "k": "df"} type pandas.DataFrame
+   first_diff E0a~E1: {"a": 0.0, "b": 20.0, "column": "amount", "kind": "cell", "row": 1}
+   first_diff E0a~E2: {"a": 0.0, "b": 20.0, "column": "amount", "kind": "cell", "row": 1}
+   first_diff E0pa~E3: {"a": 0.0, "b": 20.0, "column": "amount", "kind": "cell", "row": 1}
+   first_diff E0pa~E4: {"a": 0.0, "b": 20.0, "column": "amount", "kind": "cell", "row": 1}
+==================== C02
+statuses: {"E0a": "ok", "E0b": "ok", "E0pa": "ok", "E1": "ok", "E2": "ok", "E3": "ok", "E4": "ok"}
+classes: {"E0a~E0b": "IDENTICAL", "E0a~E1": "VALUE_DRIFT", "E0a~E2": "VALUE_DRIFT", "E0pa~E3": "VALUE_DRIFT", "E0pa~E4": "VALUE_DRIFT"} magnitude: {"E0a~E0b": null, "E0a~E1": "SUBSTANTIVE", "E0a~E2": "SUBSTANTIVE", "E0pa~E3": "SUBSTANTIVE", "E0pa~E4": "SUBSTANTIVE"}
+E0a ok
+   W[FutureWarning|prereg=True|pilot=True] builtins line 6: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method. The behavior will change in pandas 3.0. This inplace method will never work because the intermediate obje
+   result: {"columns": ["patient_id", "age", "ward"], "columns_names": [null], "data": [[1, 2, 3, 4, 5], [34.0, 47.0, 51.0, 47.0, 47.0], ["A", "B", "A", "C", "B"]], "index": [0, 1, 2, 3, 4], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "object", "dtypes": ["int64", "float64", "object"], "index": "int64", "k": "df"} type pandas.core.frame.DataFrame
+E0b ok
+   W[FutureWarning|prereg=True|pilot=True] builtins line 6: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method. The behavior will change in pandas 3.0. This inplace method will never work because the intermediate obje
+E1 ok
+   W[ChainedAssignmentError|prereg=True|pilot=True] pandas.errors line 6: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method. Such inplace method never works to update the original DataFrame or Series, because the intermediate object on w
+   result: {"columns": ["patient_id", "age", "ward"], "columns_names": [null], "data": [[1, 2, 3, 4, 5], [34.0, null, 51.0, null, 47.0], ["A", "B", "A", "C", "B"]], "index": [0, 1, 2, 3, 4], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "str", "dtypes": ["int64", "float64", "str"], "index": "int64", "k": "df"} type pandas.DataFrame
+E2 ok
+   W[ChainedAssignmentError|prereg=True|pilot=True] pandas.errors line 6: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method. Such inplace method never works to update the original DataFrame or Series, because the intermediate object on w
+   result: {"columns": ["patient_id", "age", "ward"], "columns_names": [null], "data": [[1, 2, 3, 4, 5], [34.0, null, 51.0, null, 47.0], ["A", "B", "A", "C", "B"]], "index": [0, 1, 2, 3, 4], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "str", "dtypes": ["int64", "float64", "str"], "index": "int64", "k": "df"} type pandas.DataFrame
+E0pa ok
+   W[FutureWarning|prereg=True|pilot=True] builtins line 6: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method. The behavior will change in pandas 3.0. This inplace method will never work because the intermediate obje
+   result: {"columns": ["patient_id", "age", "ward"], "columns_names": [null], "data": [[1, 2, 3, 4, 5], [34.0, 47.0, 51.0, 47.0, 47.0], ["A", "B", "A", "C", "B"]], "index": [0, 1, 2, 3, 4], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "object", "dtypes": ["int64", "float64", "object"], "index": "int64", "k": "df"} type pandas.core.frame.DataFrame
+E3 ok
+   W[ChainedAssignmentError|prereg=True|pilot=True] pandas.errors line 6: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method. Such inplace method never works to update the original DataFrame or Series, because the intermediate object on w
+E4 ok
+   W[ChainedAssignmentError|prereg=True|pilot=True] pandas.errors line 6: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method. Such inplace method never works to update the original DataFrame or Series, because the intermediate object on w
+   result: {"columns": ["patient_id", "age", "ward"], "columns_names": [null], "data": [[1, 2, 3, 4, 5], [34.0, null, 51.0, null, 47.0], ["A", "B", "A", "C", "B"]], "index": [0, 1, 2, 3, 4], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "str", "dtypes": ["int64", "float64", "str"], "index": "int64", "k": "df"} type pandas.DataFrame
+   first_diff E0a~E1: {"a": 47.0, "b": null, "column": "age", "kind": "null", "row": 1}
+   first_diff E0a~E2: {"a": 47.0, "b": null, "column": "age", "kind": "null", "row": 1}
+   first_diff E0pa~E3: {"a": 47.0, "b": null, "column": "age", "kind": "null", "row": 1}
+   first_diff E0pa~E4: {"a": 47.0, "b": null, "column": "age", "kind": "null", "row": 1}
+==================== C03
+statuses: {"E0a": "ok", "E0b": "ok", "E0pa": "ok", "E1": "ok", "E2": "ok", "E3": "ok", "E4": "ok"}
+classes: {"E0a~E0b": "IDENTICAL", "E0a~E1": "VALUE_DRIFT", "E0a~E2": "VALUE_DRIFT", "E0pa~E3": "VALUE_DRIFT", "E0pa~E4": "VALUE_DRIFT"} magnitude: {"E0a~E0b": null, "E0a~E1": "SUBSTANTIVE", "E0a~E2": "SUBSTANTIVE", "E0pa~E3": "SUBSTANTIVE", "E0pa~E4": "SUBSTANTIVE"}
+E0a ok
+   W[SettingWithCopyWarning|prereg=True|pilot=True] pandas.errors line 7:  A value is trying to be set on a copy of a slice from a DataFrame  See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+   result: 21.5
+   dtypes: {"k": "scalar", "type": "numpy.float64"} type numpy.float64
+E0b ok
+   W[SettingWithCopyWarning|prereg=True|pilot=True] pandas.errors line 7:  A value is trying to be set on a copy of a slice from a DataFrame  See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+E1 ok
+   result: 14.0
+   dtypes: {"k": "scalar", "type": "numpy.float64"} type numpy.float64
+E2 ok
+   result: 14.0
+   dtypes: {"k": "scalar", "type": "numpy.float64"} type numpy.float64
+E0pa ok
+   W[SettingWithCopyWarning|prereg=True|pilot=True] pandas.errors line 7:  A value is trying to be set on a copy of a slice from a DataFrame  See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+   result: 21.5
+   dtypes: {"k": "scalar", "type": "numpy.float64"} type numpy.float64
+E3 ok
+E4 ok
+   result: 14.0
+   dtypes: {"k": "scalar", "type": "numpy.float64"} type numpy.float64
+   first_diff E0a~E1: {"a": 21.5, "b": 14.0, "column": null, "kind": "cell", "row": 0}
+   first_diff E0a~E2: {"a": 21.5, "b": 14.0, "column": null, "kind": "cell", "row": 0}
+   first_diff E0pa~E3: {"a": 21.5, "b": 14.0, "column": null, "kind": "cell", "row": 0}
+   first_diff E0pa~E4: {"a": 21.5, "b": 14.0, "column": null, "kind": "cell", "row": 0}
+==================== C04
+statuses: {"E0a": "ok", "E0b": "ok", "E0pa": "ok", "E1": "ok", "E2": "ok", "E3": "ok", "E4": "ok"}
+classes: {"E0a~E0b": "IDENTICAL", "E0a~E1": "VALUE_DRIFT", "E0a~E2": "VALUE_DRIFT", "E0pa~E3": "VALUE_DRIFT", "E0pa~E4": "VALUE_DRIFT"} magnitude: {"E0a~E0b": null, "E0a~E1": "SUBSTANTIVE", "E0a~E2": "SUBSTANTIVE", "E0pa~E3": "SUBSTANTIVE", "E0pa~E4": "SUBSTANTIVE"}
+E0a ok
+   result: null
+   dtypes: {"k": "scalar", "type": "builtins.NoneType"} type builtins.NoneType
+E0b ok
+E1 ok
+   result: {"columns": ["item", "qty", "price"], "columns_names": [null], "data": [["pen", "book", "lamp", "mug"], [10.0, 0.0, 3.0, 0.0], [1.5, 12.0, 0.0, 4.0]], "index": [0, 1, 2, 3], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "str", "dtypes": ["str", "float64", "float64"], "index": "int64", "k": "df"} type pandas.DataFrame
+E2 ok
+   result: {"columns": ["item", "qty", "price"], "columns_names": [null], "data": [["pen", "book", "lamp", "mug"], [10.0, 0.0, 3.0, 0.0], [1.5, 12.0, 0.0, 4.0]], "index": [0, 1, 2, 3], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "str", "dtypes": ["str", "float64", "float64"], "index": "int64", "k": "df"} type pandas.DataFrame
+E0pa ok
+   result: null
+   dtypes: {"k": "scalar", "type": "builtins.NoneType"} type builtins.NoneType
+E3 ok
+E4 ok
+   result: {"columns": ["item", "qty", "price"], "columns_names": [null], "data": [["pen", "book", "lamp", "mug"], [10.0, 0.0, 3.0, 0.0], [1.5, 12.0, 0.0, 4.0]], "index": [0, 1, 2, 3], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "str", "dtypes": ["str", "float64", "float64"], "index": "int64", "k": "df"} type pandas.DataFrame
+   first_diff E0a~E1: {"a": "NoneType", "b": "df", "column": null, "kind": "type", "row": null}
+   first_diff E0a~E2: {"a": "NoneType", "b": "df", "column": null, "kind": "type", "row": null}
+   first_diff E0pa~E3: {"a": "NoneType", "b": "df", "column": null, "kind": "type", "row": null}
+   first_diff E0pa~E4: {"a": "NoneType", "b": "df", "column": null, "kind": "type", "row": null}
+==================== C05
+statuses: {"E0a": "ok", "E0b": "ok", "E0pa": "ok", "E1": "ok", "E2": "ok", "E3": "ok", "E4": "ok"}
+classes: {"E0a~E0b": "IDENTICAL", "E0a~E1": "VALUE_DRIFT", "E0a~E2": "VALUE_DRIFT", "E0pa~E3": "VALUE_DRIFT", "E0pa~E4": "VALUE_DRIFT"} magnitude: {"E0a~E0b": null, "E0a~E1": "SUBSTANTIVE", "E0a~E2": "SUBSTANTIVE", "E0pa~E3": "SUBSTANTIVE", "E0pa~E4": "SUBSTANTIVE"}
+E0a ok
+   result: {"columns": ["sensor", "reading"], "columns_names": [null], "data": [["a", "b", "c", "d"], [0.0, 2.0, 3.25, 0.5]], "index": [0, 1, 2, 3], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "object", "dtypes": ["object", "float64"], "index": "int64", "k": "df"} type pandas.core.frame.DataFrame
+E0b ok
+E1 ok
+   W[Pandas4Warning|prereg=True|pilot=True] pandas.errors line 6: The copy keyword is deprecated and will be removed in a future version. Copy-on-Write is active in pandas since 3.0 which utilizes a lazy copy mechanism that defers copies until necessary. Use .copy() to make an eager co
+   result: {"columns": ["sensor", "reading"], "columns_names": [null], "data": [["a", "b", "c", "d"], [1.5, 2.0, 3.25, 0.5]], "index": [0, 1, 2, 3], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "str", "dtypes": ["str", "float64"], "index": "int64", "k": "df"} type pandas.DataFrame
+E2 ok
+   W[Pandas4Warning|prereg=True|pilot=True] pandas.errors line 6: The copy keyword is deprecated and will be removed in a future version. Copy-on-Write is active in pandas since 3.0 which utilizes a lazy copy mechanism that defers copies until necessary. Use .copy() to make an eager co
+   result: {"columns": ["sensor", "reading"], "columns_names": [null], "data": [["a", "b", "c", "d"], [1.5, 2.0, 3.25, 0.5]], "index": [0, 1, 2, 3], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "str", "dtypes": ["str", "float64"], "index": "int64", "k": "df"} type pandas.DataFrame
+E0pa ok
+   result: {"columns": ["sensor", "reading"], "columns_names": [null], "data": [["a", "b", "c", "d"], [0.0, 2.0, 3.25, 0.5]], "index": [0, 1, 2, 3], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "object", "dtypes": ["object", "float64"], "index": "int64", "k": "df"} type pandas.core.frame.DataFrame
+E3 ok
+   W[Pandas4Warning|prereg=True|pilot=True] pandas.errors line 6: The copy keyword is deprecated and will be removed in a future version. Copy-on-Write is active in pandas since 3.0 which utilizes a lazy copy mechanism that defers copies until necessary. Use .copy() to make an eager co
+E4 ok
+   W[Pandas4Warning|prereg=True|pilot=True] pandas.errors line 6: The copy keyword is deprecated and will be removed in a future version. Copy-on-Write is active in pandas since 3.0 which utilizes a lazy copy mechanism that defers copies until necessary. Use .copy() to make an eager co
+   result: {"columns": ["sensor", "reading"], "columns_names": [null], "data": [["a", "b", "c", "d"], [1.5, 2.0, 3.25, 0.5]], "index": [0, 1, 2, 3], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "str", "dtypes": ["str", "float64"], "index": "int64", "k": "df"} type pandas.DataFrame
+   first_diff E0a~E1: {"a": 0.0, "b": 1.5, "column": "reading", "kind": "cell", "row": 0}
+   first_diff E0a~E2: {"a": 0.0, "b": 1.5, "column": "reading", "kind": "cell", "row": 0}
+   first_diff E0pa~E3: {"a": 0.0, "b": 1.5, "column": "reading", "kind": "cell", "row": 0}
+   first_diff E0pa~E4: {"a": 0.0, "b": 1.5, "column": "reading", "kind": "cell", "row": 0}
+==================== C06
+statuses: {"E0a": "ok", "E0b": "ok", "E0pa": "ok", "E1": "error", "E2": "error", "E3": "error", "E4": "error"}
+classes: {"E0a~E0b": "IDENTICAL", "E0a~E1": "LOUD", "E0a~E2": "LOUD", "E0pa~E3": "LOUD", "E0pa~E4": "LOUD"} magnitude: {"E0a~E0b": null, "E0a~E1": null, "E0a~E2": null, "E0pa~E3": null, "E0pa~E4": null}
+E0a ok
+   result: {"data": [99, 20, 30, 40], "k": "idx", "name": null}
+   dtypes: {"dtype": "int64", "k": "idx"} type pandas.core.indexes.base.Index
+E0b ok
+E1 error EXC ValueError: assignment destination is read-only (line 8)
+E2 error EXC ValueError: assignment destination is read-only (line 8)
+E0pa ok
+   result: {"data": [99, 20, 30, 40], "k": "idx", "name": null}
+   dtypes: {"dtype": "int64", "k": "idx"} type pandas.core.indexes.base.Index
+E3 error EXC ValueError: assignment destination is read-only (line 8)
+E4 error EXC ValueError: assignment destination is read-only (line 8)
+   first_diff E0a~E1: {"a": "ok", "b": "error", "column": null, "kind": "status", "row": null}
+   first_diff E0a~E2: {"a": "ok", "b": "error", "column": null, "kind": "status", "row": null}
+   first_diff E0pa~E3: {"a": "ok", "b": "error", "column": null, "kind": "status", "row": null}
+   first_diff E0pa~E4: {"a": "ok", "b": "error", "column": null, "kind": "status", "row": null}
+==================== C06_b
+statuses: {"E0a": "ok", "E0b": "ok", "E0pa": "ok", "E1": "ok", "E2": "ok", "E3": "ok", "E4": "ok"}
+classes: {"E0a~E0b": "IDENTICAL", "E0a~E1": "VALUE_DRIFT", "E0a~E2": "VALUE_DRIFT", "E0pa~E3": "VALUE_DRIFT", "E0pa~E4": "VALUE_DRIFT"} magnitude: {"E0a~E0b": null, "E0a~E1": "SUBSTANTIVE", "E0a~E2": "SUBSTANTIVE", "E0pa~E3": "SUBSTANTIVE", "E0pa~E4": "SUBSTANTIVE"}
+E0a ok
+   result: {"data": [0, 10, 20, 30], "k": "idx", "name": null}
+   dtypes: {"dtype": "int64", "k": "idx"} type pandas.core.indexes.base.Index
+E0b ok
+E1 ok
+   result: {"data": [10, 20, 30, 40], "k": "idx", "name": null}
+   dtypes: {"dtype": "int64", "k": "idx"} type pandas.Index
+E2 ok
+   result: {"data": [10, 20, 30, 40], "k": "idx", "name": null}
+   dtypes: {"dtype": "int64", "k": "idx"} type pandas.Index
+E0pa ok
+   result: {"data": [0, 10, 20, 30], "k": "idx", "name": null}
+   dtypes: {"dtype": "int64", "k": "idx"} type pandas.core.indexes.base.Index
+E3 ok
+E4 ok
+   result: {"data": [10, 20, 30, 40], "k": "idx", "name": null}
+   dtypes: {"dtype": "int64", "k": "idx"} type pandas.Index
+   first_diff E0a~E1: {"a": 0, "b": 10, "column": null, "kind": "cell", "row": 0}
+   first_diff E0a~E2: {"a": 0, "b": 10, "column": null, "kind": "cell", "row": 0}
+   first_diff E0pa~E3: {"a": 0, "b": 10, "column": null, "kind": "cell", "row": 0}
+   first_diff E0pa~E4: {"a": 0, "b": 10, "column": null, "kind": "cell", "row": 0}
+==================== L01
+statuses: {"E0a": "ok", "E0b": "ok", "E0pa": "ok", "E1": "error", "E2": "error", "E3": "error", "E4": "error"}
+classes: {"E0a~E0b": "IDENTICAL", "E0a~E1": "LOUD", "E0a~E2": "LOUD", "E0pa~E3": "LOUD", "E0pa~E4": "LOUD"} magnitude: {"E0a~E0b": null, "E0a~E1": null, "E0a~E2": null, "E0pa~E3": null, "E0pa~E4": null}
+E0a ok
+   W[FutureWarning|prereg=True|pilot=True] builtins line 6: 'M' is deprecated and will be removed in a future version, please use 'ME' instead.
+   W[DeprecationWarning|prereg=False|pilot=True] builtins line 6: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+   result: {"data": [15.5, 7.0, 9.0], "index": ["TS:2025-01-31T00:00:00", "TS:2025-02-28T00:00:00", "TS:2025-03-31T00:00:00"], "index_names": ["sale_date"], "k": "s", "name": "amount"}
+   dtypes: {"dtype": "float64", "index": "datetime64[ns]", "k": "s"} type pandas.core.series.Series
+E0b ok
+   W[FutureWarning|prereg=True|pilot=True] builtins line 6: 'M' is deprecated and will be removed in a future version, please use 'ME' instead.
+   W[DeprecationWarning|prereg=False|pilot=True] builtins line 6: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+E1 error EXC ValueError: Invalid frequency: M. Failed to parse with error message: ValueError("'M' is no longer supported for offsets. Please use 'ME' instead.") (line 6)
+E2 error EXC ValueError: Invalid frequency: M. Failed to parse with error message: ValueError("'M' is no longer supported for offsets. Please use 'ME' instead.") (line 6)
+E0pa ok
+   W[FutureWarning|prereg=True|pilot=True] builtins line 6: 'M' is deprecated and will be removed in a future version, please use 'ME' instead.
+   W[DeprecationWarning|prereg=False|pilot=True] builtins line 6: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+   result: {"data": [15.5, 7.0, 9.0], "index": ["TS:2025-01-31T00:00:00", "TS:2025-02-28T00:00:00", "TS:2025-03-31T00:00:00"], "index_names": ["sale_date"], "k": "s", "name": "amount"}
+   dtypes: {"dtype": "float64", "index": "datetime64[ns]", "k": "s"} type pandas.core.series.Series
+E3 error EXC ValueError: Invalid frequency: M. Failed to parse with error message: ValueError("'M' is no longer supported for offsets. Please use 'ME' instead.") (line 6)
+E4 error EXC ValueError: Invalid frequency: M. Failed to parse with error message: ValueError("'M' is no longer supported for offsets. Please use 'ME' instead.") (line 6)
+   first_diff E0a~E1: {"a": "ok", "b": "error", "column": null, "kind": "status", "row": null}
+   first_diff E0a~E2: {"a": "ok", "b": "error", "column": null, "kind": "status", "row": null}
+   first_diff E0pa~E3: {"a": "ok", "b": "error", "column": null, "kind": "status", "row": null}
+   first_diff E0pa~E4: {"a": "ok", "b": "error", "column": null, "kind": "status", "row": null}
+==================== L02
+statuses: {"E0a": "ok", "E0b": "ok", "E0pa": "ok", "E1": "error", "E2": "error", "E3": "error", "E4": "error"}
+classes: {"E0a~E0b": "IDENTICAL", "E0a~E1": "LOUD", "E0a~E2": "LOUD", "E0pa~E3": "LOUD", "E0pa~E4": "LOUD"} magnitude: {"E0a~E0b": null, "E0a~E1": null, "E0a~E2": null, "E0pa~E3": null, "E0pa~E4": null}
+E0a ok
+   W[FutureWarning|prereg=True|pilot=True] builtins line 6: Series.fillna with 'method' is deprecated and will raise in a future version. Use obj.ffill() or obj.bfill() instead.
+   result: {"data": [1.0, 1.0, 3.0, 3.0], "index": [0, 1, 2, 3], "index_names": [null], "k": "s", "name": "value"}
+   dtypes: {"dtype": "float64", "index": "int64", "k": "s"} type pandas.core.series.Series
+E0b ok
+   W[FutureWarning|prereg=True|pilot=True] builtins line 6: Series.fillna with 'method' is deprecated and will raise in a future version. Use obj.ffill() or obj.bfill() instead.
+E1 error EXC TypeError: NDFrame.fillna() got an unexpected keyword argument 'method' (line 6)
+E2 error EXC TypeError: NDFrame.fillna() got an unexpected keyword argument 'method' (line 6)
+E0pa ok
+   W[FutureWarning|prereg=True|pilot=True] builtins line 6: Series.fillna with 'method' is deprecated and will raise in a future version. Use obj.ffill() or obj.bfill() instead.
+   result: {"data": [1.0, 1.0, 3.0, 3.0], "index": [0, 1, 2, 3], "index_names": [null], "k": "s", "name": "value"}
+   dtypes: {"dtype": "float64", "index": "int64", "k": "s"} type pandas.core.series.Series
+E3 error EXC TypeError: NDFrame.fillna() got an unexpected keyword argument 'method' (line 6)
+E4 error EXC TypeError: NDFrame.fillna() got an unexpected keyword argument 'method' (line 6)
+   first_diff E0a~E1: {"a": "ok", "b": "error", "column": null, "kind": "status", "row": null}
+   first_diff E0a~E2: {"a": "ok", "b": "error", "column": null, "kind": "status", "row": null}
+   first_diff E0pa~E3: {"a": "ok", "b": "error", "column": null, "kind": "status", "row": null}
+   first_diff E0pa~E4: {"a": "ok", "b": "error", "column": null, "kind": "status", "row": null}
+==================== L03
+statuses: {"E0a": "ok", "E0b": "ok", "E0pa": "ok", "E1": "error", "E2": "error", "E3": "error", "E4": "error"}
+classes: {"E0a~E0b": "IDENTICAL", "E0a~E1": "LOUD", "E0a~E2": "LOUD", "E0pa~E3": "LOUD", "E0pa~E4": "LOUD"} magnitude: {"E0a~E0b": null, "E0a~E1": null, "E0a~E2": null, "E0pa~E3": null, "E0pa~E4": null}
+E0a ok
+   W[FutureWarning|prereg=True|pilot=True] builtins line 6: errors='ignore' is deprecated and will raise in a future version. Use to_numeric without passing `errors` and catch exceptions explicitly instead
+   result: {"data": ["10", "abc", "30"], "index": [0, 1, 2], "index_names": [null], "k": "s", "name": "value"}
+   dtypes: {"dtype": "object", "index": "int64", "k": "s"} type pandas.core.series.Series
+E0b ok
+   W[FutureWarning|prereg=True|pilot=True] builtins line 6: errors='ignore' is deprecated and will raise in a future version. Use to_numeric without passing `errors` and catch exceptions explicitly instead
+E1 error EXC ValueError: invalid error value specified (line 6)
+E2 error EXC ValueError: invalid error value specified (line 6)
+E0pa ok
+   W[FutureWarning|prereg=True|pilot=True] builtins line 6: errors='ignore' is deprecated and will raise in a future version. Use to_numeric without passing `errors` and catch exceptions explicitly instead
+   result: {"data": ["10", "abc", "30"], "index": [0, 1, 2], "index_names": [null], "k": "s", "name": "value"}
+   dtypes: {"dtype": "object", "index": "int64", "k": "s"} type pandas.core.series.Series
+E3 error EXC ValueError: invalid error value specified (line 6)
+E4 error EXC ValueError: invalid error value specified (line 6)
+   first_diff E0a~E1: {"a": "ok", "b": "error", "column": null, "kind": "status", "row": null}
+   first_diff E0a~E2: {"a": "ok", "b": "error", "column": null, "kind": "status", "row": null}
+   first_diff E0pa~E3: {"a": "ok", "b": "error", "column": null, "kind": "status", "row": null}
+   first_diff E0pa~E4: {"a": "ok", "b": "error", "column": null, "kind": "status", "row": null}
+==================== L04
+statuses: {"E0a": "ok", "E0b": "ok", "E0pa": "ok", "E1": "error", "E2": "error", "E3": "error", "E4": "error"}
+classes: {"E0a~E0b": "IDENTICAL", "E0a~E1": "LOUD", "E0a~E2": "LOUD", "E0pa~E3": "LOUD", "E0pa~E4": "LOUD"} magnitude: {"E0a~E0b": null, "E0a~E1": null, "E0a~E2": null, "E0pa~E3": null, "E0pa~E4": null}
+E0a ok
+   result: {"data": ["red", 2.5, "blue"], "index": [0, 1, 2], "index_names": [null], "k": "s", "name": "label"}
+   dtypes: {"dtype": "object", "index": "int64", "k": "s"} type pandas.core.series.Series
+E0b ok
+E1 error EXC TypeError: Invalid value '2.5' for dtype 'str'. Value should be a string or missing value, got 'float' instead. (line 7)
+E2 error EXC TypeError: Invalid value '2.5' for dtype 'str'. Value should be a string or missing value, got 'float' instead. (line 7)
+E0pa ok
+   result: {"data": ["red", 2.5, "blue"], "index": [0, 1, 2], "index_names": [null], "k": "s", "name": "label"}
+   dtypes: {"dtype": "object", "index": "int64", "k": "s"} type pandas.core.series.Series
+E3 error EXC TypeError: Invalid value '2.5' for dtype 'str'. Value should be a string or missing value, got 'float' instead. (line 7)
+E4 error EXC TypeError: Invalid value '2.5' for dtype 'str'. Value should be a string or missing value, got 'float' instead. (line 7)
+   first_diff E0a~E1: {"a": "ok", "b": "error", "column": null, "kind": "status", "row": null}
+   first_diff E0a~E2: {"a": "ok", "b": "error", "column": null, "kind": "status", "row": null}
+   first_diff E0pa~E3: {"a": "ok", "b": "error", "column": null, "kind": "status", "row": null}
+   first_diff E0pa~E4: {"a": "ok", "b": "error", "column": null, "kind": "status", "row": null}
+==================== L05
+statuses: {"E0a": "ok", "E0b": "ok", "E0pa": "ok", "E1": "error", "E2": "error", "E3": "error", "E4": "error"}
+classes: {"E0a~E0b": "IDENTICAL", "E0a~E1": "LOUD", "E0a~E2": "LOUD", "E0pa~E3": "LOUD", "E0pa~E4": "LOUD"} magnitude: {"E0a~E0b": null, "E0a~E1": null, "E0a~E2": null, "E0pa~E3": null, "E0pa~E4": null}
+E0a ok
+   W[FutureWarning|prereg=True|pilot=True] builtins line 6: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+   result: {"columns": ["first", "last"], "columns_names": [null], "data": [["Ann", "Bo"], ["Lee", "Chan"]], "index": [0, 1], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "object", "dtypes": ["object", "object"], "index": "int64", "k": "df"} type pandas.core.frame.DataFrame
+E0b ok
+   W[FutureWarning|prereg=True|pilot=True] builtins line 6: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+E1 error EXC AttributeError: 'DataFrame' object has no attribute 'applymap' (line 6)
+E2 error EXC AttributeError: 'DataFrame' object has no attribute 'applymap' (line 6)
+E0pa ok
+   W[FutureWarning|prereg=True|pilot=True] builtins line 6: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+   result: {"columns": ["first", "last"], "columns_names": [null], "data": [["Ann", "Bo"], ["Lee", "Chan"]], "index": [0, 1], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "object", "dtypes": ["object", "object"], "index": "int64", "k": "df"} type pandas.core.frame.DataFrame
+E3 error EXC AttributeError: 'DataFrame' object has no attribute 'applymap' (line 6)
+E4 error EXC AttributeError: 'DataFrame' object has no attribute 'applymap' (line 6)
+   first_diff E0a~E1: {"a": "ok", "b": "error", "column": null, "kind": "status", "row": null}
+   first_diff E0a~E2: {"a": "ok", "b": "error", "column": null, "kind": "status", "row": null}
+   first_diff E0pa~E3: {"a": "ok", "b": "error", "column": null, "kind": "status", "row": null}
+   first_diff E0pa~E4: {"a": "ok", "b": "error", "column": null, "kind": "status", "row": null}
+==================== L06
+statuses: {"E0a": "ok", "E0b": "ok", "E0pa": "ok", "E1": "error", "E2": "error", "E3": "error", "E4": "error"}
+classes: {"E0a~E0b": "IDENTICAL", "E0a~E1": "LOUD", "E0a~E2": "LOUD", "E0pa~E3": "LOUD", "E0pa~E4": "LOUD"} magnitude: {"E0a~E0b": null, "E0a~E1": null, "E0a~E2": null, "E0pa~E3": null, "E0pa~E4": null}
+E0a ok
+   W[FutureWarning|prereg=True|pilot=True] builtins line 6: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to excl
+   result: {"data": ["s1:3.0", "s2:8.0"], "index": ["s1", "s2"], "index_names": ["sensor_id"], "k": "s", "name": null}
+   dtypes: {"dtype": "object", "index": "object", "k": "s"} type pandas.core.series.Series
+E0b ok
+   W[FutureWarning|prereg=True|pilot=True] builtins line 6: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to excl
+E1 error EXC KeyError: 'sensor_id' (line 6)
+E2 error EXC KeyError: 'sensor_id' (line 6)
+E0pa ok
+   W[FutureWarning|prereg=True|pilot=True] builtins line 6: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to excl
+   result: {"data": ["s1:3.0", "s2:8.0"], "index": ["s1", "s2"], "index_names": ["sensor_id"], "k": "s", "name": null}
+   dtypes: {"dtype": "object", "index": "object", "k": "s"} type pandas.core.series.Series
+E3 error EXC KeyError: 'sensor_id' (line 6)
+E4 error EXC KeyError: 'sensor_id' (line 6)
+   first_diff E0a~E1: {"a": "ok", "b": "error", "column": null, "kind": "status", "row": null}
+   first_diff E0a~E2: {"a": "ok", "b": "error", "column": null, "kind": "status", "row": null}
+   first_diff E0pa~E3: {"a": "ok", "b": "error", "column": null, "kind": "status", "row": null}
+   first_diff E0pa~E4: {"a": "ok", "b": "error", "column": null, "kind": "status", "row": null}

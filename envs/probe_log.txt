@@ -1,0 +1,10 @@
+probe run 2026-11-11 13:30 JST; uv uv 0.12.2 (Homebrew 2026-08-05 aarch64-apple-darwin)
+pd233 expected_pandas=2.3.3 pyarrow=no exit=0 pandas 2.3.3 numpy 2.5.4 py 3.12.13 import_pyarrow: fails: ModuleNotFoundError: No module named 'pyarrow' errors: []
+pd31x expected_pandas=3.1.1 pyarrow=no exit=0 pandas 3.1.1 numpy 2.5.4 py 3.12.13 import_pyarrow: fails: ModuleNotFoundError: No module named 'pyarrow' errors: []
+pd30x expected_pandas=3.0.6 pyarrow=no exit=0 pandas 3.0.6 numpy 2.5.4 py 3.12.13 import_pyarrow: fails: ModuleNotFoundError: No module named 'pyarrow' errors: []
+pd233pa expected_pandas=2.3.3 pyarrow=yes exit=0 pandas 2.3.3 numpy 2.5.4 py 3.12.13 import_pyarrow: ok 26.0.1 errors: []
+pd31xpa expected_pandas=3.1.1 pyarrow=yes exit=0 pandas 3.1.1 numpy 2.5.4 py 3.12.13 import_pyarrow: ok 26.0.1 errors: []
+pd30xpa expected_pandas=3.0.6 pyarrow=yes exit=0 pandas 3.0.6 numpy 2.5.4 py 3.12.13 import_pyarrow: ok 26.0.1 errors: []
+pd223 expected_pandas=2.2.3 pyarrow=no exit=0 pandas 2.2.3 numpy 2.5.4 py 3.12.13 import_pyarrow: fails: ModuleNotFoundError: No module named 'pyarrow' errors: []
+tools expected_pandas=3.1.1 pyarrow=no exit=0 pandas 3.1.1 numpy 2.5.4 py 3.12.13 import_pyarrow: fails: ModuleNotFoundError: No module named 'pyarrow' errors: []
+overall_fail=0

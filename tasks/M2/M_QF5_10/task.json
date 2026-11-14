@@ -1,0 +1,92 @@
+{
+ "id": "M_QF5_10",
+ "stratum": "M",
+ "family": "QF5_ORDER",
+ "generic_family": null,
+ "catalogue_row": "R02",
+ "files": [
+  {
+   "path": "QF5_ORDER/memberships.csv",
+   "description": "Loyalty memberships (200 rows): member_ref (six-digit reference with leading zeros), plan (bronze, silver, gold or platinum), city (city name; capital letters and spaces are inconsistent in some rows), points (whole number, multiples of 50; many members share the same points)."
+  }
+ ],
+ "task_text": "For each plan, count how many members have each points value, and keep only the three lowest points values of each plan. `result` should be a Series of counts indexed by plan and points, with the plans in alphabetical order and the points from lowest to highest within each plan.",
+ "allowed_task_words": [],
+ "invited_ids_author": [
+  "R02"
+ ],
+ "order_significant": true,
+ "sort_keys": [
+  "plan",
+  "points"
+ ],
+ "dtype_significant": false,
+ "intended_computation": "Within each of the 4 plans, count members per distinct points value, take the three smallest points values of that plan with their counts (12 rows in all), ordered by plan ascending then points ascending.",
+ "acceptable_variants": {
+  "row_order": "ties_only",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": ""
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 12
+   }
+  },
+  {
+   "check": "sorted_by",
+   "args": {
+    "keys": [
+     "plan",
+     "points"
+    ],
+    "ascending": [
+     true,
+     true
+    ]
+   }
+  },
+  {
+   "check": "numeric_in_range",
+   "args": {
+    "columns": [
+     "__values__"
+    ],
+    "min": 1,
+    "max": null
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "HARM",
+  "reason": "groupby(...).value_counts(sort=False) listed points in sorted order within each plan on 2.x, so head(3) per plan gave the lowest values; on 3.x it lists them in order of appearance."
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M2",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 by pkg:TASKS_M2 for catalogue row R02; naive.py shows the invited idiom, reference.py is the version-robust reference."
+}

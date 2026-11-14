@@ -1,0 +1,113 @@
+variant	pair	denominator	scope	n_drift	trace_truncated	trace_truncated_unknown
+all tasks	E0a~E1	any	pooled	441	0	0
+all tasks	E0a~E1	any	stratum M	403	0	0
+all tasks	E0a~E1	any	stratum R	0	0	0
+all tasks	E0a~E1	any	stratum A	38	0	0
+all tasks	E0a~E1	any	anthropic__claude-haiku-4.5	36	0	0
+all tasks	E0a~E1	any	anthropic__claude-haiku-5.5	30	0	0
+all tasks	E0a~E1	any	anthropic__claude-sonnet-5.5	24	0	0
+all tasks	E0a~E1	any	deepseek__deepseek-v3.2	38	0	0
+all tasks	E0a~E1	any	google__gemma-4-31b-it	58	0	0
+all tasks	E0a~E1	any	openai__gpt-5.4-mini	48	0	0
+all tasks	E0a~E1	any	openai__gpt-5.6-terra	74	0	0
+all tasks	E0a~E1	any	openai__gpt-oss-20b	68	0	0
+all tasks	E0a~E1	any	qwen__qwen3.5-9b	23	0	0
+all tasks	E0a~E1	any	qwen__qwen3.6-35b-a3b	42	0	0
+all tasks	E0a~E1	substantive	pooled	441	0	0
+all tasks	E0a~E1	substantive	stratum M	403	0	0
+all tasks	E0a~E1	substantive	stratum R	0	0	0
+all tasks	E0a~E1	substantive	stratum A	38	0	0
+all tasks	E0a~E1	substantive	anthropic__claude-haiku-4.5	36	0	0
+all tasks	E0a~E1	substantive	anthropic__claude-haiku-5.5	30	0	0
+all tasks	E0a~E1	substantive	anthropic__claude-sonnet-5.5	24	0	0
+all tasks	E0a~E1	substantive	deepseek__deepseek-v3.2	38	0	0
+all tasks	E0a~E1	substantive	google__gemma-4-31b-it	58	0	0
+all tasks	E0a~E1	substantive	openai__gpt-5.4-mini	48	0	0
+all tasks	E0a~E1	substantive	openai__gpt-5.6-terra	74	0	0
+all tasks	E0a~E1	substantive	openai__gpt-oss-20b	68	0	0
+all tasks	E0a~E1	substantive	qwen__qwen3.5-9b	23	0	0
+all tasks	E0a~E1	substantive	qwen__qwen3.6-35b-a3b	42	0	0
+all tasks	E0a~E2	any	pooled	358	0	0
+all tasks	E0a~E2	any	stratum M	320	0	0
+all tasks	E0a~E2	any	stratum R	0	0	0
+all tasks	E0a~E2	any	stratum A	38	0	0
+all tasks	E0a~E2	any	anthropic__claude-haiku-4.5	30	0	0
+all tasks	E0a~E2	any	anthropic__claude-haiku-5.5	25	0	0
+all tasks	E0a~E2	any	anthropic__claude-sonnet-5.5	14	0	0
+all tasks	E0a~E2	any	deepseek__deepseek-v3.2	33	0	0
+all tasks	E0a~E2	any	google__gemma-4-31b-it	50	0	0
+all tasks	E0a~E2	any	openai__gpt-5.4-mini	35	0	0
+all tasks	E0a~E2	any	openai__gpt-5.6-terra	56	0	0
+all tasks	E0a~E2	any	openai__gpt-oss-20b	56	0	0
+all tasks	E0a~E2	any	qwen__qwen3.5-9b	22	0	0
+all tasks	E0a~E2	any	qwen__qwen3.6-35b-a3b	37	0	0
+all tasks	E0a~E2	substantive	pooled	358	0	0
+all tasks	E0a~E2	substantive	stratum M	320	0	0
+all tasks	E0a~E2	substantive	stratum R	0	0	0
+all tasks	E0a~E2	substantive	stratum A	38	0	0
+all tasks	E0a~E2	substantive	anthropic__claude-haiku-4.5	30	0	0
+all tasks	E0a~E2	substantive	anthropic__claude-haiku-5.5	25	0	0
+all tasks	E0a~E2	substantive	anthropic__claude-sonnet-5.5	14	0	0
+all tasks	E0a~E2	substantive	deepseek__deepseek-v3.2	33	0	0
+all tasks	E0a~E2	substantive	google__gemma-4-31b-it	50	0	0
+all tasks	E0a~E2	substantive	openai__gpt-5.4-mini	35	0	0
+all tasks	E0a~E2	substantive	openai__gpt-5.6-terra	56	0	0
+all tasks	E0a~E2	substantive	openai__gpt-oss-20b	56	0	0
+all tasks	E0a~E2	substantive	qwen__qwen3.5-9b	22	0	0
+all tasks	E0a~E2	substantive	qwen__qwen3.6-35b-a3b	37	0	0
+without ruled R tasks (LR61/LR70)	E0a~E1	any	pooled	441	0	0
+without ruled R tasks (LR61/LR70)	E0a~E1	any	stratum M	403	0	0
+without ruled R tasks (LR61/LR70)	E0a~E1	any	stratum R	0	0	0
+without ruled R tasks (LR61/LR70)	E0a~E1	any	stratum A	38	0	0
+without ruled R tasks (LR61/LR70)	E0a~E1	any	anthropic__claude-haiku-4.5	36	0	0
+without ruled R tasks (LR61/LR70)	E0a~E1	any	anthropic__claude-haiku-5.5	30	0	0
+without ruled R tasks (LR61/LR70)	E0a~E1	any	anthropic__claude-sonnet-5.5	24	0	0
+without ruled R tasks (LR61/LR70)	E0a~E1	any	deepseek__deepseek-v3.2	38	0	0
+without ruled R tasks (LR61/LR70)	E0a~E1	any	google__gemma-4-31b-it	58	0	0
+without ruled R tasks (LR61/LR70)	E0a~E1	any	openai__gpt-5.4-mini	48	0	0
+without ruled R tasks (LR61/LR70)	E0a~E1	any	openai__gpt-5.6-terra	74	0	0
+without ruled R tasks (LR61/LR70)	E0a~E1	any	openai__gpt-oss-20b	68	0	0
+without ruled R tasks (LR61/LR70)	E0a~E1	any	qwen__qwen3.5-9b	23	0	0
+without ruled R tasks (LR61/LR70)	E0a~E1	any	qwen__qwen3.6-35b-a3b	42	0	0
+without ruled R tasks (LR61/LR70)	E0a~E1	substantive	pooled	441	0	0
+without ruled R tasks (LR61/LR70)	E0a~E1	substantive	stratum M	403	0	0
+without ruled R tasks (LR61/LR70)	E0a~E1	substantive	stratum R	0	0	0
+without ruled R tasks (LR61/LR70)	E0a~E1	substantive	stratum A	38	0	0
+without ruled R tasks (LR61/LR70)	E0a~E1	substantive	anthropic__claude-haiku-4.5	36	0	0
+without ruled R tasks (LR61/LR70)	E0a~E1	substantive	anthropic__claude-haiku-5.5	30	0	0
+without ruled R tasks (LR61/LR70)	E0a~E1	substantive	anthropic__claude-sonnet-5.5	24	0	0
+without ruled R tasks (LR61/LR70)	E0a~E1	substantive	deepseek__deepseek-v3.2	38	0	0
+without ruled R tasks (LR61/LR70)	E0a~E1	substantive	google__gemma-4-31b-it	58	0	0
+without ruled R tasks (LR61/LR70)	E0a~E1	substantive	openai__gpt-5.4-mini	48	0	0
+without ruled R tasks (LR61/LR70)	E0a~E1	substantive	openai__gpt-5.6-terra	74	0	0
+without ruled R tasks (LR61/LR70)	E0a~E1	substantive	openai__gpt-oss-20b	68	0	0
+without ruled R tasks (LR61/LR70)	E0a~E1	substantive	qwen__qwen3.5-9b	23	0	0
+without ruled R tasks (LR61/LR70)	E0a~E1	substantive	qwen__qwen3.6-35b-a3b	42	0	0
+without ruled R tasks (LR61/LR70)	E0a~E2	any	pooled	358	0	0
+without ruled R tasks (LR61/LR70)	E0a~E2	any	stratum M	320	0	0
+without ruled R tasks (LR61/LR70)	E0a~E2	any	stratum R	0	0	0
+without ruled R tasks (LR61/LR70)	E0a~E2	any	stratum A	38	0	0
+without ruled R tasks (LR61/LR70)	E0a~E2	any	anthropic__claude-haiku-4.5	30	0	0
+without ruled R tasks (LR61/LR70)	E0a~E2	any	anthropic__claude-haiku-5.5	25	0	0
+without ruled R tasks (LR61/LR70)	E0a~E2	any	anthropic__claude-sonnet-5.5	14	0	0
+without ruled R tasks (LR61/LR70)	E0a~E2	any	deepseek__deepseek-v3.2	33	0	0
+without ruled R tasks (LR61/LR70)	E0a~E2	any	google__gemma-4-31b-it	50	0	0
+without ruled R tasks (LR61/LR70)	E0a~E2	any	openai__gpt-5.4-mini	35	0	0
+without ruled R tasks (LR61/LR70)	E0a~E2	any	openai__gpt-5.6-terra	56	0	0
+without ruled R tasks (LR61/LR70)	E0a~E2	any	openai__gpt-oss-20b	56	0	0
+without ruled R tasks (LR61/LR70)	E0a~E2	any	qwen__qwen3.5-9b	22	0	0
+without ruled R tasks (LR61/LR70)	E0a~E2	any	qwen__qwen3.6-35b-a3b	37	0	0
+without ruled R tasks (LR61/LR70)	E0a~E2	substantive	pooled	358	0	0
+without ruled R tasks (LR61/LR70)	E0a~E2	substantive	stratum M	320	0	0
+without ruled R tasks (LR61/LR70)	E0a~E2	substantive	stratum R	0	0	0
+without ruled R tasks (LR61/LR70)	E0a~E2	substantive	stratum A	38	0	0
+without ruled R tasks (LR61/LR70)	E0a~E2	substantive	anthropic__claude-haiku-4.5	30	0	0
+without ruled R tasks (LR61/LR70)	E0a~E2	substantive	anthropic__claude-haiku-5.5	25	0	0
+without ruled R tasks (LR61/LR70)	E0a~E2	substantive	anthropic__claude-sonnet-5.5	14	0	0
+without ruled R tasks (LR61/LR70)	E0a~E2	substantive	deepseek__deepseek-v3.2	33	0	0
+without ruled R tasks (LR61/LR70)	E0a~E2	substantive	google__gemma-4-31b-it	50	0	0
+without ruled R tasks (LR61/LR70)	E0a~E2	substantive	openai__gpt-5.4-mini	35	0	0
+without ruled R tasks (LR61/LR70)	E0a~E2	substantive	openai__gpt-5.6-terra	56	0	0
+without ruled R tasks (LR61/LR70)	E0a~E2	substantive	openai__gpt-oss-20b	56	0	0
+without ruled R tasks (LR61/LR70)	E0a~E2	substantive	qwen__qwen3.5-9b	22	0	0
+without ruled R tasks (LR61/LR70)	E0a~E2	substantive	qwen__qwen3.6-35b-a3b	37	0	0

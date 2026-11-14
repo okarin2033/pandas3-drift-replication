@@ -1,0 +1,43 @@
+{
+ "item": "B.40",
+ "models": [
+  {
+   "model": "google__gemma-4-31b-it",
+   "passes_logged": 2,
+   "programs_added": 64,
+   "first_pass": "2",
+   "last_state": "complete"
+  },
+  {
+   "model": "deepseek__deepseek-v3.2",
+   "passes_logged": 2,
+   "programs_added": 451,
+   "first_pass": "2",
+   "last_state": "complete"
+  }
+ ],
+ "meta": {
+  "label": null,
+  "test_mode": false,
+  "items": [
+   "B.40"
+  ],
+  "inputs_sha256": {
+   "per_program.jsonl": "dfd3b7dc406ffb88c34c7a4cfc9a90eeb71c0feaf0da626b9805bbac40e9401f",
+   "summary.json": "064443d62d3ec2e0e383c7084734282d191377593cfa13cf26134d10f53a5096",
+   "tasks.json": "ac38b07873515cff1488544c81f1acadc80aaad418db13883a3a0423ccad5391",
+   "models.tsv": "93fc8c7f6f8f2b3f0e11e04926e5245f1456534085779a1b2d1cb1c4b2520676",
+   "PASS_LOG.tsv": "2b00676093bb4c021b3511953fc02ceb9629264b62d9a2794773d6caa765f0b9"
+  },
+  "B": 10000,
+  "seed": 20261111,
+  "tool": "sec_process_report.py",
+  "tool_sha256": "273179d98151baa9a4d41ca4005cd17511ebab830d7c21633cf8d1ea90c37246",
+  "sec_common_sha256": "c1e87284ed92844ade5c515bb78fe261b3a94431d1389c0b4ec2f854f48d39db",
+  "harness_stats_sha256": "ad28a99b5e3a61dc9a7753e3a019a41d2d5968a83f94d6aaddff91156e0bf41d",
+  "created": "2026-11-13T16:49:52+0900",
+  "numpy_used": true,
+  "pass_log_sha256": "2b00676093bb4c021b3511953fc02ceb9629264b62d9a2794773d6caa765f0b9"
+ },
+ "label": null
+}

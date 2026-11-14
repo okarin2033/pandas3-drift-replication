@@ -1,0 +1,11 @@
+You are given CSV file(s) in the current working directory:
+
+- panel_scores.csv: Tasting competition scores (96 rows): panel (one of 8 panels, e.g. bread or cheese; 12 entrants each), entrant (person name; capital letters and spaces are inconsistent), score (4.0-10.0, one decimal; no empty cells).
+
+Task: For each panel, give three scores actually given: the score at the position nearest to the lower quartile, the middle score and the score nearest to the upper quartile, where the position of a quartile q is q x (n - 1) counting the sorted scores from 0. Each panel has 12 entries, so two scores are equally near the middle position; then use the lower of the two. `result` should be a table indexed by panel with the columns q1, middle and q3.
+
+Requirements:
+- Write a complete Python script that reads the file(s) from the current directory.
+- Use only pandas, numpy and the Python standard library.
+- Store the final answer in a top-level variable named `result`.
+- Reply with a single Python code block.

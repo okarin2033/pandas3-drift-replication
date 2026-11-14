@@ -1,0 +1,201 @@
+variant	model	stratum	idiom	family	x	n	empty_programs	share	wilson_lo	wilson_hi
+all tasks	anthropic__claude-haiku-4.5	M	N01	section17_dtype_object	2	640	0	0.003125	0.000857	0.011322
+all tasks	anthropic__claude-haiku-4.5	M	N02	section17_astype_str	27	640	0	0.042188	0.029153	0.060685
+all tasks	anthropic__claude-haiku-4.5	M	N03	section17_int64_epoch	8	640	0	0.012500	0.006347	0.024470
+all tasks	anthropic__claude-haiku-4.5	M	N04	section17_observed_explicit	5	640	0	0.007812	0.003342	0.018157
+all tasks	anthropic__claude-haiku-4.5	M	ANY		42	640	0	0.065625	0.048915	0.087519
+all tasks	anthropic__claude-haiku-4.5	R	N01	section17_dtype_object	0	45	0	0.000000	0.000000	0.078652
+all tasks	anthropic__claude-haiku-4.5	R	N02	section17_astype_str	0	45	0	0.000000	0.000000	0.078652
+all tasks	anthropic__claude-haiku-4.5	R	N03	section17_int64_epoch	0	45	0	0.000000	0.000000	0.078652
+all tasks	anthropic__claude-haiku-4.5	R	N04	section17_observed_explicit	0	45	0	0.000000	0.000000	0.078652
+all tasks	anthropic__claude-haiku-4.5	R	ANY		0	45	0	0.000000	0.000000	0.078652
+all tasks	anthropic__claude-haiku-4.5	A	N01	section17_dtype_object	0	315	0	0.000000	0.000000	0.012048
+all tasks	anthropic__claude-haiku-4.5	A	N02	section17_astype_str	43	315	0	0.136508	0.102949	0.178826
+all tasks	anthropic__claude-haiku-4.5	A	N03	section17_int64_epoch	5	315	0	0.015873	0.006799	0.036613
+all tasks	anthropic__claude-haiku-4.5	A	N04	section17_observed_explicit	12	315	0	0.038095	0.021924	0.065397
+all tasks	anthropic__claude-haiku-4.5	A	ANY		60	315	0	0.190476	0.150943	0.237468
+all tasks	anthropic__claude-haiku-5.5	M	N01	section17_dtype_object	1	640	0	0.001563	0.000276	0.008797
+all tasks	anthropic__claude-haiku-5.5	M	N02	section17_astype_str	207	640	0	0.323437	0.288342	0.360640
+all tasks	anthropic__claude-haiku-5.5	M	N03	section17_int64_epoch	18	640	0	0.028125	0.017863	0.044018
+all tasks	anthropic__claude-haiku-5.5	M	N04	section17_observed_explicit	14	640	0	0.021875	0.013074	0.036381
+all tasks	anthropic__claude-haiku-5.5	M	ANY		234	640	0	0.365625	0.329218	0.403636
+all tasks	anthropic__claude-haiku-5.5	R	N01	section17_dtype_object	0	45	0	0.000000	0.000000	0.078652
+all tasks	anthropic__claude-haiku-5.5	R	N02	section17_astype_str	6	45	0	0.133333	0.062571	0.261773
+all tasks	anthropic__claude-haiku-5.5	R	N03	section17_int64_epoch	0	45	0	0.000000	0.000000	0.078652
+all tasks	anthropic__claude-haiku-5.5	R	N04	section17_observed_explicit	0	45	0	0.000000	0.000000	0.078652
+all tasks	anthropic__claude-haiku-5.5	R	ANY		6	45	0	0.133333	0.062571	0.261773
+all tasks	anthropic__claude-haiku-5.5	A	N01	section17_dtype_object	0	315	0	0.000000	0.000000	0.012048
+all tasks	anthropic__claude-haiku-5.5	A	N02	section17_astype_str	168	315	0	0.533333	0.478170	0.587693
+all tasks	anthropic__claude-haiku-5.5	A	N03	section17_int64_epoch	0	315	0	0.000000	0.000000	0.012048
+all tasks	anthropic__claude-haiku-5.5	A	N04	section17_observed_explicit	24	315	0	0.076190	0.051732	0.110862
+all tasks	anthropic__claude-haiku-5.5	A	ANY		186	315	0	0.590476	0.535399	0.643373
+all tasks	anthropic__claude-sonnet-5.5	M	N01	section17_dtype_object	5	640	0	0.007812	0.003342	0.018157
+all tasks	anthropic__claude-sonnet-5.5	M	N02	section17_astype_str	243	640	0	0.379688	0.342912	0.417899
+all tasks	anthropic__claude-sonnet-5.5	M	N03	section17_int64_epoch	3	640	0	0.004687	0.001595	0.013690
+all tasks	anthropic__claude-sonnet-5.5	M	N04	section17_observed_explicit	34	640	0	0.053125	0.038263	0.073319
+all tasks	anthropic__claude-sonnet-5.5	M	ANY		261	640	0	0.407813	0.370399	0.446326
+all tasks	anthropic__claude-sonnet-5.5	R	N01	section17_dtype_object	0	45	0	0.000000	0.000000	0.078652
+all tasks	anthropic__claude-sonnet-5.5	R	N02	section17_astype_str	0	45	0	0.000000	0.000000	0.078652
+all tasks	anthropic__claude-sonnet-5.5	R	N03	section17_int64_epoch	0	45	0	0.000000	0.000000	0.078652
+all tasks	anthropic__claude-sonnet-5.5	R	N04	section17_observed_explicit	0	45	0	0.000000	0.000000	0.078652
+all tasks	anthropic__claude-sonnet-5.5	R	ANY		0	45	0	0.000000	0.000000	0.078652
+all tasks	anthropic__claude-sonnet-5.5	A	N01	section17_dtype_object	0	315	0	0.000000	0.000000	0.012048
+all tasks	anthropic__claude-sonnet-5.5	A	N02	section17_astype_str	117	315	0	0.371429	0.319918	0.426037
+all tasks	anthropic__claude-sonnet-5.5	A	N03	section17_int64_epoch	0	315	0	0.000000	0.000000	0.012048
+all tasks	anthropic__claude-sonnet-5.5	A	N04	section17_observed_explicit	18	315	0	0.057143	0.036448	0.088509
+all tasks	anthropic__claude-sonnet-5.5	A	ANY		126	315	0	0.400000	0.347418	0.454992
+all tasks	deepseek__deepseek-v3.2	M	N01	section17_dtype_object	6	640	0	0.009375	0.004304	0.020301
+all tasks	deepseek__deepseek-v3.2	M	N02	section17_astype_str	176	640	0	0.275000	0.241826	0.310859
+all tasks	deepseek__deepseek-v3.2	M	N03	section17_int64_epoch	15	640	0	0.023438	0.014254	0.038308
+all tasks	deepseek__deepseek-v3.2	M	N04	section17_observed_explicit	24	640	0	0.037500	0.025327	0.055192
+all tasks	deepseek__deepseek-v3.2	M	ANY		199	640	0	0.310937	0.276294	0.347837
+all tasks	deepseek__deepseek-v3.2	R	N01	section17_dtype_object	0	45	0	0.000000	0.000000	0.078652
+all tasks	deepseek__deepseek-v3.2	R	N02	section17_astype_str	11	45	0	0.244444	0.142355	0.386734
+all tasks	deepseek__deepseek-v3.2	R	N03	section17_int64_epoch	0	45	0	0.000000	0.000000	0.078652
+all tasks	deepseek__deepseek-v3.2	R	N04	section17_observed_explicit	0	45	0	0.000000	0.000000	0.078652
+all tasks	deepseek__deepseek-v3.2	R	ANY		11	45	0	0.244444	0.142355	0.386734
+all tasks	deepseek__deepseek-v3.2	A	N01	section17_dtype_object	0	315	0	0.000000	0.000000	0.012048
+all tasks	deepseek__deepseek-v3.2	A	N02	section17_astype_str	113	315	0	0.358730	0.307759	0.413106
+all tasks	deepseek__deepseek-v3.2	A	N03	section17_int64_epoch	10	315	0	0.031746	0.017334	0.057442
+all tasks	deepseek__deepseek-v3.2	A	N04	section17_observed_explicit	14	315	0	0.044444	0.026656	0.073210
+all tasks	deepseek__deepseek-v3.2	A	ANY		128	315	0	0.406349	0.353555	0.461400
+all tasks	google__gemma-4-31b-it	M	N01	section17_dtype_object	0	640	0	0.000000	0.000000	0.005966
+all tasks	google__gemma-4-31b-it	M	N02	section17_astype_str	54	640	0	0.084375	0.065242	0.108467
+all tasks	google__gemma-4-31b-it	M	N03	section17_int64_epoch	10	640	0	0.015625	0.008509	0.028521
+all tasks	google__gemma-4-31b-it	M	N04	section17_observed_explicit	30	640	0	0.046875	0.033029	0.066128
+all tasks	google__gemma-4-31b-it	M	ANY		92	640	0	0.143750	0.118693	0.173058
+all tasks	google__gemma-4-31b-it	R	N01	section17_dtype_object	0	45	0	0.000000	0.000000	0.078652
+all tasks	google__gemma-4-31b-it	R	N02	section17_astype_str	5	45	0	0.111111	0.048405	0.234991
+all tasks	google__gemma-4-31b-it	R	N03	section17_int64_epoch	0	45	0	0.000000	0.000000	0.078652
+all tasks	google__gemma-4-31b-it	R	N04	section17_observed_explicit	0	45	0	0.000000	0.000000	0.078652
+all tasks	google__gemma-4-31b-it	R	ANY		5	45	0	0.111111	0.048405	0.234991
+all tasks	google__gemma-4-31b-it	A	N01	section17_dtype_object	0	315	0	0.000000	0.000000	0.012048
+all tasks	google__gemma-4-31b-it	A	N02	section17_astype_str	49	315	0	0.155556	0.119707	0.199704
+all tasks	google__gemma-4-31b-it	A	N03	section17_int64_epoch	5	315	0	0.015873	0.006799	0.036613
+all tasks	google__gemma-4-31b-it	A	N04	section17_observed_explicit	19	315	0	0.060317	0.038951	0.092278
+all tasks	google__gemma-4-31b-it	A	ANY		73	315	0	0.231746	0.188551	0.281405
+all tasks	openai__gpt-5.4-mini	M	N01	section17_dtype_object	2	639	1	0.003130	0.000859	0.011339
+all tasks	openai__gpt-5.4-mini	M	N02	section17_astype_str	149	639	1	0.233177	0.202045	0.267498
+all tasks	openai__gpt-5.4-mini	M	N03	section17_int64_epoch	9	639	1	0.014085	0.007427	0.026549
+all tasks	openai__gpt-5.4-mini	M	N04	section17_observed_explicit	26	639	1	0.040689	0.027916	0.058951
+all tasks	openai__gpt-5.4-mini	M	ANY		185	639	1	0.289515	0.255690	0.325855
+all tasks	openai__gpt-5.4-mini	R	N01	section17_dtype_object	0	45	0	0.000000	0.000000	0.078652
+all tasks	openai__gpt-5.4-mini	R	N02	section17_astype_str	11	45	0	0.244444	0.142355	0.386734
+all tasks	openai__gpt-5.4-mini	R	N03	section17_int64_epoch	0	45	0	0.000000	0.000000	0.078652
+all tasks	openai__gpt-5.4-mini	R	N04	section17_observed_explicit	0	45	0	0.000000	0.000000	0.078652
+all tasks	openai__gpt-5.4-mini	R	ANY		11	45	0	0.244444	0.142355	0.386734
+all tasks	openai__gpt-5.4-mini	A	N01	section17_dtype_object	0	314	1	0.000000	0.000000	0.012086
+all tasks	openai__gpt-5.4-mini	A	N02	section17_astype_str	154	314	1	0.490446	0.435603	0.545520
+all tasks	openai__gpt-5.4-mini	A	N03	section17_int64_epoch	5	314	1	0.015924	0.006820	0.036728
+all tasks	openai__gpt-5.4-mini	A	N04	section17_observed_explicit	19	314	1	0.060510	0.039076	0.092566
+all tasks	openai__gpt-5.4-mini	A	ANY		177	314	1	0.563694	0.508398	0.617450
+all tasks	openai__gpt-5.6-terra	M	N01	section17_dtype_object	3	640	0	0.004687	0.001595	0.013690
+all tasks	openai__gpt-5.6-terra	M	N02	section17_astype_str	79	640	0	0.123438	0.100177	0.151192
+all tasks	openai__gpt-5.6-terra	M	N03	section17_int64_epoch	16	640	0	0.025000	0.015446	0.040222
+all tasks	openai__gpt-5.6-terra	M	N04	section17_observed_explicit	30	640	0	0.046875	0.033029	0.066128
+all tasks	openai__gpt-5.6-terra	M	ANY		125	640	0	0.195312	0.166454	0.227807
+all tasks	openai__gpt-5.6-terra	R	N01	section17_dtype_object	0	45	0	0.000000	0.000000	0.078652
+all tasks	openai__gpt-5.6-terra	R	N02	section17_astype_str	0	45	0	0.000000	0.000000	0.078652
+all tasks	openai__gpt-5.6-terra	R	N03	section17_int64_epoch	0	45	0	0.000000	0.000000	0.078652
+all tasks	openai__gpt-5.6-terra	R	N04	section17_observed_explicit	0	45	0	0.000000	0.000000	0.078652
+all tasks	openai__gpt-5.6-terra	R	ANY		0	45	0	0.000000	0.000000	0.078652
+all tasks	openai__gpt-5.6-terra	A	N01	section17_dtype_object	0	315	0	0.000000	0.000000	0.012048
+all tasks	openai__gpt-5.6-terra	A	N02	section17_astype_str	7	315	0	0.022222	0.010805	0.045152
+all tasks	openai__gpt-5.6-terra	A	N03	section17_int64_epoch	5	315	0	0.015873	0.006799	0.036613
+all tasks	openai__gpt-5.6-terra	A	N04	section17_observed_explicit	21	315	0	0.066667	0.044014	0.099761
+all tasks	openai__gpt-5.6-terra	A	ANY		33	315	0	0.104762	0.075573	0.143474
+all tasks	openai__gpt-oss-20b	M	N01	section17_dtype_object	0	640	0	0.000000	0.000000	0.005966
+all tasks	openai__gpt-oss-20b	M	N02	section17_astype_str	59	640	0	0.092188	0.072143	0.117098
+all tasks	openai__gpt-oss-20b	M	N03	section17_int64_epoch	10	640	0	0.015625	0.008509	0.028521
+all tasks	openai__gpt-oss-20b	M	N04	section17_observed_explicit	10	640	0	0.015625	0.008509	0.028521
+all tasks	openai__gpt-oss-20b	M	ANY		74	640	0	0.115625	0.093112	0.142725
+all tasks	openai__gpt-oss-20b	R	N01	section17_dtype_object	0	45	0	0.000000	0.000000	0.078652
+all tasks	openai__gpt-oss-20b	R	N02	section17_astype_str	1	45	0	0.022222	0.003934	0.115667
+all tasks	openai__gpt-oss-20b	R	N03	section17_int64_epoch	0	45	0	0.000000	0.000000	0.078652
+all tasks	openai__gpt-oss-20b	R	N04	section17_observed_explicit	0	45	0	0.000000	0.000000	0.078652
+all tasks	openai__gpt-oss-20b	R	ANY		1	45	0	0.022222	0.003934	0.115667
+all tasks	openai__gpt-oss-20b	A	N01	section17_dtype_object	2	315	0	0.006349	0.001743	0.022851
+all tasks	openai__gpt-oss-20b	A	N02	section17_astype_str	53	315	0	0.168254	0.130995	0.213507
+all tasks	openai__gpt-oss-20b	A	N03	section17_int64_epoch	4	315	0	0.012698	0.004949	0.032190
+all tasks	openai__gpt-oss-20b	A	N04	section17_observed_explicit	3	315	0	0.009524	0.003244	0.027622
+all tasks	openai__gpt-oss-20b	A	ANY		61	315	0	0.193651	0.153811	0.240873
+all tasks	qwen__qwen3.5-9b	M	N01	section17_dtype_object	11	638	2	0.017241	0.009654	0.030607
+all tasks	qwen__qwen3.5-9b	M	N02	section17_astype_str	55	638	2	0.086207	0.066829	0.110538
+all tasks	qwen__qwen3.5-9b	M	N03	section17_int64_epoch	4	638	2	0.006270	0.002441	0.016008
+all tasks	qwen__qwen3.5-9b	M	N04	section17_observed_explicit	4	638	2	0.006270	0.002441	0.016008
+all tasks	qwen__qwen3.5-9b	M	ANY		72	638	2	0.112853	0.090582	0.139758
+all tasks	qwen__qwen3.5-9b	R	N01	section17_dtype_object	0	45	0	0.000000	0.000000	0.078652
+all tasks	qwen__qwen3.5-9b	R	N02	section17_astype_str	8	45	0	0.177778	0.092944	0.313298
+all tasks	qwen__qwen3.5-9b	R	N03	section17_int64_epoch	0	45	0	0.000000	0.000000	0.078652
+all tasks	qwen__qwen3.5-9b	R	N04	section17_observed_explicit	0	45	0	0.000000	0.000000	0.078652
+all tasks	qwen__qwen3.5-9b	R	ANY		8	45	0	0.177778	0.092944	0.313298
+all tasks	qwen__qwen3.5-9b	A	N01	section17_dtype_object	4	315	0	0.012698	0.004949	0.032190
+all tasks	qwen__qwen3.5-9b	A	N02	section17_astype_str	80	315	0	0.253968	0.209063	0.304802
+all tasks	qwen__qwen3.5-9b	A	N03	section17_int64_epoch	3	315	0	0.009524	0.003244	0.027622
+all tasks	qwen__qwen3.5-9b	A	N04	section17_observed_explicit	8	315	0	0.025397	0.012924	0.049306
+all tasks	qwen__qwen3.5-9b	A	ANY		90	315	0	0.285714	0.238642	0.337950
+all tasks	qwen__qwen3.6-35b-a3b	M	N01	section17_dtype_object	7	640	0	0.010937	0.005308	0.022403
+all tasks	qwen__qwen3.6-35b-a3b	M	N02	section17_astype_str	112	640	0	0.175000	0.147525	0.206353
+all tasks	qwen__qwen3.6-35b-a3b	M	N03	section17_int64_epoch	4	640	0	0.006250	0.002433	0.015959
+all tasks	qwen__qwen3.6-35b-a3b	M	N04	section17_observed_explicit	4	640	0	0.006250	0.002433	0.015959
+all tasks	qwen__qwen3.6-35b-a3b	M	ANY		120	640	0	0.187500	0.159158	0.219571
+all tasks	qwen__qwen3.6-35b-a3b	R	N01	section17_dtype_object	0	45	0	0.000000	0.000000	0.078652
+all tasks	qwen__qwen3.6-35b-a3b	R	N02	section17_astype_str	8	45	0	0.177778	0.092944	0.313298
+all tasks	qwen__qwen3.6-35b-a3b	R	N03	section17_int64_epoch	0	45	0	0.000000	0.000000	0.078652
+all tasks	qwen__qwen3.6-35b-a3b	R	N04	section17_observed_explicit	0	45	0	0.000000	0.000000	0.078652
+all tasks	qwen__qwen3.6-35b-a3b	R	ANY		8	45	0	0.177778	0.092944	0.313298
+all tasks	qwen__qwen3.6-35b-a3b	A	N01	section17_dtype_object	2	315	0	0.006349	0.001743	0.022851
+all tasks	qwen__qwen3.6-35b-a3b	A	N02	section17_astype_str	104	315	0	0.330159	0.280546	0.383864
+all tasks	qwen__qwen3.6-35b-a3b	A	N03	section17_int64_epoch	5	315	0	0.015873	0.006799	0.036613
+all tasks	qwen__qwen3.6-35b-a3b	A	N04	section17_observed_explicit	6	315	0	0.019048	0.008758	0.040926
+all tasks	qwen__qwen3.6-35b-a3b	A	ANY		115	315	0	0.365079	0.313834	0.419576
+without ruled R tasks (LR61/LR70)	anthropic__claude-haiku-4.5	R	N01	section17_dtype_object	0	40	0	0.000000	0.000000	0.087622
+without ruled R tasks (LR61/LR70)	anthropic__claude-haiku-4.5	R	N02	section17_astype_str	0	40	0	0.000000	0.000000	0.087622
+without ruled R tasks (LR61/LR70)	anthropic__claude-haiku-4.5	R	N03	section17_int64_epoch	0	40	0	0.000000	0.000000	0.087622
+without ruled R tasks (LR61/LR70)	anthropic__claude-haiku-4.5	R	N04	section17_observed_explicit	0	40	0	0.000000	0.000000	0.087622
+without ruled R tasks (LR61/LR70)	anthropic__claude-haiku-4.5	R	ANY		0	40	0	0.000000	0.000000	0.087622
+without ruled R tasks (LR61/LR70)	anthropic__claude-haiku-5.5	R	N01	section17_dtype_object	0	40	0	0.000000	0.000000	0.087622
+without ruled R tasks (LR61/LR70)	anthropic__claude-haiku-5.5	R	N02	section17_astype_str	5	40	0	0.125000	0.054595	0.261121
+without ruled R tasks (LR61/LR70)	anthropic__claude-haiku-5.5	R	N03	section17_int64_epoch	0	40	0	0.000000	0.000000	0.087622
+without ruled R tasks (LR61/LR70)	anthropic__claude-haiku-5.5	R	N04	section17_observed_explicit	0	40	0	0.000000	0.000000	0.087622
+without ruled R tasks (LR61/LR70)	anthropic__claude-haiku-5.5	R	ANY		5	40	0	0.125000	0.054595	0.261121
+without ruled R tasks (LR61/LR70)	anthropic__claude-sonnet-5.5	R	N01	section17_dtype_object	0	40	0	0.000000	0.000000	0.087622
+without ruled R tasks (LR61/LR70)	anthropic__claude-sonnet-5.5	R	N02	section17_astype_str	0	40	0	0.000000	0.000000	0.087622
+without ruled R tasks (LR61/LR70)	anthropic__claude-sonnet-5.5	R	N03	section17_int64_epoch	0	40	0	0.000000	0.000000	0.087622
+without ruled R tasks (LR61/LR70)	anthropic__claude-sonnet-5.5	R	N04	section17_observed_explicit	0	40	0	0.000000	0.000000	0.087622
+without ruled R tasks (LR61/LR70)	anthropic__claude-sonnet-5.5	R	ANY		0	40	0	0.000000	0.000000	0.087622
+without ruled R tasks (LR61/LR70)	deepseek__deepseek-v3.2	R	N01	section17_dtype_object	0	40	0	0.000000	0.000000	0.087622
+without ruled R tasks (LR61/LR70)	deepseek__deepseek-v3.2	R	N02	section17_astype_str	9	40	0	0.225000	0.123161	0.375031
+without ruled R tasks (LR61/LR70)	deepseek__deepseek-v3.2	R	N03	section17_int64_epoch	0	40	0	0.000000	0.000000	0.087622
+without ruled R tasks (LR61/LR70)	deepseek__deepseek-v3.2	R	N04	section17_observed_explicit	0	40	0	0.000000	0.000000	0.087622
+without ruled R tasks (LR61/LR70)	deepseek__deepseek-v3.2	R	ANY		9	40	0	0.225000	0.123161	0.375031
+without ruled R tasks (LR61/LR70)	google__gemma-4-31b-it	R	N01	section17_dtype_object	0	40	0	0.000000	0.000000	0.087622
+without ruled R tasks (LR61/LR70)	google__gemma-4-31b-it	R	N02	section17_astype_str	4	40	0	0.100000	0.039580	0.230518
+without ruled R tasks (LR61/LR70)	google__gemma-4-31b-it	R	N03	section17_int64_epoch	0	40	0	0.000000	0.000000	0.087622
+without ruled R tasks (LR61/LR70)	google__gemma-4-31b-it	R	N04	section17_observed_explicit	0	40	0	0.000000	0.000000	0.087622
+without ruled R tasks (LR61/LR70)	google__gemma-4-31b-it	R	ANY		4	40	0	0.100000	0.039580	0.230518
+without ruled R tasks (LR61/LR70)	openai__gpt-5.4-mini	R	N01	section17_dtype_object	0	40	0	0.000000	0.000000	0.087622
+without ruled R tasks (LR61/LR70)	openai__gpt-5.4-mini	R	N02	section17_astype_str	9	40	0	0.225000	0.123161	0.375031
+without ruled R tasks (LR61/LR70)	openai__gpt-5.4-mini	R	N03	section17_int64_epoch	0	40	0	0.000000	0.000000	0.087622
+without ruled R tasks (LR61/LR70)	openai__gpt-5.4-mini	R	N04	section17_observed_explicit	0	40	0	0.000000	0.000000	0.087622
+without ruled R tasks (LR61/LR70)	openai__gpt-5.4-mini	R	ANY		9	40	0	0.225000	0.123161	0.375031
+without ruled R tasks (LR61/LR70)	openai__gpt-5.6-terra	R	N01	section17_dtype_object	0	40	0	0.000000	0.000000	0.087622
+without ruled R tasks (LR61/LR70)	openai__gpt-5.6-terra	R	N02	section17_astype_str	0	40	0	0.000000	0.000000	0.087622
+without ruled R tasks (LR61/LR70)	openai__gpt-5.6-terra	R	N03	section17_int64_epoch	0	40	0	0.000000	0.000000	0.087622
+without ruled R tasks (LR61/LR70)	openai__gpt-5.6-terra	R	N04	section17_observed_explicit	0	40	0	0.000000	0.000000	0.087622
+without ruled R tasks (LR61/LR70)	openai__gpt-5.6-terra	R	ANY		0	40	0	0.000000	0.000000	0.087622
+without ruled R tasks (LR61/LR70)	openai__gpt-oss-20b	R	N01	section17_dtype_object	0	40	0	0.000000	0.000000	0.087622
+without ruled R tasks (LR61/LR70)	openai__gpt-oss-20b	R	N02	section17_astype_str	1	40	0	0.025000	0.004427	0.128814
+without ruled R tasks (LR61/LR70)	openai__gpt-oss-20b	R	N03	section17_int64_epoch	0	40	0	0.000000	0.000000	0.087622
+without ruled R tasks (LR61/LR70)	openai__gpt-oss-20b	R	N04	section17_observed_explicit	0	40	0	0.000000	0.000000	0.087622
+without ruled R tasks (LR61/LR70)	openai__gpt-oss-20b	R	ANY		1	40	0	0.025000	0.004427	0.128814
+without ruled R tasks (LR61/LR70)	qwen__qwen3.5-9b	R	N01	section17_dtype_object	0	40	0	0.000000	0.000000	0.087622
+without ruled R tasks (LR61/LR70)	qwen__qwen3.5-9b	R	N02	section17_astype_str	6	40	0	0.150000	0.070612	0.290723
+without ruled R tasks (LR61/LR70)	qwen__qwen3.5-9b	R	N03	section17_int64_epoch	0	40	0	0.000000	0.000000	0.087622
+without ruled R tasks (LR61/LR70)	qwen__qwen3.5-9b	R	N04	section17_observed_explicit	0	40	0	0.000000	0.000000	0.087622
+without ruled R tasks (LR61/LR70)	qwen__qwen3.5-9b	R	ANY		6	40	0	0.150000	0.070612	0.290723
+without ruled R tasks (LR61/LR70)	qwen__qwen3.6-35b-a3b	R	N01	section17_dtype_object	0	40	0	0.000000	0.000000	0.087622
+without ruled R tasks (LR61/LR70)	qwen__qwen3.6-35b-a3b	R	N02	section17_astype_str	7	40	0	0.175000	0.087454	0.319500
+without ruled R tasks (LR61/LR70)	qwen__qwen3.6-35b-a3b	R	N03	section17_int64_epoch	0	40	0	0.000000	0.000000	0.087622
+without ruled R tasks (LR61/LR70)	qwen__qwen3.6-35b-a3b	R	N04	section17_observed_explicit	0	40	0	0.000000	0.000000	0.087622
+without ruled R tasks (LR61/LR70)	qwen__qwen3.6-35b-a3b	R	ANY		7	40	0	0.175000	0.087454	0.319500

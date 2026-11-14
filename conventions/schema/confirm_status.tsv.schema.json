@@ -1,0 +1,90 @@
+{
+ "$schema": "pandas3_full/tsv-schema/1",
+ "title": "mechanisms/confirm/status_A.tsv, status_B.tsv, status.tsv (T2)",
+ "$comment": "Written 2026-11-11 by pkg:SHARED. FULL_PREREG 4.3 (confirmation rule), 3 (warning definition); STAGE2 T2.3. One row per catalogue row (53 SILENT + L01-L06 in status.tsv). Columns in this order; readers use header names. class_E1 and class_E2 are SHARED additions (the oracle class under the confirm program's card, so FIX/TASKS_M2 can see order-only drift without parsing notes).",
+ "format": "tsv",
+ "encoding": "utf-8",
+ "header": true,
+ "columns": [
+  {
+   "name": "id",
+   "pattern": "^(S0[1-6]|O01|D(0[1-9]|10)|C0[1-6]|G0[1-8]|R0[1-7]|N0[1-7]|I0[1-6]|X0[1-2]|L0[1-6])$",
+   "description": "catalogue id"
+  },
+  {
+   "name": "family",
+   "pattern": "^(QF1_STRING|QF2_DATETIME|QF3_COW|QF4_GROUPBY|QF5_ORDER|QF6_NA_DTYPE|QF7_INDEX_REDUCE|QF8_NUMERIC|LOUD)$",
+   "description": "quota_family; LOUD for L rows"
+  },
+  {
+   "name": "scope",
+   "pattern": "^(SILENT|LOUD_CONTEXT)$",
+   "description": "catalogue scope"
+  },
+  {
+   "name": "programs",
+   "pattern": "^[A-Za-z0-9_./\\-]+(;[A-Za-z0-9_./\\-]+)*$",
+   "description": "program files relative to mechanisms/confirm/, ';'-separated, e.g. S01.py;S01_b.py"
+  },
+  {
+   "name": "attempts",
+   "pattern": "^[12]$",
+   "description": "number of honest attempts run (1 or 2)"
+  },
+  {
+   "name": "drift_E1",
+   "pattern": "^(yes|no|na)$",
+   "description": "value drift E0a~E1 under the confirm card (any of ORDER_DRIFT, DTYPE_DRIFT, VALUE_DRIFT, NO_RESULT); na for NOT_FEASIBLE"
+  },
+  {
+   "name": "drift_E2",
+   "pattern": "^(yes|no|na)$",
+   "description": "same for E0a~E2"
+  },
+  {
+   "name": "warn_233_measured",
+   "pattern": "^(yes|no|na)$",
+   "description": "E0a emitted a pandas Future/Deprecation/PendingDeprecation warning, section 3 definition"
+  },
+  {
+   "name": "warn_233_pilotdef",
+   "pattern": "^(yes|no|na)$",
+   "description": "same under the pilot warning definition"
+  },
+  {
+   "name": "warn_3x",
+   "pattern": "^(yes|no|na)$",
+   "description": "any pandas warning (section 3 definition) on E1 or E2"
+  },
+  {
+   "name": "loud",
+   "pattern": "^(yes|no|na)$",
+   "description": "LOUD on E1 (raise/timeout/limit)"
+  },
+  {
+   "name": "status",
+   "pattern": "^(CONFIRMED|NOT_REPRODUCED|NOT_FEASIBLE|LOUD_CONFIRMED)$",
+   "description": "CONFIRMED needs drift on E1 or E2 (pyarrow-only drift does not count); LOUD_CONFIRMED for L rows"
+  },
+  {
+   "name": "prior_py2x_warned",
+   "pattern": "^[A-Z_]+$",
+   "description": "catalogue column py2x_warned, verbatim"
+  },
+  {
+   "name": "note",
+   "pattern": "^[^\\t]*$",
+   "description": "free text, no tabs; required (non-empty) when measured warning status disagrees with the prior, for NOT_REPRODUCED / NOT_FEASIBLE, and for QF5 order-only drift"
+  },
+  {
+   "name": "class_E1",
+   "pattern": "^(IDENTICAL|DTYPE_ONLY|ORDER_ONLY|ORDER_DRIFT|DTYPE_DRIFT|VALUE_DRIFT|NO_RESULT|LOUD|NA)$",
+   "description": "oracle class E0a~E1 of the attempt that decided the status (NA if not run)"
+  },
+  {
+   "name": "class_E2",
+   "pattern": "^(IDENTICAL|DTYPE_ONLY|ORDER_ONLY|ORDER_DRIFT|DTYPE_DRIFT|VALUE_DRIFT|NO_RESULT|LOUD|NA)$",
+   "description": "same for E0a~E2"
+  }
+ ]
+}

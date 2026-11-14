@@ -1,0 +1,45 @@
+(version 1)
+; Study sandbox for untrusted generated programs (macOS sandbox-exec). Written 2026-11-11 by pkg:HRUN.
+; Copy of the pilot's pilots/r3/harness/sandbox.sb plus the review-m7 additions of FULL_PREREG section 6:
+;   deny process-exec except the venv interpreter; deny mach-lookup of the LaunchServices and CoreServices daemons.
+; Parameters (-D): WORKDIR  per-run temp dir holding prog.py and fixture copies (the only writable place)
+;                  HOMEDIR  the user's home (file contents unreadable except the entries below)
+;                  VENVDIR  the study venv of this run;  PYHOME  the real CPython directory behind the venv
+;                  HARNESS  this directory;  PYEXE  the venv's bin/python;  PYREAL  the real interpreter file it points to
+(allow default)
+; no network of any kind
+(deny network*)
+; writes only inside the per-run working directory (plus harmless devices)
+(deny file-write*)
+(allow file-write*
+    (subpath (param "WORKDIR"))
+    (literal "/dev/null")
+    (literal "/dev/zero")
+    (literal "/dev/dtracehelper")
+    (literal "/dev/tty")
+    (regex #"^/dev/fd/")
+    (regex #"^/dev/ttys"))
+; no reading of file contents under the user's home, except the interpreter, the venv and the harness
+(deny file-read-data (subpath (param "HOMEDIR")))
+(allow file-read-data
+    (subpath (param "VENVDIR"))
+    (subpath (param "PYHOME"))
+    (subpath (param "HARNESS"))
+    (subpath (param "WORKDIR")))
+; review m7: no process-exec except the venv interpreter (sandbox-exec itself has exec'ed it before the profile is applied)
+(deny process-exec*)
+(allow process-exec
+    (literal (param "PYEXE"))
+    (literal (param "PYREAL")))
+; review m7: no mach-lookup of the LaunchServices / CoreServices daemons (open, osascript and Apple events start unsandboxed apps through them)
+(deny mach-lookup
+    (global-name "com.apple.coreservices.launchservicesd")
+    (global-name "com.apple.CoreServices.coreservicesd")
+    (global-name-regex #"^com\.apple\.coreservices\.")
+    (global-name-regex #"^com\.apple\.CoreServices\.")
+    (global-name-regex #"^com\.apple\.lsd\.")
+    (global-name "com.apple.lsd.mapdb")
+    (global-name "com.apple.lsd.modifydb")
+    (global-name-regex #"^com\.apple\.launchservices\.")
+    (global-name "com.apple.launchservices.open")
+    (global-name "com.apple.launchservices.registerapp"))

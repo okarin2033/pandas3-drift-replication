@@ -1,0 +1,12 @@
+model	date_utc	calls
+anthropic__claude-haiku-4.5	2026-11-12	1000
+anthropic__claude-haiku-5.5	2026-11-12	1000
+anthropic__claude-sonnet-5.5	2026-11-12	1000
+deepseek__deepseek-v3.2	2026-11-12	805
+deepseek__deepseek-v3.2	2026-11-13	657
+google__gemma-4-31b-it	2026-11-12	2054
+openai__gpt-5.4-mini	2026-11-12	1006
+openai__gpt-5.6-terra	2026-11-12	1001
+openai__gpt-oss-20b	2026-11-12	1010
+qwen__qwen3.5-9b	2026-11-12	1007
+qwen__qwen3.6-35b-a3b	2026-11-12	1000

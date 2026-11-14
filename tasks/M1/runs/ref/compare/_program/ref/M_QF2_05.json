@@ -1,0 +1,106 @@
+{
+ "clean_on_233": true,
+ "exclusion": null,
+ "exclusion_detail": null,
+ "program_id": "ref/M_QF2_05",
+ "targets": {
+  "E0a~E1": {
+   "class": "DTYPE_ONLY",
+   "class_pilot_rule": "DTYPE_ONLY",
+   "drift": false,
+   "drift_pilot_rule": false,
+   "excluded": null,
+   "first_diff": null,
+   "first_divergent_line": null,
+   "locally_silent": null,
+   "magnitude": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "silent_pilot_rule": false,
+   "silent_pilotdef": false,
+   "trace_truncated": null,
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warning_lines": [],
+   "warning_only": false
+  },
+  "E0a~E2": {
+   "class": "DTYPE_ONLY",
+   "class_pilot_rule": "DTYPE_ONLY",
+   "drift": false,
+   "drift_pilot_rule": false,
+   "excluded": null,
+   "first_diff": null,
+   "first_divergent_line": null,
+   "locally_silent": null,
+   "magnitude": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "silent_pilot_rule": false,
+   "silent_pilotdef": false,
+   "trace_truncated": null,
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warning_lines": [],
+   "warning_only": false
+  },
+  "E0pa~E3": {
+   "class": "DTYPE_ONLY",
+   "class_pilot_rule": "DTYPE_ONLY",
+   "drift": false,
+   "drift_pilot_rule": false,
+   "excluded": null,
+   "first_diff": null,
+   "first_divergent_line": null,
+   "locally_silent": null,
+   "magnitude": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "silent_pilot_rule": false,
+   "silent_pilotdef": false,
+   "trace_truncated": null,
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warning_lines": [],
+   "warning_only": false
+  },
+  "E0pa~E4": {
+   "class": "DTYPE_ONLY",
+   "class_pilot_rule": "DTYPE_ONLY",
+   "drift": false,
+   "drift_pilot_rule": false,
+   "excluded": null,
+   "first_diff": null,
+   "first_divergent_line": null,
+   "locally_silent": null,
+   "magnitude": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "silent_pilot_rule": false,
+   "silent_pilotdef": false,
+   "trace_truncated": null,
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warning_lines": [],
+   "warning_only": false
+  }
+ },
+ "task_id": "M_QF2_05",
+ "three_x_only": false,
+ "warned_E0a": {
+  "pilot": false,
+  "prereg": false
+ }
+}

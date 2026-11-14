@@ -1,0 +1,11 @@
+You are given CSV file(s) in the current working directory:
+
+- parcel_rates.csv: Parcel price table (120 rows, sorted by weight_kg, each weight once): weight_kg (two decimals, from 0.40 to 54.05, never a whole number), zones (whole number 1-5), fee (two decimals; about 4% empty).
+
+Task: For the parcels weighing from 20 kg up to 40 kg, count the price rows for each zones value. `result` should be a Series of counts indexed by zones, ordered by zones from 1 to 5.
+
+Requirements:
+- Write a complete Python script that reads the file(s) from the current directory.
+- Use only pandas, numpy and the Python standard library.
+- Store the final answer in a top-level variable named `result`.
+- Reply with a single Python code block.

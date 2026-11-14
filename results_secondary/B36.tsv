@@ -1,0 +1,13 @@
+variant	pair	statistic	warning_definition	estimate	boot_lo	boot_hi	dropped	n_valid	frozen_estimate	frozen_lo	frozen_hi
+all tasks	E0a~E1	H3 (RR, G1/G2)	frozen (prereg)	3.898545	1.811519	9.616719	0	10000	3.898545	1.811519	9.616719
+all tasks	E0a~E1	H4 (share unwarned)	frozen (prereg)	0.973684	0.750000	1.000000	1	9999	0.973684	0.750000	1.000000
+all tasks	E0a~E1	H3 (RR, G1/G2)	pilot	3.898545	1.811519	9.616719	0	10000			
+all tasks	E0a~E1	H4 (share unwarned)	pilot	0.973684	0.750000	1.000000	1	9999			
+all tasks	E0a~E2	H3 (RR, G1/G2)	frozen (prereg)	3.151414	1.310072	7.860293	0	10000	3.151414	1.310072	7.860293
+all tasks	E0a~E2	H4 (share unwarned)	frozen (prereg)	0.973684	0.750000	1.000000	1	9999	0.973684	0.750000	1.000000
+all tasks	E0a~E2	H3 (RR, G1/G2)	pilot	3.151414	1.310072	7.860293	0	10000			
+all tasks	E0a~E2	H4 (share unwarned)	pilot	0.973684	0.750000	1.000000	1	9999			
+without ruled R tasks (LR61/LR70)	E0a~E1	H4 (share unwarned)	frozen (prereg)	0.973684	0.750000	1.000000	2	9998			
+without ruled R tasks (LR61/LR70)	E0a~E1	H4 (share unwarned)	pilot	0.973684	0.750000	1.000000	2	9998			
+without ruled R tasks (LR61/LR70)	E0a~E2	H4 (share unwarned)	frozen (prereg)	0.973684	0.750000	1.000000	2	9998			
+without ruled R tasks (LR61/LR70)	E0a~E2	H4 (share unwarned)	pilot	0.973684	0.750000	1.000000	2	9998			

@@ -1,0 +1,133 @@
+pair	invited_basis	outcome	model	split	x	n	rate	wilson_lo	wilson_hi	boot_lo	boot_hi	boot_dropped	rare_event	cp_deff_upper	entering_models
+E0a~E1	reviewer	silent	anthropic__claude-haiku-4.5	invited	6	139	0.043165	0.019931	0.090971	0.000000	0.126508	0	no	0.154031	
+E0a~E1	reviewer	silent	anthropic__claude-haiku-5.5	invited	0	145	0.000000	0.000000	0.025809	0.000000	0.000000	0	yes	0.036505	
+E0a~E1	reviewer	silent	anthropic__claude-sonnet-5.5	invited	0	145	0.000000	0.000000	0.025809	0.000000	0.000000	0	yes	0.036505	
+E0a~E1	reviewer	silent	deepseek__deepseek-v3.2	invited	1	142	0.007042	0.001244	0.038809	0.000000	0.023256	0	yes	0.049227	
+E0a~E1	reviewer	silent	google__gemma-4-31b-it	invited	5	143	0.034965	0.015026	0.079236	0.000000	0.115385	0	no	0.154101	
+E0a~E1	reviewer	silent	openai__gpt-5.4-mini	invited	0	143	0.000000	0.000000	0.026161	0.000000	0.000000	0	yes	0.036728	
+E0a~E1	reviewer	silent	openai__gpt-5.6-terra	invited	5	144	0.034722	0.014921	0.078703	0.000000	0.115385	0	no	0.153744	
+E0a~E1	reviewer	silent	openai__gpt-oss-20b	invited	9	131	0.068702	0.036563	0.125416	0.012579	0.142857	0	no	0.151868	
+E0a~E1	reviewer	silent	qwen__qwen3.5-9b	invited	2	82	0.024390	0.006714	0.084634	0.000000	0.065424	0	yes	0.089690	
+E0a~E1	reviewer	silent	qwen__qwen3.6-35b-a3b	invited	6	137	0.043796	0.020224	0.092253	0.000000	0.127456	0	no	0.154919	
+E0a~E1	reviewer	silent	MODEL_EQUAL_MEAN	invited			0.025678			0.001550	0.068319	0			10
+E0a~E1	reviewer	silent	anthropic__claude-haiku-4.5	not invited	0	166	0.000000	0.000000	0.022618	0.000000	0.000000	0	yes	0.031551	
+E0a~E1	reviewer	silent	anthropic__claude-haiku-5.5	not invited	0	169	0.000000	0.000000	0.022225	0.000000	0.000000	0	yes	0.031303	
+E0a~E1	reviewer	silent	anthropic__claude-sonnet-5.5	not invited	0	170	0.000000	0.000000	0.022097	0.000000	0.000000	0	yes	0.031222	
+E0a~E1	reviewer	silent	deepseek__deepseek-v3.2	not invited	0	167	0.000000	0.000000	0.022486	0.000000	0.000000	0	yes	0.031467	
+E0a~E1	reviewer	silent	google__gemma-4-31b-it	not invited	0	170	0.000000	0.000000	0.022097	0.000000	0.000000	0	yes	0.031222	
+E0a~E1	reviewer	silent	openai__gpt-5.4-mini	not invited	0	167	0.000000	0.000000	0.022486	0.000000	0.000000	0	yes	0.031467	
+E0a~E1	reviewer	silent	openai__gpt-5.6-terra	not invited	0	170	0.000000	0.000000	0.022097	0.000000	0.000000	0	yes	0.031222	
+E0a~E1	reviewer	silent	openai__gpt-oss-20b	not invited	1	155	0.006452	0.001140	0.035636	0.000000	0.022347	0	yes	0.043905	
+E0a~E1	reviewer	silent	qwen__qwen3.5-9b	not invited	1	113	0.008850	0.001564	0.048431	0.000000	0.029412	0	yes	0.053458	
+E0a~E1	reviewer	silent	qwen__qwen3.6-35b-a3b	not invited	1	161	0.006211	0.001097	0.034340	0.000000	0.021277	0	yes	0.042942	
+E0a~E1	reviewer	silent	MODEL_EQUAL_MEAN	not invited			0.002151			0.000000	0.004839	0			10
+E0a~E1	reviewer	drift	anthropic__claude-haiku-4.5	invited	6	139	0.043165	0.019931	0.090971	0.000000	0.126508	0	no	0.154031	
+E0a~E1	reviewer	drift	anthropic__claude-haiku-5.5	invited	0	145	0.000000	0.000000	0.025809	0.000000	0.000000	0	yes	0.036505	
+E0a~E1	reviewer	drift	anthropic__claude-sonnet-5.5	invited	0	145	0.000000	0.000000	0.025809	0.000000	0.000000	0	yes	0.036505	
+E0a~E1	reviewer	drift	deepseek__deepseek-v3.2	invited	1	142	0.007042	0.001244	0.038809	0.000000	0.023256	0	yes	0.049227	
+E0a~E1	reviewer	drift	google__gemma-4-31b-it	invited	5	143	0.034965	0.015026	0.079236	0.000000	0.115385	0	no	0.154101	
+E0a~E1	reviewer	drift	openai__gpt-5.4-mini	invited	0	143	0.000000	0.000000	0.026161	0.000000	0.000000	0	yes	0.036728	
+E0a~E1	reviewer	drift	openai__gpt-5.6-terra	invited	5	144	0.034722	0.014921	0.078703	0.000000	0.115385	0	no	0.153744	
+E0a~E1	reviewer	drift	openai__gpt-oss-20b	invited	9	131	0.068702	0.036563	0.125416	0.012579	0.142857	0	no	0.151868	
+E0a~E1	reviewer	drift	qwen__qwen3.5-9b	invited	2	82	0.024390	0.006714	0.084634	0.000000	0.065424	0	yes	0.089690	
+E0a~E1	reviewer	drift	qwen__qwen3.6-35b-a3b	invited	6	137	0.043796	0.020224	0.092253	0.000000	0.127456	0	no	0.154919	
+E0a~E1	reviewer	drift	MODEL_EQUAL_MEAN	invited			0.025678			0.001550	0.068319	0			10
+E0a~E1	reviewer	drift	anthropic__claude-haiku-4.5	not invited	0	166	0.000000	0.000000	0.022618	0.000000	0.000000	0	yes	0.031551	
+E0a~E1	reviewer	drift	anthropic__claude-haiku-5.5	not invited	0	169	0.000000	0.000000	0.022225	0.000000	0.000000	0	yes	0.031303	
+E0a~E1	reviewer	drift	anthropic__claude-sonnet-5.5	not invited	0	170	0.000000	0.000000	0.022097	0.000000	0.000000	0	yes	0.031222	
+E0a~E1	reviewer	drift	deepseek__deepseek-v3.2	not invited	0	167	0.000000	0.000000	0.022486	0.000000	0.000000	0	yes	0.031467	
+E0a~E1	reviewer	drift	google__gemma-4-31b-it	not invited	0	170	0.000000	0.000000	0.022097	0.000000	0.000000	0	yes	0.031222	
+E0a~E1	reviewer	drift	openai__gpt-5.4-mini	not invited	0	167	0.000000	0.000000	0.022486	0.000000	0.000000	0	yes	0.031467	
+E0a~E1	reviewer	drift	openai__gpt-5.6-terra	not invited	0	170	0.000000	0.000000	0.022097	0.000000	0.000000	0	yes	0.031222	
+E0a~E1	reviewer	drift	openai__gpt-oss-20b	not invited	2	155	0.012903	0.003546	0.045821	0.000000	0.033557	0	yes	0.054216	
+E0a~E1	reviewer	drift	qwen__qwen3.5-9b	not invited	1	113	0.008850	0.001564	0.048431	0.000000	0.029412	0	yes	0.053458	
+E0a~E1	reviewer	drift	qwen__qwen3.6-35b-a3b	not invited	1	161	0.006211	0.001097	0.034340	0.000000	0.021277	0	yes	0.042942	
+E0a~E1	reviewer	drift	MODEL_EQUAL_MEAN	not invited			0.002796			0.000602	0.005750	0			10
+E0a~E1	reviewer	drift_any	anthropic__claude-haiku-4.5	invited	6	139	0.043165	0.019931	0.090971	0.000000	0.126508	0	no	0.154031	
+E0a~E1	reviewer	drift_any	anthropic__claude-haiku-5.5	invited	0	145	0.000000	0.000000	0.025809	0.000000	0.000000	0	yes	0.036505	
+E0a~E1	reviewer	drift_any	anthropic__claude-sonnet-5.5	invited	0	145	0.000000	0.000000	0.025809	0.000000	0.000000	0	yes	0.036505	
+E0a~E1	reviewer	drift_any	deepseek__deepseek-v3.2	invited	1	142	0.007042	0.001244	0.038809	0.000000	0.023256	0	yes	0.049227	
+E0a~E1	reviewer	drift_any	google__gemma-4-31b-it	invited	5	143	0.034965	0.015026	0.079236	0.000000	0.115385	0	no	0.154101	
+E0a~E1	reviewer	drift_any	openai__gpt-5.4-mini	invited	0	143	0.000000	0.000000	0.026161	0.000000	0.000000	0	yes	0.036728	
+E0a~E1	reviewer	drift_any	openai__gpt-5.6-terra	invited	5	144	0.034722	0.014921	0.078703	0.000000	0.115385	0	no	0.153744	
+E0a~E1	reviewer	drift_any	openai__gpt-oss-20b	invited	9	131	0.068702	0.036563	0.125416	0.012579	0.142857	0	no	0.151868	
+E0a~E1	reviewer	drift_any	qwen__qwen3.5-9b	invited	2	82	0.024390	0.006714	0.084634	0.000000	0.065424	0	yes	0.089690	
+E0a~E1	reviewer	drift_any	qwen__qwen3.6-35b-a3b	invited	6	137	0.043796	0.020224	0.092253	0.000000	0.127456	0	no	0.154919	
+E0a~E1	reviewer	drift_any	MODEL_EQUAL_MEAN	invited			0.025678			0.001550	0.068319	0			10
+E0a~E1	reviewer	drift_any	anthropic__claude-haiku-4.5	not invited	0	166	0.000000	0.000000	0.022618	0.000000	0.000000	0	yes	0.031551	
+E0a~E1	reviewer	drift_any	anthropic__claude-haiku-5.5	not invited	0	169	0.000000	0.000000	0.022225	0.000000	0.000000	0	yes	0.031303	
+E0a~E1	reviewer	drift_any	anthropic__claude-sonnet-5.5	not invited	0	170	0.000000	0.000000	0.022097	0.000000	0.000000	0	yes	0.031222	
+E0a~E1	reviewer	drift_any	deepseek__deepseek-v3.2	not invited	0	167	0.000000	0.000000	0.022486	0.000000	0.000000	0	yes	0.031467	
+E0a~E1	reviewer	drift_any	google__gemma-4-31b-it	not invited	0	170	0.000000	0.000000	0.022097	0.000000	0.000000	0	yes	0.031222	
+E0a~E1	reviewer	drift_any	openai__gpt-5.4-mini	not invited	0	167	0.000000	0.000000	0.022486	0.000000	0.000000	0	yes	0.031467	
+E0a~E1	reviewer	drift_any	openai__gpt-5.6-terra	not invited	0	170	0.000000	0.000000	0.022097	0.000000	0.000000	0	yes	0.031222	
+E0a~E1	reviewer	drift_any	openai__gpt-oss-20b	not invited	2	155	0.012903	0.003546	0.045821	0.000000	0.033557	0	yes	0.054216	
+E0a~E1	reviewer	drift_any	qwen__qwen3.5-9b	not invited	1	113	0.008850	0.001564	0.048431	0.000000	0.029412	0	yes	0.053458	
+E0a~E1	reviewer	drift_any	qwen__qwen3.6-35b-a3b	not invited	1	161	0.006211	0.001097	0.034340	0.000000	0.021277	0	yes	0.042942	
+E0a~E1	reviewer	drift_any	MODEL_EQUAL_MEAN	not invited			0.002796			0.000602	0.005750	0			10
+E0a~E1	author	silent	anthropic__claude-haiku-4.5	invited	6	201	0.029851	0.013751	0.063584	0.000000	0.087808	0	no	0.108456	
+E0a~E1	author	silent	anthropic__claude-haiku-5.5	invited	0	209	0.000000	0.000000	0.018048	0.000000	0.000000	0	yes	0.025404	
+E0a~E1	author	silent	anthropic__claude-sonnet-5.5	invited	0	210	0.000000	0.000000	0.017964	0.000000	0.000000	0	yes	0.025351	
+E0a~E1	author	silent	deepseek__deepseek-v3.2	invited	1	206	0.004854	0.000857	0.026980	0.000000	0.015957	0	yes	0.034185	
+E0a~E1	author	silent	google__gemma-4-31b-it	invited	5	208	0.024038	0.010311	0.055028	0.000000	0.078947	0	no	0.108385	
+E0a~E1	author	silent	openai__gpt-5.4-mini	invited	0	207	0.000000	0.000000	0.018220	0.000000	0.000000	0	yes	0.025512	
+E0a~E1	author	silent	openai__gpt-5.6-terra	invited	5	209	0.023923	0.010261	0.054771	0.000000	0.078947	0	no	0.108210	
+E0a~E1	author	silent	openai__gpt-oss-20b	invited	9	185	0.048649	0.025802	0.089858	0.009169	0.101607	0	no	0.109333	
+E0a~E1	author	silent	qwen__qwen3.5-9b	invited	2	121	0.016529	0.004545	0.058267	0.000000	0.043860	0	yes	0.062204	
+E0a~E1	author	silent	qwen__qwen3.6-35b-a3b	invited	6	199	0.030151	0.013890	0.064208	0.000000	0.088083	0	no	0.108891	
+E0a~E1	author	silent	MODEL_EQUAL_MEAN	invited			0.017800			0.001099	0.047243	0			10
+E0a~E1	author	silent	anthropic__claude-haiku-4.5	not invited	0	104	0.000000	0.000000	0.035621	0.000000	0.000000	0	yes	0.050267	
+E0a~E1	author	silent	anthropic__claude-haiku-5.5	not invited	0	105	0.000000	0.000000	0.035294	0.000000	0.000000	0	yes	0.050059	
+E0a~E1	author	silent	anthropic__claude-sonnet-5.5	not invited	0	105	0.000000	0.000000	0.035294	0.000000	0.000000	0	yes	0.050059	
+E0a~E1	author	silent	deepseek__deepseek-v3.2	not invited	0	103	0.000000	0.000000	0.035955	0.000000	0.000000	0	yes	0.050480	
+E0a~E1	author	silent	google__gemma-4-31b-it	not invited	0	105	0.000000	0.000000	0.035294	0.000000	0.000000	0	yes	0.050059	
+E0a~E1	author	silent	openai__gpt-5.4-mini	not invited	0	103	0.000000	0.000000	0.035955	0.000000	0.000000	0	yes	0.050480	
+E0a~E1	author	silent	openai__gpt-5.6-terra	not invited	0	105	0.000000	0.000000	0.035294	0.000000	0.000000	0	yes	0.050059	
+E0a~E1	author	silent	openai__gpt-oss-20b	not invited	1	101	0.009901	0.001750	0.053967	0.000000	0.034483	0	yes	0.068116	
+E0a~E1	author	silent	qwen__qwen3.5-9b	not invited	1	74	0.013514	0.002389	0.072654	0.000000	0.044776	0	yes	0.082192	
+E0a~E1	author	silent	qwen__qwen3.6-35b-a3b	not invited	1	99	0.010101	0.001785	0.055015	0.000000	0.034884	0	yes	0.068901	
+E0a~E1	author	silent	MODEL_EQUAL_MEAN	not invited			0.003352			0.000000	0.007541	0			10
+E0a~E1	author	drift	anthropic__claude-haiku-4.5	invited	6	201	0.029851	0.013751	0.063584	0.000000	0.087808	0	no	0.108456	
+E0a~E1	author	drift	anthropic__claude-haiku-5.5	invited	0	209	0.000000	0.000000	0.018048	0.000000	0.000000	0	yes	0.025404	
+E0a~E1	author	drift	anthropic__claude-sonnet-5.5	invited	0	210	0.000000	0.000000	0.017964	0.000000	0.000000	0	yes	0.025351	
+E0a~E1	author	drift	deepseek__deepseek-v3.2	invited	1	206	0.004854	0.000857	0.026980	0.000000	0.015957	0	yes	0.034185	
+E0a~E1	author	drift	google__gemma-4-31b-it	invited	5	208	0.024038	0.010311	0.055028	0.000000	0.078947	0	no	0.108385	
+E0a~E1	author	drift	openai__gpt-5.4-mini	invited	0	207	0.000000	0.000000	0.018220	0.000000	0.000000	0	yes	0.025512	
+E0a~E1	author	drift	openai__gpt-5.6-terra	invited	5	209	0.023923	0.010261	0.054771	0.000000	0.078947	0	no	0.108210	
+E0a~E1	author	drift	openai__gpt-oss-20b	invited	10	185	0.054054	0.029623	0.096628	0.012577	0.106383	0	no	0.113237	
+E0a~E1	author	drift	qwen__qwen3.5-9b	invited	2	121	0.016529	0.004545	0.058267	0.000000	0.043860	0	yes	0.062204	
+E0a~E1	author	drift	qwen__qwen3.6-35b-a3b	invited	6	199	0.030151	0.013890	0.064208	0.000000	0.088083	0	no	0.108891	
+E0a~E1	author	drift	MODEL_EQUAL_MEAN	invited			0.018340			0.001648	0.047843	0			10
+E0a~E1	author	drift	anthropic__claude-haiku-4.5	not invited	0	104	0.000000	0.000000	0.035621	0.000000	0.000000	0	yes	0.050267	
+E0a~E1	author	drift	anthropic__claude-haiku-5.5	not invited	0	105	0.000000	0.000000	0.035294	0.000000	0.000000	0	yes	0.050059	
+E0a~E1	author	drift	anthropic__claude-sonnet-5.5	not invited	0	105	0.000000	0.000000	0.035294	0.000000	0.000000	0	yes	0.050059	
+E0a~E1	author	drift	deepseek__deepseek-v3.2	not invited	0	103	0.000000	0.000000	0.035955	0.000000	0.000000	0	yes	0.050480	
+E0a~E1	author	drift	google__gemma-4-31b-it	not invited	0	105	0.000000	0.000000	0.035294	0.000000	0.000000	0	yes	0.050059	
+E0a~E1	author	drift	openai__gpt-5.4-mini	not invited	0	103	0.000000	0.000000	0.035955	0.000000	0.000000	0	yes	0.050480	
+E0a~E1	author	drift	openai__gpt-5.6-terra	not invited	0	105	0.000000	0.000000	0.035294	0.000000	0.000000	0	yes	0.050059	
+E0a~E1	author	drift	openai__gpt-oss-20b	not invited	1	101	0.009901	0.001750	0.053967	0.000000	0.034483	0	yes	0.068116	
+E0a~E1	author	drift	qwen__qwen3.5-9b	not invited	1	74	0.013514	0.002389	0.072654	0.000000	0.044776	0	yes	0.082192	
+E0a~E1	author	drift	qwen__qwen3.6-35b-a3b	not invited	1	99	0.010101	0.001785	0.055015	0.000000	0.034884	0	yes	0.068901	
+E0a~E1	author	drift	MODEL_EQUAL_MEAN	not invited			0.003352			0.000000	0.007541	0			10
+E0a~E1	author	drift_any	anthropic__claude-haiku-4.5	invited	6	201	0.029851	0.013751	0.063584	0.000000	0.087808	0	no	0.108456	
+E0a~E1	author	drift_any	anthropic__claude-haiku-5.5	invited	0	209	0.000000	0.000000	0.018048	0.000000	0.000000	0	yes	0.025404	
+E0a~E1	author	drift_any	anthropic__claude-sonnet-5.5	invited	0	210	0.000000	0.000000	0.017964	0.000000	0.000000	0	yes	0.025351	
+E0a~E1	author	drift_any	deepseek__deepseek-v3.2	invited	1	206	0.004854	0.000857	0.026980	0.000000	0.015957	0	yes	0.034185	
+E0a~E1	author	drift_any	google__gemma-4-31b-it	invited	5	208	0.024038	0.010311	0.055028	0.000000	0.078947	0	no	0.108385	
+E0a~E1	author	drift_any	openai__gpt-5.4-mini	invited	0	207	0.000000	0.000000	0.018220	0.000000	0.000000	0	yes	0.025512	
+E0a~E1	author	drift_any	openai__gpt-5.6-terra	invited	5	209	0.023923	0.010261	0.054771	0.000000	0.078947	0	no	0.108210	
+E0a~E1	author	drift_any	openai__gpt-oss-20b	invited	10	185	0.054054	0.029623	0.096628	0.012577	0.106383	0	no	0.113237	
+E0a~E1	author	drift_any	qwen__qwen3.5-9b	invited	2	121	0.016529	0.004545	0.058267	0.000000	0.043860	0	yes	0.062204	
+E0a~E1	author	drift_any	qwen__qwen3.6-35b-a3b	invited	6	199	0.030151	0.013890	0.064208	0.000000	0.088083	0	no	0.108891	
+E0a~E1	author	drift_any	MODEL_EQUAL_MEAN	invited			0.018340			0.001648	0.047843	0			10
+E0a~E1	author	drift_any	anthropic__claude-haiku-4.5	not invited	0	104	0.000000	0.000000	0.035621	0.000000	0.000000	0	yes	0.050267	
+E0a~E1	author	drift_any	anthropic__claude-haiku-5.5	not invited	0	105	0.000000	0.000000	0.035294	0.000000	0.000000	0	yes	0.050059	
+E0a~E1	author	drift_any	anthropic__claude-sonnet-5.5	not invited	0	105	0.000000	0.000000	0.035294	0.000000	0.000000	0	yes	0.050059	
+E0a~E1	author	drift_any	deepseek__deepseek-v3.2	not invited	0	103	0.000000	0.000000	0.035955	0.000000	0.000000	0	yes	0.050480	
+E0a~E1	author	drift_any	google__gemma-4-31b-it	not invited	0	105	0.000000	0.000000	0.035294	0.000000	0.000000	0	yes	0.050059	
+E0a~E1	author	drift_any	openai__gpt-5.4-mini	not invited	0	103	0.000000	0.000000	0.035955	0.000000	0.000000	0	yes	0.050480	
+E0a~E1	author	drift_any	openai__gpt-5.6-terra	not invited	0	105	0.000000	0.000000	0.035294	0.000000	0.000000	0	yes	0.050059	
+E0a~E1	author	drift_any	openai__gpt-oss-20b	not invited	1	101	0.009901	0.001750	0.053967	0.000000	0.034483	0	yes	0.068116	
+E0a~E1	author	drift_any	qwen__qwen3.5-9b	not invited	1	74	0.013514	0.002389	0.072654	0.000000	0.044776	0	yes	0.082192	
+E0a~E1	author	drift_any	qwen__qwen3.6-35b-a3b	not invited	1	99	0.010101	0.001785	0.055015	0.000000	0.034884	0	yes	0.068901	
+E0a~E1	author	drift_any	MODEL_EQUAL_MEAN	not invited			0.003352			0.000000	0.007541	0			10

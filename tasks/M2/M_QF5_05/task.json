@@ -1,0 +1,93 @@
+{
+ "id": "M_QF5_05",
+ "stratum": "M",
+ "family": "QF5_ORDER",
+ "generic_family": null,
+ "catalogue_row": "R01",
+ "files": [
+  {
+   "path": "QF5_ORDER/footfall_north.csv",
+   "description": "Daily visitor counts at the north entrance (36 rows, rows not in date order, each day at most once, some days missing): day (date as text, YYYY-MM-DD, September-October 2025), visitors (whole number; equal counts are common), remark (short note; about 47% empty). The dates overlap only partly with footfall_south.csv."
+  },
+  {
+   "path": "QF5_ORDER/footfall_south.csv",
+   "description": "Daily visitor counts at the south entrance (36 rows, rows not in date order, each day at most once, some days missing): day (date as text, YYYY-MM-DD, September-October 2025), visitors (whole number; equal counts are common), remark (short note; about 47% empty). The dates overlap only partly with footfall_north.csv."
+  }
+ ],
+ "task_text": "Add up the visitors of both entrances for each day (an entrance with no count for a day adds 0). Going through the days in calendar order, work out for each day how much the total changed compared with the previous day listed. `result` should be a Series indexed by day in calendar order holding that change (empty for the first day).",
+ "allowed_task_words": [],
+ "invited_ids_author": [
+  "R01"
+ ],
+ "order_significant": true,
+ "sort_keys": [
+  "day"
+ ],
+ "dtype_significant": false,
+ "intended_computation": "Total visitors per day = north count + south count, with a missing count taken as 0, over the 47 days that appear in either file. Sort the days ascending; for each day the change is its total minus the total of the preceding day in that sorted list; the first day has no change (missing). Result: Series indexed by day, ascending.",
+ "acceptable_variants": {
+  "row_order": "ties_only",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": "the first day's change is empty (missing value in any representation)."
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 47
+   }
+  },
+  {
+   "check": "sorted_by",
+   "args": {
+    "keys": [
+     "day"
+    ],
+    "ascending": [
+     true
+    ]
+   }
+  },
+  {
+   "check": "date_year_in_range",
+   "args": {
+    "columns": [
+     "day"
+    ],
+    "min_year": 2025,
+    "max_year": 2025
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "HARM",
+  "reason": "On 3.x concat(sort=False) keeps the days in file order, so diff() compares days that are not neighbours in the calendar; 2.x sorted the dates and gives the requested changes."
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M2",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 by pkg:TASKS_M2 for catalogue row R01; naive.py shows the invited idiom, reference.py is the version-robust reference."
+}

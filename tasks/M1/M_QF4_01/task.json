@@ -1,0 +1,86 @@
+{
+ "id": "M_QF4_01",
+ "stratum": "M",
+ "family": "QF4_GROUPBY",
+ "generic_family": null,
+ "catalogue_row": "G01",
+ "files": [
+  {
+   "path": "QF4_GROUPBY/subscribers.csv",
+   "description": "Streaming subscribers, one per row (320 rows): subscriber_id (whole number), age (years, from 19 to 87; about 1% empty), tier (basic, plus or premium; capital letters and spaces are inconsistent), monthly_fee (two decimals; about 3% empty), joined_year (whole number)."
+  }
+ ],
+ "task_text": "Split the subscribers into the age bands 'under 18', '18-29', '30-44', '45-59' and '60+', and give for every band the number of subscribers and their mean monthly fee rounded to two decimals. Every band must appear in the answer, also when it is empty (0 subscribers). Subscribers without an age are left out. `result` should be a table indexed by band, in the band order above, with the columns subscribers and mean_fee.",
+ "allowed_task_words": [
+  "age bands"
+ ],
+ "invited_ids_author": [
+  "G01"
+ ],
+ "order_significant": true,
+ "sort_keys": [
+  "__index__"
+ ],
+ "dtype_significant": false,
+ "intended_computation": "Assign the 316 subscribers with an age to the five bands [0,18), [18,30), [30,45), [45,60), [60,inf); report per band the count and the mean monthly_fee (missing fees skipped) rounded to 2 decimals; 'under 18' is empty (count 0, mean missing).",
+ "acceptable_variants": {
+  "row_order": "ties_only",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": "the empty band may show its mean as missing."
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 5
+   }
+  },
+  {
+   "check": "counts_sum_to_rows",
+   "args": {
+    "column": "subscribers",
+    "expected": 316
+   }
+  },
+  {
+   "check": "columns_present",
+   "args": {
+    "columns": [
+     "subscribers",
+     "mean_fee"
+    ]
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "HARM",
+  "reason": "on 3.x grouping by the binned categories drops the empty band that the task asks to keep"
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M1",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 in package TASKS_M1; task text, card, naive solution, reference and predicted direction were prepared there."
+}

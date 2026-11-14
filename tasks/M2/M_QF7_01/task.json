@@ -1,0 +1,76 @@
+{
+ "id": "M_QF7_01",
+ "stratum": "M",
+ "family": "QF7_INDEX_REDUCE",
+ "generic_family": null,
+ "catalogue_row": "I01",
+ "files": [
+  {
+   "path": "QF7_INDEX_REDUCE/order_lines.csv",
+   "description": "Order lines (300 rows): line_id (whole number), product (product name; capital letters and spaces are inconsistent), quantity (whole number; about 3% empty), amount (line total, two decimals; about 3% empty)."
+  }
+ ],
+ "task_text": "Give the total quantity and the total amount over all order lines, ignoring empty cells. `result` should be a Series with the two totals, indexed by quantity and amount.",
+ "allowed_task_words": [],
+ "invited_ids_author": [
+  "I01"
+ ],
+ "order_significant": false,
+ "sort_keys": [],
+ "dtype_significant": false,
+ "intended_computation": "Column sums of quantity and amount over the non-empty cells of all 300 lines; two values.",
+ "acceptable_variants": {
+  "row_order": "any",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": "totals to 6 significant digits."
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 2
+   }
+  },
+  {
+   "check": "numeric_in_range",
+   "args": {
+    "columns": [
+     "__values__"
+    ],
+    "min": 0,
+    "max": null
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "HARM",
+  "reason": "np.sum on a DataFrame gave per-column totals on 2.x; on 3.x it adds up both columns into one number."
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M2",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 by pkg:TASKS_M2 for catalogue row I01; naive.py shows the invited idiom, reference.py is the version-robust reference."
+}

@@ -1,0 +1,68 @@
+{
+ "id": "<M_QFn_nn | R_nn | A_<FAM>_nn>",
+ "stratum": "<M | R | A>",
+ "family": "<QF1_STRING ... QF8_NUMERIC for M; null for R and A>",
+ "generic_family": "<TXT IMP CONV BIN DATE TS TOP MRG PIV ENC UPD RPT for A (optional for R); null for M>",
+ "catalogue_row": "<M: the confirmed row of this quota slot (quota_allocation.tsv), e.g. S01; null for R and A>",
+ "files": [
+  {
+   "path": "<QFn_FAMILY or GEN>/<file>.csv",
+   "description": "<the F-main line of fixtures/descriptions.tsv, verbatim>"
+  }
+ ],
+ "task_text": "<ordinary data-wrangling request; ends with what `result` should be; no banned word (section 5)>",
+ "allowed_task_words": [
+  "<ordinary words the task needs that relate to a mechanism, e.g. 'Unix timestamp in seconds'>"
+ ],
+ "invited_ids_author": [
+  "<catalogue ids the author thinks the task invites; M: must include catalogue_row; may be empty for R/A>"
+ ],
+ "order_significant": false,
+ "sort_keys": [
+  "<non-empty iff order_significant: result column(s)/'__index__'/'__values__' named by the task, priority order>"
+ ],
+ "dtype_significant": false,
+ "intended_computation": "<one paragraph: what the correct result is, from the task text alone>",
+ "acceptable_variants": {
+  "row_order": "<any | ties_only (iff order_significant)>",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": "<what else is acceptable, e.g. index vs column for the key>"
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "<task-specific check from the vocabulary>",
+   "args": {}
+  }
+ ],
+ "predicted_direction": {
+  "direction": "<HARM | FIX | BOTH (M only; null for R and A)>",
+  "reason": "<one line>"
+ },
+ "naive_path": "<naive.py for M; null for R and A>",
+ "reference_path": "reference.py",
+ "so_question_id": "<R only: integer; null otherwise>",
+ "so_url": "<R only: https://stackoverflow.com/q/<id>; null otherwise>",
+ "so_creation_date": "<R only: YYYY-MM-DD (>= 2026-01-21); null otherwise>",
+ "so_score": "<R only: integer at fetch; null otherwise>",
+ "so_licence": "<R only: CC BY-SA 4.0; null otherwise>",
+ "intent_summary": "<R only: own one-sentence intent summary; null otherwise>",
+ "column_map": "<R only: {question role -> 'file.csv:column'}; null otherwise>",
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:<KEY>",
+ "status": "prepared",
+ "notes": "<optional>"
+}

@@ -1,0 +1,69 @@
+{
+ "id": "M_QF4_06",
+ "stratum": "M",
+ "family": "QF4_GROUPBY",
+ "generic_family": null,
+ "catalogue_row": "G06",
+ "files": [
+  {
+   "path": "QF4_GROUPBY/subscribers.csv",
+   "description": "Streaming subscribers, one per row (320 rows): subscriber_id (whole number), age (years, from 19 to 87; about 1% empty), tier (basic, plus or premium; capital letters and spaces are inconsistent), monthly_fee (two decimals; about 3% empty), joined_year (whole number)."
+  }
+ ],
+ "task_text": "Set the tier (lower case, no surrounding spaces) as the index of the subscribers table, then loop over the groups of that index level to build a plain Python dictionary that maps each tier name to the total monthly fee of its subscribers, rounded to two decimals. `result` should be that dictionary.",
+ "allowed_task_words": [
+  "index level",
+  "loop over the groups"
+ ],
+ "invited_ids_author": [
+  "G06"
+ ],
+ "order_significant": false,
+ "sort_keys": [],
+ "dtype_significant": false,
+ "intended_computation": "Return a dict with the 3 tier names as keys and the summed monthly_fee per tier (missing fees skipped) as values.",
+ "acceptable_variants": {
+  "row_order": "any",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": ""
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 3
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "HARM",
+  "reason": "on 3.x iterating over groups of a one-element level list yields 1-tuples, so the dictionary keys become tuples"
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M1",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 in package TASKS_M1; task text, card, naive solution, reference and predicted direction were prepared there."
+}

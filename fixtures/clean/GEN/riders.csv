@@ -1,0 +1,401 @@
+rider_id,display_name,home_district,membership,joined_on,birth_year,credit_balance
+004000,Leila Ivanova,Riverbend,monthly,2023-02-09,1954,4.97
+004017,Olga Rossi,Harbourside,casual,2024-03-13,1958,-5.92
+004034,Yusuf Ivanova,Riverbend,casual,2022-09-03,1996,-8.11
+004051,Ingrid Silva,Southpark,casual,2024-04-09,1959,66.63
+004068,Mia Kaya,Eastfield,monthly,2025-02-22,1949,49.06
+004085,Leila Fischer,Riverbend,casual,2021-03-12,1998,-3.08
+004102,Raúl Okafor,Harbourside,monthly,2025-10-29,2005,21.69
+004119,Tomás Varga,Southpark,annual,2025-01-31,1957,14.95
+004136,Noah Müller,Southpark,casual,2022-08-02,1971,119.07
+004153,Ana Dubois,Southpark,casual,2025-04-28,1956,90.61
+004170,Søren Haddad,Eastfield,monthly,2025-02-21,1962,75.96
+004187,Émile Fischer,Eastfield,casual,2023-05-19,1966,19.72
+004204,José Andersen,Southpark,annual,2023-07-11,1986,85.84
+004221,Dmitri Kaya,Eastfield,monthly,2021-11-04,1961,26.46
+004238,Olga Varga,Northgate,monthly,2024-03-26,1982,102.59
+004255,Ines Novak,Southpark,casual,2025-07-27,1988,105.03
+004272,Kenji Costa,Eastfield,monthly,2024-04-05,1961,29.46
+004289,Priya Fischer,Northgate,annual,2024-04-04,1988,76.69
+004306,Sanna Novak,Northgate,casual,2023-02-08,1957,107.22
+004323,Aiko Novak,Northgate,monthly,2024-12-04,1954,17.88
+004340,Farah Kowalski,Northgate,monthly,2022-05-03,1981,105.89
+004357,Dmitri Tanaka,Northgate,casual,2022-12-26,1984,27.59
+004374,Mia García,Riverbend,casual,2022-06-24,2005,51.50
+004391,Łukasz Novak,Old Town,annual,2021-06-14,1963,43.96
+004408,Dmitri Lindqvist,Eastfield,casual,2023-10-08,1975,89.52
+004425,Mia Lindqvist,Southpark,casual,2025-08-14,1966,112.57
+004442,Priya Kowalski,Riverbend,casual,2025-09-01,1998,85.34
+004459,Olga Andersen,Riverbend,monthly,2023-03-02,1966,57.58
+004476,Ana Haddad,Eastfield,monthly,2024-06-30,2007,8.31
+004493,Ines Brennan,Riverbend,casual,2024-06-26,1994,47.38
+004510,Hugo Peña,Harbourside,monthly,2022-04-20,1991,63.16
+004527,Łukasz Costa,Riverbend,annual,2021-05-24,1967,83.18
+004544,Chloé Jensen,Harbourside,casual,2024-06-28,1956,112.06
+004561,Björn Moreau,Eastfield,casual,2023-02-02,1950,7.15
+004578,Kenji Ivanova,Harbourside,casual,2025-02-19,1984,29.88
+004595,Søren Brennan,Eastfield,monthly,2023-09-02,2001,117.09
+004612,Hugo Haddad,Eastfield,casual,2024-04-25,1967,83.26
+004629,Hugo Nakamura,Old Town,annual,2021-03-02,1959,36.32
+004646,Chloé Peña,Eastfield,annual,2022-01-04,1999,-7.53
+004663,Kenji Müller,Harbourside,casual,2024-07-18,2004,80.44
+004680,Sanna Kaya,Northgate,casual,2025-09-04,1949,-13.83
+004697,Łukasz Brennan,Old Town,annual,2024-05-23,1977,119.23
+004714,Ines Fischer,Riverbend,monthly,2022-11-29,1989,74.57
+004731,Søren García,Southpark,monthly,2022-06-26,1982,8.72
+004748,Kenji Novak,Harbourside,monthly,2021-10-09,1978,92.60
+004765,Björn Kowalski,Eastfield,monthly,2023-02-17,1956,80.50
+004782,Søren Costa,Riverbend,casual,2025-03-06,1948,-11.87
+004799,Dmitri Fischer,Southpark,casual,2024-05-02,1950,104.98
+004816,Priya Dubois,Old Town,annual,2023-11-05,1971,94.93
+004833,Noah Varga,Riverbend,casual,2025-10-31,1990,112.03
+004850,Yusuf García,Harbourside,monthly,2024-12-05,1987,13.39
+004867,Ines García,Southpark,annual,2021-11-21,1965,-6.01
+004884,Łukasz Jensen,Harbourside,monthly,2021-03-03,1965,73.60
+004901,Olga Müller,Harbourside,monthly,2021-11-25,2003,4.81
+004918,Tomás Tanaka,Eastfield,monthly,2022-02-22,1955,39.92
+004935,Łukasz Jensen,Eastfield,monthly,2023-02-04,1950,23.19
+004952,Zoë García,Riverbend,casual,2021-05-03,1953,18.20
+004969,Søren Okafor,Southpark,annual,2023-11-17,1999,19.13
+004986,José Varga,Eastfield,casual,2025-06-11,1999,59.21
+005003,Kenji Nakamura,Harbourside,monthly,2021-09-13,1995,14.03
+005020,Søren Rossi,Old Town,annual,2023-09-20,1965,63.17
+005037,Dmitri Lindqvist,Riverbend,annual,2021-11-05,1990,117.61
+005054,Mateo Varga,Eastfield,casual,2024-11-10,1963,18.24
+005071,Hugo Brennan,Harbourside,annual,2025-09-12,1957,34.67
+005088,Dmitri Varga,Riverbend,annual,2023-03-10,1963,96.83
+005105,Ines Lindqvist,Riverbend,casual,2024-12-25,1997,18.90
+005122,Sanna Kowalski,Southpark,annual,2022-06-18,1984,113.16
+005139,Nils Tanaka,Old Town,casual,2023-01-04,1969,19.38
+005156,Priya Fischer,Eastfield,annual,2021-04-02,1983,33.66
+005173,Mia Kowalski,Riverbend,casual,2022-02-07,1983,79.18
+005190,Mia Jensen,Northgate,monthly,2023-02-08,1962,37.56
+005207,Dmitri Silva,Old Town,monthly,2022-05-14,1971,23.46
+005224,Ines Andersen,Riverbend,casual,2021-12-23,1983,27.70
+005241,Mateo Kowalski,Southpark,casual,2021-11-29,1950,16.34
+005258,Noah Andersen,Northgate,casual,2023-11-04,1959,75.79
+005275,Kenji Fischer,Southpark,casual,2022-05-17,2005,44.89
+005292,Tomás García,Eastfield,casual,2024-06-25,2006,7.36
+005309,Ana Costa,Old Town,casual,2023-03-04,1958,48.04
+005326,Noah Lindqvist,Harbourside,monthly,2025-01-24,1994,109.06
+005343,Ana Haddad,Riverbend,casual,2023-06-11,1980,107.83
+005360,Zoë Ivanova,Eastfield,casual,2025-06-05,2003,61.55
+005377,Olga Okafor,Southpark,monthly,2024-08-11,1983,113.87
+005394,Tomás Ivanova,Eastfield,casual,2023-03-11,2003,113.71
+005411,Yusuf Fischer,Northgate,monthly,2024-06-05,2006,-10.39
+005428,Mia Fischer,Harbourside,monthly,2022-02-20,1971,38.86
+005445,Leila Lindqvist,Old Town,annual,2021-08-19,1989,9.59
+005462,Ines Kowalski,Eastfield,casual,2025-01-18,1973,31.50
+005479,Olga Fischer,Eastfield,monthly,2025-02-28,1976,116.12
+005496,Aiko Moreau,Old Town,casual,2022-09-14,2002,104.20
+005513,Ines Silva,Southpark,annual,2025-07-06,1955,74.78
+005530,Leila Müller,Eastfield,annual,2021-03-12,1982,41.90
+005547,Sanna Novak,Eastfield,annual,2022-06-23,1980,32.90
+005564,Émile Varga,Old Town,casual,2021-12-26,1967,25.64
+005581,Dmitri Varga,Harbourside,casual,2021-05-03,1956,46.08
+005598,Zoë Lindqvist,Riverbend,casual,2022-07-19,1999,36.82
+005615,Olga Okafor,Harbourside,casual,2023-01-14,1951,30.17
+005632,Łukasz Okafor,Northgate,monthly,2021-08-24,1998,12.71
+005649,Mia Silva,Riverbend,casual,2024-11-10,2007,-14.80
+005666,Raúl Peña,Southpark,monthly,2024-01-25,1995,90.12
+005683,Tomás Tanaka,Southpark,monthly,2021-06-07,1998,98.93
+005700,Priya Tanaka,Southpark,casual,2025-04-27,1966,23.22
+005717,Søren Novak,Old Town,monthly,2021-09-12,2005,102.71
+005734,Zoë Kaya,Northgate,casual,2024-11-09,1995,114.69
+005751,Émile Varga,Eastfield,casual,2024-01-05,1974,46.59
+005768,Raúl García,Riverbend,casual,2022-07-14,1962,85.25
+005785,Ingrid Moreau,Riverbend,casual,2021-11-20,1977,57.46
+005802,Mateo Nakamura,Eastfield,annual,2021-10-28,1948,119.05
+005819,Ana Nakamura,Northgate,casual,2024-04-08,1965,103.55
+005836,Raúl Andersen,Old Town,casual,2021-12-31,1993,113.25
+005853,Łukasz Novak,Riverbend,casual,2025-10-10,1966,46.48
+005870,Łukasz Nakamura,Southpark,annual,2021-03-05,1966,31.88
+005887,Ines Peña,Riverbend,monthly,2022-04-01,2006,108.04
+005904,Ingrid Novak,Harbourside,casual,2024-04-11,1956,81.59
+005921,Leila Costa,Harbourside,monthly,2021-03-04,1966,84.40
+005938,Chloé Peña,Eastfield,annual,2021-04-28,1962,98.53
+005955,Nils Kaya,Riverbend,annual,2022-07-24,1967,39.15
+005972,Farah Tanaka,Riverbend,annual,2022-05-04,1954,34.40
+005989,Sanna Lindqvist,Northgate,annual,2023-05-10,1993,-10.82
+006006,Dmitri Nakamura,Harbourside,monthly,2024-08-07,1979,20.09
+006023,Kenji Jensen,Old Town,monthly,2023-08-15,1994,16.89
+006040,Noah García,Eastfield,monthly,2023-10-06,1986,1.07
+006057,Leila Peña,Riverbend,monthly,2023-10-12,1955,66.35
+006074,Ana Costa,Riverbend,monthly,2023-11-27,1996,97.64
+006091,Björn Silva,Riverbend,monthly,2022-10-25,1971,63.35
+006108,Aiko Kaya,Northgate,casual,2022-07-06,2004,19.56
+006125,Priya Silva,Northgate,annual,2021-11-21,1997,48.71
+006142,Leila Silva,Riverbend,monthly,2023-11-26,1988,45.10
+006159,Ines Lindqvist,Southpark,casual,2025-05-08,1968,77.60
+006176,Raúl Fischer,Northgate,casual,2023-09-04,1954,43.54
+006193,Yusuf Okafor,Harbourside,casual,2022-10-23,1989,119.35
+006210,Aiko Silva,Riverbend,casual,2024-11-20,1951,32.05
+006227,Noah Okafor,Harbourside,casual,2024-07-11,1977,99.54
+006244,Noah Lindqvist,Southpark,casual,2021-11-11,1967,-10.10
+006261,Ana Kowalski,Riverbend,monthly,2021-12-01,1952,21.05
+006278,Björn Tanaka,Southpark,casual,2022-05-14,1985,47.51
+006295,Raúl Fischer,Riverbend,casual,2025-05-04,1988,14.34
+006312,Ingrid Rossi,Eastfield,casual,2024-04-17,1970,110.41
+006329,Łukasz Novak,Old Town,casual,2025-02-17,1950,37.08
+006346,Olga Dubois,Old Town,annual,2022-08-17,1954,113.61
+006363,Farah Fischer,Harbourside,casual,2022-09-29,1963,116.94
+006380,Hugo Okafor,Harbourside,casual,2025-10-27,1995,32.84
+006397,Søren Fischer,Northgate,casual,2022-04-14,2003,78.38
+006414,Ana Fischer,Harbourside,monthly,2023-11-21,1999,-2.82
+006431,Noah Varga,Northgate,annual,2024-08-20,2004,16.81
+006448,Sanna Okafor,Harbourside,monthly,2024-01-21,1991,59.91
+006465,Dmitri Fischer,Harbourside,annual,2022-12-05,1986,58.86
+006482,Émile Silva,Northgate,casual,2023-04-12,2002,27.40
+006499,Mateo Silva,Old Town,casual,2025-10-23,1977,9.12
+006516,Noah Lindqvist,Eastfield,monthly,2025-07-16,1954,84.17
+006533,Nils Costa,Southpark,casual,2022-07-16,1949,39.81
+006550,Leila Novak,Eastfield,monthly,2023-05-25,1985,101.92
+006567,Kenji Müller,Northgate,monthly,2025-09-13,1953,10.87
+006584,Søren Kaya,Eastfield,annual,2023-03-12,1963,103.96
+006601,Raúl Müller,Old Town,monthly,2025-06-27,1981,-8.99
+006618,Chloé Moreau,Riverbend,casual,2021-08-06,1981,28.63
+006635,Zoë Rossi,Old Town,casual,2021-06-28,1971,107.77
+006652,Dmitri Peña,Northgate,casual,2024-03-13,1992,32.41
+006669,Priya Tanaka,Old Town,monthly,2022-06-03,1977,22.35
+006686,Sanna Tanaka,Eastfield,monthly,2021-10-22,1990,81.80
+006703,Ana Lindqvist,Northgate,casual,2025-09-15,1984,25.26
+006720,José Jensen,Harbourside,annual,2025-01-18,1999,96.37
+006737,Ana Okafor,Northgate,monthly,2025-04-22,1978,39.16
+006754,Mia Müller,Eastfield,casual,2025-05-29,1986,22.37
+006771,Leila Kaya,Harbourside,annual,2022-09-24,1964,82.01
+006788,Raúl Jensen,Old Town,casual,2024-09-06,1966,-11.92
+006805,Nils Nakamura,Eastfield,monthly,2023-01-28,1989,21.82
+006822,Mia Lindqvist,Old Town,casual,2023-08-15,1986,68.39
+006839,Ines Varga,Southpark,annual,2024-01-04,2002,-6.92
+006856,Björn Brennan,Northgate,casual,2022-10-13,2006,-4.66
+006873,Noah Lindqvist,Riverbend,annual,2021-04-21,1989,107.56
+006890,Ana Varga,Northgate,monthly,2021-12-28,1991,70.92
+006907,Chloé Jensen,Eastfield,monthly,2024-11-24,1966,30.71
+006924,Hugo Novak,Eastfield,annual,2022-05-26,1967,50.67
+006941,Łukasz Andersen,Old Town,casual,2024-04-29,1986,10.40
+006958,Hugo Kowalski,Harbourside,annual,2024-07-24,1975,-8.86
+006975,Leila Okafor,Southpark,annual,2025-04-18,1953,31.79
+006992,Émile Nakamura,Harbourside,annual,2023-12-15,1972,-7.39
+007009,Ingrid Jensen,Southpark,monthly,2025-05-02,1977,94.66
+007026,Ana Novak,Harbourside,casual,2021-11-29,1961,101.55
+007043,Ana Nakamura,Northgate,monthly,2021-03-15,1975,110.41
+007060,Olga Rossi,Harbourside,casual,2023-10-22,1954,110.32
+007077,Raúl Kowalski,Southpark,monthly,2022-03-23,1956,75.92
+007094,Priya Haddad,Old Town,casual,2021-11-09,1958,111.78
+007111,Łukasz Novak,Eastfield,monthly,2023-04-08,1949,-1.22
+007128,Ines Tanaka,Northgate,casual,2024-11-07,1978,6.66
+007145,Chloé Moreau,Eastfield,casual,2025-06-22,1971,76.46
+007162,Dmitri Nakamura,Harbourside,casual,2023-07-21,1965,-12.46
+007179,Farah Okafor,Riverbend,casual,2025-08-10,1999,83.73
+007196,Émile Nakamura,Eastfield,casual,2023-03-04,1976,117.46
+007213,Raúl Dubois,Old Town,casual,2023-04-02,1972,110.82
+007230,Leila Nakamura,Eastfield,monthly,2024-03-05,2002,72.68
+007247,Dmitri Haddad,Northgate,monthly,2022-02-27,1967,-14.24
+007264,Zoë García,Old Town,annual,2025-09-26,1987,91.10
+007281,José Rossi,Eastfield,casual,2022-04-04,1956,71.24
+007298,Chloé Rossi,Eastfield,casual,2025-10-08,1964,11.09
+007315,Raúl Ivanova,Southpark,annual,2023-04-21,1986,-3.98
+007332,Noah Costa,Harbourside,monthly,2024-03-13,1999,62.12
+007349,Leila Kaya,Riverbend,casual,2024-12-15,1970,108.75
+007366,Aiko Costa,Old Town,annual,2024-02-29,2001,32.64
+007383,Olga Jensen,Northgate,casual,2021-11-11,1974,56.46
+007400,Dmitri Silva,Harbourside,casual,2022-07-09,1953,-14.65
+007417,Tomás Okafor,Eastfield,casual,2024-11-25,1969,4.24
+007434,Farah Dubois,Southpark,annual,2022-10-31,1985,107.01
+007451,Émile Okafor,Northgate,monthly,2024-02-07,1979,26.62
+007468,Yusuf García,Southpark,casual,2023-07-01,2001,-14.50
+007485,Ingrid Kowalski,Harbourside,annual,2023-03-13,1964,99.18
+007502,Raúl Lindqvist,Eastfield,annual,2023-08-24,1976,78.19
+007519,Raúl Ivanova,Southpark,casual,2021-08-03,1990,103.17
+007536,Leila Jensen,Eastfield,annual,2024-07-07,1992,24.22
+007553,José Fischer,Riverbend,casual,2025-07-10,1984,-5.15
+007570,Mateo Andersen,Harbourside,casual,2021-06-21,2003,118.60
+007587,Ines Okafor,Old Town,casual,2025-08-19,1986,79.64
+007604,Łukasz Lindqvist,Southpark,casual,2021-11-03,1975,96.76
+007621,Olga Tanaka,Riverbend,annual,2024-01-17,1996,42.03
+007638,Zoë Dubois,Harbourside,casual,2023-09-17,1980,1.52
+007655,Tomás Dubois,Southpark,monthly,2025-04-07,1988,96.39
+007672,Kenji Rossi,Harbourside,monthly,2022-07-31,1970,111.79
+007689,Nils García,Riverbend,monthly,2022-12-26,1963,119.41
+007706,Sanna Dubois,Old Town,annual,2025-05-15,1952,90.88
+007723,Tomás Okafor,Harbourside,casual,2025-01-23,2001,57.95
+007740,Mateo Costa,Old Town,monthly,2021-03-12,1952,19.54
+007757,Kenji Jensen,Northgate,monthly,2022-12-23,1965,-4.30
+007774,Mateo Dubois,Northgate,annual,2021-11-01,1987,68.16
+007791,Yusuf García,Southpark,casual,2022-10-22,1979,14.09
+007808,Raúl Peña,Southpark,annual,2021-07-30,1951,65.82
+007825,Raúl Andersen,Southpark,casual,2024-08-04,2002,36.35
+007842,Łukasz Okafor,Riverbend,annual,2021-09-21,1971,94.61
+007859,Kenji Kowalski,Eastfield,casual,2025-07-03,1994,-11.04
+007876,Émile Nakamura,Old Town,casual,2024-06-26,1980,2.54
+007893,Dmitri Brennan,Northgate,annual,2023-12-19,1954,38.58
+007910,Priya Silva,Riverbend,monthly,2023-10-12,1966,51.35
+007927,Raúl Novak,Southpark,annual,2021-11-12,2002,24.67
+007944,Sanna Varga,Southpark,monthly,2024-01-16,1985,53.05
+007961,Ingrid Ivanova,Harbourside,casual,2024-08-23,1983,44.61
+007978,Olga Moreau,Riverbend,annual,2023-04-08,1960,54.17
+007995,Søren Costa,Northgate,casual,2025-03-15,1981,24.67
+008012,Ines Fischer,Northgate,monthly,2022-07-06,1976,1.30
+008029,Mia Fischer,Riverbend,casual,2021-11-08,1954,97.13
+008046,José Haddad,Northgate,casual,2021-12-27,1963,38.84
+008063,Noah Okafor,Harbourside,monthly,2023-07-05,1981,103.23
+008080,Émile García,Eastfield,monthly,2021-03-20,1962,101.15
+008097,Leila Andersen,Old Town,annual,2022-10-23,1983,11.14
+008114,Tomás Moreau,Riverbend,monthly,2023-11-20,1979,73.30
+008131,Farah Müller,Harbourside,monthly,2023-08-30,1997,91.59
+008148,Ines Dubois,Harbourside,annual,2021-09-27,1965,78.14
+008165,Raúl Silva,Old Town,casual,2025-01-22,1974,45.65
+008182,Hugo Okafor,Old Town,annual,2025-05-12,1995,-6.39
+008199,Björn Haddad,Riverbend,casual,2024-12-10,1961,61.45
+008216,Mia Varga,Harbourside,casual,2024-05-17,1977,101.50
+008233,Olga García,Northgate,monthly,2025-10-14,1960,1.11
+008250,Hugo Kaya,Riverbend,annual,2023-01-25,1972,-11.56
+008267,Björn Peña,Northgate,annual,2022-05-10,1992,20.24
+008284,Mateo Varga,Riverbend,monthly,2024-11-11,1987,65.22
+008301,Ana Silva,Southpark,casual,2022-12-10,1972,-5.97
+008318,Zoë Dubois,Harbourside,monthly,2021-10-22,1981,103.58
+008335,Farah Haddad,Eastfield,monthly,2024-07-08,1948,35.75
+008352,Björn Rossi,Northgate,monthly,2022-09-11,1994,42.83
+008369,Raúl Brennan,Northgate,casual,2023-12-20,1964,19.51
+008386,Mia Varga,Harbourside,monthly,2023-04-01,1996,106.64
+008403,Olga Müller,Riverbend,monthly,2022-05-19,1988,78.10
+008420,Raúl Kaya,Eastfield,casual,2025-05-31,2001,20.28
+008437,Sanna Ivanova,Riverbend,monthly,2024-05-21,1998,-5.71
+008454,Ines Andersen,Eastfield,annual,2021-10-06,1976,7.25
+008471,Nils Brennan,Northgate,casual,2024-01-09,2001,86.09
+008488,Chloé Tanaka,Harbourside,casual,2023-10-04,2001,9.00
+008505,Nils Tanaka,Eastfield,monthly,2022-09-21,1970,42.08
+008522,Leila Peña,Harbourside,casual,2022-11-26,1961,81.67
+008539,Zoë Kaya,Northgate,monthly,2024-02-07,1973,46.09
+008556,Émile Andersen,Northgate,casual,2024-06-14,1971,74.75
+008573,Raúl Tanaka,Eastfield,casual,2024-05-10,1960,64.52
+008590,Dmitri Andersen,Old Town,monthly,2025-08-16,1963,29.64
+008607,José Kowalski,Eastfield,monthly,2022-11-03,1951,-11.98
+008624,Zoë Peña,Eastfield,annual,2024-09-18,1993,115.36
+008641,Tomás Costa,Eastfield,casual,2025-01-28,1949,65.97
+008658,Priya Fischer,Harbourside,casual,2023-01-02,1995,105.69
+008675,Yusuf Silva,Eastfield,casual,2021-03-13,1985,66.17
+008692,Priya Dubois,Riverbend,casual,2024-04-29,1977,58.45
+008709,José Silva,Eastfield,annual,2024-09-16,1965,106.39
+008726,Ana Kaya,Northgate,casual,2022-10-04,1964,44.87
+008743,Raúl García,Southpark,casual,2025-01-08,1985,99.78
+008760,Farah Dubois,Old Town,casual,2021-06-30,1948,4.02
+008777,Ingrid Jensen,Old Town,monthly,2025-08-08,1964,58.60
+008794,Łukasz Müller,Southpark,casual,2024-05-19,1989,63.14
+008811,Yusuf Novak,Southpark,monthly,2024-12-19,1970,4.71
+008828,Zoë Kaya,Old Town,casual,2024-07-24,1955,78.60
+008845,Chloé Tanaka,Eastfield,casual,2023-02-13,1999,32.84
+008862,Yusuf Costa,Northgate,annual,2022-10-31,1951,-13.77
+008879,Tomás Ivanova,Eastfield,casual,2025-01-06,1989,28.58
+008896,Hugo Peña,Harbourside,casual,2025-08-11,1971,80.40
+008913,Priya Silva,Eastfield,annual,2021-12-31,1969,76.06
+008930,Sanna Andersen,Southpark,annual,2022-03-21,1960,12.37
+008947,Björn Nakamura,Harbourside,monthly,2024-09-28,1957,117.24
+008964,Ana Novak,Harbourside,casual,2022-01-29,1971,82.14
+008981,Tomás Nakamura,Riverbend,casual,2024-04-10,1970,53.60
+008998,Noah Rossi,Riverbend,casual,2023-07-09,1984,88.25
+009015,José Lindqvist,Old Town,casual,2025-10-18,1985,64.56
+009032,Raúl Brennan,Southpark,annual,2025-03-03,1996,-3.82
+009049,Zoë Varga,Harbourside,monthly,2024-06-28,1998,62.76
+009066,Søren Peña,Old Town,casual,2021-05-28,1973,38.39
+009083,Yusuf Moreau,Riverbend,casual,2024-12-14,1959,63.49
+009100,Chloé Peña,Old Town,casual,2023-01-11,1968,13.78
+009117,Kenji Jensen,Southpark,monthly,2025-05-02,1959,62.56
+009134,José Costa,Old Town,casual,2022-08-05,1977,13.42
+009151,Aiko Kowalski,Harbourside,annual,2021-08-21,1978,111.81
+009168,Hugo Tanaka,Northgate,casual,2022-06-20,1948,62.03
+009185,Farah Jensen,Old Town,monthly,2022-04-19,1948,47.20
+009202,José Rossi,Southpark,casual,2021-12-19,1977,46.00
+009219,Søren Silva,Riverbend,monthly,2024-07-09,1969,61.31
+009236,Ana Okafor,Old Town,annual,2022-05-12,1982,-4.45
+009253,Noah Kowalski,Eastfield,casual,2025-04-17,1997,106.52
+009270,Noah Lindqvist,Southpark,casual,2022-07-10,1965,34.75
+009287,Björn Varga,Riverbend,casual,2023-05-30,1959,10.26
+009304,Ana Kowalski,Southpark,monthly,2024-02-07,1949,99.75
+009321,Kenji Brennan,Southpark,annual,2025-10-25,2004,18.21
+009338,Zoë Kowalski,Harbourside,casual,2022-01-22,1990,80.14
+009355,Ana Fischer,Northgate,monthly,2023-09-05,1990,114.81
+009372,Łukasz Novak,Riverbend,monthly,2022-06-20,1951,24.19
+009389,Björn Peña,Old Town,casual,2021-07-14,1994,15.13
+009406,Ana Costa,Old Town,annual,2024-04-15,1992,58.73
+009423,Farah Haddad,Southpark,annual,2023-09-12,1991,18.73
+009440,Tomás Moreau,Northgate,monthly,2025-02-07,1988,75.65
+009457,Tomás García,Southpark,casual,2024-07-27,1997,93.26
+009474,Ines Varga,Riverbend,casual,2022-06-13,1958,85.28
+009491,Ingrid Ivanova,Eastfield,casual,2021-04-06,1992,59.82
+009508,Mia Jensen,Eastfield,monthly,2022-09-15,1969,35.89
+009525,Hugo Peña,Riverbend,annual,2025-03-11,2004,44.13
+009542,José Okafor,Eastfield,monthly,2022-08-10,1994,38.20
+009559,Leila Kaya,Harbourside,annual,2023-09-30,1958,34.86
+009576,Aiko Lindqvist,Harbourside,annual,2023-09-29,1977,70.50
+009593,Dmitri Rossi,Old Town,casual,2024-11-08,1995,114.91
+009610,Dmitri Brennan,Old Town,monthly,2024-08-30,1990,14.84
+009627,Tomás García,Eastfield,casual,2025-06-02,1953,105.00
+009644,Yusuf Ivanova,Eastfield,casual,2024-06-01,1953,62.60
+009661,Yusuf Andersen,Riverbend,monthly,2022-02-28,1962,65.67
+009678,Priya Kowalski,Harbourside,casual,2024-05-08,1978,87.26
+009695,Sanna Varga,Northgate,casual,2023-10-08,1950,99.49
+009712,Ines Haddad,Northgate,monthly,2023-02-16,1975,55.53
+009729,Ingrid Nakamura,Old Town,annual,2023-02-07,1950,108.59
+009746,Łukasz Ivanova,Harbourside,monthly,2023-12-24,1973,25.85
+009763,Mia Müller,Riverbend,casual,2024-06-02,2000,98.70
+009780,Noah Haddad,Riverbend,monthly,2023-06-11,1953,13.18
+009797,Ingrid Rossi,Northgate,annual,2024-05-10,1974,52.43
+009814,Tomás Silva,Eastfield,monthly,2023-02-14,1990,35.32
+009831,Ingrid Novak,Northgate,monthly,2024-04-22,2006,111.30
+009848,Ines Okafor,Riverbend,monthly,2022-06-29,1995,52.00
+009865,Mia Kowalski,Old Town,casual,2022-08-30,1956,48.94
+009882,Ingrid Peña,Riverbend,annual,2023-01-01,1982,23.87
+009899,Łukasz Novak,Northgate,casual,2022-06-18,1986,8.56
+009916,Hugo Ivanova,Old Town,monthly,2022-01-08,1959,16.02
+009933,Björn Fischer,Northgate,casual,2021-09-09,1960,112.01
+009950,Ines Dubois,Northgate,monthly,2021-11-16,1996,108.79
+009967,Leila Nakamura,Riverbend,casual,2024-08-01,1950,35.66
+009984,Łukasz Fischer,Southpark,monthly,2024-01-18,1972,65.78
+010001,Chloé García,Southpark,annual,2022-04-02,1962,65.79
+010018,Noah Okafor,Southpark,annual,2024-02-25,1954,-10.65
+010035,Kenji Lindqvist,Southpark,casual,2025-07-24,2004,39.41
+010052,Noah Lindqvist,Southpark,monthly,2023-06-08,1964,112.25
+010069,Zoë Andersen,Harbourside,casual,2024-11-19,1976,62.94
+010086,Søren Novak,Riverbend,casual,2024-08-13,1971,80.63
+010103,Ana Dubois,Eastfield,casual,2022-05-20,1981,43.70
+010120,Kenji Rossi,Riverbend,casual,2022-07-01,1979,90.43
+010137,Søren Novak,Southpark,monthly,2021-03-13,1992,75.34
+010154,Kenji Haddad,Harbourside,casual,2022-10-04,1976,80.94
+010171,Tomás Lindqvist,Riverbend,monthly,2024-03-01,1981,-9.30
+010188,Aiko Tanaka,Southpark,annual,2025-10-02,2003,-8.76
+010205,Søren Tanaka,Southpark,monthly,2021-08-22,1990,77.75
+010222,Olga Jensen,Harbourside,casual,2022-02-27,2007,110.64
+010239,Leila Rossi,Riverbend,casual,2024-04-04,1964,55.20
+010256,Ana Novak,Northgate,monthly,2021-11-26,1993,70.12
+010273,Émile Andersen,Southpark,monthly,2021-09-21,1995,102.06
+010290,Łukasz Dubois,Northgate,monthly,2024-12-13,2003,114.61
+010307,Sanna Tanaka,Eastfield,annual,2025-05-04,1995,71.73
+010324,Sanna Andersen,Riverbend,casual,2024-12-05,2002,36.09
+010341,Kenji Silva,Harbourside,annual,2022-09-21,2001,111.07
+010358,José Lindqvist,Harbourside,casual,2025-03-23,1996,80.99
+010375,Ines Andersen,Eastfield,monthly,2023-12-15,1965,82.52
+010392,Raúl Jensen,Riverbend,casual,2023-03-27,2000,105.66
+010409,Björn Andersen,Eastfield,casual,2024-06-17,1996,42.40
+010426,Farah Haddad,Harbourside,casual,2025-07-18,1990,70.71
+010443,Zoë Nakamura,Eastfield,annual,2021-09-21,1948,-9.40
+010460,Łukasz Novak,Northgate,monthly,2021-04-12,1991,37.57
+010477,Yusuf Brennan,Eastfield,annual,2023-04-19,1981,113.46
+010494,Noah Andersen,Riverbend,monthly,2025-07-14,1960,97.16
+010511,Leila Müller,Northgate,annual,2024-09-26,1980,32.54
+010528,Raúl Tanaka,Old Town,annual,2024-03-09,2003,98.74
+010545,Ines Lindqvist,Harbourside,casual,2023-11-11,1985,46.06
+010562,Olga Kowalski,Northgate,casual,2022-08-09,1986,91.76
+010579,Olga Peña,Riverbend,monthly,2022-06-27,1974,1.48
+010596,Mateo Peña,Old Town,casual,2025-01-13,2000,28.44
+010613,Sanna Tanaka,Southpark,monthly,2023-10-11,1949,108.89
+010630,Aiko Moreau,Southpark,monthly,2021-04-24,1989,38.57
+010647,Raúl Dubois,Southpark,monthly,2021-10-04,1975,32.86
+010664,Priya Jensen,Northgate,casual,2022-01-12,1991,88.29
+010681,Chloé García,Old Town,monthly,2024-03-20,2007,67.10
+010698,Leila Dubois,Old Town,casual,2021-05-04,1977,99.32
+010715,Farah Moreau,Harbourside,monthly,2024-02-12,1996,27.57
+010732,Søren Novak,Southpark,annual,2021-10-09,1993,-5.60
+010749,Mia Ivanova,Riverbend,monthly,2022-10-19,1984,97.54
+010766,Søren Dubois,Old Town,monthly,2022-01-13,1966,100.19
+010783,Chloé Rossi,Old Town,monthly,2025-06-23,1960,4.51

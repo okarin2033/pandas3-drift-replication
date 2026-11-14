@@ -1,0 +1,186 @@
+{
+ "item": "B.17",
+ "delta": [
+  {
+   "model": "qwen__qwen3.5-9b",
+   "difference": 0.0,
+   "minuend": "no hint",
+   "subtrahend": "hint",
+   "boot_lo": 0.0,
+   "boot_hi": 0.0,
+   "boot_dropped": 0,
+   "boot_valid": 10000
+  },
+  {
+   "model": "google__gemma-4-31b-it",
+   "difference": -0.03333333333333333,
+   "minuend": "no hint",
+   "subtrahend": "hint",
+   "boot_lo": -0.08333333333333334,
+   "boot_hi": 0.0,
+   "boot_dropped": 0,
+   "boot_valid": 10000
+  },
+  {
+   "model": "anthropic__claude-haiku-4.5",
+   "difference": -0.008757062146892657,
+   "minuend": "no hint",
+   "subtrahend": "hint",
+   "boot_lo": -0.025706214689265535,
+   "boot_hi": 0.0,
+   "boot_dropped": 0,
+   "boot_valid": 10000
+  },
+  {
+   "model": "openai__gpt-5.4-mini",
+   "difference": -0.033328585671556755,
+   "minuend": "no hint",
+   "subtrahend": "hint",
+   "boot_lo": -0.07427582289363792,
+   "boot_hi": -0.0012609538600317832,
+   "boot_dropped": 0,
+   "boot_valid": 10000
+  }
+ ],
+ "arms": [
+  {
+   "model": "qwen__qwen3.5-9b",
+   "arm": "no hint",
+   "x": 0,
+   "n": 90,
+   "generated": 120,
+   "rate": 0.0,
+   "wilson_lo": 0.0,
+   "wilson_hi": 0.04093562556432678,
+   "rare_event": true,
+   "cp_deff_upper": 0.04112203153489269
+  },
+  {
+   "model": "qwen__qwen3.5-9b",
+   "arm": "hint",
+   "x": 0,
+   "n": 89,
+   "generated": 120,
+   "rate": 0.0,
+   "wilson_lo": 3.469446951953614e-18,
+   "wilson_hi": 0.04137654523625252,
+   "rare_event": true,
+   "cp_deff_upper": 0.04104064905581983
+  },
+  {
+   "model": "google__gemma-4-31b-it",
+   "arm": "no hint",
+   "x": 1,
+   "n": 120,
+   "generated": 120,
+   "rate": 0.008333333333333333,
+   "wilson_lo": 0.0014725557333420923,
+   "wilson_hi": 0.045696291245049675,
+   "rare_event": true,
+   "cp_deff_upper": 0.048826447158160896
+  },
+  {
+   "model": "google__gemma-4-31b-it",
+   "arm": "hint",
+   "x": 5,
+   "n": 120,
+   "generated": 120,
+   "rate": 0.041666666666666664,
+   "wilson_lo": 0.017926716880109515,
+   "wilson_hi": 0.09384085233703535,
+   "rare_event": false,
+   "cp_deff_upper": 0.1276616173268735
+  },
+  {
+   "model": "anthropic__claude-haiku-4.5",
+   "arm": "no hint",
+   "x": 2,
+   "n": 120,
+   "generated": 120,
+   "rate": 0.016666666666666666,
+   "wilson_lo": 0.004582564565921141,
+   "wilson_hi": 0.0587359629721589,
+   "rare_event": true,
+   "cp_deff_upper": 0.07663999493450482
+  },
+  {
+   "model": "anthropic__claude-haiku-4.5",
+   "arm": "hint",
+   "x": 3,
+   "n": 118,
+   "generated": 120,
+   "rate": 0.025423728813559324,
+   "wilson_lo": 0.008683514404083097,
+   "wilson_hi": 0.07208914636303015,
+   "rare_event": true,
+   "cp_deff_upper": 0.08107964926932767
+  },
+  {
+   "model": "openai__gpt-5.4-mini",
+   "arm": "no hint",
+   "x": 4,
+   "n": 118,
+   "generated": 120,
+   "rate": 0.03389830508474576,
+   "wilson_lo": 0.013259833647159602,
+   "wilson_hi": 0.08392760103482663,
+   "rare_event": true,
+   "cp_deff_upper": 0.11423802612274461
+  },
+  {
+   "model": "openai__gpt-5.4-mini",
+   "arm": "hint",
+   "x": 8,
+   "n": 119,
+   "generated": 120,
+   "rate": 0.06722689075630252,
+   "wilson_lo": 0.03445575021955611,
+   "wilson_hi": 0.12706511587220667,
+   "rare_event": false,
+   "cp_deff_upper": 0.15241862089475947
+  }
+ ],
+ "meta": {
+  "label": null,
+  "test_mode": false,
+  "items": [
+   "B.17"
+  ],
+  "inputs_sha256": {
+   "per_program.jsonl": "dfd3b7dc406ffb88c34c7a4cfc9a90eeb71c0feaf0da626b9805bbac40e9401f",
+   "summary.json": "064443d62d3ec2e0e383c7084734282d191377593cfa13cf26134d10f53a5096",
+   "tasks.json": "ac38b07873515cff1488544c81f1acadc80aaad418db13883a3a0423ccad5391",
+   "models.tsv": "93fc8c7f6f8f2b3f0e11e04926e5245f1456534085779a1b2d1cb1c4b2520676",
+   "hint_per_program.jsonl": "3238c884d9537c5b1ad6aa3b5d244fd03dbdf9e8fbda1f19e8833ef2aef375d2",
+   "sample_tasks.tsv": "4c395db86789b3538473c37f1e934f4ac719cc3ab791cd0d60fab70a91aa0726"
+  },
+  "B": 10000,
+  "seed": 20261111,
+  "tool": "sec_ablation.py",
+  "tool_sha256": "6b487dd9fd160a1bce834266d18fb622e1a0d6d9dc8a907bed8cbefe6a78dce6",
+  "sec_common_sha256": "c1e87284ed92844ade5c515bb78fe261b3a94431d1389c0b4ec2f854f48d39db",
+  "harness_stats_sha256": "ad28a99b5e3a61dc9a7753e3a019a41d2d5968a83f94d6aaddff91156e0bf41d",
+  "created": "2026-11-13T16:50:13+0900",
+  "numpy_used": true,
+  "pair": "E0a~E1",
+  "hint_per_program_sha256": "3238c884d9537c5b1ad6aa3b5d244fd03dbdf9e8fbda1f19e8833ef2aef375d2",
+  "sample_tasks_sha256": "4c395db86789b3538473c37f1e934f4ac719cc3ab791cd0d60fab70a91aa0726",
+  "models": [
+   "qwen__qwen3.5-9b",
+   "google__gemma-4-31b-it",
+   "anthropic__claude-haiku-4.5",
+   "openai__gpt-5.4-mini"
+  ],
+  "tasks_per_family": {
+   "QF1": 5,
+   "QF2": 5,
+   "QF3": 5,
+   "QF4": 5,
+   "QF5": 5,
+   "QF6": 5,
+   "QF7": 5,
+   "QF8": 5
+  }
+ },
+ "label": null
+}

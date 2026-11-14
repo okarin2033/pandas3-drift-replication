@@ -1,0 +1,86 @@
+{
+ "id": "M_QF8_09",
+ "stratum": "M",
+ "family": "QF8_NUMERIC",
+ "generic_family": null,
+ "catalogue_row": "X01",
+ "files": [
+  {
+   "path": "QF8_NUMERIC/daily_temps.csv",
+   "description": "Daily weather at one station (90 rows, one per day in date order from 2025-06-01, no gaps): date (YYYY-MM-DD), temp_c (mean temperature in degrees C, two decimals; about 1% empty), humidity (percent, whole number)."
+  }
+ ],
+ "task_text": "The standard error of the mean of a window is the sample standard deviation of its values (dividing by n - 1) divided by the square root of n, the number of values in the window. For each of the first 30 days, give the standard error of the mean temperature over all days from the first day up to that day (empty temperatures skipped; leave it empty while fewer than 2 temperatures are available). `result` should be a Series indexed by date with 30 values.",
+ "allowed_task_words": [],
+ "invited_ids_author": [
+  "X01"
+ ],
+ "order_significant": false,
+ "sort_keys": [],
+ "dtype_significant": false,
+ "intended_computation": "Expanding window from 2025-06-01: for day k (1-30), sample sd / sqrt(n) of the n present temperatures of days 1..k; missing for day 1.",
+ "acceptable_variants": {
+  "row_order": "any",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": "values to 6 significant digits."
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 30
+   }
+  },
+  {
+   "check": "numeric_in_range",
+   "args": {
+    "columns": [
+     "__values__"
+    ],
+    "min": 0,
+    "max": null
+   }
+  },
+  {
+   "check": "date_year_in_range",
+   "args": {
+    "columns": [
+     "date"
+    ],
+    "min_year": 2025,
+    "max_year": 2025
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "FIX",
+  "reason": "expanding().sem() divided by sqrt(n - 1) on 2.x; 3.x divides by sqrt(n) as the task defines."
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M2",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 by pkg:TASKS_M2 for catalogue row X01; naive.py shows the invited idiom, reference.py is the version-robust reference."
+}

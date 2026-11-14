@@ -1,0 +1,29 @@
+[confirm/S01] statuses: ok=7
+[confirm/S02] statuses: ok=7
+[confirm/S03] statuses: ok=7
+[confirm/S04] statuses: ok=7
+[confirm/S05] statuses: ok=7
+[confirm/S06] statuses: ok=7
+[confirm/O01] statuses: ok=7
+[confirm/D01] statuses: ok=7
+[confirm/D02] statuses: ok=7
+[confirm/D03] statuses: ok=7
+[confirm/D04] statuses: ok=7
+[confirm/D05] statuses: ok=7
+[confirm/D06] statuses: ok=7
+[confirm/D07] statuses: error=4, ok=3
+[confirm/D08] statuses: ok=7
+[confirm/D09] statuses: ok=7
+[confirm/D10] statuses: ok=7
+[confirm/C01] statuses: ok=7
+[confirm/C02] statuses: ok=7
+[confirm/C03] statuses: ok=7
+[confirm/C04] statuses: ok=7
+[confirm/C05] statuses: ok=7
+[confirm/C06] statuses: error=4, ok=3
+[confirm/L01] statuses: error=4, ok=3
+[confirm/L02] statuses: error=4, ok=3
+[confirm/L03] statuses: error=4, ok=3
+[confirm/L04] statuses: error=4, ok=3
+[confirm/L05] statuses: error=4, ok=3
+[confirm/L06] statuses: error=4, ok=3

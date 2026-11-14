@@ -1,0 +1,76 @@
+{
+ "id": "M_QF6_04",
+ "stratum": "M",
+ "family": "QF6_NA_DTYPE",
+ "generic_family": null,
+ "catalogue_row": "N06",
+ "files": [
+  {
+   "path": "QF6_NA_DTYPE/quiz_scores.csv",
+   "description": "Quiz results (80 rows, one per student in seat order, no other columns): quiz_a and quiz_b (points 0-10, whole numbers, many equal values; about 9% and 6% of cells empty for absent students)."
+  }
+ ],
+ "task_text": "Read the scores as whole-number columns that allow empty cells. For quiz_a, give each student's percentile rank: rank the students who took the quiz from the lowest score (equal scores share the average of their ranks) and divide by the number of students who took it. Absent students (empty cell) get no rank. `result` should be a Series with one value per student in file order.",
+ "allowed_task_words": [],
+ "invited_ids_author": [
+  "N06"
+ ],
+ "order_significant": true,
+ "sort_keys": [
+  "__index__"
+ ],
+ "dtype_significant": false,
+ "intended_computation": "Average ranks (ascending) of the 73 non-empty quiz_a scores divided by 73; missing for the 7 absent students; 80 values in file order.",
+ "acceptable_variants": {
+  "row_order": "ties_only",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": "missing values in any null representation; values to 6 significant digits."
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 80
+   }
+  },
+  {
+   "check": "rate_in_unit_interval",
+   "args": {
+    "columns": [
+     "__values__"
+    ]
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "FIX",
+  "reason": "On 2.x rank() on a nullable column gave the absent students a rank and shifted everybody else's; on 3.x absent students stay missing and the percentiles use the students who took the quiz."
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M2",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 by pkg:TASKS_M2 for catalogue row N06; naive.py shows the invited idiom, reference.py is the version-robust reference."
+}

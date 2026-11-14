@@ -1,0 +1,76 @@
+{
+ "id": "M_QF7_13",
+ "stratum": "M",
+ "family": "QF7_INDEX_REDUCE",
+ "generic_family": null,
+ "catalogue_row": "I01",
+ "files": [
+  {
+   "path": "QF7_INDEX_REDUCE/order_lines.csv",
+   "description": "Order lines (300 rows): line_id (whole number), product (product name; capital letters and spaces are inconsistent), quantity (whole number; about 3% empty), amount (line total, two decimals; about 3% empty)."
+  }
+ ],
+ "task_text": "For the order lines with an amount above 100, give the population variance (dividing by the number of values) of quantity and of amount, ignoring empty cells. `result` should be a Series indexed by quantity and amount.",
+ "allowed_task_words": [],
+ "invited_ids_author": [
+  "I01"
+ ],
+ "order_significant": false,
+ "sort_keys": [],
+ "dtype_significant": false,
+ "intended_computation": "Restrict to the 223 lines with amount > 100; for quantity and amount separately the variance with divisor n over the non-empty cells.",
+ "acceptable_variants": {
+  "row_order": "any",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": "values to 6 significant digits."
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 2
+   }
+  },
+  {
+   "check": "numeric_in_range",
+   "args": {
+    "columns": [
+     "__values__"
+    ],
+    "min": 0,
+    "max": null
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "HARM",
+  "reason": "np.var on a DataFrame gave a variance per column on 2.x; on 3.x one variance of all cells together."
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M2",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 by pkg:TASKS_M2 for catalogue row I01; naive.py shows the invited idiom, reference.py is the version-robust reference."
+}

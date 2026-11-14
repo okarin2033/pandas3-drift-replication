@@ -1,0 +1,11 @@
+You are given CSV file(s) in the current working directory:
+
+- riders.csv: Bike-share riders, one per row (400 rows): rider_id (six-digit id with leading zeros), display_name (person name, some with accented letters), home_district (one of 6 districts such as "Old Town"), membership (casual, monthly or annual) - these three text columns have inconsistent capital letters and stray spaces; joined_on (date as text, YYYY-MM-DD; about 2% empty), birth_year (whole number; about 4% empty), credit_balance (two decimals, can be negative; about 5% empty).
+
+Task: Build a wide table from riders.csv with one column per home district. Each column lists the birth_year values of that district's riders from the top, in file order: row 0 holds the district's first rider, row 1 its second, and so on. A rider with an empty birth_year keeps its place as an empty cell, and a district with fewer riders than the largest one is filled up with empty cells at the bottom. `result` should be that table, with as many rows as the largest district has riders.
+
+Requirements:
+- Write a complete Python script that reads the file(s) from the current directory.
+- Use only pandas, numpy and the Python standard library.
+- Store the final answer in a top-level variable named `result`.
+- Reply with a single Python code block.

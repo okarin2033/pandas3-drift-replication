@@ -1,0 +1,96 @@
+{
+ "id": "M_QF6_14",
+ "stratum": "M",
+ "family": "QF6_NA_DTYPE",
+ "generic_family": null,
+ "catalogue_row": "N02",
+ "files": [
+  {
+   "path": "QF6_NA_DTYPE/store_traffic.csv",
+   "description": "Daily store traffic (90 rows): store (name such as \"Store 07\"), sales (whole number of sales, zero on some days), visits (whole number of visits, zero on some days; about 3% empty), open_sunday (True or False; about 8% empty)."
+  }
+ ],
+ "task_text": "Read sales and visits as whole-number columns that allow empty cells. The conversion rate of a store-day is sales divided by visits; leave out days with empty or zero visits. Which three store-days have the highest conversion rate? `result` should be a table with the columns store and rate, highest rate first.",
+ "allowed_task_words": [],
+ "invited_ids_author": [
+  "N02"
+ ],
+ "order_significant": true,
+ "sort_keys": [
+  "rate"
+ ],
+ "dtype_significant": false,
+ "intended_computation": "Among the 84 rows with a usable rate, the three rows with the largest sales/visits, sorted descending, with store and rate.",
+ "acceptable_variants": {
+  "row_order": "ties_only",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": "row labels (index) are free; rates to 6 significant digits."
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 3
+   }
+  },
+  {
+   "check": "columns_present",
+   "args": {
+    "columns": [
+     "store",
+     "rate"
+    ]
+   }
+  },
+  {
+   "check": "no_nulls",
+   "args": {
+    "columns": [
+     "rate"
+    ]
+   }
+  },
+  {
+   "check": "sorted_by",
+   "args": {
+    "keys": [
+     "rate"
+    ],
+    "ascending": [
+     false
+    ]
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "FIX",
+  "reason": "On 2.x the 0/0 days held NaN values that sorted as the largest rates and filled the top three; on 3.x they are missing and sorted last."
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M2",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 by pkg:TASKS_M2 for catalogue row N02; naive.py shows the invited idiom, reference.py is the version-robust reference."
+}

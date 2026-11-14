@@ -1,0 +1,373 @@
+pair	variant	outcome	model	stratum	family	split	x	n	n_own	generated	rate	wilson_lo	wilson_hi	boot_lo	boot_hi	boot_dropped	rare_event	cp_deff_upper	entering_models
+C1~E0a	all tasks	drift	anthropic__claude-haiku-4.5	M			0	629	629	640	0.000000	0.000000	0.006070	0.000000	0.000000	0	yes	0.008455	
+C1~E0a	all tasks	drift	anthropic__claude-haiku-4.5	M	QF1		0	75	75	80	0.000000	0.000000	0.048724				yes	0.067048	
+C1~E0a	all tasks	drift	anthropic__claude-haiku-4.5	M	QF2		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+C1~E0a	all tasks	drift	anthropic__claude-haiku-4.5	M	QF3		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift	anthropic__claude-haiku-4.5	M	QF4		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift	anthropic__claude-haiku-4.5	M	QF5		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift	anthropic__claude-haiku-4.5	M	QF6		0	77	77	80	0.000000	0.000000	0.047518				yes	0.066273	
+C1~E0a	all tasks	drift	anthropic__claude-haiku-4.5	M	QF7		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift	anthropic__claude-haiku-4.5	M	QF8		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+C1~E0a	all tasks	drift	anthropic__claude-haiku-5.5	M			0	640	640	640	0.000000	0.000000	0.005966	0.000000	0.000000	0	yes	0.008390	
+C1~E0a	all tasks	drift	anthropic__claude-haiku-5.5	M	QF1		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift	anthropic__claude-haiku-5.5	M	QF2		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift	anthropic__claude-haiku-5.5	M	QF3		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift	anthropic__claude-haiku-5.5	M	QF4		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift	anthropic__claude-haiku-5.5	M	QF5		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift	anthropic__claude-haiku-5.5	M	QF6		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift	anthropic__claude-haiku-5.5	M	QF7		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift	anthropic__claude-haiku-5.5	M	QF8		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift	anthropic__claude-sonnet-5.5	M			0	640	640	640	0.000000	0.000000	0.005966	0.000000	0.000000	0	yes	0.008390	
+C1~E0a	all tasks	drift	anthropic__claude-sonnet-5.5	M	QF1		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift	anthropic__claude-sonnet-5.5	M	QF2		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift	anthropic__claude-sonnet-5.5	M	QF3		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift	anthropic__claude-sonnet-5.5	M	QF4		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift	anthropic__claude-sonnet-5.5	M	QF5		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift	anthropic__claude-sonnet-5.5	M	QF6		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift	anthropic__claude-sonnet-5.5	M	QF7		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift	anthropic__claude-sonnet-5.5	M	QF8		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift	deepseek__deepseek-v3.2	M			0	629	629	640	0.000000	0.000000	0.006070	0.000000	0.000000	0	yes	0.008455	
+C1~E0a	all tasks	drift	deepseek__deepseek-v3.2	M	QF1		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+C1~E0a	all tasks	drift	deepseek__deepseek-v3.2	M	QF2		0	76	76	80	0.000000	0.000000	0.048114				yes	0.066655	
+C1~E0a	all tasks	drift	deepseek__deepseek-v3.2	M	QF3		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+C1~E0a	all tasks	drift	deepseek__deepseek-v3.2	M	QF4		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+C1~E0a	all tasks	drift	deepseek__deepseek-v3.2	M	QF5		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+C1~E0a	all tasks	drift	deepseek__deepseek-v3.2	M	QF6		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift	deepseek__deepseek-v3.2	M	QF7		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+C1~E0a	all tasks	drift	deepseek__deepseek-v3.2	M	QF8		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+C1~E0a	all tasks	drift	google__gemma-4-31b-it	M			0	638	638	640	0.000000	0.000000	0.005985	0.000000	0.000000	0	yes	0.008402	
+C1~E0a	all tasks	drift	google__gemma-4-31b-it	M	QF1		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift	google__gemma-4-31b-it	M	QF2		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift	google__gemma-4-31b-it	M	QF3		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift	google__gemma-4-31b-it	M	QF4		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift	google__gemma-4-31b-it	M	QF5		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift	google__gemma-4-31b-it	M	QF6		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift	google__gemma-4-31b-it	M	QF7		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift	google__gemma-4-31b-it	M	QF8		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+C1~E0a	all tasks	drift	openai__gpt-5.4-mini	M			0	635	635	640	0.000000	0.000000	0.006013	0.000000	0.000000	0	yes	0.008419	
+C1~E0a	all tasks	drift	openai__gpt-5.4-mini	M	QF1		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift	openai__gpt-5.4-mini	M	QF2		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift	openai__gpt-5.4-mini	M	QF3		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift	openai__gpt-5.4-mini	M	QF4		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+C1~E0a	all tasks	drift	openai__gpt-5.4-mini	M	QF5		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+C1~E0a	all tasks	drift	openai__gpt-5.4-mini	M	QF6		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift	openai__gpt-5.4-mini	M	QF7		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+C1~E0a	all tasks	drift	openai__gpt-5.4-mini	M	QF8		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift	openai__gpt-5.6-terra	M			0	636	636	640	0.000000	0.000000	0.006004	0.000000	0.000000	0	yes	0.008413	
+C1~E0a	all tasks	drift	openai__gpt-5.6-terra	M	QF1		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+C1~E0a	all tasks	drift	openai__gpt-5.6-terra	M	QF2		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift	openai__gpt-5.6-terra	M	QF3		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift	openai__gpt-5.6-terra	M	QF4		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+C1~E0a	all tasks	drift	openai__gpt-5.6-terra	M	QF5		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift	openai__gpt-5.6-terra	M	QF6		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift	openai__gpt-5.6-terra	M	QF7		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+C1~E0a	all tasks	drift	openai__gpt-5.6-terra	M	QF8		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift	openai__gpt-oss-20b	M			0	591	591	640	0.000000	0.000000	0.006458	0.000000	0.000000	0	yes	0.008698	
+C1~E0a	all tasks	drift	openai__gpt-oss-20b	M	QF1		0	77	77	80	0.000000	0.000000	0.047518				yes	0.066273	
+C1~E0a	all tasks	drift	openai__gpt-oss-20b	M	QF2		0	71	71	80	0.000000	0.000000	0.051328				yes	0.068726	
+C1~E0a	all tasks	drift	openai__gpt-oss-20b	M	QF3		0	73	73	80	0.000000	0.000000	0.049992				yes	0.067864	
+C1~E0a	all tasks	drift	openai__gpt-oss-20b	M	QF4		0	73	73	80	0.000000	0.000000	0.049992				yes	0.067864	
+C1~E0a	all tasks	drift	openai__gpt-oss-20b	M	QF5		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+C1~E0a	all tasks	drift	openai__gpt-oss-20b	M	QF6		0	70	70	80	0.000000	0.000000	0.052023				yes	0.069175	
+C1~E0a	all tasks	drift	openai__gpt-oss-20b	M	QF7		0	77	77	80	0.000000	0.000000	0.047518				yes	0.066273	
+C1~E0a	all tasks	drift	openai__gpt-oss-20b	M	QF8		0	72	72	80	0.000000	0.000000	0.050651				yes	0.068289	
+C1~E0a	all tasks	drift	qwen__qwen3.5-9b	M			0	456	456	640	0.000000	0.000000	0.008354	0.000000	0.000000	0	yes	0.009924	
+C1~E0a	all tasks	drift	qwen__qwen3.5-9b	M	QF1		0	62	62	80	0.000000	0.000000	0.058344				yes	0.073278	
+C1~E0a	all tasks	drift	qwen__qwen3.5-9b	M	QF2		0	47	47	80	0.000000	0.000000	0.075558				yes	0.086922	
+C1~E0a	all tasks	drift	qwen__qwen3.5-9b	M	QF3		0	60	60	80	0.000000	0.000000	0.060172				yes	0.074471	
+C1~E0a	all tasks	drift	qwen__qwen3.5-9b	M	QF4		0	56	56	80	0.000000	0.000000	0.064194				yes	0.077108	
+C1~E0a	all tasks	drift	qwen__qwen3.5-9b	M	QF5		0	51	51	80	0.000000	0.000000	0.070047				yes	0.080972	
+C1~E0a	all tasks	drift	qwen__qwen3.5-9b	M	QF6		0	53	53	80	0.000000	0.000000	0.067582				yes	0.079341	
+C1~E0a	all tasks	drift	qwen__qwen3.5-9b	M	QF7		0	75	75	80	0.000000	0.000000	0.048724				yes	0.067048	
+C1~E0a	all tasks	drift	qwen__qwen3.5-9b	M	QF8		0	52	52	80	0.000000	0.000000	0.068792				yes	0.080141	
+C1~E0a	all tasks	drift	qwen__qwen3.6-35b-a3b	M			0	612	612	640	0.000000	0.000000	0.006238	0.000000	0.000000	0	yes	0.008560	
+C1~E0a	all tasks	drift	qwen__qwen3.6-35b-a3b	M	QF1		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+C1~E0a	all tasks	drift	qwen__qwen3.6-35b-a3b	M	QF2		0	74	74	80	0.000000	0.000000	0.049350				yes	0.067450	
+C1~E0a	all tasks	drift	qwen__qwen3.6-35b-a3b	M	QF3		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+C1~E0a	all tasks	drift	qwen__qwen3.6-35b-a3b	M	QF4		0	76	76	80	0.000000	0.000000	0.048114				yes	0.066655	
+C1~E0a	all tasks	drift	qwen__qwen3.6-35b-a3b	M	QF5		0	76	76	80	0.000000	0.000000	0.048114				yes	0.066655	
+C1~E0a	all tasks	drift	qwen__qwen3.6-35b-a3b	M	QF6		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+C1~E0a	all tasks	drift	qwen__qwen3.6-35b-a3b	M	QF7		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+C1~E0a	all tasks	drift	qwen__qwen3.6-35b-a3b	M	QF8		0	72	72	80	0.000000	0.000000	0.050651				yes	0.068289	
+C1~E0a	all tasks	drift	MODEL_EQUAL_MEAN	M							0.000000			0.000000	0.000000	0			10
+C1~E0a	all tasks	drift_any	anthropic__claude-haiku-4.5	M			0	629	629	640	0.000000	0.000000	0.006070	0.000000	0.000000	0	yes	0.008455	
+C1~E0a	all tasks	drift_any	anthropic__claude-haiku-4.5	M	QF1		0	75	75	80	0.000000	0.000000	0.048724				yes	0.067048	
+C1~E0a	all tasks	drift_any	anthropic__claude-haiku-4.5	M	QF2		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+C1~E0a	all tasks	drift_any	anthropic__claude-haiku-4.5	M	QF3		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift_any	anthropic__claude-haiku-4.5	M	QF4		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift_any	anthropic__claude-haiku-4.5	M	QF5		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift_any	anthropic__claude-haiku-4.5	M	QF6		0	77	77	80	0.000000	0.000000	0.047518				yes	0.066273	
+C1~E0a	all tasks	drift_any	anthropic__claude-haiku-4.5	M	QF7		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift_any	anthropic__claude-haiku-4.5	M	QF8		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+C1~E0a	all tasks	drift_any	anthropic__claude-haiku-5.5	M			0	640	640	640	0.000000	0.000000	0.005966	0.000000	0.000000	0	yes	0.008390	
+C1~E0a	all tasks	drift_any	anthropic__claude-haiku-5.5	M	QF1		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift_any	anthropic__claude-haiku-5.5	M	QF2		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift_any	anthropic__claude-haiku-5.5	M	QF3		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift_any	anthropic__claude-haiku-5.5	M	QF4		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift_any	anthropic__claude-haiku-5.5	M	QF5		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift_any	anthropic__claude-haiku-5.5	M	QF6		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift_any	anthropic__claude-haiku-5.5	M	QF7		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift_any	anthropic__claude-haiku-5.5	M	QF8		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift_any	anthropic__claude-sonnet-5.5	M			0	640	640	640	0.000000	0.000000	0.005966	0.000000	0.000000	0	yes	0.008390	
+C1~E0a	all tasks	drift_any	anthropic__claude-sonnet-5.5	M	QF1		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift_any	anthropic__claude-sonnet-5.5	M	QF2		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift_any	anthropic__claude-sonnet-5.5	M	QF3		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift_any	anthropic__claude-sonnet-5.5	M	QF4		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift_any	anthropic__claude-sonnet-5.5	M	QF5		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift_any	anthropic__claude-sonnet-5.5	M	QF6		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift_any	anthropic__claude-sonnet-5.5	M	QF7		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift_any	anthropic__claude-sonnet-5.5	M	QF8		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift_any	deepseek__deepseek-v3.2	M			0	629	629	640	0.000000	0.000000	0.006070	0.000000	0.000000	0	yes	0.008455	
+C1~E0a	all tasks	drift_any	deepseek__deepseek-v3.2	M	QF1		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+C1~E0a	all tasks	drift_any	deepseek__deepseek-v3.2	M	QF2		0	76	76	80	0.000000	0.000000	0.048114				yes	0.066655	
+C1~E0a	all tasks	drift_any	deepseek__deepseek-v3.2	M	QF3		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+C1~E0a	all tasks	drift_any	deepseek__deepseek-v3.2	M	QF4		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+C1~E0a	all tasks	drift_any	deepseek__deepseek-v3.2	M	QF5		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+C1~E0a	all tasks	drift_any	deepseek__deepseek-v3.2	M	QF6		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift_any	deepseek__deepseek-v3.2	M	QF7		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+C1~E0a	all tasks	drift_any	deepseek__deepseek-v3.2	M	QF8		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+C1~E0a	all tasks	drift_any	google__gemma-4-31b-it	M			0	638	638	640	0.000000	0.000000	0.005985	0.000000	0.000000	0	yes	0.008402	
+C1~E0a	all tasks	drift_any	google__gemma-4-31b-it	M	QF1		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift_any	google__gemma-4-31b-it	M	QF2		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift_any	google__gemma-4-31b-it	M	QF3		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift_any	google__gemma-4-31b-it	M	QF4		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift_any	google__gemma-4-31b-it	M	QF5		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift_any	google__gemma-4-31b-it	M	QF6		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift_any	google__gemma-4-31b-it	M	QF7		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift_any	google__gemma-4-31b-it	M	QF8		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+C1~E0a	all tasks	drift_any	openai__gpt-5.4-mini	M			0	635	635	640	0.000000	0.000000	0.006013	0.000000	0.000000	0	yes	0.008419	
+C1~E0a	all tasks	drift_any	openai__gpt-5.4-mini	M	QF1		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift_any	openai__gpt-5.4-mini	M	QF2		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift_any	openai__gpt-5.4-mini	M	QF3		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift_any	openai__gpt-5.4-mini	M	QF4		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+C1~E0a	all tasks	drift_any	openai__gpt-5.4-mini	M	QF5		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+C1~E0a	all tasks	drift_any	openai__gpt-5.4-mini	M	QF6		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift_any	openai__gpt-5.4-mini	M	QF7		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+C1~E0a	all tasks	drift_any	openai__gpt-5.4-mini	M	QF8		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift_any	openai__gpt-5.6-terra	M			0	636	636	640	0.000000	0.000000	0.006004	0.000000	0.000000	0	yes	0.008413	
+C1~E0a	all tasks	drift_any	openai__gpt-5.6-terra	M	QF1		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+C1~E0a	all tasks	drift_any	openai__gpt-5.6-terra	M	QF2		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift_any	openai__gpt-5.6-terra	M	QF3		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift_any	openai__gpt-5.6-terra	M	QF4		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+C1~E0a	all tasks	drift_any	openai__gpt-5.6-terra	M	QF5		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift_any	openai__gpt-5.6-terra	M	QF6		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift_any	openai__gpt-5.6-terra	M	QF7		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+C1~E0a	all tasks	drift_any	openai__gpt-5.6-terra	M	QF8		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	drift_any	openai__gpt-oss-20b	M			0	591	591	640	0.000000	0.000000	0.006458	0.000000	0.000000	0	yes	0.008698	
+C1~E0a	all tasks	drift_any	openai__gpt-oss-20b	M	QF1		0	77	77	80	0.000000	0.000000	0.047518				yes	0.066273	
+C1~E0a	all tasks	drift_any	openai__gpt-oss-20b	M	QF2		0	71	71	80	0.000000	0.000000	0.051328				yes	0.068726	
+C1~E0a	all tasks	drift_any	openai__gpt-oss-20b	M	QF3		0	73	73	80	0.000000	0.000000	0.049992				yes	0.067864	
+C1~E0a	all tasks	drift_any	openai__gpt-oss-20b	M	QF4		0	73	73	80	0.000000	0.000000	0.049992				yes	0.067864	
+C1~E0a	all tasks	drift_any	openai__gpt-oss-20b	M	QF5		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+C1~E0a	all tasks	drift_any	openai__gpt-oss-20b	M	QF6		0	70	70	80	0.000000	0.000000	0.052023				yes	0.069175	
+C1~E0a	all tasks	drift_any	openai__gpt-oss-20b	M	QF7		0	77	77	80	0.000000	0.000000	0.047518				yes	0.066273	
+C1~E0a	all tasks	drift_any	openai__gpt-oss-20b	M	QF8		0	72	72	80	0.000000	0.000000	0.050651				yes	0.068289	
+C1~E0a	all tasks	drift_any	qwen__qwen3.5-9b	M			0	456	456	640	0.000000	0.000000	0.008354	0.000000	0.000000	0	yes	0.009924	
+C1~E0a	all tasks	drift_any	qwen__qwen3.5-9b	M	QF1		0	62	62	80	0.000000	0.000000	0.058344				yes	0.073278	
+C1~E0a	all tasks	drift_any	qwen__qwen3.5-9b	M	QF2		0	47	47	80	0.000000	0.000000	0.075558				yes	0.086922	
+C1~E0a	all tasks	drift_any	qwen__qwen3.5-9b	M	QF3		0	60	60	80	0.000000	0.000000	0.060172				yes	0.074471	
+C1~E0a	all tasks	drift_any	qwen__qwen3.5-9b	M	QF4		0	56	56	80	0.000000	0.000000	0.064194				yes	0.077108	
+C1~E0a	all tasks	drift_any	qwen__qwen3.5-9b	M	QF5		0	51	51	80	0.000000	0.000000	0.070047				yes	0.080972	
+C1~E0a	all tasks	drift_any	qwen__qwen3.5-9b	M	QF6		0	53	53	80	0.000000	0.000000	0.067582				yes	0.079341	
+C1~E0a	all tasks	drift_any	qwen__qwen3.5-9b	M	QF7		0	75	75	80	0.000000	0.000000	0.048724				yes	0.067048	
+C1~E0a	all tasks	drift_any	qwen__qwen3.5-9b	M	QF8		0	52	52	80	0.000000	0.000000	0.068792				yes	0.080141	
+C1~E0a	all tasks	drift_any	qwen__qwen3.6-35b-a3b	M			0	612	612	640	0.000000	0.000000	0.006238	0.000000	0.000000	0	yes	0.008560	
+C1~E0a	all tasks	drift_any	qwen__qwen3.6-35b-a3b	M	QF1		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+C1~E0a	all tasks	drift_any	qwen__qwen3.6-35b-a3b	M	QF2		0	74	74	80	0.000000	0.000000	0.049350				yes	0.067450	
+C1~E0a	all tasks	drift_any	qwen__qwen3.6-35b-a3b	M	QF3		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+C1~E0a	all tasks	drift_any	qwen__qwen3.6-35b-a3b	M	QF4		0	76	76	80	0.000000	0.000000	0.048114				yes	0.066655	
+C1~E0a	all tasks	drift_any	qwen__qwen3.6-35b-a3b	M	QF5		0	76	76	80	0.000000	0.000000	0.048114				yes	0.066655	
+C1~E0a	all tasks	drift_any	qwen__qwen3.6-35b-a3b	M	QF6		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+C1~E0a	all tasks	drift_any	qwen__qwen3.6-35b-a3b	M	QF7		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+C1~E0a	all tasks	drift_any	qwen__qwen3.6-35b-a3b	M	QF8		0	72	72	80	0.000000	0.000000	0.050651				yes	0.068289	
+C1~E0a	all tasks	drift_any	MODEL_EQUAL_MEAN	M							0.000000			0.000000	0.000000	0			10
+C1~E0a	all tasks	silent	anthropic__claude-haiku-4.5	M			0	629	629	640	0.000000	0.000000	0.006070	0.000000	0.000000	0	yes	0.008455	
+C1~E0a	all tasks	silent	anthropic__claude-haiku-4.5	M	QF1		0	75	75	80	0.000000	0.000000	0.048724				yes	0.067048	
+C1~E0a	all tasks	silent	anthropic__claude-haiku-4.5	M	QF2		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+C1~E0a	all tasks	silent	anthropic__claude-haiku-4.5	M	QF3		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	silent	anthropic__claude-haiku-4.5	M	QF4		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	silent	anthropic__claude-haiku-4.5	M	QF5		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	silent	anthropic__claude-haiku-4.5	M	QF6		0	77	77	80	0.000000	0.000000	0.047518				yes	0.066273	
+C1~E0a	all tasks	silent	anthropic__claude-haiku-4.5	M	QF7		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	silent	anthropic__claude-haiku-4.5	M	QF8		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+C1~E0a	all tasks	silent	anthropic__claude-haiku-5.5	M			0	640	640	640	0.000000	0.000000	0.005966	0.000000	0.000000	0	yes	0.008390	
+C1~E0a	all tasks	silent	anthropic__claude-haiku-5.5	M	QF1		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	silent	anthropic__claude-haiku-5.5	M	QF2		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	silent	anthropic__claude-haiku-5.5	M	QF3		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	silent	anthropic__claude-haiku-5.5	M	QF4		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	silent	anthropic__claude-haiku-5.5	M	QF5		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	silent	anthropic__claude-haiku-5.5	M	QF6		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	silent	anthropic__claude-haiku-5.5	M	QF7		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	silent	anthropic__claude-haiku-5.5	M	QF8		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	silent	anthropic__claude-sonnet-5.5	M			0	640	640	640	0.000000	0.000000	0.005966	0.000000	0.000000	0	yes	0.008390	
+C1~E0a	all tasks	silent	anthropic__claude-sonnet-5.5	M	QF1		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	silent	anthropic__claude-sonnet-5.5	M	QF2		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	silent	anthropic__claude-sonnet-5.5	M	QF3		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	silent	anthropic__claude-sonnet-5.5	M	QF4		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	silent	anthropic__claude-sonnet-5.5	M	QF5		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	silent	anthropic__claude-sonnet-5.5	M	QF6		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	silent	anthropic__claude-sonnet-5.5	M	QF7		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	silent	anthropic__claude-sonnet-5.5	M	QF8		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	silent	deepseek__deepseek-v3.2	M			0	629	629	640	0.000000	0.000000	0.006070	0.000000	0.000000	0	yes	0.008455	
+C1~E0a	all tasks	silent	deepseek__deepseek-v3.2	M	QF1		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+C1~E0a	all tasks	silent	deepseek__deepseek-v3.2	M	QF2		0	76	76	80	0.000000	0.000000	0.048114				yes	0.066655	
+C1~E0a	all tasks	silent	deepseek__deepseek-v3.2	M	QF3		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+C1~E0a	all tasks	silent	deepseek__deepseek-v3.2	M	QF4		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+C1~E0a	all tasks	silent	deepseek__deepseek-v3.2	M	QF5		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+C1~E0a	all tasks	silent	deepseek__deepseek-v3.2	M	QF6		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	silent	deepseek__deepseek-v3.2	M	QF7		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+C1~E0a	all tasks	silent	deepseek__deepseek-v3.2	M	QF8		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+C1~E0a	all tasks	silent	google__gemma-4-31b-it	M			0	638	638	640	0.000000	0.000000	0.005985	0.000000	0.000000	0	yes	0.008402	
+C1~E0a	all tasks	silent	google__gemma-4-31b-it	M	QF1		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	silent	google__gemma-4-31b-it	M	QF2		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	silent	google__gemma-4-31b-it	M	QF3		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	silent	google__gemma-4-31b-it	M	QF4		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	silent	google__gemma-4-31b-it	M	QF5		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	silent	google__gemma-4-31b-it	M	QF6		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	silent	google__gemma-4-31b-it	M	QF7		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	silent	google__gemma-4-31b-it	M	QF8		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+C1~E0a	all tasks	silent	openai__gpt-5.4-mini	M			0	635	635	640	0.000000	0.000000	0.006013	0.000000	0.000000	0	yes	0.008419	
+C1~E0a	all tasks	silent	openai__gpt-5.4-mini	M	QF1		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	silent	openai__gpt-5.4-mini	M	QF2		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	silent	openai__gpt-5.4-mini	M	QF3		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	silent	openai__gpt-5.4-mini	M	QF4		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+C1~E0a	all tasks	silent	openai__gpt-5.4-mini	M	QF5		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+C1~E0a	all tasks	silent	openai__gpt-5.4-mini	M	QF6		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	silent	openai__gpt-5.4-mini	M	QF7		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+C1~E0a	all tasks	silent	openai__gpt-5.4-mini	M	QF8		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	silent	openai__gpt-5.6-terra	M			0	636	636	640	0.000000	0.000000	0.006004	0.000000	0.000000	0	yes	0.008413	
+C1~E0a	all tasks	silent	openai__gpt-5.6-terra	M	QF1		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+C1~E0a	all tasks	silent	openai__gpt-5.6-terra	M	QF2		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	silent	openai__gpt-5.6-terra	M	QF3		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	silent	openai__gpt-5.6-terra	M	QF4		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+C1~E0a	all tasks	silent	openai__gpt-5.6-terra	M	QF5		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	silent	openai__gpt-5.6-terra	M	QF6		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	silent	openai__gpt-5.6-terra	M	QF7		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+C1~E0a	all tasks	silent	openai__gpt-5.6-terra	M	QF8		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+C1~E0a	all tasks	silent	openai__gpt-oss-20b	M			0	591	591	640	0.000000	0.000000	0.006458	0.000000	0.000000	0	yes	0.008698	
+C1~E0a	all tasks	silent	openai__gpt-oss-20b	M	QF1		0	77	77	80	0.000000	0.000000	0.047518				yes	0.066273	
+C1~E0a	all tasks	silent	openai__gpt-oss-20b	M	QF2		0	71	71	80	0.000000	0.000000	0.051328				yes	0.068726	
+C1~E0a	all tasks	silent	openai__gpt-oss-20b	M	QF3		0	73	73	80	0.000000	0.000000	0.049992				yes	0.067864	
+C1~E0a	all tasks	silent	openai__gpt-oss-20b	M	QF4		0	73	73	80	0.000000	0.000000	0.049992				yes	0.067864	
+C1~E0a	all tasks	silent	openai__gpt-oss-20b	M	QF5		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+C1~E0a	all tasks	silent	openai__gpt-oss-20b	M	QF6		0	70	70	80	0.000000	0.000000	0.052023				yes	0.069175	
+C1~E0a	all tasks	silent	openai__gpt-oss-20b	M	QF7		0	77	77	80	0.000000	0.000000	0.047518				yes	0.066273	
+C1~E0a	all tasks	silent	openai__gpt-oss-20b	M	QF8		0	72	72	80	0.000000	0.000000	0.050651				yes	0.068289	
+C1~E0a	all tasks	silent	qwen__qwen3.5-9b	M			0	456	456	640	0.000000	0.000000	0.008354	0.000000	0.000000	0	yes	0.009924	
+C1~E0a	all tasks	silent	qwen__qwen3.5-9b	M	QF1		0	62	62	80	0.000000	0.000000	0.058344				yes	0.073278	
+C1~E0a	all tasks	silent	qwen__qwen3.5-9b	M	QF2		0	47	47	80	0.000000	0.000000	0.075558				yes	0.086922	
+C1~E0a	all tasks	silent	qwen__qwen3.5-9b	M	QF3		0	60	60	80	0.000000	0.000000	0.060172				yes	0.074471	
+C1~E0a	all tasks	silent	qwen__qwen3.5-9b	M	QF4		0	56	56	80	0.000000	0.000000	0.064194				yes	0.077108	
+C1~E0a	all tasks	silent	qwen__qwen3.5-9b	M	QF5		0	51	51	80	0.000000	0.000000	0.070047				yes	0.080972	
+C1~E0a	all tasks	silent	qwen__qwen3.5-9b	M	QF6		0	53	53	80	0.000000	0.000000	0.067582				yes	0.079341	
+C1~E0a	all tasks	silent	qwen__qwen3.5-9b	M	QF7		0	75	75	80	0.000000	0.000000	0.048724				yes	0.067048	
+C1~E0a	all tasks	silent	qwen__qwen3.5-9b	M	QF8		0	52	52	80	0.000000	0.000000	0.068792				yes	0.080141	
+C1~E0a	all tasks	silent	qwen__qwen3.6-35b-a3b	M			0	612	612	640	0.000000	0.000000	0.006238	0.000000	0.000000	0	yes	0.008560	
+C1~E0a	all tasks	silent	qwen__qwen3.6-35b-a3b	M	QF1		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+C1~E0a	all tasks	silent	qwen__qwen3.6-35b-a3b	M	QF2		0	74	74	80	0.000000	0.000000	0.049350				yes	0.067450	
+C1~E0a	all tasks	silent	qwen__qwen3.6-35b-a3b	M	QF3		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+C1~E0a	all tasks	silent	qwen__qwen3.6-35b-a3b	M	QF4		0	76	76	80	0.000000	0.000000	0.048114				yes	0.066655	
+C1~E0a	all tasks	silent	qwen__qwen3.6-35b-a3b	M	QF5		0	76	76	80	0.000000	0.000000	0.048114				yes	0.066655	
+C1~E0a	all tasks	silent	qwen__qwen3.6-35b-a3b	M	QF6		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+C1~E0a	all tasks	silent	qwen__qwen3.6-35b-a3b	M	QF7		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+C1~E0a	all tasks	silent	qwen__qwen3.6-35b-a3b	M	QF8		0	72	72	80	0.000000	0.000000	0.050651				yes	0.068289	
+C1~E0a	all tasks	silent	MODEL_EQUAL_MEAN	M							0.000000			0.000000	0.000000	0			10
+C1~E0a	all tasks	drift	anthropic__claude-haiku-4.5	R			0	45	45	45	0.000000	0.000000	0.078652	0.000000	0.000000	0	yes	0.112928	
+C1~E0a	all tasks	drift	anthropic__claude-haiku-5.5	R			0	45	45	45	0.000000	0.000000	0.078652	0.000000	0.000000	0	yes	0.112928	
+C1~E0a	all tasks	drift	anthropic__claude-sonnet-5.5	R			0	45	45	45	0.000000	0.000000	0.078652	0.000000	0.000000	0	yes	0.112928	
+C1~E0a	all tasks	drift	deepseek__deepseek-v3.2	R			0	44	44	45	0.000000	0.000000	0.080296	0.000000	0.000000	0	yes	0.114001	
+C1~E0a	all tasks	drift	google__gemma-4-31b-it	R			0	41	41	45	0.000000	0.000000	0.085668	0.000000	0.000000	0	yes	0.117525	
+C1~E0a	all tasks	drift	openai__gpt-5.4-mini	R			0	38	38	45	0.000000	0.000000	0.091810	0.000000	0.000000	0	yes	0.128868	
+C1~E0a	all tasks	drift	openai__gpt-5.6-terra	R			0	45	45	45	0.000000	0.000000	0.078652	0.000000	0.000000	0	yes	0.112928	
+C1~E0a	all tasks	drift	openai__gpt-oss-20b	R			0	38	38	45	0.000000	0.000000	0.091810	0.000000	0.000000	0	yes	0.128868	
+C1~E0a	all tasks	drift	qwen__qwen3.5-9b	R			0	32	32	45	0.000000	0.000000	0.107179	0.000000	0.000000	0	yes	0.131915	
+C1~E0a	all tasks	drift	qwen__qwen3.6-35b-a3b	R			0	43	43	45	0.000000	0.000000	0.082010	0.000000	0.000000	0	yes	0.115123	
+C1~E0a	all tasks	drift	MODEL_EQUAL_MEAN	R							0.000000			0.000000	0.000000	0			10
+C1~E0a	all tasks	drift_any	anthropic__claude-haiku-4.5	R			0	45	45	45	0.000000	0.000000	0.078652	0.000000	0.000000	0	yes	0.112928	
+C1~E0a	all tasks	drift_any	anthropic__claude-haiku-5.5	R			0	45	45	45	0.000000	0.000000	0.078652	0.000000	0.000000	0	yes	0.112928	
+C1~E0a	all tasks	drift_any	anthropic__claude-sonnet-5.5	R			0	45	45	45	0.000000	0.000000	0.078652	0.000000	0.000000	0	yes	0.112928	
+C1~E0a	all tasks	drift_any	deepseek__deepseek-v3.2	R			0	44	44	45	0.000000	0.000000	0.080296	0.000000	0.000000	0	yes	0.114001	
+C1~E0a	all tasks	drift_any	google__gemma-4-31b-it	R			0	41	41	45	0.000000	0.000000	0.085668	0.000000	0.000000	0	yes	0.117525	
+C1~E0a	all tasks	drift_any	openai__gpt-5.4-mini	R			0	38	38	45	0.000000	0.000000	0.091810	0.000000	0.000000	0	yes	0.128868	
+C1~E0a	all tasks	drift_any	openai__gpt-5.6-terra	R			0	45	45	45	0.000000	0.000000	0.078652	0.000000	0.000000	0	yes	0.112928	
+C1~E0a	all tasks	drift_any	openai__gpt-oss-20b	R			0	38	38	45	0.000000	0.000000	0.091810	0.000000	0.000000	0	yes	0.128868	
+C1~E0a	all tasks	drift_any	qwen__qwen3.5-9b	R			0	32	32	45	0.000000	0.000000	0.107179	0.000000	0.000000	0	yes	0.131915	
+C1~E0a	all tasks	drift_any	qwen__qwen3.6-35b-a3b	R			0	43	43	45	0.000000	0.000000	0.082010	0.000000	0.000000	0	yes	0.115123	
+C1~E0a	all tasks	drift_any	MODEL_EQUAL_MEAN	R							0.000000			0.000000	0.000000	0			10
+C1~E0a	all tasks	silent	anthropic__claude-haiku-4.5	R			0	45	45	45	0.000000	0.000000	0.078652	0.000000	0.000000	0	yes	0.112928	
+C1~E0a	all tasks	silent	anthropic__claude-haiku-5.5	R			0	45	45	45	0.000000	0.000000	0.078652	0.000000	0.000000	0	yes	0.112928	
+C1~E0a	all tasks	silent	anthropic__claude-sonnet-5.5	R			0	45	45	45	0.000000	0.000000	0.078652	0.000000	0.000000	0	yes	0.112928	
+C1~E0a	all tasks	silent	deepseek__deepseek-v3.2	R			0	44	44	45	0.000000	0.000000	0.080296	0.000000	0.000000	0	yes	0.114001	
+C1~E0a	all tasks	silent	google__gemma-4-31b-it	R			0	41	41	45	0.000000	0.000000	0.085668	0.000000	0.000000	0	yes	0.117525	
+C1~E0a	all tasks	silent	openai__gpt-5.4-mini	R			0	38	38	45	0.000000	0.000000	0.091810	0.000000	0.000000	0	yes	0.128868	
+C1~E0a	all tasks	silent	openai__gpt-5.6-terra	R			0	45	45	45	0.000000	0.000000	0.078652	0.000000	0.000000	0	yes	0.112928	
+C1~E0a	all tasks	silent	openai__gpt-oss-20b	R			0	38	38	45	0.000000	0.000000	0.091810	0.000000	0.000000	0	yes	0.128868	
+C1~E0a	all tasks	silent	qwen__qwen3.5-9b	R			0	32	32	45	0.000000	0.000000	0.107179	0.000000	0.000000	0	yes	0.131915	
+C1~E0a	all tasks	silent	qwen__qwen3.6-35b-a3b	R			0	43	43	45	0.000000	0.000000	0.082010	0.000000	0.000000	0	yes	0.115123	
+C1~E0a	all tasks	silent	MODEL_EQUAL_MEAN	R							0.000000			0.000000	0.000000	0			10
+C1~E0a	all tasks	drift	anthropic__claude-haiku-4.5	A			0	305	305	315	0.000000	0.000000	0.012438	0.000000	0.000000	0	yes	0.017218	
+C1~E0a	all tasks	drift	anthropic__claude-haiku-5.5	A			0	314	314	315	0.000000	0.000000	0.012086	0.000000	0.000000	0	yes	0.016997	
+C1~E0a	all tasks	drift	anthropic__claude-sonnet-5.5	A			0	315	315	315	0.000000	0.000000	0.012048	0.000000	0.000000	0	yes	0.016973	
+C1~E0a	all tasks	drift	deepseek__deepseek-v3.2	A			0	309	309	315	0.000000	0.000000	0.012279	0.000000	0.000000	0	yes	0.017118	
+C1~E0a	all tasks	drift	google__gemma-4-31b-it	A			0	313	313	315	0.000000	0.000000	0.012124	0.000000	0.000000	0	yes	0.017021	
+C1~E0a	all tasks	drift	openai__gpt-5.4-mini	A			0	310	310	315	0.000000	0.000000	0.012240	0.000000	0.000000	0	yes	0.017093	
+C1~E0a	all tasks	drift	openai__gpt-5.6-terra	A			0	314	314	315	0.000000	0.000000	0.012086	0.000000	0.000000	0	yes	0.016997	
+C1~E0a	all tasks	drift	openai__gpt-oss-20b	A			0	286	286	315	0.000000	0.000000	0.013254	0.000000	0.000000	0	yes	0.017731	
+C1~E0a	all tasks	drift	qwen__qwen3.5-9b	A			0	195	195	315	0.000000	0.000000	0.019319	0.000000	0.000000	0	yes	0.021565	
+C1~E0a	all tasks	drift	qwen__qwen3.6-35b-a3b	A			0	298	298	315	0.000000	0.000000	0.012727	0.000000	0.000000	0	yes	0.017399	
+C1~E0a	all tasks	drift	MODEL_EQUAL_MEAN	A							0.000000			0.000000	0.000000	0			10
+C1~E0a	all tasks	drift_any	anthropic__claude-haiku-4.5	A			0	305	305	315	0.000000	0.000000	0.012438	0.000000	0.000000	0	yes	0.017218	
+C1~E0a	all tasks	drift_any	anthropic__claude-haiku-5.5	A			0	314	314	315	0.000000	0.000000	0.012086	0.000000	0.000000	0	yes	0.016997	
+C1~E0a	all tasks	drift_any	anthropic__claude-sonnet-5.5	A			0	315	315	315	0.000000	0.000000	0.012048	0.000000	0.000000	0	yes	0.016973	
+C1~E0a	all tasks	drift_any	deepseek__deepseek-v3.2	A			0	309	309	315	0.000000	0.000000	0.012279	0.000000	0.000000	0	yes	0.017118	
+C1~E0a	all tasks	drift_any	google__gemma-4-31b-it	A			0	313	313	315	0.000000	0.000000	0.012124	0.000000	0.000000	0	yes	0.017021	
+C1~E0a	all tasks	drift_any	openai__gpt-5.4-mini	A			0	310	310	315	0.000000	0.000000	0.012240	0.000000	0.000000	0	yes	0.017093	
+C1~E0a	all tasks	drift_any	openai__gpt-5.6-terra	A			0	314	314	315	0.000000	0.000000	0.012086	0.000000	0.000000	0	yes	0.016997	
+C1~E0a	all tasks	drift_any	openai__gpt-oss-20b	A			0	286	286	315	0.000000	0.000000	0.013254	0.000000	0.000000	0	yes	0.017731	
+C1~E0a	all tasks	drift_any	qwen__qwen3.5-9b	A			0	195	195	315	0.000000	0.000000	0.019319	0.000000	0.000000	0	yes	0.021565	
+C1~E0a	all tasks	drift_any	qwen__qwen3.6-35b-a3b	A			0	298	298	315	0.000000	0.000000	0.012727	0.000000	0.000000	0	yes	0.017399	
+C1~E0a	all tasks	drift_any	MODEL_EQUAL_MEAN	A							0.000000			0.000000	0.000000	0			10
+C1~E0a	all tasks	silent	anthropic__claude-haiku-4.5	A			0	305	305	315	0.000000	0.000000	0.012438	0.000000	0.000000	0	yes	0.017218	
+C1~E0a	all tasks	silent	anthropic__claude-haiku-5.5	A			0	314	314	315	0.000000	0.000000	0.012086	0.000000	0.000000	0	yes	0.016997	
+C1~E0a	all tasks	silent	anthropic__claude-sonnet-5.5	A			0	315	315	315	0.000000	0.000000	0.012048	0.000000	0.000000	0	yes	0.016973	
+C1~E0a	all tasks	silent	deepseek__deepseek-v3.2	A			0	309	309	315	0.000000	0.000000	0.012279	0.000000	0.000000	0	yes	0.017118	
+C1~E0a	all tasks	silent	google__gemma-4-31b-it	A			0	313	313	315	0.000000	0.000000	0.012124	0.000000	0.000000	0	yes	0.017021	
+C1~E0a	all tasks	silent	openai__gpt-5.4-mini	A			0	310	310	315	0.000000	0.000000	0.012240	0.000000	0.000000	0	yes	0.017093	
+C1~E0a	all tasks	silent	openai__gpt-5.6-terra	A			0	314	314	315	0.000000	0.000000	0.012086	0.000000	0.000000	0	yes	0.016997	
+C1~E0a	all tasks	silent	openai__gpt-oss-20b	A			0	286	286	315	0.000000	0.000000	0.013254	0.000000	0.000000	0	yes	0.017731	
+C1~E0a	all tasks	silent	qwen__qwen3.5-9b	A			0	195	195	315	0.000000	0.000000	0.019319	0.000000	0.000000	0	yes	0.021565	
+C1~E0a	all tasks	silent	qwen__qwen3.6-35b-a3b	A			0	298	298	315	0.000000	0.000000	0.012727	0.000000	0.000000	0	yes	0.017399	
+C1~E0a	all tasks	silent	MODEL_EQUAL_MEAN	A							0.000000			0.000000	0.000000	0			10
+C1~E0a	without ruled R tasks (LR61/LR70)	drift	anthropic__claude-haiku-4.5	R			0	40	40	40	0.000000	0.000000	0.087622	0.000000	0.000000	0	yes	0.126116	
+C1~E0a	without ruled R tasks (LR61/LR70)	drift	anthropic__claude-haiku-5.5	R			0	40	40	40	0.000000	0.000000	0.087622	0.000000	0.000000	0	yes	0.126116	
+C1~E0a	without ruled R tasks (LR61/LR70)	drift	anthropic__claude-sonnet-5.5	R			0	40	40	40	0.000000	0.000000	0.087622	0.000000	0.000000	0	yes	0.126116	
+C1~E0a	without ruled R tasks (LR61/LR70)	drift	deepseek__deepseek-v3.2	R			0	39	39	40	0.000000	0.000000	0.089667	0.000000	0.000000	0	yes	0.127458	
+C1~E0a	without ruled R tasks (LR61/LR70)	drift	google__gemma-4-31b-it	R			0	36	36	40	0.000000	0.000000	0.096419	0.000000	0.000000	0	yes	0.131915	
+C1~E0a	without ruled R tasks (LR61/LR70)	drift	openai__gpt-5.4-mini	R			0	33	33	40	0.000000	0.000000	0.104270	0.000000	0.000000	0	yes	0.146335	
+C1~E0a	without ruled R tasks (LR61/LR70)	drift	openai__gpt-5.6-terra	R			0	40	40	40	0.000000	0.000000	0.087622	0.000000	0.000000	0	yes	0.126116	
+C1~E0a	without ruled R tasks (LR61/LR70)	drift	openai__gpt-oss-20b	R			0	33	33	40	0.000000	0.000000	0.104270	0.000000	0.000000	0	yes	0.146335	
+C1~E0a	without ruled R tasks (LR61/LR70)	drift	qwen__qwen3.5-9b	R			0	27	27	40	0.000000	0.000000	0.124555	0.000000	0.000000	0	yes	0.150966	
+C1~E0a	without ruled R tasks (LR61/LR70)	drift	qwen__qwen3.6-35b-a3b	R			0	38	38	40	0.000000	0.000000	0.091810	0.000000	0.000000	0	yes	0.128868	
+C1~E0a	without ruled R tasks (LR61/LR70)	drift	MODEL_EQUAL_MEAN	R							0.000000			0.000000	0.000000	0			10
+C1~E0a	without ruled R tasks (LR61/LR70)	drift_any	anthropic__claude-haiku-4.5	R			0	40	40	40	0.000000	0.000000	0.087622	0.000000	0.000000	0	yes	0.126116	
+C1~E0a	without ruled R tasks (LR61/LR70)	drift_any	anthropic__claude-haiku-5.5	R			0	40	40	40	0.000000	0.000000	0.087622	0.000000	0.000000	0	yes	0.126116	
+C1~E0a	without ruled R tasks (LR61/LR70)	drift_any	anthropic__claude-sonnet-5.5	R			0	40	40	40	0.000000	0.000000	0.087622	0.000000	0.000000	0	yes	0.126116	
+C1~E0a	without ruled R tasks (LR61/LR70)	drift_any	deepseek__deepseek-v3.2	R			0	39	39	40	0.000000	0.000000	0.089667	0.000000	0.000000	0	yes	0.127458	
+C1~E0a	without ruled R tasks (LR61/LR70)	drift_any	google__gemma-4-31b-it	R			0	36	36	40	0.000000	0.000000	0.096419	0.000000	0.000000	0	yes	0.131915	
+C1~E0a	without ruled R tasks (LR61/LR70)	drift_any	openai__gpt-5.4-mini	R			0	33	33	40	0.000000	0.000000	0.104270	0.000000	0.000000	0	yes	0.146335	
+C1~E0a	without ruled R tasks (LR61/LR70)	drift_any	openai__gpt-5.6-terra	R			0	40	40	40	0.000000	0.000000	0.087622	0.000000	0.000000	0	yes	0.126116	
+C1~E0a	without ruled R tasks (LR61/LR70)	drift_any	openai__gpt-oss-20b	R			0	33	33	40	0.000000	0.000000	0.104270	0.000000	0.000000	0	yes	0.146335	
+C1~E0a	without ruled R tasks (LR61/LR70)	drift_any	qwen__qwen3.5-9b	R			0	27	27	40	0.000000	0.000000	0.124555	0.000000	0.000000	0	yes	0.150966	
+C1~E0a	without ruled R tasks (LR61/LR70)	drift_any	qwen__qwen3.6-35b-a3b	R			0	38	38	40	0.000000	0.000000	0.091810	0.000000	0.000000	0	yes	0.128868	
+C1~E0a	without ruled R tasks (LR61/LR70)	drift_any	MODEL_EQUAL_MEAN	R							0.000000			0.000000	0.000000	0			10
+C1~E0a	without ruled R tasks (LR61/LR70)	silent	anthropic__claude-haiku-4.5	R			0	40	40	40	0.000000	0.000000	0.087622	0.000000	0.000000	0	yes	0.126116	
+C1~E0a	without ruled R tasks (LR61/LR70)	silent	anthropic__claude-haiku-5.5	R			0	40	40	40	0.000000	0.000000	0.087622	0.000000	0.000000	0	yes	0.126116	
+C1~E0a	without ruled R tasks (LR61/LR70)	silent	anthropic__claude-sonnet-5.5	R			0	40	40	40	0.000000	0.000000	0.087622	0.000000	0.000000	0	yes	0.126116	
+C1~E0a	without ruled R tasks (LR61/LR70)	silent	deepseek__deepseek-v3.2	R			0	39	39	40	0.000000	0.000000	0.089667	0.000000	0.000000	0	yes	0.127458	
+C1~E0a	without ruled R tasks (LR61/LR70)	silent	google__gemma-4-31b-it	R			0	36	36	40	0.000000	0.000000	0.096419	0.000000	0.000000	0	yes	0.131915	
+C1~E0a	without ruled R tasks (LR61/LR70)	silent	openai__gpt-5.4-mini	R			0	33	33	40	0.000000	0.000000	0.104270	0.000000	0.000000	0	yes	0.146335	
+C1~E0a	without ruled R tasks (LR61/LR70)	silent	openai__gpt-5.6-terra	R			0	40	40	40	0.000000	0.000000	0.087622	0.000000	0.000000	0	yes	0.126116	
+C1~E0a	without ruled R tasks (LR61/LR70)	silent	openai__gpt-oss-20b	R			0	33	33	40	0.000000	0.000000	0.104270	0.000000	0.000000	0	yes	0.146335	
+C1~E0a	without ruled R tasks (LR61/LR70)	silent	qwen__qwen3.5-9b	R			0	27	27	40	0.000000	0.000000	0.124555	0.000000	0.000000	0	yes	0.150966	
+C1~E0a	without ruled R tasks (LR61/LR70)	silent	qwen__qwen3.6-35b-a3b	R			0	38	38	40	0.000000	0.000000	0.091810	0.000000	0.000000	0	yes	0.128868	
+C1~E0a	without ruled R tasks (LR61/LR70)	silent	MODEL_EQUAL_MEAN	R							0.000000			0.000000	0.000000	0			10

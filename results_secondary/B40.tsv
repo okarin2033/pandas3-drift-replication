@@ -1,0 +1,3 @@
+model	passes_logged	first_pass	programs_added	last_state
+google__gemma-4-31b-it	2	2	64	complete
+deepseek__deepseek-v3.2	2	2	451	complete

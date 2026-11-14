@@ -1,0 +1,12 @@
+You are given CSV file(s) in the current working directory:
+
+- appointments.csv: Clinic appointments in New York (160 rows, February to November 2025, so the clock changes in March and November fall inside the data): appt_id (whole number), local_start (New York wall-clock start, text YYYY-MM-DD HH:MM, no UTC offset), start_with_offset (the same moment as ISO text with its UTC offset, e.g. "2025-06-13T08:45:00-04:00"), clinic (Harbor, Midtown or Riverside; capital letters and spaces are inconsistent), duration_min (whole minutes; about 3% empty).
+
+Task: Every appointment gets a follow-up visit four weeks later at the same New York wall-clock time (local_start is New York local time). `result` should be a table with the columns appt_id and follow_up_utc, the follow-up time converted to UTC and written as text 'YYYY-MM-DD HH:MM', in file order.
+
+Requirements:
+- Write a complete Python script that reads the file(s) from the current directory.
+- Use only pandas, numpy and the Python standard library.
+- Store the final answer in a top-level variable named `result`.
+- Reply with a single Python code block.
+- The script will run with the latest pandas 3 release.

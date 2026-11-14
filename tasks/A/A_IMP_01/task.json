@@ -1,0 +1,83 @@
+{
+ "id": "A_IMP_01",
+ "stratum": "A",
+ "family": null,
+ "generic_family": "IMP",
+ "catalogue_row": null,
+ "files": [
+  {
+   "path": "GEN/trips.csv",
+   "description": "Bike-share trips, 1 September to 1 November 2025 (1500 rows): trip_id (whole number), rider_id (refers to riders.csv), start_station and end_station (refer to station_code in stations.csv), started_at (timestamp written as YYYY-MM-DD HH:MM), duration_min (whole minutes; about 3% empty), distance_km (two decimals), fare (two decimals; about 3% empty), payment (card, app or cash; capital letters and spaces are inconsistent), rating (1-5 stars, whole number; about 19% empty)."
+  }
+ ],
+ "task_text": "Some trips have an empty duration_min. Fill each empty duration with the median duration of the other trips that started at the same station; if no trip from that station has a duration, leave it empty. `result` should be the full trips table with duration_min filled in.",
+ "allowed_task_words": [],
+ "invited_ids_author": [
+  "C02"
+ ],
+ "order_significant": false,
+ "sort_keys": [],
+ "dtype_significant": false,
+ "intended_computation": "Read trips.csv. For every trip with an empty duration_min, set duration_min to the median of the non-empty duration_min values of all trips with the same start_station; if that station has no non-empty duration, the value stays missing. All other columns and rows are unchanged; the result is the whole trips table (1500 rows).",
+ "acceptable_variants": {
+  "row_order": "any",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": "id columns (rider_id, station codes) may be written as integers without leading zeros; duration_min may be float; started_at may be text or a timestamp"
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 1500
+   }
+  },
+  {
+   "check": "columns_present",
+   "args": {
+    "columns": [
+     "trip_id",
+     "start_station",
+     "duration_min"
+    ]
+   }
+  },
+  {
+   "check": "numeric_in_range",
+   "args": {
+    "columns": [
+     "duration_min"
+    ],
+    "min": 0,
+    "max": null
+   }
+  }
+ ],
+ "predicted_direction": null,
+ "naive_path": null,
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_RA",
+ "status": "prepared",
+ "notes": "invited_ids_author labelled by hand after the intents were frozen (step A2); intent not rewritten for it."
+}

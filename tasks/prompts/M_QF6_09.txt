@@ -1,0 +1,11 @@
+You are given CSV file(s) in the current working directory:
+
+- deliveries.csv: Parcel deliveries (240 rows): delivery_id (whole number), city (city name; capital letters and spaces are inconsistent), status (exactly "shipped" or "pending", always lower case, no empty cells), parcels (whole number; about 2% empty), express (True or False; about 5% empty).
+
+Task: Encode status as 1 for shipped and 0 for pending in a column shipped. Give the Pearson correlation table of shipped and parcels (rows with an empty parcels cell are left out of that pair). `result` should be a 2 x 2 table with shipped and parcels as both row and column labels.
+
+Requirements:
+- Write a complete Python script that reads the file(s) from the current directory.
+- Use only pandas, numpy and the Python standard library.
+- Store the final answer in a top-level variable named `result`.
+- Reply with a single Python code block.

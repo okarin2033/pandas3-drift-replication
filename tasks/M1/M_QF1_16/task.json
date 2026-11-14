@@ -1,0 +1,92 @@
+{
+ "id": "M_QF1_16",
+ "stratum": "M",
+ "family": "QF1_STRING",
+ "generic_family": null,
+ "catalogue_row": "S01",
+ "files": [
+  {
+   "path": "QF1_STRING/price_list.csv",
+   "description": "Shop price list (64 rows): sku (text code such as \"PL-0007\"), item (product name with size; several names have accented letters), section (dairy, pantry, drinks or bakery; capital letters and spaces are inconsistent), price (written with exactly two decimals, e.g. \"9.50\"; no empty cells)."
+  }
+ ],
+ "task_text": "Prepare the price list for a label printer: every text column must be in upper case with no spaces around the values; numbers stay unchanged. `result` should be the cleaned table with the same columns, sorted by sku.",
+ "allowed_task_words": [
+  "text column"
+ ],
+ "invited_ids_author": [
+  "S01"
+ ],
+ "order_significant": true,
+ "sort_keys": [
+  "sku"
+ ],
+ "dtype_significant": false,
+ "intended_computation": "Strip and upper-case sku, item and section, keep price as it is, and return all 64 rows with the four columns sorted by sku ascending.",
+ "acceptable_variants": {
+  "row_order": "ties_only",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": "the row index may be 0..63 or carried over from the file."
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 64
+   }
+  },
+  {
+   "check": "columns_present",
+   "args": {
+    "columns": [
+     "sku",
+     "item",
+     "section",
+     "price"
+    ]
+   }
+  },
+  {
+   "check": "sorted_by",
+   "args": {
+    "keys": [
+     "sku"
+    ],
+    "ascending": [
+     true
+    ]
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "HARM",
+  "reason": "on 3.x the selection of object-typed columns is empty, so the text is printed unchanged"
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M1",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 in package TASKS_M1; task text, card, naive solution, reference and predicted direction were prepared there."
+}

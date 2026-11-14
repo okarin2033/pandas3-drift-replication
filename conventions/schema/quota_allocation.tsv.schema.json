@@ -1,0 +1,35 @@
+{
+ "$schema": "pandas3_full/tsv-schema/1",
+ "title": "mechanisms/confirm/quota_allocation.tsv (written by harness/allocate_quota.py)",
+ "$comment": "Written 2026-11-11 by pkg:SHARED. FULL_PREREG 4.3: 16 tasks per family round-robin over CONFIRMED rows in catalogue order; dropped families are rows with row_id NONE.",
+ "format": "tsv",
+ "encoding": "utf-8",
+ "header": true,
+ "columns": [
+  {
+   "name": "family",
+   "pattern": "^(QF1_STRING|QF2_DATETIME|QF3_COW|QF4_GROUPBY|QF5_ORDER|QF6_NA_DTYPE|QF7_INDEX_REDUCE|QF8_NUMERIC)$",
+   "description": "quota family"
+  },
+  {
+   "name": "row_id",
+   "pattern": "^(S0[1-6]|O01|D(0[1-9]|10)|C0[1-6]|G0[1-8]|R0[1-7]|N0[1-7]|I0[1-6]|X0[1-2]|L0[1-6]|NONE)$",
+   "description": "confirmed catalogue row, or NONE for a dropped family"
+  },
+  {
+   "name": "n_tasks",
+   "pattern": "^([0-9]|1[0-6])$",
+   "description": "tasks allocated to the row"
+  },
+  {
+   "name": "task_slots",
+   "pattern": "^(M_QF[1-8]_(0[1-9]|1[0-6])(,M_QF[1-8]_(0[1-9]|1[0-6]))*)?$",
+   "description": "comma-separated task ids for the row (empty if none)"
+  },
+  {
+   "name": "note",
+   "pattern": "^[^\\t]*$",
+   "description": "e.g. 'DROPPED: 0 confirmed rows'"
+  }
+ ]
+}

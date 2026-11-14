@@ -1,0 +1,77 @@
+{
+ "id": "M_QF4_07",
+ "stratum": "M",
+ "family": "QF4_GROUPBY",
+ "generic_family": null,
+ "catalogue_row": "G01",
+ "files": [
+  {
+   "path": "QF4_GROUPBY/subscribers.csv",
+   "description": "Streaming subscribers, one per row (320 rows): subscriber_id (whole number), age (years, from 19 to 87; about 1% empty), tier (basic, plus or premium; capital letters and spaces are inconsistent), monthly_fee (two decimals; about 3% empty), joined_year (whole number)."
+  }
+ ],
+ "task_text": "Group the subscribers by monthly fee band: 'under 5', '5-10' (5 to below 10), '10-20', '20-30' and '30+'. Report how many subscribers fall into each band; bands without subscribers must be listed with 0. Subscribers without a fee are left out. `result` should be a Series indexed by band label, in the band order above.",
+ "allowed_task_words": [
+  "fee band"
+ ],
+ "invited_ids_author": [
+  "G01"
+ ],
+ "order_significant": true,
+ "sort_keys": [
+  "__index__"
+ ],
+ "dtype_significant": false,
+ "intended_computation": "Count the 309 subscribers with a fee in the bands [0,5), [5,10), [10,20), [20,30), [30,inf); 'under 5' and '30+' are empty and must show 0.",
+ "acceptable_variants": {
+  "row_order": "ties_only",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": ""
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 5
+   }
+  },
+  {
+   "check": "counts_sum_to_rows",
+   "args": {
+    "column": "__values__",
+    "expected": 309
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "HARM",
+  "reason": "on 3.x grouping by the binned categories drops the empty bands that the task asks to list"
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M1",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 in package TASKS_M1; task text, card, naive solution, reference and predicted direction were prepared there."
+}

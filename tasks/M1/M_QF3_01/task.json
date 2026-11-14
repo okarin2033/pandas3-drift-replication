@@ -1,0 +1,72 @@
+{
+ "id": "M_QF3_01",
+ "stratum": "M",
+ "family": "QF3_COW",
+ "generic_family": null,
+ "catalogue_row": "C01",
+ "files": [
+  {
+   "path": "QF3_COW/bookings.csv",
+   "description": "Hotel bookings (300 rows): booking_id (whole number), state (paid, cancelled, refunded or pending; mostly lower case, some with other capitals or extra spaces), total (booking amount, two decimals; refunded bookings are negative), nights (whole number; about 2% empty)."
+  }
+ ],
+ "task_text": "Cancelled bookings bring no revenue, so set their total to 0 (the state labels vary in capital letters and spaces). Then report the revenue per state, with the state names in lower case without surrounding spaces. `result` should be a Series indexed by state with the summed totals.",
+ "allowed_task_words": [],
+ "invited_ids_author": [
+  "C01"
+ ],
+ "order_significant": false,
+ "sort_keys": [],
+ "dtype_significant": false,
+ "intended_computation": "Clean state (strip, lower; 4 states), set total to 0 for cancelled bookings and sum total per state; the cancelled state therefore has revenue 0.",
+ "acceptable_variants": {
+  "row_order": "any",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": "totals may be rounded to 2 decimals."
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 4
+   }
+  },
+  {
+   "check": "no_nulls",
+   "args": {
+    "columns": []
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "HARM",
+  "reason": "on 3.x the two-step indexing assignment writes into a temporary, so cancelled totals are not set to 0"
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M1",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 in package TASKS_M1; task text, card, naive solution, reference and predicted direction were prepared there."
+}

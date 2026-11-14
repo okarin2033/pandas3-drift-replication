@@ -1,0 +1,11 @@
+You are given CSV file(s) in the current working directory:
+
+- quarterly_revenue.csv: Company revenue per calendar quarter (30 rows, oldest first, one row per quarter with no gaps): quarter_start (first day of the quarter as text, YYYY-MM-DD, from 2019-01-01 to 2026-04-01), revenue (whole number), new_accounts (whole number).
+
+Task: The quarter_start dates should form a regular calendar series. Let pandas work out the spacing of these dates and report it as a frequency alias. `result` should be that alias (a short text code).
+
+Requirements:
+- Write a complete Python script that reads the file(s) from the current directory.
+- Use only pandas, numpy and the Python standard library.
+- Store the final answer in a top-level variable named `result`.
+- Reply with a single Python code block.

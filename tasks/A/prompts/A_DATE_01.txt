@@ -1,0 +1,11 @@
+You are given CSV file(s) in the current working directory:
+
+- riders.csv: Bike-share riders, one per row (400 rows): rider_id (six-digit id with leading zeros), display_name (person name, some with accented letters), home_district (one of 6 districts such as "Old Town"), membership (casual, monthly or annual) - these three text columns have inconsistent capital letters and stray spaces; joined_on (date as text, YYYY-MM-DD; about 2% empty), birth_year (whole number; about 4% empty), credit_balance (two decimals, can be negative; about 5% empty).
+
+Task: Count how many riders joined in each calendar quarter, using joined_on and leaving out riders without a join date. `result` should be a table with the columns year, quarter (1 to 4) and n_riders, sorted by year and then quarter.
+
+Requirements:
+- Write a complete Python script that reads the file(s) from the current directory.
+- Use only pandas, numpy and the Python standard library.
+- Store the final answer in a top-level variable named `result`.
+- Reply with a single Python code block.

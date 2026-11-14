@@ -1,0 +1,115 @@
+==================== S04_b
+statuses: {"E0a": "ok", "E0b": "ok", "E0pa": "ok", "E1": "ok", "E2": "ok", "E3": "ok", "E4": "ok"}
+classes: {"E0a~E0b": "IDENTICAL", "E0a~E1": "DTYPE_ONLY", "E0a~E2": "DTYPE_ONLY", "E0pa~E3": "DTYPE_ONLY", "E0pa~E4": "DTYPE_ONLY"} magnitude: {"E0a~E0b": null, "E0a~E1": null, "E0a~E2": null, "E0pa~E3": null, "E0pa~E4": null}
+E0a ok
+   result: {"data": [1, 0, 1], "index": ["east", "north", "south"], "index_names": ["region"], "k": "s", "name": "status_missing"}
+   dtypes: {"dtype": "int64", "index": "object", "k": "s"} type pandas.core.series.Series
+E0b ok
+E1 ok
+   result: {"data": [1, 0, 1], "index": ["east", "north", "south"], "index_names": ["region"], "k": "s", "name": "status_missing"}
+   dtypes: {"dtype": "int64", "index": "str", "k": "s"} type pandas.Series
+E2 ok
+   result: {"data": [1, 0, 1], "index": ["east", "north", "south"], "index_names": ["region"], "k": "s", "name": "status_missing"}
+   dtypes: {"dtype": "int64", "index": "str", "k": "s"} type pandas.Series
+E0pa ok
+   result: {"data": [1, 0, 1], "index": ["east", "north", "south"], "index_names": ["region"], "k": "s", "name": "status_missing"}
+   dtypes: {"dtype": "int64", "index": "object", "k": "s"} type pandas.core.series.Series
+E3 ok
+E4 ok
+   result: {"data": [1, 0, 1], "index": ["east", "north", "south"], "index_names": ["region"], "k": "s", "name": "status_missing"}
+   dtypes: {"dtype": "int64", "index": "str", "k": "s"} type pandas.Series
+==================== S05_b
+statuses: {"E0a": "ok", "E0b": "ok", "E0pa": "ok", "E1": "ok", "E2": "ok", "E3": "ok", "E4": "ok"}
+classes: {"E0a~E0b": "IDENTICAL", "E0a~E1": "DTYPE_ONLY", "E0a~E2": "DTYPE_ONLY", "E0pa~E3": "DTYPE_ONLY", "E0pa~E4": "DTYPE_ONLY"} magnitude: {"E0a~E0b": null, "E0a~E1": null, "E0a~E2": null, "E0pa~E3": null, "E0pa~E4": null}
+E0a ok
+   result: {"columns": ["person_id", "first_is_word"], "columns_names": [null], "data": [[1, 2, 3, 4, 5, 6, 7], [true, true, false, true, true, true, true]], "index": [0, 1, 2, 3, 4, 5, 6], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "object", "dtypes": ["int64", "bool"], "index": "int64", "k": "df"} type pandas.core.frame.DataFrame
+E0b ok
+E1 ok
+   result: {"columns": ["person_id", "first_is_word"], "columns_names": [null], "data": [[1, 2, 3, 4, 5, 6, 7], [true, true, false, true, true, true, true]], "index": [0, 1, 2, 3, 4, 5, 6], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "str", "dtypes": ["int64", "bool"], "index": "int64", "k": "df"} type pandas.DataFrame
+E2 ok
+   result: {"columns": ["person_id", "first_is_word"], "columns_names": [null], "data": [[1, 2, 3, 4, 5, 6, 7], [true, true, false, true, true, true, true]], "index": [0, 1, 2, 3, 4, 5, 6], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "str", "dtypes": ["int64", "bool"], "index": "int64", "k": "df"} type pandas.DataFrame
+E0pa ok
+   result: {"columns": ["person_id", "first_is_word"], "columns_names": [null], "data": [[1, 2, 3, 4, 5, 6, 7], [true, true, false, true, true, true, true]], "index": [0, 1, 2, 3, 4, 5, 6], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "object", "dtypes": ["int64", "bool"], "index": "int64", "k": "df"} type pandas.core.frame.DataFrame
+E3 ok
+E4 ok
+   result: {"columns": ["person_id", "first_is_word"], "columns_names": [null], "data": [[1, 2, 3, 4, 5, 6, 7], [true, true, false, true, true, true, true]], "index": [0, 1, 2, 3, 4, 5, 6], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "str", "dtypes": ["int64", "bool"], "index": "int64", "k": "df"} type pandas.DataFrame
+==================== D05_b
+statuses: {"E0a": "ok", "E0b": "ok", "E0pa": "ok", "E1": "ok", "E2": "ok", "E3": "ok", "E4": "ok"}
+classes: {"E0a~E0b": "IDENTICAL", "E0a~E1": "VALUE_DRIFT", "E0a~E2": "VALUE_DRIFT", "E0pa~E3": "VALUE_DRIFT", "E0pa~E4": "VALUE_DRIFT"} magnitude: {"E0a~E0b": null, "E0a~E1": "SUBSTANTIVE", "E0a~E2": "SUBSTANTIVE", "E0pa~E3": "SUBSTANTIVE", "E0pa~E4": "SUBSTANTIVE"}
+E0a ok
+   result: {"columns": ["meeting_id", "reminder"], "columns_names": [null], "data": [[1, 2, 3], ["2025-03-09T09:00:00-05:00", "2025-03-13T14:30:00-04:00", "2025-11-02T10:15:00-04:00"]], "index": [0, 1, 2], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "object", "dtypes": ["int64", "object"], "index": "int64", "k": "df"} type pandas.core.frame.DataFrame
+E0b ok
+E1 ok
+   result: {"columns": ["meeting_id", "reminder"], "columns_names": [null], "data": [[1, 2, 3], ["2025-03-09T09:00:00-04:00", "2025-03-13T14:30:00-04:00", "2025-11-02T10:15:00-05:00"]], "index": [0, 1, 2], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "str", "dtypes": ["int64", "str"], "index": "int64", "k": "df"} type pandas.DataFrame
+E2 ok
+   result: {"columns": ["meeting_id", "reminder"], "columns_names": [null], "data": [[1, 2, 3], ["2025-03-09T09:00:00-04:00", "2025-03-13T14:30:00-04:00", "2025-11-02T10:15:00-05:00"]], "index": [0, 1, 2], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "str", "dtypes": ["int64", "str"], "index": "int64", "k": "df"} type pandas.DataFrame
+E0pa ok
+   result: {"columns": ["meeting_id", "reminder"], "columns_names": [null], "data": [[1, 2, 3], ["2025-03-09T09:00:00-05:00", "2025-03-13T14:30:00-04:00", "2025-11-02T10:15:00-04:00"]], "index": [0, 1, 2], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "object", "dtypes": ["int64", "object"], "index": "int64", "k": "df"} type pandas.core.frame.DataFrame
+E3 ok
+E4 ok
+   result: {"columns": ["meeting_id", "reminder"], "columns_names": [null], "data": [[1, 2, 3], ["2025-03-09T09:00:00-04:00", "2025-03-13T14:30:00-04:00", "2025-11-02T10:15:00-05:00"]], "index": [0, 1, 2], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "str", "dtypes": ["int64", "str"], "index": "int64", "k": "df"} type pandas.DataFrame
+   first_diff E0a~E1: {"a": "2025-03-09T09:00:00-05:00", "b": "2025-03-09T09:00:00-04:00", "column": "reminder", "kind": "cell", "row": 0}
+   first_diff E0a~E2: {"a": "2025-03-09T09:00:00-05:00", "b": "2025-03-09T09:00:00-04:00", "column": "reminder", "kind": "cell", "row": 0}
+   first_diff E0pa~E3: {"a": "2025-03-09T09:00:00-05:00", "b": "2025-03-09T09:00:00-04:00", "column": "reminder", "kind": "cell", "row": 0}
+   first_diff E0pa~E4: {"a": "2025-03-09T09:00:00-05:00", "b": "2025-03-09T09:00:00-04:00", "column": "reminder", "kind": "cell", "row": 0}
+==================== D07_b
+statuses: {"E0a": "ok", "E0b": "ok", "E0pa": "ok", "E1": "ok", "E2": "ok", "E3": "ok", "E4": "ok"}
+classes: {"E0a~E0b": "IDENTICAL", "E0a~E1": "VALUE_DRIFT", "E0a~E2": "VALUE_DRIFT", "E0pa~E3": "VALUE_DRIFT", "E0pa~E4": "VALUE_DRIFT"} magnitude: {"E0a~E0b": null, "E0a~E1": "SUBSTANTIVE", "E0a~E2": "SUBSTANTIVE", "E0pa~E3": "SUBSTANTIVE", "E0pa~E4": "SUBSTANTIVE"}
+E0a ok
+   W[FutureWarning|prereg=True|pilot=True] builtins line 6: The behavior of 'to_datetime' with 'unit' when parsing strings is deprecated. In a future version, strings will be parsed as datetime strings, matching the behavior without a 'unit'. To retain the old behavior, explicitl
+   result: {"columns": ["event_id", "ts"], "columns_names": [null], "data": [["E001", "E002", "E003"], ["TS:2023-11-14T22:13:20", "TS:2023-11-15T22:13:20", "TS:2024-03-09T16:00:00"]], "index": [0, 1, 2], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "object", "dtypes": ["object", "datetime64[ns]"], "index": "int64", "k": "df"} type pandas.core.frame.DataFrame
+E0b ok
+   W[FutureWarning|prereg=True|pilot=True] builtins line 6: The behavior of 'to_datetime' with 'unit' when parsing strings is deprecated. In a future version, strings will be parsed as datetime strings, matching the behavior without a 'unit'. To retain the old behavior, explicitl
+E1 ok
+   result: {"columns": ["event_id", "ts"], "columns_names": [null], "data": [["E001", "E002", "E003"], [null, null, null]], "index": [0, 1, 2], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "str", "dtypes": ["str", "datetime64[s]"], "index": "int64", "k": "df"} type pandas.DataFrame
+E2 ok
+   result: {"columns": ["event_id", "ts"], "columns_names": [null], "data": [["E001", "E002", "E003"], [null, null, null]], "index": [0, 1, 2], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "str", "dtypes": ["str", "datetime64[s]"], "index": "int64", "k": "df"} type pandas.DataFrame
+E0pa ok
+   W[FutureWarning|prereg=True|pilot=True] builtins line 6: The behavior of 'to_datetime' with 'unit' when parsing strings is deprecated. In a future version, strings will be parsed as datetime strings, matching the behavior without a 'unit'. To retain the old behavior, explicitl
+   result: {"columns": ["event_id", "ts"], "columns_names": [null], "data": [["E001", "E002", "E003"], ["TS:2023-11-14T22:13:20", "TS:2023-11-15T22:13:20", "TS:2024-03-09T16:00:00"]], "index": [0, 1, 2], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "object", "dtypes": ["object", "datetime64[ns]"], "index": "int64", "k": "df"} type pandas.core.frame.DataFrame
+E3 ok
+E4 ok
+   result: {"columns": ["event_id", "ts"], "columns_names": [null], "data": [["E001", "E002", "E003"], [null, null, null]], "index": [0, 1, 2], "index_names": [null], "k": "df"}
+   dtypes: {"columns": "str", "dtypes": ["str", "datetime64[s]"], "index": "int64", "k": "df"} type pandas.DataFrame
+   first_diff E0a~E1: {"a": "TS:2023-11-14T22:13:20", "b": null, "column": "ts", "kind": "null", "row": 0}
+   first_diff E0a~E2: {"a": "TS:2023-11-14T22:13:20", "b": null, "column": "ts", "kind": "null", "row": 0}
+   first_diff E0pa~E3: {"a": "TS:2023-11-14T22:13:20", "b": null, "column": "ts", "kind": "null", "row": 0}
+   first_diff E0pa~E4: {"a": "TS:2023-11-14T22:13:20", "b": null, "column": "ts", "kind": "null", "row": 0}
+==================== C06_b
+statuses: {"E0a": "ok", "E0b": "ok", "E0pa": "ok", "E1": "ok", "E2": "ok", "E3": "ok", "E4": "ok"}
+classes: {"E0a~E0b": "IDENTICAL", "E0a~E1": "VALUE_DRIFT", "E0a~E2": "VALUE_DRIFT", "E0pa~E3": "VALUE_DRIFT", "E0pa~E4": "VALUE_DRIFT"} magnitude: {"E0a~E0b": null, "E0a~E1": "SUBSTANTIVE", "E0a~E2": "SUBSTANTIVE", "E0pa~E3": "SUBSTANTIVE", "E0pa~E4": "SUBSTANTIVE"}
+E0a ok
+   result: {"data": [0, 10, 20, 30], "k": "idx", "name": null}
+   dtypes: {"dtype": "int64", "k": "idx"} type pandas.core.indexes.base.Index
+E0b ok
+E1 ok
+   result: {"data": [10, 20, 30, 40], "k": "idx", "name": null}
+   dtypes: {"dtype": "int64", "k": "idx"} type pandas.Index
+E2 ok
+   result: {"data": [10, 20, 30, 40], "k": "idx", "name": null}
+   dtypes: {"dtype": "int64", "k": "idx"} type pandas.Index
+E0pa ok
+   result: {"data": [0, 10, 20, 30], "k": "idx", "name": null}
+   dtypes: {"dtype": "int64", "k": "idx"} type pandas.core.indexes.base.Index
+E3 ok
+E4 ok
+   result: {"data": [10, 20, 30, 40], "k": "idx", "name": null}
+   dtypes: {"dtype": "int64", "k": "idx"} type pandas.Index
+   first_diff E0a~E1: {"a": 0, "b": 10, "column": null, "kind": "cell", "row": 0}
+   first_diff E0a~E2: {"a": 0, "b": 10, "column": null, "kind": "cell", "row": 0}
+   first_diff E0pa~E3: {"a": 0, "b": 10, "column": null, "kind": "cell", "row": 0}
+   first_diff E0pa~E4: {"a": 0, "b": 10, "column": null, "kind": "cell", "row": 0}

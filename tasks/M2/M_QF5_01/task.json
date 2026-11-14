@@ -1,0 +1,102 @@
+{
+ "id": "M_QF5_01",
+ "stratum": "M",
+ "family": "QF5_ORDER",
+ "generic_family": null,
+ "catalogue_row": "R01",
+ "files": [
+  {
+   "path": "QF5_ORDER/footfall_north.csv",
+   "description": "Daily visitor counts at the north entrance (36 rows, rows not in date order, each day at most once, some days missing): day (date as text, YYYY-MM-DD, September-October 2025), visitors (whole number; equal counts are common), remark (short note; about 47% empty). The dates overlap only partly with footfall_south.csv."
+  },
+  {
+   "path": "QF5_ORDER/footfall_south.csv",
+   "description": "Daily visitor counts at the south entrance (36 rows, rows not in date order, each day at most once, some days missing): day (date as text, YYYY-MM-DD, September-October 2025), visitors (whole number; equal counts are common), remark (short note; about 47% empty). The dates overlap only partly with footfall_north.csv."
+  }
+ ],
+ "task_text": "Put the daily visitor counts of the two entrances side by side: one row per day that appears in either file, a column north and a column south (empty where that entrance has no count for the day). `result` should be this table indexed by day, with the days in calendar order.",
+ "allowed_task_words": [],
+ "invited_ids_author": [
+  "R01"
+ ],
+ "order_significant": true,
+ "sort_keys": [
+  "day"
+ ],
+ "dtype_significant": false,
+ "intended_computation": "Read both files, parse day as a date, and align the visitors counts of the two files on the day: the result has one row for each of the 47 distinct days of the two files (union), column north with the north count and column south with the south count (missing where that file has no row for the day), rows sorted by day ascending.",
+ "acceptable_variants": {
+  "row_order": "ties_only",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": "counts may be whole numbers or decimals; The day index may be given as dates, as timestamps at midnight or as YYYY-MM-DD text."
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 47
+   }
+  },
+  {
+   "check": "columns_present",
+   "args": {
+    "columns": [
+     "north",
+     "south"
+    ]
+   }
+  },
+  {
+   "check": "sorted_by",
+   "args": {
+    "keys": [
+     "day"
+    ],
+    "ascending": [
+     true
+    ]
+   }
+  },
+  {
+   "check": "date_year_in_range",
+   "args": {
+    "columns": [
+     "day"
+    ],
+    "min_year": 2025,
+    "max_year": 2025
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "HARM",
+  "reason": "concat with sort=False on two date indexes returns the days in calendar order on 2.x but in first-appearance order on 3.x, so the 3.x table breaks the requested calendar order."
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M2",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 by pkg:TASKS_M2 for catalogue row R01; naive.py shows the invited idiom, reference.py is the version-robust reference."
+}

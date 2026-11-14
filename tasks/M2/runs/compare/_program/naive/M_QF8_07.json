@@ -1,0 +1,72 @@
+{
+ "clean_on_233": true,
+ "exclusion": null,
+ "exclusion_detail": null,
+ "program_id": "naive/M_QF8_07",
+ "targets": {
+  "E0a~E1": {
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "drift_pilot_rule": true,
+   "excluded": null,
+   "first_diff": {
+    "a": 20,
+    "b": 12,
+    "column": null,
+    "kind": "cell",
+    "row": 0
+   },
+   "first_divergent_line": null,
+   "locally_silent": null,
+   "magnitude": "SUBSTANTIVE",
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "silent_pilot_rule": true,
+   "silent_pilotdef": true,
+   "trace_truncated": null,
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warning_lines": [],
+   "warning_only": false
+  },
+  "E0a~E2": {
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "drift_pilot_rule": true,
+   "excluded": null,
+   "first_diff": {
+    "a": 20,
+    "b": 12,
+    "column": null,
+    "kind": "cell",
+    "row": 0
+   },
+   "first_divergent_line": null,
+   "locally_silent": null,
+   "magnitude": "SUBSTANTIVE",
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "silent_pilot_rule": true,
+   "silent_pilotdef": true,
+   "trace_truncated": null,
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warning_lines": [],
+   "warning_only": false
+  }
+ },
+ "task_id": "M_QF8_07",
+ "three_x_only": false,
+ "warned_E0a": {
+  "pilot": false,
+  "prereg": false
+ }
+}

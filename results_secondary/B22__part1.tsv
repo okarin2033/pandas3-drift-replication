@@ -1,0 +1,5 @@
+rating	unit	n	first_choice_n	first_choice_share	first_choice_lo	first_choice_hi	listed_n	listed_share	listed_lo	listed_hi
+first	quota-row pairs (tasks)	128	50	0.390625	0.310470	0.477154	100	0.781250	0.702016	0.844095
+first	all pairs	130	51	0.392308	0.312621	0.478176	102	0.784615	0.706324	0.846569
+second	quota-row pairs (tasks)	128	30	0.234375	0.169394	0.314835	30	0.234375	0.169394	0.314835
+second	all pairs	130	30	0.230769	0.166701	0.310293	30	0.230769	0.166701	0.310293

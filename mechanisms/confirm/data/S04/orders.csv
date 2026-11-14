@@ -1,0 +1,8 @@
+order_id,region,status
+1,north,shipped
+2,north,pending
+3,south,
+4,south,shipped
+5,east,cancelled
+6,east,
+7,north,shipped

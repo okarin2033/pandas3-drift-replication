@@ -1,0 +1,5 @@
+[confirm/S04_b] statuses: ok=7
+[confirm/S05_b] statuses: ok=7
+[confirm/D05_b] statuses: ok=7
+[confirm/D07_b] statuses: ok=7
+[confirm/C06_b] statuses: ok=7

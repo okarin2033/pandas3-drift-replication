@@ -1,0 +1,11 @@
+You are given CSV file(s) in the current working directory:
+
+- members.csv: Club members, one per row (240 rows): member_id (whole number), full_name (first and last name; many names have accented letters; capital letters and spaces around the name are inconsistent), home_city (city name, several with accented letters; capital letters and spaces around the name are inconsistent; about 3% of cells are empty and about 3% hold "-" for an unknown city), fee (yearly fee, two decimals).
+
+Task: How many members pay each yearly fee? There are only a few fee levels, so treat the fee as a categorical label and show each fee exactly as it is written in the file, with both decimals (for example '104.50'). `result` should be a Series indexed by the fee text with the number of members.
+
+Requirements:
+- Write a complete Python script that reads the file(s) from the current directory.
+- Use only pandas, numpy and the Python standard library.
+- Store the final answer in a top-level variable named `result`.
+- Reply with a single Python code block.

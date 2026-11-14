@@ -1,0 +1,72 @@
+{
+ "id": "A_BIN_05",
+ "stratum": "A",
+ "family": null,
+ "generic_family": "BIN",
+ "catalogue_row": null,
+ "files": [
+  {
+   "path": "GEN/riders.csv",
+   "description": "Bike-share riders, one per row (400 rows): rider_id (six-digit id with leading zeros), display_name (person name, some with accented letters), home_district (one of 6 districts such as \"Old Town\"), membership (casual, monthly or annual) - these three text columns have inconsistent capital letters and stray spaces; joined_on (date as text, YYYY-MM-DD; about 2% empty), birth_year (whole number; about 4% empty), credit_balance (two decimals, can be negative; about 5% empty)."
+  }
+ ],
+ "task_text": "In riders.csv, compute each rider's age in 2025 as 2025 minus birth_year and put riders into age bands under 25, 25-39, 40-59 and 60+; leave out riders with an empty birth_year. `result` should be a table indexed by those band labels in that order with columns riders (count) and mean_balance (average of non-empty credit_balance, 2 decimals).",
+ "allowed_task_words": [],
+ "invited_ids_author": [
+  "G01"
+ ],
+ "order_significant": true,
+ "sort_keys": [
+  "__index__"
+ ],
+ "dtype_significant": false,
+ "intended_computation": "Read riders.csv; riders with a birth_year only; age = 2025 - birth_year; bands under 25, 25-39, 40-59, 60+; per band: riders = count, mean_balance = mean of non-empty credit_balance (2 decimals). Index: the four band labels in that order.",
+ "acceptable_variants": {
+  "row_order": "ties_only",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": ""
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 4
+   }
+  },
+  {
+   "check": "counts_sum_to_rows",
+   "args": {
+    "column": "riders",
+    "expected": 384
+   }
+  }
+ ],
+ "predicted_direction": null,
+ "naive_path": null,
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:REPAIR3_INTEGRATE",
+ "status": "prepared",
+ "notes": "Intent written in a separate step that did not use the catalogue or the pre-registration (Amendment 8 item 3; INTENTS_FRESH.tsv sha256 ffae987c...e666). Card, reference and invited_ids_author drafted 2026-11-11 by pkg:REPAIR3_INTEGRATE after the intents were sealed; intent not rewritten. Prepared (Amendment 9)."
+}

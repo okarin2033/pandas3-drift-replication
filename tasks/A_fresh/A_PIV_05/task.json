@@ -1,0 +1,108 @@
+{
+ "id": "A_PIV_05",
+ "stratum": "A",
+ "family": null,
+ "generic_family": "PIV",
+ "catalogue_row": null,
+ "files": [
+  {
+   "path": "GEN/weather_hourly.csv",
+   "description": "Hourly weather for the city, September 2025 (720 rows, one per hour in time order, no gaps): observed_at (timestamp written as YYYY-MM-DD HH:MM), temp_c (degrees C, one decimal; about 2% empty), rain_mm (one decimal), wind_kmh (whole number), sky (clear, cloudy, fog or rain; capital letters and spaces are inconsistent)."
+  }
+ ],
+ "task_text": "Reshape weather_hourly.csv into long form with one row per hour and measurement, covering temp_c, rain_mm and wind_kmh. `result` should be a table with columns observed_at, measure (the column name) and value, empty temperatures dropped, sorted by observed_at and then by measure alphabetically, with a fresh row numbering from 0.",
+ "allowed_task_words": [],
+ "invited_ids_author": [
+  "R04"
+ ],
+ "order_significant": true,
+ "sort_keys": [
+  "observed_at",
+  "measure"
+ ],
+ "dtype_significant": false,
+ "intended_computation": "Read weather_hourly.csv; long form with one row per (hour, measure) for temp_c, rain_mm, wind_kmh; columns observed_at, measure (the column name), value; rows with an empty temp_c dropped; sorted by observed_at, then measure alphabetically; default index 0..n-1.",
+ "acceptable_variants": {
+  "row_order": "ties_only",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": "observed_at may be timestamps instead of text; value may be float throughout"
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 2146
+   }
+  },
+  {
+   "check": "no_nulls",
+   "args": {
+    "columns": [
+     "value"
+    ]
+   }
+  },
+  {
+   "check": "values_in_set",
+   "args": {
+    "column": "measure",
+    "values": [
+     "rain_mm",
+     "temp_c",
+     "wind_kmh"
+    ]
+   }
+  },
+  {
+   "check": "columns_present",
+   "args": {
+    "columns": [
+     "observed_at",
+     "measure",
+     "value"
+    ]
+   }
+  },
+  {
+   "check": "sorted_by",
+   "args": {
+    "keys": [
+     "observed_at",
+     "measure"
+    ],
+    "ascending": [
+     true,
+     true
+    ]
+   }
+  }
+ ],
+ "predicted_direction": null,
+ "naive_path": null,
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:REPAIR3_INTEGRATE",
+ "status": "prepared",
+ "notes": "Intent written in a separate step that did not use the catalogue or the pre-registration (Amendment 8 item 3; INTENTS_FRESH.tsv sha256 ffae987c...e666). Card, reference and invited_ids_author drafted 2026-11-11 by pkg:REPAIR3_INTEGRATE after the intents were sealed; intent not rewritten. Prepared (Amendment 9)."
+}

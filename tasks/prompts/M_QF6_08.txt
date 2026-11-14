@@ -1,0 +1,11 @@
+You are given CSV file(s) in the current working directory:
+
+- quiz_scores.csv: Quiz results (80 rows, one per student in seat order, no other columns): quiz_a and quiz_b (points 0-10, whole numbers, many equal values; about 9% and 6% of cells empty for absent students).
+
+Task: Convert the table to the best-fitting column types after reading, so that the scores stay whole numbers with empty cells. Rank the students in quiz_b from the lowest score (rank 1 = lowest; equal scores share the average of their ranks). Absent students (empty cell) get no rank. `result` should be a Series with one rank per student in file order.
+
+Requirements:
+- Write a complete Python script that reads the file(s) from the current directory.
+- Use only pandas, numpy and the Python standard library.
+- Store the final answer in a top-level variable named `result`.
+- Reply with a single Python code block.

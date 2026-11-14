@@ -1,0 +1,40 @@
+# Banned-word list for rendered prompts (FULL_PREREG.md section 5). Written 2026-11-11 13:30 JST by pkg:SHARED.
+# Frozen at T8 together with the task set. Format: label <TAB> exemptible <TAB> python regex (one per line).
+# Every regex is compiled with re.IGNORECASE and applied to the whole rendered prompt. "exemptible = yes" means a
+# task may list the matched word in allowed_task_words; the exemption is then reported (section 14 freeze item
+# "banned-word list exceptions"). "no" means the hit can never be exempted.
+# Every pandas option name is added at run time from envs/pandas_option_names.txt (written by ENV_TERMS); see
+# harness/lint_prompts.py (full dotted names, plus last name segments that contain an underscore).
+#
+# --- version numbers of pandas, numpy or Python (section 5: "any version number of pandas, numpy or Python")
+version_pandas	no	\bpandas[\s\-_:]{0,3}v?\d+(?:\.\d+)*\b
+version_numpy	no	\bnumpy[\s\-_:]{0,3}v?\d+(?:\.\d+)*\b
+version_python	no	\bpython[\s\-_:]{0,3}v?\d+(?:\.\d+)*\b
+version_py_short	no	\bpy3\d{0,2}\b
+version_cpython	no	\bcpython\b
+version_v_prefixed	no	\bv\d+\.\d+(?:\.\d+)*\b
+version_semver_like	yes	(?<![\d.])\d{1,2}\.\d{1,2}\.\d{1,2}(?![\d.])
+# --- literal terms of section 5 (plural and inflected forms included)
+pandas_2	no	\bpandas[\s\-_]*2\b
+pandas_3	no	\bpandas[\s\-_]*3\b
+dtype	no	\bdtypes?\b
+object	yes	\bobjects?\b
+string_dtype	no	\bstring[\s\-_]*dtypes?\b
+StringDtype	no	\bstringdtypes?\b
+pyarrow	no	\bpyarrow\b
+arrow	yes	\barrows?\b
+copy	yes	\bcop(?:y|ies|ied|ying)\b
+view	yes	\bview(?:s|ed|ing)?\b
+copy_on_write	no	\bcopy[\s\-_]*on[\s\-_]*write\b
+cow_abbrev	yes	\bCoW\b
+inplace	no	\bin[\s\-_]?place\b
+chained	no	\bchain(?:ed|ing)\b
+observed	yes	\bobserved\b
+warning	no	\bwarn(?:ed|ing|ings)\b
+deprecat	no	\bdeprecat\w*
+future	yes	\bfutures?\b
+legacy	yes	\blegacy\b
+resolution	yes	\bresolutions?\b
+nanosecond	no	\bnanoseconds?\b
+microsecond	no	\bmicroseconds?\b
+unit_kwarg	no	\bunit\s*=

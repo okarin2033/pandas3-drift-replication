@@ -1,0 +1,396 @@
+{
+ "item": "X-3",
+ "rows": [
+  {
+   "model": "anthropic__claude-haiku-4.5",
+   "run_config": "E0a",
+   "records": 1000,
+   "records_missing": 0,
+   "records_with_neutralised_calls": 0,
+   "neutralised_calls_total": 0,
+   "neutralised_calls_max_in_a_record": 0
+  },
+  {
+   "model": "anthropic__claude-haiku-4.5",
+   "run_config": "E0b",
+   "records": 1000,
+   "records_missing": 0,
+   "records_with_neutralised_calls": 0,
+   "neutralised_calls_total": 0,
+   "neutralised_calls_max_in_a_record": 0
+  },
+  {
+   "model": "anthropic__claude-haiku-4.5",
+   "run_config": "E1",
+   "records": 1000,
+   "records_missing": 0,
+   "records_with_neutralised_calls": 0,
+   "neutralised_calls_total": 0,
+   "neutralised_calls_max_in_a_record": 0
+  },
+  {
+   "model": "anthropic__claude-haiku-4.5",
+   "run_config": "E2",
+   "records": 1000,
+   "records_missing": 0,
+   "records_with_neutralised_calls": 0,
+   "neutralised_calls_total": 0,
+   "neutralised_calls_max_in_a_record": 0
+  },
+  {
+   "model": "anthropic__claude-haiku-5.5",
+   "run_config": "E0a",
+   "records": 1000,
+   "records_missing": 0,
+   "records_with_neutralised_calls": 0,
+   "neutralised_calls_total": 0,
+   "neutralised_calls_max_in_a_record": 0
+  },
+  {
+   "model": "anthropic__claude-haiku-5.5",
+   "run_config": "E0b",
+   "records": 1000,
+   "records_missing": 0,
+   "records_with_neutralised_calls": 0,
+   "neutralised_calls_total": 0,
+   "neutralised_calls_max_in_a_record": 0
+  },
+  {
+   "model": "anthropic__claude-haiku-5.5",
+   "run_config": "E1",
+   "records": 1000,
+   "records_missing": 0,
+   "records_with_neutralised_calls": 0,
+   "neutralised_calls_total": 0,
+   "neutralised_calls_max_in_a_record": 0
+  },
+  {
+   "model": "anthropic__claude-haiku-5.5",
+   "run_config": "E2",
+   "records": 1000,
+   "records_missing": 0,
+   "records_with_neutralised_calls": 0,
+   "neutralised_calls_total": 0,
+   "neutralised_calls_max_in_a_record": 0
+  },
+  {
+   "model": "anthropic__claude-sonnet-5.5",
+   "run_config": "E0a",
+   "records": 1000,
+   "records_missing": 0,
+   "records_with_neutralised_calls": 0,
+   "neutralised_calls_total": 0,
+   "neutralised_calls_max_in_a_record": 0
+  },
+  {
+   "model": "anthropic__claude-sonnet-5.5",
+   "run_config": "E0b",
+   "records": 1000,
+   "records_missing": 0,
+   "records_with_neutralised_calls": 0,
+   "neutralised_calls_total": 0,
+   "neutralised_calls_max_in_a_record": 0
+  },
+  {
+   "model": "anthropic__claude-sonnet-5.5",
+   "run_config": "E1",
+   "records": 1000,
+   "records_missing": 0,
+   "records_with_neutralised_calls": 0,
+   "neutralised_calls_total": 0,
+   "neutralised_calls_max_in_a_record": 0
+  },
+  {
+   "model": "anthropic__claude-sonnet-5.5",
+   "run_config": "E2",
+   "records": 1000,
+   "records_missing": 0,
+   "records_with_neutralised_calls": 0,
+   "neutralised_calls_total": 0,
+   "neutralised_calls_max_in_a_record": 0
+  },
+  {
+   "model": "deepseek__deepseek-v3.2",
+   "run_config": "E0a",
+   "records": 1000,
+   "records_missing": 0,
+   "records_with_neutralised_calls": 1,
+   "neutralised_calls_total": 1,
+   "neutralised_calls_max_in_a_record": 1
+  },
+  {
+   "model": "deepseek__deepseek-v3.2",
+   "run_config": "E0b",
+   "records": 1000,
+   "records_missing": 0,
+   "records_with_neutralised_calls": 1,
+   "neutralised_calls_total": 1,
+   "neutralised_calls_max_in_a_record": 1
+  },
+  {
+   "model": "deepseek__deepseek-v3.2",
+   "run_config": "E1",
+   "records": 1000,
+   "records_missing": 0,
+   "records_with_neutralised_calls": 1,
+   "neutralised_calls_total": 1,
+   "neutralised_calls_max_in_a_record": 1
+  },
+  {
+   "model": "deepseek__deepseek-v3.2",
+   "run_config": "E2",
+   "records": 1000,
+   "records_missing": 0,
+   "records_with_neutralised_calls": 1,
+   "neutralised_calls_total": 1,
+   "neutralised_calls_max_in_a_record": 1
+  },
+  {
+   "model": "google__gemma-4-31b-it",
+   "run_config": "E0a",
+   "records": 1000,
+   "records_missing": 0,
+   "records_with_neutralised_calls": 0,
+   "neutralised_calls_total": 0,
+   "neutralised_calls_max_in_a_record": 0
+  },
+  {
+   "model": "google__gemma-4-31b-it",
+   "run_config": "E0b",
+   "records": 1000,
+   "records_missing": 0,
+   "records_with_neutralised_calls": 0,
+   "neutralised_calls_total": 0,
+   "neutralised_calls_max_in_a_record": 0
+  },
+  {
+   "model": "google__gemma-4-31b-it",
+   "run_config": "E1",
+   "records": 1000,
+   "records_missing": 0,
+   "records_with_neutralised_calls": 0,
+   "neutralised_calls_total": 0,
+   "neutralised_calls_max_in_a_record": 0
+  },
+  {
+   "model": "google__gemma-4-31b-it",
+   "run_config": "E2",
+   "records": 1000,
+   "records_missing": 0,
+   "records_with_neutralised_calls": 0,
+   "neutralised_calls_total": 0,
+   "neutralised_calls_max_in_a_record": 0
+  },
+  {
+   "model": "openai__gpt-5.4-mini",
+   "run_config": "E0a",
+   "records": 1000,
+   "records_missing": 0,
+   "records_with_neutralised_calls": 0,
+   "neutralised_calls_total": 0,
+   "neutralised_calls_max_in_a_record": 0
+  },
+  {
+   "model": "openai__gpt-5.4-mini",
+   "run_config": "E0b",
+   "records": 1000,
+   "records_missing": 0,
+   "records_with_neutralised_calls": 0,
+   "neutralised_calls_total": 0,
+   "neutralised_calls_max_in_a_record": 0
+  },
+  {
+   "model": "openai__gpt-5.4-mini",
+   "run_config": "E1",
+   "records": 1000,
+   "records_missing": 0,
+   "records_with_neutralised_calls": 0,
+   "neutralised_calls_total": 0,
+   "neutralised_calls_max_in_a_record": 0
+  },
+  {
+   "model": "openai__gpt-5.4-mini",
+   "run_config": "E2",
+   "records": 1000,
+   "records_missing": 0,
+   "records_with_neutralised_calls": 0,
+   "neutralised_calls_total": 0,
+   "neutralised_calls_max_in_a_record": 0
+  },
+  {
+   "model": "openai__gpt-5.6-terra",
+   "run_config": "E0a",
+   "records": 1000,
+   "records_missing": 0,
+   "records_with_neutralised_calls": 0,
+   "neutralised_calls_total": 0,
+   "neutralised_calls_max_in_a_record": 0
+  },
+  {
+   "model": "openai__gpt-5.6-terra",
+   "run_config": "E0b",
+   "records": 1000,
+   "records_missing": 0,
+   "records_with_neutralised_calls": 0,
+   "neutralised_calls_total": 0,
+   "neutralised_calls_max_in_a_record": 0
+  },
+  {
+   "model": "openai__gpt-5.6-terra",
+   "run_config": "E1",
+   "records": 1000,
+   "records_missing": 0,
+   "records_with_neutralised_calls": 0,
+   "neutralised_calls_total": 0,
+   "neutralised_calls_max_in_a_record": 0
+  },
+  {
+   "model": "openai__gpt-5.6-terra",
+   "run_config": "E2",
+   "records": 1000,
+   "records_missing": 0,
+   "records_with_neutralised_calls": 0,
+   "neutralised_calls_total": 0,
+   "neutralised_calls_max_in_a_record": 0
+  },
+  {
+   "model": "openai__gpt-oss-20b",
+   "run_config": "E0a",
+   "records": 1000,
+   "records_missing": 0,
+   "records_with_neutralised_calls": 0,
+   "neutralised_calls_total": 0,
+   "neutralised_calls_max_in_a_record": 0
+  },
+  {
+   "model": "openai__gpt-oss-20b",
+   "run_config": "E0b",
+   "records": 1000,
+   "records_missing": 0,
+   "records_with_neutralised_calls": 0,
+   "neutralised_calls_total": 0,
+   "neutralised_calls_max_in_a_record": 0
+  },
+  {
+   "model": "openai__gpt-oss-20b",
+   "run_config": "E1",
+   "records": 1000,
+   "records_missing": 0,
+   "records_with_neutralised_calls": 0,
+   "neutralised_calls_total": 0,
+   "neutralised_calls_max_in_a_record": 0
+  },
+  {
+   "model": "openai__gpt-oss-20b",
+   "run_config": "E2",
+   "records": 1000,
+   "records_missing": 0,
+   "records_with_neutralised_calls": 0,
+   "neutralised_calls_total": 0,
+   "neutralised_calls_max_in_a_record": 0
+  },
+  {
+   "model": "qwen__qwen3.5-9b",
+   "run_config": "E0a",
+   "records": 1000,
+   "records_missing": 0,
+   "records_with_neutralised_calls": 0,
+   "neutralised_calls_total": 0,
+   "neutralised_calls_max_in_a_record": 0
+  },
+  {
+   "model": "qwen__qwen3.5-9b",
+   "run_config": "E0b",
+   "records": 1000,
+   "records_missing": 0,
+   "records_with_neutralised_calls": 0,
+   "neutralised_calls_total": 0,
+   "neutralised_calls_max_in_a_record": 0
+  },
+  {
+   "model": "qwen__qwen3.5-9b",
+   "run_config": "E1",
+   "records": 1000,
+   "records_missing": 0,
+   "records_with_neutralised_calls": 0,
+   "neutralised_calls_total": 0,
+   "neutralised_calls_max_in_a_record": 0
+  },
+  {
+   "model": "qwen__qwen3.5-9b",
+   "run_config": "E2",
+   "records": 1000,
+   "records_missing": 0,
+   "records_with_neutralised_calls": 0,
+   "neutralised_calls_total": 0,
+   "neutralised_calls_max_in_a_record": 0
+  },
+  {
+   "model": "qwen__qwen3.6-35b-a3b",
+   "run_config": "E0a",
+   "records": 1000,
+   "records_missing": 0,
+   "records_with_neutralised_calls": 0,
+   "neutralised_calls_total": 0,
+   "neutralised_calls_max_in_a_record": 0
+  },
+  {
+   "model": "qwen__qwen3.6-35b-a3b",
+   "run_config": "E0b",
+   "records": 1000,
+   "records_missing": 0,
+   "records_with_neutralised_calls": 0,
+   "neutralised_calls_total": 0,
+   "neutralised_calls_max_in_a_record": 0
+  },
+  {
+   "model": "qwen__qwen3.6-35b-a3b",
+   "run_config": "E1",
+   "records": 1000,
+   "records_missing": 0,
+   "records_with_neutralised_calls": 0,
+   "neutralised_calls_total": 0,
+   "neutralised_calls_max_in_a_record": 0
+  },
+  {
+   "model": "qwen__qwen3.6-35b-a3b",
+   "run_config": "E2",
+   "records": 1000,
+   "records_missing": 0,
+   "records_with_neutralised_calls": 0,
+   "neutralised_calls_total": 0,
+   "neutralised_calls_max_in_a_record": 0
+  }
+ ],
+ "records_missing_by_config": {},
+ "meta": {
+  "label": null,
+  "test_mode": false,
+  "items": [
+   "X-3"
+  ],
+  "inputs_sha256": {
+   "per_program.jsonl": "dfd3b7dc406ffb88c34c7a4cfc9a90eeb71c0feaf0da626b9805bbac40e9401f",
+   "summary.json": "064443d62d3ec2e0e383c7084734282d191377593cfa13cf26134d10f53a5096",
+   "tasks.json": "ac38b07873515cff1488544c81f1acadc80aaad418db13883a3a0423ccad5391",
+   "models.tsv": "93fc8c7f6f8f2b3f0e11e04926e5245f1456534085779a1b2d1cb1c4b2520676"
+  },
+  "B": 10000,
+  "seed": 20261111,
+  "tool": "sec_runrecords.py",
+  "tool_sha256": "204821872e53b0bbbf9964440d4c57506af4c7dbc5127e933c1c6019598dc677",
+  "sec_common_sha256": "c1e87284ed92844ade5c515bb78fe261b3a94431d1389c0b4ec2f854f48d39db",
+  "harness_stats_sha256": "ad28a99b5e3a61dc9a7753e3a019a41d2d5968a83f94d6aaddff91156e0bf41d",
+  "created": "2026-11-13T16:35:05+0900",
+  "numpy_used": true,
+  "configs": [
+   "E0a",
+   "E0b",
+   "E1",
+   "E2"
+  ],
+  "records_read": 40000,
+  "runs_root_name": "runs"
+ },
+ "label": null
+}

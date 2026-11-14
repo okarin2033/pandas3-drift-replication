@@ -1,0 +1,97 @@
+{
+ "item": "B.20",
+ "fits": [
+  {
+   "model_name": "GEE silent ~ model",
+   "models": [
+    "anthropic__claude-haiku-4.5",
+    "anthropic__claude-haiku-5.5",
+    "anthropic__claude-sonnet-5.5",
+    "deepseek__deepseek-v3.2",
+    "google__gemma-4-31b-it",
+    "openai__gpt-5.4-mini",
+    "openai__gpt-5.6-terra",
+    "openai__gpt-oss-20b",
+    "qwen__qwen3.5-9b",
+    "qwen__qwen3.6-35b-a3b"
+   ],
+   "notes": {
+    "separated_models": [],
+    "estimable": true,
+    "why": null
+   },
+   "n_obs": 6106,
+   "n_clusters": 128,
+   "alpha": 0.3502389317840478,
+   "scale": 0.9688915491610638,
+   "n_iter": 9,
+   "reference_model": "anthropic__claude-haiku-4.5",
+   "contrasts": {
+    "H2a (mean BEFORE - mean AFTER, log-odds)": {
+     "estimate": 0.3171664001405291,
+     "se": 0.20575724589289623,
+     "lo": -0.08611039136769949,
+     "hi": 0.7204431916487577,
+     "odds_ratio": 1.373231058755967,
+     "or_lo": 0.9174929423287859,
+     "or_hi": 2.055343920080277
+    },
+    "H2b (haiku-4.5 - haiku-5.5, log-odds)": {
+     "estimate": 0.0798571278125259,
+     "se": 0.2969169019913353,
+     "lo": -0.5020893064917004,
+     "hi": 0.6618035621167521,
+     "odds_ratio": 1.0831323071376888,
+     "or_lo": 0.6052647541607187,
+     "or_hi": 1.9382850012341777
+    }
+   }
+  }
+ ],
+ "tokens": [],
+ "meta": {
+  "label": null,
+  "test_mode": false,
+  "items": [
+   "B.20"
+  ],
+  "inputs_sha256": {
+   "per_program.jsonl": "dfd3b7dc406ffb88c34c7a4cfc9a90eeb71c0feaf0da626b9805bbac40e9401f",
+   "summary.json": "064443d62d3ec2e0e383c7084734282d191377593cfa13cf26134d10f53a5096",
+   "tasks.json": "ac38b07873515cff1488544c81f1acadc80aaad418db13883a3a0423ccad5391",
+   "models.tsv": "93fc8c7f6f8f2b3f0e11e04926e5245f1456534085779a1b2d1cb1c4b2520676"
+  },
+  "B": 10000,
+  "seed": 20261111,
+  "tool": "sec_gee.py",
+  "tool_sha256": "f49764d4fb0bb55a669071d07cc20b4d9bcd432467c5c45c2bc201d40af1931b",
+  "sec_common_sha256": "c1e87284ed92844ade5c515bb78fe261b3a94431d1389c0b4ec2f854f48d39db",
+  "harness_stats_sha256": "ad28a99b5e3a61dc9a7753e3a019a41d2d5968a83f94d6aaddff91156e0bf41d",
+  "created": "2026-11-13T16:34:42+0900",
+  "numpy_used": true,
+  "pair": "E0a~E1",
+  "population": "M",
+  "on_separation": "not estimable",
+  "numerical_constants": {
+   "MAXITER": 200,
+   "TOL": 1e-09,
+   "BETA_LIMIT_separation": 25.0,
+   "divergence_abs_beta": 1000.0,
+   "mu_clip": [
+    1e-10,
+    0.9999999999
+   ],
+   "linear_predictor_clip": [
+    -35,
+    35
+   ],
+   "irls_weight_floor": 1e-10,
+   "exchangeable_alpha_range": "[-1/(n_max-1) + 1e-6, 0.999]",
+   "scale_and_alpha_ddof": "p (as statsmodels)",
+   "covariance": "robust sandwich",
+   "wald_z": 1.959963984540054
+  },
+  "tokens_file_sha256": null
+ },
+ "label": null
+}

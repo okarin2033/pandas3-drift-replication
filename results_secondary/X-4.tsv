@@ -1,0 +1,11 @@
+model	program_files	planned	state	extraction_failures	extraction_failure_share	calls_logged	calls_ok	failed_calls_by_http	first_call_utc	last_call_utc	span_days	calls_after_window_end	window_overrun
+anthropic__claude-haiku-4.5	1000	1000	complete	0	0.000000	1000	1000	none	2026-11-12T20:51:20Z	2026-11-12T20:59:49Z	0.005891	0	no
+anthropic__claude-haiku-5.5	1000	1000	complete	0	0.000000	1000	1000	none	2026-11-12T20:51:24Z	2026-11-12T20:58:09Z	0.004687	0	no
+anthropic__claude-sonnet-5.5	1000	1000	complete	0	0.000000	1000	1000	none	2026-11-12T20:51:25Z	2026-11-12T21:02:24Z	0.007627	0	no
+deepseek__deepseek-v3.2	1000	1000	complete	0	0.000000	1462	1000	400:462	2026-11-12T20:51:52Z	2026-11-13T06:13:31Z	0.390035	0	no
+google__gemma-4-31b-it	1000	1000	complete	0	0.000000	2054	1000	429:1054	2026-11-12T20:51:23Z	2026-11-12T23:07:08Z	0.094271	0	no
+openai__gpt-5.4-mini	1000	1000	complete	2	0.002000	1006	1000	502:5,504:1	2026-11-12T20:51:24Z	2026-11-12T21:03:18Z	0.008264	0	no
+openai__gpt-5.6-terra	1000	1000	complete	0	0.000000	1001	1000	503:1	2026-11-12T20:51:25Z	2026-11-12T21:01:05Z	0.006713	0	no
+openai__gpt-oss-20b	1000	1000	complete	0	0.000000	1010	1000	429:3,502:2,504:5	2026-11-12T20:51:25Z	2026-11-12T21:07:31Z	0.011181	0	no
+qwen__qwen3.5-9b	1000	1000	complete	2	0.002000	1007	1000	502:4,503:3	2026-11-12T21:28:13Z	2026-11-12T22:41:31Z	0.050903	0	no
+qwen__qwen3.6-35b-a3b	1000	1000	complete	0	0.000000	1000	1000	none	2026-11-12T20:51:24Z	2026-11-12T21:07:43Z	0.011331	0	no

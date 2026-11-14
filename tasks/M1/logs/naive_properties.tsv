@@ -1,0 +1,65 @@
+task	direction	naive_E0a	naive_E1
+M_QF1_01	HARM	all pass	n_groups_equals
+M_QF1_02	HARM	all pass	all pass
+M_QF1_03	FIX	counts_sum_to_rows,n_groups_equals	all pass
+M_QF1_04	HARM	all pass	all pass
+M_QF1_05	HARM	all pass	numeric_in_range
+M_QF1_06	HARM	all pass	n_groups_equals
+M_QF1_07	HARM	all pass	counts_sum_to_rows,n_groups_equals
+M_QF1_08	FIX	numeric_in_range	all pass
+M_QF1_09	HARM	all pass	all pass
+M_QF1_10	HARM	all pass	numeric_in_range
+M_QF1_11	HARM	all pass	all pass
+M_QF1_12	HARM	all pass	n_groups_equals
+M_QF1_13	HARM	all pass	counts_sum_to_rows,n_groups_equals
+M_QF1_14	HARM	all pass	all pass
+M_QF1_15	FIX	all pass	all pass
+M_QF1_16	HARM	all pass	all pass
+M_QF2_01	HARM	all pass	numeric_in_range
+M_QF2_02	HARM	all pass	numeric_in_range
+M_QF2_03	BOTH	all pass	all pass
+M_QF2_04	HARM	all pass	numeric_in_range
+M_QF2_05	FIX	all pass	all pass
+M_QF2_06	FIX	all pass	all pass
+M_QF2_07	HARM	all pass	counts_sum_to_rows
+M_QF2_08	HARM	all pass	numeric_in_range
+M_QF2_09	BOTH	all pass	all pass
+M_QF2_10	HARM	all pass	all pass
+M_QF2_11	HARM	all pass	numeric_in_range
+M_QF2_12	HARM	all pass	date_year_in_range
+M_QF2_13	BOTH	all pass	all pass
+M_QF2_14	HARM	all pass	numeric_in_range
+M_QF2_15	FIX	all pass	all pass
+M_QF2_16	FIX	all pass	all pass
+M_QF3_01	HARM	all pass	all pass
+M_QF3_02	HARM	all pass	all pass
+M_QF3_03	HARM	all pass	all pass
+M_QF3_04	FIX	columns_present,n_groups_equals,no_nulls	all pass
+M_QF3_05	FIX	all pass	all pass
+M_QF3_06	FIX	numeric_in_range	all pass
+M_QF3_07	HARM	all pass	all pass
+M_QF3_08	HARM	all pass	all pass
+M_QF3_09	HARM	all pass	numeric_in_range
+M_QF3_10	FIX	columns_present,n_groups_equals,no_nulls	all pass
+M_QF3_11	FIX	all pass	all pass
+M_QF3_12	FIX	numeric_in_range	all pass
+M_QF3_13	HARM	all pass	all pass
+M_QF3_14	HARM	all pass	all pass
+M_QF3_15	HARM	all pass	numeric_in_range
+M_QF3_16	FIX	n_groups_equals,values_in_set	all pass
+M_QF4_01	HARM	all pass	n_groups_equals
+M_QF4_02	FIX	no_nulls	all pass
+M_QF4_03	FIX	all pass	all pass
+M_QF4_04	FIX	columns_present	all pass
+M_QF4_05	HARM	all pass	all pass
+M_QF4_06	HARM	all pass	all pass
+M_QF4_07	HARM	all pass	n_groups_equals
+M_QF4_08	FIX	n_groups_equals	all pass
+M_QF4_09	HARM	all pass	columns_present
+M_QF4_10	FIX	columns_present	all pass
+M_QF4_11	FIX	all pass	all pass
+M_QF4_12	HARM	all pass	all pass
+M_QF4_13	HARM	all pass	n_groups_equals
+M_QF4_14	FIX	n_groups_equals	all pass
+M_QF4_15	BOTH	all pass	all pass
+M_QF4_16	FIX	columns_present,numeric_in_range	all pass

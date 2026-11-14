@@ -1,0 +1,71 @@
+{
+ "id": "A_PIV_02",
+ "stratum": "A",
+ "family": null,
+ "generic_family": "PIV",
+ "catalogue_row": null,
+ "files": [
+  {
+   "path": "GEN/weather_hourly.csv",
+   "description": "Hourly weather for the city, September 2025 (720 rows, one per hour in time order, no gaps): observed_at (timestamp written as YYYY-MM-DD HH:MM), temp_c (degrees C, one decimal; about 2% empty), rain_mm (one decimal), wind_kmh (whole number), sky (clear, cloudy, fog or rain; capital letters and spaces are inconsistent)."
+  }
+ ],
+ "task_text": "Make a table of the average temperature with the day of the month (1 to 30) as rows and the sky condition (trimmed, lower case) as columns, rounded to 1 decimal; leave a cell empty where that sky condition did not occur on that day. `result` should be that table.",
+ "allowed_task_words": [],
+ "invited_ids_author": [
+  "R06"
+ ],
+ "order_significant": false,
+ "sort_keys": [],
+ "dtype_significant": false,
+ "intended_computation": "Read weather_hourly.csv, normalise sky (strip, lower case), and for each day of the month (rows 1-30) and sky condition (columns) give the mean of the non-empty temp_c values of the matching hours, rounded to 1 decimal; a cell is empty when that sky condition did not occur on that day (or only at hours with an empty temperature).",
+ "acceptable_variants": {
+  "row_order": "any",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": "row and column order free"
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 30
+   }
+  },
+  {
+   "check": "numeric_in_range",
+   "args": {
+    "columns": [],
+    "min": -10,
+    "max": 40
+   }
+  }
+ ],
+ "predicted_direction": null,
+ "naive_path": null,
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_RA",
+ "status": "prepared",
+ "notes": "invited_ids_author labelled by hand after the intents were frozen (step A2); intent not rewritten for it."
+}

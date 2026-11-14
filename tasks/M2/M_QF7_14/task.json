@@ -1,0 +1,93 @@
+{
+ "id": "M_QF7_14",
+ "stratum": "M",
+ "family": "QF7_INDEX_REDUCE",
+ "generic_family": null,
+ "catalogue_row": "I02",
+ "files": [
+  {
+   "path": "QF7_INDEX_REDUCE/parcel_rates.csv",
+   "description": "Parcel price table (120 rows, sorted by weight_kg, each weight once): weight_kg (two decimals, from 0.40 to 54.05, never a whole number), zones (whole number 1-5), fee (two decimals; about 4% empty)."
+  }
+ ],
+ "task_text": "For the parcels weighing from 20 kg up to 40 kg, count the price rows for each zones value. `result` should be a Series of counts indexed by zones, ordered by zones from 1 to 5.",
+ "allowed_task_words": [],
+ "invited_ids_author": [
+  "I02"
+ ],
+ "order_significant": true,
+ "sort_keys": [
+  "zones"
+ ],
+ "dtype_significant": false,
+ "intended_computation": "Among the 46 rows with 20 <= weight_kg <= 40, the number of rows per zones value (1-5), ascending by zones.",
+ "acceptable_variants": {
+  "row_order": "ties_only",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": "a zones value with no row may be omitted or shown as 0."
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "counts_sum_to_rows",
+   "args": {
+    "column": "__values__",
+    "expected": 46
+   }
+  },
+  {
+   "check": "sorted_by",
+   "args": {
+    "keys": [
+     "zones"
+    ],
+    "ascending": [
+     true
+    ]
+   }
+  },
+  {
+   "check": "values_in_set",
+   "args": {
+    "column": "zones",
+    "values": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "HARM",
+  "reason": "table[20:40] on the float weight index selected 20-40 kg by label on 2.x; on 3.x it takes rows 20-39 by position, so the counts describe other parcels."
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M2",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 by pkg:TASKS_M2 for catalogue row I02; naive.py shows the invited idiom, reference.py is the version-robust reference."
+}

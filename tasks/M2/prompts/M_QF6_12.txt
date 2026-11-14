@@ -1,0 +1,11 @@
+You are given CSV file(s) in the current working directory:
+
+- quiz_scores.csv: Quiz results (80 rows, one per student in seat order, no other columns): quiz_a and quiz_b (points 0-10, whole numbers, many equal values; about 9% and 6% of cells empty for absent students).
+
+Task: Read both quiz columns as whole numbers that allow empty cells. Rank the students in quiz_a from the top: rank 1 is the highest score, and equal scores all get the best rank of their group (for example 1, 1, 3). Absent students (empty cell) get no rank. `result` should be a Series with one rank per student in file order.
+
+Requirements:
+- Write a complete Python script that reads the file(s) from the current directory.
+- Use only pandas, numpy and the Python standard library.
+- Store the final answer in a top-level variable named `result`.
+- Reply with a single Python code block.

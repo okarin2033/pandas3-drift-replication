@@ -1,0 +1,89 @@
+{
+ "id": "M_QF3_10",
+ "stratum": "M",
+ "family": "QF3_COW",
+ "generic_family": null,
+ "catalogue_row": "C04",
+ "files": [
+  {
+   "path": "QF3_COW/gauges.csv",
+   "description": "Water gauge log (120 rows): gauge (gauge name such as \"LA-01\"), reading (meters, three decimals; about 3% empty), level (alert level, whole number from 3 to 80, no empty cells), site (dam, canal or lake; capital letters and spaces are inconsistent)."
+  }
+ ],
+ "task_text": "Fill the gaps in the gauge log: a missing reading takes the reading of the previous row. Write this as a small function that fills the gaps of a table, and apply it to the log. `result` should be the filled log as a table with the same columns, in file order.",
+ "allowed_task_words": [
+  "small function"
+ ],
+ "invited_ids_author": [
+  "C04"
+ ],
+ "order_significant": true,
+ "sort_keys": [
+  "__index__"
+ ],
+ "dtype_significant": false,
+ "intended_computation": "Forward-fill the 4 missing readings from the previous row and return all 120 rows and 4 columns in file order.",
+ "acceptable_variants": {
+  "row_order": "ties_only",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": ""
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 120
+   }
+  },
+  {
+   "check": "no_nulls",
+   "args": {
+    "columns": [
+     "reading"
+    ]
+   }
+  },
+  {
+   "check": "columns_present",
+   "args": {
+    "columns": [
+     "gauge",
+     "reading",
+     "level",
+     "site"
+    ]
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "FIX",
+  "reason": "on 2.x the function returns the None given back by the in-place fill; 3.x returns the filled table"
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M1",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 in package TASKS_M1; task text, card, naive solution, reference and predicted direction were prepared there."
+}

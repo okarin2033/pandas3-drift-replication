@@ -1,0 +1,11 @@
+You are given CSV file(s) in the current working directory:
+
+- purchases.csv: Shop purchases (900 rows): purchase_id (whole number), subscriber_id (refers to subscribers.csv; most subscribers have several purchases), store_city (city name; the same city is written with different capitals and extra spaces, e.g. "lisbon" and "LISBON"; about 2% empty), quantity (whole number), spend (two decimals).
+
+Task: Classify the purchases by spend: 'small' below 25, 'medium' 25 to below 100, 'large' 100 to below 250 and 'very large' 250 or more. For each class report the number of purchases and the total spend rounded to two decimals; every class must be listed, also when no purchase falls into it. `result` should be a table indexed by class, in the order above, with the columns purchases and total_spend.
+
+Requirements:
+- Write a complete Python script that reads the file(s) from the current directory.
+- Use only pandas, numpy and the Python standard library.
+- Store the final answer in a top-level variable named `result`.
+- Reply with a single Python code block.

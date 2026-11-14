@@ -1,0 +1,80 @@
+{
+ "id": "A_BIN_01",
+ "stratum": "A",
+ "family": null,
+ "generic_family": "BIN",
+ "catalogue_row": null,
+ "files": [
+  {
+   "path": "GEN/trips.csv",
+   "description": "Bike-share trips, 1 September to 1 November 2025 (1500 rows): trip_id (whole number), rider_id (refers to riders.csv), start_station and end_station (refer to station_code in stations.csv), started_at (timestamp written as YYYY-MM-DD HH:MM), duration_min (whole minutes; about 3% empty), distance_km (two decimals), fare (two decimals; about 3% empty), payment (card, app or cash; capital letters and spaces are inconsistent), rating (1-5 stars, whole number; about 19% empty)."
+  }
+ ],
+ "task_text": "Group the trips into distance bands: under 2 km, 2 to under 5 km, 5 to under 10 km, and 10 km or more. For each band, report the number of trips and the average fare (ignoring empty fares), rounded to 2 decimals. `result` should be a table with the columns band, n_trips and avg_fare, holding one line for each band.",
+ "allowed_task_words": [],
+ "invited_ids_author": [
+  "G01"
+ ],
+ "order_significant": false,
+ "sort_keys": [],
+ "dtype_significant": false,
+ "intended_computation": "Read trips.csv and put every trip into one of four bands by distance_km: < 2, 2 <= d < 5, 5 <= d < 10, d >= 10. For each band give the number of trips and the mean of the non-empty fares, rounded to 2 decimals; one row per band with columns band, n_trips, avg_fare.",
+ "acceptable_variants": {
+  "row_order": "any",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": "band labels may be spelled differently (e.g. interval notation)"
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 4
+   }
+  },
+  {
+   "check": "counts_sum_to_rows",
+   "args": {
+    "column": "n_trips",
+    "expected": 1500
+   }
+  },
+  {
+   "check": "numeric_in_range",
+   "args": {
+    "columns": [
+     "avg_fare"
+    ],
+    "min": 0,
+    "max": null
+   }
+  }
+ ],
+ "predicted_direction": null,
+ "naive_path": null,
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_RA",
+ "status": "prepared",
+ "notes": "invited_ids_author labelled by hand after the intents were frozen (step A2); intent not rewritten for it."
+}

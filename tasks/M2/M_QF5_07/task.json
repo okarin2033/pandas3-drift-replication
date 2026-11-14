@@ -1,0 +1,83 @@
+{
+ "id": "M_QF5_07",
+ "stratum": "M",
+ "family": "QF5_ORDER",
+ "generic_family": null,
+ "catalogue_row": "R04",
+ "files": [
+  {
+   "path": "QF5_ORDER/exam_scores.csv",
+   "description": "Exam scores (60 rows, one per student): student (full name, unique, many with accented letters), then math, art and music (scores 35-100, whole numbers; about 9% of these score cells are empty, and one student has no score at all)."
+  }
+ ],
+ "task_text": "For each student who has at least one score, count in how many of the three subjects they have a score. `result` should be a Series indexed by student.",
+ "allowed_task_words": [],
+ "invited_ids_author": [
+  "R04"
+ ],
+ "order_significant": false,
+ "sort_keys": [],
+ "dtype_significant": false,
+ "intended_computation": "Count the non-empty score cells per student and keep the 59 students with at least one score (the student with no score at all is left out); counts are 1 to 3 and sum to 164.",
+ "acceptable_variants": {
+  "row_order": "any",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": "row order is free."
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 59
+   }
+  },
+  {
+   "check": "counts_sum_to_rows",
+   "args": {
+    "column": "__values__",
+    "expected": 164
+   }
+  },
+  {
+   "check": "numeric_in_range",
+   "args": {
+    "columns": [
+     "__values__"
+    ],
+    "min": 1,
+    "max": 3
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "HARM",
+  "reason": "Counting the rows of stack() per student was right on 2.x, where empty cells were dropped; on 3.x every student gets 3, including the student without any score."
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M2",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 by pkg:TASKS_M2 for catalogue row R04; naive.py shows the invited idiom, reference.py is the version-robust reference."
+}

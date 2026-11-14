@@ -1,0 +1,3 @@
+variant	n_items	kappa	kappa_lo	kappa_hi	kappa_dropped	ac1	ac1_lo	ac1_hi	ac1_dropped	raw_agreement	raw_agreement_lo	raw_agreement_hi	items_left_out_ruled	threshold_kappa	kappa_meets_threshold	label_of_statistic
+all tasks	100	0.436742	0.201427	0.660671	0	0.531060	0.270746	0.757380	0	0.610000	0.404255	0.795461	0	0.600000	no	model vs model (agreement between two model coders; not inter-rater reliability of people)
+without ruled R tasks (LR61/LR70)	100	0.436742	0.198355	0.663186	0	0.531060	0.275622	0.755966	0	0.610000	0.406250	0.794872	0	0.600000	no	model vs model (agreement between two model coders; not inter-rater reliability of people)

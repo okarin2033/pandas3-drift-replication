@@ -1,0 +1,92 @@
+{
+ "clean_on_233": true,
+ "exclusion": null,
+ "exclusion_detail": null,
+ "program_id": "naive/M_QF1_09",
+ "targets": {
+  "E0a~E1": {
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "drift_pilot_rule": true,
+   "excluded": null,
+   "first_diff": {
+    "a": [
+     "104.50",
+     "120.00",
+     "127.75",
+     "134.50",
+     "150.00",
+     "157.75",
+     "164.50",
+     "180.00",
+     "217.75",
+     "224.50",
+     "240.00",
+     "97.75"
+    ],
+    "b": [
+     97.75,
+     104.5,
+     120.0,
+     127.75,
+     134.5,
+     150.0,
+     157.75,
+     164.5,
+     180.0,
+     217.75,
+     224.5,
+     240.0
+    ],
+    "column": "<index>",
+    "kind": "label",
+    "row": null
+   },
+   "first_divergent_line": null,
+   "locally_silent": null,
+   "magnitude": "SUBSTANTIVE",
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "silent_pilot_rule": true,
+   "silent_pilotdef": true,
+   "trace_truncated": null,
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warning_lines": [],
+   "warning_only": false
+  },
+  "E0a~E2": {
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "drift_pilot_rule": false,
+   "excluded": null,
+   "first_diff": null,
+   "first_divergent_line": null,
+   "locally_silent": null,
+   "magnitude": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "silent_pilot_rule": false,
+   "silent_pilotdef": false,
+   "trace_truncated": null,
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warning_lines": [],
+   "warning_only": false
+  }
+ },
+ "task_id": "M_QF1_09",
+ "three_x_only": false,
+ "warned_E0a": {
+  "pilot": false,
+  "prereg": false
+ }
+}

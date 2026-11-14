@@ -1,0 +1,11 @@
+You are given CSV file(s) in the current working directory:
+
+- purchases.csv: Shop purchases (900 rows): purchase_id (whole number), subscriber_id (refers to subscribers.csv; most subscribers have several purchases), store_city (city name; the same city is written with different capitals and extra spaces, e.g. "lisbon" and "LISBON"; about 2% empty), quantity (whole number), spend (two decimals).
+
+Task: Write one report line per store city (surrounding spaces removed, each word capitalised; purchases without a city are left out) in the form 'Lisbon: 152 purchases', ordered alphabetically by city. Index the table by the tidied city and loop over the groups of that index level to produce the lines. `result` should be the list of lines.
+
+Requirements:
+- Write a complete Python script that reads the file(s) from the current directory.
+- Use only pandas, numpy and the Python standard library.
+- Store the final answer in a top-level variable named `result`.
+- Reply with a single Python code block.

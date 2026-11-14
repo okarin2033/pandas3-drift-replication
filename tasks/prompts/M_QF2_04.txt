@@ -1,0 +1,11 @@
+You are given CSV file(s) in the current working directory:
+
+- signups.csv: Account sign-ups (300 rows, not in date order): account_id (whole number), signup_day (date as text, YYYY-MM-DD, between 2023 and 2025; no empty cells), channel (web, app, referral or partner; capital letters and spaces are inconsistent; about 2% empty), first_payment (amount with two decimals; about 5% empty).
+
+Task: Count the sign-ups for every calendar day from the earliest to the latest sign-up day, including days with no sign-ups (count 0). Identify each day by its Unix timestamp in seconds (midnight UTC). `result` should be a Series indexed by that number with the counts, in day order.
+
+Requirements:
+- Write a complete Python script that reads the file(s) from the current directory.
+- Use only pandas, numpy and the Python standard library.
+- Store the final answer in a top-level variable named `result`.
+- Reply with a single Python code block.

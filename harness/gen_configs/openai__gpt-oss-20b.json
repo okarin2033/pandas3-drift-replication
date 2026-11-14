@@ -1,0 +1,26 @@
+{
+ "_written": "2026-11-11 by pkg:HSTAT_GEN (make_configs.py); status: prepared",
+ "model": "openai/gpt-oss-20b",
+ "model_key": "openai__gpt-oss-20b",
+ "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+ "provider": "DekaLLM",
+ "provider_response": [
+  "DekaLLM"
+ ],
+ "reasoning": {
+  "effort": "minimal"
+ },
+ "seed_supported": true,
+ "k": 5,
+ "max_tokens": 8000,
+ "price_in_per_m": 0.029,
+ "price_out_per_m": 0.14,
+ "cap_usd": 0.13,
+ "total_cap_usd": 40.0,
+ "workers": 4,
+ "planning_estimate_usd_k5_200_tasks": 0.083,
+ "generate_first": false,
+ "notes": "temperature and top_p are never sent (lead decision 2). provider, provider_response, reasoning and cap_usd are filled at T7 (calibration); a real run refuses to start while any is __FILL_AT_T7__. Haiku 4.5 is generated first (lifecycle rule, section 4.1).",
+ "prices_checked_at": "2026-11-13T03:37:12+09:00",
+ "_filled_at_t7": "2026-11-12T20:08:57Z by logs/t7_2026-11-13/tools/calibration_report.py from CALIBRATION.md (lead)"
+}

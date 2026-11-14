@@ -1,0 +1,33 @@
+{
+ "baseline_status": "error",
+ "class": null,
+ "class_pilot_rule": null,
+ "clean_on_233": true,
+ "drift": false,
+ "drift_pilot_rule": false,
+ "excluded": "BASE_NOT_OK:error",
+ "exclusion": null,
+ "first_diff": null,
+ "first_divergent_line": null,
+ "locally_silent": null,
+ "magnitude": null,
+ "pair": "V-dirty__E0a~V-dirty__E0b",
+ "program_id": "fmain/C06",
+ "run_problem": null,
+ "silent": false,
+ "silent_all_magnitudes": false,
+ "silent_pilot_rule": false,
+ "silent_pilotdef": false,
+ "target_status": "error",
+ "task_id": null,
+ "warned_E0a": {
+  "pilot": false,
+  "prereg": false
+ },
+ "warned_target": {
+  "pilot": false,
+  "prereg": false
+ },
+ "warning_lines": [],
+ "warning_only": false
+}

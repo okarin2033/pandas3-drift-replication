@@ -1,0 +1,860 @@
+{
+ "written": "2026-11-11",
+ "by": "pkg:VERIFY (4 dtype_significant controls added 2026-11-11 in the repair step, review MF5; 2 identity-key controls added 2026-11-11, Amendment 3; 4 row-identity controls added 2026-11-11, lead ruling LR1.4; 2 LR16 controls added 2026-11-12, lead ruling LR16)",
+ "note": "expectations written from FULL_PREREG sections 3 and 9 before any run",
+ "controls": [
+  {
+   "name": "dt_text_frame",
+   "kind": "natural",
+   "category": "P-",
+   "card": {},
+   "expect_class": [
+    "DTYPE_ONLY"
+   ],
+   "expect_drift": false,
+   "expect_magnitude": null,
+   "expect_class_pilot_rule": "DTYPE_ONLY",
+   "why": "text columns are object on 2.3.3 and str on 3.x; values equal; unflagged -> DTYPE_ONLY",
+   "scored": true
+  },
+  {
+   "name": "dt_groupby_sum",
+   "kind": "natural",
+   "category": "P-",
+   "card": {},
+   "expect_class": [
+    "DTYPE_ONLY"
+   ],
+   "expect_drift": false,
+   "expect_magnitude": null,
+   "expect_class_pilot_rule": "DTYPE_ONLY",
+   "why": "group keys end up in an object (2.3.3) or str (3.x) index; sums equal",
+   "scored": true
+  },
+  {
+   "name": "dt_datetime_frame",
+   "kind": "natural",
+   "category": "P-",
+   "card": {},
+   "expect_class": [
+    "DTYPE_ONLY"
+   ],
+   "expect_drift": false,
+   "expect_magnitude": null,
+   "expect_class_pilot_rule": "DTYPE_ONLY",
+   "why": "parsed dates are datetime64[ns] on 2.3.3 and a coarser unit on 3.x; canonical timestamps equal",
+   "scored": true
+  },
+  {
+   "name": "dt_column_labels",
+   "kind": "natural",
+   "category": "P-",
+   "card": {},
+   "expect_class": [
+    "DTYPE_ONLY"
+   ],
+   "expect_drift": false,
+   "expect_magnitude": null,
+   "expect_class_pilot_rule": "DTYPE_ONLY",
+   "why": "result is the Index of column labels: object on 2.3.3, str on 3.x; labels equal",
+   "scored": true
+  },
+  {
+   "name": "dt_value_counts_series",
+   "kind": "natural",
+   "category": "P-",
+   "card": {},
+   "expect_class": [
+    "DTYPE_ONLY"
+   ],
+   "expect_drift": false,
+   "expect_magnitude": null,
+   "expect_class_pilot_rule": "DTYPE_ONLY",
+   "why": "distinct counts, so order is fixed; only the index dtype differs",
+   "scored": true
+  },
+  {
+   "name": "dt_pivot_table",
+   "kind": "natural",
+   "category": "P-",
+   "card": {},
+   "expect_class": [
+    "DTYPE_ONLY"
+   ],
+   "expect_drift": false,
+   "expect_magnitude": null,
+   "expect_class_pilot_rule": "DTYPE_ONLY",
+   "why": "row and column labels are text; dtype of the label indexes differs, values equal",
+   "scored": true
+  },
+  {
+   "name": "dt_to_dict_keys",
+   "kind": "natural",
+   "category": "P-",
+   "card": {},
+   "expect_class": [
+    "IDENTICAL"
+   ],
+   "expect_drift": false,
+   "expect_magnitude": null,
+   "expect_class_pilot_rule": "IDENTICAL",
+   "why": "a plain dict of Python strings and floats cannot differ by dtype: IDENTICAL (guards against calling every program DTYPE_ONLY)",
+   "scored": true
+  },
+  {
+   "name": "ord_dataframe_value_counts",
+   "kind": "natural",
+   "category": "P-",
+   "card": {},
+   "expect_class": [
+    "ORDER_ONLY"
+   ],
+   "expect_drift": false,
+   "expect_magnitude": null,
+   "expect_class_pilot_rule": "ORDER_ONLY",
+   "why": "DataFrame.value_counts(sort=False) lists groups sorted on 2.3.3 and in first-appearance order on 3.x; unflagged -> ORDER_ONLY",
+   "scored": true
+  },
+  {
+   "name": "ord_dataframe_value_counts_frame",
+   "kind": "natural",
+   "category": "P-",
+   "card": {},
+   "expect_class": [
+    "ORDER_ONLY"
+   ],
+   "expect_drift": false,
+   "expect_magnitude": null,
+   "expect_class_pilot_rule": "ORDER_ONLY",
+   "why": "the same as a DataFrame with a default index (index ignored by the oracle)",
+   "scored": true
+  },
+  {
+   "name": "ord_concat_dates",
+   "kind": "natural",
+   "category": "P-",
+   "card": {},
+   "expect_class": [
+    "ORDER_ONLY"
+   ],
+   "expect_drift": false,
+   "expect_magnitude": null,
+   "expect_class_pilot_rule": "ORDER_ONLY",
+   "why": "concat(axis=1, sort=False) of date-indexed frames: index sorted on 2.3.3, first appearance on 3.x",
+   "scored": true
+  },
+  {
+   "name": "ord_and_dtype_unflagged",
+   "kind": "natural",
+   "category": "P-",
+   "card": {},
+   "expect_class": [
+    "ORDER_ONLY"
+   ],
+   "expect_drift": false,
+   "expect_magnitude": null,
+   "expect_class_pilot_rule": "ORDER_ONLY",
+   "why": "order and index dtype both change; unflagged -> not drift (ORDER_ONLY; DTYPE_ONLY would also be non-drift)",
+   "scored": true
+  },
+  {
+   "name": "tie_stable_sorted_counts_series",
+   "kind": "natural",
+   "category": "P-",
+   "card": {
+    "order_significant": true,
+    "sort_keys": [
+     "__values__"
+    ]
+   },
+   "expect_class": [
+    "ORDER_ONLY"
+   ],
+   "expect_drift": false,
+   "expect_magnitude": null,
+   "expect_class_pilot_rule": "ORDER_ONLY",
+   "why": "sorted by count; every group has count 2, so the order differs only among ties of the key",
+   "scored": true
+  },
+  {
+   "name": "tie_stable_sorted_counts_frame",
+   "kind": "natural",
+   "category": "P-",
+   "card": {
+    "order_significant": true,
+    "sort_keys": [
+     "n"
+    ]
+   },
+   "expect_class": [
+    "ORDER_ONLY"
+   ],
+   "expect_drift": false,
+   "expect_magnitude": null,
+   "expect_class_pilot_rule": "ORDER_ONLY",
+   "why": "same, as a DataFrame with key column n",
+   "scored": true
+  },
+  {
+   "name": "tie_partial_ties_frame",
+   "kind": "natural",
+   "category": "P-",
+   "card": {
+    "order_significant": true,
+    "sort_keys": [
+     "n"
+    ]
+   },
+   "expect_class": [
+    "ORDER_ONLY"
+   ],
+   "expect_drift": false,
+   "expect_magnitude": null,
+   "expect_class_pilot_rule": "ORDER_ONLY",
+   "why": "one group has count 3, four have count 2, one has count 1: after a stable descending sort the count column is equal at every row, only the cities inside the count-2 block change places",
+   "scored": true
+  },
+  {
+   "name": "pos_order_beyond_ties_index",
+   "kind": "natural",
+   "category": "P+",
+   "card": {
+    "order_significant": true,
+    "sort_keys": [
+     "__index__"
+    ]
+   },
+   "expect_class": [
+    "ORDER_DRIFT"
+   ],
+   "expect_drift": true,
+   "expect_magnitude": "SUBSTANTIVE",
+   "expect_class_pilot_rule": "ORDER_ONLY",
+   "why": "flagged on the (distinct) group labels: any reordering is beyond ties",
+   "scored": true
+  },
+  {
+   "name": "pos_order_beyond_ties_frame",
+   "kind": "natural",
+   "category": "P+",
+   "card": {
+    "order_significant": true,
+    "sort_keys": [
+     "city"
+    ]
+   },
+   "expect_class": [
+    "ORDER_DRIFT"
+   ],
+   "expect_drift": true,
+   "expect_magnitude": "SUBSTANTIVE",
+   "expect_class_pilot_rule": "ORDER_ONLY",
+   "why": "flagged on city; the same frame lists the groups in a different order, cities all distinct per row",
+   "scored": true
+  },
+  {
+   "name": "pos_order_beyond_ties_partial_key",
+   "kind": "natural",
+   "category": "P+",
+   "card": {
+    "order_significant": true,
+    "sort_keys": [
+     "n"
+    ]
+   },
+   "expect_class": [
+    "ORDER_DRIFT"
+   ],
+   "expect_drift": true,
+   "expect_magnitude": "SUBSTANTIVE",
+   "expect_class_pilot_rule": "ORDER_ONLY",
+   "why": "same data as tie_partial_ties_frame but the frame is not sorted by n: the n column itself changes order (3,2,2,2,2,1 vs 2,2,2,2,1,3), so the change is beyond ties of the key",
+   "scored": true
+  },
+  {
+   "name": "pos_order_concat_dates",
+   "kind": "natural",
+   "category": "P+",
+   "card": {
+    "order_significant": true,
+    "sort_keys": [
+     "__index__"
+    ]
+   },
+   "expect_class": [
+    "ORDER_DRIFT"
+   ],
+   "expect_drift": true,
+   "expect_magnitude": "SUBSTANTIVE",
+   "expect_class_pilot_rule": "ORDER_ONLY",
+   "why": "date index in a different order, flagged on the index",
+   "scored": true
+  },
+  {
+   "name": "pos_dtype_text_frame",
+   "kind": "natural",
+   "category": "P+",
+   "card": {
+    "dtype_significant": true
+   },
+   "expect_class": [
+    "DTYPE_DRIFT"
+   ],
+   "expect_drift": true,
+   "expect_magnitude": "SUBSTANTIVE",
+   "expect_class_pilot_rule": "DTYPE_ONLY",
+   "why": "dtype_significant card, text columns change dtype (object -> str)",
+   "scored": true
+  },
+  {
+   "name": "pos_dtype_datetime_frame",
+   "kind": "natural",
+   "category": "P+",
+   "card": {
+    "dtype_significant": true
+   },
+   "expect_class": [
+    "DTYPE_DRIFT"
+   ],
+   "expect_drift": true,
+   "expect_magnitude": "SUBSTANTIVE",
+   "expect_class_pilot_rule": "DTYPE_ONLY",
+   "why": "dtype_significant card, datetime unit changes",
+   "scored": true
+  },
+  {
+   "name": "flag_dtype_on_order_only",
+   "kind": "natural",
+   "category": "P-",
+   "card": {
+    "dtype_significant": true
+   },
+   "expect_class": [
+    "ORDER_ONLY",
+    "DTYPE_DRIFT"
+   ],
+   "expect_drift": null,
+   "expect_magnitude": null,
+   "expect_class_pilot_rule": "ORDER_ONLY",
+   "why": "dtype_significant card on a program whose result changes order and index dtype: both ORDER_ONLY and DTYPE_DRIFT are defensible readings; recorded, not scored",
+   "scored": false
+  },
+  {
+   "name": "dtsig_float_frame_text_labels",
+   "kind": "natural",
+   "category": "P-",
+   "card": {
+    "dtype_significant": true
+   },
+   "expect_class": [
+    "DTYPE_ONLY"
+   ],
+   "expect_drift": false,
+   "expect_magnitude": null,
+   "expect_class_pilot_rule": "DTYPE_ONLY",
+   "why": "dtype_significant card; float cells are float64 on both sides, only the text row index and the column-label Index change object -> str: not DTYPE_DRIFT",
+   "scored": true,
+   "added": "REPAIR 2026-11-11 (review MF5)"
+  },
+  {
+   "name": "dtsig_series_date_index",
+   "kind": "natural",
+   "category": "P-",
+   "card": {
+    "dtype_significant": true
+   },
+   "expect_class": [
+    "DTYPE_ONLY"
+   ],
+   "expect_drift": false,
+   "expect_magnitude": null,
+   "expect_class_pilot_rule": "DTYPE_ONLY",
+   "why": "dtype_significant card; integer values unchanged, only the unit of the parsed date index changes: not DTYPE_DRIFT",
+   "scored": true,
+   "added": "REPAIR 2026-11-11 (review MF5)"
+  },
+  {
+   "name": "dtsig_value_counts_series",
+   "kind": "natural",
+   "category": "P-",
+   "card": {
+    "dtype_significant": true
+   },
+   "expect_class": [
+    "DTYPE_ONLY"
+   ],
+   "expect_drift": false,
+   "expect_magnitude": null,
+   "expect_class_pilot_rule": "DTYPE_ONLY",
+   "why": "dtype_significant card; distinct counts (int64 on both sides), only the dtype of the text index changes: not DTYPE_DRIFT",
+   "scored": true,
+   "added": "REPAIR 2026-11-11 (review MF5)"
+  },
+  {
+   "name": "dtsig_index_result",
+   "kind": "natural",
+   "category": "P+",
+   "card": {
+    "dtype_significant": true
+   },
+   "expect_class": [
+    "DTYPE_DRIFT"
+   ],
+   "expect_drift": true,
+   "expect_magnitude": "SUBSTANTIVE",
+   "expect_class_pilot_rule": "DTYPE_ONLY",
+   "why": "dtype_significant card; the result is an Index of text labels, so its dtype is the dtype of its values (object -> str): DTYPE_DRIFT",
+   "scored": true,
+   "added": "REPAIR 2026-11-11 (review MF5)"
+  },
+  {
+   "name": "idkey_same_order_groupby",
+   "kind": "natural",
+   "category": "P-",
+   "card": {
+    "order_significant": true,
+    "sort_keys": [
+     "__index__"
+    ]
+   },
+   "expect_class": [
+    "DTYPE_ONLY"
+   ],
+   "expect_drift": false,
+   "expect_magnitude": null,
+   "expect_class_pilot_rule": "DTYPE_ONLY",
+   "why": "order_significant with the identity key __index__; groupby sorts its text keys on every version, so the index label at every row position is the same; only the label and text dtypes change: not ORDER_DRIFT",
+   "scored": true,
+   "added": "REPAIR2 2026-11-11 (FULL_PREREG_AMENDMENT_3, review MF3)"
+  },
+  {
+   "name": "idkey_same_order_file_rows",
+   "kind": "natural",
+   "category": "P-",
+   "card": {
+    "order_significant": true,
+    "sort_keys": [
+     "__index__"
+    ]
+   },
+   "expect_class": [
+    "DTYPE_ONLY"
+   ],
+   "expect_drift": false,
+   "expect_magnitude": null,
+   "expect_class_pilot_rule": "DTYPE_ONLY",
+   "why": "order_significant with the identity key __index__ on a file-order result (default row labels 0..n-1 kept in file order on every version); text columns change dtype only: not ORDER_DRIFT",
+   "scored": true,
+   "added": "REPAIR2 2026-11-11 (FULL_PREREG_AMENDMENT_3, review MF3)"
+  },
+  {
+   "name": "lr1_idkey_column_default_index_frame",
+   "kind": "natural",
+   "category": "P+",
+   "card": {
+    "order_significant": true,
+    "sort_keys": [
+     "__index__"
+    ]
+   },
+   "expect_class": [
+    "ORDER_DRIFT"
+   ],
+   "expect_drift": true,
+   "expect_magnitude": "SUBSTANTIVE",
+   "expect_class_pilot_rule": "ORDER_ONLY",
+   "why": "LR1.4 must be ORDER_DRIFT (table form): identity key __index__, the key (city) held as a column, default index 0..n-1, rows reordered beyond ties (cities distinct); LR1.2 uses the whole row as the key",
+   "scored": true,
+   "added": "REPAIR5 2026-11-11 (lead ruling LR1.4, FULL_PREREG_AMENDMENT_10)"
+  },
+  {
+   "name": "lr1_idkey_column_default_index_list",
+   "kind": "natural",
+   "category": "P+",
+   "card": {
+    "order_significant": true,
+    "sort_keys": [
+     "__index__"
+    ]
+   },
+   "expect_class": [
+    "ORDER_DRIFT"
+   ],
+   "expect_drift": true,
+   "expect_magnitude": "SUBSTANTIVE",
+   "expect_class_pilot_rule": "ORDER_ONLY",
+   "why": "LR1.4 must be ORDER_DRIFT (list form): the same rows as a Python list of (city, n) tuples, reordered beyond ties; LR1.2 uses the element at each position",
+   "scored": true,
+   "added": "REPAIR5 2026-11-11 (lead ruling LR1.4, FULL_PREREG_AMENDMENT_10)"
+  },
+  {
+   "name": "lr1_idkey_series_default_index",
+   "kind": "natural",
+   "category": "P+",
+   "card": {
+    "order_significant": true,
+    "sort_keys": [
+     "__index__"
+    ]
+   },
+   "expect_class": [
+    "ORDER_DRIFT"
+   ],
+   "expect_drift": true,
+   "expect_magnitude": "SUBSTANTIVE",
+   "expect_class_pilot_rule": "ORDER_ONLY",
+   "why": "Series form (LR1.2, review RV-2(c); added next to the two LR1.4 forms): the counts as a Series with a default index, values reordered beyond ties (3 moves from first to last); the whole row is the key",
+   "scored": true,
+   "added": "REPAIR5 2026-11-11 (lead ruling LR1.4, FULL_PREREG_AMENDMENT_10)"
+  },
+  {
+   "name": "lr1_namedkey_index_ties_only",
+   "kind": "natural",
+   "category": "P-",
+   "card": {
+    "order_significant": true,
+    "sort_keys": [
+     "n"
+    ]
+   },
+   "expect_class": [
+    "ORDER_ONLY"
+   ],
+   "expect_drift": false,
+   "expect_magnitude": null,
+   "expect_class_pilot_rule": "ORDER_ONLY",
+   "why": "LR1.4 must be ORDER_ONLY: named key n held in the index (not a column), rows permuted among ties only (stable descending sort by n; only the cities inside the count-2 block change places); LR1.1 finds n among the index level names",
+   "scored": true,
+   "added": "REPAIR5 2026-11-11 (lead ruling LR1.4, FULL_PREREG_AMENDMENT_10)"
+  },
+  {
+   "name": "lr16_nonunique_index_ties_label",
+   "kind": "natural",
+   "category": "P-",
+   "card": {
+    "order_significant": true,
+    "sort_keys": [
+     "__index__"
+    ]
+   },
+   "expect_class": [
+    "ORDER_ONLY"
+   ],
+   "expect_drift": false,
+   "expect_magnitude": null,
+   "expect_class_pilot_rule": "ORDER_ONLY",
+   "why": "LR16 (a) case: identity key __index__ on a non-unique index (plan; two rows per plan after a stable sort by plan); only rows that share a plan label change places, so under LR1 (key = index labels) the order differs only in ties: ORDER_ONLY; under the LR16 (a) sensitivity (whole row as key) ORDER_DRIFT",
+   "scored": true,
+   "added": "REPAIR6 2026-11-12 (lead ruling LR16, FULL_PREREG_AMENDMENT_11)",
+   "lr16_switch": "lr16_nonunique_whole_row",
+   "expect_class_under_lr16_switch": [
+    "ORDER_DRIFT"
+   ]
+  },
+  {
+   "name": "lr16_key_not_found_reordered",
+   "kind": "natural",
+   "category": "P+",
+   "card": {
+    "order_significant": true,
+    "sort_keys": [
+     "total"
+    ]
+   },
+   "expect_class": [
+    "ORDER_DRIFT"
+   ],
+   "expect_drift": true,
+   "expect_magnitude": "SUBSTANTIVE",
+   "expect_class_pilot_rule": "ORDER_ONLY",
+   "why": "LR16 (b) case: named sort key total is neither a column nor an index level name of the result; rows reordered: under LR1 HRUN H1 (\"sort key not found\") ORDER_DRIFT; under the LR16 (b) sensitivity ORDER_ONLY",
+   "scored": true,
+   "added": "REPAIR6 2026-11-12 (lead ruling LR16, FULL_PREREG_AMENDMENT_11)",
+   "lr16_switch": "lr16_not_found_order_only",
+   "expect_class_under_lr16_switch": [
+    "ORDER_ONLY"
+   ]
+  },
+  {
+   "name": "num_identical_float",
+   "kind": "switch",
+   "category": "P-",
+   "card": {},
+   "expect_class": [
+    "IDENTICAL"
+   ],
+   "expect_drift": false,
+   "expect_magnitude": null,
+   "expect_class_pilot_rule": null,
+   "why": "same value",
+   "scored": true
+  },
+  {
+   "name": "num_below_relative_tol",
+   "kind": "switch",
+   "category": "P-",
+   "card": {},
+   "expect_class": [
+    "IDENTICAL"
+   ],
+   "expect_drift": false,
+   "expect_magnitude": null,
+   "expect_class_pilot_rule": null,
+   "why": "relative difference 1e-12 < 1e-11",
+   "scored": true
+  },
+  {
+   "name": "num_below_absolute_tol",
+   "kind": "switch",
+   "category": "P-",
+   "card": {},
+   "expect_class": [
+    "IDENTICAL"
+   ],
+   "expect_drift": false,
+   "expect_magnitude": null,
+   "expect_class_pilot_rule": null,
+   "why": "one zero but absolute difference 1e-12 < 1e-9: equal by the oracle tolerance",
+   "scored": true
+  },
+  {
+   "name": "num_small_scalar",
+   "kind": "switch",
+   "category": "P+",
+   "card": {},
+   "expect_class": [
+    "VALUE_DRIFT"
+   ],
+   "expect_drift": true,
+   "expect_magnitude": "NUMERIC_SMALL",
+   "expect_class_pilot_rule": null,
+   "why": "relative difference 1e-8 < 1e-6",
+   "scored": true
+  },
+  {
+   "name": "num_small_just_under",
+   "kind": "switch",
+   "category": "P+",
+   "card": {},
+   "expect_class": [
+    "VALUE_DRIFT"
+   ],
+   "expect_drift": true,
+   "expect_magnitude": "NUMERIC_SMALL",
+   "expect_class_pilot_rule": null,
+   "why": "relative difference 5e-7 < 1e-6",
+   "scored": true
+  },
+  {
+   "name": "num_substantive_just_over",
+   "kind": "switch",
+   "category": "P+",
+   "card": {},
+   "expect_class": [
+    "VALUE_DRIFT"
+   ],
+   "expect_drift": true,
+   "expect_magnitude": "SUBSTANTIVE",
+   "expect_class_pilot_rule": null,
+   "why": "relative difference 2e-6 >= 1e-6",
+   "scored": true
+  },
+  {
+   "name": "num_substantive_scalar",
+   "kind": "switch",
+   "category": "P+",
+   "card": {},
+   "expect_class": [
+    "VALUE_DRIFT"
+   ],
+   "expect_drift": true,
+   "expect_magnitude": "SUBSTANTIVE",
+   "expect_class_pilot_rule": null,
+   "why": "relative difference 1e-4",
+   "scored": true
+  },
+  {
+   "name": "num_zero_vs_nonzero",
+   "kind": "switch",
+   "category": "P+",
+   "card": {},
+   "expect_class": [
+    "VALUE_DRIFT"
+   ],
+   "expect_drift": true,
+   "expect_magnitude": "SUBSTANTIVE",
+   "expect_class_pilot_rule": null,
+   "why": "exactly one of a, b is 0 -> relative difference 1 -> SUBSTANTIVE (absolute 1e-7 > 1e-9, so it is drift)",
+   "scored": true
+  },
+  {
+   "name": "num_sign_flip_tiny",
+   "kind": "switch",
+   "category": "P+",
+   "card": {},
+   "expect_class": [
+    "VALUE_DRIFT"
+   ],
+   "expect_drift": true,
+   "expect_magnitude": "SUBSTANTIVE",
+   "expect_class_pilot_rule": null,
+   "why": "relative difference 2 (opposite signs), absolute 2e-8 > 1e-9",
+   "scored": true
+  },
+  {
+   "name": "num_integer_off_by_one",
+   "kind": "switch",
+   "category": "P+",
+   "card": {},
+   "expect_class": [
+    "VALUE_DRIFT"
+   ],
+   "expect_drift": true,
+   "expect_magnitude": "SUBSTANTIVE",
+   "expect_class_pilot_rule": null,
+   "why": "integers are compared exactly",
+   "scored": true
+  },
+  {
+   "name": "num_text_differs",
+   "kind": "switch",
+   "category": "P+",
+   "card": {},
+   "expect_class": [
+    "VALUE_DRIFT"
+   ],
+   "expect_drift": true,
+   "expect_magnitude": "SUBSTANTIVE",
+   "expect_class_pilot_rule": null,
+   "why": "text compared exactly",
+   "scored": true
+  },
+  {
+   "name": "num_frame_all_small",
+   "kind": "switch",
+   "category": "P+",
+   "card": {},
+   "expect_class": [
+    "VALUE_DRIFT"
+   ],
+   "expect_drift": true,
+   "expect_magnitude": "NUMERIC_SMALL",
+   "expect_class_pilot_rule": null,
+   "why": "same shape and labels, every differing cell numeric and below 1e-6 relative",
+   "scored": true
+  },
+  {
+   "name": "num_frame_one_large_cell",
+   "kind": "switch",
+   "category": "P+",
+   "card": {},
+   "expect_class": [
+    "VALUE_DRIFT"
+   ],
+   "expect_drift": true,
+   "expect_magnitude": "SUBSTANTIVE",
+   "expect_class_pilot_rule": null,
+   "why": "one cell differs by 1%: SUBSTANTIVE although another cell differs by 1e-8",
+   "scored": true
+  },
+  {
+   "name": "num_frame_extra_row",
+   "kind": "switch",
+   "category": "P+",
+   "card": {},
+   "expect_class": [
+    "VALUE_DRIFT"
+   ],
+   "expect_drift": true,
+   "expect_magnitude": "SUBSTANTIVE",
+   "expect_class_pilot_rule": null,
+   "why": "shape differs",
+   "scored": true
+  },
+  {
+   "name": "num_frame_label_differs",
+   "kind": "switch",
+   "category": "P+",
+   "card": {},
+   "expect_class": [
+    "VALUE_DRIFT"
+   ],
+   "expect_drift": true,
+   "expect_magnitude": "SUBSTANTIVE",
+   "expect_class_pilot_rule": null,
+   "why": "column label differs",
+   "scored": true
+  },
+  {
+   "name": "num_null_pattern",
+   "kind": "switch",
+   "category": "P+",
+   "card": {},
+   "expect_class": [
+    "VALUE_DRIFT"
+   ],
+   "expect_drift": true,
+   "expect_magnitude": "SUBSTANTIVE",
+   "expect_class_pilot_rule": null,
+   "why": "null pattern differs",
+   "scored": true
+  },
+  {
+   "name": "num_null_kinds_equal",
+   "kind": "switch",
+   "category": "P-",
+   "card": {},
+   "expect_class": [
+    "IDENTICAL",
+    "DTYPE_ONLY"
+   ],
+   "expect_drift": false,
+   "expect_magnitude": null,
+   "expect_class_pilot_rule": null,
+   "why": "None, NaN and pd.NA are all null (section 3): no value difference",
+   "scored": true
+  },
+  {
+   "name": "num_bool_vs_int",
+   "kind": "switch",
+   "category": "P-",
+   "card": {},
+   "expect_class": [
+    "DTYPE_ONLY"
+   ],
+   "expect_drift": false,
+   "expect_magnitude": null,
+   "expect_class_pilot_rule": null,
+   "why": "booleans treated as 0/1: dtype difference only",
+   "scored": true
+  },
+  {
+   "name": "num_no_result_on_target",
+   "kind": "switch",
+   "category": "P+",
+   "card": {},
+   "expect_class": [
+    "NO_RESULT"
+   ],
+   "expect_drift": true,
+   "expect_magnitude": "SUBSTANTIVE",
+   "expect_class_pilot_rule": null,
+   "why": "the 3.x run completes without defining result: drift (NO_RESULT, section 3)",
+   "scored": true
+  },
+  {
+   "name": "loud_raise_on_target",
+   "kind": "switch",
+   "category": "P-",
+   "card": {},
+   "expect_class": [
+    "LOUD"
+   ],
+   "expect_drift": false,
+   "expect_magnitude": null,
+   "expect_class_pilot_rule": null,
+   "why": "the 3.x run raises: LOUD, never drift",
+   "scored": true
+  }
+ ]
+}

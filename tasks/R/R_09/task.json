@@ -1,0 +1,67 @@
+{
+ "id": "R_09",
+ "stratum": "R",
+ "family": null,
+ "generic_family": null,
+ "catalogue_row": null,
+ "files": [
+  {
+   "path": "GEN/trips.csv",
+   "description": "Bike-share trips, 1 September to 1 November 2025 (1500 rows): trip_id (whole number), rider_id (refers to riders.csv), start_station and end_station (refer to station_code in stations.csv), started_at (timestamp written as YYYY-MM-DD HH:MM), duration_min (whole minutes; about 3% empty), distance_km (two decimals), fare (two decimals; about 3% empty), payment (card, app or cash; capital letters and spaces are inconsistent), rating (1-5 stars, whole number; about 19% empty)."
+  }
+ ],
+ "task_text": "From trips.csv, compute the total of the distance_km column, the number of rows, and the total distance_km for each rider_id. `result` should be a dict with the keys \"total\", \"row_count\" and \"per_rider\", where \"per_rider\" holds one total per rider_id.",
+ "allowed_task_words": [],
+ "invited_ids_author": [
+  "G07"
+ ],
+ "order_significant": false,
+ "sort_keys": [],
+ "dtype_significant": false,
+ "intended_computation": "Read trips.csv; total = sum of distance_km (no empty cells); row_count = 1500; per_rider = sum of distance_km per rider_id (389 rider ids); dict with keys total, row_count, per_rider.",
+ "acceptable_variants": {
+  "row_order": "any",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": "id columns (rider_id, station codes) may be written as integers without leading zeros; per_rider may be a Series, dict or table; totals may differ in the last digits by summation order"
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "result_kind",
+   "args": {
+    "kind": "other"
+   }
+  }
+ ],
+ "predicted_direction": null,
+ "naive_path": null,
+ "reference_path": "reference.py",
+ "so_question_id": 79968177,
+ "so_url": "https://stackoverflow.com/q/79968177",
+ "so_creation_date": "2026-06-26",
+ "so_score": 0,
+ "so_licence": "CC BY-SA 4.0",
+ "intent_summary": "From one table, compute the total of an amount column, the number of rows, and the total amount per identifier.",
+ "column_map": {
+  "amount": "trips.csv:distance_km",
+  "identifier": "trips.csv:rider_id",
+  "file choice": "riders.csv skipped: each rider_id occurs once there, so totals per identifier would be the values themselves (degenerate)"
+ },
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:R_BUILD",
+ "status": "prepared",
+ "notes": "Stratum R (real question, paraphrased onto the general fixtures under the section 4.3 rule). Intent, summary and column map sealed 2026-11-11T13:44:13Z (tasks/R/INTENTS_FROZEN.sha256) before the catalogue was opened; card, reference and invited_ids_author drafted 2026-11-11 by pkg:R_BUILD. Prepared (Amendment 9). No question text or code is stored in the study folder."
+}

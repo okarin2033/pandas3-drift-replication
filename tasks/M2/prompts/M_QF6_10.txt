@@ -1,0 +1,11 @@
+You are given CSV file(s) in the current working directory:
+
+- store_traffic.csv: Daily store traffic (90 rows): store (name such as "Store 07"), sales (whole number of sales, zero on some days), visits (whole number of visits, zero on some days; about 3% empty), open_sunday (True or False; about 8% empty).
+
+Task: Keep sales and visits as whole-number columns that allow empty cells (convert the table to the best-fitting column types after reading). The conversion rate of a store-day is sales divided by visits. Count a store-day without a usable rate (empty or zero visits) as rate 0, and give the average rate over all store-days. `result` should be that number.
+
+Requirements:
+- Write a complete Python script that reads the file(s) from the current directory.
+- Use only pandas, numpy and the Python standard library.
+- Store the final answer in a top-level variable named `result`.
+- Reply with a single Python code block.

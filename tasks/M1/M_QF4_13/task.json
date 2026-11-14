@@ -1,0 +1,84 @@
+{
+ "id": "M_QF4_13",
+ "stratum": "M",
+ "family": "QF4_GROUPBY",
+ "generic_family": null,
+ "catalogue_row": "G01",
+ "files": [
+  {
+   "path": "QF4_GROUPBY/purchases.csv",
+   "description": "Shop purchases (900 rows): purchase_id (whole number), subscriber_id (refers to subscribers.csv; most subscribers have several purchases), store_city (city name; the same city is written with different capitals and extra spaces, e.g. \"lisbon\" and \"LISBON\"; about 2% empty), quantity (whole number), spend (two decimals)."
+  }
+ ],
+ "task_text": "Classify the purchases by spend: 'small' below 25, 'medium' 25 to below 100, 'large' 100 to below 250 and 'very large' 250 or more. For each class report the number of purchases and the total spend rounded to two decimals; every class must be listed, also when no purchase falls into it. `result` should be a table indexed by class, in the order above, with the columns purchases and total_spend.",
+ "allowed_task_words": [],
+ "invited_ids_author": [
+  "G01"
+ ],
+ "order_significant": true,
+ "sort_keys": [
+  "__index__"
+ ],
+ "dtype_significant": false,
+ "intended_computation": "Assign the 900 purchases to [0,25), [25,100), [100,250), [250,inf) by spend and report count and total spend (rounded to 2 decimals) per class; 'very large' is empty (0 purchases, total 0).",
+ "acceptable_variants": {
+  "row_order": "ties_only",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": "the empty class may show its total as 0."
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 4
+   }
+  },
+  {
+   "check": "counts_sum_to_rows",
+   "args": {
+    "column": "purchases",
+    "expected": 900
+   }
+  },
+  {
+   "check": "columns_present",
+   "args": {
+    "columns": [
+     "purchases",
+     "total_spend"
+    ]
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "HARM",
+  "reason": "on 3.x grouping by the binned categories drops the empty class that the task asks to list"
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M1",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 in package TASKS_M1; task text, card, naive solution, reference and predicted direction were prepared there."
+}

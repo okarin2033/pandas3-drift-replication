@@ -1,0 +1,80 @@
+{
+ "id": "M_QF3_16",
+ "stratum": "M",
+ "family": "QF3_COW",
+ "generic_family": null,
+ "catalogue_row": "C04",
+ "files": [
+  {
+   "path": "QF3_COW/bookings.csv",
+   "description": "Hotel bookings (300 rows): booking_id (whole number), state (paid, cancelled, refunded or pending; mostly lower case, some with other capitals or extra spaces), total (booking amount, two decimals; refunded bookings are negative), nights (whole number; about 2% empty)."
+  }
+ ],
+ "task_text": "Normalise the state labels of the bookings (lower case, no surrounding spaces) and then rename the state 'pending' to 'open'. `result` should be the updated bookings table with all columns, in file order.",
+ "allowed_task_words": [],
+ "invited_ids_author": [
+  "C04"
+ ],
+ "order_significant": true,
+ "sort_keys": [
+  "__index__"
+ ],
+ "dtype_significant": false,
+ "intended_computation": "Strip and lower-case state, replace 'pending' by 'open' and return all 300 bookings with their four columns in file order.",
+ "acceptable_variants": {
+  "row_order": "ties_only",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": ""
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 300
+   }
+  },
+  {
+   "check": "values_in_set",
+   "args": {
+    "column": "state",
+    "values": [
+     "paid",
+     "cancelled",
+     "refunded",
+     "open"
+    ]
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "FIX",
+  "reason": "on 2.x the replacement with the in-place flag returns None, which becomes the answer; 3.x returns the table"
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M1",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 in package TASKS_M1; task text, card, naive solution, reference and predicted direction were prepared there."
+}

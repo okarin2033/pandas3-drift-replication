@@ -1,0 +1,11 @@
+You are given CSV file(s) in the current working directory:
+
+- order_lines.csv: Order lines (300 rows): line_id (whole number), product (product name; capital letters and spaces are inconsistent), quantity (whole number; about 3% empty), amount (line total, two decimals; about 3% empty).
+
+Task: Give the population standard deviation (dividing by the number of values) of quantity and of amount over all order lines, ignoring empty cells. `result` should be a Series indexed by quantity and amount.
+
+Requirements:
+- Write a complete Python script that reads the file(s) from the current directory.
+- Use only pandas, numpy and the Python standard library.
+- Store the final answer in a top-level variable named `result`.
+- Reply with a single Python code block.

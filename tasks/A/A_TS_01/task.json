@@ -1,0 +1,89 @@
+{
+ "id": "A_TS_01",
+ "stratum": "A",
+ "family": null,
+ "generic_family": "TS",
+ "catalogue_row": null,
+ "files": [
+  {
+   "path": "GEN/weather_hourly.csv",
+   "description": "Hourly weather for the city, September 2025 (720 rows, one per hour in time order, no gaps): observed_at (timestamp written as YYYY-MM-DD HH:MM), temp_c (degrees C, one decimal; about 2% empty), rain_mm (one decimal), wind_kmh (whole number), sky (clear, cloudy, fog or rain; capital letters and spaces are inconsistent)."
+  }
+ ],
+ "task_text": "From the hourly weather, compute for each day the total rainfall and the highest temperature. `result` should be a table indexed by date, covering each day of September 2025, with the columns rain_total and temp_max.",
+ "allowed_task_words": [],
+ "invited_ids_author": [],
+ "order_significant": false,
+ "sort_keys": [],
+ "dtype_significant": false,
+ "intended_computation": "Read weather_hourly.csv, take the calendar day of observed_at, and for each of the 30 days of September 2025 give the sum of rain_mm and the maximum of temp_c (empty temperatures ignored), indexed by the date.",
+ "acceptable_variants": {
+  "row_order": "any",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": "the date index may be dates, timestamps at midnight or YYYY-MM-DD text; rain_total may be rounded to 1 decimal"
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 30
+   }
+  },
+  {
+   "check": "date_year_in_range",
+   "args": {
+    "columns": [
+     "__index__"
+    ],
+    "min_year": 2025,
+    "max_year": 2025
+   }
+  },
+  {
+   "check": "numeric_in_range",
+   "args": {
+    "columns": [
+     "rain_total"
+    ],
+    "min": 0,
+    "max": null
+   }
+  },
+  {
+   "check": "no_nulls",
+   "args": {
+    "columns": [
+     "temp_max"
+    ]
+   }
+  }
+ ],
+ "predicted_direction": null,
+ "naive_path": null,
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_RA",
+ "status": "prepared",
+ "notes": "invited_ids_author labelled by hand after the intents were frozen (step A2); intent not rewritten for it."
+}

@@ -1,0 +1,7001 @@
+[
+ {
+  "E0a~E0b": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": true,
+    "prereg": true
+   }
+  },
+  "E0a~E1": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": 5,
+    "b": 3,
+    "column": "<rows>",
+    "kind": "shape",
+    "row": null
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E2": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": 5,
+    "b": 3,
+    "column": "<rows>",
+    "kind": "shape",
+    "row": null
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E3": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": 5,
+    "b": 3,
+    "column": "<rows>",
+    "kind": "shape",
+    "row": null
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E4": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": 5,
+    "b": 3,
+    "column": "<rows>",
+    "kind": "shape",
+    "row": null
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "attempt": "a",
+  "id": "G01",
+  "max_rss_mb_E0a": 86.3,
+  "max_rss_mb_E0b": 87.2,
+  "max_rss_mb_E0pa": 111.5,
+  "max_rss_mb_E1": 89.7,
+  "max_rss_mb_E2": 85.3,
+  "max_rss_mb_E3": 117.4,
+  "max_rss_mb_E4": 112.0,
+  "program": "G01.py",
+  "status_E0a": "ok",
+  "status_E0b": "ok",
+  "status_E0pa": "ok",
+  "status_E1": "ok",
+  "status_E2": "ok",
+  "status_E3": "ok",
+  "status_E4": "ok",
+  "warn_E0a_pilot": [
+   "FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observe"
+  ],
+  "warn_E0a_prereg": [
+   "FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observe"
+  ],
+  "warn_E1_prereg": [],
+  "warn_E2_prereg": [],
+  "warn_E3_prereg": [],
+  "warn_E4_prereg": []
+ },
+ {
+  "E0a~E0b": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E1": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": null,
+    "b": 0,
+    "column": "units",
+    "kind": "null",
+    "row": 3
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E2": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": null,
+    "b": 0,
+    "column": "units",
+    "kind": "null",
+    "row": 3
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E3": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": null,
+    "b": 0,
+    "column": "units",
+    "kind": "null",
+    "row": 3
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E4": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": null,
+    "b": 0,
+    "column": "units",
+    "kind": "null",
+    "row": 3
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "attempt": "a",
+  "id": "G02",
+  "max_rss_mb_E0a": 87.1,
+  "max_rss_mb_E0b": 87.2,
+  "max_rss_mb_E0pa": 110.3,
+  "max_rss_mb_E1": 89.3,
+  "max_rss_mb_E2": 85.4,
+  "max_rss_mb_E3": 115.7,
+  "max_rss_mb_E4": 113.3,
+  "program": "G02.py",
+  "status_E0a": "ok",
+  "status_E0b": "ok",
+  "status_E0pa": "ok",
+  "status_E1": "ok",
+  "status_E2": "ok",
+  "status_E3": "ok",
+  "status_E4": "ok",
+  "warn_E0a_pilot": [],
+  "warn_E0a_prereg": [],
+  "warn_E1_prereg": [],
+  "warn_E2_prereg": [],
+  "warn_E3_prereg": [],
+  "warn_E4_prereg": []
+ },
+ {
+  "E0a~E0b": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": true,
+    "prereg": true
+   }
+  },
+  "E0a~E1": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": 3,
+    "b": 2,
+    "column": "<columns>",
+    "kind": "shape",
+    "row": null
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E2": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": 3,
+    "b": 2,
+    "column": "<columns>",
+    "kind": "shape",
+    "row": null
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E3": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": 3,
+    "b": 2,
+    "column": "<columns>",
+    "kind": "shape",
+    "row": null
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E4": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": 3,
+    "b": 2,
+    "column": "<columns>",
+    "kind": "shape",
+    "row": null
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "attempt": "a",
+  "id": "G03",
+  "max_rss_mb_E0a": 85.8,
+  "max_rss_mb_E0b": 85.8,
+  "max_rss_mb_E0pa": 109.7,
+  "max_rss_mb_E1": 88.5,
+  "max_rss_mb_E2": 84.6,
+  "max_rss_mb_E3": 115.1,
+  "max_rss_mb_E4": 111.0,
+  "program": "G03.py",
+  "status_E0a": "ok",
+  "status_E0b": "ok",
+  "status_E0pa": "ok",
+  "status_E1": "ok",
+  "status_E2": "ok",
+  "status_E3": "ok",
+  "status_E4": "ok",
+  "warn_E0a_pilot": [
+   "FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded fr"
+  ],
+  "warn_E0a_prereg": [
+   "FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded fr"
+  ],
+  "warn_E1_prereg": [],
+  "warn_E2_prereg": [],
+  "warn_E3_prereg": [],
+  "warn_E4_prereg": []
+ },
+ {
+  "E0a~E0b": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": true,
+    "prereg": true
+   }
+  },
+  "E0a~E1": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": 1,
+    "b": 2,
+    "column": "<columns>",
+    "kind": "shape",
+    "row": null
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E2": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": 1,
+    "b": 2,
+    "column": "<columns>",
+    "kind": "shape",
+    "row": null
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E3": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": 1,
+    "b": 2,
+    "column": "<columns>",
+    "kind": "shape",
+    "row": null
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E4": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": 1,
+    "b": 2,
+    "column": "<columns>",
+    "kind": "shape",
+    "row": null
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "attempt": "a",
+  "id": "G04",
+  "max_rss_mb_E0a": 87.2,
+  "max_rss_mb_E0b": 86.1,
+  "max_rss_mb_E0pa": 110.2,
+  "max_rss_mb_E1": 90.5,
+  "max_rss_mb_E2": 86.1,
+  "max_rss_mb_E3": 115.6,
+  "max_rss_mb_E4": 111.7,
+  "program": "G04.py",
+  "status_E0a": "ok",
+  "status_E0b": "ok",
+  "status_E0pa": "ok",
+  "status_E1": "ok",
+  "status_E2": "ok",
+  "status_E3": "ok",
+  "status_E4": "ok",
+  "warn_E0a_pilot": [
+   "FutureWarning: A grouping was used that is not in the columns of the DataFrame and so was excluded from the result. This grouping will be included in a future version of panda"
+  ],
+  "warn_E0a_prereg": [
+   "FutureWarning: A grouping was used that is not in the columns of the DataFrame and so was excluded from the result. This grouping will be included in a future version of panda"
+  ],
+  "warn_E1_prereg": [],
+  "warn_E2_prereg": [],
+  "warn_E3_prereg": [],
+  "warn_E4_prereg": []
+ },
+ {
+  "E0a~E0b": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": true,
+    "prereg": true
+   }
+  },
+  "E0a~E1": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": 3.605551275463989,
+    "b": 2.943920288775949,
+    "column": "monthly_spend",
+    "kind": "cell",
+    "row": 0
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E2": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": 3.605551275463989,
+    "b": 2.943920288775949,
+    "column": "monthly_spend",
+    "kind": "cell",
+    "row": 0
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E3": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": 3.605551275463989,
+    "b": 2.943920288775949,
+    "column": "monthly_spend",
+    "kind": "cell",
+    "row": 0
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E4": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": 3.605551275463989,
+    "b": 2.943920288775949,
+    "column": "monthly_spend",
+    "kind": "cell",
+    "row": 0
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "attempt": "a",
+  "id": "G05",
+  "max_rss_mb_E0a": 85.7,
+  "max_rss_mb_E0b": 85.8,
+  "max_rss_mb_E0pa": 112.4,
+  "max_rss_mb_E1": 88.6,
+  "max_rss_mb_E2": 84.8,
+  "max_rss_mb_E3": 117.7,
+  "max_rss_mb_E4": 111.2,
+  "program": "G05.py",
+  "status_E0a": "ok",
+  "status_E0b": "ok",
+  "status_E0pa": "ok",
+  "status_E1": "ok",
+  "status_E2": "ok",
+  "status_E3": "ok",
+  "status_E4": "ok",
+  "warn_E0a_pilot": [
+   "FutureWarning: The provided callable <function std at 0x10a16e8e0> is currently using SeriesGroupBy.std. In a future version of pandas, the provided callable will be used dire"
+  ],
+  "warn_E0a_prereg": [
+   "FutureWarning: The provided callable <function std at 0x10a16e8e0> is currently using SeriesGroupBy.std. In a future version of pandas, the provided callable will be used dire"
+  ],
+  "warn_E1_prereg": [],
+  "warn_E2_prereg": [],
+  "warn_E3_prereg": [],
+  "warn_E4_prereg": []
+ },
+ {
+  "E0a~E0b": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E1": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E2": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E3": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E4": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "attempt": "a",
+  "id": "G06",
+  "max_rss_mb_E0a": 86.4,
+  "max_rss_mb_E0b": 86.4,
+  "max_rss_mb_E0pa": 110.5,
+  "max_rss_mb_E1": 88.8,
+  "max_rss_mb_E2": 84.8,
+  "max_rss_mb_E3": 115.9,
+  "max_rss_mb_E4": 111.6,
+  "program": "G06.py",
+  "status_E0a": "ok",
+  "status_E0b": "ok",
+  "status_E0pa": "ok",
+  "status_E1": "ok",
+  "status_E2": "ok",
+  "status_E3": "ok",
+  "status_E4": "ok",
+  "warn_E0a_pilot": [],
+  "warn_E0a_prereg": [],
+  "warn_E1_prereg": [],
+  "warn_E2_prereg": [],
+  "warn_E3_prereg": [],
+  "warn_E4_prereg": []
+ },
+ {
+  "E0a~E0b": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": true,
+    "prereg": true
+   }
+  },
+  "E0a~E1": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": "basic",
+    "b": [
+     "basic"
+    ],
+    "column": "<dict key>",
+    "kind": "label",
+    "row": null
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E2": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": "basic",
+    "b": [
+     "basic"
+    ],
+    "column": "<dict key>",
+    "kind": "label",
+    "row": null
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E3": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": "basic",
+    "b": [
+     "basic"
+    ],
+    "column": "<dict key>",
+    "kind": "label",
+    "row": null
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E4": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": "basic",
+    "b": [
+     "basic"
+    ],
+    "column": "<dict key>",
+    "kind": "label",
+    "row": null
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "attempt": "b",
+  "id": "G06",
+  "max_rss_mb_E0a": 86.1,
+  "max_rss_mb_E0b": 86.0,
+  "max_rss_mb_E0pa": 111.8,
+  "max_rss_mb_E1": 89.9,
+  "max_rss_mb_E2": 87.5,
+  "max_rss_mb_E3": 117.5,
+  "max_rss_mb_E4": 111.6,
+  "program": "G06_b.py",
+  "status_E0a": "ok",
+  "status_E0b": "ok",
+  "status_E0pa": "ok",
+  "status_E1": "ok",
+  "status_E2": "ok",
+  "status_E3": "ok",
+  "status_E4": "ok",
+  "warn_E0a_pilot": [
+   "FutureWarning: Creating a Groupby object with a length-1 list-like level parameter will yield indexes as tuples in a future version. To keep indexes as scalars, create Groupby"
+  ],
+  "warn_E0a_prereg": [
+   "FutureWarning: Creating a Groupby object with a length-1 list-like level parameter will yield indexes as tuples in a future version. To keep indexes as scalars, create Groupby"
+  ],
+  "warn_E1_prereg": [],
+  "warn_E2_prereg": [],
+  "warn_E3_prereg": [],
+  "warn_E4_prereg": []
+ },
+ {
+  "E0a~E0b": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E1": {
+   "baseline_status": "ok",
+   "class": "DTYPE_ONLY",
+   "class_pilot_rule": "DTYPE_ONLY",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E2": {
+   "baseline_status": "ok",
+   "class": "DTYPE_ONLY",
+   "class_pilot_rule": "DTYPE_ONLY",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E3": {
+   "baseline_status": "ok",
+   "class": "DTYPE_ONLY",
+   "class_pilot_rule": "DTYPE_ONLY",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E4": {
+   "baseline_status": "ok",
+   "class": "DTYPE_ONLY",
+   "class_pilot_rule": "DTYPE_ONLY",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "attempt": "a",
+  "id": "G07",
+  "max_rss_mb_E0a": 89.3,
+  "max_rss_mb_E0b": 89.1,
+  "max_rss_mb_E0pa": 111.0,
+  "max_rss_mb_E1": 88.4,
+  "max_rss_mb_E2": 84.6,
+  "max_rss_mb_E3": 116.9,
+  "max_rss_mb_E4": 111.5,
+  "program": "G07.py",
+  "status_E0a": "ok",
+  "status_E0b": "ok",
+  "status_E0pa": "ok",
+  "status_E1": "ok",
+  "status_E2": "ok",
+  "status_E3": "ok",
+  "status_E4": "ok",
+  "warn_E0a_pilot": [],
+  "warn_E0a_prereg": [],
+  "warn_E1_prereg": [],
+  "warn_E2_prereg": [],
+  "warn_E3_prereg": [],
+  "warn_E4_prereg": []
+ },
+ {
+  "E0a~E0b": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E1": {
+   "baseline_status": "ok",
+   "class": "DTYPE_ONLY",
+   "class_pilot_rule": "DTYPE_ONLY",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E2": {
+   "baseline_status": "ok",
+   "class": "DTYPE_ONLY",
+   "class_pilot_rule": "DTYPE_ONLY",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E3": {
+   "baseline_status": "ok",
+   "class": "DTYPE_ONLY",
+   "class_pilot_rule": "DTYPE_ONLY",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E4": {
+   "baseline_status": "ok",
+   "class": "DTYPE_ONLY",
+   "class_pilot_rule": "DTYPE_ONLY",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "attempt": "b",
+  "id": "G07",
+  "max_rss_mb_E0a": 85.9,
+  "max_rss_mb_E0b": 86.0,
+  "max_rss_mb_E0pa": 110.8,
+  "max_rss_mb_E1": 89.7,
+  "max_rss_mb_E2": 85.4,
+  "max_rss_mb_E3": 116.9,
+  "max_rss_mb_E4": 111.2,
+  "program": "G07_b.py",
+  "status_E0a": "ok",
+  "status_E0b": "ok",
+  "status_E0pa": "ok",
+  "status_E1": "ok",
+  "status_E2": "ok",
+  "status_E3": "ok",
+  "status_E4": "ok",
+  "warn_E0a_pilot": [],
+  "warn_E0a_prereg": [],
+  "warn_E1_prereg": [],
+  "warn_E2_prereg": [],
+  "warn_E3_prereg": [],
+  "warn_E4_prereg": []
+ },
+ {
+  "E0a~E0b": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E1": {
+   "baseline_status": "ok",
+   "class": "DTYPE_ONLY",
+   "class_pilot_rule": "DTYPE_ONLY",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E2": {
+   "baseline_status": "ok",
+   "class": "DTYPE_ONLY",
+   "class_pilot_rule": "DTYPE_ONLY",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E3": {
+   "baseline_status": "ok",
+   "class": "DTYPE_ONLY",
+   "class_pilot_rule": "DTYPE_ONLY",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E4": {
+   "baseline_status": "ok",
+   "class": "DTYPE_ONLY",
+   "class_pilot_rule": "DTYPE_ONLY",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "attempt": "a",
+  "id": "G08",
+  "max_rss_mb_E0a": 85.6,
+  "max_rss_mb_E0b": 85.7,
+  "max_rss_mb_E0pa": 109.9,
+  "max_rss_mb_E1": 92.0,
+  "max_rss_mb_E2": 87.1,
+  "max_rss_mb_E3": 116.0,
+  "max_rss_mb_E4": 112.8,
+  "program": "G08.py",
+  "status_E0a": "ok",
+  "status_E0b": "ok",
+  "status_E0pa": "ok",
+  "status_E1": "ok",
+  "status_E2": "ok",
+  "status_E3": "ok",
+  "status_E4": "ok",
+  "warn_E0a_pilot": [],
+  "warn_E0a_prereg": [],
+  "warn_E1_prereg": [],
+  "warn_E2_prereg": [],
+  "warn_E3_prereg": [],
+  "warn_E4_prereg": []
+ },
+ {
+  "E0a~E0b": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": true,
+    "prereg": true
+   }
+  },
+  "E0a~E1": {
+   "baseline_status": "ok",
+   "class": "LOUD",
+   "class_pilot_rule": "LOUD",
+   "drift": false,
+   "excluded": null,
+   "first_diff": {
+    "a": "ok",
+    "b": "error",
+    "column": null,
+    "kind": "status",
+    "row": null
+   },
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "error",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E2": {
+   "baseline_status": "ok",
+   "class": "LOUD",
+   "class_pilot_rule": "LOUD",
+   "drift": false,
+   "excluded": null,
+   "first_diff": {
+    "a": "ok",
+    "b": "error",
+    "column": null,
+    "kind": "status",
+    "row": null
+   },
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "error",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E3": {
+   "baseline_status": "ok",
+   "class": "LOUD",
+   "class_pilot_rule": "LOUD",
+   "drift": false,
+   "excluded": null,
+   "first_diff": {
+    "a": "ok",
+    "b": "error",
+    "column": null,
+    "kind": "status",
+    "row": null
+   },
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "error",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E4": {
+   "baseline_status": "ok",
+   "class": "LOUD",
+   "class_pilot_rule": "LOUD",
+   "drift": false,
+   "excluded": null,
+   "first_diff": {
+    "a": "ok",
+    "b": "error",
+    "column": null,
+    "kind": "status",
+    "row": null
+   },
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "error",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "attempt": "b",
+  "err_E1": "TypeError: 'any' with datetime64 dtypes is not supported. Use (obj != pd.Timestamp(0)).any() instead.",
+  "err_E2": "TypeError: 'any' with datetime64 dtypes is no longer supported. Use (obj != pd.Timestamp(0)).any() instead.",
+  "err_E3": "TypeError: 'any' with datetime64 dtypes is not supported. Use (obj != pd.Timestamp(0)).any() instead.",
+  "err_E4": "TypeError: 'any' with datetime64 dtypes is no longer supported. Use (obj != pd.Timestamp(0)).any() instead.",
+  "id": "G08",
+  "max_rss_mb_E0a": 87.1,
+  "max_rss_mb_E0b": 86.5,
+  "max_rss_mb_E0pa": 110.8,
+  "max_rss_mb_E1": 88.5,
+  "max_rss_mb_E2": 84.7,
+  "max_rss_mb_E3": 116.5,
+  "max_rss_mb_E4": 112.6,
+  "program": "G08_b.py",
+  "status_E0a": "ok",
+  "status_E0b": "ok",
+  "status_E0pa": "ok",
+  "status_E1": "error",
+  "status_E2": "error",
+  "status_E3": "error",
+  "status_E4": "error",
+  "warn_E0a_pilot": [
+   "FutureWarning: 'any' with datetime64 dtypes is deprecated and will raise in a future version. Use (obj != pd.Timestamp(0)).any() instead."
+  ],
+  "warn_E0a_prereg": [
+   "FutureWarning: 'any' with datetime64 dtypes is deprecated and will raise in a future version. Use (obj != pd.Timestamp(0)).any() instead."
+  ],
+  "warn_E1_prereg": [],
+  "warn_E2_prereg": [],
+  "warn_E3_prereg": [],
+  "warn_E4_prereg": []
+ },
+ {
+  "E0a~E0b": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E1": {
+   "baseline_status": "ok",
+   "class": "ORDER_DRIFT",
+   "class_pilot_rule": "ORDER_ONLY",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": [
+     "TS:2024-01-01T00:00:00"
+    ],
+    "b": [
+     "TS:2024-01-03T00:00:00"
+    ],
+    "column": "__index__",
+    "kind": "order",
+    "row": 0
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E2": {
+   "baseline_status": "ok",
+   "class": "ORDER_DRIFT",
+   "class_pilot_rule": "ORDER_ONLY",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": [
+     "TS:2024-01-01T00:00:00"
+    ],
+    "b": [
+     "TS:2024-01-03T00:00:00"
+    ],
+    "column": "__index__",
+    "kind": "order",
+    "row": 0
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E3": {
+   "baseline_status": "ok",
+   "class": "ORDER_DRIFT",
+   "class_pilot_rule": "ORDER_ONLY",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": [
+     "TS:2024-01-01T00:00:00"
+    ],
+    "b": [
+     "TS:2024-01-03T00:00:00"
+    ],
+    "column": "__index__",
+    "kind": "order",
+    "row": 0
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E4": {
+   "baseline_status": "ok",
+   "class": "ORDER_DRIFT",
+   "class_pilot_rule": "ORDER_ONLY",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": [
+     "TS:2024-01-01T00:00:00"
+    ],
+    "b": [
+     "TS:2024-01-03T00:00:00"
+    ],
+    "column": "__index__",
+    "kind": "order",
+    "row": 0
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "attempt": "a",
+  "id": "R01",
+  "max_rss_mb_E0a": 86.5,
+  "max_rss_mb_E0b": 86.4,
+  "max_rss_mb_E0pa": 112.1,
+  "max_rss_mb_E1": 90.2,
+  "max_rss_mb_E2": 85.2,
+  "max_rss_mb_E3": 119.1,
+  "max_rss_mb_E4": 112.4,
+  "program": "R01.py",
+  "status_E0a": "ok",
+  "status_E0b": "ok",
+  "status_E0pa": "ok",
+  "status_E1": "ok",
+  "status_E2": "ok",
+  "status_E3": "ok",
+  "status_E4": "ok",
+  "warn_E0a_pilot": [],
+  "warn_E0a_prereg": [],
+  "warn_E1_prereg": [],
+  "warn_E2_prereg": [],
+  "warn_E3_prereg": [],
+  "warn_E4_prereg": []
+ },
+ {
+  "E0a~E0b": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E1": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": [
+     [
+      "basic",
+      "amsterdam"
+     ],
+     [
+      "basic",
+      "rome"
+     ],
+     [
+      "pro",
+      "oslo"
+     ]
+    ],
+    "b": [
+     [
+      "pro",
+      "oslo"
+     ],
+     [
+      "basic",
+      "rome"
+     ],
+     [
+      "team",
+      "bern"
+     ]
+    ],
+    "column": "<index>",
+    "kind": "label",
+    "row": null
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E2": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": [
+     [
+      "basic",
+      "amsterdam"
+     ],
+     [
+      "basic",
+      "rome"
+     ],
+     [
+      "pro",
+      "oslo"
+     ]
+    ],
+    "b": [
+     [
+      "pro",
+      "oslo"
+     ],
+     [
+      "basic",
+      "rome"
+     ],
+     [
+      "team",
+      "bern"
+     ]
+    ],
+    "column": "<index>",
+    "kind": "label",
+    "row": null
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E3": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": [
+     [
+      "basic",
+      "amsterdam"
+     ],
+     [
+      "basic",
+      "rome"
+     ],
+     [
+      "pro",
+      "oslo"
+     ]
+    ],
+    "b": [
+     [
+      "pro",
+      "oslo"
+     ],
+     [
+      "basic",
+      "rome"
+     ],
+     [
+      "team",
+      "bern"
+     ]
+    ],
+    "column": "<index>",
+    "kind": "label",
+    "row": null
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E4": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": [
+     [
+      "basic",
+      "amsterdam"
+     ],
+     [
+      "basic",
+      "rome"
+     ],
+     [
+      "pro",
+      "oslo"
+     ]
+    ],
+    "b": [
+     [
+      "pro",
+      "oslo"
+     ],
+     [
+      "basic",
+      "rome"
+     ],
+     [
+      "team",
+      "bern"
+     ]
+    ],
+    "column": "<index>",
+    "kind": "label",
+    "row": null
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "attempt": "a",
+  "id": "R02",
+  "max_rss_mb_E0a": 86.0,
+  "max_rss_mb_E0b": 85.9,
+  "max_rss_mb_E0pa": 109.8,
+  "max_rss_mb_E1": 88.8,
+  "max_rss_mb_E2": 85.0,
+  "max_rss_mb_E3": 116.9,
+  "max_rss_mb_E4": 111.1,
+  "program": "R02.py",
+  "status_E0a": "ok",
+  "status_E0b": "ok",
+  "status_E0pa": "ok",
+  "status_E1": "ok",
+  "status_E2": "ok",
+  "status_E3": "ok",
+  "status_E4": "ok",
+  "warn_E0a_pilot": [],
+  "warn_E0a_prereg": [],
+  "warn_E1_prereg": [],
+  "warn_E2_prereg": [],
+  "warn_E3_prereg": [],
+  "warn_E4_prereg": []
+ },
+ {
+  "E0a~E0b": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E1": {
+   "baseline_status": "ok",
+   "class": "DTYPE_ONLY",
+   "class_pilot_rule": "DTYPE_ONLY",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E2": {
+   "baseline_status": "ok",
+   "class": "DTYPE_ONLY",
+   "class_pilot_rule": "DTYPE_ONLY",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E3": {
+   "baseline_status": "ok",
+   "class": "DTYPE_ONLY",
+   "class_pilot_rule": "DTYPE_ONLY",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E4": {
+   "baseline_status": "ok",
+   "class": "DTYPE_ONLY",
+   "class_pilot_rule": "DTYPE_ONLY",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "attempt": "a",
+  "id": "R03",
+  "max_rss_mb_E0a": 88.5,
+  "max_rss_mb_E0b": 88.2,
+  "max_rss_mb_E0pa": 110.0,
+  "max_rss_mb_E1": 88.6,
+  "max_rss_mb_E2": 84.9,
+  "max_rss_mb_E3": 115.2,
+  "max_rss_mb_E4": 110.3,
+  "program": "R03.py",
+  "status_E0a": "ok",
+  "status_E0b": "ok",
+  "status_E0pa": "ok",
+  "status_E1": "ok",
+  "status_E2": "ok",
+  "status_E3": "ok",
+  "status_E4": "ok",
+  "warn_E0a_pilot": [],
+  "warn_E0a_prereg": [],
+  "warn_E1_prereg": [],
+  "warn_E2_prereg": [],
+  "warn_E3_prereg": [],
+  "warn_E4_prereg": []
+ },
+ {
+  "E0a~E0b": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E1": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E2": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E3": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E4": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "attempt": "b",
+  "id": "R03",
+  "max_rss_mb_E0a": 86.4,
+  "max_rss_mb_E0b": 87.0,
+  "max_rss_mb_E0pa": 109.8,
+  "max_rss_mb_E1": 89.8,
+  "max_rss_mb_E2": 84.7,
+  "max_rss_mb_E3": 114.9,
+  "max_rss_mb_E4": 111.3,
+  "program": "R03_b.py",
+  "status_E0a": "ok",
+  "status_E0b": "ok",
+  "status_E0pa": "ok",
+  "status_E1": "ok",
+  "status_E2": "ok",
+  "status_E3": "ok",
+  "status_E4": "ok",
+  "warn_E0a_pilot": [],
+  "warn_E0a_prereg": [],
+  "warn_E1_prereg": [],
+  "warn_E2_prereg": [],
+  "warn_E3_prereg": [],
+  "warn_E4_prereg": []
+ },
+ {
+  "E0a~E0b": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E1": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": 4,
+    "b": 8,
+    "column": "<rows>",
+    "kind": "shape",
+    "row": null
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E2": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": 4,
+    "b": 8,
+    "column": "<rows>",
+    "kind": "shape",
+    "row": null
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E3": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": 4,
+    "b": 8,
+    "column": "<rows>",
+    "kind": "shape",
+    "row": null
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E4": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": 4,
+    "b": 8,
+    "column": "<rows>",
+    "kind": "shape",
+    "row": null
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "attempt": "a",
+  "id": "R04",
+  "max_rss_mb_E0a": 85.7,
+  "max_rss_mb_E0b": 85.7,
+  "max_rss_mb_E0pa": 109.7,
+  "max_rss_mb_E1": 90.1,
+  "max_rss_mb_E2": 85.9,
+  "max_rss_mb_E3": 115.2,
+  "max_rss_mb_E4": 111.7,
+  "program": "R04.py",
+  "status_E0a": "ok",
+  "status_E0b": "ok",
+  "status_E0pa": "ok",
+  "status_E1": "ok",
+  "status_E2": "ok",
+  "status_E3": "ok",
+  "status_E4": "ok",
+  "warn_E0a_pilot": [],
+  "warn_E0a_prereg": [],
+  "warn_E1_prereg": [],
+  "warn_E2_prereg": [],
+  "warn_E3_prereg": [],
+  "warn_E4_prereg": []
+ },
+ {
+  "E0a~E0b": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": true,
+    "prereg": true
+   }
+  },
+  "E0a~E1": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": 1,
+    "b": 3,
+    "column": "<columns>",
+    "kind": "shape",
+    "row": null
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E2": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": 1,
+    "b": 3,
+    "column": "<columns>",
+    "kind": "shape",
+    "row": null
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E3": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": 1,
+    "b": 3,
+    "column": "<columns>",
+    "kind": "shape",
+    "row": null
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E4": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": 1,
+    "b": 3,
+    "column": "<columns>",
+    "kind": "shape",
+    "row": null
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "attempt": "a",
+  "id": "R05",
+  "max_rss_mb_E0a": 85.6,
+  "max_rss_mb_E0b": 86.0,
+  "max_rss_mb_E0pa": 111.3,
+  "max_rss_mb_E1": 89.5,
+  "max_rss_mb_E2": 86.1,
+  "max_rss_mb_E3": 116.1,
+  "max_rss_mb_E4": 110.8,
+  "program": "R05.py",
+  "status_E0a": "ok",
+  "status_E0b": "ok",
+  "status_E0pa": "ok",
+  "status_E1": "ok",
+  "status_E2": "ok",
+  "status_E3": "ok",
+  "status_E4": "ok",
+  "warn_E0a_pilot": [
+   "FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns whe"
+  ],
+  "warn_E0a_prereg": [
+   "FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns whe"
+  ],
+  "warn_E1_prereg": [],
+  "warn_E2_prereg": [],
+  "warn_E3_prereg": [],
+  "warn_E4_prereg": []
+ },
+ {
+  "E0a~E0b": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E1": {
+   "baseline_status": "ok",
+   "class": "DTYPE_ONLY",
+   "class_pilot_rule": "DTYPE_ONLY",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E2": {
+   "baseline_status": "ok",
+   "class": "DTYPE_ONLY",
+   "class_pilot_rule": "DTYPE_ONLY",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E3": {
+   "baseline_status": "ok",
+   "class": "DTYPE_ONLY",
+   "class_pilot_rule": "DTYPE_ONLY",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E4": {
+   "baseline_status": "ok",
+   "class": "DTYPE_ONLY",
+   "class_pilot_rule": "DTYPE_ONLY",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "attempt": "a",
+  "id": "R06",
+  "max_rss_mb_E0a": 86.7,
+  "max_rss_mb_E0b": 86.9,
+  "max_rss_mb_E0pa": 110.8,
+  "max_rss_mb_E1": 88.5,
+  "max_rss_mb_E2": 85.5,
+  "max_rss_mb_E3": 116.0,
+  "max_rss_mb_E4": 111.4,
+  "program": "R06.py",
+  "status_E0a": "ok",
+  "status_E0b": "ok",
+  "status_E0pa": "ok",
+  "status_E1": "ok",
+  "status_E2": "ok",
+  "status_E3": "ok",
+  "status_E4": "ok",
+  "warn_E0a_pilot": [],
+  "warn_E0a_prereg": [],
+  "warn_E1_prereg": [],
+  "warn_E2_prereg": [],
+  "warn_E3_prereg": [],
+  "warn_E4_prereg": []
+ },
+ {
+  "E0a~E0b": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E1": {
+   "baseline_status": "ok",
+   "class": "DTYPE_ONLY",
+   "class_pilot_rule": "DTYPE_ONLY",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E2": {
+   "baseline_status": "ok",
+   "class": "DTYPE_ONLY",
+   "class_pilot_rule": "DTYPE_ONLY",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E3": {
+   "baseline_status": "ok",
+   "class": "DTYPE_ONLY",
+   "class_pilot_rule": "DTYPE_ONLY",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E4": {
+   "baseline_status": "ok",
+   "class": "DTYPE_ONLY",
+   "class_pilot_rule": "DTYPE_ONLY",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "attempt": "b",
+  "id": "R06",
+  "max_rss_mb_E0a": 86.7,
+  "max_rss_mb_E0b": 86.4,
+  "max_rss_mb_E0pa": 113.2,
+  "max_rss_mb_E1": 89.6,
+  "max_rss_mb_E2": 85.5,
+  "max_rss_mb_E3": 117.8,
+  "max_rss_mb_E4": 113.1,
+  "program": "R06_b.py",
+  "status_E0a": "ok",
+  "status_E0b": "ok",
+  "status_E0pa": "ok",
+  "status_E1": "ok",
+  "status_E2": "ok",
+  "status_E3": "ok",
+  "status_E4": "ok",
+  "warn_E0a_pilot": [],
+  "warn_E0a_prereg": [],
+  "warn_E1_prereg": [],
+  "warn_E2_prereg": [],
+  "warn_E3_prereg": [],
+  "warn_E4_prereg": []
+ },
+ {
+  "E0a~E0b": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E1": {
+   "baseline_status": "ok",
+   "class": "DTYPE_ONLY",
+   "class_pilot_rule": "DTYPE_ONLY",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E2": {
+   "baseline_status": "ok",
+   "class": "DTYPE_ONLY",
+   "class_pilot_rule": "DTYPE_ONLY",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E3": {
+   "baseline_status": "ok",
+   "class": "DTYPE_ONLY",
+   "class_pilot_rule": "DTYPE_ONLY",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E4": {
+   "baseline_status": "ok",
+   "class": "DTYPE_ONLY",
+   "class_pilot_rule": "DTYPE_ONLY",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "attempt": "a",
+  "id": "R07",
+  "max_rss_mb_E0a": 87.4,
+  "max_rss_mb_E0b": 87.4,
+  "max_rss_mb_E0pa": 111.2,
+  "max_rss_mb_E1": 89.0,
+  "max_rss_mb_E2": 85.4,
+  "max_rss_mb_E3": 115.5,
+  "max_rss_mb_E4": 111.0,
+  "program": "R07.py",
+  "status_E0a": "ok",
+  "status_E0b": "ok",
+  "status_E0pa": "ok",
+  "status_E1": "ok",
+  "status_E2": "ok",
+  "status_E3": "ok",
+  "status_E4": "ok",
+  "warn_E0a_pilot": [],
+  "warn_E0a_prereg": [],
+  "warn_E1_prereg": [],
+  "warn_E2_prereg": [],
+  "warn_E3_prereg": [],
+  "warn_E4_prereg": []
+ },
+ {
+  "E0a~E0b": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E1": {
+   "baseline_status": "ok",
+   "class": "DTYPE_ONLY",
+   "class_pilot_rule": "DTYPE_ONLY",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E2": {
+   "baseline_status": "ok",
+   "class": "DTYPE_ONLY",
+   "class_pilot_rule": "DTYPE_ONLY",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E3": {
+   "baseline_status": "ok",
+   "class": "DTYPE_ONLY",
+   "class_pilot_rule": "DTYPE_ONLY",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E4": {
+   "baseline_status": "ok",
+   "class": "DTYPE_ONLY",
+   "class_pilot_rule": "DTYPE_ONLY",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "attempt": "b",
+  "id": "R07",
+  "max_rss_mb_E0a": 86.1,
+  "max_rss_mb_E0b": 86.1,
+  "max_rss_mb_E0pa": 111.7,
+  "max_rss_mb_E1": 90.1,
+  "max_rss_mb_E2": 85.9,
+  "max_rss_mb_E3": 116.3,
+  "max_rss_mb_E4": 113.6,
+  "program": "R07_b.py",
+  "status_E0a": "ok",
+  "status_E0b": "ok",
+  "status_E0pa": "ok",
+  "status_E1": "ok",
+  "status_E2": "ok",
+  "status_E3": "ok",
+  "status_E4": "ok",
+  "warn_E0a_pilot": [],
+  "warn_E0a_prereg": [],
+  "warn_E1_prereg": [],
+  "warn_E2_prereg": [],
+  "warn_E3_prereg": [],
+  "warn_E4_prereg": []
+ },
+ {
+  "E0a~E0b": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": true,
+    "prereg": true
+   }
+  },
+  "E0a~E1": {
+   "baseline_status": "ok",
+   "class": "DTYPE_ONLY",
+   "class_pilot_rule": "DTYPE_ONLY",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E2": {
+   "baseline_status": "ok",
+   "class": "DTYPE_ONLY",
+   "class_pilot_rule": "DTYPE_ONLY",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E3": {
+   "baseline_status": "ok",
+   "class": "DTYPE_ONLY",
+   "class_pilot_rule": "DTYPE_ONLY",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E4": {
+   "baseline_status": "ok",
+   "class": "DTYPE_ONLY",
+   "class_pilot_rule": "DTYPE_ONLY",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "attempt": "a",
+  "id": "N01",
+  "max_rss_mb_E0a": 85.5,
+  "max_rss_mb_E0b": 85.7,
+  "max_rss_mb_E0pa": 110.9,
+  "max_rss_mb_E1": 88.9,
+  "max_rss_mb_E2": 86.0,
+  "max_rss_mb_E3": 116.7,
+  "max_rss_mb_E4": 112.2,
+  "program": "N01.py",
+  "status_E0a": "ok",
+  "status_E0b": "ok",
+  "status_E0pa": "ok",
+  "status_E1": "ok",
+  "status_E2": "ok",
+  "status_E3": "ok",
+  "status_E4": "ok",
+  "warn_E0a_pilot": [
+   "FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy="
+  ],
+  "warn_E0a_prereg": [
+   "FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy="
+  ],
+  "warn_E1_prereg": [],
+  "warn_E2_prereg": [],
+  "warn_E3_prereg": [],
+  "warn_E4_prereg": []
+ },
+ {
+  "E0a~E0b": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": true,
+    "prereg": true
+   }
+  },
+  "E0a~E1": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": 2,
+    "b": 1,
+    "column": "<columns>",
+    "kind": "shape",
+    "row": null
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E2": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": 2,
+    "b": 1,
+    "column": "<columns>",
+    "kind": "shape",
+    "row": null
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E3": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": 2,
+    "b": 1,
+    "column": "<columns>",
+    "kind": "shape",
+    "row": null
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E4": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": 2,
+    "b": 1,
+    "column": "<columns>",
+    "kind": "shape",
+    "row": null
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "attempt": "b",
+  "id": "N01",
+  "max_rss_mb_E0a": 85.7,
+  "max_rss_mb_E0b": 86.1,
+  "max_rss_mb_E0pa": 111.1,
+  "max_rss_mb_E1": 90.4,
+  "max_rss_mb_E2": 84.7,
+  "max_rss_mb_E3": 117.2,
+  "max_rss_mb_E4": 113.8,
+  "program": "N01_b.py",
+  "status_E0a": "ok",
+  "status_E0b": "ok",
+  "status_E0pa": "ok",
+  "status_E1": "ok",
+  "status_E2": "ok",
+  "status_E3": "ok",
+  "status_E4": "ok",
+  "warn_E0a_pilot": [
+   "FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy="
+  ],
+  "warn_E0a_prereg": [
+   "FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy="
+  ],
+  "warn_E1_prereg": [],
+  "warn_E2_prereg": [],
+  "warn_E3_prereg": [],
+  "warn_E4_prereg": []
+ },
+ {
+  "E0a~E0b": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E1": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": 1,
+    "b": 2,
+    "column": null,
+    "kind": "cell",
+    "row": 0
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E2": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": 1,
+    "b": 2,
+    "column": null,
+    "kind": "cell",
+    "row": 0
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E3": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": 1,
+    "b": 2,
+    "column": null,
+    "kind": "cell",
+    "row": 0
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E4": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": 1,
+    "b": 2,
+    "column": null,
+    "kind": "cell",
+    "row": 0
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "attempt": "a",
+  "id": "N02",
+  "max_rss_mb_E0a": 86.6,
+  "max_rss_mb_E0b": 86.2,
+  "max_rss_mb_E0pa": 110.5,
+  "max_rss_mb_E1": 88.1,
+  "max_rss_mb_E2": 84.2,
+  "max_rss_mb_E3": 115.4,
+  "max_rss_mb_E4": 111.7,
+  "program": "N02.py",
+  "status_E0a": "ok",
+  "status_E0b": "ok",
+  "status_E0pa": "ok",
+  "status_E1": "ok",
+  "status_E2": "ok",
+  "status_E3": "ok",
+  "status_E4": "ok",
+  "warn_E0a_pilot": [],
+  "warn_E0a_prereg": [],
+  "warn_E1_prereg": [],
+  "warn_E2_prereg": [],
+  "warn_E3_prereg": [],
+  "warn_E4_prereg": []
+ },
+ {
+  "E0a~E0b": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E1": {
+   "baseline_status": "ok",
+   "class": "DTYPE_ONLY",
+   "class_pilot_rule": "DTYPE_ONLY",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E2": {
+   "baseline_status": "ok",
+   "class": "DTYPE_ONLY",
+   "class_pilot_rule": "DTYPE_ONLY",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E3": {
+   "baseline_status": "ok",
+   "class": "DTYPE_ONLY",
+   "class_pilot_rule": "DTYPE_ONLY",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E4": {
+   "baseline_status": "ok",
+   "class": "DTYPE_ONLY",
+   "class_pilot_rule": "DTYPE_ONLY",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "attempt": "a",
+  "id": "N03",
+  "max_rss_mb_E0a": 87.3,
+  "max_rss_mb_E0b": 86.9,
+  "max_rss_mb_E0pa": 111.0,
+  "max_rss_mb_E1": 89.2,
+  "max_rss_mb_E2": 85.3,
+  "max_rss_mb_E3": 116.2,
+  "max_rss_mb_E4": 111.2,
+  "program": "N03.py",
+  "status_E0a": "ok",
+  "status_E0b": "ok",
+  "status_E0pa": "ok",
+  "status_E1": "ok",
+  "status_E2": "ok",
+  "status_E3": "ok",
+  "status_E4": "ok",
+  "warn_E0a_pilot": [],
+  "warn_E0a_prereg": [],
+  "warn_E1_prereg": [],
+  "warn_E2_prereg": [],
+  "warn_E3_prereg": [],
+  "warn_E4_prereg": []
+ },
+ {
+  "E0a~E0b": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E1": {
+   "baseline_status": "ok",
+   "class": "DTYPE_ONLY",
+   "class_pilot_rule": "DTYPE_ONLY",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E2": {
+   "baseline_status": "ok",
+   "class": "DTYPE_ONLY",
+   "class_pilot_rule": "DTYPE_ONLY",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E3": {
+   "baseline_status": "ok",
+   "class": "DTYPE_ONLY",
+   "class_pilot_rule": "DTYPE_ONLY",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E4": {
+   "baseline_status": "ok",
+   "class": "DTYPE_ONLY",
+   "class_pilot_rule": "DTYPE_ONLY",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "attempt": "b",
+  "id": "N03",
+  "max_rss_mb_E0a": 88.6,
+  "max_rss_mb_E0b": 88.3,
+  "max_rss_mb_E0pa": 110.8,
+  "max_rss_mb_E1": 89.4,
+  "max_rss_mb_E2": 85.2,
+  "max_rss_mb_E3": 117.1,
+  "max_rss_mb_E4": 111.6,
+  "program": "N03_b.py",
+  "status_E0a": "ok",
+  "status_E0b": "ok",
+  "status_E0pa": "ok",
+  "status_E1": "ok",
+  "status_E2": "ok",
+  "status_E3": "ok",
+  "status_E4": "ok",
+  "warn_E0a_pilot": [],
+  "warn_E0a_prereg": [],
+  "warn_E1_prereg": [],
+  "warn_E2_prereg": [],
+  "warn_E3_prereg": [],
+  "warn_E4_prereg": []
+ },
+ {
+  "E0a~E0b": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E1": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E2": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E3": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E4": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "attempt": "a",
+  "id": "N04",
+  "max_rss_mb_E0a": 87.2,
+  "max_rss_mb_E0b": 87.5,
+  "max_rss_mb_E0pa": 111.5,
+  "max_rss_mb_E1": 89.9,
+  "max_rss_mb_E2": 85.2,
+  "max_rss_mb_E3": 116.6,
+  "max_rss_mb_E4": 110.5,
+  "program": "N04.py",
+  "status_E0a": "ok",
+  "status_E0b": "ok",
+  "status_E0pa": "ok",
+  "status_E1": "ok",
+  "status_E2": "ok",
+  "status_E3": "ok",
+  "status_E4": "ok",
+  "warn_E0a_pilot": [],
+  "warn_E0a_prereg": [],
+  "warn_E1_prereg": [],
+  "warn_E2_prereg": [],
+  "warn_E3_prereg": [],
+  "warn_E4_prereg": []
+ },
+ {
+  "E0a~E0b": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": true,
+    "prereg": true
+   }
+  },
+  "E0a~E1": {
+   "baseline_status": "ok",
+   "class": "DTYPE_ONLY",
+   "class_pilot_rule": "DTYPE_ONLY",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E2": {
+   "baseline_status": "ok",
+   "class": "DTYPE_ONLY",
+   "class_pilot_rule": "DTYPE_ONLY",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E3": {
+   "baseline_status": "ok",
+   "class": "DTYPE_ONLY",
+   "class_pilot_rule": "DTYPE_ONLY",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E4": {
+   "baseline_status": "ok",
+   "class": "DTYPE_ONLY",
+   "class_pilot_rule": "DTYPE_ONLY",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "attempt": "b",
+  "id": "N04",
+  "max_rss_mb_E0a": 86.3,
+  "max_rss_mb_E0b": 86.8,
+  "max_rss_mb_E0pa": 110.4,
+  "max_rss_mb_E1": 90.4,
+  "max_rss_mb_E2": 86.6,
+  "max_rss_mb_E3": 116.1,
+  "max_rss_mb_E4": 111.1,
+  "program": "N04_b.py",
+  "status_E0a": "ok",
+  "status_E0b": "ok",
+  "status_E0pa": "ok",
+  "status_E1": "ok",
+  "status_E2": "ok",
+  "status_E3": "ok",
+  "status_E4": "ok",
+  "warn_E0a_pilot": [
+   "FutureWarning: The behavior of value_counts with object-dtype is deprecated. In a future version, this will *not* perform dtype inference on the resulting index. To retain the"
+  ],
+  "warn_E0a_prereg": [
+   "FutureWarning: The behavior of value_counts with object-dtype is deprecated. In a future version, this will *not* perform dtype inference on the resulting index. To retain the"
+  ],
+  "warn_E1_prereg": [],
+  "warn_E2_prereg": [],
+  "warn_E3_prereg": [],
+  "warn_E4_prereg": []
+ },
+ {
+  "E0a~E0b": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E1": {
+   "baseline_status": "ok",
+   "class": "DTYPE_ONLY",
+   "class_pilot_rule": "DTYPE_ONLY",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E2": {
+   "baseline_status": "ok",
+   "class": "DTYPE_ONLY",
+   "class_pilot_rule": "DTYPE_ONLY",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E3": {
+   "baseline_status": "ok",
+   "class": "DTYPE_ONLY",
+   "class_pilot_rule": "DTYPE_ONLY",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E4": {
+   "baseline_status": "ok",
+   "class": "DTYPE_ONLY",
+   "class_pilot_rule": "DTYPE_ONLY",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "attempt": "a",
+  "id": "N05",
+  "max_rss_mb_E0a": 87.4,
+  "max_rss_mb_E0b": 86.5,
+  "max_rss_mb_E0pa": 110.4,
+  "max_rss_mb_E1": 90.2,
+  "max_rss_mb_E2": 84.4,
+  "max_rss_mb_E3": 115.5,
+  "max_rss_mb_E4": 110.4,
+  "program": "N05.py",
+  "status_E0a": "ok",
+  "status_E0b": "ok",
+  "status_E0pa": "ok",
+  "status_E1": "ok",
+  "status_E2": "ok",
+  "status_E3": "ok",
+  "status_E4": "ok",
+  "warn_E0a_pilot": [],
+  "warn_E0a_prereg": [],
+  "warn_E1_prereg": [],
+  "warn_E2_prereg": [],
+  "warn_E3_prereg": [],
+  "warn_E4_prereg": []
+ },
+ {
+  "E0a~E0b": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E1": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": false,
+    "b": null,
+    "column": "math",
+    "kind": "null",
+    "row": 1
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E2": {
+   "baseline_status": "ok",
+   "class": "DTYPE_ONLY",
+   "class_pilot_rule": "DTYPE_ONLY",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E3": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": false,
+    "b": null,
+    "column": "math",
+    "kind": "null",
+    "row": 1
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E4": {
+   "baseline_status": "ok",
+   "class": "DTYPE_ONLY",
+   "class_pilot_rule": "DTYPE_ONLY",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "attempt": "b",
+  "id": "N05",
+  "max_rss_mb_E0a": 85.3,
+  "max_rss_mb_E0b": 85.2,
+  "max_rss_mb_E0pa": 110.6,
+  "max_rss_mb_E1": 88.4,
+  "max_rss_mb_E2": 84.2,
+  "max_rss_mb_E3": 115.3,
+  "max_rss_mb_E4": 110.0,
+  "program": "N05_b.py",
+  "status_E0a": "ok",
+  "status_E0b": "ok",
+  "status_E0pa": "ok",
+  "status_E1": "ok",
+  "status_E2": "ok",
+  "status_E3": "ok",
+  "status_E4": "ok",
+  "warn_E0a_pilot": [],
+  "warn_E0a_prereg": [],
+  "warn_E1_prereg": [],
+  "warn_E2_prereg": [],
+  "warn_E3_prereg": [],
+  "warn_E4_prereg": []
+ },
+ {
+  "E0a~E0b": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E1": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": 5.0,
+    "b": 4.0,
+    "column": "x",
+    "kind": "cell",
+    "row": 0
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E2": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": 5.0,
+    "b": 4.0,
+    "column": "x",
+    "kind": "cell",
+    "row": 0
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E3": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": 5.0,
+    "b": 4.0,
+    "column": "x",
+    "kind": "cell",
+    "row": 0
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E4": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": 5.0,
+    "b": 4.0,
+    "column": "x",
+    "kind": "cell",
+    "row": 0
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "attempt": "a",
+  "id": "N06",
+  "max_rss_mb_E0a": 86.6,
+  "max_rss_mb_E0b": 88.2,
+  "max_rss_mb_E0pa": 110.8,
+  "max_rss_mb_E1": 90.2,
+  "max_rss_mb_E2": 85.2,
+  "max_rss_mb_E3": 115.2,
+  "max_rss_mb_E4": 110.3,
+  "program": "N06.py",
+  "status_E0a": "ok",
+  "status_E0b": "ok",
+  "status_E0pa": "ok",
+  "status_E1": "ok",
+  "status_E2": "ok",
+  "status_E3": "ok",
+  "status_E4": "ok",
+  "warn_E0a_pilot": [],
+  "warn_E0a_prereg": [],
+  "warn_E1_prereg": [],
+  "warn_E2_prereg": [],
+  "warn_E3_prereg": [],
+  "warn_E4_prereg": []
+ },
+ {
+  "E0a~E0b": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E1": {
+   "baseline_status": "ok",
+   "class": "DTYPE_ONLY",
+   "class_pilot_rule": "DTYPE_ONLY",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E2": {
+   "baseline_status": "ok",
+   "class": "DTYPE_ONLY",
+   "class_pilot_rule": "DTYPE_ONLY",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E3": {
+   "baseline_status": "ok",
+   "class": "DTYPE_ONLY",
+   "class_pilot_rule": "DTYPE_ONLY",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E4": {
+   "baseline_status": "ok",
+   "class": "DTYPE_ONLY",
+   "class_pilot_rule": "DTYPE_ONLY",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "attempt": "a",
+  "id": "N07",
+  "max_rss_mb_E0a": 86.7,
+  "max_rss_mb_E0b": 85.9,
+  "max_rss_mb_E0pa": 110.2,
+  "max_rss_mb_E1": 90.2,
+  "max_rss_mb_E2": 86.2,
+  "max_rss_mb_E3": 116.6,
+  "max_rss_mb_E4": 113.4,
+  "program": "N07.py",
+  "status_E0a": "ok",
+  "status_E0b": "ok",
+  "status_E0pa": "ok",
+  "status_E1": "ok",
+  "status_E2": "ok",
+  "status_E3": "ok",
+  "status_E4": "ok",
+  "warn_E0a_pilot": [],
+  "warn_E0a_prereg": [],
+  "warn_E1_prereg": [],
+  "warn_E2_prereg": [],
+  "warn_E3_prereg": [],
+  "warn_E4_prereg": []
+ },
+ {
+  "E0a~E0b": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": true,
+    "prereg": true
+   }
+  },
+  "E0a~E1": {
+   "baseline_status": "ok",
+   "class": "LOUD",
+   "class_pilot_rule": "LOUD",
+   "drift": false,
+   "excluded": null,
+   "first_diff": {
+    "a": "ok",
+    "b": "error",
+    "column": null,
+    "kind": "status",
+    "row": null
+   },
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "error",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E2": {
+   "baseline_status": "ok",
+   "class": "LOUD",
+   "class_pilot_rule": "LOUD",
+   "drift": false,
+   "excluded": null,
+   "first_diff": {
+    "a": "ok",
+    "b": "error",
+    "column": null,
+    "kind": "status",
+    "row": null
+   },
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "error",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E3": {
+   "baseline_status": "ok",
+   "class": "LOUD",
+   "class_pilot_rule": "LOUD",
+   "drift": false,
+   "excluded": null,
+   "first_diff": {
+    "a": "ok",
+    "b": "error",
+    "column": null,
+    "kind": "status",
+    "row": null
+   },
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "error",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E4": {
+   "baseline_status": "ok",
+   "class": "LOUD",
+   "class_pilot_rule": "LOUD",
+   "drift": false,
+   "excluded": null,
+   "first_diff": {
+    "a": "ok",
+    "b": "error",
+    "column": null,
+    "kind": "status",
+    "row": null
+   },
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "error",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "attempt": "b",
+  "err_E1": "TypeError: Cannot setitem on a Categorical with a new category (z), set the categories first",
+  "err_E2": "TypeError: Cannot setitem on a Categorical with a new category (z), set the categories first",
+  "err_E3": "TypeError: Cannot setitem on a Categorical with a new category (z), set the categories first",
+  "err_E4": "TypeError: Cannot setitem on a Categorical with a new category (z), set the categories first",
+  "id": "N07",
+  "max_rss_mb_E0a": 86.1,
+  "max_rss_mb_E0b": 86.2,
+  "max_rss_mb_E0pa": 111.0,
+  "max_rss_mb_E1": 89.6,
+  "max_rss_mb_E2": 86.1,
+  "max_rss_mb_E3": 117.0,
+  "max_rss_mb_E4": 112.2,
+  "program": "N07_b.py",
+  "status_E0a": "ok",
+  "status_E0b": "ok",
+  "status_E0pa": "ok",
+  "status_E1": "error",
+  "status_E2": "error",
+  "status_E3": "error",
+  "status_E4": "error",
+  "warn_E0a_pilot": [
+   "FutureWarning: The behavior of Series.replace (and DataFrame.replace) with CategoricalDtype is deprecated. In a future version, replace will only be used for cases that preser"
+  ],
+  "warn_E0a_prereg": [
+   "FutureWarning: The behavior of Series.replace (and DataFrame.replace) with CategoricalDtype is deprecated. In a future version, replace will only be used for cases that preser"
+  ],
+  "warn_E1_prereg": [],
+  "warn_E2_prereg": [],
+  "warn_E3_prereg": [],
+  "warn_E4_prereg": []
+ },
+ {
+  "E0a~E0b": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": true,
+    "prereg": true
+   }
+  },
+  "E0a~E1": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": "s",
+    "b": "float",
+    "column": null,
+    "kind": "type",
+    "row": null
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E2": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": "s",
+    "b": "float",
+    "column": null,
+    "kind": "type",
+    "row": null
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E3": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": "s",
+    "b": "float",
+    "column": null,
+    "kind": "type",
+    "row": null
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E4": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": "s",
+    "b": "float",
+    "column": null,
+    "kind": "type",
+    "row": null
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "attempt": "a",
+  "id": "I01",
+  "max_rss_mb_E0a": 87.2,
+  "max_rss_mb_E0b": 88.8,
+  "max_rss_mb_E0pa": 112.3,
+  "max_rss_mb_E1": 89.3,
+  "max_rss_mb_E2": 85.1,
+  "max_rss_mb_E3": 116.3,
+  "max_rss_mb_E4": 110.5,
+  "program": "I01.py",
+  "status_E0a": "ok",
+  "status_E0b": "ok",
+  "status_E0pa": "ok",
+  "status_E1": "ok",
+  "status_E2": "ok",
+  "status_E3": "ok",
+  "status_E4": "ok",
+  "warn_E0a_pilot": [
+   "FutureWarning: The behavior of DataFrame.sum with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior,"
+  ],
+  "warn_E0a_prereg": [
+   "FutureWarning: The behavior of DataFrame.sum with axis=None is deprecated, in a future version this will reduce over both axes and return a scalar. To retain the old behavior,"
+  ],
+  "warn_E1_prereg": [],
+  "warn_E2_prereg": [],
+  "warn_E3_prereg": [],
+  "warn_E4_prereg": []
+ },
+ {
+  "E0a~E0b": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": true,
+    "prereg": true
+   }
+  },
+  "E0a~E1": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": [
+     10.5,
+     11.5,
+     12.5,
+     13.5,
+     14.5,
+     15.5,
+     16.5,
+     17.5,
+     18.5,
+     19.5,
+     20.5,
+     21.5,
+     22.5,
+     23.5,
+     24.5,
+     25.5,
+     26.5,
+     27.5,
+     28.5,
+     29.5
+    ],
+    "b": [
+     15.5,
+     16.5,
+     17.5,
+     18.5,
+     19.5,
+     20.5,
+     21.5,
+     22.5,
+     23.5,
+     24.5,
+     25.5,
+     26.5,
+     27.5,
+     28.5,
+     29.5,
+     30.5,
+     31.5,
+     32.5,
+     33.5,
+     34.5
+    ],
+    "column": "<index>",
+    "kind": "label",
+    "row": null
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E2": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": [
+     10.5,
+     11.5,
+     12.5,
+     13.5,
+     14.5,
+     15.5,
+     16.5,
+     17.5,
+     18.5,
+     19.5,
+     20.5,
+     21.5,
+     22.5,
+     23.5,
+     24.5,
+     25.5,
+     26.5,
+     27.5,
+     28.5,
+     29.5
+    ],
+    "b": [
+     15.5,
+     16.5,
+     17.5,
+     18.5,
+     19.5,
+     20.5,
+     21.5,
+     22.5,
+     23.5,
+     24.5,
+     25.5,
+     26.5,
+     27.5,
+     28.5,
+     29.5,
+     30.5,
+     31.5,
+     32.5,
+     33.5,
+     34.5
+    ],
+    "column": "<index>",
+    "kind": "label",
+    "row": null
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E3": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": [
+     10.5,
+     11.5,
+     12.5,
+     13.5,
+     14.5,
+     15.5,
+     16.5,
+     17.5,
+     18.5,
+     19.5,
+     20.5,
+     21.5,
+     22.5,
+     23.5,
+     24.5,
+     25.5,
+     26.5,
+     27.5,
+     28.5,
+     29.5
+    ],
+    "b": [
+     15.5,
+     16.5,
+     17.5,
+     18.5,
+     19.5,
+     20.5,
+     21.5,
+     22.5,
+     23.5,
+     24.5,
+     25.5,
+     26.5,
+     27.5,
+     28.5,
+     29.5,
+     30.5,
+     31.5,
+     32.5,
+     33.5,
+     34.5
+    ],
+    "column": "<index>",
+    "kind": "label",
+    "row": null
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E4": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": [
+     10.5,
+     11.5,
+     12.5,
+     13.5,
+     14.5,
+     15.5,
+     16.5,
+     17.5,
+     18.5,
+     19.5,
+     20.5,
+     21.5,
+     22.5,
+     23.5,
+     24.5,
+     25.5,
+     26.5,
+     27.5,
+     28.5,
+     29.5
+    ],
+    "b": [
+     15.5,
+     16.5,
+     17.5,
+     18.5,
+     19.5,
+     20.5,
+     21.5,
+     22.5,
+     23.5,
+     24.5,
+     25.5,
+     26.5,
+     27.5,
+     28.5,
+     29.5,
+     30.5,
+     31.5,
+     32.5,
+     33.5,
+     34.5
+    ],
+    "column": "<index>",
+    "kind": "label",
+    "row": null
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "attempt": "a",
+  "id": "I02",
+  "max_rss_mb_E0a": 89.3,
+  "max_rss_mb_E0b": 88.2,
+  "max_rss_mb_E0pa": 111.9,
+  "max_rss_mb_E1": 89.5,
+  "max_rss_mb_E2": 85.5,
+  "max_rss_mb_E3": 117.2,
+  "max_rss_mb_E4": 113.0,
+  "program": "I02.py",
+  "status_E0a": "ok",
+  "status_E0b": "ok",
+  "status_E0pa": "ok",
+  "status_E1": "ok",
+  "status_E2": "ok",
+  "status_E3": "ok",
+  "status_E4": "ok",
+  "warn_E0a_pilot": [
+   "FutureWarning: The behavior of obj[i:j] with a float-dtype index is deprecated. In a future version, this will be treated as positional instead of label-based. For label-based"
+  ],
+  "warn_E0a_prereg": [
+   "FutureWarning: The behavior of obj[i:j] with a float-dtype index is deprecated. In a future version, this will be treated as positional instead of label-based. For label-based"
+  ],
+  "warn_E1_prereg": [],
+  "warn_E2_prereg": [],
+  "warn_E3_prereg": [],
+  "warn_E4_prereg": []
+ },
+ {
+  "E0a~E0b": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": true,
+    "prereg": true
+   }
+  },
+  "E0a~E1": {
+   "baseline_status": "ok",
+   "class": "LOUD",
+   "class_pilot_rule": "LOUD",
+   "drift": false,
+   "excluded": null,
+   "first_diff": {
+    "a": "ok",
+    "b": "error",
+    "column": null,
+    "kind": "status",
+    "row": null
+   },
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "error",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E2": {
+   "baseline_status": "ok",
+   "class": "LOUD",
+   "class_pilot_rule": "LOUD",
+   "drift": false,
+   "excluded": null,
+   "first_diff": {
+    "a": "ok",
+    "b": "error",
+    "column": null,
+    "kind": "status",
+    "row": null
+   },
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "error",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E3": {
+   "baseline_status": "ok",
+   "class": "LOUD",
+   "class_pilot_rule": "LOUD",
+   "drift": false,
+   "excluded": null,
+   "first_diff": {
+    "a": "ok",
+    "b": "error",
+    "column": null,
+    "kind": "status",
+    "row": null
+   },
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "error",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E4": {
+   "baseline_status": "ok",
+   "class": "LOUD",
+   "class_pilot_rule": "LOUD",
+   "drift": false,
+   "excluded": null,
+   "first_diff": {
+    "a": "ok",
+    "b": "error",
+    "column": null,
+    "kind": "status",
+    "row": null
+   },
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "error",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "attempt": "a",
+  "err_E1": "KeyError: 0",
+  "err_E2": "KeyError: 0",
+  "err_E3": "KeyError: 0",
+  "err_E4": "KeyError: 0",
+  "id": "I03",
+  "max_rss_mb_E0a": 86.8,
+  "max_rss_mb_E0b": 86.7,
+  "max_rss_mb_E0pa": 110.3,
+  "max_rss_mb_E1": 89.6,
+  "max_rss_mb_E2": 85.7,
+  "max_rss_mb_E3": 115.9,
+  "max_rss_mb_E4": 112.1,
+  "program": "I03.py",
+  "status_E0a": "ok",
+  "status_E0b": "ok",
+  "status_E0pa": "ok",
+  "status_E1": "error",
+  "status_E2": "error",
+  "status_E3": "error",
+  "status_E4": "error",
+  "warn_E0a_pilot": [
+   "FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behav"
+  ],
+  "warn_E0a_prereg": [
+   "FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behav"
+  ],
+  "warn_E1_prereg": [],
+  "warn_E2_prereg": [],
+  "warn_E3_prereg": [],
+  "warn_E4_prereg": []
+ },
+ {
+  "E0a~E0b": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E1": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E2": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E3": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E4": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "attempt": "b",
+  "id": "I03",
+  "max_rss_mb_E0a": 86.7,
+  "max_rss_mb_E0b": 86.7,
+  "max_rss_mb_E0pa": 109.9,
+  "max_rss_mb_E1": 89.0,
+  "max_rss_mb_E2": 84.4,
+  "max_rss_mb_E3": 115.6,
+  "max_rss_mb_E4": 110.8,
+  "program": "I03_b.py",
+  "status_E0a": "ok",
+  "status_E0b": "ok",
+  "status_E0pa": "ok",
+  "status_E1": "ok",
+  "status_E2": "ok",
+  "status_E3": "ok",
+  "status_E4": "ok",
+  "warn_E0a_pilot": [],
+  "warn_E0a_prereg": [],
+  "warn_E1_prereg": [],
+  "warn_E2_prereg": [],
+  "warn_E3_prereg": [],
+  "warn_E4_prereg": []
+ },
+ {
+  "E0a~E0b": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": true,
+    "prereg": true
+   }
+  },
+  "E0a~E1": {
+   "baseline_status": "ok",
+   "class": "LOUD",
+   "class_pilot_rule": "LOUD",
+   "drift": false,
+   "excluded": null,
+   "first_diff": {
+    "a": "ok",
+    "b": "error",
+    "column": null,
+    "kind": "status",
+    "row": null
+   },
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "error",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E2": {
+   "baseline_status": "ok",
+   "class": "LOUD",
+   "class_pilot_rule": "LOUD",
+   "drift": false,
+   "excluded": null,
+   "first_diff": {
+    "a": "ok",
+    "b": "error",
+    "column": null,
+    "kind": "status",
+    "row": null
+   },
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "error",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E3": {
+   "baseline_status": "ok",
+   "class": "LOUD",
+   "class_pilot_rule": "LOUD",
+   "drift": false,
+   "excluded": null,
+   "first_diff": {
+    "a": "ok",
+    "b": "error",
+    "column": null,
+    "kind": "status",
+    "row": null
+   },
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "error",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E4": {
+   "baseline_status": "ok",
+   "class": "LOUD",
+   "class_pilot_rule": "LOUD",
+   "drift": false,
+   "excluded": null,
+   "first_diff": {
+    "a": "ok",
+    "b": "error",
+    "column": null,
+    "kind": "status",
+    "row": null
+   },
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "error",
+   "warned_E0a": {
+    "pilot": true,
+    "prereg": true
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "attempt": "a",
+  "err_E1": "TypeError: Logical ops (and, or, xor) between Pandas objects and dtype-less sequences (e.g. list, tuple) are no longer supported. Wrap the object in a Series, Index, or np.array before operating inste",
+  "err_E2": "TypeError: Logical ops (and, or, xor) between Pandas objects and dtype-less sequences (e.g. list, tuple) are no longer supported. Wrap the object in a Series, Index, or np.array before operating inste",
+  "err_E3": "TypeError: Logical ops (and, or, xor) between Pandas objects and dtype-less sequences (e.g. list, tuple) are no longer supported. Wrap the object in a Series, Index, or np.array before operating inste",
+  "err_E4": "TypeError: Logical ops (and, or, xor) between Pandas objects and dtype-less sequences (e.g. list, tuple) are no longer supported. Wrap the object in a Series, Index, or np.array before operating inste",
+  "id": "I04",
+  "max_rss_mb_E0a": 87.7,
+  "max_rss_mb_E0b": 86.9,
+  "max_rss_mb_E0pa": 111.8,
+  "max_rss_mb_E1": 88.8,
+  "max_rss_mb_E2": 85.5,
+  "max_rss_mb_E3": 116.4,
+  "max_rss_mb_E4": 111.8,
+  "program": "I04.py",
+  "status_E0a": "ok",
+  "status_E0b": "ok",
+  "status_E0pa": "ok",
+  "status_E1": "error",
+  "status_E2": "error",
+  "status_E3": "error",
+  "status_E4": "error",
+  "warn_E0a_pilot": [
+   "FutureWarning: Logical ops (and, or, xor) between Pandas objects and dtype-less sequences (e.g. list, tuple) are deprecated and will raise in a future version. Wrap the object"
+  ],
+  "warn_E0a_prereg": [
+   "FutureWarning: Logical ops (and, or, xor) between Pandas objects and dtype-less sequences (e.g. list, tuple) are deprecated and will raise in a future version. Wrap the object"
+  ],
+  "warn_E1_prereg": [],
+  "warn_E2_prereg": [],
+  "warn_E3_prereg": [],
+  "warn_E4_prereg": []
+ },
+ {
+  "E0a~E0b": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E1": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E2": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E3": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E4": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "attempt": "b",
+  "id": "I04",
+  "max_rss_mb_E0a": 86.8,
+  "max_rss_mb_E0b": 86.7,
+  "max_rss_mb_E0pa": 111.2,
+  "max_rss_mb_E1": 88.3,
+  "max_rss_mb_E2": 84.4,
+  "max_rss_mb_E3": 115.3,
+  "max_rss_mb_E4": 110.3,
+  "program": "I04_b.py",
+  "status_E0a": "ok",
+  "status_E0b": "ok",
+  "status_E0pa": "ok",
+  "status_E1": "ok",
+  "status_E2": "ok",
+  "status_E3": "ok",
+  "status_E4": "ok",
+  "warn_E0a_pilot": [],
+  "warn_E0a_prereg": [],
+  "warn_E1_prereg": [],
+  "warn_E2_prereg": [],
+  "warn_E3_prereg": [],
+  "warn_E4_prereg": []
+ },
+ {
+  "E0a~E0b": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E1": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E2": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E3": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E4": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "attempt": "a",
+  "id": "I05",
+  "max_rss_mb_E0a": 86.2,
+  "max_rss_mb_E0b": 87.4,
+  "max_rss_mb_E0pa": 110.4,
+  "max_rss_mb_E1": 89.1,
+  "max_rss_mb_E2": 86.0,
+  "max_rss_mb_E3": 114.8,
+  "max_rss_mb_E4": 111.0,
+  "program": "I05.py",
+  "status_E0a": "ok",
+  "status_E0b": "ok",
+  "status_E0pa": "ok",
+  "status_E1": "ok",
+  "status_E2": "ok",
+  "status_E3": "ok",
+  "status_E4": "ok",
+  "warn_E0a_pilot": [],
+  "warn_E0a_prereg": [],
+  "warn_E1_prereg": [],
+  "warn_E2_prereg": [],
+  "warn_E3_prereg": [],
+  "warn_E4_prereg": []
+ },
+ {
+  "E0a~E0b": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E1": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": "nd",
+    "b": "s",
+    "column": null,
+    "kind": "type",
+    "row": null
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E2": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": "nd",
+    "b": "s",
+    "column": null,
+    "kind": "type",
+    "row": null
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E3": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": "nd",
+    "b": "s",
+    "column": null,
+    "kind": "type",
+    "row": null
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E4": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": "nd",
+    "b": "s",
+    "column": null,
+    "kind": "type",
+    "row": null
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "attempt": "b",
+  "id": "I05",
+  "max_rss_mb_E0a": 86.2,
+  "max_rss_mb_E0b": 86.0,
+  "max_rss_mb_E0pa": 110.6,
+  "max_rss_mb_E1": 89.0,
+  "max_rss_mb_E2": 85.1,
+  "max_rss_mb_E3": 115.9,
+  "max_rss_mb_E4": 112.1,
+  "program": "I05_b.py",
+  "status_E0a": "ok",
+  "status_E0b": "ok",
+  "status_E0pa": "ok",
+  "status_E1": "ok",
+  "status_E2": "ok",
+  "status_E3": "ok",
+  "status_E4": "ok",
+  "warn_E0a_pilot": [],
+  "warn_E0a_prereg": [],
+  "warn_E1_prereg": [],
+  "warn_E2_prereg": [],
+  "warn_E3_prereg": [],
+  "warn_E4_prereg": []
+ },
+ {
+  "E0a~E0b": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E1": {
+   "baseline_status": "ok",
+   "class": "DTYPE_ONLY",
+   "class_pilot_rule": "DTYPE_ONLY",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E2": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E3": {
+   "baseline_status": "ok",
+   "class": "DTYPE_ONLY",
+   "class_pilot_rule": "DTYPE_ONLY",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E4": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "attempt": "a",
+  "id": "I06",
+  "max_rss_mb_E0a": 86.4,
+  "max_rss_mb_E0b": 86.9,
+  "max_rss_mb_E0pa": 111.0,
+  "max_rss_mb_E1": 90.1,
+  "max_rss_mb_E2": 86.0,
+  "max_rss_mb_E3": 116.6,
+  "max_rss_mb_E4": 110.3,
+  "program": "I06.py",
+  "status_E0a": "ok",
+  "status_E0b": "ok",
+  "status_E0pa": "ok",
+  "status_E1": "ok",
+  "status_E2": "ok",
+  "status_E3": "ok",
+  "status_E4": "ok",
+  "warn_E0a_pilot": [],
+  "warn_E0a_prereg": [],
+  "warn_E1_prereg": [],
+  "warn_E2_prereg": [],
+  "warn_E3_prereg": [],
+  "warn_E4_prereg": []
+ },
+ {
+  "E0a~E0b": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E1": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": 9223372036854775808,
+    "b": -9223372036854775808,
+    "column": null,
+    "kind": "cell",
+    "row": 0
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E2": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E3": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": 9223372036854775808,
+    "b": -9223372036854775808,
+    "column": null,
+    "kind": "cell",
+    "row": 0
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E4": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "attempt": "b",
+  "id": "I06",
+  "max_rss_mb_E0a": 85.5,
+  "max_rss_mb_E0b": 85.4,
+  "max_rss_mb_E0pa": 110.9,
+  "max_rss_mb_E1": 88.3,
+  "max_rss_mb_E2": 84.4,
+  "max_rss_mb_E3": 117.4,
+  "max_rss_mb_E4": 112.3,
+  "program": "I06_b.py",
+  "status_E0a": "ok",
+  "status_E0b": "ok",
+  "status_E0pa": "ok",
+  "status_E1": "ok",
+  "status_E2": "ok",
+  "status_E3": "ok",
+  "status_E4": "ok",
+  "warn_E0a_pilot": [],
+  "warn_E0a_prereg": [],
+  "warn_E1_prereg": [],
+  "warn_E2_prereg": [],
+  "warn_E3_prereg": [],
+  "warn_E4_prereg": []
+ },
+ {
+  "E0a~E0b": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E1": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": 1.2586478351849948,
+    "b": 1.1652814643494775,
+    "column": "sem",
+    "kind": "cell",
+    "row": 6
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E2": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": 1.2586478351849948,
+    "b": 1.1652814643494775,
+    "column": "sem",
+    "kind": "cell",
+    "row": 6
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E3": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": 1.2586478351849948,
+    "b": 1.1652814643494775,
+    "column": "sem",
+    "kind": "cell",
+    "row": 6
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E4": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": 1.2586478351849948,
+    "b": 1.1652814643494775,
+    "column": "sem",
+    "kind": "cell",
+    "row": 6
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "attempt": "a",
+  "id": "X01",
+  "max_rss_mb_E0a": 86.4,
+  "max_rss_mb_E0b": 86.2,
+  "max_rss_mb_E0pa": 111.8,
+  "max_rss_mb_E1": 88.5,
+  "max_rss_mb_E2": 84.9,
+  "max_rss_mb_E3": 115.5,
+  "max_rss_mb_E4": 110.5,
+  "program": "X01.py",
+  "status_E0a": "ok",
+  "status_E0b": "ok",
+  "status_E0pa": "ok",
+  "status_E1": "ok",
+  "status_E2": "ok",
+  "status_E3": "ok",
+  "status_E4": "ok",
+  "warn_E0a_pilot": [],
+  "warn_E0a_prereg": [],
+  "warn_E1_prereg": [],
+  "warn_E2_prereg": [],
+  "warn_E3_prereg": [],
+  "warn_E4_prereg": []
+ },
+ {
+  "E0a~E0b": {
+   "baseline_status": "ok",
+   "class": "IDENTICAL",
+   "class_pilot_rule": "IDENTICAL",
+   "drift": false,
+   "excluded": null,
+   "first_diff": null,
+   "magnitude": null,
+   "order_note": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E1": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": 2.0,
+    "b": 3.0,
+    "column": "x",
+    "kind": "cell",
+    "row": 0
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0a~E2": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": 2.0,
+    "b": 3.0,
+    "column": "x",
+    "kind": "cell",
+    "row": 0
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E3": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": 2.0,
+    "b": 3.0,
+    "column": "x",
+    "kind": "cell",
+    "row": 0
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "E0pa~E4": {
+   "baseline_status": "ok",
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "excluded": null,
+   "first_diff": {
+    "a": 2.0,
+    "b": 3.0,
+    "column": "x",
+    "kind": "cell",
+    "row": 0
+   },
+   "magnitude": "SUBSTANTIVE",
+   "order_note": null,
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "target_status": "ok",
+   "warned_E0a": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   }
+  },
+  "attempt": "a",
+  "id": "X02",
+  "max_rss_mb_E0a": 86.9,
+  "max_rss_mb_E0b": 87.1,
+  "max_rss_mb_E0pa": 109.9,
+  "max_rss_mb_E1": 88.3,
+  "max_rss_mb_E2": 84.5,
+  "max_rss_mb_E3": 115.3,
+  "max_rss_mb_E4": 112.9,
+  "program": "X02.py",
+  "status_E0a": "ok",
+  "status_E0b": "ok",
+  "status_E0pa": "ok",
+  "status_E1": "ok",
+  "status_E2": "ok",
+  "status_E3": "ok",
+  "status_E4": "ok",
+  "warn_E0a_pilot": [],
+  "warn_E0a_prereg": [],
+  "warn_E1_prereg": [],
+  "warn_E2_prereg": [],
+  "warn_E3_prereg": [],
+  "warn_E4_prereg": []
+ }
+]

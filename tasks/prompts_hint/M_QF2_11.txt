@@ -1,0 +1,12 @@
+You are given CSV file(s) in the current working directory:
+
+- sessions.csv: Website sessions in June 2025 (250 rows, not in time order): session_id (whole number), user_code (five-digit code with leading zeros), started_at (timestamp written as YYYY-MM-DD HH:MM:SS; no empty cells), pages_viewed (whole number; about 3% empty), device (desktop, mobile or tablet; capital letters and spaces are inconsistent).
+
+Task: Put the sessions in time order of started_at and compute the gap in seconds between each session start and the previous one. `result` should be the median gap in seconds (a float).
+
+Requirements:
+- Write a complete Python script that reads the file(s) from the current directory.
+- Use only pandas, numpy and the Python standard library.
+- Store the final answer in a top-level variable named `result`.
+- Reply with a single Python code block.
+- The script will run with the latest pandas 3 release.

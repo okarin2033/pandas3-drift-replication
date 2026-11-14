@@ -1,0 +1,11 @@
+PASS status_A.tsv matches confirm_status schema []
+PASS data_needs_A.tsv matches data_needs schema []
+PASS every assigned SILENT row has a status 23/23
+PASS L01-L06 LOUD on E1 
+PASS NOT_REPRODUCED rows have two attempts and a note 
+PASS CONFIRMED rows drift on E1 or E2 
+PASS every attempt deterministic E0a vs E0b 34 attempts
+PASS every listed program was run on 7 configs 
+PASS data needs for every confirmed row 
+PASS NOTES_A.md reports per-family counts {'QF1_STRING': 5, 'QF2_DATETIME': 10, 'QF3_COW': 6}
+ALL PASS

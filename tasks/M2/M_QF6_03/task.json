@@ -1,0 +1,74 @@
+{
+ "id": "M_QF6_03",
+ "stratum": "M",
+ "family": "QF6_NA_DTYPE",
+ "generic_family": null,
+ "catalogue_row": "N05",
+ "files": [
+  {
+   "path": "QF6_NA_DTYPE/quiz_scores.csv",
+   "description": "Quiz results (80 rows, one per student in seat order, no other columns): quiz_a and quiz_b (points 0-10, whole numbers, many equal values; about 9% and 6% of cells empty for absent students)."
+  }
+ ],
+ "task_text": "The pass marks are 6 points for quiz_a and 5 points for quiz_b. An empty cell means the student was absent, and an absent student did not reach the pass mark. For each quiz, give the share of all 80 students who reached the pass mark (score at or above it). `result` should be a Series indexed by quiz.",
+ "allowed_task_words": [],
+ "invited_ids_author": [
+  "N05"
+ ],
+ "order_significant": false,
+ "sort_keys": [],
+ "dtype_significant": false,
+ "intended_computation": "quiz_a: number of scores >= 6 divided by 80; quiz_b: number of scores >= 5 divided by 80 (absent students count in the denominator).",
+ "acceptable_variants": {
+  "row_order": "any",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": "shares as 0-1 values to 6 significant digits."
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 2
+   }
+  },
+  {
+   "check": "rate_in_unit_interval",
+   "args": {
+    "columns": [
+     "__values__"
+    ]
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "HARM",
+  "reason": "Comparing the scores with a nullable pass-mark Series gave False for absent students on 2.x (counted in the denominator); on 3.1 it gives missing values that mean() skips, raising the shares."
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M2",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 by pkg:TASKS_M2 for catalogue row N05; naive.py shows the invited idiom, reference.py is the version-robust reference."
+}

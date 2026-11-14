@@ -1,0 +1,78 @@
+{
+ "id": "M_QF4_11",
+ "stratum": "M",
+ "family": "QF4_GROUPBY",
+ "generic_family": null,
+ "catalogue_row": "G05",
+ "files": [
+  {
+   "path": "QF4_GROUPBY/purchases.csv",
+   "description": "Shop purchases (900 rows): purchase_id (whole number), subscriber_id (refers to subscribers.csv; most subscribers have several purchases), store_city (city name; the same city is written with different capitals and extra spaces, e.g. \"lisbon\" and \"LISBON\"; about 2% empty), quantity (whole number), spend (two decimals)."
+  }
+ ],
+ "task_text": "For each store city (surrounding spaces removed, each word capitalised; purchases without a city are left out), compute the population variance of the spend, i.e. dividing by the number of purchases n (not n - 1), rounded to two decimals. `result` should be a Series indexed by city.",
+ "allowed_task_words": [
+  "population variance"
+ ],
+ "invited_ids_author": [
+  "G05"
+ ],
+ "order_significant": false,
+ "sort_keys": [],
+ "dtype_significant": false,
+ "intended_computation": "Tidy store_city (6 cities) and per city return the variance of spend with divisor n, rounded to 2 decimals.",
+ "acceptable_variants": {
+  "row_order": "any",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": ""
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 6
+   }
+  },
+  {
+   "check": "numeric_in_range",
+   "args": {
+    "columns": [
+     "__values__"
+    ],
+    "min": 0,
+    "max": null
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "FIX",
+  "reason": "on 2.x the NumPy variance passed to agg is replaced by the pandas n-1 version; 3.x keeps the n divisor that was asked for"
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M1",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 in package TASKS_M1; task text, card, naive solution, reference and predicted direction were prepared there."
+}

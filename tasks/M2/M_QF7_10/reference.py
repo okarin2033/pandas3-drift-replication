@@ -1,0 +1,10 @@
+# M_QF7_10: version-robust reference solution.
+# drafted_by pkg:TASKS_M2 (2026-11-11); status: prepared.
+import csv
+import numpy as np
+import pandas as pd
+
+with open("parcel_rates.csv", encoding="utf-8", newline="") as f:
+    rows = [(float(r["weight_kg"]), int(r["zones"]), float(r["fee"]) if r["fee"].strip() != "" else None)
+            for r in csv.DictReader(f)]
+result = float(max(r[2] for r in rows if r[0] <= 12 and r[2] is not None))

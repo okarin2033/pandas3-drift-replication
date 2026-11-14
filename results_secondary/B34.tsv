@@ -1,0 +1,745 @@
+pair	variant	outcome	model	stratum	family	split	x	n	n_own	generated	rate	wilson_lo	wilson_hi	boot_lo	boot_hi	boot_dropped	rare_event	cp_deff_upper	entering_models
+E0a~E1	all tasks	loc_silent	anthropic__claude-haiku-4.5	M			25	629	629	640	0.039746	0.027064	0.058015	0.014308	0.068910	0	no	0.076061	
+E0a~E1	all tasks	loc_silent	anthropic__claude-haiku-4.5	M	QF1		4	75	75	80	0.053333	0.020933	0.129260				yes	0.169418	
+E0a~E1	all tasks	loc_silent	anthropic__claude-haiku-4.5	M	QF2		9	79	79	80	0.113924	0.061106	0.202548				no	0.301554	
+E0a~E1	all tasks	loc_silent	anthropic__claude-haiku-4.5	M	QF3		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_silent	anthropic__claude-haiku-4.5	M	QF4		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_silent	anthropic__claude-haiku-4.5	M	QF5		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_silent	anthropic__claude-haiku-4.5	M	QF6		12	77	77	80	0.155844	0.091459	0.252937				no	0.369585	
+E0a~E1	all tasks	loc_silent	anthropic__claude-haiku-4.5	M	QF7		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_silent	anthropic__claude-haiku-4.5	M	QF8		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+E0a~E1	all tasks	loc_silent	anthropic__claude-haiku-5.5	M			25	640	640	640	0.039062	0.026597	0.057029	0.014063	0.067187	0	no	0.072244	
+E0a~E1	all tasks	loc_silent	anthropic__claude-haiku-5.5	M	QF1		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_silent	anthropic__claude-haiku-5.5	M	QF2		14	80	80	80	0.175000	0.107206	0.272575				no	0.357211	
+E0a~E1	all tasks	loc_silent	anthropic__claude-haiku-5.5	M	QF3		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_silent	anthropic__claude-haiku-5.5	M	QF4		1	80	80	80	0.012500	0.002210	0.067463				yes	0.086659	
+E0a~E1	all tasks	loc_silent	anthropic__claude-haiku-5.5	M	QF5		3	80	80	80	0.037500	0.012835	0.104547				yes	0.165881	
+E0a~E1	all tasks	loc_silent	anthropic__claude-haiku-5.5	M	QF6		7	80	80	80	0.087500	0.043032	0.169768				no	0.270012	
+E0a~E1	all tasks	loc_silent	anthropic__claude-haiku-5.5	M	QF7		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_silent	anthropic__claude-haiku-5.5	M	QF8		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_silent	anthropic__claude-sonnet-5.5	M			19	640	640	640	0.029687	0.019087	0.045901	0.006250	0.059375	0	no	0.065078	
+E0a~E1	all tasks	loc_silent	anthropic__claude-sonnet-5.5	M	QF1		5	80	80	80	0.062500	0.026989	0.138101				no	0.263957	
+E0a~E1	all tasks	loc_silent	anthropic__claude-sonnet-5.5	M	QF2		6	80	80	80	0.075000	0.034825	0.154120				no	0.260113	
+E0a~E1	all tasks	loc_silent	anthropic__claude-sonnet-5.5	M	QF3		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_silent	anthropic__claude-sonnet-5.5	M	QF4		5	80	80	80	0.062500	0.026989	0.138101				no	0.263957	
+E0a~E1	all tasks	loc_silent	anthropic__claude-sonnet-5.5	M	QF5		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_silent	anthropic__claude-sonnet-5.5	M	QF6		3	80	80	80	0.037500	0.012835	0.104547				yes	0.165881	
+E0a~E1	all tasks	loc_silent	anthropic__claude-sonnet-5.5	M	QF7		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_silent	anthropic__claude-sonnet-5.5	M	QF8		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_silent	deepseek__deepseek-v3.2	M			33	629	629	640	0.052464	0.037599	0.072763	0.027027	0.080131	0	no	0.084091	
+E0a~E1	all tasks	loc_silent	deepseek__deepseek-v3.2	M	QF1		5	79	79	80	0.063291	0.027335	0.139749				no	0.160147	
+E0a~E1	all tasks	loc_silent	deepseek__deepseek-v3.2	M	QF2		13	76	76	80	0.171053	0.102780	0.270979				no	0.357896	
+E0a~E1	all tasks	loc_silent	deepseek__deepseek-v3.2	M	QF3		1	79	79	80	0.012658	0.002238	0.068276				yes	0.087271	
+E0a~E1	all tasks	loc_silent	deepseek__deepseek-v3.2	M	QF4		2	78	78	80	0.025641	0.007060	0.088753				yes	0.114092	
+E0a~E1	all tasks	loc_silent	deepseek__deepseek-v3.2	M	QF5		1	79	79	80	0.012658	0.002238	0.068276				yes	0.087271	
+E0a~E1	all tasks	loc_silent	deepseek__deepseek-v3.2	M	QF6		11	80	80	80	0.137500	0.078547	0.229671				no	0.295186	
+E0a~E1	all tasks	loc_silent	deepseek__deepseek-v3.2	M	QF7		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+E0a~E1	all tasks	loc_silent	deepseek__deepseek-v3.2	M	QF8		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+E0a~E1	all tasks	loc_silent	google__gemma-4-31b-it	M			48	638	638	640	0.075235	0.057213	0.098341	0.040752	0.114067	0	no	0.115690	
+E0a~E1	all tasks	loc_silent	google__gemma-4-31b-it	M	QF1		12	80	80	80	0.150000	0.087940	0.244132				no	0.321460	
+E0a~E1	all tasks	loc_silent	google__gemma-4-31b-it	M	QF2		9	80	80	80	0.112500	0.060327	0.200182				no	0.276447	
+E0a~E1	all tasks	loc_silent	google__gemma-4-31b-it	M	QF3		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_silent	google__gemma-4-31b-it	M	QF4		5	80	80	80	0.062500	0.026989	0.138101				no	0.184663	
+E0a~E1	all tasks	loc_silent	google__gemma-4-31b-it	M	QF5		7	80	80	80	0.087500	0.043032	0.169768				no	0.260523	
+E0a~E1	all tasks	loc_silent	google__gemma-4-31b-it	M	QF6		15	80	80	80	0.187500	0.117053	0.286583				no	0.384104	
+E0a~E1	all tasks	loc_silent	google__gemma-4-31b-it	M	QF7		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_silent	google__gemma-4-31b-it	M	QF8		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+E0a~E1	all tasks	loc_silent	openai__gpt-5.4-mini	M			43	635	635	640	0.067717	0.050660	0.089972	0.034536	0.105346	0	no	0.108737	
+E0a~E1	all tasks	loc_silent	openai__gpt-5.4-mini	M	QF1		6	80	80	80	0.075000	0.034825	0.154120				no	0.189769	
+E0a~E1	all tasks	loc_silent	openai__gpt-5.4-mini	M	QF2		17	80	80	80	0.212500	0.137124	0.314222				no	0.406140	
+E0a~E1	all tasks	loc_silent	openai__gpt-5.4-mini	M	QF3		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_silent	openai__gpt-5.4-mini	M	QF4		4	79	79	80	0.050633	0.019864	0.123077				yes	0.216979	
+E0a~E1	all tasks	loc_silent	openai__gpt-5.4-mini	M	QF5		4	78	78	80	0.051282	0.020121	0.124567				yes	0.217871	
+E0a~E1	all tasks	loc_silent	openai__gpt-5.4-mini	M	QF6		12	80	80	80	0.150000	0.087940	0.244132				no	0.357258	
+E0a~E1	all tasks	loc_silent	openai__gpt-5.4-mini	M	QF7		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+E0a~E1	all tasks	loc_silent	openai__gpt-5.4-mini	M	QF8		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_silent	openai__gpt-5.6-terra	M			64	636	636	640	0.100629	0.079594	0.126460	0.058085	0.147799	0	no	0.151311	
+E0a~E1	all tasks	loc_silent	openai__gpt-5.6-terra	M	QF1		11	79	79	80	0.139241	0.079565	0.232373				no	0.349223	
+E0a~E1	all tasks	loc_silent	openai__gpt-5.6-terra	M	QF2		20	80	80	80	0.250000	0.168062	0.354847				no	0.455174	
+E0a~E1	all tasks	loc_silent	openai__gpt-5.6-terra	M	QF3		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_silent	openai__gpt-5.6-terra	M	QF4		4	78	78	80	0.051282	0.020121	0.124567				yes	0.217880	
+E0a~E1	all tasks	loc_silent	openai__gpt-5.6-terra	M	QF5		7	80	80	80	0.087500	0.043032	0.169768				no	0.270012	
+E0a~E1	all tasks	loc_silent	openai__gpt-5.6-terra	M	QF6		22	80	80	80	0.275000	0.189178	0.381441				no	0.500640	
+E0a~E1	all tasks	loc_silent	openai__gpt-5.6-terra	M	QF7		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+E0a~E1	all tasks	loc_silent	openai__gpt-5.6-terra	M	QF8		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_silent	openai__gpt-oss-20b	M			49	591	591	640	0.082910	0.063281	0.107926	0.051581	0.117951	0	no	0.121358	
+E0a~E1	all tasks	loc_silent	openai__gpt-oss-20b	M	QF1		16	77	77	80	0.207792	0.132151	0.311204				no	0.373592	
+E0a~E1	all tasks	loc_silent	openai__gpt-oss-20b	M	QF2		13	71	71	80	0.183099	0.110247	0.288482				no	0.381142	
+E0a~E1	all tasks	loc_silent	openai__gpt-oss-20b	M	QF3		0	73	73	80	0.000000	0.000000	0.049992				yes	0.067864	
+E0a~E1	all tasks	loc_silent	openai__gpt-oss-20b	M	QF4		12	73	73	80	0.164384	0.096613	0.265710				no	0.290942	
+E0a~E1	all tasks	loc_silent	openai__gpt-oss-20b	M	QF5		3	78	78	80	0.038462	0.013166	0.107084				yes	0.126515	
+E0a~E1	all tasks	loc_silent	openai__gpt-oss-20b	M	QF6		5	70	70	80	0.071429	0.030894	0.156554				no	0.230959	
+E0a~E1	all tasks	loc_silent	openai__gpt-oss-20b	M	QF7		0	77	77	80	0.000000	0.000000	0.047518				yes	0.066273	
+E0a~E1	all tasks	loc_silent	openai__gpt-oss-20b	M	QF8		0	72	72	80	0.000000	0.000000	0.050651				yes	0.068289	
+E0a~E1	all tasks	loc_silent	qwen__qwen3.5-9b	M			19	456	456	640	0.041667	0.026834	0.064157	0.017467	0.071584	0	no	0.073922	
+E0a~E1	all tasks	loc_silent	qwen__qwen3.5-9b	M	QF1		7	62	62	80	0.112903	0.055779	0.215197				no	0.272515	
+E0a~E1	all tasks	loc_silent	qwen__qwen3.5-9b	M	QF2		8	47	47	80	0.170213	0.088864	0.301398				no	0.352639	
+E0a~E1	all tasks	loc_silent	qwen__qwen3.5-9b	M	QF3		0	60	60	80	0.000000	0.000000	0.060172				yes	0.074471	
+E0a~E1	all tasks	loc_silent	qwen__qwen3.5-9b	M	QF4		1	56	56	80	0.017857	0.003159	0.094456				yes	0.120748	
+E0a~E1	all tasks	loc_silent	qwen__qwen3.5-9b	M	QF5		0	51	51	80	0.000000	0.000000	0.070047				yes	0.080972	
+E0a~E1	all tasks	loc_silent	qwen__qwen3.5-9b	M	QF6		3	53	53	80	0.056604	0.019437	0.153702				yes	0.203400	
+E0a~E1	all tasks	loc_silent	qwen__qwen3.5-9b	M	QF7		0	75	75	80	0.000000	0.000000	0.048724				yes	0.067048	
+E0a~E1	all tasks	loc_silent	qwen__qwen3.5-9b	M	QF8		0	52	52	80	0.000000	0.000000	0.068792				yes	0.080141	
+E0a~E1	all tasks	loc_silent	qwen__qwen3.6-35b-a3b	M			30	612	612	640	0.049020	0.034550	0.069116	0.029126	0.072131	0	no	0.075508	
+E0a~E1	all tasks	loc_silent	qwen__qwen3.6-35b-a3b	M	QF1		17	79	79	80	0.215190	0.138922	0.317872				no	0.357943	
+E0a~E1	all tasks	loc_silent	qwen__qwen3.6-35b-a3b	M	QF2		6	74	74	80	0.081081	0.037690	0.165819				no	0.186789	
+E0a~E1	all tasks	loc_silent	qwen__qwen3.6-35b-a3b	M	QF3		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+E0a~E1	all tasks	loc_silent	qwen__qwen3.6-35b-a3b	M	QF4		4	76	76	80	0.052632	0.020655	0.127657				yes	0.147010	
+E0a~E1	all tasks	loc_silent	qwen__qwen3.6-35b-a3b	M	QF5		0	76	76	80	0.000000	0.000000	0.048114				yes	0.066655	
+E0a~E1	all tasks	loc_silent	qwen__qwen3.6-35b-a3b	M	QF6		3	78	78	80	0.038462	0.013166	0.107084				yes	0.126515	
+E0a~E1	all tasks	loc_silent	qwen__qwen3.6-35b-a3b	M	QF7		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+E0a~E1	all tasks	loc_silent	qwen__qwen3.6-35b-a3b	M	QF8		0	72	72	80	0.000000	0.000000	0.050651				yes	0.068289	
+E0a~E1	all tasks	loc_silent	MODEL_EQUAL_MEAN	M							0.057814			0.037304	0.080635	0			10
+E0a~E1	all tasks	loc_silent_any	anthropic__claude-haiku-4.5	M			25	629	629	640	0.039746	0.027064	0.058015	0.014308	0.068910	0	no	0.076061	
+E0a~E1	all tasks	loc_silent_any	anthropic__claude-haiku-4.5	M	QF1		4	75	75	80	0.053333	0.020933	0.129260				yes	0.169418	
+E0a~E1	all tasks	loc_silent_any	anthropic__claude-haiku-4.5	M	QF2		9	79	79	80	0.113924	0.061106	0.202548				no	0.301554	
+E0a~E1	all tasks	loc_silent_any	anthropic__claude-haiku-4.5	M	QF3		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_silent_any	anthropic__claude-haiku-4.5	M	QF4		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_silent_any	anthropic__claude-haiku-4.5	M	QF5		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_silent_any	anthropic__claude-haiku-4.5	M	QF6		12	77	77	80	0.155844	0.091459	0.252937				no	0.369585	
+E0a~E1	all tasks	loc_silent_any	anthropic__claude-haiku-4.5	M	QF7		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_silent_any	anthropic__claude-haiku-4.5	M	QF8		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+E0a~E1	all tasks	loc_silent_any	anthropic__claude-haiku-5.5	M			25	640	640	640	0.039062	0.026597	0.057029	0.014063	0.067187	0	no	0.072244	
+E0a~E1	all tasks	loc_silent_any	anthropic__claude-haiku-5.5	M	QF1		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_silent_any	anthropic__claude-haiku-5.5	M	QF2		14	80	80	80	0.175000	0.107206	0.272575				no	0.357211	
+E0a~E1	all tasks	loc_silent_any	anthropic__claude-haiku-5.5	M	QF3		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_silent_any	anthropic__claude-haiku-5.5	M	QF4		1	80	80	80	0.012500	0.002210	0.067463				yes	0.086659	
+E0a~E1	all tasks	loc_silent_any	anthropic__claude-haiku-5.5	M	QF5		3	80	80	80	0.037500	0.012835	0.104547				yes	0.165881	
+E0a~E1	all tasks	loc_silent_any	anthropic__claude-haiku-5.5	M	QF6		7	80	80	80	0.087500	0.043032	0.169768				no	0.270012	
+E0a~E1	all tasks	loc_silent_any	anthropic__claude-haiku-5.5	M	QF7		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_silent_any	anthropic__claude-haiku-5.5	M	QF8		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_silent_any	anthropic__claude-sonnet-5.5	M			19	640	640	640	0.029687	0.019087	0.045901	0.006250	0.059375	0	no	0.065078	
+E0a~E1	all tasks	loc_silent_any	anthropic__claude-sonnet-5.5	M	QF1		5	80	80	80	0.062500	0.026989	0.138101				no	0.263957	
+E0a~E1	all tasks	loc_silent_any	anthropic__claude-sonnet-5.5	M	QF2		6	80	80	80	0.075000	0.034825	0.154120				no	0.260113	
+E0a~E1	all tasks	loc_silent_any	anthropic__claude-sonnet-5.5	M	QF3		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_silent_any	anthropic__claude-sonnet-5.5	M	QF4		5	80	80	80	0.062500	0.026989	0.138101				no	0.263957	
+E0a~E1	all tasks	loc_silent_any	anthropic__claude-sonnet-5.5	M	QF5		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_silent_any	anthropic__claude-sonnet-5.5	M	QF6		3	80	80	80	0.037500	0.012835	0.104547				yes	0.165881	
+E0a~E1	all tasks	loc_silent_any	anthropic__claude-sonnet-5.5	M	QF7		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_silent_any	anthropic__claude-sonnet-5.5	M	QF8		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_silent_any	deepseek__deepseek-v3.2	M			33	629	629	640	0.052464	0.037599	0.072763	0.027027	0.080131	0	no	0.084091	
+E0a~E1	all tasks	loc_silent_any	deepseek__deepseek-v3.2	M	QF1		5	79	79	80	0.063291	0.027335	0.139749				no	0.160147	
+E0a~E1	all tasks	loc_silent_any	deepseek__deepseek-v3.2	M	QF2		13	76	76	80	0.171053	0.102780	0.270979				no	0.357896	
+E0a~E1	all tasks	loc_silent_any	deepseek__deepseek-v3.2	M	QF3		1	79	79	80	0.012658	0.002238	0.068276				yes	0.087271	
+E0a~E1	all tasks	loc_silent_any	deepseek__deepseek-v3.2	M	QF4		2	78	78	80	0.025641	0.007060	0.088753				yes	0.114092	
+E0a~E1	all tasks	loc_silent_any	deepseek__deepseek-v3.2	M	QF5		1	79	79	80	0.012658	0.002238	0.068276				yes	0.087271	
+E0a~E1	all tasks	loc_silent_any	deepseek__deepseek-v3.2	M	QF6		11	80	80	80	0.137500	0.078547	0.229671				no	0.295186	
+E0a~E1	all tasks	loc_silent_any	deepseek__deepseek-v3.2	M	QF7		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+E0a~E1	all tasks	loc_silent_any	deepseek__deepseek-v3.2	M	QF8		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+E0a~E1	all tasks	loc_silent_any	google__gemma-4-31b-it	M			48	638	638	640	0.075235	0.057213	0.098341	0.040752	0.114067	0	no	0.115690	
+E0a~E1	all tasks	loc_silent_any	google__gemma-4-31b-it	M	QF1		12	80	80	80	0.150000	0.087940	0.244132				no	0.321460	
+E0a~E1	all tasks	loc_silent_any	google__gemma-4-31b-it	M	QF2		9	80	80	80	0.112500	0.060327	0.200182				no	0.276447	
+E0a~E1	all tasks	loc_silent_any	google__gemma-4-31b-it	M	QF3		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_silent_any	google__gemma-4-31b-it	M	QF4		5	80	80	80	0.062500	0.026989	0.138101				no	0.184663	
+E0a~E1	all tasks	loc_silent_any	google__gemma-4-31b-it	M	QF5		7	80	80	80	0.087500	0.043032	0.169768				no	0.260523	
+E0a~E1	all tasks	loc_silent_any	google__gemma-4-31b-it	M	QF6		15	80	80	80	0.187500	0.117053	0.286583				no	0.384104	
+E0a~E1	all tasks	loc_silent_any	google__gemma-4-31b-it	M	QF7		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_silent_any	google__gemma-4-31b-it	M	QF8		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+E0a~E1	all tasks	loc_silent_any	openai__gpt-5.4-mini	M			43	635	635	640	0.067717	0.050660	0.089972	0.034536	0.105346	0	no	0.108737	
+E0a~E1	all tasks	loc_silent_any	openai__gpt-5.4-mini	M	QF1		6	80	80	80	0.075000	0.034825	0.154120				no	0.189769	
+E0a~E1	all tasks	loc_silent_any	openai__gpt-5.4-mini	M	QF2		17	80	80	80	0.212500	0.137124	0.314222				no	0.406140	
+E0a~E1	all tasks	loc_silent_any	openai__gpt-5.4-mini	M	QF3		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_silent_any	openai__gpt-5.4-mini	M	QF4		4	79	79	80	0.050633	0.019864	0.123077				yes	0.216979	
+E0a~E1	all tasks	loc_silent_any	openai__gpt-5.4-mini	M	QF5		4	78	78	80	0.051282	0.020121	0.124567				yes	0.217871	
+E0a~E1	all tasks	loc_silent_any	openai__gpt-5.4-mini	M	QF6		12	80	80	80	0.150000	0.087940	0.244132				no	0.357258	
+E0a~E1	all tasks	loc_silent_any	openai__gpt-5.4-mini	M	QF7		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+E0a~E1	all tasks	loc_silent_any	openai__gpt-5.4-mini	M	QF8		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_silent_any	openai__gpt-5.6-terra	M			64	636	636	640	0.100629	0.079594	0.126460	0.058085	0.147799	0	no	0.151311	
+E0a~E1	all tasks	loc_silent_any	openai__gpt-5.6-terra	M	QF1		11	79	79	80	0.139241	0.079565	0.232373				no	0.349223	
+E0a~E1	all tasks	loc_silent_any	openai__gpt-5.6-terra	M	QF2		20	80	80	80	0.250000	0.168062	0.354847				no	0.455174	
+E0a~E1	all tasks	loc_silent_any	openai__gpt-5.6-terra	M	QF3		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_silent_any	openai__gpt-5.6-terra	M	QF4		4	78	78	80	0.051282	0.020121	0.124567				yes	0.217880	
+E0a~E1	all tasks	loc_silent_any	openai__gpt-5.6-terra	M	QF5		7	80	80	80	0.087500	0.043032	0.169768				no	0.270012	
+E0a~E1	all tasks	loc_silent_any	openai__gpt-5.6-terra	M	QF6		22	80	80	80	0.275000	0.189178	0.381441				no	0.500640	
+E0a~E1	all tasks	loc_silent_any	openai__gpt-5.6-terra	M	QF7		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+E0a~E1	all tasks	loc_silent_any	openai__gpt-5.6-terra	M	QF8		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_silent_any	openai__gpt-oss-20b	M			49	591	591	640	0.082910	0.063281	0.107926	0.051581	0.117951	0	no	0.121358	
+E0a~E1	all tasks	loc_silent_any	openai__gpt-oss-20b	M	QF1		16	77	77	80	0.207792	0.132151	0.311204				no	0.373592	
+E0a~E1	all tasks	loc_silent_any	openai__gpt-oss-20b	M	QF2		13	71	71	80	0.183099	0.110247	0.288482				no	0.381142	
+E0a~E1	all tasks	loc_silent_any	openai__gpt-oss-20b	M	QF3		0	73	73	80	0.000000	0.000000	0.049992				yes	0.067864	
+E0a~E1	all tasks	loc_silent_any	openai__gpt-oss-20b	M	QF4		12	73	73	80	0.164384	0.096613	0.265710				no	0.290942	
+E0a~E1	all tasks	loc_silent_any	openai__gpt-oss-20b	M	QF5		3	78	78	80	0.038462	0.013166	0.107084				yes	0.126515	
+E0a~E1	all tasks	loc_silent_any	openai__gpt-oss-20b	M	QF6		5	70	70	80	0.071429	0.030894	0.156554				no	0.230959	
+E0a~E1	all tasks	loc_silent_any	openai__gpt-oss-20b	M	QF7		0	77	77	80	0.000000	0.000000	0.047518				yes	0.066273	
+E0a~E1	all tasks	loc_silent_any	openai__gpt-oss-20b	M	QF8		0	72	72	80	0.000000	0.000000	0.050651				yes	0.068289	
+E0a~E1	all tasks	loc_silent_any	qwen__qwen3.5-9b	M			19	456	456	640	0.041667	0.026834	0.064157	0.017467	0.071584	0	no	0.073922	
+E0a~E1	all tasks	loc_silent_any	qwen__qwen3.5-9b	M	QF1		7	62	62	80	0.112903	0.055779	0.215197				no	0.272515	
+E0a~E1	all tasks	loc_silent_any	qwen__qwen3.5-9b	M	QF2		8	47	47	80	0.170213	0.088864	0.301398				no	0.352639	
+E0a~E1	all tasks	loc_silent_any	qwen__qwen3.5-9b	M	QF3		0	60	60	80	0.000000	0.000000	0.060172				yes	0.074471	
+E0a~E1	all tasks	loc_silent_any	qwen__qwen3.5-9b	M	QF4		1	56	56	80	0.017857	0.003159	0.094456				yes	0.120748	
+E0a~E1	all tasks	loc_silent_any	qwen__qwen3.5-9b	M	QF5		0	51	51	80	0.000000	0.000000	0.070047				yes	0.080972	
+E0a~E1	all tasks	loc_silent_any	qwen__qwen3.5-9b	M	QF6		3	53	53	80	0.056604	0.019437	0.153702				yes	0.203400	
+E0a~E1	all tasks	loc_silent_any	qwen__qwen3.5-9b	M	QF7		0	75	75	80	0.000000	0.000000	0.048724				yes	0.067048	
+E0a~E1	all tasks	loc_silent_any	qwen__qwen3.5-9b	M	QF8		0	52	52	80	0.000000	0.000000	0.068792				yes	0.080141	
+E0a~E1	all tasks	loc_silent_any	qwen__qwen3.6-35b-a3b	M			30	612	612	640	0.049020	0.034550	0.069116	0.029126	0.072131	0	no	0.075508	
+E0a~E1	all tasks	loc_silent_any	qwen__qwen3.6-35b-a3b	M	QF1		17	79	79	80	0.215190	0.138922	0.317872				no	0.357943	
+E0a~E1	all tasks	loc_silent_any	qwen__qwen3.6-35b-a3b	M	QF2		6	74	74	80	0.081081	0.037690	0.165819				no	0.186789	
+E0a~E1	all tasks	loc_silent_any	qwen__qwen3.6-35b-a3b	M	QF3		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+E0a~E1	all tasks	loc_silent_any	qwen__qwen3.6-35b-a3b	M	QF4		4	76	76	80	0.052632	0.020655	0.127657				yes	0.147010	
+E0a~E1	all tasks	loc_silent_any	qwen__qwen3.6-35b-a3b	M	QF5		0	76	76	80	0.000000	0.000000	0.048114				yes	0.066655	
+E0a~E1	all tasks	loc_silent_any	qwen__qwen3.6-35b-a3b	M	QF6		3	78	78	80	0.038462	0.013166	0.107084				yes	0.126515	
+E0a~E1	all tasks	loc_silent_any	qwen__qwen3.6-35b-a3b	M	QF7		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+E0a~E1	all tasks	loc_silent_any	qwen__qwen3.6-35b-a3b	M	QF8		0	72	72	80	0.000000	0.000000	0.050651				yes	0.068289	
+E0a~E1	all tasks	loc_silent_any	MODEL_EQUAL_MEAN	M							0.057814			0.037304	0.080635	0			10
+E0a~E1	all tasks	loc_none	anthropic__claude-haiku-4.5	M			0	629	629	640	0.000000	0.000000	0.006070	0.000000	0.000000	0	yes	0.008455	
+E0a~E1	all tasks	loc_none	anthropic__claude-haiku-4.5	M	QF1		0	75	75	80	0.000000	0.000000	0.048724				yes	0.067048	
+E0a~E1	all tasks	loc_none	anthropic__claude-haiku-4.5	M	QF2		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+E0a~E1	all tasks	loc_none	anthropic__claude-haiku-4.5	M	QF3		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_none	anthropic__claude-haiku-4.5	M	QF4		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_none	anthropic__claude-haiku-4.5	M	QF5		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_none	anthropic__claude-haiku-4.5	M	QF6		0	77	77	80	0.000000	0.000000	0.047518				yes	0.066273	
+E0a~E1	all tasks	loc_none	anthropic__claude-haiku-4.5	M	QF7		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_none	anthropic__claude-haiku-4.5	M	QF8		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+E0a~E1	all tasks	loc_none	anthropic__claude-haiku-5.5	M			0	640	640	640	0.000000	0.000000	0.005966	0.000000	0.000000	0	yes	0.008390	
+E0a~E1	all tasks	loc_none	anthropic__claude-haiku-5.5	M	QF1		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_none	anthropic__claude-haiku-5.5	M	QF2		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_none	anthropic__claude-haiku-5.5	M	QF3		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_none	anthropic__claude-haiku-5.5	M	QF4		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_none	anthropic__claude-haiku-5.5	M	QF5		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_none	anthropic__claude-haiku-5.5	M	QF6		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_none	anthropic__claude-haiku-5.5	M	QF7		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_none	anthropic__claude-haiku-5.5	M	QF8		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_none	anthropic__claude-sonnet-5.5	M			0	640	640	640	0.000000	0.000000	0.005966	0.000000	0.000000	0	yes	0.008390	
+E0a~E1	all tasks	loc_none	anthropic__claude-sonnet-5.5	M	QF1		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_none	anthropic__claude-sonnet-5.5	M	QF2		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_none	anthropic__claude-sonnet-5.5	M	QF3		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_none	anthropic__claude-sonnet-5.5	M	QF4		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_none	anthropic__claude-sonnet-5.5	M	QF5		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_none	anthropic__claude-sonnet-5.5	M	QF6		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_none	anthropic__claude-sonnet-5.5	M	QF7		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_none	anthropic__claude-sonnet-5.5	M	QF8		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_none	deepseek__deepseek-v3.2	M			0	629	629	640	0.000000	0.000000	0.006070	0.000000	0.000000	0	yes	0.008455	
+E0a~E1	all tasks	loc_none	deepseek__deepseek-v3.2	M	QF1		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+E0a~E1	all tasks	loc_none	deepseek__deepseek-v3.2	M	QF2		0	76	76	80	0.000000	0.000000	0.048114				yes	0.066655	
+E0a~E1	all tasks	loc_none	deepseek__deepseek-v3.2	M	QF3		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+E0a~E1	all tasks	loc_none	deepseek__deepseek-v3.2	M	QF4		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+E0a~E1	all tasks	loc_none	deepseek__deepseek-v3.2	M	QF5		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+E0a~E1	all tasks	loc_none	deepseek__deepseek-v3.2	M	QF6		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_none	deepseek__deepseek-v3.2	M	QF7		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+E0a~E1	all tasks	loc_none	deepseek__deepseek-v3.2	M	QF8		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+E0a~E1	all tasks	loc_none	google__gemma-4-31b-it	M			0	638	638	640	0.000000	0.000000	0.005985	0.000000	0.000000	0	yes	0.008402	
+E0a~E1	all tasks	loc_none	google__gemma-4-31b-it	M	QF1		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_none	google__gemma-4-31b-it	M	QF2		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_none	google__gemma-4-31b-it	M	QF3		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_none	google__gemma-4-31b-it	M	QF4		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_none	google__gemma-4-31b-it	M	QF5		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_none	google__gemma-4-31b-it	M	QF6		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_none	google__gemma-4-31b-it	M	QF7		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_none	google__gemma-4-31b-it	M	QF8		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+E0a~E1	all tasks	loc_none	openai__gpt-5.4-mini	M			0	635	635	640	0.000000	0.000000	0.006013	0.000000	0.000000	0	yes	0.008419	
+E0a~E1	all tasks	loc_none	openai__gpt-5.4-mini	M	QF1		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_none	openai__gpt-5.4-mini	M	QF2		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_none	openai__gpt-5.4-mini	M	QF3		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_none	openai__gpt-5.4-mini	M	QF4		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+E0a~E1	all tasks	loc_none	openai__gpt-5.4-mini	M	QF5		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+E0a~E1	all tasks	loc_none	openai__gpt-5.4-mini	M	QF6		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_none	openai__gpt-5.4-mini	M	QF7		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+E0a~E1	all tasks	loc_none	openai__gpt-5.4-mini	M	QF8		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_none	openai__gpt-5.6-terra	M			0	636	636	640	0.000000	0.000000	0.006004	0.000000	0.000000	0	yes	0.008413	
+E0a~E1	all tasks	loc_none	openai__gpt-5.6-terra	M	QF1		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+E0a~E1	all tasks	loc_none	openai__gpt-5.6-terra	M	QF2		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_none	openai__gpt-5.6-terra	M	QF3		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_none	openai__gpt-5.6-terra	M	QF4		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+E0a~E1	all tasks	loc_none	openai__gpt-5.6-terra	M	QF5		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_none	openai__gpt-5.6-terra	M	QF6		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_none	openai__gpt-5.6-terra	M	QF7		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+E0a~E1	all tasks	loc_none	openai__gpt-5.6-terra	M	QF8		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E1	all tasks	loc_none	openai__gpt-oss-20b	M			0	591	591	640	0.000000	0.000000	0.006458	0.000000	0.000000	0	yes	0.008698	
+E0a~E1	all tasks	loc_none	openai__gpt-oss-20b	M	QF1		0	77	77	80	0.000000	0.000000	0.047518				yes	0.066273	
+E0a~E1	all tasks	loc_none	openai__gpt-oss-20b	M	QF2		0	71	71	80	0.000000	0.000000	0.051328				yes	0.068726	
+E0a~E1	all tasks	loc_none	openai__gpt-oss-20b	M	QF3		0	73	73	80	0.000000	0.000000	0.049992				yes	0.067864	
+E0a~E1	all tasks	loc_none	openai__gpt-oss-20b	M	QF4		0	73	73	80	0.000000	0.000000	0.049992				yes	0.067864	
+E0a~E1	all tasks	loc_none	openai__gpt-oss-20b	M	QF5		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+E0a~E1	all tasks	loc_none	openai__gpt-oss-20b	M	QF6		0	70	70	80	0.000000	0.000000	0.052023				yes	0.069175	
+E0a~E1	all tasks	loc_none	openai__gpt-oss-20b	M	QF7		0	77	77	80	0.000000	0.000000	0.047518				yes	0.066273	
+E0a~E1	all tasks	loc_none	openai__gpt-oss-20b	M	QF8		0	72	72	80	0.000000	0.000000	0.050651				yes	0.068289	
+E0a~E1	all tasks	loc_none	qwen__qwen3.5-9b	M			0	456	456	640	0.000000	0.000000	0.008354	0.000000	0.000000	0	yes	0.009924	
+E0a~E1	all tasks	loc_none	qwen__qwen3.5-9b	M	QF1		0	62	62	80	0.000000	0.000000	0.058344				yes	0.073278	
+E0a~E1	all tasks	loc_none	qwen__qwen3.5-9b	M	QF2		0	47	47	80	0.000000	0.000000	0.075558				yes	0.086922	
+E0a~E1	all tasks	loc_none	qwen__qwen3.5-9b	M	QF3		0	60	60	80	0.000000	0.000000	0.060172				yes	0.074471	
+E0a~E1	all tasks	loc_none	qwen__qwen3.5-9b	M	QF4		0	56	56	80	0.000000	0.000000	0.064194				yes	0.077108	
+E0a~E1	all tasks	loc_none	qwen__qwen3.5-9b	M	QF5		0	51	51	80	0.000000	0.000000	0.070047				yes	0.080972	
+E0a~E1	all tasks	loc_none	qwen__qwen3.5-9b	M	QF6		0	53	53	80	0.000000	0.000000	0.067582				yes	0.079341	
+E0a~E1	all tasks	loc_none	qwen__qwen3.5-9b	M	QF7		0	75	75	80	0.000000	0.000000	0.048724				yes	0.067048	
+E0a~E1	all tasks	loc_none	qwen__qwen3.5-9b	M	QF8		0	52	52	80	0.000000	0.000000	0.068792				yes	0.080141	
+E0a~E1	all tasks	loc_none	qwen__qwen3.6-35b-a3b	M			0	612	612	640	0.000000	0.000000	0.006238	0.000000	0.000000	0	yes	0.008560	
+E0a~E1	all tasks	loc_none	qwen__qwen3.6-35b-a3b	M	QF1		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+E0a~E1	all tasks	loc_none	qwen__qwen3.6-35b-a3b	M	QF2		0	74	74	80	0.000000	0.000000	0.049350				yes	0.067450	
+E0a~E1	all tasks	loc_none	qwen__qwen3.6-35b-a3b	M	QF3		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+E0a~E1	all tasks	loc_none	qwen__qwen3.6-35b-a3b	M	QF4		0	76	76	80	0.000000	0.000000	0.048114				yes	0.066655	
+E0a~E1	all tasks	loc_none	qwen__qwen3.6-35b-a3b	M	QF5		0	76	76	80	0.000000	0.000000	0.048114				yes	0.066655	
+E0a~E1	all tasks	loc_none	qwen__qwen3.6-35b-a3b	M	QF6		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+E0a~E1	all tasks	loc_none	qwen__qwen3.6-35b-a3b	M	QF7		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+E0a~E1	all tasks	loc_none	qwen__qwen3.6-35b-a3b	M	QF8		0	72	72	80	0.000000	0.000000	0.050651				yes	0.068289	
+E0a~E1	all tasks	loc_none	MODEL_EQUAL_MEAN	M							0.000000			0.000000	0.000000	0			10
+E0a~E1	all tasks	loc_silent	anthropic__claude-haiku-4.5	R			0	45	45	45	0.000000	0.000000	0.078652	0.000000	0.000000	0	yes	0.112928	
+E0a~E1	all tasks	loc_silent	anthropic__claude-haiku-5.5	R			0	45	45	45	0.000000	0.000000	0.078652	0.000000	0.000000	0	yes	0.112928	
+E0a~E1	all tasks	loc_silent	anthropic__claude-sonnet-5.5	R			0	45	45	45	0.000000	0.000000	0.078652	0.000000	0.000000	0	yes	0.112928	
+E0a~E1	all tasks	loc_silent	deepseek__deepseek-v3.2	R			0	44	44	45	0.000000	0.000000	0.080296	0.000000	0.000000	0	yes	0.114001	
+E0a~E1	all tasks	loc_silent	google__gemma-4-31b-it	R			0	41	41	45	0.000000	0.000000	0.085668	0.000000	0.000000	0	yes	0.117525	
+E0a~E1	all tasks	loc_silent	openai__gpt-5.4-mini	R			0	38	38	45	0.000000	0.000000	0.091810	0.000000	0.000000	0	yes	0.128868	
+E0a~E1	all tasks	loc_silent	openai__gpt-5.6-terra	R			0	45	45	45	0.000000	0.000000	0.078652	0.000000	0.000000	0	yes	0.112928	
+E0a~E1	all tasks	loc_silent	openai__gpt-oss-20b	R			0	38	38	45	0.000000	0.000000	0.091810	0.000000	0.000000	0	yes	0.128868	
+E0a~E1	all tasks	loc_silent	qwen__qwen3.5-9b	R			0	32	32	45	0.000000	0.000000	0.107179	0.000000	0.000000	0	yes	0.131915	
+E0a~E1	all tasks	loc_silent	qwen__qwen3.6-35b-a3b	R			0	43	43	45	0.000000	0.000000	0.082010	0.000000	0.000000	0	yes	0.115123	
+E0a~E1	all tasks	loc_silent	MODEL_EQUAL_MEAN	R							0.000000			0.000000	0.000000	0			10
+E0a~E1	all tasks	loc_silent_any	anthropic__claude-haiku-4.5	R			0	45	45	45	0.000000	0.000000	0.078652	0.000000	0.000000	0	yes	0.112928	
+E0a~E1	all tasks	loc_silent_any	anthropic__claude-haiku-5.5	R			0	45	45	45	0.000000	0.000000	0.078652	0.000000	0.000000	0	yes	0.112928	
+E0a~E1	all tasks	loc_silent_any	anthropic__claude-sonnet-5.5	R			0	45	45	45	0.000000	0.000000	0.078652	0.000000	0.000000	0	yes	0.112928	
+E0a~E1	all tasks	loc_silent_any	deepseek__deepseek-v3.2	R			0	44	44	45	0.000000	0.000000	0.080296	0.000000	0.000000	0	yes	0.114001	
+E0a~E1	all tasks	loc_silent_any	google__gemma-4-31b-it	R			0	41	41	45	0.000000	0.000000	0.085668	0.000000	0.000000	0	yes	0.117525	
+E0a~E1	all tasks	loc_silent_any	openai__gpt-5.4-mini	R			0	38	38	45	0.000000	0.000000	0.091810	0.000000	0.000000	0	yes	0.128868	
+E0a~E1	all tasks	loc_silent_any	openai__gpt-5.6-terra	R			0	45	45	45	0.000000	0.000000	0.078652	0.000000	0.000000	0	yes	0.112928	
+E0a~E1	all tasks	loc_silent_any	openai__gpt-oss-20b	R			0	38	38	45	0.000000	0.000000	0.091810	0.000000	0.000000	0	yes	0.128868	
+E0a~E1	all tasks	loc_silent_any	qwen__qwen3.5-9b	R			0	32	32	45	0.000000	0.000000	0.107179	0.000000	0.000000	0	yes	0.131915	
+E0a~E1	all tasks	loc_silent_any	qwen__qwen3.6-35b-a3b	R			0	43	43	45	0.000000	0.000000	0.082010	0.000000	0.000000	0	yes	0.115123	
+E0a~E1	all tasks	loc_silent_any	MODEL_EQUAL_MEAN	R							0.000000			0.000000	0.000000	0			10
+E0a~E1	all tasks	loc_none	anthropic__claude-haiku-4.5	R			0	45	45	45	0.000000	0.000000	0.078652	0.000000	0.000000	0	yes	0.112928	
+E0a~E1	all tasks	loc_none	anthropic__claude-haiku-5.5	R			0	45	45	45	0.000000	0.000000	0.078652	0.000000	0.000000	0	yes	0.112928	
+E0a~E1	all tasks	loc_none	anthropic__claude-sonnet-5.5	R			0	45	45	45	0.000000	0.000000	0.078652	0.000000	0.000000	0	yes	0.112928	
+E0a~E1	all tasks	loc_none	deepseek__deepseek-v3.2	R			0	44	44	45	0.000000	0.000000	0.080296	0.000000	0.000000	0	yes	0.114001	
+E0a~E1	all tasks	loc_none	google__gemma-4-31b-it	R			0	41	41	45	0.000000	0.000000	0.085668	0.000000	0.000000	0	yes	0.117525	
+E0a~E1	all tasks	loc_none	openai__gpt-5.4-mini	R			0	38	38	45	0.000000	0.000000	0.091810	0.000000	0.000000	0	yes	0.128868	
+E0a~E1	all tasks	loc_none	openai__gpt-5.6-terra	R			0	45	45	45	0.000000	0.000000	0.078652	0.000000	0.000000	0	yes	0.112928	
+E0a~E1	all tasks	loc_none	openai__gpt-oss-20b	R			0	38	38	45	0.000000	0.000000	0.091810	0.000000	0.000000	0	yes	0.128868	
+E0a~E1	all tasks	loc_none	qwen__qwen3.5-9b	R			0	32	32	45	0.000000	0.000000	0.107179	0.000000	0.000000	0	yes	0.131915	
+E0a~E1	all tasks	loc_none	qwen__qwen3.6-35b-a3b	R			0	43	43	45	0.000000	0.000000	0.082010	0.000000	0.000000	0	yes	0.115123	
+E0a~E1	all tasks	loc_none	MODEL_EQUAL_MEAN	R							0.000000			0.000000	0.000000	0			10
+E0a~E1	all tasks	loc_silent	anthropic__claude-haiku-4.5	A			6	305	305	315	0.019672	0.009046	0.042247	0.000000	0.056667	0	no	0.072990	
+E0a~E1	all tasks	loc_silent	anthropic__claude-haiku-5.5	A			0	314	314	315	0.000000	0.000000	0.012086	0.000000	0.000000	0	yes	0.016997	
+E0a~E1	all tasks	loc_silent	anthropic__claude-sonnet-5.5	A			0	315	315	315	0.000000	0.000000	0.012048	0.000000	0.000000	0	yes	0.016973	
+E0a~E1	all tasks	loc_silent	deepseek__deepseek-v3.2	A			1	309	309	315	0.003236	0.000572	0.018101	0.000000	0.009804	0	yes	0.022903	
+E0a~E1	all tasks	loc_silent	google__gemma-4-31b-it	A			5	313	313	315	0.015974	0.006842	0.036844	0.000000	0.048232	0	no	0.073256	
+E0a~E1	all tasks	loc_silent	openai__gpt-5.4-mini	A			0	310	310	315	0.000000	0.000000	0.012240	0.000000	0.000000	0	yes	0.017093	
+E0a~E1	all tasks	loc_silent	openai__gpt-5.6-terra	A			5	314	314	315	0.015924	0.006820	0.036728	0.000000	0.047923	0	no	0.073177	
+E0a~E1	all tasks	loc_silent	openai__gpt-oss-20b	A			11	286	286	315	0.038462	0.021610	0.067547	0.010526	0.073427	0	no	0.078417	
+E0a~E1	all tasks	loc_silent	qwen__qwen3.5-9b	A			3	195	195	315	0.015385	0.005246	0.044248	0.000000	0.035002	0	yes	0.046314	
+E0a~E1	all tasks	loc_silent	qwen__qwen3.6-35b-a3b	A			7	298	298	315	0.023490	0.011424	0.047685	0.000000	0.062707	0	no	0.074228	
+E0a~E1	all tasks	loc_silent	MODEL_EQUAL_MEAN	A							0.013214			0.002085	0.032318	0			10
+E0a~E1	all tasks	loc_silent_any	anthropic__claude-haiku-4.5	A			6	305	305	315	0.019672	0.009046	0.042247	0.000000	0.056667	0	no	0.072990	
+E0a~E1	all tasks	loc_silent_any	anthropic__claude-haiku-5.5	A			0	314	314	315	0.000000	0.000000	0.012086	0.000000	0.000000	0	yes	0.016997	
+E0a~E1	all tasks	loc_silent_any	anthropic__claude-sonnet-5.5	A			0	315	315	315	0.000000	0.000000	0.012048	0.000000	0.000000	0	yes	0.016973	
+E0a~E1	all tasks	loc_silent_any	deepseek__deepseek-v3.2	A			1	309	309	315	0.003236	0.000572	0.018101	0.000000	0.009804	0	yes	0.022903	
+E0a~E1	all tasks	loc_silent_any	google__gemma-4-31b-it	A			5	313	313	315	0.015974	0.006842	0.036844	0.000000	0.048232	0	no	0.073256	
+E0a~E1	all tasks	loc_silent_any	openai__gpt-5.4-mini	A			0	310	310	315	0.000000	0.000000	0.012240	0.000000	0.000000	0	yes	0.017093	
+E0a~E1	all tasks	loc_silent_any	openai__gpt-5.6-terra	A			5	314	314	315	0.015924	0.006820	0.036728	0.000000	0.047923	0	no	0.073177	
+E0a~E1	all tasks	loc_silent_any	openai__gpt-oss-20b	A			11	286	286	315	0.038462	0.021610	0.067547	0.010526	0.073427	0	no	0.078417	
+E0a~E1	all tasks	loc_silent_any	qwen__qwen3.5-9b	A			3	195	195	315	0.015385	0.005246	0.044248	0.000000	0.035002	0	yes	0.046314	
+E0a~E1	all tasks	loc_silent_any	qwen__qwen3.6-35b-a3b	A			7	298	298	315	0.023490	0.011424	0.047685	0.000000	0.062707	0	no	0.074228	
+E0a~E1	all tasks	loc_silent_any	MODEL_EQUAL_MEAN	A							0.013214			0.002085	0.032318	0			10
+E0a~E1	all tasks	loc_none	anthropic__claude-haiku-4.5	A			0	305	305	315	0.000000	0.000000	0.012438	0.000000	0.000000	0	yes	0.017218	
+E0a~E1	all tasks	loc_none	anthropic__claude-haiku-5.5	A			0	314	314	315	0.000000	0.000000	0.012086	0.000000	0.000000	0	yes	0.016997	
+E0a~E1	all tasks	loc_none	anthropic__claude-sonnet-5.5	A			0	315	315	315	0.000000	0.000000	0.012048	0.000000	0.000000	0	yes	0.016973	
+E0a~E1	all tasks	loc_none	deepseek__deepseek-v3.2	A			0	309	309	315	0.000000	0.000000	0.012279	0.000000	0.000000	0	yes	0.017118	
+E0a~E1	all tasks	loc_none	google__gemma-4-31b-it	A			0	313	313	315	0.000000	0.000000	0.012124	0.000000	0.000000	0	yes	0.017021	
+E0a~E1	all tasks	loc_none	openai__gpt-5.4-mini	A			0	310	310	315	0.000000	0.000000	0.012240	0.000000	0.000000	0	yes	0.017093	
+E0a~E1	all tasks	loc_none	openai__gpt-5.6-terra	A			0	314	314	315	0.000000	0.000000	0.012086	0.000000	0.000000	0	yes	0.016997	
+E0a~E1	all tasks	loc_none	openai__gpt-oss-20b	A			0	286	286	315	0.000000	0.000000	0.013254	0.000000	0.000000	0	yes	0.017731	
+E0a~E1	all tasks	loc_none	qwen__qwen3.5-9b	A			0	195	195	315	0.000000	0.000000	0.019319	0.000000	0.000000	0	yes	0.021565	
+E0a~E1	all tasks	loc_none	qwen__qwen3.6-35b-a3b	A			0	298	298	315	0.000000	0.000000	0.012727	0.000000	0.000000	0	yes	0.017399	
+E0a~E1	all tasks	loc_none	MODEL_EQUAL_MEAN	A							0.000000			0.000000	0.000000	0			10
+E0a~E1	without ruled R tasks (LR61/LR70)	loc_silent	anthropic__claude-haiku-4.5	R			0	40	40	40	0.000000	0.000000	0.087622	0.000000	0.000000	0	yes	0.126116	
+E0a~E1	without ruled R tasks (LR61/LR70)	loc_silent	anthropic__claude-haiku-5.5	R			0	40	40	40	0.000000	0.000000	0.087622	0.000000	0.000000	0	yes	0.126116	
+E0a~E1	without ruled R tasks (LR61/LR70)	loc_silent	anthropic__claude-sonnet-5.5	R			0	40	40	40	0.000000	0.000000	0.087622	0.000000	0.000000	0	yes	0.126116	
+E0a~E1	without ruled R tasks (LR61/LR70)	loc_silent	deepseek__deepseek-v3.2	R			0	39	39	40	0.000000	0.000000	0.089667	0.000000	0.000000	0	yes	0.127458	
+E0a~E1	without ruled R tasks (LR61/LR70)	loc_silent	google__gemma-4-31b-it	R			0	36	36	40	0.000000	0.000000	0.096419	0.000000	0.000000	0	yes	0.131915	
+E0a~E1	without ruled R tasks (LR61/LR70)	loc_silent	openai__gpt-5.4-mini	R			0	33	33	40	0.000000	0.000000	0.104270	0.000000	0.000000	0	yes	0.146335	
+E0a~E1	without ruled R tasks (LR61/LR70)	loc_silent	openai__gpt-5.6-terra	R			0	40	40	40	0.000000	0.000000	0.087622	0.000000	0.000000	0	yes	0.126116	
+E0a~E1	without ruled R tasks (LR61/LR70)	loc_silent	openai__gpt-oss-20b	R			0	33	33	40	0.000000	0.000000	0.104270	0.000000	0.000000	0	yes	0.146335	
+E0a~E1	without ruled R tasks (LR61/LR70)	loc_silent	qwen__qwen3.5-9b	R			0	27	27	40	0.000000	0.000000	0.124555	0.000000	0.000000	0	yes	0.150966	
+E0a~E1	without ruled R tasks (LR61/LR70)	loc_silent	qwen__qwen3.6-35b-a3b	R			0	38	38	40	0.000000	0.000000	0.091810	0.000000	0.000000	0	yes	0.128868	
+E0a~E1	without ruled R tasks (LR61/LR70)	loc_silent	MODEL_EQUAL_MEAN	R							0.000000			0.000000	0.000000	0			10
+E0a~E1	without ruled R tasks (LR61/LR70)	loc_silent_any	anthropic__claude-haiku-4.5	R			0	40	40	40	0.000000	0.000000	0.087622	0.000000	0.000000	0	yes	0.126116	
+E0a~E1	without ruled R tasks (LR61/LR70)	loc_silent_any	anthropic__claude-haiku-5.5	R			0	40	40	40	0.000000	0.000000	0.087622	0.000000	0.000000	0	yes	0.126116	
+E0a~E1	without ruled R tasks (LR61/LR70)	loc_silent_any	anthropic__claude-sonnet-5.5	R			0	40	40	40	0.000000	0.000000	0.087622	0.000000	0.000000	0	yes	0.126116	
+E0a~E1	without ruled R tasks (LR61/LR70)	loc_silent_any	deepseek__deepseek-v3.2	R			0	39	39	40	0.000000	0.000000	0.089667	0.000000	0.000000	0	yes	0.127458	
+E0a~E1	without ruled R tasks (LR61/LR70)	loc_silent_any	google__gemma-4-31b-it	R			0	36	36	40	0.000000	0.000000	0.096419	0.000000	0.000000	0	yes	0.131915	
+E0a~E1	without ruled R tasks (LR61/LR70)	loc_silent_any	openai__gpt-5.4-mini	R			0	33	33	40	0.000000	0.000000	0.104270	0.000000	0.000000	0	yes	0.146335	
+E0a~E1	without ruled R tasks (LR61/LR70)	loc_silent_any	openai__gpt-5.6-terra	R			0	40	40	40	0.000000	0.000000	0.087622	0.000000	0.000000	0	yes	0.126116	
+E0a~E1	without ruled R tasks (LR61/LR70)	loc_silent_any	openai__gpt-oss-20b	R			0	33	33	40	0.000000	0.000000	0.104270	0.000000	0.000000	0	yes	0.146335	
+E0a~E1	without ruled R tasks (LR61/LR70)	loc_silent_any	qwen__qwen3.5-9b	R			0	27	27	40	0.000000	0.000000	0.124555	0.000000	0.000000	0	yes	0.150966	
+E0a~E1	without ruled R tasks (LR61/LR70)	loc_silent_any	qwen__qwen3.6-35b-a3b	R			0	38	38	40	0.000000	0.000000	0.091810	0.000000	0.000000	0	yes	0.128868	
+E0a~E1	without ruled R tasks (LR61/LR70)	loc_silent_any	MODEL_EQUAL_MEAN	R							0.000000			0.000000	0.000000	0			10
+E0a~E1	without ruled R tasks (LR61/LR70)	loc_none	anthropic__claude-haiku-4.5	R			0	40	40	40	0.000000	0.000000	0.087622	0.000000	0.000000	0	yes	0.126116	
+E0a~E1	without ruled R tasks (LR61/LR70)	loc_none	anthropic__claude-haiku-5.5	R			0	40	40	40	0.000000	0.000000	0.087622	0.000000	0.000000	0	yes	0.126116	
+E0a~E1	without ruled R tasks (LR61/LR70)	loc_none	anthropic__claude-sonnet-5.5	R			0	40	40	40	0.000000	0.000000	0.087622	0.000000	0.000000	0	yes	0.126116	
+E0a~E1	without ruled R tasks (LR61/LR70)	loc_none	deepseek__deepseek-v3.2	R			0	39	39	40	0.000000	0.000000	0.089667	0.000000	0.000000	0	yes	0.127458	
+E0a~E1	without ruled R tasks (LR61/LR70)	loc_none	google__gemma-4-31b-it	R			0	36	36	40	0.000000	0.000000	0.096419	0.000000	0.000000	0	yes	0.131915	
+E0a~E1	without ruled R tasks (LR61/LR70)	loc_none	openai__gpt-5.4-mini	R			0	33	33	40	0.000000	0.000000	0.104270	0.000000	0.000000	0	yes	0.146335	
+E0a~E1	without ruled R tasks (LR61/LR70)	loc_none	openai__gpt-5.6-terra	R			0	40	40	40	0.000000	0.000000	0.087622	0.000000	0.000000	0	yes	0.126116	
+E0a~E1	without ruled R tasks (LR61/LR70)	loc_none	openai__gpt-oss-20b	R			0	33	33	40	0.000000	0.000000	0.104270	0.000000	0.000000	0	yes	0.146335	
+E0a~E1	without ruled R tasks (LR61/LR70)	loc_none	qwen__qwen3.5-9b	R			0	27	27	40	0.000000	0.000000	0.124555	0.000000	0.000000	0	yes	0.150966	
+E0a~E1	without ruled R tasks (LR61/LR70)	loc_none	qwen__qwen3.6-35b-a3b	R			0	38	38	40	0.000000	0.000000	0.091810	0.000000	0.000000	0	yes	0.128868	
+E0a~E1	without ruled R tasks (LR61/LR70)	loc_none	MODEL_EQUAL_MEAN	R							0.000000			0.000000	0.000000	0			10
+E0a~E2	all tasks	loc_silent	anthropic__claude-haiku-4.5	M			24	629	629	640	0.038156	0.025773	0.056146	0.012739	0.067203	0	no	0.074816	
+E0a~E2	all tasks	loc_silent	anthropic__claude-haiku-4.5	M	QF1		3	75	75	80	0.040000	0.013696	0.111130				yes	0.169431	
+E0a~E2	all tasks	loc_silent	anthropic__claude-haiku-4.5	M	QF2		9	79	79	80	0.113924	0.061106	0.202548				no	0.301554	
+E0a~E2	all tasks	loc_silent	anthropic__claude-haiku-4.5	M	QF3		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_silent	anthropic__claude-haiku-4.5	M	QF4		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_silent	anthropic__claude-haiku-4.5	M	QF5		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_silent	anthropic__claude-haiku-4.5	M	QF6		12	77	77	80	0.155844	0.091459	0.252937				no	0.369585	
+E0a~E2	all tasks	loc_silent	anthropic__claude-haiku-4.5	M	QF7		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_silent	anthropic__claude-haiku-4.5	M	QF8		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+E0a~E2	all tasks	loc_silent	anthropic__claude-haiku-5.5	M			25	640	640	640	0.039062	0.026597	0.057029	0.014063	0.067187	0	no	0.072244	
+E0a~E2	all tasks	loc_silent	anthropic__claude-haiku-5.5	M	QF1		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_silent	anthropic__claude-haiku-5.5	M	QF2		14	80	80	80	0.175000	0.107206	0.272575				no	0.357211	
+E0a~E2	all tasks	loc_silent	anthropic__claude-haiku-5.5	M	QF3		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_silent	anthropic__claude-haiku-5.5	M	QF4		1	80	80	80	0.012500	0.002210	0.067463				yes	0.086659	
+E0a~E2	all tasks	loc_silent	anthropic__claude-haiku-5.5	M	QF5		3	80	80	80	0.037500	0.012835	0.104547				yes	0.165881	
+E0a~E2	all tasks	loc_silent	anthropic__claude-haiku-5.5	M	QF6		7	80	80	80	0.087500	0.043032	0.169768				no	0.270012	
+E0a~E2	all tasks	loc_silent	anthropic__claude-haiku-5.5	M	QF7		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_silent	anthropic__claude-haiku-5.5	M	QF8		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_silent	anthropic__claude-sonnet-5.5	M			14	640	640	640	0.021875	0.013074	0.036381	0.001563	0.046875	0	no	0.053513	
+E0a~E2	all tasks	loc_silent	anthropic__claude-sonnet-5.5	M	QF1		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_silent	anthropic__claude-sonnet-5.5	M	QF2		6	80	80	80	0.075000	0.034825	0.154120				no	0.260113	
+E0a~E2	all tasks	loc_silent	anthropic__claude-sonnet-5.5	M	QF3		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_silent	anthropic__claude-sonnet-5.5	M	QF4		5	80	80	80	0.062500	0.026989	0.138101				no	0.263957	
+E0a~E2	all tasks	loc_silent	anthropic__claude-sonnet-5.5	M	QF5		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_silent	anthropic__claude-sonnet-5.5	M	QF6		3	80	80	80	0.037500	0.012835	0.104547				yes	0.165881	
+E0a~E2	all tasks	loc_silent	anthropic__claude-sonnet-5.5	M	QF7		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_silent	anthropic__claude-sonnet-5.5	M	QF8		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_silent	deepseek__deepseek-v3.2	M			32	629	629	640	0.050874	0.036265	0.070937	0.025437	0.078275	0	no	0.082638	
+E0a~E2	all tasks	loc_silent	deepseek__deepseek-v3.2	M	QF1		4	79	79	80	0.050633	0.019864	0.123077				yes	0.143104	
+E0a~E2	all tasks	loc_silent	deepseek__deepseek-v3.2	M	QF2		13	76	76	80	0.171053	0.102780	0.270979				no	0.357896	
+E0a~E2	all tasks	loc_silent	deepseek__deepseek-v3.2	M	QF3		1	79	79	80	0.012658	0.002238	0.068276				yes	0.087271	
+E0a~E2	all tasks	loc_silent	deepseek__deepseek-v3.2	M	QF4		2	78	78	80	0.025641	0.007060	0.088753				yes	0.114092	
+E0a~E2	all tasks	loc_silent	deepseek__deepseek-v3.2	M	QF5		1	79	79	80	0.012658	0.002238	0.068276				yes	0.087271	
+E0a~E2	all tasks	loc_silent	deepseek__deepseek-v3.2	M	QF6		11	80	80	80	0.137500	0.078547	0.229671				no	0.295186	
+E0a~E2	all tasks	loc_silent	deepseek__deepseek-v3.2	M	QF7		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+E0a~E2	all tasks	loc_silent	deepseek__deepseek-v3.2	M	QF8		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+E0a~E2	all tasks	loc_silent	google__gemma-4-31b-it	M			45	638	638	640	0.070533	0.053129	0.093078	0.036164	0.107981	0	no	0.110496	
+E0a~E2	all tasks	loc_silent	google__gemma-4-31b-it	M	QF1		9	80	80	80	0.112500	0.060327	0.200182				no	0.284443	
+E0a~E2	all tasks	loc_silent	google__gemma-4-31b-it	M	QF2		9	80	80	80	0.112500	0.060327	0.200182				no	0.276447	
+E0a~E2	all tasks	loc_silent	google__gemma-4-31b-it	M	QF3		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_silent	google__gemma-4-31b-it	M	QF4		5	80	80	80	0.062500	0.026989	0.138101				no	0.184663	
+E0a~E2	all tasks	loc_silent	google__gemma-4-31b-it	M	QF5		7	80	80	80	0.087500	0.043032	0.169768				no	0.260523	
+E0a~E2	all tasks	loc_silent	google__gemma-4-31b-it	M	QF6		15	80	80	80	0.187500	0.117053	0.286583				no	0.384104	
+E0a~E2	all tasks	loc_silent	google__gemma-4-31b-it	M	QF7		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_silent	google__gemma-4-31b-it	M	QF8		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+E0a~E2	all tasks	loc_silent	openai__gpt-5.4-mini	M			35	635	635	640	0.055118	0.039896	0.075691	0.025157	0.089623	0	no	0.093053	
+E0a~E2	all tasks	loc_silent	openai__gpt-5.4-mini	M	QF1		3	80	80	80	0.037500	0.012835	0.104547				yes	0.124403	
+E0a~E2	all tasks	loc_silent	openai__gpt-5.4-mini	M	QF2		12	80	80	80	0.150000	0.087940	0.244132				no	0.321460	
+E0a~E2	all tasks	loc_silent	openai__gpt-5.4-mini	M	QF3		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_silent	openai__gpt-5.4-mini	M	QF4		4	79	79	80	0.050633	0.019864	0.123077				yes	0.216979	
+E0a~E2	all tasks	loc_silent	openai__gpt-5.4-mini	M	QF5		4	78	78	80	0.051282	0.020121	0.124567				yes	0.217871	
+E0a~E2	all tasks	loc_silent	openai__gpt-5.4-mini	M	QF6		12	80	80	80	0.150000	0.087940	0.244132				no	0.357258	
+E0a~E2	all tasks	loc_silent	openai__gpt-5.4-mini	M	QF7		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+E0a~E2	all tasks	loc_silent	openai__gpt-5.4-mini	M	QF8		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_silent	openai__gpt-5.6-terra	M			51	636	636	640	0.080189	0.061515	0.103903	0.042520	0.121451	0	no	0.126425	
+E0a~E2	all tasks	loc_silent	openai__gpt-5.6-terra	M	QF1		2	79	79	80	0.025316	0.006970	0.087686				yes	0.106962	
+E0a~E2	all tasks	loc_silent	openai__gpt-5.6-terra	M	QF2		16	80	80	80	0.200000	0.127028	0.300462				no	0.404416	
+E0a~E2	all tasks	loc_silent	openai__gpt-5.6-terra	M	QF3		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_silent	openai__gpt-5.6-terra	M	QF4		4	78	78	80	0.051282	0.020121	0.124567				yes	0.217880	
+E0a~E2	all tasks	loc_silent	openai__gpt-5.6-terra	M	QF5		7	80	80	80	0.087500	0.043032	0.169768				no	0.270012	
+E0a~E2	all tasks	loc_silent	openai__gpt-5.6-terra	M	QF6		22	80	80	80	0.275000	0.189178	0.381441				no	0.500640	
+E0a~E2	all tasks	loc_silent	openai__gpt-5.6-terra	M	QF7		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+E0a~E2	all tasks	loc_silent	openai__gpt-5.6-terra	M	QF8		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_silent	openai__gpt-oss-20b	M			42	591	591	640	0.071066	0.053003	0.094669	0.043333	0.101579	0	no	0.105411	
+E0a~E2	all tasks	loc_silent	openai__gpt-oss-20b	M	QF1		9	77	77	80	0.116883	0.062726	0.207451				no	0.228660	
+E0a~E2	all tasks	loc_silent	openai__gpt-oss-20b	M	QF2		13	71	71	80	0.183099	0.110247	0.288482				no	0.381142	
+E0a~E2	all tasks	loc_silent	openai__gpt-oss-20b	M	QF3		0	73	73	80	0.000000	0.000000	0.049992				yes	0.067864	
+E0a~E2	all tasks	loc_silent	openai__gpt-oss-20b	M	QF4		12	73	73	80	0.164384	0.096613	0.265710				no	0.290942	
+E0a~E2	all tasks	loc_silent	openai__gpt-oss-20b	M	QF5		3	78	78	80	0.038462	0.013166	0.107084				yes	0.126515	
+E0a~E2	all tasks	loc_silent	openai__gpt-oss-20b	M	QF6		5	70	70	80	0.071429	0.030894	0.156554				no	0.230959	
+E0a~E2	all tasks	loc_silent	openai__gpt-oss-20b	M	QF7		0	77	77	80	0.000000	0.000000	0.047518				yes	0.066273	
+E0a~E2	all tasks	loc_silent	openai__gpt-oss-20b	M	QF8		0	72	72	80	0.000000	0.000000	0.050651				yes	0.068289	
+E0a~E2	all tasks	loc_silent	qwen__qwen3.5-9b	M			18	456	456	640	0.039474	0.025113	0.061529	0.015351	0.069414	0	no	0.072048	
+E0a~E2	all tasks	loc_silent	qwen__qwen3.5-9b	M	QF1		6	62	62	80	0.096774	0.045112	0.195488				no	0.267037	
+E0a~E2	all tasks	loc_silent	qwen__qwen3.5-9b	M	QF2		8	47	47	80	0.170213	0.088864	0.301398				no	0.352639	
+E0a~E2	all tasks	loc_silent	qwen__qwen3.5-9b	M	QF3		0	60	60	80	0.000000	0.000000	0.060172				yes	0.074471	
+E0a~E2	all tasks	loc_silent	qwen__qwen3.5-9b	M	QF4		1	56	56	80	0.017857	0.003159	0.094456				yes	0.120748	
+E0a~E2	all tasks	loc_silent	qwen__qwen3.5-9b	M	QF5		0	51	51	80	0.000000	0.000000	0.070047				yes	0.080972	
+E0a~E2	all tasks	loc_silent	qwen__qwen3.5-9b	M	QF6		3	53	53	80	0.056604	0.019437	0.153702				yes	0.203400	
+E0a~E2	all tasks	loc_silent	qwen__qwen3.5-9b	M	QF7		0	75	75	80	0.000000	0.000000	0.048724				yes	0.067048	
+E0a~E2	all tasks	loc_silent	qwen__qwen3.5-9b	M	QF8		0	52	52	80	0.000000	0.000000	0.068792				yes	0.080141	
+E0a~E2	all tasks	loc_silent	qwen__qwen3.6-35b-a3b	M			30	612	612	640	0.049020	0.034550	0.069116	0.029126	0.072131	0	no	0.075508	
+E0a~E2	all tasks	loc_silent	qwen__qwen3.6-35b-a3b	M	QF1		17	79	79	80	0.215190	0.138922	0.317872				no	0.357943	
+E0a~E2	all tasks	loc_silent	qwen__qwen3.6-35b-a3b	M	QF2		6	74	74	80	0.081081	0.037690	0.165819				no	0.186789	
+E0a~E2	all tasks	loc_silent	qwen__qwen3.6-35b-a3b	M	QF3		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+E0a~E2	all tasks	loc_silent	qwen__qwen3.6-35b-a3b	M	QF4		4	76	76	80	0.052632	0.020655	0.127657				yes	0.147010	
+E0a~E2	all tasks	loc_silent	qwen__qwen3.6-35b-a3b	M	QF5		0	76	76	80	0.000000	0.000000	0.048114				yes	0.066655	
+E0a~E2	all tasks	loc_silent	qwen__qwen3.6-35b-a3b	M	QF6		3	78	78	80	0.038462	0.013166	0.107084				yes	0.126515	
+E0a~E2	all tasks	loc_silent	qwen__qwen3.6-35b-a3b	M	QF7		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+E0a~E2	all tasks	loc_silent	qwen__qwen3.6-35b-a3b	M	QF8		0	72	72	80	0.000000	0.000000	0.050651				yes	0.068289	
+E0a~E2	all tasks	loc_silent	MODEL_EQUAL_MEAN	M							0.051537			0.031634	0.073235	0			10
+E0a~E2	all tasks	loc_silent_any	anthropic__claude-haiku-4.5	M			24	629	629	640	0.038156	0.025773	0.056146	0.012739	0.067203	0	no	0.074816	
+E0a~E2	all tasks	loc_silent_any	anthropic__claude-haiku-4.5	M	QF1		3	75	75	80	0.040000	0.013696	0.111130				yes	0.169431	
+E0a~E2	all tasks	loc_silent_any	anthropic__claude-haiku-4.5	M	QF2		9	79	79	80	0.113924	0.061106	0.202548				no	0.301554	
+E0a~E2	all tasks	loc_silent_any	anthropic__claude-haiku-4.5	M	QF3		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_silent_any	anthropic__claude-haiku-4.5	M	QF4		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_silent_any	anthropic__claude-haiku-4.5	M	QF5		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_silent_any	anthropic__claude-haiku-4.5	M	QF6		12	77	77	80	0.155844	0.091459	0.252937				no	0.369585	
+E0a~E2	all tasks	loc_silent_any	anthropic__claude-haiku-4.5	M	QF7		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_silent_any	anthropic__claude-haiku-4.5	M	QF8		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+E0a~E2	all tasks	loc_silent_any	anthropic__claude-haiku-5.5	M			25	640	640	640	0.039062	0.026597	0.057029	0.014063	0.067187	0	no	0.072244	
+E0a~E2	all tasks	loc_silent_any	anthropic__claude-haiku-5.5	M	QF1		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_silent_any	anthropic__claude-haiku-5.5	M	QF2		14	80	80	80	0.175000	0.107206	0.272575				no	0.357211	
+E0a~E2	all tasks	loc_silent_any	anthropic__claude-haiku-5.5	M	QF3		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_silent_any	anthropic__claude-haiku-5.5	M	QF4		1	80	80	80	0.012500	0.002210	0.067463				yes	0.086659	
+E0a~E2	all tasks	loc_silent_any	anthropic__claude-haiku-5.5	M	QF5		3	80	80	80	0.037500	0.012835	0.104547				yes	0.165881	
+E0a~E2	all tasks	loc_silent_any	anthropic__claude-haiku-5.5	M	QF6		7	80	80	80	0.087500	0.043032	0.169768				no	0.270012	
+E0a~E2	all tasks	loc_silent_any	anthropic__claude-haiku-5.5	M	QF7		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_silent_any	anthropic__claude-haiku-5.5	M	QF8		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_silent_any	anthropic__claude-sonnet-5.5	M			14	640	640	640	0.021875	0.013074	0.036381	0.001563	0.046875	0	no	0.053513	
+E0a~E2	all tasks	loc_silent_any	anthropic__claude-sonnet-5.5	M	QF1		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_silent_any	anthropic__claude-sonnet-5.5	M	QF2		6	80	80	80	0.075000	0.034825	0.154120				no	0.260113	
+E0a~E2	all tasks	loc_silent_any	anthropic__claude-sonnet-5.5	M	QF3		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_silent_any	anthropic__claude-sonnet-5.5	M	QF4		5	80	80	80	0.062500	0.026989	0.138101				no	0.263957	
+E0a~E2	all tasks	loc_silent_any	anthropic__claude-sonnet-5.5	M	QF5		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_silent_any	anthropic__claude-sonnet-5.5	M	QF6		3	80	80	80	0.037500	0.012835	0.104547				yes	0.165881	
+E0a~E2	all tasks	loc_silent_any	anthropic__claude-sonnet-5.5	M	QF7		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_silent_any	anthropic__claude-sonnet-5.5	M	QF8		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_silent_any	deepseek__deepseek-v3.2	M			32	629	629	640	0.050874	0.036265	0.070937	0.025437	0.078275	0	no	0.082638	
+E0a~E2	all tasks	loc_silent_any	deepseek__deepseek-v3.2	M	QF1		4	79	79	80	0.050633	0.019864	0.123077				yes	0.143104	
+E0a~E2	all tasks	loc_silent_any	deepseek__deepseek-v3.2	M	QF2		13	76	76	80	0.171053	0.102780	0.270979				no	0.357896	
+E0a~E2	all tasks	loc_silent_any	deepseek__deepseek-v3.2	M	QF3		1	79	79	80	0.012658	0.002238	0.068276				yes	0.087271	
+E0a~E2	all tasks	loc_silent_any	deepseek__deepseek-v3.2	M	QF4		2	78	78	80	0.025641	0.007060	0.088753				yes	0.114092	
+E0a~E2	all tasks	loc_silent_any	deepseek__deepseek-v3.2	M	QF5		1	79	79	80	0.012658	0.002238	0.068276				yes	0.087271	
+E0a~E2	all tasks	loc_silent_any	deepseek__deepseek-v3.2	M	QF6		11	80	80	80	0.137500	0.078547	0.229671				no	0.295186	
+E0a~E2	all tasks	loc_silent_any	deepseek__deepseek-v3.2	M	QF7		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+E0a~E2	all tasks	loc_silent_any	deepseek__deepseek-v3.2	M	QF8		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+E0a~E2	all tasks	loc_silent_any	google__gemma-4-31b-it	M			45	638	638	640	0.070533	0.053129	0.093078	0.036164	0.107981	0	no	0.110496	
+E0a~E2	all tasks	loc_silent_any	google__gemma-4-31b-it	M	QF1		9	80	80	80	0.112500	0.060327	0.200182				no	0.284443	
+E0a~E2	all tasks	loc_silent_any	google__gemma-4-31b-it	M	QF2		9	80	80	80	0.112500	0.060327	0.200182				no	0.276447	
+E0a~E2	all tasks	loc_silent_any	google__gemma-4-31b-it	M	QF3		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_silent_any	google__gemma-4-31b-it	M	QF4		5	80	80	80	0.062500	0.026989	0.138101				no	0.184663	
+E0a~E2	all tasks	loc_silent_any	google__gemma-4-31b-it	M	QF5		7	80	80	80	0.087500	0.043032	0.169768				no	0.260523	
+E0a~E2	all tasks	loc_silent_any	google__gemma-4-31b-it	M	QF6		15	80	80	80	0.187500	0.117053	0.286583				no	0.384104	
+E0a~E2	all tasks	loc_silent_any	google__gemma-4-31b-it	M	QF7		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_silent_any	google__gemma-4-31b-it	M	QF8		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+E0a~E2	all tasks	loc_silent_any	openai__gpt-5.4-mini	M			35	635	635	640	0.055118	0.039896	0.075691	0.025157	0.089623	0	no	0.093053	
+E0a~E2	all tasks	loc_silent_any	openai__gpt-5.4-mini	M	QF1		3	80	80	80	0.037500	0.012835	0.104547				yes	0.124403	
+E0a~E2	all tasks	loc_silent_any	openai__gpt-5.4-mini	M	QF2		12	80	80	80	0.150000	0.087940	0.244132				no	0.321460	
+E0a~E2	all tasks	loc_silent_any	openai__gpt-5.4-mini	M	QF3		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_silent_any	openai__gpt-5.4-mini	M	QF4		4	79	79	80	0.050633	0.019864	0.123077				yes	0.216979	
+E0a~E2	all tasks	loc_silent_any	openai__gpt-5.4-mini	M	QF5		4	78	78	80	0.051282	0.020121	0.124567				yes	0.217871	
+E0a~E2	all tasks	loc_silent_any	openai__gpt-5.4-mini	M	QF6		12	80	80	80	0.150000	0.087940	0.244132				no	0.357258	
+E0a~E2	all tasks	loc_silent_any	openai__gpt-5.4-mini	M	QF7		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+E0a~E2	all tasks	loc_silent_any	openai__gpt-5.4-mini	M	QF8		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_silent_any	openai__gpt-5.6-terra	M			51	636	636	640	0.080189	0.061515	0.103903	0.042520	0.121451	0	no	0.126425	
+E0a~E2	all tasks	loc_silent_any	openai__gpt-5.6-terra	M	QF1		2	79	79	80	0.025316	0.006970	0.087686				yes	0.106962	
+E0a~E2	all tasks	loc_silent_any	openai__gpt-5.6-terra	M	QF2		16	80	80	80	0.200000	0.127028	0.300462				no	0.404416	
+E0a~E2	all tasks	loc_silent_any	openai__gpt-5.6-terra	M	QF3		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_silent_any	openai__gpt-5.6-terra	M	QF4		4	78	78	80	0.051282	0.020121	0.124567				yes	0.217880	
+E0a~E2	all tasks	loc_silent_any	openai__gpt-5.6-terra	M	QF5		7	80	80	80	0.087500	0.043032	0.169768				no	0.270012	
+E0a~E2	all tasks	loc_silent_any	openai__gpt-5.6-terra	M	QF6		22	80	80	80	0.275000	0.189178	0.381441				no	0.500640	
+E0a~E2	all tasks	loc_silent_any	openai__gpt-5.6-terra	M	QF7		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+E0a~E2	all tasks	loc_silent_any	openai__gpt-5.6-terra	M	QF8		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_silent_any	openai__gpt-oss-20b	M			42	591	591	640	0.071066	0.053003	0.094669	0.043333	0.101579	0	no	0.105411	
+E0a~E2	all tasks	loc_silent_any	openai__gpt-oss-20b	M	QF1		9	77	77	80	0.116883	0.062726	0.207451				no	0.228660	
+E0a~E2	all tasks	loc_silent_any	openai__gpt-oss-20b	M	QF2		13	71	71	80	0.183099	0.110247	0.288482				no	0.381142	
+E0a~E2	all tasks	loc_silent_any	openai__gpt-oss-20b	M	QF3		0	73	73	80	0.000000	0.000000	0.049992				yes	0.067864	
+E0a~E2	all tasks	loc_silent_any	openai__gpt-oss-20b	M	QF4		12	73	73	80	0.164384	0.096613	0.265710				no	0.290942	
+E0a~E2	all tasks	loc_silent_any	openai__gpt-oss-20b	M	QF5		3	78	78	80	0.038462	0.013166	0.107084				yes	0.126515	
+E0a~E2	all tasks	loc_silent_any	openai__gpt-oss-20b	M	QF6		5	70	70	80	0.071429	0.030894	0.156554				no	0.230959	
+E0a~E2	all tasks	loc_silent_any	openai__gpt-oss-20b	M	QF7		0	77	77	80	0.000000	0.000000	0.047518				yes	0.066273	
+E0a~E2	all tasks	loc_silent_any	openai__gpt-oss-20b	M	QF8		0	72	72	80	0.000000	0.000000	0.050651				yes	0.068289	
+E0a~E2	all tasks	loc_silent_any	qwen__qwen3.5-9b	M			18	456	456	640	0.039474	0.025113	0.061529	0.015351	0.069414	0	no	0.072048	
+E0a~E2	all tasks	loc_silent_any	qwen__qwen3.5-9b	M	QF1		6	62	62	80	0.096774	0.045112	0.195488				no	0.267037	
+E0a~E2	all tasks	loc_silent_any	qwen__qwen3.5-9b	M	QF2		8	47	47	80	0.170213	0.088864	0.301398				no	0.352639	
+E0a~E2	all tasks	loc_silent_any	qwen__qwen3.5-9b	M	QF3		0	60	60	80	0.000000	0.000000	0.060172				yes	0.074471	
+E0a~E2	all tasks	loc_silent_any	qwen__qwen3.5-9b	M	QF4		1	56	56	80	0.017857	0.003159	0.094456				yes	0.120748	
+E0a~E2	all tasks	loc_silent_any	qwen__qwen3.5-9b	M	QF5		0	51	51	80	0.000000	0.000000	0.070047				yes	0.080972	
+E0a~E2	all tasks	loc_silent_any	qwen__qwen3.5-9b	M	QF6		3	53	53	80	0.056604	0.019437	0.153702				yes	0.203400	
+E0a~E2	all tasks	loc_silent_any	qwen__qwen3.5-9b	M	QF7		0	75	75	80	0.000000	0.000000	0.048724				yes	0.067048	
+E0a~E2	all tasks	loc_silent_any	qwen__qwen3.5-9b	M	QF8		0	52	52	80	0.000000	0.000000	0.068792				yes	0.080141	
+E0a~E2	all tasks	loc_silent_any	qwen__qwen3.6-35b-a3b	M			30	612	612	640	0.049020	0.034550	0.069116	0.029126	0.072131	0	no	0.075508	
+E0a~E2	all tasks	loc_silent_any	qwen__qwen3.6-35b-a3b	M	QF1		17	79	79	80	0.215190	0.138922	0.317872				no	0.357943	
+E0a~E2	all tasks	loc_silent_any	qwen__qwen3.6-35b-a3b	M	QF2		6	74	74	80	0.081081	0.037690	0.165819				no	0.186789	
+E0a~E2	all tasks	loc_silent_any	qwen__qwen3.6-35b-a3b	M	QF3		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+E0a~E2	all tasks	loc_silent_any	qwen__qwen3.6-35b-a3b	M	QF4		4	76	76	80	0.052632	0.020655	0.127657				yes	0.147010	
+E0a~E2	all tasks	loc_silent_any	qwen__qwen3.6-35b-a3b	M	QF5		0	76	76	80	0.000000	0.000000	0.048114				yes	0.066655	
+E0a~E2	all tasks	loc_silent_any	qwen__qwen3.6-35b-a3b	M	QF6		3	78	78	80	0.038462	0.013166	0.107084				yes	0.126515	
+E0a~E2	all tasks	loc_silent_any	qwen__qwen3.6-35b-a3b	M	QF7		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+E0a~E2	all tasks	loc_silent_any	qwen__qwen3.6-35b-a3b	M	QF8		0	72	72	80	0.000000	0.000000	0.050651				yes	0.068289	
+E0a~E2	all tasks	loc_silent_any	MODEL_EQUAL_MEAN	M							0.051537			0.031634	0.073235	0			10
+E0a~E2	all tasks	loc_none	anthropic__claude-haiku-4.5	M			0	629	629	640	0.000000	0.000000	0.006070	0.000000	0.000000	0	yes	0.008455	
+E0a~E2	all tasks	loc_none	anthropic__claude-haiku-4.5	M	QF1		0	75	75	80	0.000000	0.000000	0.048724				yes	0.067048	
+E0a~E2	all tasks	loc_none	anthropic__claude-haiku-4.5	M	QF2		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+E0a~E2	all tasks	loc_none	anthropic__claude-haiku-4.5	M	QF3		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_none	anthropic__claude-haiku-4.5	M	QF4		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_none	anthropic__claude-haiku-4.5	M	QF5		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_none	anthropic__claude-haiku-4.5	M	QF6		0	77	77	80	0.000000	0.000000	0.047518				yes	0.066273	
+E0a~E2	all tasks	loc_none	anthropic__claude-haiku-4.5	M	QF7		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_none	anthropic__claude-haiku-4.5	M	QF8		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+E0a~E2	all tasks	loc_none	anthropic__claude-haiku-5.5	M			0	640	640	640	0.000000	0.000000	0.005966	0.000000	0.000000	0	yes	0.008390	
+E0a~E2	all tasks	loc_none	anthropic__claude-haiku-5.5	M	QF1		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_none	anthropic__claude-haiku-5.5	M	QF2		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_none	anthropic__claude-haiku-5.5	M	QF3		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_none	anthropic__claude-haiku-5.5	M	QF4		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_none	anthropic__claude-haiku-5.5	M	QF5		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_none	anthropic__claude-haiku-5.5	M	QF6		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_none	anthropic__claude-haiku-5.5	M	QF7		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_none	anthropic__claude-haiku-5.5	M	QF8		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_none	anthropic__claude-sonnet-5.5	M			0	640	640	640	0.000000	0.000000	0.005966	0.000000	0.000000	0	yes	0.008390	
+E0a~E2	all tasks	loc_none	anthropic__claude-sonnet-5.5	M	QF1		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_none	anthropic__claude-sonnet-5.5	M	QF2		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_none	anthropic__claude-sonnet-5.5	M	QF3		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_none	anthropic__claude-sonnet-5.5	M	QF4		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_none	anthropic__claude-sonnet-5.5	M	QF5		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_none	anthropic__claude-sonnet-5.5	M	QF6		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_none	anthropic__claude-sonnet-5.5	M	QF7		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_none	anthropic__claude-sonnet-5.5	M	QF8		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_none	deepseek__deepseek-v3.2	M			0	629	629	640	0.000000	0.000000	0.006070	0.000000	0.000000	0	yes	0.008455	
+E0a~E2	all tasks	loc_none	deepseek__deepseek-v3.2	M	QF1		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+E0a~E2	all tasks	loc_none	deepseek__deepseek-v3.2	M	QF2		0	76	76	80	0.000000	0.000000	0.048114				yes	0.066655	
+E0a~E2	all tasks	loc_none	deepseek__deepseek-v3.2	M	QF3		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+E0a~E2	all tasks	loc_none	deepseek__deepseek-v3.2	M	QF4		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+E0a~E2	all tasks	loc_none	deepseek__deepseek-v3.2	M	QF5		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+E0a~E2	all tasks	loc_none	deepseek__deepseek-v3.2	M	QF6		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_none	deepseek__deepseek-v3.2	M	QF7		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+E0a~E2	all tasks	loc_none	deepseek__deepseek-v3.2	M	QF8		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+E0a~E2	all tasks	loc_none	google__gemma-4-31b-it	M			0	638	638	640	0.000000	0.000000	0.005985	0.000000	0.000000	0	yes	0.008402	
+E0a~E2	all tasks	loc_none	google__gemma-4-31b-it	M	QF1		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_none	google__gemma-4-31b-it	M	QF2		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_none	google__gemma-4-31b-it	M	QF3		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_none	google__gemma-4-31b-it	M	QF4		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_none	google__gemma-4-31b-it	M	QF5		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_none	google__gemma-4-31b-it	M	QF6		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_none	google__gemma-4-31b-it	M	QF7		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_none	google__gemma-4-31b-it	M	QF8		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+E0a~E2	all tasks	loc_none	openai__gpt-5.4-mini	M			0	635	635	640	0.000000	0.000000	0.006013	0.000000	0.000000	0	yes	0.008419	
+E0a~E2	all tasks	loc_none	openai__gpt-5.4-mini	M	QF1		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_none	openai__gpt-5.4-mini	M	QF2		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_none	openai__gpt-5.4-mini	M	QF3		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_none	openai__gpt-5.4-mini	M	QF4		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+E0a~E2	all tasks	loc_none	openai__gpt-5.4-mini	M	QF5		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+E0a~E2	all tasks	loc_none	openai__gpt-5.4-mini	M	QF6		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_none	openai__gpt-5.4-mini	M	QF7		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+E0a~E2	all tasks	loc_none	openai__gpt-5.4-mini	M	QF8		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_none	openai__gpt-5.6-terra	M			0	636	636	640	0.000000	0.000000	0.006004	0.000000	0.000000	0	yes	0.008413	
+E0a~E2	all tasks	loc_none	openai__gpt-5.6-terra	M	QF1		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+E0a~E2	all tasks	loc_none	openai__gpt-5.6-terra	M	QF2		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_none	openai__gpt-5.6-terra	M	QF3		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_none	openai__gpt-5.6-terra	M	QF4		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+E0a~E2	all tasks	loc_none	openai__gpt-5.6-terra	M	QF5		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_none	openai__gpt-5.6-terra	M	QF6		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_none	openai__gpt-5.6-terra	M	QF7		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+E0a~E2	all tasks	loc_none	openai__gpt-5.6-terra	M	QF8		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+E0a~E2	all tasks	loc_none	openai__gpt-oss-20b	M			0	591	591	640	0.000000	0.000000	0.006458	0.000000	0.000000	0	yes	0.008698	
+E0a~E2	all tasks	loc_none	openai__gpt-oss-20b	M	QF1		0	77	77	80	0.000000	0.000000	0.047518				yes	0.066273	
+E0a~E2	all tasks	loc_none	openai__gpt-oss-20b	M	QF2		0	71	71	80	0.000000	0.000000	0.051328				yes	0.068726	
+E0a~E2	all tasks	loc_none	openai__gpt-oss-20b	M	QF3		0	73	73	80	0.000000	0.000000	0.049992				yes	0.067864	
+E0a~E2	all tasks	loc_none	openai__gpt-oss-20b	M	QF4		0	73	73	80	0.000000	0.000000	0.049992				yes	0.067864	
+E0a~E2	all tasks	loc_none	openai__gpt-oss-20b	M	QF5		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+E0a~E2	all tasks	loc_none	openai__gpt-oss-20b	M	QF6		0	70	70	80	0.000000	0.000000	0.052023				yes	0.069175	
+E0a~E2	all tasks	loc_none	openai__gpt-oss-20b	M	QF7		0	77	77	80	0.000000	0.000000	0.047518				yes	0.066273	
+E0a~E2	all tasks	loc_none	openai__gpt-oss-20b	M	QF8		0	72	72	80	0.000000	0.000000	0.050651				yes	0.068289	
+E0a~E2	all tasks	loc_none	qwen__qwen3.5-9b	M			0	456	456	640	0.000000	0.000000	0.008354	0.000000	0.000000	0	yes	0.009924	
+E0a~E2	all tasks	loc_none	qwen__qwen3.5-9b	M	QF1		0	62	62	80	0.000000	0.000000	0.058344				yes	0.073278	
+E0a~E2	all tasks	loc_none	qwen__qwen3.5-9b	M	QF2		0	47	47	80	0.000000	0.000000	0.075558				yes	0.086922	
+E0a~E2	all tasks	loc_none	qwen__qwen3.5-9b	M	QF3		0	60	60	80	0.000000	0.000000	0.060172				yes	0.074471	
+E0a~E2	all tasks	loc_none	qwen__qwen3.5-9b	M	QF4		0	56	56	80	0.000000	0.000000	0.064194				yes	0.077108	
+E0a~E2	all tasks	loc_none	qwen__qwen3.5-9b	M	QF5		0	51	51	80	0.000000	0.000000	0.070047				yes	0.080972	
+E0a~E2	all tasks	loc_none	qwen__qwen3.5-9b	M	QF6		0	53	53	80	0.000000	0.000000	0.067582				yes	0.079341	
+E0a~E2	all tasks	loc_none	qwen__qwen3.5-9b	M	QF7		0	75	75	80	0.000000	0.000000	0.048724				yes	0.067048	
+E0a~E2	all tasks	loc_none	qwen__qwen3.5-9b	M	QF8		0	52	52	80	0.000000	0.000000	0.068792				yes	0.080141	
+E0a~E2	all tasks	loc_none	qwen__qwen3.6-35b-a3b	M			0	612	612	640	0.000000	0.000000	0.006238	0.000000	0.000000	0	yes	0.008560	
+E0a~E2	all tasks	loc_none	qwen__qwen3.6-35b-a3b	M	QF1		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+E0a~E2	all tasks	loc_none	qwen__qwen3.6-35b-a3b	M	QF2		0	74	74	80	0.000000	0.000000	0.049350				yes	0.067450	
+E0a~E2	all tasks	loc_none	qwen__qwen3.6-35b-a3b	M	QF3		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+E0a~E2	all tasks	loc_none	qwen__qwen3.6-35b-a3b	M	QF4		0	76	76	80	0.000000	0.000000	0.048114				yes	0.066655	
+E0a~E2	all tasks	loc_none	qwen__qwen3.6-35b-a3b	M	QF5		0	76	76	80	0.000000	0.000000	0.048114				yes	0.066655	
+E0a~E2	all tasks	loc_none	qwen__qwen3.6-35b-a3b	M	QF6		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+E0a~E2	all tasks	loc_none	qwen__qwen3.6-35b-a3b	M	QF7		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+E0a~E2	all tasks	loc_none	qwen__qwen3.6-35b-a3b	M	QF8		0	72	72	80	0.000000	0.000000	0.050651				yes	0.068289	
+E0a~E2	all tasks	loc_none	MODEL_EQUAL_MEAN	M							0.000000			0.000000	0.000000	0			10
+E0a~E2	all tasks	loc_silent	anthropic__claude-haiku-4.5	R			0	45	45	45	0.000000	0.000000	0.078652	0.000000	0.000000	0	yes	0.112928	
+E0a~E2	all tasks	loc_silent	anthropic__claude-haiku-5.5	R			0	45	45	45	0.000000	0.000000	0.078652	0.000000	0.000000	0	yes	0.112928	
+E0a~E2	all tasks	loc_silent	anthropic__claude-sonnet-5.5	R			0	45	45	45	0.000000	0.000000	0.078652	0.000000	0.000000	0	yes	0.112928	
+E0a~E2	all tasks	loc_silent	deepseek__deepseek-v3.2	R			0	44	44	45	0.000000	0.000000	0.080296	0.000000	0.000000	0	yes	0.114001	
+E0a~E2	all tasks	loc_silent	google__gemma-4-31b-it	R			0	41	41	45	0.000000	0.000000	0.085668	0.000000	0.000000	0	yes	0.117525	
+E0a~E2	all tasks	loc_silent	openai__gpt-5.4-mini	R			0	38	38	45	0.000000	0.000000	0.091810	0.000000	0.000000	0	yes	0.128868	
+E0a~E2	all tasks	loc_silent	openai__gpt-5.6-terra	R			0	45	45	45	0.000000	0.000000	0.078652	0.000000	0.000000	0	yes	0.112928	
+E0a~E2	all tasks	loc_silent	openai__gpt-oss-20b	R			0	38	38	45	0.000000	0.000000	0.091810	0.000000	0.000000	0	yes	0.128868	
+E0a~E2	all tasks	loc_silent	qwen__qwen3.5-9b	R			0	32	32	45	0.000000	0.000000	0.107179	0.000000	0.000000	0	yes	0.131915	
+E0a~E2	all tasks	loc_silent	qwen__qwen3.6-35b-a3b	R			0	43	43	45	0.000000	0.000000	0.082010	0.000000	0.000000	0	yes	0.115123	
+E0a~E2	all tasks	loc_silent	MODEL_EQUAL_MEAN	R							0.000000			0.000000	0.000000	0			10
+E0a~E2	all tasks	loc_silent_any	anthropic__claude-haiku-4.5	R			0	45	45	45	0.000000	0.000000	0.078652	0.000000	0.000000	0	yes	0.112928	
+E0a~E2	all tasks	loc_silent_any	anthropic__claude-haiku-5.5	R			0	45	45	45	0.000000	0.000000	0.078652	0.000000	0.000000	0	yes	0.112928	
+E0a~E2	all tasks	loc_silent_any	anthropic__claude-sonnet-5.5	R			0	45	45	45	0.000000	0.000000	0.078652	0.000000	0.000000	0	yes	0.112928	
+E0a~E2	all tasks	loc_silent_any	deepseek__deepseek-v3.2	R			0	44	44	45	0.000000	0.000000	0.080296	0.000000	0.000000	0	yes	0.114001	
+E0a~E2	all tasks	loc_silent_any	google__gemma-4-31b-it	R			0	41	41	45	0.000000	0.000000	0.085668	0.000000	0.000000	0	yes	0.117525	
+E0a~E2	all tasks	loc_silent_any	openai__gpt-5.4-mini	R			0	38	38	45	0.000000	0.000000	0.091810	0.000000	0.000000	0	yes	0.128868	
+E0a~E2	all tasks	loc_silent_any	openai__gpt-5.6-terra	R			0	45	45	45	0.000000	0.000000	0.078652	0.000000	0.000000	0	yes	0.112928	
+E0a~E2	all tasks	loc_silent_any	openai__gpt-oss-20b	R			0	38	38	45	0.000000	0.000000	0.091810	0.000000	0.000000	0	yes	0.128868	
+E0a~E2	all tasks	loc_silent_any	qwen__qwen3.5-9b	R			0	32	32	45	0.000000	0.000000	0.107179	0.000000	0.000000	0	yes	0.131915	
+E0a~E2	all tasks	loc_silent_any	qwen__qwen3.6-35b-a3b	R			0	43	43	45	0.000000	0.000000	0.082010	0.000000	0.000000	0	yes	0.115123	
+E0a~E2	all tasks	loc_silent_any	MODEL_EQUAL_MEAN	R							0.000000			0.000000	0.000000	0			10
+E0a~E2	all tasks	loc_none	anthropic__claude-haiku-4.5	R			0	45	45	45	0.000000	0.000000	0.078652	0.000000	0.000000	0	yes	0.112928	
+E0a~E2	all tasks	loc_none	anthropic__claude-haiku-5.5	R			0	45	45	45	0.000000	0.000000	0.078652	0.000000	0.000000	0	yes	0.112928	
+E0a~E2	all tasks	loc_none	anthropic__claude-sonnet-5.5	R			0	45	45	45	0.000000	0.000000	0.078652	0.000000	0.000000	0	yes	0.112928	
+E0a~E2	all tasks	loc_none	deepseek__deepseek-v3.2	R			0	44	44	45	0.000000	0.000000	0.080296	0.000000	0.000000	0	yes	0.114001	
+E0a~E2	all tasks	loc_none	google__gemma-4-31b-it	R			0	41	41	45	0.000000	0.000000	0.085668	0.000000	0.000000	0	yes	0.117525	
+E0a~E2	all tasks	loc_none	openai__gpt-5.4-mini	R			0	38	38	45	0.000000	0.000000	0.091810	0.000000	0.000000	0	yes	0.128868	
+E0a~E2	all tasks	loc_none	openai__gpt-5.6-terra	R			0	45	45	45	0.000000	0.000000	0.078652	0.000000	0.000000	0	yes	0.112928	
+E0a~E2	all tasks	loc_none	openai__gpt-oss-20b	R			0	38	38	45	0.000000	0.000000	0.091810	0.000000	0.000000	0	yes	0.128868	
+E0a~E2	all tasks	loc_none	qwen__qwen3.5-9b	R			0	32	32	45	0.000000	0.000000	0.107179	0.000000	0.000000	0	yes	0.131915	
+E0a~E2	all tasks	loc_none	qwen__qwen3.6-35b-a3b	R			0	43	43	45	0.000000	0.000000	0.082010	0.000000	0.000000	0	yes	0.115123	
+E0a~E2	all tasks	loc_none	MODEL_EQUAL_MEAN	R							0.000000			0.000000	0.000000	0			10
+E0a~E2	all tasks	loc_silent	anthropic__claude-haiku-4.5	A			6	305	305	315	0.019672	0.009046	0.042247	0.000000	0.056667	0	no	0.072990	
+E0a~E2	all tasks	loc_silent	anthropic__claude-haiku-5.5	A			0	314	314	315	0.000000	0.000000	0.012086	0.000000	0.000000	0	yes	0.016997	
+E0a~E2	all tasks	loc_silent	anthropic__claude-sonnet-5.5	A			0	315	315	315	0.000000	0.000000	0.012048	0.000000	0.000000	0	yes	0.016973	
+E0a~E2	all tasks	loc_silent	deepseek__deepseek-v3.2	A			1	309	309	315	0.003236	0.000572	0.018101	0.000000	0.009804	0	yes	0.022903	
+E0a~E2	all tasks	loc_silent	google__gemma-4-31b-it	A			5	313	313	315	0.015974	0.006842	0.036844	0.000000	0.048232	0	no	0.073256	
+E0a~E2	all tasks	loc_silent	openai__gpt-5.4-mini	A			0	310	310	315	0.000000	0.000000	0.012240	0.000000	0.000000	0	yes	0.017093	
+E0a~E2	all tasks	loc_silent	openai__gpt-5.6-terra	A			5	314	314	315	0.015924	0.006820	0.036728	0.000000	0.047923	0	no	0.073177	
+E0a~E2	all tasks	loc_silent	openai__gpt-oss-20b	A			11	286	286	315	0.038462	0.021610	0.067547	0.010526	0.073427	0	no	0.078417	
+E0a~E2	all tasks	loc_silent	qwen__qwen3.5-9b	A			3	195	195	315	0.015385	0.005246	0.044248	0.000000	0.035002	0	yes	0.046314	
+E0a~E2	all tasks	loc_silent	qwen__qwen3.6-35b-a3b	A			7	298	298	315	0.023490	0.011424	0.047685	0.000000	0.062707	0	no	0.074228	
+E0a~E2	all tasks	loc_silent	MODEL_EQUAL_MEAN	A							0.013214			0.002085	0.032318	0			10
+E0a~E2	all tasks	loc_silent_any	anthropic__claude-haiku-4.5	A			6	305	305	315	0.019672	0.009046	0.042247	0.000000	0.056667	0	no	0.072990	
+E0a~E2	all tasks	loc_silent_any	anthropic__claude-haiku-5.5	A			0	314	314	315	0.000000	0.000000	0.012086	0.000000	0.000000	0	yes	0.016997	
+E0a~E2	all tasks	loc_silent_any	anthropic__claude-sonnet-5.5	A			0	315	315	315	0.000000	0.000000	0.012048	0.000000	0.000000	0	yes	0.016973	
+E0a~E2	all tasks	loc_silent_any	deepseek__deepseek-v3.2	A			1	309	309	315	0.003236	0.000572	0.018101	0.000000	0.009804	0	yes	0.022903	
+E0a~E2	all tasks	loc_silent_any	google__gemma-4-31b-it	A			5	313	313	315	0.015974	0.006842	0.036844	0.000000	0.048232	0	no	0.073256	
+E0a~E2	all tasks	loc_silent_any	openai__gpt-5.4-mini	A			0	310	310	315	0.000000	0.000000	0.012240	0.000000	0.000000	0	yes	0.017093	
+E0a~E2	all tasks	loc_silent_any	openai__gpt-5.6-terra	A			5	314	314	315	0.015924	0.006820	0.036728	0.000000	0.047923	0	no	0.073177	
+E0a~E2	all tasks	loc_silent_any	openai__gpt-oss-20b	A			11	286	286	315	0.038462	0.021610	0.067547	0.010526	0.073427	0	no	0.078417	
+E0a~E2	all tasks	loc_silent_any	qwen__qwen3.5-9b	A			3	195	195	315	0.015385	0.005246	0.044248	0.000000	0.035002	0	yes	0.046314	
+E0a~E2	all tasks	loc_silent_any	qwen__qwen3.6-35b-a3b	A			7	298	298	315	0.023490	0.011424	0.047685	0.000000	0.062707	0	no	0.074228	
+E0a~E2	all tasks	loc_silent_any	MODEL_EQUAL_MEAN	A							0.013214			0.002085	0.032318	0			10
+E0a~E2	all tasks	loc_none	anthropic__claude-haiku-4.5	A			0	305	305	315	0.000000	0.000000	0.012438	0.000000	0.000000	0	yes	0.017218	
+E0a~E2	all tasks	loc_none	anthropic__claude-haiku-5.5	A			0	314	314	315	0.000000	0.000000	0.012086	0.000000	0.000000	0	yes	0.016997	
+E0a~E2	all tasks	loc_none	anthropic__claude-sonnet-5.5	A			0	315	315	315	0.000000	0.000000	0.012048	0.000000	0.000000	0	yes	0.016973	
+E0a~E2	all tasks	loc_none	deepseek__deepseek-v3.2	A			0	309	309	315	0.000000	0.000000	0.012279	0.000000	0.000000	0	yes	0.017118	
+E0a~E2	all tasks	loc_none	google__gemma-4-31b-it	A			0	313	313	315	0.000000	0.000000	0.012124	0.000000	0.000000	0	yes	0.017021	
+E0a~E2	all tasks	loc_none	openai__gpt-5.4-mini	A			0	310	310	315	0.000000	0.000000	0.012240	0.000000	0.000000	0	yes	0.017093	
+E0a~E2	all tasks	loc_none	openai__gpt-5.6-terra	A			0	314	314	315	0.000000	0.000000	0.012086	0.000000	0.000000	0	yes	0.016997	
+E0a~E2	all tasks	loc_none	openai__gpt-oss-20b	A			0	286	286	315	0.000000	0.000000	0.013254	0.000000	0.000000	0	yes	0.017731	
+E0a~E2	all tasks	loc_none	qwen__qwen3.5-9b	A			0	195	195	315	0.000000	0.000000	0.019319	0.000000	0.000000	0	yes	0.021565	
+E0a~E2	all tasks	loc_none	qwen__qwen3.6-35b-a3b	A			0	298	298	315	0.000000	0.000000	0.012727	0.000000	0.000000	0	yes	0.017399	
+E0a~E2	all tasks	loc_none	MODEL_EQUAL_MEAN	A							0.000000			0.000000	0.000000	0			10
+E0a~E2	without ruled R tasks (LR61/LR70)	loc_silent	anthropic__claude-haiku-4.5	R			0	40	40	40	0.000000	0.000000	0.087622	0.000000	0.000000	0	yes	0.126116	
+E0a~E2	without ruled R tasks (LR61/LR70)	loc_silent	anthropic__claude-haiku-5.5	R			0	40	40	40	0.000000	0.000000	0.087622	0.000000	0.000000	0	yes	0.126116	
+E0a~E2	without ruled R tasks (LR61/LR70)	loc_silent	anthropic__claude-sonnet-5.5	R			0	40	40	40	0.000000	0.000000	0.087622	0.000000	0.000000	0	yes	0.126116	
+E0a~E2	without ruled R tasks (LR61/LR70)	loc_silent	deepseek__deepseek-v3.2	R			0	39	39	40	0.000000	0.000000	0.089667	0.000000	0.000000	0	yes	0.127458	
+E0a~E2	without ruled R tasks (LR61/LR70)	loc_silent	google__gemma-4-31b-it	R			0	36	36	40	0.000000	0.000000	0.096419	0.000000	0.000000	0	yes	0.131915	
+E0a~E2	without ruled R tasks (LR61/LR70)	loc_silent	openai__gpt-5.4-mini	R			0	33	33	40	0.000000	0.000000	0.104270	0.000000	0.000000	0	yes	0.146335	
+E0a~E2	without ruled R tasks (LR61/LR70)	loc_silent	openai__gpt-5.6-terra	R			0	40	40	40	0.000000	0.000000	0.087622	0.000000	0.000000	0	yes	0.126116	
+E0a~E2	without ruled R tasks (LR61/LR70)	loc_silent	openai__gpt-oss-20b	R			0	33	33	40	0.000000	0.000000	0.104270	0.000000	0.000000	0	yes	0.146335	
+E0a~E2	without ruled R tasks (LR61/LR70)	loc_silent	qwen__qwen3.5-9b	R			0	27	27	40	0.000000	0.000000	0.124555	0.000000	0.000000	0	yes	0.150966	
+E0a~E2	without ruled R tasks (LR61/LR70)	loc_silent	qwen__qwen3.6-35b-a3b	R			0	38	38	40	0.000000	0.000000	0.091810	0.000000	0.000000	0	yes	0.128868	
+E0a~E2	without ruled R tasks (LR61/LR70)	loc_silent	MODEL_EQUAL_MEAN	R							0.000000			0.000000	0.000000	0			10
+E0a~E2	without ruled R tasks (LR61/LR70)	loc_silent_any	anthropic__claude-haiku-4.5	R			0	40	40	40	0.000000	0.000000	0.087622	0.000000	0.000000	0	yes	0.126116	
+E0a~E2	without ruled R tasks (LR61/LR70)	loc_silent_any	anthropic__claude-haiku-5.5	R			0	40	40	40	0.000000	0.000000	0.087622	0.000000	0.000000	0	yes	0.126116	
+E0a~E2	without ruled R tasks (LR61/LR70)	loc_silent_any	anthropic__claude-sonnet-5.5	R			0	40	40	40	0.000000	0.000000	0.087622	0.000000	0.000000	0	yes	0.126116	
+E0a~E2	without ruled R tasks (LR61/LR70)	loc_silent_any	deepseek__deepseek-v3.2	R			0	39	39	40	0.000000	0.000000	0.089667	0.000000	0.000000	0	yes	0.127458	
+E0a~E2	without ruled R tasks (LR61/LR70)	loc_silent_any	google__gemma-4-31b-it	R			0	36	36	40	0.000000	0.000000	0.096419	0.000000	0.000000	0	yes	0.131915	
+E0a~E2	without ruled R tasks (LR61/LR70)	loc_silent_any	openai__gpt-5.4-mini	R			0	33	33	40	0.000000	0.000000	0.104270	0.000000	0.000000	0	yes	0.146335	
+E0a~E2	without ruled R tasks (LR61/LR70)	loc_silent_any	openai__gpt-5.6-terra	R			0	40	40	40	0.000000	0.000000	0.087622	0.000000	0.000000	0	yes	0.126116	
+E0a~E2	without ruled R tasks (LR61/LR70)	loc_silent_any	openai__gpt-oss-20b	R			0	33	33	40	0.000000	0.000000	0.104270	0.000000	0.000000	0	yes	0.146335	
+E0a~E2	without ruled R tasks (LR61/LR70)	loc_silent_any	qwen__qwen3.5-9b	R			0	27	27	40	0.000000	0.000000	0.124555	0.000000	0.000000	0	yes	0.150966	
+E0a~E2	without ruled R tasks (LR61/LR70)	loc_silent_any	qwen__qwen3.6-35b-a3b	R			0	38	38	40	0.000000	0.000000	0.091810	0.000000	0.000000	0	yes	0.128868	
+E0a~E2	without ruled R tasks (LR61/LR70)	loc_silent_any	MODEL_EQUAL_MEAN	R							0.000000			0.000000	0.000000	0			10
+E0a~E2	without ruled R tasks (LR61/LR70)	loc_none	anthropic__claude-haiku-4.5	R			0	40	40	40	0.000000	0.000000	0.087622	0.000000	0.000000	0	yes	0.126116	
+E0a~E2	without ruled R tasks (LR61/LR70)	loc_none	anthropic__claude-haiku-5.5	R			0	40	40	40	0.000000	0.000000	0.087622	0.000000	0.000000	0	yes	0.126116	
+E0a~E2	without ruled R tasks (LR61/LR70)	loc_none	anthropic__claude-sonnet-5.5	R			0	40	40	40	0.000000	0.000000	0.087622	0.000000	0.000000	0	yes	0.126116	
+E0a~E2	without ruled R tasks (LR61/LR70)	loc_none	deepseek__deepseek-v3.2	R			0	39	39	40	0.000000	0.000000	0.089667	0.000000	0.000000	0	yes	0.127458	
+E0a~E2	without ruled R tasks (LR61/LR70)	loc_none	google__gemma-4-31b-it	R			0	36	36	40	0.000000	0.000000	0.096419	0.000000	0.000000	0	yes	0.131915	
+E0a~E2	without ruled R tasks (LR61/LR70)	loc_none	openai__gpt-5.4-mini	R			0	33	33	40	0.000000	0.000000	0.104270	0.000000	0.000000	0	yes	0.146335	
+E0a~E2	without ruled R tasks (LR61/LR70)	loc_none	openai__gpt-5.6-terra	R			0	40	40	40	0.000000	0.000000	0.087622	0.000000	0.000000	0	yes	0.126116	
+E0a~E2	without ruled R tasks (LR61/LR70)	loc_none	openai__gpt-oss-20b	R			0	33	33	40	0.000000	0.000000	0.104270	0.000000	0.000000	0	yes	0.146335	
+E0a~E2	without ruled R tasks (LR61/LR70)	loc_none	qwen__qwen3.5-9b	R			0	27	27	40	0.000000	0.000000	0.124555	0.000000	0.000000	0	yes	0.150966	
+E0a~E2	without ruled R tasks (LR61/LR70)	loc_none	qwen__qwen3.6-35b-a3b	R			0	38	38	40	0.000000	0.000000	0.091810	0.000000	0.000000	0	yes	0.128868	
+E0a~E2	without ruled R tasks (LR61/LR70)	loc_none	MODEL_EQUAL_MEAN	R							0.000000			0.000000	0.000000	0			10

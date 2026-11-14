@@ -1,0 +1,68 @@
+{
+ "id": "M_QF1_15",
+ "stratum": "M",
+ "family": "QF1_STRING",
+ "generic_family": null,
+ "catalogue_row": "O01",
+ "files": [
+  {
+   "path": "QF1_STRING/price_list.csv",
+   "description": "Shop price list (64 rows): sku (text code such as \"PL-0007\"), item (product name with size; several names have accented letters), section (dairy, pantry, drinks or bakery; capital letters and spaces are inconsistent), price (written with exactly two decimals, e.g. \"9.50\"; no empty cells)."
+  }
+ ],
+ "task_text": "Produce JSON text that maps each sku to its price, keeping the price exactly as written in the file, two decimals included ('9.50' must stay '9.50'), so read the prices as exact decimals rather than floating-point numbers. `result` should be the parsed JSON (a Python dict from sku to price).",
+ "allowed_task_words": [
+  "decimals"
+ ],
+ "invited_ids_author": [
+  "O01"
+ ],
+ "order_significant": false,
+ "sort_keys": [],
+ "dtype_significant": false,
+ "intended_computation": "Return a dict with the 64 skus as keys and the price text exactly as written (two decimals, e.g. '9.50') as values.",
+ "acceptable_variants": {
+  "row_order": "any",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": "the price may be the text '9.50' or the exact decimal 9.50 (Decimal('9.50')); a float 9.5 is not accepted."
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 64
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "FIX",
+  "reason": "on 2.x the decimals are exported as floating-point numbers and lose the written form ('9.50' becomes 9.5); 3.x keeps the text"
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M1",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 in package TASKS_M1; task text, card, naive solution, reference and predicted direction were prepared there."
+}

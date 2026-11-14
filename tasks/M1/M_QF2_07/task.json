@@ -1,0 +1,94 @@
+{
+ "id": "M_QF2_07",
+ "stratum": "M",
+ "family": "QF2_DATETIME",
+ "generic_family": null,
+ "catalogue_row": "D07",
+ "files": [
+  {
+   "path": "QF2_DATETIME/clicks.csv",
+   "description": "Website clicks (500 rows): click_ref (seven-digit reference with leading zeros, e.g. \"0000011\"), epoch_s (Unix timestamp in seconds, UTC, whole number), epoch_ms (Unix timestamp in milliseconds, UTC, when the click was received, whole number), page (site path such as /home or /pricing), dwell_s (seconds on the page, one decimal; about 8% empty)."
+  }
+ ],
+ "task_text": "Read the clicks file keeping every column as text, so that click_ref keeps its leading zeros. Then turn epoch_s (Unix time in seconds) into a date-time, treating values that cannot be converted as missing, and count the clicks per calendar day (UTC). `result` should be a Series indexed by day (text 'YYYY-MM-DD') with the click counts, in day order.",
+ "allowed_task_words": [
+  "Unix time in seconds",
+  "leading zeros",
+  "UTC"
+ ],
+ "invited_ids_author": [
+  "D07"
+ ],
+ "order_significant": true,
+ "sort_keys": [
+  "__index__"
+ ],
+ "dtype_significant": false,
+ "intended_computation": "All epoch_s values are valid whole numbers, so every click converts; count the 500 clicks per UTC calendar day and index the counts by 'YYYY-MM-DD', ascending.",
+ "acceptable_variants": {
+  "row_order": "ties_only",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": ""
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "counts_sum_to_rows",
+   "args": {
+    "column": "__values__",
+    "expected": 500
+   }
+  },
+  {
+   "check": "date_year_in_range",
+   "args": {
+    "columns": [
+     "__index__"
+    ],
+    "min_year": 2025,
+    "max_year": 2025
+   }
+  },
+  {
+   "check": "sorted_by",
+   "args": {
+    "keys": [
+     "__index__"
+    ],
+    "ascending": [
+     true
+    ]
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "HARM",
+  "reason": "on 3.x digit strings given with a seconds unit are parsed as date text, fail and become missing, so no clicks are counted"
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M1",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 in package TASKS_M1; task text, card, naive solution, reference and predicted direction were prepared there."
+}

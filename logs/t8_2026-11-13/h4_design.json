@@ -1,0 +1,225 @@
+{
+ "prereg_definition": {
+  "definition": "warn_233_measured",
+  "drift_column": "drift_E1",
+  "drift_units": 128,
+  "unwarned_units": 91,
+  "design_implied_H4_M": 0.7109375,
+  "per_family": {
+   "QF1_STRING": {
+    "tasks": 16,
+    "drift_units": 16,
+    "unwarned_units": 16,
+    "unknown_units": 0,
+    "share_unwarned": 1.0
+   },
+   "QF2_DATETIME": {
+    "tasks": 16,
+    "drift_units": 16,
+    "unwarned_units": 14,
+    "unknown_units": 0,
+    "share_unwarned": 0.875
+   },
+   "QF3_COW": {
+    "tasks": 16,
+    "drift_units": 16,
+    "unwarned_units": 10,
+    "unknown_units": 0,
+    "share_unwarned": 0.625
+   },
+   "QF4_GROUPBY": {
+    "tasks": 16,
+    "drift_units": 16,
+    "unwarned_units": 3,
+    "unknown_units": 0,
+    "share_unwarned": 0.1875
+   },
+   "QF5_ORDER": {
+    "tasks": 16,
+    "drift_units": 16,
+    "unwarned_units": 12,
+    "unknown_units": 0,
+    "share_unwarned": 0.75
+   },
+   "QF6_NA_DTYPE": {
+    "tasks": 16,
+    "drift_units": 16,
+    "unwarned_units": 12,
+    "unknown_units": 0,
+    "share_unwarned": 0.75
+   },
+   "QF7_INDEX_REDUCE": {
+    "tasks": 16,
+    "drift_units": 16,
+    "unwarned_units": 8,
+    "unknown_units": 0,
+    "share_unwarned": 0.5
+   },
+   "QF8_NUMERIC": {
+    "tasks": 16,
+    "drift_units": 16,
+    "unwarned_units": 16,
+    "unknown_units": 0,
+    "share_unwarned": 1.0
+   }
+  },
+  "listed": {
+   "warn_na": [],
+   "drift_E2_only": [],
+   "not_drifting_E1": [],
+   "unconfirmed": []
+  }
+ },
+ "pilot_definition_sensitivity": {
+  "definition": "warn_233_pilotdef",
+  "drift_column": "drift_E1",
+  "drift_units": 128,
+  "unwarned_units": 91,
+  "design_implied_H4_M": 0.7109375,
+  "per_family": {
+   "QF1_STRING": {
+    "tasks": 16,
+    "drift_units": 16,
+    "unwarned_units": 16,
+    "unknown_units": 0,
+    "share_unwarned": 1.0
+   },
+   "QF2_DATETIME": {
+    "tasks": 16,
+    "drift_units": 16,
+    "unwarned_units": 14,
+    "unknown_units": 0,
+    "share_unwarned": 0.875
+   },
+   "QF3_COW": {
+    "tasks": 16,
+    "drift_units": 16,
+    "unwarned_units": 10,
+    "unknown_units": 0,
+    "share_unwarned": 0.625
+   },
+   "QF4_GROUPBY": {
+    "tasks": 16,
+    "drift_units": 16,
+    "unwarned_units": 3,
+    "unknown_units": 0,
+    "share_unwarned": 0.1875
+   },
+   "QF5_ORDER": {
+    "tasks": 16,
+    "drift_units": 16,
+    "unwarned_units": 12,
+    "unknown_units": 0,
+    "share_unwarned": 0.75
+   },
+   "QF6_NA_DTYPE": {
+    "tasks": 16,
+    "drift_units": 16,
+    "unwarned_units": 12,
+    "unknown_units": 0,
+    "share_unwarned": 0.75
+   },
+   "QF7_INDEX_REDUCE": {
+    "tasks": 16,
+    "drift_units": 16,
+    "unwarned_units": 8,
+    "unknown_units": 0,
+    "share_unwarned": 0.5
+   },
+   "QF8_NUMERIC": {
+    "tasks": 16,
+    "drift_units": 16,
+    "unwarned_units": 16,
+    "unknown_units": 0,
+    "share_unwarned": 1.0
+   }
+  },
+  "listed": {
+   "warn_na": [],
+   "drift_E2_only": [],
+   "not_drifting_E1": [],
+   "unconfirmed": []
+  }
+ },
+ "target_E2_sensitivity": {
+  "definition": "warn_233_measured",
+  "drift_column": "drift_E2",
+  "drift_units": 114,
+  "unwarned_units": 78,
+  "design_implied_H4_M": 0.6842105263157895,
+  "per_family": {
+   "QF1_STRING": {
+    "tasks": 16,
+    "drift_units": 13,
+    "unwarned_units": 13,
+    "unknown_units": 0,
+    "share_unwarned": 1.0
+   },
+   "QF2_DATETIME": {
+    "tasks": 16,
+    "drift_units": 13,
+    "unwarned_units": 12,
+    "unknown_units": 0,
+    "share_unwarned": 0.9230769230769231
+   },
+   "QF3_COW": {
+    "tasks": 16,
+    "drift_units": 16,
+    "unwarned_units": 10,
+    "unknown_units": 0,
+    "share_unwarned": 0.625
+   },
+   "QF4_GROUPBY": {
+    "tasks": 16,
+    "drift_units": 16,
+    "unwarned_units": 3,
+    "unknown_units": 0,
+    "share_unwarned": 0.1875
+   },
+   "QF5_ORDER": {
+    "tasks": 16,
+    "drift_units": 16,
+    "unwarned_units": 12,
+    "unknown_units": 0,
+    "share_unwarned": 0.75
+   },
+   "QF6_NA_DTYPE": {
+    "tasks": 16,
+    "drift_units": 12,
+    "unwarned_units": 8,
+    "unknown_units": 0,
+    "share_unwarned": 0.6666666666666666
+   },
+   "QF7_INDEX_REDUCE": {
+    "tasks": 16,
+    "drift_units": 12,
+    "unwarned_units": 4,
+    "unknown_units": 0,
+    "share_unwarned": 0.3333333333333333
+   },
+   "QF8_NUMERIC": {
+    "tasks": 16,
+    "drift_units": 16,
+    "unwarned_units": 16,
+    "unknown_units": 0,
+    "share_unwarned": 1.0
+   }
+  },
+  "listed": {
+   "warn_na": [],
+   "drift_E2_only": [],
+   "not_drifting_E1": [
+    "S06",
+    "D08",
+    "D09",
+    "D10",
+    "N05",
+    "I06"
+   ],
+   "unconfirmed": []
+  }
+ },
+ "status_file": "mechanisms/confirm/status.tsv",
+ "quota_file": "mechanisms/confirm/quota_allocation.tsv",
+ "note": "design-implied value for stratum M, assumption of one unit of drift per task on a drifting row; recorded at the freeze (section 14) and reported next to the observed M value (section 7)"
+}

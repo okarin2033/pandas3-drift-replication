@@ -1,0 +1,65 @@
+sku,item,section,price
+PL-0007,crème fraîche (small),dairy,9.50
+PL-0014,crème fraîche (medium),dairy,6.12
+PL-0021,crème fraîche (large),dairy,13.49
+PL-0028,crème fraîche (family),dairy,9.20
+PL-0035,Gruyère (small),dairy,8.30
+PL-0042,Gruyère (medium),dairy,4.85
+PL-0049,Gruyère (large),dairy,16.12
+PL-0056,Gruyère (family),dairy,7.98
+PL-0063,skyr (small),dairy,17.60
+PL-0070,skyr (medium),dairy,20.31
+PL-0077,skyr (large),dairy,7.10
+PL-0084,skyr (family),dairy,19.50
+PL-0091,feta (small),dairy,20.90
+PL-0098,feta (medium),dairy,10.04
+PL-0105,feta (large),dairy,8.96
+PL-0112,feta (family),dairy,7.48
+PL-0119,jalapeño salsa (small),pantry,3.57
+PL-0126,jalapeño salsa (medium),pantry,14.75
+PL-0133,jalapeño salsa (large),pantry,6.86
+PL-0140,jalapeño salsa (family),pantry,5.95
+PL-0147,açaí bowl mix (small),pantry,18.50
+PL-0154,açaí bowl mix (medium),pantry,13.69
+PL-0161,açaí bowl mix (large),pantry,9.33
+PL-0168,açaí bowl mix (family),pantry,12.30
+PL-0175,pâté (small),pantry,6.60
+PL-0182,pâté (medium),pantry,11.40
+PL-0189,pâté (large),pantry,7.40
+PL-0196,pâté (family),pantry,17.00
+PL-0203,muesli (small),pantry,8.74
+PL-0210,muesli (medium),pantry,9.23
+PL-0217,muesli (large),pantry,5.37
+PL-0224,muesli (family),pantry,12.50
+PL-0231,café crème beans (small),drinks,11.80
+PL-0238,café crème beans (medium),drinks,11.30
+PL-0245,café crème beans (large),drinks,8.98
+PL-0252,café crème beans (family),drinks,6.44
+PL-0259,rooibos (small),drinks,2.40
+PL-0266,rooibos (medium),drinks,9.00
+PL-0273,rooibos (large),drinks,1.70
+PL-0280,rooibos (family),drinks,9.50
+PL-0287,cola (small),drinks,14.10
+PL-0294,cola (medium),drinks,7.41
+PL-0301,cola (large),drinks,5.50
+PL-0308,cola (family),drinks,19.40
+PL-0315,kombucha (small),drinks,18.20
+PL-0322,kombucha (medium),drinks,9.42
+PL-0329,kombucha (large),drinks,16.90
+PL-0336,kombucha (family),drinks,1.69
+PL-0343,brioche (small),bakery,9.70
+PL-0350,brioche (medium),bakery,2.04
+PL-0357,brioche (large),bakery,5.70
+PL-0364,brioche (family),bakery,7.30
+PL-0371,baguette (small),bakery,10.73
+PL-0378,baguette (medium),bakery,4.09
+PL-0385,baguette (large),bakery,7.19
+PL-0392,baguette (family),bakery,5.30
+PL-0399,pain au chocolat (small),bakery,1.20
+PL-0406,pain au chocolat (medium),bakery,22.80
+PL-0413,pain au chocolat (large),bakery,16.30
+PL-0420,pain au chocolat (family),bakery,13.62
+PL-0427,rye loaf (small),bakery,4.91
+PL-0434,rye loaf (medium),bakery,21.40
+PL-0441,rye loaf (large),bakery,4.00
+PL-0448,rye loaf (family),bakery,10.45

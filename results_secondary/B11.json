@@ -1,0 +1,137 @@
+{
+ "item": "B.11",
+ "tiers": [
+  {
+   "pair": "E0a~E1",
+   "stratum": "M",
+   "tier": "T-small-open",
+   "models_in_tier": 4,
+   "models_present": 4,
+   "models_entering": 4,
+   "rate_model_equal": 0.06220792642916849,
+   "boot_lo": 0.04125710327203965,
+   "boot_hi": 0.0863389548701507,
+   "boot_dropped": 0,
+   "per_model": {
+    "openai__gpt-oss-20b": {
+     "x": 49,
+     "n": 591,
+     "rate": 0.0829103214890017
+    },
+    "qwen__qwen3.5-9b": {
+     "x": 19,
+     "n": 456,
+     "rate": 0.041666666666666664
+    },
+    "qwen__qwen3.6-35b-a3b": {
+     "x": 30,
+     "n": 612,
+     "rate": 0.049019607843137254
+    },
+    "google__gemma-4-31b-it": {
+     "x": 48,
+     "n": 638,
+     "rate": 0.07523510971786834
+    }
+   }
+  },
+  {
+   "pair": "E0a~E1",
+   "stratum": "M",
+   "tier": "T-large-open",
+   "models_in_tier": 1,
+   "models_present": 1,
+   "models_entering": 1,
+   "rate_model_equal": 0.05246422893481717,
+   "boot_lo": 0.02702702702702703,
+   "boot_hi": 0.08013142054574635,
+   "boot_dropped": 0,
+   "per_model": {
+    "deepseek__deepseek-v3.2": {
+     "x": 33,
+     "n": 629,
+     "rate": 0.05246422893481717
+    }
+   }
+  },
+  {
+   "pair": "E0a~E1",
+   "stratum": "M",
+   "tier": "T-small-closed",
+   "models_in_tier": 3,
+   "models_present": 3,
+   "models_entering": 3,
+   "rate_model_equal": 0.048841554471330983,
+   "boot_lo": 0.02517337662768979,
+   "boot_hi": 0.07559329245934279,
+   "boot_dropped": 0,
+   "per_model": {
+    "anthropic__claude-haiku-4.5": {
+     "x": 25,
+     "n": 629,
+     "rate": 0.0397456279809221
+    },
+    "anthropic__claude-haiku-5.5": {
+     "x": 25,
+     "n": 640,
+     "rate": 0.0390625
+    },
+    "openai__gpt-5.4-mini": {
+     "x": 43,
+     "n": 635,
+     "rate": 0.06771653543307087
+    }
+   }
+  },
+  {
+   "pair": "E0a~E1",
+   "stratum": "M",
+   "tier": "T-frontier",
+   "models_in_tier": 2,
+   "models_present": 2,
+   "models_entering": 2,
+   "rate_model_equal": 0.06515821540880504,
+   "boot_lo": 0.036088261626766094,
+   "boot_hi": 0.09817621186023617,
+   "boot_dropped": 0,
+   "per_model": {
+    "openai__gpt-5.6-terra": {
+     "x": 64,
+     "n": 636,
+     "rate": 0.10062893081761007
+    },
+    "anthropic__claude-sonnet-5.5": {
+     "x": 19,
+     "n": 640,
+     "rate": 0.0296875
+    }
+   }
+  }
+ ],
+ "notes": [],
+ "models_in_no_tier": [],
+ "meta": {
+  "label": null,
+  "test_mode": false,
+  "items": [
+   "B.11"
+  ],
+  "inputs_sha256": {
+   "per_program.jsonl": "dfd3b7dc406ffb88c34c7a4cfc9a90eeb71c0feaf0da626b9805bbac40e9401f",
+   "summary.json": "064443d62d3ec2e0e383c7084734282d191377593cfa13cf26134d10f53a5096",
+   "tasks.json": "ac38b07873515cff1488544c81f1acadc80aaad418db13883a3a0423ccad5391",
+   "models.tsv": "93fc8c7f6f8f2b3f0e11e04926e5245f1456534085779a1b2d1cb1c4b2520676"
+  },
+  "B": 10000,
+  "seed": 20261111,
+  "tool": "sec_model_level.py",
+  "tool_sha256": "a83c368a415fd2713a936f5c1de7e2a7f1af45e46191d6ced2b5a99c6b0c284b",
+  "sec_common_sha256": "c1e87284ed92844ade5c515bb78fe261b3a94431d1389c0b4ec2f854f48d39db",
+  "harness_stats_sha256": "ad28a99b5e3a61dc9a7753e3a019a41d2d5968a83f94d6aaddff91156e0bf41d",
+  "created": "2026-11-13T16:34:33+0900",
+  "numpy_used": true,
+  "pair": "E0a~E1",
+  "stratum": "M"
+ },
+ "label": null
+}

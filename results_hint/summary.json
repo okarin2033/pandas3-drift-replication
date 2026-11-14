@@ -1,0 +1,1335 @@
+{
+ "schema_version": "summary/1",
+ "created": "2026-11-13T16:50:09+09:00",
+ "label": "optional run: version-hint ablation arm (LR82.4 a), not the registered analysis",
+ "B": 10000,
+ "seed": 20261111,
+ "python": "3.12.13",
+ "plan": {
+  "models": {
+   "openai__gpt-oss-20b": {
+    "openrouter_id": "openai/gpt-oss-20b",
+    "group": "BEFORE",
+    "open": true,
+    "k": 5,
+    "generated": 0,
+    "planned": 1000,
+    "state": "not_started",
+    "stop_rule": null
+   },
+   "anthropic__claude-haiku-5.5": {
+    "openrouter_id": "anthropic/claude-haiku-5.5",
+    "group": "AFTER",
+    "open": false,
+    "k": 5,
+    "generated": 0,
+    "planned": 1000,
+    "state": "not_started",
+    "stop_rule": null
+   },
+   "qwen__qwen3.6-35b-a3b": {
+    "openrouter_id": "qwen/qwen3.6-35b-a3b",
+    "group": "UNKNOWN",
+    "open": true,
+    "k": 5,
+    "generated": 0,
+    "planned": 1000,
+    "state": "not_started",
+    "stop_rule": null
+   },
+   "qwen__qwen3.5-9b": {
+    "openrouter_id": "qwen/qwen3.5-9b",
+    "group": "UNKNOWN",
+    "open": true,
+    "k": 5,
+    "generated": 120,
+    "planned": 1000,
+    "state": "complete",
+    "stop_rule": null
+   },
+   "google__gemma-4-31b-it": {
+    "openrouter_id": "google/gemma-4-31b-it",
+    "group": "BEFORE",
+    "open": true,
+    "k": 5,
+    "generated": 120,
+    "planned": 1000,
+    "state": "complete",
+    "stop_rule": null
+   },
+   "deepseek__deepseek-v3.2": {
+    "openrouter_id": "deepseek/deepseek-v3.2",
+    "group": "UNKNOWN",
+    "open": true,
+    "k": 5,
+    "generated": 0,
+    "planned": 1000,
+    "state": "not_started",
+    "stop_rule": null
+   },
+   "openai__gpt-5.4-mini": {
+    "openrouter_id": "openai/gpt-5.4-mini",
+    "group": "BEFORE",
+    "open": false,
+    "k": 5,
+    "generated": 120,
+    "planned": 1000,
+    "state": "complete",
+    "stop_rule": null
+   },
+   "anthropic__claude-haiku-4.5": {
+    "openrouter_id": "anthropic/claude-haiku-4.5",
+    "group": "BEFORE",
+    "open": false,
+    "k": 5,
+    "generated": 120,
+    "planned": 1000,
+    "state": "complete",
+    "stop_rule": null
+   },
+   "openai__gpt-5.6-terra": {
+    "openrouter_id": "openai/gpt-5.6-terra",
+    "group": "AFTER",
+    "open": false,
+    "k": 5,
+    "generated": 0,
+    "planned": 1000,
+    "state": "not_started",
+    "stop_rule": null
+   },
+   "anthropic__claude-sonnet-5.5": {
+    "openrouter_id": "anthropic/claude-sonnet-5.5",
+    "group": "AFTER",
+    "open": false,
+    "k": 5,
+    "generated": 0,
+    "planned": 1000,
+    "state": "not_started",
+    "stop_rule": null
+   }
+  },
+  "k": 5,
+  "n_tasks": 200,
+  "alpha": 0.05,
+  "roles": {
+   "h1_high": "qwen__qwen3.5-9b",
+   "h1_low": "anthropic__claude-sonnet-5.5",
+   "h2b_old": "anthropic__claude-haiku-4.5",
+   "h2b_new": "anthropic__claude-haiku-5.5"
+  },
+  "h2b_available": true,
+  "targets": [
+   "E0a~E1"
+  ]
+ },
+ "numpy_used": true,
+ "n_programs": 480,
+ "models": {
+  "qwen__qwen3.5-9b": {
+   "group": "UNKNOWN",
+   "open": true,
+   "planned": 1000,
+   "generated": 120,
+   "state": "complete",
+   "stop_rule": null,
+   "generated_share": 0.12,
+   "outcomes_E0a~E1": {
+    "ORDER_ONLY": 1,
+    "EXCL_FAIL": 31,
+    "DTYPE_ONLY": 56,
+    "IDENTICAL": 27,
+    "DRIFT_WARNED": 1,
+    "LOUD": 1,
+    "WARNING_ONLY": 3
+   },
+   "three_x_only": 1,
+   "empty_source": 0,
+   "duplicate_body_rate": 0.0,
+   "warned_E0a_prereg_rate_of_clean": 0.0449438202247191
+  },
+  "google__gemma-4-31b-it": {
+   "group": "BEFORE",
+   "open": true,
+   "planned": 1000,
+   "generated": 120,
+   "state": "complete",
+   "stop_rule": null,
+   "generated_share": 0.12,
+   "outcomes_E0a~E1": {
+    "DTYPE_ONLY": 74,
+    "IDENTICAL": 34,
+    "LOUD": 3,
+    "DRIFT_SILENT": 5,
+    "DRIFT_WARNED": 1,
+    "WARNING_ONLY": 3
+   },
+   "three_x_only": 0,
+   "empty_source": 0,
+   "duplicate_body_rate": 0.0,
+   "warned_E0a_prereg_rate_of_clean": 0.025
+  },
+  "openai__gpt-5.4-mini": {
+   "group": "BEFORE",
+   "open": false,
+   "planned": 1000,
+   "generated": 120,
+   "state": "complete",
+   "stop_rule": null,
+   "generated_share": 0.12,
+   "outcomes_E0a~E1": {
+    "IDENTICAL": 37,
+    "DTYPE_ONLY": 71,
+    "EXCL_FAIL": 1,
+    "WARNING_ONLY": 2,
+    "DRIFT_SILENT": 8,
+    "ORDER_ONLY": 1
+   },
+   "three_x_only": 0,
+   "empty_source": 0,
+   "duplicate_body_rate": 0.008333333333333333,
+   "warned_E0a_prereg_rate_of_clean": 0.05042016806722689
+  },
+  "anthropic__claude-haiku-4.5": {
+   "group": "BEFORE",
+   "open": false,
+   "planned": 1000,
+   "generated": 120,
+   "state": "complete",
+   "stop_rule": null,
+   "generated_share": 0.12,
+   "outcomes_E0a~E1": {
+    "DTYPE_ONLY": 70,
+    "IDENTICAL": 37,
+    "LOUD": 3,
+    "DRIFT_SILENT": 3,
+    "EXCL_FAIL": 2,
+    "WARNING_ONLY": 5
+   },
+   "three_x_only": 0,
+   "empty_source": 0,
+   "duplicate_body_rate": 0.016666666666666666,
+   "warned_E0a_prereg_rate_of_clean": 0.06779661016949153
+  }
+ },
+ "targets": {
+  "E0a~E1": {
+   "tests": {
+    "H1": {
+     "estimate": null,
+     "lo": null,
+     "hi": null,
+     "dropped": 10000,
+     "n_valid": 0,
+     "B": 10000,
+     "one_sided_lower": {
+      "0.05": null,
+      "0.025": null,
+      "0.016667": null,
+      "0.0125": null,
+      "0.01": null
+     },
+     "p": null,
+     "null": 0.02,
+     "condition": null
+    },
+    "H2a": {
+     "estimate": null,
+     "lo": null,
+     "hi": null,
+     "dropped": 10000,
+     "n_valid": 0,
+     "B": 10000,
+     "one_sided_lower": {
+      "0.05": null,
+      "0.025": null,
+      "0.016667": null,
+      "0.0125": null,
+      "0.01": null
+     },
+     "p": null,
+     "null": 0.0,
+     "condition": false,
+     "condition_text": "point estimate >= 2 pp"
+    },
+    "H2b": {
+     "estimate": null,
+     "lo": null,
+     "hi": null,
+     "dropped": 10000,
+     "n_valid": 0,
+     "B": 10000,
+     "one_sided_lower": {
+      "0.05": null,
+      "0.025": null,
+      "0.016667": null,
+      "0.0125": null,
+      "0.01": null
+     },
+     "p": null,
+     "null": 0.0,
+     "condition": null
+    },
+    "H3": {
+     "estimate": "-Infinity",
+     "lo": "-Infinity",
+     "hi": "-Infinity",
+     "dropped": 43,
+     "n_valid": 9957,
+     "B": 10000,
+     "one_sided_lower": {
+      "0.05": "-Infinity",
+      "0.025": "-Infinity",
+      "0.016667": "-Infinity",
+      "0.0125": "-Infinity",
+      "0.01": "-Infinity"
+     },
+     "p": 1.0,
+     "null": 0.0,
+     "condition": false,
+     "condition_text": "point estimate RR >= 2",
+     "models_entering": [
+      "qwen__qwen3.5-9b",
+      "google__gemma-4-31b-it",
+      "openai__gpt-5.4-mini",
+      "anthropic__claude-haiku-4.5"
+     ],
+     "rr": 0.0,
+     "n_dropped_both_zero": 43,
+     "n_plus_inf": 0
+    },
+    "H4": {
+     "estimate": null,
+     "lo": null,
+     "hi": null,
+     "dropped": 10000,
+     "n_valid": 0,
+     "B": 10000,
+     "one_sided_lower": {
+      "0.05": null,
+      "0.025": null,
+      "0.016667": null,
+      "0.0125": null,
+      "0.01": null
+     },
+     "p": null,
+     "null": 0.5,
+     "condition": null,
+     "n_drift_programs": 0,
+     "n_drift_tasks": 0
+    }
+   },
+   "secondary": {
+    "H2a_closed_only": {
+     "estimate": null,
+     "lo": null,
+     "hi": null,
+     "dropped": 10000,
+     "n_valid": 0,
+     "B": 10000,
+     "one_sided_lower": {
+      "0.05": null,
+      "0.025": null,
+      "0.016667": null,
+      "0.0125": null,
+      "0.01": null
+     },
+     "p": null,
+     "null": 0.0
+    },
+    "H4_stratum_R_only": {
+     "estimate": null,
+     "lo": null,
+     "hi": null,
+     "dropped": 10000,
+     "n_valid": 0,
+     "B": 10000,
+     "one_sided_lower": {
+      "0.05": null,
+      "0.025": null,
+      "0.016667": null,
+      "0.0125": null,
+      "0.01": null
+     },
+     "p": null,
+     "null": 0.5
+    },
+    "H4_companion_drift_plus_loud_warned_on_233": {
+     "estimate": null,
+     "lo": null,
+     "hi": null,
+     "dropped": 10000,
+     "n_valid": 0,
+     "B": 10000,
+     "one_sided_lower": {
+      "0.05": null,
+      "0.025": null,
+      "0.016667": null,
+      "0.0125": null,
+      "0.01": null
+     },
+     "p": null,
+     "null": null
+    }
+   },
+   "rates": {
+    "qwen__qwen3.5-9b": {
+     "M": {
+      "x": 0,
+      "n": 89,
+      "generated": 120,
+      "rate": 0.0,
+      "wilson_lo": 3.469446951953614e-18,
+      "wilson_hi": 0.04137654523625252,
+      "boot_lo": 0.0,
+      "boot_hi": 0.0,
+      "boot_dropped": 0,
+      "cp_deff_upper": 0.04104064905581983,
+      "deff": 1.245,
+      "icc": 0.0,
+      "n_eff": 71.4859437751004,
+      "rare_event": true
+     }
+    },
+    "google__gemma-4-31b-it": {
+     "M": {
+      "x": 5,
+      "n": 120,
+      "generated": 120,
+      "rate": 0.041666666666666664,
+      "wilson_lo": 0.017926716880109515,
+      "wilson_hi": 0.09384085233703535,
+      "boot_lo": 0.0,
+      "boot_hi": 0.10606060606060606,
+      "boot_dropped": 0,
+      "cp_deff_upper": 0.1276616173268735,
+      "deff": 2.5916230366492146,
+      "icc": 0.7958115183246073,
+      "n_eff": 46.303030303030305,
+      "rare_event": false
+     }
+    },
+    "openai__gpt-5.4-mini": {
+     "M": {
+      "x": 8,
+      "n": 119,
+      "generated": 120,
+      "rate": 0.06722689075630252,
+      "wilson_lo": 0.03445575021955611,
+      "wilson_hi": 0.12706511587220667,
+      "boot_lo": 0.009259259259259259,
+      "boot_hi": 0.13675213675213677,
+      "boot_dropped": 0,
+      "cp_deff_upper": 0.15241862089475947,
+      "deff": 2.192369402985075,
+      "icc": 0.6037313432835821,
+      "n_eff": 54.279173864574375,
+      "rare_event": false
+     }
+    },
+    "anthropic__claude-haiku-4.5": {
+     "M": {
+      "x": 3,
+      "n": 118,
+      "generated": 120,
+      "rate": 0.025423728813559324,
+      "wilson_lo": 0.008683514404083097,
+      "wilson_hi": 0.07208914636303015,
+      "boot_lo": 0.0,
+      "boot_hi": 0.06622516556291391,
+      "boot_dropped": 0,
+      "cp_deff_upper": 0.08107964926932767,
+      "deff": 1.623313782991202,
+      "icc": 0.3196480938416421,
+      "n_eff": 72.69081383795503,
+      "rare_event": true
+     }
+    }
+   },
+   "family_rates": {
+    "qwen__qwen3.5-9b": {
+     "QF1": {
+      "x": 0,
+      "n": 10,
+      "rate": 0.0,
+      "wilson_lo": 0.0,
+      "wilson_hi": 0.2775327998628892,
+      "rare_event": true,
+      "cp_deff_upper": 0.30196628341718046
+     },
+     "QF2": {
+      "x": 0,
+      "n": 10,
+      "rate": 0.0,
+      "wilson_lo": 0.0,
+      "wilson_hi": 0.2775327998628892,
+      "rare_event": true,
+      "cp_deff_upper": 0.30196628341718046
+     },
+     "QF3": {
+      "x": 0,
+      "n": 13,
+      "rate": 0.0,
+      "wilson_lo": 0.0,
+      "wilson_hi": 0.22809537235419838,
+      "rare_event": true,
+      "cp_deff_upper": 0.26227344611823866
+     },
+     "QF4": {
+      "x": 0,
+      "n": 11,
+      "rate": 0.0,
+      "wilson_lo": 0.0,
+      "wilson_hi": 0.2588329669680317,
+      "rare_event": true,
+      "cp_deff_upper": 0.2865912415069469
+     },
+     "QF5": {
+      "x": 0,
+      "n": 9,
+      "rate": 0.0,
+      "wilson_lo": 0.0,
+      "wilson_hi": 0.2991450484195441,
+      "rare_event": true,
+      "cp_deff_upper": 0.3203087337608741
+     },
+     "QF6": {
+      "x": 0,
+      "n": 11,
+      "rate": 0.0,
+      "wilson_lo": 0.0,
+      "wilson_hi": 0.2588329669680317,
+      "rare_event": true,
+      "cp_deff_upper": 0.2865912415069469
+     },
+     "QF7": {
+      "x": 0,
+      "n": 14,
+      "rate": 0.0,
+      "wilson_lo": 1.3877787807814457e-17,
+      "wilson_hi": 0.2153108027376358,
+      "rare_event": true,
+      "cp_deff_upper": 0.25249478136346104
+     },
+     "QF8": {
+      "x": 0,
+      "n": 11,
+      "rate": 0.0,
+      "wilson_lo": 0.0,
+      "wilson_hi": 0.2588329669680317,
+      "rare_event": true,
+      "cp_deff_upper": 0.2865912415069469
+     }
+    },
+    "google__gemma-4-31b-it": {
+     "QF1": {
+      "x": 0,
+      "n": 15,
+      "rate": 0.0,
+      "wilson_lo": 0.0,
+      "wilson_hi": 0.20388330103584862,
+      "rare_event": true,
+      "cp_deff_upper": 0.2439151539424106
+     },
+     "QF2": {
+      "x": 0,
+      "n": 15,
+      "rate": 0.0,
+      "wilson_lo": 0.0,
+      "wilson_hi": 0.20388330103584862,
+      "rare_event": true,
+      "cp_deff_upper": 0.2439151539424106
+     },
+     "QF3": {
+      "x": 0,
+      "n": 15,
+      "rate": 0.0,
+      "wilson_lo": 0.0,
+      "wilson_hi": 0.20388330103584862,
+      "rare_event": true,
+      "cp_deff_upper": 0.2439151539424106
+     },
+     "QF4": {
+      "x": 3,
+      "n": 15,
+      "rate": 0.2,
+      "wilson_lo": 0.07047549346981563,
+      "wilson_hi": 0.45185448715169363,
+      "rare_event": true,
+      "cp_deff_upper": 0.6574083180011385
+     },
+     "QF5": {
+      "x": 0,
+      "n": 15,
+      "rate": 0.0,
+      "wilson_lo": 0.0,
+      "wilson_hi": 0.20388330103584862,
+      "rare_event": true,
+      "cp_deff_upper": 0.2439151539424106
+     },
+     "QF6": {
+      "x": 2,
+      "n": 15,
+      "rate": 0.13333333333333333,
+      "wilson_lo": 0.03736125910306537,
+      "wilson_hi": 0.37881982832322364,
+      "rare_event": true,
+      "cp_deff_upper": 0.49448734974954245
+     },
+     "QF7": {
+      "x": 0,
+      "n": 15,
+      "rate": 0.0,
+      "wilson_lo": 0.0,
+      "wilson_hi": 0.20388330103584862,
+      "rare_event": true,
+      "cp_deff_upper": 0.2439151539424106
+     },
+     "QF8": {
+      "x": 0,
+      "n": 15,
+      "rate": 0.0,
+      "wilson_lo": 0.0,
+      "wilson_hi": 0.20388330103584862,
+      "rare_event": true,
+      "cp_deff_upper": 0.2439151539424106
+     }
+    },
+    "openai__gpt-5.4-mini": {
+     "QF1": {
+      "x": 0,
+      "n": 14,
+      "rate": 0.0,
+      "wilson_lo": 1.3877787807814457e-17,
+      "wilson_hi": 0.2153108027376358,
+      "rare_event": true,
+      "cp_deff_upper": 0.25249478136346104
+     },
+     "QF2": {
+      "x": 0,
+      "n": 15,
+      "rate": 0.0,
+      "wilson_lo": 0.0,
+      "wilson_hi": 0.20388330103584862,
+      "rare_event": true,
+      "cp_deff_upper": 0.2439151539424106
+     },
+     "QF3": {
+      "x": 0,
+      "n": 15,
+      "rate": 0.0,
+      "wilson_lo": 0.0,
+      "wilson_hi": 0.20388330103584862,
+      "rare_event": true,
+      "cp_deff_upper": 0.2439151539424106
+     },
+     "QF4": {
+      "x": 5,
+      "n": 15,
+      "rate": 0.3333333333333333,
+      "wilson_lo": 0.1517632443971473,
+      "wilson_hi": 0.5828645226148023,
+      "rare_event": false,
+      "cp_deff_upper": 0.7286616274802473
+     },
+     "QF5": {
+      "x": 0,
+      "n": 15,
+      "rate": 0.0,
+      "wilson_lo": 0.0,
+      "wilson_hi": 0.20388330103584862,
+      "rare_event": true,
+      "cp_deff_upper": 0.2439151539424106
+     },
+     "QF6": {
+      "x": 3,
+      "n": 15,
+      "rate": 0.2,
+      "wilson_lo": 0.07047549346981563,
+      "wilson_hi": 0.45185448715169363,
+      "rare_event": true,
+      "cp_deff_upper": 0.506901301063202
+     },
+     "QF7": {
+      "x": 0,
+      "n": 15,
+      "rate": 0.0,
+      "wilson_lo": 0.0,
+      "wilson_hi": 0.20388330103584862,
+      "rare_event": true,
+      "cp_deff_upper": 0.2439151539424106
+     },
+     "QF8": {
+      "x": 0,
+      "n": 15,
+      "rate": 0.0,
+      "wilson_lo": 0.0,
+      "wilson_hi": 0.20388330103584862,
+      "rare_event": true,
+      "cp_deff_upper": 0.2439151539424106
+     }
+    },
+    "anthropic__claude-haiku-4.5": {
+     "QF1": {
+      "x": 0,
+      "n": 15,
+      "rate": 0.0,
+      "wilson_lo": 0.0,
+      "wilson_hi": 0.20388330103584862,
+      "rare_event": true,
+      "cp_deff_upper": 0.2439151539424106
+     },
+     "QF2": {
+      "x": 0,
+      "n": 15,
+      "rate": 0.0,
+      "wilson_lo": 0.0,
+      "wilson_hi": 0.20388330103584862,
+      "rare_event": true,
+      "cp_deff_upper": 0.2439151539424106
+     },
+     "QF3": {
+      "x": 0,
+      "n": 15,
+      "rate": 0.0,
+      "wilson_lo": 0.0,
+      "wilson_hi": 0.20388330103584862,
+      "rare_event": true,
+      "cp_deff_upper": 0.2439151539424106
+     },
+     "QF4": {
+      "x": 1,
+      "n": 13,
+      "rate": 0.07692307692307693,
+      "wilson_lo": 0.013710421242556586,
+      "wilson_hi": 0.3331395092109959,
+      "rare_event": true,
+      "cp_deff_upper": 0.36871832195195453
+     },
+     "QF5": {
+      "x": 0,
+      "n": 15,
+      "rate": 0.0,
+      "wilson_lo": 0.0,
+      "wilson_hi": 0.20388330103584862,
+      "rare_event": true,
+      "cp_deff_upper": 0.2439151539424106
+     },
+     "QF6": {
+      "x": 2,
+      "n": 15,
+      "rate": 0.13333333333333333,
+      "wilson_lo": 0.03736125910306537,
+      "wilson_hi": 0.37881982832322364,
+      "rare_event": true,
+      "cp_deff_upper": 0.49448734974954245
+     },
+     "QF7": {
+      "x": 0,
+      "n": 15,
+      "rate": 0.0,
+      "wilson_lo": 0.0,
+      "wilson_hi": 0.20388330103584862,
+      "rare_event": true,
+      "cp_deff_upper": 0.2439151539424106
+     },
+     "QF8": {
+      "x": 0,
+      "n": 15,
+      "rate": 0.0,
+      "wilson_lo": 0.0,
+      "wilson_hi": 0.20388330103584862,
+      "rare_event": true,
+      "cp_deff_upper": 0.2439151539424106
+     }
+    }
+   },
+   "rare_M": {
+    "qwen__qwen3.5-9b": {
+     "x": 0,
+     "n": 89,
+     "deff": 1.245,
+     "icc": 0.0,
+     "n_eff": 71.4859437751004,
+     "cp_deff_upper": 0.04104064905581983
+    },
+    "google__gemma-4-31b-it": {
+     "x": 5,
+     "n": 120,
+     "deff": 2.5916230366492146,
+     "icc": 0.7958115183246073,
+     "n_eff": 46.303030303030305,
+     "cp_deff_upper": 0.1276616173268735
+    },
+    "openai__gpt-5.4-mini": {
+     "x": 8,
+     "n": 119,
+     "deff": 2.192369402985075,
+     "icc": 0.6037313432835821,
+     "n_eff": 54.279173864574375,
+     "cp_deff_upper": 0.15241862089475947
+    },
+    "anthropic__claude-haiku-4.5": {
+     "x": 3,
+     "n": 118,
+     "deff": 1.623313782991202,
+     "icc": 0.3196480938416421,
+     "n_eff": 72.69081383795503,
+     "cp_deff_upper": 0.08107964926932767
+    }
+   },
+   "h4_stratum_M": {
+    "drift": 18,
+    "share_unwarned_on_233": 0.8888888888888888,
+    "per_family": {
+     "QF1": {
+      "drift": 0,
+      "drift_unwarned": 0,
+      "share_unwarned_on_233": null
+     },
+     "QF2": {
+      "drift": 0,
+      "drift_unwarned": 0,
+      "share_unwarned_on_233": null
+     },
+     "QF3": {
+      "drift": 1,
+      "drift_unwarned": 0,
+      "share_unwarned_on_233": 0.0
+     },
+     "QF4": {
+      "drift": 9,
+      "drift_unwarned": 8,
+      "share_unwarned_on_233": 0.8888888888888888
+     },
+     "QF5": {
+      "drift": 0,
+      "drift_unwarned": 0,
+      "share_unwarned_on_233": null
+     },
+     "QF6": {
+      "drift": 7,
+      "drift_unwarned": 7,
+      "share_unwarned_on_233": 1.0
+     },
+     "QF7": {
+      "drift": 0,
+      "drift_unwarned": 0,
+      "share_unwarned_on_233": null
+     },
+     "QF8": {
+      "drift": 1,
+      "drift_unwarned": 1,
+      "share_unwarned_on_233": 1.0
+     }
+    }
+   },
+   "h5": {
+    "basis": "automatic pre-label (not coded; not the confirmatory H5)",
+    "by_group": {
+     "R": {
+      "n_coded": 0,
+      "weighted_n": 0,
+      "shares": {}
+     },
+     "A": {
+      "n_coded": 0,
+      "weighted_n": 0,
+      "shares": {}
+     },
+     "M": {
+      "n_coded": 18,
+      "weighted_n": 18.0,
+      "shares": {
+       "HARM_3X": {
+        "est": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "dropped": 7
+       },
+       "FIX_3X": {
+        "est": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "dropped": 7
+       },
+       "BOTH_ACCEPTABLE": {
+        "est": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "dropped": 7
+       },
+       "NEITHER": {
+        "est": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "dropped": 7
+       },
+       "UNDETERMINABLE": {
+        "est": 1.0,
+        "lo": 1.0,
+        "hi": 1.0,
+        "dropped": 7
+       }
+      }
+     },
+     "R+A": {
+      "n_coded": 0,
+      "weighted_n": 0,
+      "shares": {}
+     },
+     "M:QF1": {
+      "n_coded": 0,
+      "weighted_n": 0,
+      "shares": {}
+     },
+     "M:QF2": {
+      "n_coded": 0,
+      "weighted_n": 0,
+      "shares": {}
+     },
+     "M:QF3": {
+      "n_coded": 1,
+      "weighted_n": 1.0,
+      "shares": {
+       "HARM_3X": {
+        "est": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "dropped": 3575
+       },
+       "FIX_3X": {
+        "est": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "dropped": 3575
+       },
+       "BOTH_ACCEPTABLE": {
+        "est": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "dropped": 3575
+       },
+       "NEITHER": {
+        "est": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "dropped": 3575
+       },
+       "UNDETERMINABLE": {
+        "est": 1.0,
+        "lo": 1.0,
+        "hi": 1.0,
+        "dropped": 3575
+       }
+      }
+     },
+     "M:QF4": {
+      "n_coded": 9,
+      "weighted_n": 9.0,
+      "shares": {
+       "HARM_3X": {
+        "est": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "dropped": 367
+       },
+       "FIX_3X": {
+        "est": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "dropped": 367
+       },
+       "BOTH_ACCEPTABLE": {
+        "est": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "dropped": 367
+       },
+       "NEITHER": {
+        "est": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "dropped": 367
+       },
+       "UNDETERMINABLE": {
+        "est": 1.0,
+        "lo": 1.0,
+        "hi": 1.0,
+        "dropped": 367
+       }
+      }
+     },
+     "M:QF5": {
+      "n_coded": 0,
+      "weighted_n": 0,
+      "shares": {}
+     },
+     "M:QF6": {
+      "n_coded": 7,
+      "weighted_n": 7.0,
+      "shares": {
+       "HARM_3X": {
+        "est": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "dropped": 1182
+       },
+       "FIX_3X": {
+        "est": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "dropped": 1182
+       },
+       "BOTH_ACCEPTABLE": {
+        "est": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "dropped": 1182
+       },
+       "NEITHER": {
+        "est": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "dropped": 1182
+       },
+       "UNDETERMINABLE": {
+        "est": 1.0,
+        "lo": 1.0,
+        "hi": 1.0,
+        "dropped": 1182
+       }
+      }
+     },
+     "M:QF7": {
+      "n_coded": 0,
+      "weighted_n": 0,
+      "shares": {}
+     },
+     "M:QF8": {
+      "n_coded": 1,
+      "weighted_n": 1.0,
+      "shares": {
+       "HARM_3X": {
+        "est": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "dropped": 3578
+       },
+       "FIX_3X": {
+        "est": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "dropped": 3578
+       },
+       "BOTH_ACCEPTABLE": {
+        "est": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "dropped": 3578
+       },
+       "NEITHER": {
+        "est": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "dropped": 3578
+       },
+       "UNDETERMINABLE": {
+        "est": 1.0,
+        "lo": 1.0,
+        "hi": 1.0,
+        "dropped": 3578
+       }
+      }
+     }
+    },
+    "uncovered_cells": [],
+    "n_drift_programs": 18,
+    "n_coded_total": 18,
+    "weights": "inverse probability within model x {QF1..QF8,R,A}"
+   },
+   "added_report_LR42_LR61": {
+    "label": "added report of lead rulings LR42 and LR61: stratum R without the tasks of tasks/RULED_FIDELITY_FAILS.tsv; registered before any study generation; decides nothing",
+    "rulings": [
+     "LR42",
+     "LR61"
+    ],
+    "outside_decision_rules": true,
+    "decides_nothing": true,
+    "ruled_file": "tasks/RULED_FIDELITY_FAILS.tsv",
+    "ruled_file_sha256": "293226daf4a868de977a66fd67f8cf2ae62cf0269d84c9923503c068470b0c46",
+    "listed_tasks": [
+     "R_08"
+    ],
+    "tasks_left_out": [
+     "R_08"
+    ],
+    "n_tasks_kept": 199,
+    "n_programs_left_out": 0,
+    "result": {
+     "rates_R": {},
+     "H4_stratum_R_only": {
+      "estimate": null,
+      "lo": null,
+      "hi": null,
+      "dropped": 10000,
+      "n_valid": 0,
+      "B": 10000,
+      "one_sided_lower": {
+       "0.05": null,
+       "0.025": null,
+       "0.016667": null,
+       "0.0125": null,
+       "0.01": null
+      },
+      "p": null,
+      "null": 0.5
+     },
+     "H4_RA": {
+      "estimate": null,
+      "lo": null,
+      "hi": null,
+      "dropped": 10000,
+      "n_valid": 0,
+      "B": 10000,
+      "one_sided_lower": {
+       "0.05": null,
+       "0.025": null,
+       "0.016667": null,
+       "0.0125": null,
+       "0.01": null
+      },
+      "p": null,
+      "null": 0.5,
+      "condition": null,
+      "n_drift_programs": 0,
+      "n_drift_tasks": 0
+     },
+     "H4_companion_drift_plus_loud_warned_on_233": {
+      "estimate": null,
+      "lo": null,
+      "hi": null,
+      "dropped": 10000,
+      "n_valid": 0,
+      "B": 10000,
+      "one_sided_lower": {
+       "0.05": null,
+       "0.025": null,
+       "0.016667": null,
+       "0.0125": null,
+       "0.01": null
+      },
+      "p": null,
+      "null": null
+     },
+     "H4_testability_RA": {
+      "n_drift_programs": 0,
+      "n_drift_tasks": 0,
+      "registered_minimum": {
+       "n_drift_programs": 20,
+       "n_drift_tasks": 5
+      }
+     },
+     "H4_RA_note": "LR70: the confirmatory H4 on R+A, its companion and the R+A testability count computed by the same code without the listed tasks; the primary H4, its Holm step and its testability are decided on the full strata R and A as registered",
+     "h5": {
+      "basis": "automatic pre-label (not coded; not the confirmatory H5)",
+      "by_group": {
+       "R": {
+        "n_coded": 0,
+        "weighted_n": 0,
+        "shares": {}
+       },
+       "R+A": {
+        "n_coded": 0,
+        "weighted_n": 0,
+        "shares": {}
+       }
+      },
+      "uncovered_cells_R": [],
+      "weights": "inverse probability within model x {QF1..QF8,R,A}"
+     },
+     "h5_rule": {
+      "basis": null,
+      "rule": "none",
+      "allowed": null,
+      "summary_sentence": "Fewer than 20 coded drift programs in R and in R+A: no summary sentence is allowed; shares are reported descriptively. [automatic pre-label (not coded; not the confirmatory H5)]"
+     },
+     "h5_rule_note": "the registered H5 rule (section 7: R headline, fallback R+A at fewer than 20 coded drift programs) applied to the H5 table without the listed tasks; the primary H5 rule is computed on the full stratum as registered"
+    }
+   }
+  }
+ },
+ "problems": {
+  "E0a~E1": {}
+ },
+ "not_implemented_here": [
+  "GEE logistic sensitivity models and the ordinal cutoff covariate (T11, statsmodels)",
+  "hand attribution agreement (T12)"
+ ],
+ "exclusions_table_LR22": {
+  "ruling": "LR22 (3)",
+  "row_external": "HARNESS_ERROR_EXTERNAL_SIGKILL",
+  "pairs": {
+   "E0a~E1": {
+    "by_model": {
+     "anthropic__claude-haiku-4.5": {
+      "DTYPE_ONLY": 70,
+      "IDENTICAL": 37,
+      "LOUD": 3,
+      "DRIFT_SILENT": 3,
+      "EXCL_FAIL": 2,
+      "WARNING_ONLY": 5
+     },
+     "google__gemma-4-31b-it": {
+      "DTYPE_ONLY": 74,
+      "IDENTICAL": 34,
+      "LOUD": 3,
+      "DRIFT_SILENT": 5,
+      "DRIFT_WARNED": 1,
+      "WARNING_ONLY": 3
+     },
+     "openai__gpt-5.4-mini": {
+      "IDENTICAL": 37,
+      "DTYPE_ONLY": 71,
+      "EXCL_FAIL": 1,
+      "WARNING_ONLY": 2,
+      "DRIFT_SILENT": 8,
+      "ORDER_ONLY": 1
+     },
+     "qwen__qwen3.5-9b": {
+      "ORDER_ONLY": 1,
+      "EXCL_FAIL": 31,
+      "DTYPE_ONLY": 56,
+      "IDENTICAL": 27,
+      "DRIFT_WARNED": 1,
+      "LOUD": 1,
+      "WARNING_ONLY": 3
+     }
+    },
+    "all_models": {
+     "DTYPE_ONLY": 271,
+     "IDENTICAL": 135,
+     "LOUD": 7,
+     "DRIFT_SILENT": 16,
+     "EXCL_FAIL": 34,
+     "WARNING_ONLY": 13,
+     "DRIFT_WARNED": 2,
+     "ORDER_ONLY": 2
+    }
+   }
+  }
+ },
+ "decision": {
+  "status": "INCOMPLETE",
+  "open_models": {
+   "openai__gpt-oss-20b": "state not_started (0 of 1000 programs generated)",
+   "anthropic__claude-haiku-5.5": "state not_started (0 of 1000 programs generated)",
+   "qwen__qwen3.6-35b-a3b": "state not_started (0 of 1000 programs generated)",
+   "deepseek__deepseek-v3.2": "state not_started (0 of 1000 programs generated)",
+   "openai__gpt-5.6-terra": "state not_started (0 of 1000 programs generated)",
+   "anthropic__claude-sonnet-5.5": "state not_started (0 of 1000 programs generated)"
+  },
+  "blocking": [],
+  "model_status": {
+   "openai__gpt-oss-20b": {
+    "closed": false,
+    "why": "state not_started (0 of 1000 programs generated)",
+    "share": 0.0,
+    "under80": false,
+    "generated": 0,
+    "planned": 1000,
+    "state": "not_started",
+    "stop_rule": null
+   },
+   "anthropic__claude-haiku-5.5": {
+    "closed": false,
+    "why": "state not_started (0 of 1000 programs generated)",
+    "share": 0.0,
+    "under80": false,
+    "generated": 0,
+    "planned": 1000,
+    "state": "not_started",
+    "stop_rule": null
+   },
+   "qwen__qwen3.6-35b-a3b": {
+    "closed": false,
+    "why": "state not_started (0 of 1000 programs generated)",
+    "share": 0.0,
+    "under80": false,
+    "generated": 0,
+    "planned": 1000,
+    "state": "not_started",
+    "stop_rule": null
+   },
+   "qwen__qwen3.5-9b": {
+    "closed": true,
+    "why": "complete",
+    "share": 0.12,
+    "under80": true,
+    "generated": 120,
+    "planned": 1000,
+    "state": "complete",
+    "stop_rule": null
+   },
+   "google__gemma-4-31b-it": {
+    "closed": true,
+    "why": "complete",
+    "share": 0.12,
+    "under80": true,
+    "generated": 120,
+    "planned": 1000,
+    "state": "complete",
+    "stop_rule": null
+   },
+   "deepseek__deepseek-v3.2": {
+    "closed": false,
+    "why": "state not_started (0 of 1000 programs generated)",
+    "share": 0.0,
+    "under80": false,
+    "generated": 0,
+    "planned": 1000,
+    "state": "not_started",
+    "stop_rule": null
+   },
+   "openai__gpt-5.4-mini": {
+    "closed": true,
+    "why": "complete",
+    "share": 0.12,
+    "under80": true,
+    "generated": 120,
+    "planned": 1000,
+    "state": "complete",
+    "stop_rule": null
+   },
+   "anthropic__claude-haiku-4.5": {
+    "closed": true,
+    "why": "complete",
+    "share": 0.12,
+    "under80": true,
+    "generated": 120,
+    "planned": 1000,
+    "state": "complete",
+    "stop_rule": null
+   },
+   "openai__gpt-5.6-terra": {
+    "closed": false,
+    "why": "state not_started (0 of 1000 programs generated)",
+    "share": 0.0,
+    "under80": false,
+    "generated": 0,
+    "planned": 1000,
+    "state": "not_started",
+    "stop_rule": null
+   },
+   "anthropic__claude-sonnet-5.5": {
+    "closed": false,
+    "why": "state not_started (0 of 1000 programs generated)",
+    "share": 0.0,
+    "under80": false,
+    "generated": 0,
+    "planned": 1000,
+    "state": "not_started",
+    "stop_rule": null
+   }
+  }
+ }
+}

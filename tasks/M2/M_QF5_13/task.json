@@ -1,0 +1,91 @@
+{
+ "id": "M_QF5_13",
+ "stratum": "M",
+ "family": "QF5_ORDER",
+ "generic_family": null,
+ "catalogue_row": "R01",
+ "files": [
+  {
+   "path": "QF5_ORDER/footfall_north.csv",
+   "description": "Daily visitor counts at the north entrance (36 rows, rows not in date order, each day at most once, some days missing): day (date as text, YYYY-MM-DD, September-October 2025), visitors (whole number; equal counts are common), remark (short note; about 47% empty). The dates overlap only partly with footfall_south.csv."
+  },
+  {
+   "path": "QF5_ORDER/footfall_south.csv",
+   "description": "Daily visitor counts at the south entrance (36 rows, rows not in date order, each day at most once, some days missing): day (date as text, YYYY-MM-DD, September-October 2025), visitors (whole number; equal counts are common), remark (short note; about 47% empty). The dates overlap only partly with footfall_north.csv."
+  }
+ ],
+ "task_text": "Combine the two files into one table with a column north and a column south and one row per day. Keep the days in the order in which they appear in footfall_north.csv, followed by the days that appear only in footfall_south.csv, in that file's order. `result` should be the first 10 rows of this table, indexed by day.",
+ "allowed_task_words": [],
+ "invited_ids_author": [
+  "R01"
+ ],
+ "order_significant": true,
+ "sort_keys": [
+  "__index__"
+ ],
+ "dtype_significant": false,
+ "intended_computation": "Take the days of footfall_north.csv in file order, then append the days of footfall_south.csv that are not in the north file, in south file order; for each day give the north and south counts (missing where the file has no row). Result: the first 10 rows of that table (all of them north-file days), indexed by day.",
+ "acceptable_variants": {
+  "row_order": "ties_only",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": "the 10 selected days are fixed by the file order. Row order: checked against the requested file order only while the card keeps order_significant true with key __index__ (proposed INTEGRATE resolution); with the flag false, row order is not checked."
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 10
+   }
+  },
+  {
+   "check": "columns_present",
+   "args": {
+    "columns": [
+     "north",
+     "south"
+    ]
+   }
+  },
+  {
+   "check": "date_year_in_range",
+   "args": {
+    "columns": [
+     "day"
+    ],
+    "min_year": 2025,
+    "max_year": 2025
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "FIX",
+  "reason": "The task asks for file order, which concat(sort=False) gives on 3.x; 2.x ignored sort=False for date indexes and returned the 10 earliest calendar days instead."
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M2",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 by pkg:TASKS_M2 for catalogue row R01; naive.py shows the invited idiom, reference.py is the version-robust reference."
+}

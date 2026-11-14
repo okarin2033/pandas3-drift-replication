@@ -1,0 +1,76 @@
+{
+ "id": "M_QF7_12",
+ "stratum": "M",
+ "family": "QF7_INDEX_REDUCE",
+ "generic_family": null,
+ "catalogue_row": "I06",
+ "files": [
+  {
+   "path": "QF7_INDEX_REDUCE/storage_quota.csv",
+   "description": "Cloud storage accounts (150 rows): account_id (whole number), active (True or False), quota_bytes (storage limit in bytes, whole number; the 23 unlimited accounts carry the value 9223372036854775807), used_bytes (whole number). No empty cells."
+  }
+ ],
+ "task_text": "Each account gets a control total: its active flag counted as 1 (True) or 0 (False), plus quota_bytes, plus used_bytes. Give the grand total of the control totals over all accounts, as an exact whole number. `result` should be that number.",
+ "allowed_task_words": [],
+ "invited_ids_author": [
+  "I06"
+ ],
+ "order_significant": false,
+ "sort_keys": [],
+ "dtype_significant": false,
+ "intended_computation": "Exact integer sum of the 150 control totals (larger than the 64-bit range).",
+ "acceptable_variants": {
+  "row_order": "any",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": "must be exact; a Python int is expected."
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "numeric_in_range",
+   "args": {
+    "columns": [
+     "__values__"
+    ],
+    "min": 0,
+    "max": null
+   }
+  },
+  {
+   "check": "result_kind",
+   "args": {
+    "kind": "scalar"
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "HARM",
+  "reason": "The per-account totals overflow 64-bit integers on 3.1 (exact Python integers on 2.x), so the grand total is wrong on 3.1."
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M2",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 by pkg:TASKS_M2 for catalogue row I06; naive.py shows the invited idiom, reference.py is the version-robust reference."
+}

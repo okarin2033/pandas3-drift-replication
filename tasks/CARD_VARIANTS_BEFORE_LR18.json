@@ -1,0 +1,9604 @@
+{
+ "written": "2026-11-11T20:07:34Z",
+ "by": "logs/repair6_2026-11-12/tools/seal_lr13_lr14_lr18.py (REPAIR6, lead ruling LR18)",
+ "source": "tasks/tasks.json sha256 291a1f315eba322930d5a308d56cc74419bff3ee8ef0be5d4597b3dbf0d852e3",
+ "note": "card fields read by harness/harm_prelabel.py, before any LR18 card change; the \"earlier notes\" of the LR18 harm sensitivity (\"added by lead ruling LR18 before any study generation\")",
+ "cards": [
+  {
+   "id": "M_QF1_01",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "home_city may be the index instead of a column; fee totals may be rounded to 2 decimals."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 8
+     }
+    },
+    {
+     "check": "counts_sum_to_rows",
+     "args": {
+      "column": "members",
+      "expected": 226
+     }
+    },
+    {
+     "check": "columns_present",
+     "args": {
+      "columns": [
+       "home_city",
+       "members",
+       "total_fee"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF1_02",
+   "stratum": "M",
+   "order_significant": true,
+   "sort_keys": [
+    "__index__"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "whitespace and key order inside the JSON text, and escaping of non-ASCII letters, may differ; fee may be written as 150 or 150.0."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "result_kind",
+     "args": {
+      "kind": "scalar"
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF1_03",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "city may be a column with a count column instead of a Series."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 8
+     }
+    },
+    {
+     "check": "counts_sum_to_rows",
+     "args": {
+      "column": "__values__",
+      "expected": 226
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF1_04",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "branch_code may be a column; totals may be integers or floats."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 12
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min": 0,
+      "max": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF1_05",
+   "stratum": "M",
+   "order_significant": true,
+   "sort_keys": [
+    "__index__"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "a price number may be 9.5 or 9.50; text values may keep their surrounding spaces."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 64
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "price"
+      ],
+      "min": 0,
+      "max": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF1_06",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "section may be a column instead of the index."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 4
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min": 0,
+      "max": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF1_07",
+   "stratum": "M",
+   "order_significant": true,
+   "sort_keys": [
+    "__index__"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "city may be a column with a count column instead of a Series."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 9
+     }
+    },
+    {
+     "check": "counts_sum_to_rows",
+     "args": {
+      "column": "__values__",
+      "expected": 240
+     }
+    },
+    {
+     "check": "sorted_by",
+     "args": {
+      "keys": [
+       "__index__"
+      ],
+      "ascending": [
+       true
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF1_08",
+   "stratum": "M",
+   "order_significant": true,
+   "sort_keys": [
+    "__index__"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": ""
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 240
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "city_code"
+      ],
+      "min": -1,
+      "max": 7
+     }
+    },
+    {
+     "check": "columns_present",
+     "args": {
+      "columns": [
+       "member_id",
+       "city_code"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF1_09",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "the fee may be a column with a count column instead of a Series."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 12
+     }
+    },
+    {
+     "check": "counts_sum_to_rows",
+     "args": {
+      "column": "__values__",
+      "expected": 240
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF1_10",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "totals may be written with or without trailing zeros."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 4
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min": 0,
+      "max": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF1_11",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": ""
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "result_kind",
+     "args": {
+      "kind": "scalar"
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min": 1,
+      "max": 240
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF1_12",
+   "stratum": "M",
+   "order_significant": true,
+   "sort_keys": [
+    "__values__"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": ""
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 14
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min": 5001,
+      "max": 5240
+     }
+    },
+    {
+     "check": "sorted_by",
+     "args": {
+      "keys": [
+       "__values__"
+      ],
+      "ascending": [
+       true
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF1_13",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "branch_code may be a column with a count column instead of a Series."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 5
+     }
+    },
+    {
+     "check": "counts_sum_to_rows",
+     "args": {
+      "column": "__values__",
+      "expected": 6
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF1_14",
+   "stratum": "M",
+   "order_significant": true,
+   "sort_keys": [
+    "__index__"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "week may be a column instead of the index; column order may differ."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 15
+     }
+    },
+    {
+     "check": "no_nulls",
+     "args": {
+      "columns": []
+     }
+    },
+    {
+     "check": "sorted_by",
+     "args": {
+      "keys": [
+       "__index__"
+      ],
+      "ascending": [
+       true
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF1_15",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "the price may be given as text '9.50'; a number would lose the trailing zero."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 64
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF1_16",
+   "stratum": "M",
+   "order_significant": true,
+   "sort_keys": [
+    "sku"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "the row index may be 0..63 or carried over from the file."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 64
+     }
+    },
+    {
+     "check": "columns_present",
+     "args": {
+      "columns": [
+       "sku",
+       "item",
+       "section",
+       "price"
+      ]
+     }
+    },
+    {
+     "check": "sorted_by",
+     "args": {
+      "keys": [
+       "sku"
+      ],
+      "ascending": [
+       true
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF2_01",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "channel may be a column instead of the index."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 4
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "first_signup",
+       "last_signup"
+      ],
+      "min": 1672531200,
+      "max": 1767225600
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF2_02",
+   "stratum": "M",
+   "order_significant": true,
+   "sort_keys": [
+    "__index__"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": ""
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 500
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "minute_start"
+      ],
+      "min": 1743465600,
+      "max": 1754006400
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF2_03",
+   "stratum": "M",
+   "order_significant": true,
+   "sort_keys": [
+    "__index__"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "the last instant may be given to the second, millisecond, microsecond or nanosecond; month labels may be a column."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 12
+     }
+    },
+    {
+     "check": "date_year_in_range",
+     "args": {
+      "columns": [
+       "__index__"
+      ],
+      "min_year": 2025,
+      "max_year": 2025
+     }
+    },
+    {
+     "check": "sorted_by",
+     "args": {
+      "keys": [
+       "__index__"
+      ],
+      "ascending": [
+       true
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF2_04",
+   "stratum": "M",
+   "order_significant": true,
+   "sort_keys": [
+    "__index__"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "the day key may be a column."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 1089
+     }
+    },
+    {
+     "check": "counts_sum_to_rows",
+     "args": {
+      "column": "__values__",
+      "expected": 300
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__index__"
+      ],
+      "min": 1672531200,
+      "max": 1767225600
+     }
+    },
+    {
+     "check": "sorted_by",
+     "args": {
+      "keys": [
+       "__index__"
+      ],
+      "ascending": [
+       true
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF2_05",
+   "stratum": "M",
+   "order_significant": true,
+   "sort_keys": [
+    "__index__"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": ""
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 160
+     }
+    },
+    {
+     "check": "date_year_in_range",
+     "args": {
+      "columns": [
+       "reminder"
+      ],
+      "min_year": 2025,
+      "max_year": 2025
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF2_06",
+   "stratum": "M",
+   "order_significant": true,
+   "sort_keys": [
+    "__index__"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": ""
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 160
+     }
+    },
+    {
+     "check": "date_year_in_range",
+     "args": {
+      "columns": [
+       "next_day_slot"
+      ],
+      "min_year": 2025,
+      "max_year": 2025
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF2_07",
+   "stratum": "M",
+   "order_significant": true,
+   "sort_keys": [
+    "__index__"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": ""
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "counts_sum_to_rows",
+     "args": {
+      "column": "__values__",
+      "expected": 500
+     }
+    },
+    {
+     "check": "date_year_in_range",
+     "args": {
+      "columns": [
+       "__index__"
+      ],
+      "min_year": 2025,
+      "max_year": 2025
+     }
+    },
+    {
+     "check": "sorted_by",
+     "args": {
+      "keys": [
+       "__index__"
+      ],
+      "ascending": [
+       true
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF2_08",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "the day counts may be integers or floats."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 400
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "ordered_on",
+       "shipped_on"
+      ],
+      "min": 0,
+      "max": 400
+     }
+    },
+    {
+     "check": "columns_present",
+     "args": {
+      "columns": [
+       "shipment_id",
+       "ordered_on",
+       "shipped_on",
+       "carrier",
+       "weight_kg",
+       "value"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF2_09",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "any alias that means quarter-start spacing on calendar quarters is acceptable: 'QS', 'QS-JAN', 'QS-APR', 'QS-JUL' or 'QS-OCT'."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "result_kind",
+     "args": {
+      "kind": "scalar"
+     }
+    },
+    {
+     "check": "values_in_set",
+     "args": {
+      "column": "__values__",
+      "values": [
+       "QS",
+       "QS-JAN",
+       "QS-APR",
+       "QS-JUL",
+       "QS-OCT"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF2_10",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": ""
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "result_kind",
+     "args": {
+      "kind": "scalar"
+     }
+    },
+    {
+     "check": "date_year_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min_year": 2025,
+      "max_year": 2025
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF2_11",
+   "stratum": "M",
+   "order_significant": true,
+   "sort_keys": [
+    "__index__"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": ""
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "result_kind",
+     "args": {
+      "kind": "scalar"
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min": 60,
+      "max": 86400
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF2_12",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "sub-millisecond digits may be dropped."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "result_kind",
+     "args": {
+      "kind": "scalar"
+     }
+    },
+    {
+     "check": "date_year_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min_year": 2025,
+      "max_year": 2025
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF2_13",
+   "stratum": "M",
+   "order_significant": true,
+   "sort_keys": [
+    "quarter_end"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "the last instant may be given to the second, millisecond, microsecond or nanosecond."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 30
+     }
+    },
+    {
+     "check": "date_year_in_range",
+     "args": {
+      "columns": [
+       "quarter_end"
+      ],
+      "min_year": 2019,
+      "max_year": 2026
+     }
+    },
+    {
+     "check": "sorted_by",
+     "args": {
+      "keys": [
+       "quarter_end"
+      ],
+      "ascending": [
+       true
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF2_14",
+   "stratum": "M",
+   "order_significant": true,
+   "sort_keys": [
+    "__values__"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": ""
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 117
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min": 20090,
+      "max": 20441
+     }
+    },
+    {
+     "check": "sorted_by",
+     "args": {
+      "keys": [
+       "__values__"
+      ],
+      "ascending": [
+       true
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF2_15",
+   "stratum": "M",
+   "order_significant": true,
+   "sort_keys": [
+    "__index__"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": ""
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 160
+     }
+    },
+    {
+     "check": "date_year_in_range",
+     "args": {
+      "columns": [
+       "follow_up_utc"
+      ],
+      "min_year": 2025,
+      "max_year": 2025
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF2_16",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "hour may be a column with a count column."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "counts_sum_to_rows",
+     "args": {
+      "column": "__values__",
+      "expected": 160
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__index__"
+      ],
+      "min": 0,
+      "max": 23
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF3_01",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "state may be a column; totals may be rounded to 2 decimals."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 4
+     }
+    },
+    {
+     "check": "no_nulls",
+     "args": {
+      "columns": []
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF3_02",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "ward may be a column."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 5
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min": 0,
+      "max": 120
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF3_03",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": ""
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "result_kind",
+     "args": {
+      "kind": "scalar"
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min": 0,
+      "max": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF3_04",
+   "stratum": "M",
+   "order_significant": true,
+   "sort_keys": [
+    "__index__"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": ""
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 260
+     }
+    },
+    {
+     "check": "no_nulls",
+     "args": {
+      "columns": []
+     }
+    },
+    {
+     "check": "columns_present",
+     "args": {
+      "columns": [
+       "admission_id",
+       "age",
+       "ward",
+       "stay_days",
+       "charge"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF3_05",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "site may be a column."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 3
+     }
+    },
+    {
+     "check": "columns_present",
+     "args": {
+      "columns": [
+       "raw_mean",
+       "clean_mean"
+      ]
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "raw_mean",
+       "clean_mean"
+      ],
+      "min": 0,
+      "max": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF3_06",
+   "stratum": "M",
+   "order_significant": true,
+   "sort_keys": [
+    "__index__"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "level may be a column instead of the index."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 120
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "level_above_min"
+      ],
+      "min": 0,
+      "max": 77
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__index__"
+      ],
+      "min": 3,
+      "max": 80
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF3_07",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "ward may be a column."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 5
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min": 0,
+      "max": 14
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF3_08",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "ward may be a column."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 5
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min": 0,
+      "max": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF3_09",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "ward may be a column."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 5
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "max_age"
+      ],
+      "min": 0,
+      "max": 85
+     }
+    },
+    {
+     "check": "columns_present",
+     "args": {
+      "columns": [
+       "max_age",
+       "patients_at_85"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF3_10",
+   "stratum": "M",
+   "order_significant": true,
+   "sort_keys": [
+    "__index__"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": ""
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 120
+     }
+    },
+    {
+     "check": "no_nulls",
+     "args": {
+      "columns": [
+       "reading"
+      ]
+     }
+    },
+    {
+     "check": "columns_present",
+     "args": {
+      "columns": [
+       "gauge",
+       "reading",
+       "level",
+       "site"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF3_11",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "ward may be a column."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 5
+     }
+    },
+    {
+     "check": "columns_present",
+     "args": {
+      "columns": [
+       "mean_known",
+       "mean_zero_filled"
+      ]
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "mean_known",
+       "mean_zero_filled"
+      ],
+      "min": 0,
+      "max": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF3_12",
+   "stratum": "M",
+   "order_significant": true,
+   "sort_keys": [
+    "__index__"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "admission_id may be a column instead of the index."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 260
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "new_number"
+      ],
+      "min": 1,
+      "max": 260
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__index__"
+      ],
+      "min": 600,
+      "max": 859
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF3_13",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "site may be a column."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 3
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min": 0,
+      "max": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF3_14",
+   "stratum": "M",
+   "order_significant": true,
+   "sort_keys": [
+    "__index__"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "site may be a column."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 3
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min": 0,
+      "max": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF3_15",
+   "stratum": "M",
+   "order_significant": true,
+   "sort_keys": [
+    "__index__"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": ""
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 120
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "level"
+      ],
+      "min": 0,
+      "max": 50
+     }
+    },
+    {
+     "check": "columns_present",
+     "args": {
+      "columns": [
+       "gauge",
+       "site",
+       "level"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF3_16",
+   "stratum": "M",
+   "order_significant": true,
+   "sort_keys": [
+    "__index__"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": ""
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 300
+     }
+    },
+    {
+     "check": "values_in_set",
+     "args": {
+      "column": "state",
+      "values": [
+       "paid",
+       "cancelled",
+       "refunded",
+       "open"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF4_01",
+   "stratum": "M",
+   "order_significant": true,
+   "sort_keys": [
+    "__index__"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "band may be a column; the empty band may show its mean as missing."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 5
+     }
+    },
+    {
+     "check": "counts_sum_to_rows",
+     "args": {
+      "column": "subscribers",
+      "expected": 316
+     }
+    },
+    {
+     "check": "columns_present",
+     "args": {
+      "columns": [
+       "subscribers",
+       "mean_fee"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF4_02",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "region and channel may be columns; the combination order may differ."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 9
+     }
+    },
+    {
+     "check": "no_nulls",
+     "args": {
+      "columns": []
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "units"
+      ],
+      "min": 0,
+      "max": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF4_03",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "subscriber_id may be a column; spend sums may be rounded to 2 decimals."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 302
+     }
+    },
+    {
+     "check": "columns_present",
+     "args": {
+      "columns": [
+       "quantity",
+       "spend"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF4_04",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "spend may be rounded to 2 decimals."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 6
+     }
+    },
+    {
+     "check": "columns_present",
+     "args": {
+      "columns": [
+       "store_city",
+       "spend"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF4_05",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "tier may be a column."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 3
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "std"
+      ],
+      "min": 0,
+      "max": null
+     }
+    },
+    {
+     "check": "columns_present",
+     "args": {
+      "columns": [
+       "mean",
+       "std"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF4_06",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": ""
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 3
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF4_07",
+   "stratum": "M",
+   "order_significant": true,
+   "sort_keys": [
+    "__index__"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "band may be a column with a count column."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 5
+     }
+    },
+    {
+     "check": "counts_sum_to_rows",
+     "args": {
+      "column": "__values__",
+      "expected": 309
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF4_08",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "the combination order may differ."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 9
+     }
+    },
+    {
+     "check": "no_nulls",
+     "args": {
+      "columns": []
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF4_09",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "extra columns of the subscriber row are acceptable; tier may also be the index."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 3
+     }
+    },
+    {
+     "check": "columns_present",
+     "args": {
+      "columns": [
+       "tier",
+       "subscriber_id",
+       "monthly_fee"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF4_10",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": ""
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 3
+     }
+    },
+    {
+     "check": "counts_sum_to_rows",
+     "args": {
+      "column": "subscribers",
+      "expected": 320
+     }
+    },
+    {
+     "check": "columns_present",
+     "args": {
+      "columns": [
+       "tier",
+       "subscribers"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF4_11",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "city may be a column."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 6
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min": 0,
+      "max": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF4_12",
+   "stratum": "M",
+   "order_significant": true,
+   "sort_keys": [
+    "__values__"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": ""
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 6
+     }
+    },
+    {
+     "check": "sorted_by",
+     "args": {
+      "keys": [
+       "__values__"
+      ],
+      "ascending": [
+       true
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF4_13",
+   "stratum": "M",
+   "order_significant": true,
+   "sort_keys": [
+    "__index__"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "class may be a column; the empty class may show its total as 0."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 4
+     }
+    },
+    {
+     "check": "counts_sum_to_rows",
+     "args": {
+      "column": "purchases",
+      "expected": 900
+     }
+    },
+    {
+     "check": "columns_present",
+     "args": {
+      "columns": [
+       "purchases",
+       "total_spend"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF4_14",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "the combination order may differ."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 9
+     }
+    },
+    {
+     "check": "counts_sum_to_rows",
+     "args": {
+      "column": "missing_weeks",
+      "expected": 3
+     }
+    },
+    {
+     "check": "columns_present",
+     "args": {
+      "columns": [
+       "region",
+       "channel",
+       "missing_weeks"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF4_15",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "subscriber_id may be the index instead of (or as well as) a column; row order may differ."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 302
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF4_16",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": ""
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 3
+     }
+    },
+    {
+     "check": "columns_present",
+     "args": {
+      "columns": [
+       "period_start",
+       "mean_fee"
+      ]
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "period_start"
+      ],
+      "min": 2015,
+      "max": 2025
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF5_01",
+   "stratum": "M",
+   "order_significant": true,
+   "sort_keys": [
+    "day"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "day may be a column instead of the index; counts may be whole numbers or decimals."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 47
+     }
+    },
+    {
+     "check": "columns_present",
+     "args": {
+      "columns": [
+       "north",
+       "south"
+      ]
+     }
+    },
+    {
+     "check": "sorted_by",
+     "args": {
+      "keys": [
+       "day"
+      ],
+      "ascending": [
+       true
+      ]
+     }
+    },
+    {
+     "check": "date_year_in_range",
+     "args": {
+      "columns": [
+       "day"
+      ],
+      "min_year": 2025,
+      "max_year": 2025
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF5_02",
+   "stratum": "M",
+   "order_significant": true,
+   "sort_keys": [
+    "plan",
+    "city"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "plan and city may be columns of a table with a count column; the count column name is free."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 23
+     }
+    },
+    {
+     "check": "counts_sum_to_rows",
+     "args": {
+      "column": "__values__",
+      "expected": 200
+     }
+    },
+    {
+     "check": "sorted_by",
+     "args": {
+      "keys": [
+       "plan",
+       "city"
+      ],
+      "ascending": [
+       true,
+       true
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF5_03",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "row order is free; score may be whole numbers or decimals; student and subject may be index levels."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 164
+     }
+    },
+    {
+     "check": "columns_present",
+     "args": {
+      "columns": [
+       "student",
+       "subject",
+       "score"
+      ]
+     }
+    },
+    {
+     "check": "no_nulls",
+     "args": {
+      "columns": [
+       "score"
+      ]
+     }
+    },
+    {
+     "check": "values_in_set",
+     "args": {
+      "column": "subject",
+      "values": [
+       "math",
+       "art",
+       "music"
+      ]
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "score"
+      ],
+      "min": 35,
+      "max": 100
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF5_04",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "statistic labels may be spelled differently (e.g. 'std', '50%' or 'median'); values to 6 significant digits."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 8
+     }
+    },
+    {
+     "check": "no_nulls",
+     "args": {
+      "columns": []
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min": 0,
+      "max": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF5_05",
+   "stratum": "M",
+   "order_significant": true,
+   "sort_keys": [
+    "day"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "day may be a column; the first day's change may be missing or omitted only if every other row is present."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 47
+     }
+    },
+    {
+     "check": "sorted_by",
+     "args": {
+      "keys": [
+       "day"
+      ],
+      "ascending": [
+       true
+      ]
+     }
+    },
+    {
+     "check": "date_year_in_range",
+     "args": {
+      "columns": [
+       "day"
+      ],
+      "min_year": 2025,
+      "max_year": 2025
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF5_06",
+   "stratum": "M",
+   "order_significant": true,
+   "sort_keys": [
+    "plan",
+    "points"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "plan and points may be columns of a table with a count column."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 5
+     }
+    },
+    {
+     "check": "values_in_set",
+     "args": {
+      "column": "plan",
+      "values": [
+       "bronze"
+      ]
+     }
+    },
+    {
+     "check": "sorted_by",
+     "args": {
+      "keys": [
+       "plan",
+       "points"
+      ],
+      "ascending": [
+       true,
+       true
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF5_07",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "student may be a column; row order is free."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 59
+     }
+    },
+    {
+     "check": "counts_sum_to_rows",
+     "args": {
+      "column": "__values__",
+      "expected": 164
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min": 1,
+      "max": 3
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF5_08",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "quantity may be a column; the value column name may differ (e.g. avg_refund)."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 4
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "refund"
+      ],
+      "min": 0,
+      "max": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF5_09",
+   "stratum": "M",
+   "order_significant": true,
+   "sort_keys": [
+    "day"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "day may be a column; values may be whole numbers or decimals."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 47
+     }
+    },
+    {
+     "check": "sorted_by",
+     "args": {
+      "keys": [
+       "day"
+      ],
+      "ascending": [
+       true
+      ]
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min": 0,
+      "max": null
+     }
+    },
+    {
+     "check": "date_year_in_range",
+     "args": {
+      "columns": [
+       "day"
+      ],
+      "min_year": 2025,
+      "max_year": 2025
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF5_10",
+   "stratum": "M",
+   "order_significant": true,
+   "sort_keys": [
+    "plan",
+    "points"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "plan and points may be columns of a table with a count column."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 12
+     }
+    },
+    {
+     "check": "sorted_by",
+     "args": {
+      "keys": [
+       "plan",
+       "points"
+      ],
+      "ascending": [
+       true,
+       true
+      ]
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min": 1,
+      "max": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF5_11",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "subject may be a column; shares may be rounded to 6 significant digits."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 3
+     }
+    },
+    {
+     "check": "rate_in_unit_interval",
+     "args": {
+      "columns": [
+       "__values__"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF5_12",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "row order is free; rounded refunds may be whole numbers or decimals ending in .0."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 80
+     }
+    },
+    {
+     "check": "columns_present",
+     "args": {
+      "columns": [
+       "return_id",
+       "quantity",
+       "refund"
+      ]
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "refund"
+      ],
+      "min": 0,
+      "max": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF5_13",
+   "stratum": "M",
+   "order_significant": true,
+   "sort_keys": [
+    "__index__"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "day may be a column; the 10 selected days are fixed by the file order. Row order: checked against the requested file order only while the card keeps order_significant true with key __index__ (proposed INTEGRATE resolution); with the flag false, row order is not checked."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 10
+     }
+    },
+    {
+     "check": "columns_present",
+     "args": {
+      "columns": [
+       "north",
+       "south"
+      ]
+     }
+    },
+    {
+     "check": "date_year_in_range",
+     "args": {
+      "columns": [
+       "day"
+      ],
+      "min_year": 2025,
+      "max_year": 2025
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF5_14",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "plan and city may be columns of a table with a count column; the six pairs are fixed by the file order."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 6
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min": 1,
+      "max": 200
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF5_15",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "may be rounded to 6 significant digits; a one-element Series is acceptable."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "rate_in_unit_interval",
+     "args": {
+      "columns": [
+       "__values__"
+      ]
+     }
+    },
+    {
+     "check": "result_kind",
+     "args": {
+      "kind": "scalar"
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF5_16",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "levels may be written 10/50/90 or as labels; a Series is acceptable."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 3
+     }
+    },
+    {
+     "check": "columns_present",
+     "args": {
+      "columns": [
+       "refund"
+      ]
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "refund"
+      ],
+      "min": 0,
+      "max": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF6_01",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "city may be a column; shares may be given as 0-1 values to 6 significant digits."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 6
+     }
+    },
+    {
+     "check": "columns_present",
+     "args": {
+      "columns": [
+       "shipped",
+       "parcels"
+      ]
+     }
+    },
+    {
+     "check": "rate_in_unit_interval",
+     "args": {
+      "columns": [
+       "shipped"
+      ]
+     }
+    },
+    {
+     "check": "values_in_set",
+     "args": {
+      "column": "city",
+      "values": [
+       "Bern",
+       "Cork",
+       "Ghent",
+       "Oslo",
+       "Riga",
+       "Rome"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF6_02",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "a whole number; a one-element Series is acceptable."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min": 0,
+      "max": 90
+     }
+    },
+    {
+     "check": "result_kind",
+     "args": {
+      "kind": "scalar"
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF6_03",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "shares as 0-1 values to 6 significant digits; quiz may be a column."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 2
+     }
+    },
+    {
+     "check": "rate_in_unit_interval",
+     "args": {
+      "columns": [
+       "__values__"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF6_04",
+   "stratum": "M",
+   "order_significant": true,
+   "sort_keys": [
+    "__index__"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "missing values in any null representation; values to 6 significant digits."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 80
+     }
+    },
+    {
+     "check": "rate_in_unit_interval",
+     "args": {
+      "columns": [
+       "__values__"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF6_05",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "city may be a column."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 6
+     }
+    },
+    {
+     "check": "counts_sum_to_rows",
+     "args": {
+      "column": "__values__",
+      "expected": 182
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min": 0,
+      "max": 240
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF6_06",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "store may be a column; values to 6 significant digits."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 30
+     }
+    },
+    {
+     "check": "no_nulls",
+     "args": {
+      "columns": []
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min": 0,
+      "max": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF6_07",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "a whole number."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min": 0,
+      "max": 80
+     }
+    },
+    {
+     "check": "result_kind",
+     "args": {
+      "kind": "scalar"
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF6_08",
+   "stratum": "M",
+   "order_significant": true,
+   "sort_keys": [
+    "__index__"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "missing values in any null representation."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 80
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min": 1,
+      "max": 75
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF6_09",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "row and column order of the two labels is free; values to 6 significant digits."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 2
+     }
+    },
+    {
+     "check": "columns_present",
+     "args": {
+      "columns": [
+       "shipped",
+       "parcels"
+      ]
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "shipped",
+       "parcels"
+      ],
+      "min": -1,
+      "max": 1
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF6_10",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "to 6 significant digits; a one-element Series is acceptable."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "no_nulls",
+     "args": {
+      "columns": []
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min": 0,
+      "max": null
+     }
+    },
+    {
+     "check": "result_kind",
+     "args": {
+      "kind": "scalar"
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF6_11",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "shares as 0-1 values to 6 significant digits; quiz may be a column."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 2
+     }
+    },
+    {
+     "check": "rate_in_unit_interval",
+     "args": {
+      "columns": [
+       "__values__"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF6_12",
+   "stratum": "M",
+   "order_significant": true,
+   "sort_keys": [
+    "__index__"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "missing values in any null representation; ranks may be whole numbers or decimals."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 80
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min": 1,
+      "max": 73
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF6_13",
+   "stratum": "M",
+   "order_significant": true,
+   "sort_keys": [
+    "__index__"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "city may be a column; shares as 0-1 values to 6 significant digits."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 6
+     }
+    },
+    {
+     "check": "columns_present",
+     "args": {
+      "columns": [
+       "express",
+       "parcels"
+      ]
+     }
+    },
+    {
+     "check": "rate_in_unit_interval",
+     "args": {
+      "columns": [
+       "express"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF6_14",
+   "stratum": "M",
+   "order_significant": true,
+   "sort_keys": [
+    "rate"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "row labels (index) are free; rates to 6 significant digits."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 3
+     }
+    },
+    {
+     "check": "columns_present",
+     "args": {
+      "columns": [
+       "store",
+       "rate"
+      ]
+     }
+    },
+    {
+     "check": "no_nulls",
+     "args": {
+      "columns": [
+       "rate"
+      ]
+     }
+    },
+    {
+     "check": "sorted_by",
+     "args": {
+      "keys": [
+       "rate"
+      ],
+      "ascending": [
+       false
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF6_15",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "a whole number."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min": 0,
+      "max": 80
+     }
+    },
+    {
+     "check": "result_kind",
+     "args": {
+      "kind": "scalar"
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF6_16",
+   "stratum": "M",
+   "order_significant": true,
+   "sort_keys": [
+    "__index__"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "ranks may be decimals or whole numbers; row positions may be a column."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 8
+     }
+    },
+    {
+     "check": "no_nulls",
+     "args": {
+      "columns": []
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min": 1,
+      "max": 73
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF7_01",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "totals to 6 significant digits; a two-entry dict or one-row table is acceptable."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 2
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min": 0,
+      "max": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF7_02",
+   "stratum": "M",
+   "order_significant": true,
+   "sort_keys": [
+    "__index__"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "weight_kg may be a column; empty fees stay missing."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 44
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "weight_kg"
+      ],
+      "min": 10,
+      "max": 30
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF7_03",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "row order and row labels are free; unchanged may be True/False or 1/0."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 150
+     }
+    },
+    {
+     "check": "columns_present",
+     "args": {
+      "columns": [
+       "product",
+       "old_code",
+       "new_code",
+       "unchanged"
+      ]
+     }
+    },
+    {
+     "check": "no_nulls",
+     "args": {
+      "columns": [
+       "unchanged"
+      ]
+     }
+    },
+    {
+     "check": "values_in_set",
+     "args": {
+      "column": "unchanged",
+      "values": [
+       true,
+       false
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF7_04",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "account_id may be a column; totals must be exact integers."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 150
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min": 0,
+      "max": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF7_05",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "values to 6 significant digits."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 2
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min": 0,
+      "max": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF7_06",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "to 6 significant digits."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min": 0,
+      "max": null
+     }
+    },
+    {
+     "check": "result_kind",
+     "args": {
+      "kind": "scalar"
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF7_07",
+   "stratum": "M",
+   "order_significant": true,
+   "sort_keys": [
+    "__index__"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "row labels are free; changed may be True/False or 1/0."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 150
+     }
+    },
+    {
+     "check": "columns_present",
+     "args": {
+      "columns": [
+       "product",
+       "changed"
+      ]
+     }
+    },
+    {
+     "check": "no_nulls",
+     "args": {
+      "columns": [
+       "changed"
+      ]
+     }
+    },
+    {
+     "check": "values_in_set",
+     "args": {
+      "column": "changed",
+      "values": [
+       true,
+       false
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF7_08",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "a whole number."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min": 0,
+      "max": 150
+     }
+    },
+    {
+     "check": "result_kind",
+     "args": {
+      "kind": "scalar"
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF7_09",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "totals to 6 significant digits."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 2
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min": 0,
+      "max": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF7_10",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "to 6 significant digits."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min": 0,
+      "max": null
+     }
+    },
+    {
+     "check": "result_kind",
+     "args": {
+      "kind": "scalar"
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF7_11",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "a whole number."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min": 1,
+      "max": null
+     }
+    },
+    {
+     "check": "result_kind",
+     "args": {
+      "kind": "scalar"
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF7_12",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "must be exact; a Python int is expected."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min": 0,
+      "max": null
+     }
+    },
+    {
+     "check": "result_kind",
+     "args": {
+      "kind": "scalar"
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF7_13",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "values to 6 significant digits."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 2
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min": 0,
+      "max": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF7_14",
+   "stratum": "M",
+   "order_significant": true,
+   "sort_keys": [
+    "zones"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "zones may be a column; a zones value with no row may be omitted or shown as 0."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "counts_sum_to_rows",
+     "args": {
+      "column": "__values__",
+      "expected": 46
+     }
+    },
+    {
+     "check": "sorted_by",
+     "args": {
+      "keys": [
+       "zones"
+      ],
+      "ascending": [
+       true
+      ]
+     }
+    },
+    {
+     "check": "values_in_set",
+     "args": {
+      "column": "zones",
+      "values": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF7_15",
+   "stratum": "M",
+   "order_significant": true,
+   "sort_keys": [
+    "__index__"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "a list, array or Series of 150 booleans is acceptable; labels of a Series are free."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 150
+     }
+    },
+    {
+     "check": "no_nulls",
+     "args": {
+      "columns": []
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF7_16",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "active may be a column; sums must be exact."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 2
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min": 0,
+      "max": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF8_01",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "date may be a column; values to 6 significant digits."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 90
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min": 0,
+      "max": null
+     }
+    },
+    {
+     "check": "date_year_in_range",
+     "args": {
+      "columns": [
+       "date"
+      ],
+      "min_year": 2025,
+      "max_year": 2025
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF8_02",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "panel may be a column."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 8
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min": 4,
+      "max": 10
+     }
+    },
+    {
+     "check": "values_in_set",
+     "args": {
+      "column": "panel",
+      "values": [
+       "bread",
+       "cheese",
+       "cider",
+       "honey",
+       "jam",
+       "pickles",
+       "pies",
+       "soup"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF8_03",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "date may be a column; values to 6 significant digits."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 90
+     }
+    },
+    {
+     "check": "columns_present",
+     "args": {
+      "columns": [
+       "mean",
+       "lower",
+       "upper"
+      ]
+     }
+    },
+    {
+     "check": "date_year_in_range",
+     "args": {
+      "columns": [
+       "date"
+      ],
+      "min_year": 2025,
+      "max_year": 2025
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF8_04",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "panel may be a column; a long table with a quartile column is acceptable."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 8
+     }
+    },
+    {
+     "check": "columns_present",
+     "args": {
+      "columns": [
+       "q1",
+       "middle",
+       "q3"
+      ]
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "q1",
+       "middle",
+       "q3"
+      ],
+      "min": 4,
+      "max": 10
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF8_05",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "date may be a column; values to 6 significant digits."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 90
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min": 0,
+      "max": null
+     }
+    },
+    {
+     "check": "date_year_in_range",
+     "args": {
+      "columns": [
+       "date"
+      ],
+      "min_year": 2025,
+      "max_year": 2025
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF8_06",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "panel may be a column; a panel with no such entrant shows 0."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 8
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min": 0,
+      "max": 12
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF8_07",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "a whole number."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min": 0,
+      "max": 90
+     }
+    },
+    {
+     "check": "result_kind",
+     "args": {
+      "kind": "scalar"
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF8_08",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "panel may be a column."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 8
+     }
+    },
+    {
+     "check": "columns_present",
+     "args": {
+      "columns": [
+       "lowest",
+       "middle",
+       "highest"
+      ]
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "lowest",
+       "middle",
+       "highest"
+      ],
+      "min": 4,
+      "max": 10
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF8_09",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "date may be a column; values to 6 significant digits."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 30
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min": 0,
+      "max": null
+     }
+    },
+    {
+     "check": "date_year_in_range",
+     "args": {
+      "columns": [
+       "date"
+      ],
+      "min_year": 2025,
+      "max_year": 2025
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF8_10",
+   "stratum": "M",
+   "order_significant": true,
+   "sort_keys": [
+    "__values__"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "panel may be a column with a middle-score column."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 8
+     }
+    },
+    {
+     "check": "sorted_by",
+     "args": {
+      "keys": [
+       "__values__"
+      ],
+      "ascending": [
+       false
+      ]
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min": 4,
+      "max": 10
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF8_11",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "date may be a column; values to 6 significant digits."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 90
+     }
+    },
+    {
+     "check": "columns_present",
+     "args": {
+      "columns": [
+       "temp_c",
+       "humidity"
+      ]
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "temp_c",
+       "humidity"
+      ],
+      "min": 0,
+      "max": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF8_12",
+   "stratum": "M",
+   "order_significant": true,
+   "sort_keys": [
+    "__index__"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "row labels and row order are free; entrant capitalisation may be tidied."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "columns_present",
+     "args": {
+      "columns": [
+       "panel",
+       "entrant",
+       "score"
+      ]
+     }
+    },
+    {
+     "check": "values_in_set",
+     "args": {
+      "column": "panel",
+      "values": [
+       "bread",
+       "cheese",
+       "cider",
+       "honey",
+       "jam",
+       "pickles",
+       "pies",
+       "soup"
+      ]
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "score"
+      ],
+      "min": 4,
+      "max": 10
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF8_13",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "date may be a column; values to 6 significant digits."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 90
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min": 0,
+      "max": null
+     }
+    },
+    {
+     "check": "date_year_in_range",
+     "args": {
+      "columns": [
+       "date"
+      ],
+      "min_year": 2025,
+      "max_year": 2025
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF8_14",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "panel may be a column; values to 6 significant digits."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 8
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min": -6,
+      "max": 6
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF8_15",
+   "stratum": "M",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "date may be a column; values to 6 significant digits."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 90
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min": 0,
+      "max": null
+     }
+    },
+    {
+     "check": "date_year_in_range",
+     "args": {
+      "columns": [
+       "date"
+      ],
+      "min_year": 2025,
+      "max_year": 2025
+     }
+    }
+   ]
+  },
+  {
+   "id": "M_QF8_16",
+   "stratum": "M",
+   "order_significant": true,
+   "sort_keys": [
+    "__index__"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "row labels are free; values to 6 significant digits."
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 96
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min": -6,
+      "max": 6
+     }
+    }
+   ]
+  },
+  {
+   "id": "R_01",
+   "stratum": "R",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "joined_on may be text or timestamps; birth_year and docks may be float with NaN or nullable integers; row order free"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 400
+     }
+    },
+    {
+     "check": "columns_present",
+     "args": {
+      "columns": [
+       "joined_on",
+       "birth_year",
+       "docks"
+      ]
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "docks"
+      ],
+      "min": 12,
+      "max": 30
+     }
+    },
+    {
+     "check": "date_year_in_range",
+     "args": {
+      "columns": [
+       "joined_on"
+      ],
+      "min_year": 2021,
+      "max_year": 2025
+     }
+    }
+   ]
+  },
+  {
+   "id": "R_02",
+   "stratum": "R",
+   "order_significant": true,
+   "sort_keys": [
+    "__index__"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "result may be a Series, list or one-column table; sums may be float"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 100
+     }
+    },
+    {
+     "check": "no_nulls",
+     "args": {
+      "columns": [
+       "__values__"
+      ]
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min": 3939,
+      "max": 8001
+     }
+    }
+   ]
+  },
+  {
+   "id": "R_03",
+   "stratum": "R",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "values may be int, float or text digits; row order free"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 1500
+     }
+    },
+    {
+     "check": "columns_present",
+     "args": {
+      "columns": [
+       "start_station",
+       "end_station"
+      ]
+     }
+    },
+    {
+     "check": "no_nulls",
+     "args": {
+      "columns": [
+       "start_station",
+       "end_station"
+      ]
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "start_station",
+       "end_station"
+      ],
+      "min": 12,
+      "max": 30
+     }
+    }
+   ]
+  },
+  {
+   "id": "R_04",
+   "stratum": "R",
+   "order_significant": true,
+   "sort_keys": [
+    "__index__"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "result may be a Series or one-column table; the timestamps may be text in the same format"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 1500
+     }
+    },
+    {
+     "check": "no_nulls",
+     "args": {
+      "columns": [
+       "__values__"
+      ]
+     }
+    },
+    {
+     "check": "date_year_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min_year": 2025,
+      "max_year": 2025
+     }
+    }
+   ]
+  },
+  {
+   "id": "R_05",
+   "stratum": "R",
+   "order_significant": true,
+   "sort_keys": [
+    "__index__"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "values may be float or nullable integers; the index may be 0..n-1 or unnamed"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 74
+     }
+    },
+    {
+     "check": "columns_present",
+     "args": {
+      "columns": [
+       "eastfield",
+       "harbourside",
+       "northgate",
+       "old town",
+       "riverbend",
+       "southpark"
+      ]
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "eastfield",
+       "harbourside",
+       "northgate",
+       "old town",
+       "riverbend",
+       "southpark"
+      ],
+      "min": 1948,
+      "max": 2007
+     }
+    }
+   ]
+  },
+  {
+   "id": "R_06",
+   "stratum": "R",
+   "order_significant": true,
+   "sort_keys": [
+    "__index__"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "values may be rounded to 6 significant digits; birth_year may be float"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 400
+     }
+    },
+    {
+     "check": "columns_present",
+     "args": {
+      "columns": [
+       "birth_year",
+       "change_1",
+       "change_2",
+       "change_3",
+       "change_4"
+      ]
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "change_1",
+       "change_2",
+       "change_3",
+       "change_4"
+      ],
+      "min": -1,
+      "max": 1
+     }
+    }
+   ]
+  },
+  {
+   "id": "R_07",
+   "stratum": "R",
+   "order_significant": true,
+   "sort_keys": [
+    "__index__"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "values may be float, nullable integers or a list; missing may be NaN/None/NA"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 400
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min": 0,
+      "max": 2007
+     }
+    }
+   ]
+  },
+  {
+   "id": "R_08",
+   "stratum": "R",
+   "order_significant": true,
+   "sort_keys": [
+    "__index__"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "flags may be booleans, 0/1 or a list"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 400
+     }
+    },
+    {
+     "check": "no_nulls",
+     "args": {
+      "columns": [
+       "__values__"
+      ]
+     }
+    },
+    {
+     "check": "values_in_set",
+     "args": {
+      "column": "__values__",
+      "values": [
+       true,
+       false
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "R_09",
+   "stratum": "R",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "id columns (rider_id, station codes) may be written as integers without leading zeros; per_rider may be a Series, dict or table; totals may differ in the last digits by summation order"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "result_kind",
+     "args": {
+      "kind": "other"
+     }
+    }
+   ]
+  },
+  {
+   "id": "A_TXT_01",
+   "stratum": "A",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "a numpy integer or an int-valued float is the same count"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "result_kind",
+     "args": {
+      "kind": "scalar"
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min": 0,
+      "max": 400
+     }
+    }
+   ]
+  },
+  {
+   "id": "A_IMP_01",
+   "stratum": "A",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "id columns (rider_id, station codes) may be written as integers without leading zeros; duration_min may be float; started_at may be text or a timestamp"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 1500
+     }
+    },
+    {
+     "check": "columns_present",
+     "args": {
+      "columns": [
+       "trip_id",
+       "start_station",
+       "duration_min"
+      ]
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "duration_min"
+      ],
+      "min": 0,
+      "max": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "A_CONV_01",
+   "stratum": "A",
+   "order_significant": true,
+   "sort_keys": [
+    "__index__"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "the Series name is free"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "result_kind",
+     "args": {
+      "kind": "series"
+     }
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 389
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min": 0,
+      "max": null
+     }
+    },
+    {
+     "check": "sorted_by",
+     "args": {
+      "keys": [
+       "__index__"
+      ],
+      "ascending": [
+       true
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "A_BIN_01",
+   "stratum": "A",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "band labels may be spelled differently (e.g. interval notation); the band may be the index"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 4
+     }
+    },
+    {
+     "check": "counts_sum_to_rows",
+     "args": {
+      "column": "n_trips",
+      "expected": 1500
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "avg_fare"
+      ],
+      "min": 0,
+      "max": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "A_DATE_01",
+   "stratum": "A",
+   "order_significant": true,
+   "sort_keys": [
+    "year",
+    "quarter"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "quarters without joins may be shown with 0"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "counts_sum_to_rows",
+     "args": {
+      "column": "n_riders",
+      "expected": 392
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "year"
+      ],
+      "min": 2021,
+      "max": 2025
+     }
+    },
+    {
+     "check": "values_in_set",
+     "args": {
+      "column": "quarter",
+      "values": [
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    },
+    {
+     "check": "sorted_by",
+     "args": {
+      "keys": [
+       "year",
+       "quarter"
+      ],
+      "ascending": [
+       true,
+       true
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "A_TS_01",
+   "stratum": "A",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "the date index may be dates, timestamps at midnight or YYYY-MM-DD text; rain_total may be rounded to 1 decimal"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 30
+     }
+    },
+    {
+     "check": "date_year_in_range",
+     "args": {
+      "columns": [
+       "__index__"
+      ],
+      "min_year": 2025,
+      "max_year": 2025
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "rain_total"
+      ],
+      "min": 0,
+      "max": null
+     }
+    },
+    {
+     "check": "no_nulls",
+     "args": {
+      "columns": [
+       "temp_max"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "A_TOP_01",
+   "stratum": "A",
+   "order_significant": true,
+   "sort_keys": [
+    "total_km"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "id columns (rider_id, station codes) may be written as integers without leading zeros; rider_id may be the index"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 5
+     }
+    },
+    {
+     "check": "sorted_by",
+     "args": {
+      "keys": [
+       "total_km"
+      ],
+      "ascending": [
+       false
+      ]
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "total_km"
+      ],
+      "min": 0,
+      "max": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "A_MRG_01",
+   "stratum": "A",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "district labels may differ in letter case; the counts may be a one-column table"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "result_kind",
+     "args": {
+      "kind": "series"
+     }
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 6
+     }
+    },
+    {
+     "check": "counts_sum_to_rows",
+     "args": {
+      "column": "__values__",
+      "expected": 1500
+     }
+    }
+   ]
+  },
+  {
+   "id": "A_PIV_01",
+   "stratum": "A",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "rating column labels may be 1.0-5.0; row and column order free"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 3
+     }
+    },
+    {
+     "check": "no_nulls",
+     "args": {
+      "columns": []
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [],
+      "min": 0,
+      "max": 1218
+     }
+    }
+   ]
+  },
+  {
+   "id": "A_ENC_01",
+   "stratum": "A",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "id columns (rider_id, station codes) may be written as integers without leading zeros; rider_id may be the index"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 400
+     }
+    },
+    {
+     "check": "rate_in_unit_interval",
+     "args": {
+      "columns": [
+       "district_share"
+      ]
+     }
+    },
+    {
+     "check": "no_nulls",
+     "args": {
+      "columns": [
+       "district_share"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "A_UPD_01",
+   "stratum": "A",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "id columns (rider_id, station codes) may be written as integers without leading zeros"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 1500
+     }
+    },
+    {
+     "check": "columns_present",
+     "args": {
+      "columns": [
+       "trip_id",
+       "duration_min",
+       "fare"
+      ]
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "fare"
+      ],
+      "min": 0,
+      "max": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "A_RPT_01",
+   "stratum": "A",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "payment may be a column instead of the index"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 3
+     }
+    },
+    {
+     "check": "counts_sum_to_rows",
+     "args": {
+      "column": "n_trips",
+      "expected": 1500
+     }
+    },
+    {
+     "check": "rate_in_unit_interval",
+     "args": {
+      "columns": [
+       "rated_share"
+      ]
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "total_fare",
+       "mean_km"
+      ],
+      "min": 0,
+      "max": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "A_TXT_02",
+   "stratum": "A",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "id columns (rider_id, station codes) may be written as integers without leading zeros"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 48
+     }
+    },
+    {
+     "check": "values_in_set",
+     "args": {
+      "column": "side",
+      "values": [
+       "North",
+       "South",
+       "East"
+      ]
+     }
+    },
+    {
+     "check": "no_nulls",
+     "args": {
+      "columns": [
+       "base_name",
+       "side"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "A_IMP_02",
+   "stratum": "A",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "the index may be the timestamp text or parsed timestamps; values that were present stay as they are"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "result_kind",
+     "args": {
+      "kind": "series"
+     }
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 720
+     }
+    },
+    {
+     "check": "no_nulls",
+     "args": {
+      "columns": []
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min": -10,
+      "max": 40
+     }
+    }
+   ]
+  },
+  {
+   "id": "A_CONV_02",
+   "stratum": "A",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "the totals may be integer-valued floats"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "result_kind",
+     "args": {
+      "kind": "series"
+     }
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 3
+     }
+    }
+   ]
+  },
+  {
+   "id": "A_BIN_02",
+   "stratum": "A",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "group labels may be spelled differently; row and column order free"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 4
+     }
+    },
+    {
+     "check": "no_nulls",
+     "args": {
+      "columns": []
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [],
+      "min": 0,
+      "max": 384
+     }
+    }
+   ]
+  },
+  {
+   "id": "A_DATE_02",
+   "stratum": "A",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "a numpy integer is the same count"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "result_kind",
+     "args": {
+      "kind": "scalar"
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min": 0,
+      "max": 1500
+     }
+    }
+   ]
+  },
+  {
+   "id": "A_TS_02",
+   "stratum": "A",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "the first 6 values may be empty (full window) or partial-window means; the day index may be dates or text"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "result_kind",
+     "args": {
+      "kind": "series"
+     }
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 62
+     }
+    },
+    {
+     "check": "date_year_in_range",
+     "args": {
+      "columns": [
+       "__index__"
+      ],
+      "min_year": 2025,
+      "max_year": 2025
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min": 0,
+      "max": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "A_TOP_02",
+   "stratum": "A",
+   "order_significant": true,
+   "sort_keys": [
+    "payment",
+    "duration_min"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "duration_min may be float"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 9
+     }
+    },
+    {
+     "check": "values_in_set",
+     "args": {
+      "column": "payment",
+      "values": [
+       "app",
+       "card",
+       "cash"
+      ]
+     }
+    },
+    {
+     "check": "sorted_by",
+     "args": {
+      "keys": [
+       "payment",
+       "duration_min"
+      ],
+      "ascending": [
+       true,
+       false
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "A_MRG_02",
+   "stratum": "A",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "may be a one-column table"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 3
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min": 0,
+      "max": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "A_PIV_02",
+   "stratum": "A",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "row and column order free"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 30
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [],
+      "min": -10,
+      "max": 40
+     }
+    }
+   ]
+  },
+  {
+   "id": "A_ENC_02",
+   "stratum": "A",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "index may be the default index if the order of trips.csv is kept"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "result_kind",
+     "args": {
+      "kind": "series"
+     }
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 1500
+     }
+    },
+    {
+     "check": "values_in_set",
+     "args": {
+      "column": "__values__",
+      "values": [
+       0,
+       1,
+       2
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "A_UPD_02",
+   "stratum": "A",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "id columns (rider_id, station codes) may be written as integers without leading zeros; in_debt may be 0/1"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 400
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "credit_balance"
+      ],
+      "min": 0,
+      "max": null
+     }
+    },
+    {
+     "check": "no_nulls",
+     "args": {
+      "columns": [
+       "in_debt"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "A_RPT_02",
+   "stratum": "A",
+   "order_significant": true,
+   "sort_keys": [
+    "net_flow"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "id columns (rider_id, station codes) may be written as integers without leading zeros; station_code may be a column"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 48
+     }
+    },
+    {
+     "check": "counts_sum_to_rows",
+     "args": {
+      "column": "starts",
+      "expected": 1500
+     }
+    },
+    {
+     "check": "counts_sum_to_rows",
+     "args": {
+      "column": "ends",
+      "expected": 1500
+     }
+    },
+    {
+     "check": "sorted_by",
+     "args": {
+      "keys": [
+       "net_flow"
+      ],
+      "ascending": [
+       false
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "A_TXT_03",
+   "stratum": "A",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "the index may be the default index with rider_id as a column"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "result_kind",
+     "args": {
+      "kind": "series"
+     }
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 400
+     }
+    },
+    {
+     "check": "no_nulls",
+     "args": {
+      "columns": []
+     }
+    }
+   ]
+  },
+  {
+   "id": "A_IMP_03",
+   "stratum": "A",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "id columns (rider_id, station codes) may be written as integers without leading zeros; home_district may be the original text; birth_year may be float"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 400
+     }
+    },
+    {
+     "check": "no_nulls",
+     "args": {
+      "columns": [
+       "birth_year"
+      ]
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "birth_year"
+      ],
+      "min": 1900,
+      "max": 2025
+     }
+    }
+   ]
+  },
+  {
+   "id": "A_CONV_03",
+   "stratum": "A",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": ""
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "result_kind",
+     "args": {
+      "kind": "series"
+     }
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 1500
+     }
+    },
+    {
+     "check": "no_nulls",
+     "args": {
+      "columns": []
+     }
+    }
+   ]
+  },
+  {
+   "id": "A_BIN_03",
+   "stratum": "A",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "classes with no hours may be shown with 0 or left out; class order free"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "counts_sum_to_rows",
+     "args": {
+      "column": "hours",
+      "expected": 720
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "rain_total"
+      ],
+      "min": 0,
+      "max": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "A_DATE_03",
+   "stratum": "A",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "id columns (rider_id, station codes) may be written as integers without leading zeros"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 48
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "opened_year"
+      ],
+      "min": 2015,
+      "max": 2024
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "days_open"
+      ],
+      "min": 0,
+      "max": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "A_TS_03",
+   "stratum": "A",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "the block start may be a timestamp or text"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 120
+     }
+    },
+    {
+     "check": "date_year_in_range",
+     "args": {
+      "columns": [
+       "__index__"
+      ],
+      "min_year": 2025,
+      "max_year": 2025
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "wind_kmh"
+      ],
+      "min": 0,
+      "max": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "A_TOP_03",
+   "stratum": "A",
+   "order_significant": true,
+   "sort_keys": [
+    "credit_balance",
+    "rider_id"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "id columns (rider_id, station codes) may be written as integers without leading zeros"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 10
+     }
+    },
+    {
+     "check": "sorted_by",
+     "args": {
+      "keys": [
+       "credit_balance"
+      ],
+      "ascending": [
+       false
+      ]
+     }
+    },
+    {
+     "check": "no_nulls",
+     "args": {
+      "columns": [
+       "credit_balance"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "A_MRG_03",
+   "stratum": "A",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "new_base_fare labels may be text such as 1.50; fare values without trips may be shown with 0"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "result_kind",
+     "args": {
+      "kind": "series"
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min": 0,
+      "max": 1500
+     }
+    }
+   ]
+  },
+  {
+   "id": "A_PIV_03",
+   "stratum": "A",
+   "order_significant": true,
+   "sort_keys": [
+    "__index__"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "month column labels may be Periods or text; counts may be int or float; payment may be a column instead of the index"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 3
+     }
+    },
+    {
+     "check": "no_nulls",
+     "args": {
+      "columns": [
+       "2025-09",
+       "2025-10",
+       "2025-11"
+      ]
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "2025-09",
+       "2025-10",
+       "2025-11"
+      ],
+      "min": 0,
+      "max": 1500
+     }
+    },
+    {
+     "check": "sorted_by",
+     "args": {
+      "keys": [
+       "__index__"
+      ],
+      "ascending": [
+       true
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "A_ENC_03",
+   "stratum": "A",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "id columns (rider_id, station codes) may be written as integers without leading zeros; indicators may be booleans; extra columns are not expected"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 400
+     }
+    },
+    {
+     "check": "columns_present",
+     "args": {
+      "columns": [
+       "rider_id",
+       "is_annual",
+       "is_casual",
+       "is_monthly"
+      ]
+     }
+    },
+    {
+     "check": "no_nulls",
+     "args": {
+      "columns": [
+       "rider_id",
+       "is_annual",
+       "is_casual",
+       "is_monthly"
+      ]
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "is_annual",
+       "is_casual",
+       "is_monthly"
+      ],
+      "min": 0,
+      "max": 1
+     }
+    }
+   ]
+  },
+  {
+   "id": "A_UPD_03",
+   "stratum": "A",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "a numpy float is the same number"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "result_kind",
+     "args": {
+      "kind": "scalar"
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min": 0,
+      "max": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "A_RPT_03",
+   "stratum": "A",
+   "order_significant": true,
+   "sort_keys": [
+    "hours",
+    "__index__"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "sky may be a column instead of the index; max_wind_kmh may be float"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 4
+     }
+    },
+    {
+     "check": "counts_sum_to_rows",
+     "args": {
+      "column": "hours",
+      "expected": 720
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "total_rain_mm"
+      ],
+      "min": 0,
+      "max": null
+     }
+    },
+    {
+     "check": "sorted_by",
+     "args": {
+      "keys": [
+       "hours"
+      ],
+      "ascending": [
+       false
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "A_TXT_04",
+   "stratum": "A",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "a numpy integer is the same count"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "result_kind",
+     "args": {
+      "kind": "scalar"
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min": 1,
+      "max": 400
+     }
+    }
+   ]
+  },
+  {
+   "id": "A_IMP_04",
+   "stratum": "A",
+   "order_significant": true,
+   "sort_keys": [
+    "__index__"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "id columns (rider_id, station codes) may be written as integers without leading zeros; birth_year may be float"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 400
+     }
+    },
+    {
+     "check": "columns_present",
+     "args": {
+      "columns": [
+       "rider_id",
+       "membership",
+       "birth_year",
+       "credit_balance"
+      ]
+     }
+    },
+    {
+     "check": "no_nulls",
+     "args": {
+      "columns": [
+       "birth_year",
+       "credit_balance"
+      ]
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "birth_year"
+      ],
+      "min": 1900,
+      "max": 2025
+     }
+    },
+    {
+     "check": "values_in_set",
+     "args": {
+      "column": "membership",
+      "values": [
+       "annual",
+       "casual",
+       "monthly"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "A_CONV_04",
+   "stratum": "A",
+   "order_significant": true,
+   "sort_keys": [
+    "__index__"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "trip_id index may be text; the Series name is free"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "result_kind",
+     "args": {
+      "kind": "series"
+     }
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 1500
+     }
+    }
+   ]
+  },
+  {
+   "id": "A_BIN_04",
+   "stratum": "A",
+   "order_significant": true,
+   "sort_keys": [
+    "__index__"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "band labels may be spelled differently (e.g. interval notation); the band may be a column"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 4
+     }
+    },
+    {
+     "check": "counts_sum_to_rows",
+     "args": {
+      "column": "trips",
+      "expected": 1500
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "mean_fare"
+      ],
+      "min": 0,
+      "max": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "A_DATE_04",
+   "stratum": "A",
+   "order_significant": true,
+   "sort_keys": [
+    "__index__"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "id columns (rider_id, station codes) may be written as integers without leading zeros"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 392
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "days_member"
+      ],
+      "min": 0,
+      "max": null
+     }
+    },
+    {
+     "check": "values_in_set",
+     "args": {
+      "column": "joined_weekday",
+      "values": [
+       "Monday",
+       "Tuesday",
+       "Wednesday",
+       "Thursday",
+       "Friday",
+       "Saturday",
+       "Sunday"
+      ]
+     }
+    },
+    {
+     "check": "no_nulls",
+     "args": {
+      "columns": [
+       "rider_id",
+       "joined_weekday",
+       "days_member"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "A_TS_04",
+   "stratum": "A",
+   "order_significant": true,
+   "sort_keys": [
+    "__index__"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "the index may be dates, timestamps at midnight, or YYYY-MM-DD text"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "result_kind",
+     "args": {
+      "kind": "series"
+     }
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 3
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min": 0,
+      "max": null
+     }
+    },
+    {
+     "check": "date_year_in_range",
+     "args": {
+      "columns": [
+       "__index__"
+      ],
+      "min_year": 2025,
+      "max_year": 2025
+     }
+    },
+    {
+     "check": "sorted_by",
+     "args": {
+      "keys": [
+       "__index__"
+      ],
+      "ascending": [
+       true
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "A_TOP_04",
+   "stratum": "A",
+   "order_significant": true,
+   "sort_keys": [
+    "payment",
+    "distance_km",
+    "trip_id"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "trip_id may be text"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 9
+     }
+    },
+    {
+     "check": "values_in_set",
+     "args": {
+      "column": "payment",
+      "values": [
+       "app",
+       "card",
+       "cash"
+      ]
+     }
+    },
+    {
+     "check": "sorted_by",
+     "args": {
+      "keys": [
+       "payment",
+       "distance_km"
+      ],
+      "ascending": [
+       true,
+       false
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "A_MRG_04",
+   "stratum": "A",
+   "order_significant": true,
+   "sort_keys": [
+    "__index__"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "district labels may differ in letter case; district may be a column"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 6
+     }
+    },
+    {
+     "check": "counts_sum_to_rows",
+     "args": {
+      "column": "trips",
+      "expected": 1500
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "total_km"
+      ],
+      "min": 0,
+      "max": null
+     }
+    },
+    {
+     "check": "sorted_by",
+     "args": {
+      "keys": [
+       "__index__"
+      ],
+      "ascending": [
+       true
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "A_PIV_04",
+   "stratum": "A",
+   "order_significant": true,
+   "sort_keys": [
+    "__index__"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "the margin row/column label may be spelled differently (e.g. All); counts may be float"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 7
+     }
+    },
+    {
+     "check": "no_nulls",
+     "args": {
+      "columns": [
+       "annual",
+       "casual",
+       "monthly",
+       "total"
+      ]
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "annual",
+       "casual",
+       "monthly",
+       "total"
+      ],
+      "min": 0,
+      "max": 400
+     }
+    }
+   ]
+  },
+  {
+   "id": "A_ENC_04",
+   "stratum": "A",
+   "order_significant": true,
+   "sort_keys": [
+    "__index__"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "id columns (rider_id, station codes) may be written as integers without leading zeros"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "result_kind",
+     "args": {
+      "kind": "series"
+     }
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 48
+     }
+    },
+    {
+     "check": "no_nulls",
+     "args": {
+      "columns": [
+       "__values__"
+      ]
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min": 0,
+      "max": 5
+     }
+    }
+   ]
+  },
+  {
+   "id": "A_UPD_04",
+   "stratum": "A",
+   "order_significant": false,
+   "sort_keys": [],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "any",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "the reference rounds the floating-point product round(fare * 1.1, 2) per trip; about half of the fares end in 5 cents, so their exact product ends in half a cent and rounding half-even or half-up on the exact value may differ by 0.01 per such peak trip (intent writer flagged the per-trip rounding)"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "result_kind",
+     "args": {
+      "kind": "scalar"
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min": 0,
+      "max": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "A_RPT_04",
+   "stratum": "A",
+   "order_significant": true,
+   "sort_keys": [
+    "__index__"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "home_district may be a column"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 6
+     }
+    },
+    {
+     "check": "counts_sum_to_rows",
+     "args": {
+      "column": "riders",
+      "expected": 400
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "median_birth_year"
+      ],
+      "min": 1900,
+      "max": 2025
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "negative_balances"
+      ],
+      "min": 0,
+      "max": 400
+     }
+    },
+    {
+     "check": "sorted_by",
+     "args": {
+      "keys": [
+       "__index__"
+      ],
+      "ascending": [
+       true
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "A_TXT_05",
+   "stratum": "A",
+   "order_significant": true,
+   "sort_keys": [
+    "__index__"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "id columns (rider_id, station codes) may be written as integers without leading zeros"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "result_kind",
+     "args": {
+      "kind": "series"
+     }
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 48
+     }
+    },
+    {
+     "check": "no_nulls",
+     "args": {
+      "columns": [
+       "__values__"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "A_IMP_05",
+   "stratum": "A",
+   "order_significant": true,
+   "sort_keys": [
+    "__index__"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "the index may be timestamps instead of text"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "result_kind",
+     "args": {
+      "kind": "series"
+     }
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 14
+     }
+    },
+    {
+     "check": "no_nulls",
+     "args": {
+      "columns": [
+       "__values__"
+      ]
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min": -40,
+      "max": 50
+     }
+    },
+    {
+     "check": "sorted_by",
+     "args": {
+      "keys": [
+       "__index__"
+      ],
+      "ascending": [
+       true
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "A_CONV_05",
+   "stratum": "A",
+   "order_significant": true,
+   "sort_keys": [
+    "__index__"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "id columns (rider_id, station codes) may be written as integers without leading zeros"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "result_kind",
+     "args": {
+      "kind": "series"
+     }
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 400
+     }
+    },
+    {
+     "check": "no_nulls",
+     "args": {
+      "columns": [
+       "__values__"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "A_BIN_05",
+   "stratum": "A",
+   "order_significant": true,
+   "sort_keys": [
+    "__index__"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "band labels may be spelled differently (e.g. interval notation); the band may be a column"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 4
+     }
+    },
+    {
+     "check": "counts_sum_to_rows",
+     "args": {
+      "column": "riders",
+      "expected": 384
+     }
+    }
+   ]
+  },
+  {
+   "id": "A_DATE_05",
+   "stratum": "A",
+   "order_significant": true,
+   "sort_keys": [
+    "__index__"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "trip_id may be text"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 1500
+     }
+    },
+    {
+     "check": "no_nulls",
+     "args": {
+      "columns": [
+       "trip_id",
+       "start_epoch",
+       "start_day_of_month"
+      ]
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "start_epoch"
+      ],
+      "min": 1756684800,
+      "max": 1762041600
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "start_day_of_month"
+      ],
+      "min": 1,
+      "max": 31
+     }
+    }
+   ]
+  },
+  {
+   "id": "A_TS_05",
+   "stratum": "A",
+   "order_significant": true,
+   "sort_keys": [
+    "__index__"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "the index may be dates, timestamps at midnight, or YYYY-MM-DD text"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "result_kind",
+     "args": {
+      "kind": "series"
+     }
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 30
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min": -40,
+      "max": 50
+     }
+    },
+    {
+     "check": "date_year_in_range",
+     "args": {
+      "columns": [
+       "__index__"
+      ],
+      "min_year": 2025,
+      "max_year": 2025
+     }
+    },
+    {
+     "check": "sorted_by",
+     "args": {
+      "keys": [
+       "__index__"
+      ],
+      "ascending": [
+       true
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "A_TOP_05",
+   "stratum": "A",
+   "order_significant": true,
+   "sort_keys": [
+    "district",
+    "docks",
+    "station_code"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "id columns (rider_id, station codes) may be written as integers without leading zeros"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 12
+     }
+    },
+    {
+     "check": "values_in_set",
+     "args": {
+      "column": "district",
+      "values": [
+       "eastfield",
+       "harbourside",
+       "northgate",
+       "old town",
+       "riverbend",
+       "southpark"
+      ]
+     }
+    },
+    {
+     "check": "sorted_by",
+     "args": {
+      "keys": [
+       "district",
+       "docks"
+      ],
+      "ascending": [
+       true,
+       false
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "A_MRG_05",
+   "stratum": "A",
+   "order_significant": true,
+   "sort_keys": [
+    "__index__"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "membership may be a column"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 3
+     }
+    },
+    {
+     "check": "counts_sum_to_rows",
+     "args": {
+      "column": "trips",
+      "expected": 1500
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "mean_fare"
+      ],
+      "min": 0,
+      "max": null
+     }
+    },
+    {
+     "check": "sorted_by",
+     "args": {
+      "keys": [
+       "__index__"
+      ],
+      "ascending": [
+       true
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "A_PIV_05",
+   "stratum": "A",
+   "order_significant": true,
+   "sort_keys": [
+    "observed_at",
+    "measure"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "observed_at may be timestamps instead of text; value may be float throughout"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 2146
+     }
+    },
+    {
+     "check": "no_nulls",
+     "args": {
+      "columns": [
+       "value"
+      ]
+     }
+    },
+    {
+     "check": "values_in_set",
+     "args": {
+      "column": "measure",
+      "values": [
+       "rain_mm",
+       "temp_c",
+       "wind_kmh"
+      ]
+     }
+    },
+    {
+     "check": "columns_present",
+     "args": {
+      "columns": [
+       "observed_at",
+       "measure",
+       "value"
+      ]
+     }
+    },
+    {
+     "check": "sorted_by",
+     "args": {
+      "keys": [
+       "observed_at",
+       "measure"
+      ],
+      "ascending": [
+       true,
+       true
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "A_ENC_05",
+   "stratum": "A",
+   "order_significant": true,
+   "sort_keys": [
+    "__index__"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "trip_id index may be text"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "result_kind",
+     "args": {
+      "kind": "series"
+     }
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 1500
+     }
+    },
+    {
+     "check": "no_nulls",
+     "args": {
+      "columns": [
+       "__values__"
+      ]
+     }
+    },
+    {
+     "check": "rate_in_unit_interval",
+     "args": {
+      "columns": [
+       "__values__"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "A_UPD_05",
+   "stratum": "A",
+   "order_significant": true,
+   "sort_keys": [
+    "__index__"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "counts may be a one-column table"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 3
+     }
+    },
+    {
+     "check": "counts_sum_to_rows",
+     "args": {
+      "column": "__values__",
+      "expected": 400
+     }
+    },
+    {
+     "check": "sorted_by",
+     "args": {
+      "keys": [
+       "__index__"
+      ],
+      "ascending": [
+       true
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "A_RPT_05",
+   "stratum": "A",
+   "order_significant": true,
+   "sort_keys": [
+    "__index__"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "values may be float throughout"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "result_kind",
+     "args": {
+      "kind": "series"
+     }
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 6
+     }
+    },
+    {
+     "check": "no_nulls",
+     "args": {
+      "columns": [
+       "__values__"
+      ]
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min": 0,
+      "max": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "A_TXT_06",
+   "stratum": "A",
+   "order_significant": true,
+   "sort_keys": [
+    "__values__",
+    "__index__"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "surname may be a column of a one-column table"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "result_kind",
+     "args": {
+      "kind": "series"
+     }
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 22
+     }
+    },
+    {
+     "check": "counts_sum_to_rows",
+     "args": {
+      "column": "__values__",
+      "expected": 400
+     }
+    },
+    {
+     "check": "sorted_by",
+     "args": {
+      "keys": [
+       "__values__"
+      ],
+      "ascending": [
+       false
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "A_IMP_06",
+   "stratum": "A",
+   "order_significant": true,
+   "sort_keys": [
+    "__index__"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "duration_min and rating may be float; trip_id may be text"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 1500
+     }
+    },
+    {
+     "check": "no_nulls",
+     "args": {
+      "columns": [
+       "duration_min",
+       "rating"
+      ]
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "rating"
+      ],
+      "min": 1,
+      "max": 5
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "duration_min"
+      ],
+      "min": 0,
+      "max": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "A_CONV_06",
+   "stratum": "A",
+   "order_significant": true,
+   "sort_keys": [
+    "__index__"
+   ],
+   "dtype_significant": false,
+   "acceptable_variants": {
+    "row_order": "ties_only",
+    "label_spelling": true,
+    "missing_value_representation": true,
+    "rounding_sig_digits": 6,
+    "notes": "id columns (rider_id, station codes) may be written as integers without leading zeros; cents may be float or a nullable integer"
+   },
+   "property_checks": [
+    {
+     "check": "no_null_text",
+     "args": {}
+    },
+    {
+     "check": "no_all_missing_column",
+     "args": {}
+    },
+    {
+     "check": "result_kind",
+     "args": {
+      "kind": "series"
+     }
+    },
+    {
+     "check": "n_groups_equals",
+     "args": {
+      "n": 30
+     }
+    },
+    {
+     "check": "numeric_in_range",
+     "args": {
+      "columns": [
+       "__values__"
+      ],
+      "min": 0,
+      "max": null
+     }
+    }
+   ]
+  }
+ ]
+}

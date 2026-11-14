@@ -1,0 +1,5 @@
+control	source	scored	passed	failed_checks
+P+ (positive oracle controls, deciding checks)	controls of record: LR74 run before the freeze (T8 apply step)	88	88	none
+P- (negative oracle controls and matching positives)	controls of record: LR74 run before the freeze (T8 apply step)	52	52	none
+LR16 control (4 checks)	controls of record: LR74 run before the freeze (T8 apply step)	4	4	none
+harm pre-label wiring check	first run of 2026-11-11 (not repeated under LR74)	6	6	none

@@ -1,0 +1,2 @@
+<workspace>/research/studies/pandas3_full/envs/probe_env.py:47: Pandas4Warning: The 'future.infer_string' option is deprecated and will be removed in pandas 4.0. Inferring str dtype for string data has been the default since pandas 3.0, and it will no longer be possible to disable it.
+  try: out["future_infer_string_option"] = repr(pd.get_option("future.infer_string"))

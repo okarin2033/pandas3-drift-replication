@@ -1,0 +1,88 @@
+{
+ "id": "M_QF3_15",
+ "stratum": "M",
+ "family": "QF3_COW",
+ "generic_family": null,
+ "catalogue_row": "C03",
+ "files": [
+  {
+   "path": "QF3_COW/gauges.csv",
+   "description": "Water gauge log (120 rows): gauge (gauge name such as \"LA-01\"), reading (meters, three decimals; about 3% empty), level (alert level, whole number from 3 to 80, no empty cells), site (dam, canal or lake; capital letters and spaces are inconsistent)."
+  }
+ ],
+ "task_text": "The display can only show alert levels up to 50, so any level above 50 is shown as 50. Apply that limit and return the gauge log as a table with the columns gauge, site (in lower case without extra spaces) and level, in file order.",
+ "allowed_task_words": [],
+ "invited_ids_author": [
+  "C03"
+ ],
+ "order_significant": true,
+ "sort_keys": [
+  "__index__"
+ ],
+ "dtype_significant": false,
+ "intended_computation": "Cap level at 50 (41 rows are higher), clean site and return gauge, site and level for all 120 rows in file order.",
+ "acceptable_variants": {
+  "row_order": "ties_only",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": ""
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 120
+   }
+  },
+  {
+   "check": "numeric_in_range",
+   "args": {
+    "columns": [
+     "level"
+    ],
+    "min": 0,
+    "max": 50
+   }
+  },
+  {
+   "check": "columns_present",
+   "args": {
+    "columns": [
+     "gauge",
+     "site",
+     "level"
+    ]
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "HARM",
+  "reason": "on 3.x the capped values written through a separate column variable never reach the table"
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M1",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 in package TASKS_M1; task text, card, naive solution, reference and predicted direction were prepared there."
+}

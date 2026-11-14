@@ -1,0 +1,105 @@
+{
+ "id": "M_QF5_03",
+ "stratum": "M",
+ "family": "QF5_ORDER",
+ "generic_family": null,
+ "catalogue_row": "R04",
+ "files": [
+  {
+   "path": "QF5_ORDER/exam_scores.csv",
+   "description": "Exam scores (60 rows, one per student): student (full name, unique, many with accented letters), then math, art and music (scores 35-100, whole numbers; about 9% of these score cells are empty, and one student has no score at all)."
+  }
+ ],
+ "task_text": "Turn the score table into a long list with one row per student and subject that has a score; cells without a score are left out. `result` should be a table with the columns student, subject and score.",
+ "allowed_task_words": [],
+ "invited_ids_author": [
+  "R04"
+ ],
+ "order_significant": false,
+ "sort_keys": [],
+ "dtype_significant": false,
+ "intended_computation": "Reshape the wide table (student; math, art, music) to long form and drop the empty cells: 164 rows (180 cells minus 16 empty), columns student, subject (one of math, art, music) and score.",
+ "acceptable_variants": {
+  "row_order": "any",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": "row order is free; score may be whole numbers or decimals."
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 164
+   }
+  },
+  {
+   "check": "columns_present",
+   "args": {
+    "columns": [
+     "student",
+     "subject",
+     "score"
+    ]
+   }
+  },
+  {
+   "check": "no_nulls",
+   "args": {
+    "columns": [
+     "score"
+    ]
+   }
+  },
+  {
+   "check": "values_in_set",
+   "args": {
+    "column": "subject",
+    "values": [
+     "math",
+     "art",
+     "music"
+    ]
+   }
+  },
+  {
+   "check": "numeric_in_range",
+   "args": {
+    "columns": [
+     "score"
+    ],
+    "min": 35,
+    "max": 100
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "HARM",
+  "reason": "stack() dropped the empty cells on 2.x as the task asks; on 3.x it keeps them, adding 16 rows without a score."
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M2",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 by pkg:TASKS_M2 for catalogue row R04; naive.py shows the invited idiom, reference.py is the version-robust reference."
+}

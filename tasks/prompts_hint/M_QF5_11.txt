@@ -1,0 +1,12 @@
+You are given CSV file(s) in the current working directory:
+
+- exam_scores.csv: Exam scores (60 rows, one per student): student (full name, unique, many with accented letters), then math, art and music (scores 35-100, whole numbers; about 9% of these score cells are empty, and one student has no score at all).
+
+Task: For each subject, what share of the recorded scores (cells that have a score) is below 50? `result` should be a Series indexed by subject (math, art, music) with shares between 0 and 1.
+
+Requirements:
+- Write a complete Python script that reads the file(s) from the current directory.
+- Use only pandas, numpy and the Python standard library.
+- Store the final answer in a top-level variable named `result`.
+- Reply with a single Python code block.
+- The script will run with the latest pandas 3 release.

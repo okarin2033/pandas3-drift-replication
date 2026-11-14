@@ -1,0 +1,28 @@
+You are a careful reviewer of data-analysis results. You will judge whether each of two results is a correct answer to a data task.
+
+A Python program was written for the task below. It was run twice on the same input files, in two different software environments, and gave two different results, called A and B. You are not told which environment produced which result, and it does not matter: judge each result only against the task.
+
+Decide which of the two results is a correct answer to the task, using only the task statement, the file description, the acceptable variants and the property checks. Use the program only to understand how a value was produced; a result can be correct even if the program looks clumsy, and wrong even if the program looks reasonable.
+
+Rules:
+1. Judge the whole result, not only the cells that differ. If both results share an error in the cells they have in common, neither is correct.
+2. A result is correct if it gives what the task asks for, allowing the acceptable variants listed. Do not demand anything the task does not ask for (for example a particular column order, a number format, or extra cleaning).
+3. A missing value that came from missing input is acceptable where the task does not say how to fill it. The text "nan", "None", "NaT" or "<NA>" standing in for a missing value is an error unless the task asks for that text.
+4. A value that is not plausible for the task is an error (for example a date in 1970 when the data are recent, a Unix timestamp in seconds that is 1000 times too small or too large, a count that does not add up, a rate outside 0 to 1).
+5. An empty result, a result with the wrong rows (for example one row per input row when the task asks for one row per group), or a result that stopped without a value is not correct.
+6. If the task leaves open exactly the point on which A and B differ, and both are reasonable readings of it, the code is BOTH_ACCEPTABLE.
+7. Use UNDETERMINABLE only when the information shown does not allow a decision (for example the deciding rows are not shown, or a result is an unreadable object). Do not use it because a case is hard.
+
+Codes (choose exactly one):
+- A_ONLY_CORRECT: result A is a correct answer to the task and result B is not.
+- B_ONLY_CORRECT: result B is a correct answer to the task and result A is not.
+- BOTH_ACCEPTABLE: both results are correct answers.
+- NEITHER: neither result is a correct answer.
+- UNDETERMINABLE: the information shown does not allow a decision.
+
+How the item is shown: text values are in double quotes, numbers have no quotes, a missing value is shown as <missing>. Cells that differ between A and B are wrapped in « and ». Long results show only their first rows and some of the rows with a difference; the summary of every column under each result describes all rows, and the list of differences gives their total number.
+
+{{ITEM}}
+
+Reply with exactly one JSON object and nothing else, in this form:
+{"item_id": "{{ITEM_ID}}", "code": "<one of A_ONLY_CORRECT, B_ONLY_CORRECT, BOTH_ACCEPTABLE, NEITHER, UNDETERMINABLE>", "reason": "<one or two sentences, at most 600 characters>"}

@@ -1,0 +1,11 @@
+You are given CSV file(s) in the current working directory:
+
+- quarterly_revenue.csv: Company revenue per calendar quarter (30 rows, oldest first, one row per quarter with no gaps): quarter_start (first day of the quarter as text, YYYY-MM-DD, from 2019-01-01 to 2026-04-01), revenue (whole number), new_accounts (whole number).
+
+Task: For every quarter in the revenue file, report the moment at which the quarter closes (its last instant) together with the revenue. `result` should be a table with the columns quarter_end and revenue, oldest quarter first.
+
+Requirements:
+- Write a complete Python script that reads the file(s) from the current directory.
+- Use only pandas, numpy and the Python standard library.
+- Store the final answer in a top-level variable named `result`.
+- Reply with a single Python code block.

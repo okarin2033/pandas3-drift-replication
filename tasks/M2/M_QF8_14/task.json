@@ -1,0 +1,76 @@
+{
+ "id": "M_QF8_14",
+ "stratum": "M",
+ "family": "QF8_NUMERIC",
+ "generic_family": null,
+ "catalogue_row": "X02",
+ "files": [
+  {
+   "path": "QF8_NUMERIC/panel_scores.csv",
+   "description": "Tasting competition scores (96 rows): panel (one of 8 panels, e.g. bread or cheese; 12 entrants each), entrant (person name; capital letters and spaces are inconsistent), score (4.0-10.0, one decimal; no empty cells)."
+  }
+ ],
+ "task_text": "The 'middle score' of a panel is the score actually given that sits in the middle of the panel's sorted scores; each panel has 12 entries, so two scores are equally near the middle, and then the higher of the two is used. For each panel, give the mean score minus the middle score. `result` should be a Series indexed by panel.",
+ "allowed_task_words": [],
+ "invited_ids_author": [
+  "X02"
+ ],
+ "order_significant": false,
+ "sort_keys": [],
+ "dtype_significant": false,
+ "intended_computation": "Per panel: arithmetic mean of its 12 scores minus its 7th smallest score.",
+ "acceptable_variants": {
+  "row_order": "any",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": "values to 6 significant digits."
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 8
+   }
+  },
+  {
+   "check": "numeric_in_range",
+   "args": {
+    "columns": [
+     "__values__"
+    ],
+    "min": -6,
+    "max": 6
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "FIX",
+  "reason": "The middle score from groupby().quantile(0.5, interpolation='nearest') was the lower one on 2.x; 3.x uses the higher one that the task specifies."
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M2",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 by pkg:TASKS_M2 for catalogue row X02; naive.py shows the invited idiom, reference.py is the version-robust reference."
+}

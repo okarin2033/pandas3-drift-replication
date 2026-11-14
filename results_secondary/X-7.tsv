@@ -1,0 +1,11 @@
+Model	Provider of the main run (place in the order of rule P)	Stated precision	Reasoning setting of record	Calls answered	Earlier pins (note)
+anthropic/claude-haiku-4.5	Anthropic (1)	unknown	{"enabled": false}	20 of 20	none
+anthropic/claude-haiku-5.5	Anthropic (1)	unknown	{"enabled": false}	20 of 20	none
+anthropic/claude-sonnet-5.5	Anthropic (1)	unknown	{"effort": "minimal"}	20 of 20	none
+deepseek/deepseek-v3.2	GMICloud (1)	fp8	{"enabled": false}	20 of 20	none
+google/gemma-4-31b-it	Novita (2)	bf16	{"enabled": false}	20 of 20	earlier: 1_Crusoe
+openai/gpt-5.4-mini	OpenAI (1)	unknown	{"enabled": false}	20 of 20	none
+openai/gpt-5.6-terra	OpenAI (1)	unknown	{"enabled": false}	20 of 20	none
+openai/gpt-oss-20b	DekaLLM (1)	bf16	{"effort": "minimal"}	20 of 20	none
+qwen/qwen3.5-9b	SiliconFlow (3)	fp8	{"enabled": false}	20 of 20	Amendment 13 pinned PrimeIntellect (2) (earlier: 1_DeepInfra); Amendment 14: first pin DeepInfra (16 of 20 calibration calls answered), second pin PrimeIntellect (billed above its listed prices; 3 programs, not analysed)
+qwen/qwen3.6-35b-a3b	PrimeIntellect (1)	fp8	{"enabled": false}	20 of 20	none

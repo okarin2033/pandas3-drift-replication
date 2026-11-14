@@ -1,0 +1,90 @@
+{
+ "id": "M_QF5_12",
+ "stratum": "M",
+ "family": "QF5_ORDER",
+ "generic_family": null,
+ "catalogue_row": "R05",
+ "files": [
+  {
+   "path": "QF5_ORDER/returns_march.csv",
+   "description": "Product returns in March (80 rows): return_id (whole number), quantity (whole number), refund (two decimals). Same columns as returns_april.csv."
+  },
+  {
+   "path": "QF5_ORDER/returns_april.csv",
+   "description": "Product returns in April: the header row (return_id, quantity, refund, as in returns_march.csv) and no data rows, because nothing was returned in April."
+  }
+ ],
+ "task_text": "Combine the March and April returns into one table and round every refund to a whole currency unit. `result` should be the combined table with the columns return_id, quantity and refund.",
+ "allowed_task_words": [],
+ "invited_ids_author": [
+  "R05"
+ ],
+ "order_significant": false,
+ "sort_keys": [],
+ "dtype_significant": false,
+ "intended_computation": "All 80 returns (April has none) with return_id and quantity unchanged and refund rounded to 0 decimals (halves rounded to even or away from zero).",
+ "acceptable_variants": {
+  "row_order": "any",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": "row order is free; rounded refunds may be whole numbers or decimals ending in .0; rounding half to even and half away from zero are both accepted"
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 80
+   }
+  },
+  {
+   "check": "columns_present",
+   "args": {
+    "columns": [
+     "return_id",
+     "quantity",
+     "refund"
+    ]
+   }
+  },
+  {
+   "check": "numeric_in_range",
+   "args": {
+    "columns": [
+     "refund"
+    ],
+    "min": 0,
+    "max": null
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "HARM",
+  "reason": "DataFrame.round(0) rounded the numeric refund column on 2.x; on 3.x the combined columns are text-like and round() leaves them unchanged."
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M2",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 by pkg:TASKS_M2 for catalogue row R05; naive.py shows the invited idiom, reference.py is the version-robust reference."
+}

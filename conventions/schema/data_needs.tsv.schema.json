@@ -1,0 +1,35 @@
+{
+ "$schema": "pandas3_full/tsv-schema/1",
+ "title": "mechanisms/confirm/data_needs_A.tsv, data_needs_B.tsv (T2 -> FIX)",
+ "$comment": "Written 2026-11-11 by pkg:SHARED. One row per (confirmed row, file). Types vocabulary is closed; properties are ';'-separated free tokens (suggested: dst_transition, non_ascii, empty_category, ties_topn, missing_5pct, all_missing_group, leading_zeros, mixed_case_space, epoch_seconds, epoch_millis, tz_aware, duplicate_keys, unsorted_keys, int_with_na, bool_with_na).",
+ "format": "tsv",
+ "encoding": "utf-8",
+ "header": true,
+ "columns": [
+  {
+   "name": "id",
+   "pattern": "^(S0[1-6]|O01|D(0[1-9]|10)|C0[1-6]|G0[1-8]|R0[1-7]|N0[1-7]|I0[1-6]|X0[1-2]|L0[1-6])$",
+   "description": "catalogue id"
+  },
+  {
+   "name": "file",
+   "pattern": "^(QF1_STRING|QF2_DATETIME|QF3_COW|QF4_GROUPBY|QF5_ORDER|QF6_NA_DTYPE|QF7_INDEX_REDUCE|QF8_NUMERIC)/[a-z0-9][a-z0-9_\\-]*\\.csv$",
+   "description": "proposed fixture path relative to fixtures/<variant>/"
+  },
+  {
+   "name": "columns",
+   "pattern": "^[a-z][a-z0-9_]*(,[a-z][a-z0-9_]*)*$",
+   "description": "comma-separated column names the mechanism needs"
+  },
+  {
+   "name": "types",
+   "pattern": "^(int|int_nullable|float|text|text_na|date_text|datetime_text|datetime_tz_text|epoch_s_int|epoch_ms_int|bool_text|bool_nullable|category_key|zero_padded_id|mixed_text_numeric)(,(int|int_nullable|float|text|text_na|date_text|datetime_text|datetime_tz_text|epoch_s_int|epoch_ms_int|bool_text|bool_nullable|category_key|zero_padded_id|mixed_text_numeric))*$",
+   "description": "one type per column, aligned with columns"
+  },
+  {
+   "name": "properties",
+   "pattern": "^[a-z0-9_=.\\-]+(;[a-z0-9_=.\\-]+)*$|^-$",
+   "description": "';'-separated property tokens, or '-'"
+  }
+ ]
+}

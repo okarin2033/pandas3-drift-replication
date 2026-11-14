@@ -1,0 +1,11 @@
+You are given CSV file(s) in the current working directory:
+
+- panel_scores.csv: Tasting competition scores (96 rows): panel (one of 8 panels, e.g. bread or cheese; 12 entrants each), entrant (person name; capital letters and spaces are inconsistent), score (4.0-10.0, one decimal; no empty cells).
+
+Task: The 'middle score' of a panel is the score actually given that sits in the middle of the panel's sorted scores; each panel has 12 entries, so two scores are equally near the middle, and then the higher of the two is used. Rank the panels by their middle score, highest first. `result` should be a Series of middle scores indexed by panel, sorted from the highest middle score to the lowest.
+
+Requirements:
+- Write a complete Python script that reads the file(s) from the current directory.
+- Use only pandas, numpy and the Python standard library.
+- Store the final answer in a top-level variable named `result`.
+- Reply with a single Python code block.

@@ -1,0 +1,11 @@
+You are given CSV file(s) in the current working directory:
+
+- shipments.csv: Shipments (400 rows): shipment_id (whole number), ordered_on and shipped_on (dates as text, YYYY-MM-DD, in 2025; shipped_on is empty for about 4% of rows that have not shipped yet), carrier (DHL, UPS, PostNord or GLS; capital letters and spaces are inconsistent), weight_kg (one decimal), value (order value, two decimals).
+
+Task: Between the first and the last order date (both included), which calendar days had no orders at all? Give each such day as a day number counted from 1970-01-01 (that date is day 0). `result` should be a sorted Python list of these day numbers.
+
+Requirements:
+- Write a complete Python script that reads the file(s) from the current directory.
+- Use only pandas, numpy and the Python standard library.
+- Store the final answer in a top-level variable named `result`.
+- Reply with a single Python code block.

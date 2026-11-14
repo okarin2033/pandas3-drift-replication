@@ -1,0 +1,241 @@
+member_id,full_name,home_city,fee
+5001,Mia Jensen,bergen,150.00
+5002,Raúl Silva,Malmö,104.50
+5003,Zoë Dubois,Bergen,240.00
+5004,Aiko Varga,Bergen,224.50
+5005,Kenji Nakamura,ZÜRICH  ,134.50
+5006,Björn Haddad ,MALMÖ,240.00
+5007,Łukasz Brennan,Lyon,97.75
+5008,Yusuf Kaya,Lyon,180.00
+5009,Leila Kaya ,Zürich,164.50
+5010,Dmitri Kowalski,Bergen,120.00
+5011,Nils Müller,Malmö,240.00
+5012,Leila Lindqvist,Porto,104.50
+5013,Łukasz García,Zürich,97.75
+5014,Émile Jensen,Lyon,217.75
+5015,MIA ANDERSEN,Zürich,240.00
+5016,Émile Peña,Zürich,127.75
+5017,Kenji Nakamura,Lyon,120.00
+5018,Tomás Varga, Zürich,150.00
+5019,Kenji Brennan,São Paulo,157.75
+5020,Nils Varga,Zürich,180.00
+5021,Mateo Rossi,Kraków,240.00
+5022,Raúl Jensen, lyon ,97.75
+5023,Nils Kowalski,Kraków,224.50
+5024,YUSUF PEÑA,Porto,240.00
+5025,Ana Varga,São Paulo,97.75
+5026,Dmitri Okafor,,180.00
+5027,Yusuf Lindqvist,Lyon,150.00
+5028, hugo kowalski ,Malmö,120.00
+5029,Olga Costa,Zürich,150.00
+5030,Björn Rossi ,Bergen ,120.00
+5031,Émile Peña,Porto,127.75
+5032,Ines Peña,GDAŃSK,157.75
+5033, ingrid müller ,Bergen,134.50
+5034,Nils Dubois,Malmö,127.75
+5035,Leila Ivanova ,Lyon,240.00
+5036,Tomás García,LYON  ,240.00
+5037,Sanna Müller,Bergen,150.00
+5038,Zoë Andersen,Zürich,157.75
+5039,Tomás Ivanova,são paulo,97.75
+5040,Dmitri Peña,Malmö,97.75
+5041,Sanna Andersen,SÃO PAULO,157.75
+5042,Priya Rossi,Gdańsk,120.00
+5043,Raúl Peña, são paulo ,104.50
+5044,Ines Varga,Gdańsk,180.00
+5045, zoë kowalski ,gdańsk,120.00
+5046,Noah Jensen,Kraków,240.00
+5047,Leila Jensen,-,120.00
+5048,José Brennan,,150.00
+5049,Noah Varga,Kraków,180.00
+5050,Aiko Tanaka,Bergen,224.50
+5051,Søren Haddad,BERGEN  ,240.00
+5052,Priya Kaya,Porto,127.75
+5053,Farah Kaya, bergen ,180.00
+5054,BJÖRN KOWALSKI,SÃO PAULO  ,97.75
+5055,Leila Varga,São Paulo ,150.00
+5056,Ines Müller,Kraków,217.75
+5057,Noah Moreau,KRAKÓW  ,164.50
+5058,Hugo Moreau,Porto,150.00
+5059,Chloé Haddad,Bergen,150.00
+5060,Zoë Costa,São Paulo,127.75
+5061,Noah Moreau, zürich ,150.00
+5062,Mia Tanaka,Porto,127.75
+5063,Ingrid Haddad,-,97.75
+5064,Ines Okafor,,120.00
+5065, Łukasz Peña, bergen ,127.75
+5066,Dmitri García,bergen,120.00
+5067, łukasz ivanova ,Zürich,224.50
+5068,Émile Rossi,Porto,150.00
+5069,Søren Peña,bergen,217.75
+5070,Zoë Andersen,Bergen,240.00
+5071,Aiko Kaya,Porto,97.75
+5072,Priya Fischer,Kraków,180.00
+5073,Leila Brennan,SÃO PAULO  ,224.50
+5074,Zoë Rossi,PORTO,97.75
+5075,Noah Nakamura,Bergen,164.50
+5076,Ines Ivanova, bergen ,180.00
+5077,Olga Andersen,Porto,134.50
+5078,Björn Moreau,São Paulo,150.00
+5079,Aiko Novak ,Zürich,97.75
+5080,Farah Lindqvist,Zürich ,240.00
+5081,Mia Dubois,São Paulo,180.00
+5082,Kenji Dubois,Lyon ,120.00
+5083,Hugo Fischer,Malmö,120.00
+5084,Émile Brennan,São Paulo,104.50
+5085,Mia Silva,Malmö,150.00
+5086,Sanna Lindqvist,são paulo,217.75
+5087, tomás rossi ,BERGEN  ,120.00
+5088,Mateo Lindqvist,Lyon,134.50
+5089,Farah Müller,gdańsk,240.00
+5090,Farah Okafor,Malmö,240.00
+5091,Mateo Fischer,Porto,157.75
+5092,Tomás García,KRAKÓW,180.00
+5093, Farah Kowalski,São Paulo,120.00
+5094, dmitri lindqvist ,Porto,134.50
+5095,José Okafor,São Paulo,180.00
+5096,Søren Kowalski,Bergen,120.00
+5097, Ines Costa,Bergen,150.00
+5098,Zoë Okafor,Bergen,240.00
+5099,Olga Silva,Gdańsk,180.00
+5100,Łukasz Ivanova,Gdańsk,150.00
+5101,Kenji Rossi,Gdańsk ,180.00
+5102,Ines Kowalski,Zürich,164.50
+5103,Mia Costa,São Paulo,127.75
+5104,Mia Ivanova,PORTO  ,157.75
+5105,Olga Costa,Malmö,240.00
+5106,José Brennan,Lyon,120.00
+5107,Noah Silva,Lyon ,120.00
+5108,Émile Tanaka,,224.50
+5109,Mia Peña,-,217.75
+5110,Dmitri Dubois,Lyon,240.00
+5111,Sanna Jensen,Lyon,240.00
+5112,Hugo García,Malmö,120.00
+5113,Mateo Kowalski,São Paulo,180.00
+5114,Ingrid Brennan,Lyon,240.00
+5115,Björn Tanaka,MALMÖ  ,104.50
+5116,Zoë Jensen ,São Paulo,127.75
+5117,Sanna Tanaka,BERGEN  ,120.00
+5118,Łukasz Silva,Lyon,120.00
+5119,Priya Lindqvist,ZÜRICH,217.75
+5120,Zoë Dubois,Lyon,157.75
+5121,Sanna Peña ,,150.00
+5122,Leila Tanaka,PORTO  ,150.00
+5123,Björn Müller, bergen ,180.00
+5124,Kenji Nakamura,São Paulo,180.00
+5125, Raúl Andersen, Kraków,240.00
+5126,Chloé Varga,Porto,120.00
+5127, yusuf brennan ,Gdańsk,240.00
+5128, Mateo Kaya,-,127.75
+5129,Noah Fischer,Kraków,150.00
+5130,Priya Costa,São Paulo,134.50
+5131,Farah Haddad,Malmö,157.75
+5132,Nils Moreau, Gdańsk,150.00
+5133,Leila Haddad,Porto,120.00
+5134,Émile Varga, zürich ,150.00
+5135,Søren Jensen,Bergen,157.75
+5136,Ines Varga,Porto,127.75
+5137,Łukasz Haddad,Porto,217.75
+5138,Chloé Fischer,porto,240.00
+5139,Noah Silva, Gdańsk,180.00
+5140, Priya García,Zürich,127.75
+5141,Nils Costa, Porto,240.00
+5142,PRIYA FISCHER  ,Porto,224.50
+5143,Aiko Silva,Gdańsk,240.00
+5144,Émile Haddad,Bergen,224.50
+5145,Zoë Ivanova, Zürich,150.00
+5146,Priya Rossi,Lyon,240.00
+5147,Kenji Moreau,gdańsk,97.75
+5148,Priya Nakamura,Lyon,157.75
+5149,Leila Tanaka,Gdańsk,180.00
+5150,Mia Okafor,Bergen,157.75
+5151,Sanna Rossi,-,150.00
+5152,Søren Costa, São Paulo,127.75
+5153,Leila Rossi,Porto,97.75
+5154,Mia Okafor,Gdańsk,104.50
+5155,Chloé Fischer,São Paulo,240.00
+5156,Søren Fischer,-,150.00
+5157,Łukasz Costa,Lyon,217.75
+5158,Søren Lindqvist,Gdańsk,150.00
+5159,Yusuf Brennan,Lyon,120.00
+5160,José Costa,Malmö,150.00
+5161,Hugo Varga,Porto,97.75
+5162,Ines Kaya,Lyon,150.00
+5163,Dmitri Nakamura,São Paulo,104.50
+5164,Zoë Lindqvist,PORTO  ,180.00
+5165,Émile Varga,Kraków,240.00
+5166,Łukasz Okafor,Porto ,157.75
+5167,Farah Kaya,Porto,180.00
+5168,Ana Okafor,Malmö,180.00
+5169,Émile Kaya,Malmö,217.75
+5170,Ana Haddad,malmö,150.00
+5171,Zoë Nakamura ,São Paulo,157.75
+5172,Sanna Nakamura, Lyon,104.50
+5173,Dmitri Costa,Lyon,240.00
+5174,Tomás Ivanova, Porto,134.50
+5175,Priya Costa,Gdańsk,180.00
+5176,Tomás Haddad,malmö,150.00
+5177,Zoë Kowalski, gdańsk ,120.00
+5178,Mia Costa,Bergen,127.75
+5179,Ana Fischer,Porto,180.00
+5180,Raúl Tanaka,São Paulo ,120.00
+5181,Noah García,Kraków,164.50
+5182,Raúl Ivanova, kraków ,240.00
+5183,Sanna Kaya,Lyon,150.00
+5184,Émile Haddad,Kraków,180.00
+5185,Chloé Andersen,Kraków,180.00
+5186,Dmitri Kaya,Porto,157.75
+5187,Nils Tanaka,Gdańsk,240.00
+5188, Kenji Kaya,Gdańsk,240.00
+5189,ines jensen, Porto,180.00
+5190,Björn Haddad,Bergen ,240.00
+5191,Noah Nakamura,São Paulo,240.00
+5192,Hugo Andersen,Malmö,104.50
+5193,Ines Rossi,Kraków,127.75
+5194,Tomás Lindqvist,Porto,240.00
+5195,Raúl Lindqvist,,240.00
+5196,Dmitri Rossi,Zürich,240.00
+5197,Chloé Ivanova,Zürich,224.50
+5198,Sanna Lindqvist,Lyon ,180.00
+5199,Mateo Nakamura, São Paulo,240.00
+5200,Émile Okafor,Malmö,150.00
+5201,Mateo Müller,Lyon,150.00
+5202,Łukasz Rossi,Lyon,120.00
+5203,Zoë Tanaka,lyon,180.00
+5204,Søren Moreau,Kraków,240.00
+5205,Priya Fischer,Bergen,240.00
+5206,Łukasz Costa, Gdańsk,240.00
+5207,Nils Costa,Lyon,150.00
+5208,Priya García,São Paulo,240.00
+5209,Émile Dubois,Zürich,134.50
+5210,Ines Varga,Bergen,127.75
+5211,Émile Costa,Kraków,157.75
+5212,Priya Silva,Malmö,120.00
+5213,Farah Andersen,Zürich,134.50
+5214, Sanna Andersen,lyon,150.00
+5215,Raúl Varga, Porto,134.50
+5216,Łukasz Brennan,Malmö,97.75
+5217,aiko ivanova,,224.50
+5218,Chloé Ivanova, Porto,97.75
+5219,Chloé Silva,-,224.50
+5220,ZOË OKAFOR  ,MALMÖ  ,97.75
+5221,Łukasz Lindqvist,PORTO  ,240.00
+5222,Nils Jensen,São Paulo,157.75
+5223,Ingrid Fischer,Gdańsk,150.00
+5224,Noah Tanaka,PORTO,120.00
+5225,Noah Andersen,Zürich,150.00
+5226,Aiko Okafor,Kraków,127.75
+5227,Chloé Silva,Gdańsk,180.00
+5228, aiko dubois ,Gdańsk,120.00
+5229,Émile Lindqvist, Malmö,180.00
+5230,Aiko Peña,Porto,120.00
+5231,JOSÉ BRENNAN,Kraków,180.00
+5232,Yusuf Peña,Lyon,150.00
+5233, Zoë Rossi,Porto,104.50
+5234,Łukasz Moreau,LYON,150.00
+5235,Chloé Ivanova,Zürich,120.00
+5236, mia garcía ,Lyon,240.00
+5237,Aiko Dubois,Zürich,134.50
+5238,Zoë Kaya,Lyon,97.75
+5239,Chloé Okafor,São Paulo,97.75
+5240,Kenji Tanaka,Gdańsk,224.50

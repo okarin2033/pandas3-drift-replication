@@ -1,0 +1,205 @@
+{
+ "item": "B.22",
+ "result": {
+  "unit": "tasks (quota row)",
+  "n_items": 128,
+  "weights": "linear",
+  "weighted_kappa": 0.05552776388194092,
+  "lo": -0.019241116530279607,
+  "hi": 0.1283744473446462,
+  "dropped": 0,
+  "tasks_without_both_ratings": 0,
+  "raw_agreement": 0.28125,
+  "n_tasks": 128
+ },
+ "result_pairs": {
+  "unit": "pairs (task, invited idiom)",
+  "n_items": 130,
+  "weights": "linear",
+  "weighted_kappa": 0.051850943858788856,
+  "lo": -0.02239373242681615,
+  "hi": 0.12427672799364571,
+  "dropped": 0,
+  "tasks_without_both_ratings": null,
+  "raw_agreement": 0.2846153846153846
+ },
+ "crosstable": [
+  {
+   "unit": "tasks (quota row)",
+   "first_rating": 1,
+   "second_rating": 1,
+   "count": 4
+  },
+  {
+   "unit": "tasks (quota row)",
+   "first_rating": 1,
+   "second_rating": 2,
+   "count": 27
+  },
+  {
+   "unit": "tasks (quota row)",
+   "first_rating": 1,
+   "second_rating": 3,
+   "count": 26
+  },
+  {
+   "unit": "tasks (quota row)",
+   "first_rating": 2,
+   "second_rating": 1,
+   "count": 2
+  },
+  {
+   "unit": "tasks (quota row)",
+   "first_rating": 2,
+   "second_rating": 2,
+   "count": 18
+  },
+  {
+   "unit": "tasks (quota row)",
+   "first_rating": 2,
+   "second_rating": 3,
+   "count": 29
+  },
+  {
+   "unit": "tasks (quota row)",
+   "first_rating": 3,
+   "second_rating": 2,
+   "count": 8
+  },
+  {
+   "unit": "tasks (quota row)",
+   "first_rating": 3,
+   "second_rating": 3,
+   "count": 14
+  },
+  {
+   "unit": "pairs (task, invited idiom)",
+   "first_rating": 1,
+   "second_rating": 1,
+   "count": 4
+  },
+  {
+   "unit": "pairs (task, invited idiom)",
+   "first_rating": 1,
+   "second_rating": 2,
+   "count": 27
+  },
+  {
+   "unit": "pairs (task, invited idiom)",
+   "first_rating": 1,
+   "second_rating": 3,
+   "count": 26
+  },
+  {
+   "unit": "pairs (task, invited idiom)",
+   "first_rating": 2,
+   "second_rating": 1,
+   "count": 3
+  },
+  {
+   "unit": "pairs (task, invited idiom)",
+   "first_rating": 2,
+   "second_rating": 2,
+   "count": 19
+  },
+  {
+   "unit": "pairs (task, invited idiom)",
+   "first_rating": 2,
+   "second_rating": 3,
+   "count": 29
+  },
+  {
+   "unit": "pairs (task, invited idiom)",
+   "first_rating": 3,
+   "second_rating": 2,
+   "count": 8
+  },
+  {
+   "unit": "pairs (task, invited idiom)",
+   "first_rating": 3,
+   "second_rating": 3,
+   "count": 14
+  }
+ ],
+ "part1_descriptive": [
+  {
+   "rating": "first",
+   "unit": "quota-row pairs (tasks)",
+   "n": 128,
+   "first_choice_n": 50,
+   "first_choice_share": 0.390625,
+   "first_choice_lo": 0.31047019100495765,
+   "first_choice_hi": 0.4771535181798723,
+   "listed_n": 100,
+   "listed_share": 0.78125,
+   "listed_lo": 0.7020157030455345,
+   "listed_hi": 0.8440947590506169
+  },
+  {
+   "rating": "first",
+   "unit": "all pairs",
+   "n": 130,
+   "first_choice_n": 51,
+   "first_choice_share": 0.3923076923076923,
+   "first_choice_lo": 0.31262137424507824,
+   "first_choice_hi": 0.47817588508910697,
+   "listed_n": 102,
+   "listed_share": 0.7846153846153846,
+   "listed_lo": 0.706324263759216,
+   "listed_hi": 0.846568693714723
+  },
+  {
+   "rating": "second",
+   "unit": "quota-row pairs (tasks)",
+   "n": 128,
+   "first_choice_n": 30,
+   "first_choice_share": 0.234375,
+   "first_choice_lo": 0.16939357691207274,
+   "first_choice_hi": 0.31483543110822865,
+   "listed_n": 30,
+   "listed_share": 0.234375,
+   "listed_lo": 0.16939357691207274,
+   "listed_hi": 0.31483543110822865
+  },
+  {
+   "rating": "second",
+   "unit": "all pairs",
+   "n": 130,
+   "first_choice_n": 30,
+   "first_choice_share": 0.23076923076923078,
+   "first_choice_lo": 0.16670058871368587,
+   "first_choice_hi": 0.31029255962177726,
+   "listed_n": 30,
+   "listed_share": 0.23076923076923078,
+   "listed_lo": 0.16670058871368587,
+   "listed_hi": 0.31029255962177726
+  }
+ ],
+ "meta": {
+  "label": null,
+  "test_mode": false,
+  "items": [
+   "B.22"
+  ],
+  "inputs_sha256": {
+   "per_program.jsonl": "dfd3b7dc406ffb88c34c7a4cfc9a90eeb71c0feaf0da626b9805bbac40e9401f",
+   "summary.json": "064443d62d3ec2e0e383c7084734282d191377593cfa13cf26134d10f53a5096",
+   "tasks.json": "ac38b07873515cff1488544c81f1acadc80aaad418db13883a3a0423ccad5391",
+   "models.tsv": "93fc8c7f6f8f2b3f0e11e04926e5245f1456534085779a1b2d1cb1c4b2520676",
+   "second_rating.tsv": "785e11de52b63f1853f9e217797264a895a9f26dd2ed55e65fe139fe6f56c782",
+   "pairs_table.tsv": "cc097d0a91c7f419496b90b5773caa39cf0911a45857f256704061ad5cb5ae47"
+  },
+  "B": 10000,
+  "seed": 20261111,
+  "tool": "sec_agreement.py",
+  "tool_sha256": "d820d523d2eba67f0aed78b5f448edbff789643c2c78af7110c27203bd60d154",
+  "sec_common_sha256": "c1e87284ed92844ade5c515bb78fe261b3a94431d1389c0b4ec2f854f48d39db",
+  "harness_stats_sha256": "ad28a99b5e3a61dc9a7753e3a019a41d2d5968a83f94d6aaddff91156e0bf41d",
+  "created": "2026-11-13T16:34:43+0900",
+  "numpy_used": true,
+  "second_rating_sha256": "785e11de52b63f1853f9e217797264a895a9f26dd2ed55e65fe139fe6f56c782",
+  "unit": "task (M tasks, strength of the quota row) and, beside it, the 130 (task, invited idiom) pairs (LR83.2)",
+  "pairs_table_sha256": "cc097d0a91c7f419496b90b5773caa39cf0911a45857f256704061ad5cb5ae47"
+ },
+ "label": null
+}

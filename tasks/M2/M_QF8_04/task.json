@@ -1,0 +1,88 @@
+{
+ "id": "M_QF8_04",
+ "stratum": "M",
+ "family": "QF8_NUMERIC",
+ "generic_family": null,
+ "catalogue_row": "X02",
+ "files": [
+  {
+   "path": "QF8_NUMERIC/panel_scores.csv",
+   "description": "Tasting competition scores (96 rows): panel (one of 8 panels, e.g. bread or cheese; 12 entrants each), entrant (person name; capital letters and spaces are inconsistent), score (4.0-10.0, one decimal; no empty cells)."
+  }
+ ],
+ "task_text": "For each panel, give three scores actually given: the score at the position nearest to the lower quartile, the middle score and the score nearest to the upper quartile, where the position of a quartile q is q x (n - 1) counting the sorted scores from 0. Each panel has 12 entries, so two scores are equally near the middle position; then use the lower of the two. `result` should be a table indexed by panel with the columns q1, middle and q3.",
+ "allowed_task_words": [],
+ "invited_ids_author": [
+  "X02"
+ ],
+ "order_significant": false,
+ "sort_keys": [],
+ "dtype_significant": false,
+ "intended_computation": "Per panel with sorted scores s[0..11]: q1 = s[3] (position 2.75), middle = s[5] (position 5.5, lower neighbour), q3 = s[8] (position 8.25).",
+ "acceptable_variants": {
+  "row_order": "any",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": ""
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 8
+   }
+  },
+  {
+   "check": "columns_present",
+   "args": {
+    "columns": [
+     "q1",
+     "middle",
+     "q3"
+    ]
+   }
+  },
+  {
+   "check": "numeric_in_range",
+   "args": {
+    "columns": [
+     "q1",
+     "middle",
+     "q3"
+    ],
+    "min": 4,
+    "max": 10
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "HARM",
+  "reason": "groupby().quantile([...], interpolation='nearest') returned the lower middle score at 0.5 on 2.x, as the task asks; 3.x returns the higher one."
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M2",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 by pkg:TASKS_M2 for catalogue row X02; naive.py shows the invited idiom, reference.py is the version-robust reference."
+}

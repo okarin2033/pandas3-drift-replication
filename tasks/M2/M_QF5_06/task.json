@@ -1,0 +1,91 @@
+{
+ "id": "M_QF5_06",
+ "stratum": "M",
+ "family": "QF5_ORDER",
+ "generic_family": null,
+ "catalogue_row": "R02",
+ "files": [
+  {
+   "path": "QF5_ORDER/memberships.csv",
+   "description": "Loyalty memberships (200 rows): member_ref (six-digit reference with leading zeros), plan (bronze, silver, gold or platinum), city (city name; capital letters and spaces are inconsistent in some rows), points (whole number, multiples of 50; many members share the same points)."
+  }
+ ],
+ "task_text": "Count how many members share each combination of plan and points. List the combinations ordered by plan (alphabetically) and then by points (lowest first). `result` should be the first five combinations of that list with their member counts, as a Series indexed by plan and points.",
+ "allowed_task_words": [],
+ "invited_ids_author": [
+  "R02"
+ ],
+ "order_significant": true,
+ "sort_keys": [
+  "plan",
+  "points"
+ ],
+ "dtype_significant": false,
+ "intended_computation": "Count rows per (plan, points) pair, sort the pairs by plan ascending then points ascending, and keep the first five pairs (all of them in the bronze plan) with their counts.",
+ "acceptable_variants": {
+  "row_order": "ties_only",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": ""
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 5
+   }
+  },
+  {
+   "check": "values_in_set",
+   "args": {
+    "column": "plan",
+    "values": [
+     "bronze"
+    ]
+   }
+  },
+  {
+   "check": "sorted_by",
+   "args": {
+    "keys": [
+     "plan",
+     "points"
+    ],
+    "ascending": [
+     true,
+     true
+    ]
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "HARM",
+  "reason": "value_counts(sort=False) sorted the pairs by label on 2.x, so head(5) gave the five lowest pairs; on 3.x it keeps first-appearance order and head(5) picks other pairs."
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M2",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 by pkg:TASKS_M2 for catalogue row R02; naive.py shows the invited idiom, reference.py is the version-robust reference."
+}

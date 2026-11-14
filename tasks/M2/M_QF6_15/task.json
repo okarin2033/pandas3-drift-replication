@@ -1,0 +1,76 @@
+{
+ "id": "M_QF6_15",
+ "stratum": "M",
+ "family": "QF6_NA_DTYPE",
+ "generic_family": null,
+ "catalogue_row": "N05",
+ "files": [
+  {
+   "path": "QF6_NA_DTYPE/quiz_scores.csv",
+   "description": "Quiz results (80 rows, one per student in seat order, no other columns): quiz_a and quiz_b (points 0-10, whole numbers, many equal values; about 9% and 6% of cells empty for absent students)."
+  }
+ ],
+ "task_text": "The pass marks are 6 points for quiz_a and 5 points for quiz_b; an empty cell means the student was absent from that quiz, and an absence is not a fail. How many students scored below the pass mark in at least one quiz they took? `result` should be that number.",
+ "allowed_task_words": [],
+ "invited_ids_author": [
+  "N05"
+ ],
+ "order_significant": false,
+ "sort_keys": [],
+ "dtype_significant": false,
+ "intended_computation": "Number of rows with (quiz_a non-empty and < 6) or (quiz_b non-empty and < 5).",
+ "acceptable_variants": {
+  "row_order": "any",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": "a whole number."
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "numeric_in_range",
+   "args": {
+    "columns": [
+     "__values__"
+    ],
+    "min": 0,
+    "max": 80
+   }
+  },
+  {
+   "check": "result_kind",
+   "args": {
+    "kind": "scalar"
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "FIX",
+  "reason": "On 2.x the comparison was False for an absence, so negating it counted absences as fails; on 3.1 it is missing and any() skips it, as the task asks."
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M2",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 by pkg:TASKS_M2 for catalogue row N05; naive.py shows the invited idiom, reference.py is the version-robust reference."
+}

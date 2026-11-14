@@ -1,0 +1,31 @@
+{
+ "venv": "pd223",
+ "python": "3.12.13",
+ "executable": "<workspace>/research/studies/pandas3_full/envs/pd223/bin/python",
+ "errors": [],
+ "pandas": "2.2.3",
+ "numpy": "2.5.4",
+ "python_dateutil": "4.0.0",
+ "tzdata": "2026.6",
+ "pytz": "2026.6",
+ "pyarrow": null,
+ "scipy": null,
+ "statsmodels": null,
+ "jsonschema": null,
+ "pyarrow_spec_found": false,
+ "import_pyarrow": "fails: ModuleNotFoundError: No module named 'pyarrow'",
+ "default_string_dtype": {
+  "repr": "dtype('O')",
+  "str": "object",
+  "storage": null,
+  "na_value": "None",
+  "type": "ObjectDType"
+ },
+ "default_df_columns_dtype": "dtype('O')",
+ "mode_string_storage_option": "python",
+ "future_infer_string_set": {
+  "ok": false,
+  "error": "ImportError: pyarrow>=10.0.1 is required for PyArrow backed StringArray."
+ },
+ "ok": true
+}

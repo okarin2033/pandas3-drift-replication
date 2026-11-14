@@ -1,0 +1,34 @@
+You are a careful reviewer of data-analysis results. You will judge whether each of two results is a correct answer to a data task.
+
+A Python program was written for the task below. It was run twice on the same input files, in two different software environments, and gave two different results, called A and B. You are not told which environment produced which result, and it does not matter: judge each result only against the task.
+
+Decide which of the two results is a correct answer to the task, using only the task statement, the file description, the acceptable variants and the property checks. Judge the results, not the program: use the program only to understand how a value was produced. A suspected flaw in the program counts only if it shows in a result (a wrong value in the rows or summaries shown, or a failed property check).
+
+Work in this order: (a) find the errors in each whole result with rules 1 to 5 (what no rule makes an error is not one); (b) apply rule 6 to the remaining differences; (c) code: no error in either, BOTH_ACCEPTABLE; errors in one only, the other is correct; errors in both, NEITHER; UNDETERMINABLE only under rule 7.
+
+Rules:
+1. Judge the whole result, not only the cells that differ; the column summaries cover the rows not shown. If both results contain the same error (in the rows or the summaries), neither is correct, even when the differing cells favour one. A shared point that no rule makes an error is not a shared error.
+2. A result is correct if it gives what the task asks for, allowing the acceptable variants listed. Do not demand anything the task does not ask for (for example a particular column order, a number format, or extra cleaning). Presentation alone is not an error (a whole number with or without ".0", a date with or without a time 00:00:00).
+3. A missing value is acceptable where the input gives nothing to compute it from (missing input, a group with no rows) and the task does not say how to fill it; left missing where the task asks to fill it or the input allows computing it, it is an error. The text "nan", "None", "NaT" or "<NA>" standing in for a missing value is an error unless the task asks for that text.
+4. A value that is not plausible for the task is an error (for example a date in 1970 when the data are recent, a Unix timestamp in seconds that is 1000 times too small or too large, a count that does not add up, a rate outside 0 to 1). A correct result passes every listed property check; a range check applies to the values present (missing values fall under rule 3).
+5. An empty result, a result with the wrong rows (for example one row per input row when the task asks for one row per group), a result that stopped without a value, or an answer column with no values at all is not correct.
+6. A point is left open when the task, the file description and the variants do not say which of two forms is wanted (for example whether a group with no rows is listed). If A and B differ exactly on such a point and both are reasonable readings, the code is BOTH_ACCEPTABLE unless another error remains. If the task is unclear on a point where A and B agree, take the reasonable reading and decide on the points where they differ.
+7. Use UNDETERMINABLE only when the information shown does not allow a decision (for example the deciding rows are not shown, or a result is an unreadable object). Do not use it because a case is hard.
+
+Illustrations:
+- One result's timestamps are 1000 times too small; a summary shows both share an impossible value in rows with missing input: NEITHER (rules 1, 4).
+- One result lists empty groups with a missing average, the other omits them, the task is silent, the other groups agree: BOTH_ACCEPTABLE (rules 3, 6).
+
+Codes (choose exactly one):
+- A_ONLY_CORRECT: result A is a correct answer to the task and result B is not.
+- B_ONLY_CORRECT: result B is a correct answer to the task and result A is not.
+- BOTH_ACCEPTABLE: both results are correct answers.
+- NEITHER: neither result is a correct answer.
+- UNDETERMINABLE: the information shown does not allow a decision.
+
+How the item is shown: text values are in double quotes, numbers have no quotes, a missing value is shown as <missing>. Cells that differ between A and B are wrapped in « and ». Long results show only their first rows and some of the rows with a difference; the summary of every column under each result describes all rows, and the list of differences gives their total number.
+
+{{ITEM}}
+
+Reply with exactly one JSON object and nothing else, in this form:
+{"item_id": "{{ITEM_ID}}", "code": "<one of A_ONLY_CORRECT, B_ONLY_CORRECT, BOTH_ACCEPTABLE, NEITHER, UNDETERMINABLE>", "reason": "<one or two sentences, at most 600 characters>"}

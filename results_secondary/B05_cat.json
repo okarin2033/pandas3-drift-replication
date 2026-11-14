@@ -1,0 +1,875 @@
+{
+ "item": "B.05",
+ "rows": [
+  {
+   "table": "categories",
+   "pair": "E0a~E1",
+   "model": "anthropic__claude-haiku-4.5",
+   "stratum": "A",
+   "category": "(any Future/Deprecation/PendingDeprecation)",
+   "programs": 7,
+   "warning_only_programs": 7,
+   "variant": "all tasks"
+  },
+  {
+   "table": "categories",
+   "pair": "E0a~E1",
+   "model": "anthropic__claude-haiku-4.5",
+   "stratum": "A",
+   "category": "Pandas4Warning",
+   "programs": 7,
+   "warning_only_programs": 7,
+   "variant": "all tasks"
+  },
+  {
+   "table": "categories",
+   "pair": "E0a~E1",
+   "model": "anthropic__claude-haiku-4.5",
+   "stratum": "M",
+   "category": "(any Future/Deprecation/PendingDeprecation)",
+   "programs": 27,
+   "warning_only_programs": 27,
+   "variant": "all tasks"
+  },
+  {
+   "table": "categories",
+   "pair": "E0a~E1",
+   "model": "anthropic__claude-haiku-4.5",
+   "stratum": "M",
+   "category": "Pandas4Warning",
+   "programs": 27,
+   "warning_only_programs": 27,
+   "variant": "all tasks"
+  },
+  {
+   "table": "categories",
+   "pair": "E0a~E1",
+   "model": "anthropic__claude-haiku-5.5",
+   "stratum": "M",
+   "category": "(any Future/Deprecation/PendingDeprecation)",
+   "programs": 17,
+   "warning_only_programs": 17,
+   "variant": "all tasks"
+  },
+  {
+   "table": "categories",
+   "pair": "E0a~E1",
+   "model": "anthropic__claude-haiku-5.5",
+   "stratum": "M",
+   "category": "Pandas4Warning",
+   "programs": 17,
+   "warning_only_programs": 17,
+   "variant": "all tasks"
+  },
+  {
+   "table": "categories",
+   "pair": "E0a~E1",
+   "model": "anthropic__claude-sonnet-5.5",
+   "stratum": "M",
+   "category": "(any Future/Deprecation/PendingDeprecation)",
+   "programs": 5,
+   "warning_only_programs": 5,
+   "variant": "all tasks"
+  },
+  {
+   "table": "categories",
+   "pair": "E0a~E1",
+   "model": "anthropic__claude-sonnet-5.5",
+   "stratum": "M",
+   "category": "Pandas4Warning",
+   "programs": 5,
+   "warning_only_programs": 5,
+   "variant": "all tasks"
+  },
+  {
+   "table": "categories",
+   "pair": "E0a~E1",
+   "model": "deepseek__deepseek-v3.2",
+   "stratum": "A",
+   "category": "(any Future/Deprecation/PendingDeprecation)",
+   "programs": 5,
+   "warning_only_programs": 5,
+   "variant": "all tasks"
+  },
+  {
+   "table": "categories",
+   "pair": "E0a~E1",
+   "model": "deepseek__deepseek-v3.2",
+   "stratum": "A",
+   "category": "Pandas4Warning",
+   "programs": 5,
+   "warning_only_programs": 5,
+   "variant": "all tasks"
+  },
+  {
+   "table": "categories",
+   "pair": "E0a~E1",
+   "model": "deepseek__deepseek-v3.2",
+   "stratum": "M",
+   "category": "(any Future/Deprecation/PendingDeprecation)",
+   "programs": 6,
+   "warning_only_programs": 6,
+   "variant": "all tasks"
+  },
+  {
+   "table": "categories",
+   "pair": "E0a~E1",
+   "model": "deepseek__deepseek-v3.2",
+   "stratum": "M",
+   "category": "Pandas4Warning",
+   "programs": 6,
+   "warning_only_programs": 6,
+   "variant": "all tasks"
+  },
+  {
+   "table": "categories",
+   "pair": "E0a~E1",
+   "model": "google__gemma-4-31b-it",
+   "stratum": "A",
+   "category": "(any Future/Deprecation/PendingDeprecation)",
+   "programs": 8,
+   "warning_only_programs": 8,
+   "variant": "all tasks"
+  },
+  {
+   "table": "categories",
+   "pair": "E0a~E1",
+   "model": "google__gemma-4-31b-it",
+   "stratum": "A",
+   "category": "Pandas4Warning",
+   "programs": 8,
+   "warning_only_programs": 8,
+   "variant": "all tasks"
+  },
+  {
+   "table": "categories",
+   "pair": "E0a~E1",
+   "model": "google__gemma-4-31b-it",
+   "stratum": "M",
+   "category": "(any Future/Deprecation/PendingDeprecation)",
+   "programs": 27,
+   "warning_only_programs": 27,
+   "variant": "all tasks"
+  },
+  {
+   "table": "categories",
+   "pair": "E0a~E1",
+   "model": "google__gemma-4-31b-it",
+   "stratum": "M",
+   "category": "Pandas4Warning",
+   "programs": 27,
+   "warning_only_programs": 27,
+   "variant": "all tasks"
+  },
+  {
+   "table": "categories",
+   "pair": "E0a~E1",
+   "model": "openai__gpt-5.4-mini",
+   "stratum": "M",
+   "category": "(any Future/Deprecation/PendingDeprecation)",
+   "programs": 8,
+   "warning_only_programs": 8,
+   "variant": "all tasks"
+  },
+  {
+   "table": "categories",
+   "pair": "E0a~E1",
+   "model": "openai__gpt-5.4-mini",
+   "stratum": "M",
+   "category": "Pandas4Warning",
+   "programs": 8,
+   "warning_only_programs": 8,
+   "variant": "all tasks"
+  },
+  {
+   "table": "categories",
+   "pair": "E0a~E1",
+   "model": "openai__gpt-5.6-terra",
+   "stratum": "A",
+   "category": "(any Future/Deprecation/PendingDeprecation)",
+   "programs": 1,
+   "warning_only_programs": 1,
+   "variant": "all tasks"
+  },
+  {
+   "table": "categories",
+   "pair": "E0a~E1",
+   "model": "openai__gpt-5.6-terra",
+   "stratum": "A",
+   "category": "Pandas4Warning",
+   "programs": 1,
+   "warning_only_programs": 1,
+   "variant": "all tasks"
+  },
+  {
+   "table": "categories",
+   "pair": "E0a~E1",
+   "model": "openai__gpt-5.6-terra",
+   "stratum": "M",
+   "category": "(any Future/Deprecation/PendingDeprecation)",
+   "programs": 9,
+   "warning_only_programs": 9,
+   "variant": "all tasks"
+  },
+  {
+   "table": "categories",
+   "pair": "E0a~E1",
+   "model": "openai__gpt-5.6-terra",
+   "stratum": "M",
+   "category": "Pandas4Warning",
+   "programs": 9,
+   "warning_only_programs": 9,
+   "variant": "all tasks"
+  },
+  {
+   "table": "categories",
+   "pair": "E0a~E1",
+   "model": "openai__gpt-oss-20b",
+   "stratum": "A",
+   "category": "(any Future/Deprecation/PendingDeprecation)",
+   "programs": 5,
+   "warning_only_programs": 5,
+   "variant": "all tasks"
+  },
+  {
+   "table": "categories",
+   "pair": "E0a~E1",
+   "model": "openai__gpt-oss-20b",
+   "stratum": "A",
+   "category": "Pandas4Warning",
+   "programs": 5,
+   "warning_only_programs": 5,
+   "variant": "all tasks"
+  },
+  {
+   "table": "categories",
+   "pair": "E0a~E1",
+   "model": "openai__gpt-oss-20b",
+   "stratum": "M",
+   "category": "(any Future/Deprecation/PendingDeprecation)",
+   "programs": 43,
+   "warning_only_programs": 43,
+   "variant": "all tasks"
+  },
+  {
+   "table": "categories",
+   "pair": "E0a~E1",
+   "model": "openai__gpt-oss-20b",
+   "stratum": "M",
+   "category": "Pandas4Warning",
+   "programs": 43,
+   "warning_only_programs": 43,
+   "variant": "all tasks"
+  },
+  {
+   "table": "categories",
+   "pair": "E0a~E1",
+   "model": "qwen__qwen3.5-9b",
+   "stratum": "A",
+   "category": "(any Future/Deprecation/PendingDeprecation)",
+   "programs": 8,
+   "warning_only_programs": 8,
+   "variant": "all tasks"
+  },
+  {
+   "table": "categories",
+   "pair": "E0a~E1",
+   "model": "qwen__qwen3.5-9b",
+   "stratum": "A",
+   "category": "Pandas4Warning",
+   "programs": 8,
+   "warning_only_programs": 8,
+   "variant": "all tasks"
+  },
+  {
+   "table": "categories",
+   "pair": "E0a~E1",
+   "model": "qwen__qwen3.5-9b",
+   "stratum": "M",
+   "category": "(any Future/Deprecation/PendingDeprecation)",
+   "programs": 6,
+   "warning_only_programs": 6,
+   "variant": "all tasks"
+  },
+  {
+   "table": "categories",
+   "pair": "E0a~E1",
+   "model": "qwen__qwen3.5-9b",
+   "stratum": "M",
+   "category": "Pandas4Warning",
+   "programs": 6,
+   "warning_only_programs": 6,
+   "variant": "all tasks"
+  },
+  {
+   "table": "categories",
+   "pair": "E0a~E1",
+   "model": "qwen__qwen3.6-35b-a3b",
+   "stratum": "A",
+   "category": "(any Future/Deprecation/PendingDeprecation)",
+   "programs": 11,
+   "warning_only_programs": 11,
+   "variant": "all tasks"
+  },
+  {
+   "table": "categories",
+   "pair": "E0a~E1",
+   "model": "qwen__qwen3.6-35b-a3b",
+   "stratum": "A",
+   "category": "Pandas4Warning",
+   "programs": 11,
+   "warning_only_programs": 11,
+   "variant": "all tasks"
+  },
+  {
+   "table": "categories",
+   "pair": "E0a~E1",
+   "model": "qwen__qwen3.6-35b-a3b",
+   "stratum": "M",
+   "category": "(any Future/Deprecation/PendingDeprecation)",
+   "programs": 30,
+   "warning_only_programs": 30,
+   "variant": "all tasks"
+  },
+  {
+   "table": "categories",
+   "pair": "E0a~E1",
+   "model": "qwen__qwen3.6-35b-a3b",
+   "stratum": "M",
+   "category": "Pandas4Warning",
+   "programs": 30,
+   "warning_only_programs": 30,
+   "variant": "all tasks"
+  },
+  {
+   "table": "categories",
+   "pair": "E0a~E2",
+   "model": "anthropic__claude-haiku-4.5",
+   "stratum": "M",
+   "category": "(any Future/Deprecation/PendingDeprecation)",
+   "programs": 3,
+   "warning_only_programs": 3,
+   "variant": "all tasks"
+  },
+  {
+   "table": "categories",
+   "pair": "E0a~E2",
+   "model": "anthropic__claude-haiku-4.5",
+   "stratum": "M",
+   "category": "Pandas4Warning",
+   "programs": 3,
+   "warning_only_programs": 3,
+   "variant": "all tasks"
+  },
+  {
+   "table": "categories",
+   "pair": "E0a~E2",
+   "model": "anthropic__claude-haiku-5.5",
+   "stratum": "M",
+   "category": "(any Future/Deprecation/PendingDeprecation)",
+   "programs": 17,
+   "warning_only_programs": 17,
+   "variant": "all tasks"
+  },
+  {
+   "table": "categories",
+   "pair": "E0a~E2",
+   "model": "anthropic__claude-haiku-5.5",
+   "stratum": "M",
+   "category": "Pandas4Warning",
+   "programs": 17,
+   "warning_only_programs": 17,
+   "variant": "all tasks"
+  },
+  {
+   "table": "categories",
+   "pair": "E0a~E2",
+   "model": "anthropic__claude-sonnet-5.5",
+   "stratum": "M",
+   "category": "(any Future/Deprecation/PendingDeprecation)",
+   "programs": 5,
+   "warning_only_programs": 5,
+   "variant": "all tasks"
+  },
+  {
+   "table": "categories",
+   "pair": "E0a~E2",
+   "model": "anthropic__claude-sonnet-5.5",
+   "stratum": "M",
+   "category": "Pandas4Warning",
+   "programs": 5,
+   "warning_only_programs": 5,
+   "variant": "all tasks"
+  },
+  {
+   "table": "categories",
+   "pair": "E0a~E2",
+   "model": "deepseek__deepseek-v3.2",
+   "stratum": "M",
+   "category": "(any Future/Deprecation/PendingDeprecation)",
+   "programs": 3,
+   "warning_only_programs": 3,
+   "variant": "all tasks"
+  },
+  {
+   "table": "categories",
+   "pair": "E0a~E2",
+   "model": "deepseek__deepseek-v3.2",
+   "stratum": "M",
+   "category": "Pandas4Warning",
+   "programs": 3,
+   "warning_only_programs": 3,
+   "variant": "all tasks"
+  },
+  {
+   "table": "categories",
+   "pair": "E0a~E2",
+   "model": "google__gemma-4-31b-it",
+   "stratum": "M",
+   "category": "(any Future/Deprecation/PendingDeprecation)",
+   "programs": 4,
+   "warning_only_programs": 4,
+   "variant": "all tasks"
+  },
+  {
+   "table": "categories",
+   "pair": "E0a~E2",
+   "model": "google__gemma-4-31b-it",
+   "stratum": "M",
+   "category": "Pandas4Warning",
+   "programs": 4,
+   "warning_only_programs": 4,
+   "variant": "all tasks"
+  },
+  {
+   "table": "categories",
+   "pair": "E0a~E2",
+   "model": "openai__gpt-5.4-mini",
+   "stratum": "M",
+   "category": "(any Future/Deprecation/PendingDeprecation)",
+   "programs": 8,
+   "warning_only_programs": 8,
+   "variant": "all tasks"
+  },
+  {
+   "table": "categories",
+   "pair": "E0a~E2",
+   "model": "openai__gpt-5.4-mini",
+   "stratum": "M",
+   "category": "Pandas4Warning",
+   "programs": 8,
+   "warning_only_programs": 8,
+   "variant": "all tasks"
+  },
+  {
+   "table": "categories",
+   "pair": "E0a~E2",
+   "model": "openai__gpt-5.6-terra",
+   "stratum": "A",
+   "category": "(any Future/Deprecation/PendingDeprecation)",
+   "programs": 1,
+   "warning_only_programs": 1,
+   "variant": "all tasks"
+  },
+  {
+   "table": "categories",
+   "pair": "E0a~E2",
+   "model": "openai__gpt-5.6-terra",
+   "stratum": "A",
+   "category": "Pandas4Warning",
+   "programs": 1,
+   "warning_only_programs": 1,
+   "variant": "all tasks"
+  },
+  {
+   "table": "categories",
+   "pair": "E0a~E2",
+   "model": "openai__gpt-5.6-terra",
+   "stratum": "M",
+   "category": "(any Future/Deprecation/PendingDeprecation)",
+   "programs": 9,
+   "warning_only_programs": 9,
+   "variant": "all tasks"
+  },
+  {
+   "table": "categories",
+   "pair": "E0a~E2",
+   "model": "openai__gpt-5.6-terra",
+   "stratum": "M",
+   "category": "Pandas4Warning",
+   "programs": 9,
+   "warning_only_programs": 9,
+   "variant": "all tasks"
+  },
+  {
+   "table": "categories",
+   "pair": "E0a~E2",
+   "model": "qwen__qwen3.5-9b",
+   "stratum": "A",
+   "category": "(any Future/Deprecation/PendingDeprecation)",
+   "programs": 1,
+   "warning_only_programs": 1,
+   "variant": "all tasks"
+  },
+  {
+   "table": "categories",
+   "pair": "E0a~E2",
+   "model": "qwen__qwen3.5-9b",
+   "stratum": "A",
+   "category": "Pandas4Warning",
+   "programs": 1,
+   "warning_only_programs": 1,
+   "variant": "all tasks"
+  },
+  {
+   "table": "categories",
+   "pair": "E0a~E2",
+   "model": "qwen__qwen3.5-9b",
+   "stratum": "M",
+   "category": "(any Future/Deprecation/PendingDeprecation)",
+   "programs": 1,
+   "warning_only_programs": 1,
+   "variant": "all tasks"
+  },
+  {
+   "table": "categories",
+   "pair": "E0a~E2",
+   "model": "qwen__qwen3.5-9b",
+   "stratum": "M",
+   "category": "Pandas4Warning",
+   "programs": 1,
+   "warning_only_programs": 1,
+   "variant": "all tasks"
+  },
+  {
+   "table": "categories",
+   "pair": "E0a~E2",
+   "model": "qwen__qwen3.6-35b-a3b",
+   "stratum": "A",
+   "category": "(any Future/Deprecation/PendingDeprecation)",
+   "programs": 1,
+   "warning_only_programs": 1,
+   "variant": "all tasks"
+  },
+  {
+   "table": "categories",
+   "pair": "E0a~E2",
+   "model": "qwen__qwen3.6-35b-a3b",
+   "stratum": "A",
+   "category": "Pandas4Warning",
+   "programs": 1,
+   "warning_only_programs": 1,
+   "variant": "all tasks"
+  },
+  {
+   "table": "categories",
+   "pair": "E0a~E2",
+   "model": "qwen__qwen3.6-35b-a3b",
+   "stratum": "M",
+   "category": "(any Future/Deprecation/PendingDeprecation)",
+   "programs": 8,
+   "warning_only_programs": 8,
+   "variant": "all tasks"
+  },
+  {
+   "table": "categories",
+   "pair": "E0a~E2",
+   "model": "qwen__qwen3.6-35b-a3b",
+   "stratum": "M",
+   "category": "Pandas4Warning",
+   "programs": 8,
+   "warning_only_programs": 8,
+   "variant": "all tasks"
+  }
+ ],
+ "totals": [
+  {
+   "table": "totals",
+   "pair": "E0a~E1",
+   "model": "anthropic__claude-haiku-4.5",
+   "stratum": "A",
+   "warning_only_programs": 7,
+   "variant": "all tasks"
+  },
+  {
+   "table": "totals",
+   "pair": "E0a~E1",
+   "model": "anthropic__claude-haiku-4.5",
+   "stratum": "M",
+   "warning_only_programs": 27,
+   "variant": "all tasks"
+  },
+  {
+   "table": "totals",
+   "pair": "E0a~E1",
+   "model": "anthropic__claude-haiku-5.5",
+   "stratum": "M",
+   "warning_only_programs": 17,
+   "variant": "all tasks"
+  },
+  {
+   "table": "totals",
+   "pair": "E0a~E1",
+   "model": "anthropic__claude-sonnet-5.5",
+   "stratum": "M",
+   "warning_only_programs": 5,
+   "variant": "all tasks"
+  },
+  {
+   "table": "totals",
+   "pair": "E0a~E1",
+   "model": "deepseek__deepseek-v3.2",
+   "stratum": "A",
+   "warning_only_programs": 5,
+   "variant": "all tasks"
+  },
+  {
+   "table": "totals",
+   "pair": "E0a~E1",
+   "model": "deepseek__deepseek-v3.2",
+   "stratum": "M",
+   "warning_only_programs": 6,
+   "variant": "all tasks"
+  },
+  {
+   "table": "totals",
+   "pair": "E0a~E1",
+   "model": "google__gemma-4-31b-it",
+   "stratum": "A",
+   "warning_only_programs": 8,
+   "variant": "all tasks"
+  },
+  {
+   "table": "totals",
+   "pair": "E0a~E1",
+   "model": "google__gemma-4-31b-it",
+   "stratum": "M",
+   "warning_only_programs": 27,
+   "variant": "all tasks"
+  },
+  {
+   "table": "totals",
+   "pair": "E0a~E1",
+   "model": "openai__gpt-5.4-mini",
+   "stratum": "M",
+   "warning_only_programs": 8,
+   "variant": "all tasks"
+  },
+  {
+   "table": "totals",
+   "pair": "E0a~E1",
+   "model": "openai__gpt-5.6-terra",
+   "stratum": "A",
+   "warning_only_programs": 1,
+   "variant": "all tasks"
+  },
+  {
+   "table": "totals",
+   "pair": "E0a~E1",
+   "model": "openai__gpt-5.6-terra",
+   "stratum": "M",
+   "warning_only_programs": 9,
+   "variant": "all tasks"
+  },
+  {
+   "table": "totals",
+   "pair": "E0a~E1",
+   "model": "openai__gpt-oss-20b",
+   "stratum": "A",
+   "warning_only_programs": 5,
+   "variant": "all tasks"
+  },
+  {
+   "table": "totals",
+   "pair": "E0a~E1",
+   "model": "openai__gpt-oss-20b",
+   "stratum": "M",
+   "warning_only_programs": 43,
+   "variant": "all tasks"
+  },
+  {
+   "table": "totals",
+   "pair": "E0a~E1",
+   "model": "qwen__qwen3.5-9b",
+   "stratum": "A",
+   "warning_only_programs": 8,
+   "variant": "all tasks"
+  },
+  {
+   "table": "totals",
+   "pair": "E0a~E1",
+   "model": "qwen__qwen3.5-9b",
+   "stratum": "M",
+   "warning_only_programs": 6,
+   "variant": "all tasks"
+  },
+  {
+   "table": "totals",
+   "pair": "E0a~E1",
+   "model": "qwen__qwen3.6-35b-a3b",
+   "stratum": "A",
+   "warning_only_programs": 11,
+   "variant": "all tasks"
+  },
+  {
+   "table": "totals",
+   "pair": "E0a~E1",
+   "model": "qwen__qwen3.6-35b-a3b",
+   "stratum": "M",
+   "warning_only_programs": 30,
+   "variant": "all tasks"
+  },
+  {
+   "table": "totals",
+   "pair": "E0a~E2",
+   "model": "anthropic__claude-haiku-4.5",
+   "stratum": "M",
+   "warning_only_programs": 3,
+   "variant": "all tasks"
+  },
+  {
+   "table": "totals",
+   "pair": "E0a~E2",
+   "model": "anthropic__claude-haiku-5.5",
+   "stratum": "M",
+   "warning_only_programs": 17,
+   "variant": "all tasks"
+  },
+  {
+   "table": "totals",
+   "pair": "E0a~E2",
+   "model": "anthropic__claude-sonnet-5.5",
+   "stratum": "M",
+   "warning_only_programs": 5,
+   "variant": "all tasks"
+  },
+  {
+   "table": "totals",
+   "pair": "E0a~E2",
+   "model": "deepseek__deepseek-v3.2",
+   "stratum": "M",
+   "warning_only_programs": 3,
+   "variant": "all tasks"
+  },
+  {
+   "table": "totals",
+   "pair": "E0a~E2",
+   "model": "google__gemma-4-31b-it",
+   "stratum": "M",
+   "warning_only_programs": 4,
+   "variant": "all tasks"
+  },
+  {
+   "table": "totals",
+   "pair": "E0a~E2",
+   "model": "openai__gpt-5.4-mini",
+   "stratum": "M",
+   "warning_only_programs": 8,
+   "variant": "all tasks"
+  },
+  {
+   "table": "totals",
+   "pair": "E0a~E2",
+   "model": "openai__gpt-5.6-terra",
+   "stratum": "A",
+   "warning_only_programs": 1,
+   "variant": "all tasks"
+  },
+  {
+   "table": "totals",
+   "pair": "E0a~E2",
+   "model": "openai__gpt-5.6-terra",
+   "stratum": "M",
+   "warning_only_programs": 9,
+   "variant": "all tasks"
+  },
+  {
+   "table": "totals",
+   "pair": "E0a~E2",
+   "model": "qwen__qwen3.5-9b",
+   "stratum": "A",
+   "warning_only_programs": 1,
+   "variant": "all tasks"
+  },
+  {
+   "table": "totals",
+   "pair": "E0a~E2",
+   "model": "qwen__qwen3.5-9b",
+   "stratum": "M",
+   "warning_only_programs": 1,
+   "variant": "all tasks"
+  },
+  {
+   "table": "totals",
+   "pair": "E0a~E2",
+   "model": "qwen__qwen3.6-35b-a3b",
+   "stratum": "A",
+   "warning_only_programs": 1,
+   "variant": "all tasks"
+  },
+  {
+   "table": "totals",
+   "pair": "E0a~E2",
+   "model": "qwen__qwen3.6-35b-a3b",
+   "stratum": "M",
+   "warning_only_programs": 8,
+   "variant": "all tasks"
+  }
+ ],
+ "notes": {},
+ "records_missing_by_config": {},
+ "lr61_without_ruled": {
+  "label": "added report of lead rulings LR42 and LR61: stratum R without the tasks of tasks/RULED_FIDELITY_FAILS.tsv; registered before any study generation; decides nothing",
+  "ruled_file": "tasks/RULED_FIDELITY_FAILS.tsv",
+  "ruled_file_sha256": "293226daf4a868de977a66fd67f8cf2ae62cf0269d84c9923503c068470b0c46",
+  "listed_tasks": [
+   "R_08"
+  ],
+  "tasks_left_out": [
+   "R_08"
+  ],
+  "n_tasks_kept": 199,
+  "n_programs_left_out": 50
+ },
+ "meta": {
+  "label": null,
+  "test_mode": false,
+  "items": [
+   "B.05"
+  ],
+  "inputs_sha256": {
+   "per_program.jsonl": "dfd3b7dc406ffb88c34c7a4cfc9a90eeb71c0feaf0da626b9805bbac40e9401f",
+   "summary.json": "064443d62d3ec2e0e383c7084734282d191377593cfa13cf26134d10f53a5096",
+   "tasks.json": "ac38b07873515cff1488544c81f1acadc80aaad418db13883a3a0423ccad5391",
+   "models.tsv": "93fc8c7f6f8f2b3f0e11e04926e5245f1456534085779a1b2d1cb1c4b2520676"
+  },
+  "B": 10000,
+  "seed": 20261111,
+  "tool": "sec_runrecords.py",
+  "tool_sha256": "204821872e53b0bbbf9964440d4c57506af4c7dbc5127e933c1c6019598dc677",
+  "sec_common_sha256": "c1e87284ed92844ade5c515bb78fe261b3a94431d1389c0b4ec2f854f48d39db",
+  "harness_stats_sha256": "ad28a99b5e3a61dc9a7753e3a019a41d2d5968a83f94d6aaddff91156e0bf41d",
+  "created": "2026-11-13T16:34:44+0900",
+  "numpy_used": true,
+  "pairs": [
+   "E0a~E1",
+   "E0a~E2"
+  ],
+  "runs_root_name": "runs",
+  "records_read": 1136,
+  "lr61": {
+   "label": "added report of lead rulings LR42 and LR61: stratum R without the tasks of tasks/RULED_FIDELITY_FAILS.tsv; registered before any study generation; decides nothing",
+   "ruled_file": "tasks/RULED_FIDELITY_FAILS.tsv",
+   "ruled_file_sha256": "293226daf4a868de977a66fd67f8cf2ae62cf0269d84c9923503c068470b0c46",
+   "listed_tasks": [
+    "R_08"
+   ],
+   "tasks_left_out": [
+    "R_08"
+   ],
+   "n_tasks_kept": 199,
+   "n_programs_left_out": 50
+  }
+ },
+ "label": null
+}

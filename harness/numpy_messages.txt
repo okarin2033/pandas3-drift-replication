@@ -1,0 +1,12 @@
+The 'generic' unit for NumPy timedelta is deprecated
+# Frozen at T8 (STAGE2 T8). One message PREFIX per non-comment line; a warning is NumPy-originated when its message starts with it
+# (after strip). Lines starting with '#' are provenance/comments and are skipped by warndef.load_numpy_messages.
+# Rule (STAGE2 T5, HRUN brief): add a message only with its source: a numpy source file, or a message observed in one of our own test programs.
+# Entry 1 (written 2026-11-11 by pkg:HRUN). Sources:
+#   (a) observed: pandas 2.3.3 + numpy 2.5.4 (envs/pd233), Series.resample('W'/'ME').sum() raises DeprecationWarning with a pandas frame
+#       (pandas/core/resample.py) on the stack; full text "The 'generic' unit for NumPy timedelta is deprecated, and will raise an error
+#       in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead."
+#       (logs/hrun/numpy_message_observation.txt, program harness/tests/run/programs/obs_numpy_generic_unit.py; first seen in the pilot, REVIEW m1).
+#   (b) numpy source: the compiled extension numpy/_core/_multiarray_umath*.so of the pinned numpy 2.5.4 contains the same text in two variants
+#       (with and without the "implicit conversion of bare integers" sentence); the wheel ships no C source, so this is binary evidence
+#       (logs/hrun/numpy_message_observation.txt, `strings -a` output).

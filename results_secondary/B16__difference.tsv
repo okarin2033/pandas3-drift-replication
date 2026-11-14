@@ -1,0 +1,3 @@
+variant	model	difference	minuend	subtrahend	boot_lo	boot_hi	boot_dropped	boot_valid
+all tasks	anthropic__claude-sonnet-5.5	0.000000	main (set effort)	default effort	0.000000	0.000000	0	10000
+without ruled R tasks (LR61/LR70)	anthropic__claude-sonnet-5.5	0.000000	main (set effort)	default effort	0.000000	0.000000	0	10000

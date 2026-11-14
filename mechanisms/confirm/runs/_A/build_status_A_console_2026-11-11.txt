@@ -1,0 +1,4 @@
+QF1_STRING confirmed 5 of 7
+QF2_DATETIME confirmed 10 of 10
+QF3_COW confirmed 6 of 6
+disagreements: []

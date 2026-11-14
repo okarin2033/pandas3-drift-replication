@@ -1,0 +1,76 @@
+{
+ "id": "M_QF7_04",
+ "stratum": "M",
+ "family": "QF7_INDEX_REDUCE",
+ "generic_family": null,
+ "catalogue_row": "I06",
+ "files": [
+  {
+   "path": "QF7_INDEX_REDUCE/storage_quota.csv",
+   "description": "Cloud storage accounts (150 rows): account_id (whole number), active (True or False), quota_bytes (storage limit in bytes, whole number; the 23 unlimited accounts carry the value 9223372036854775807), used_bytes (whole number). No empty cells."
+  }
+ ],
+ "task_text": "Each account gets a control total: its active flag counted as 1 (True) or 0 (False), plus quota_bytes, plus used_bytes. `result` should be a Series of control totals indexed by account_id, with exact whole numbers.",
+ "allowed_task_words": [],
+ "invited_ids_author": [
+  "I06"
+ ],
+ "order_significant": false,
+ "sort_keys": [],
+ "dtype_significant": false,
+ "intended_computation": "For each of the 150 accounts: (1 if active else 0) + quota_bytes + used_bytes as an exact integer (the 23 unlimited accounts carry the largest 64-bit value, so their totals can exceed the 64-bit range).",
+ "acceptable_variants": {
+  "row_order": "any",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": "totals must be exact integers."
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 150
+   }
+  },
+  {
+   "check": "numeric_in_range",
+   "args": {
+    "columns": [
+     "__values__"
+    ],
+    "min": 0,
+    "max": null
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "HARM",
+  "reason": "The row-wise sum over a frame mixing a true/false column and integers used exact Python integers on 2.x; on 3.1 it uses 64-bit integers and the unlimited accounts wrap around to negative totals."
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M2",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 by pkg:TASKS_M2 for catalogue row I06; naive.py shows the invited idiom, reference.py is the version-robust reference."
+}

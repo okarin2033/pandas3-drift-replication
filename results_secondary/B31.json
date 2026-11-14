@@ -1,0 +1,87 @@
+{
+ "item": "B.31",
+ "result": {
+  "n_items": 100,
+  "raw_agreement": 0.74,
+  "agree": 74,
+  "wilson_lo": 0.6462901055081282,
+  "wilson_hi": 0.8159530153525186,
+  "items_not_pair_clean_drift": 0,
+  "hand_ids_not_in_per_program": 0,
+  "auto_primary_among_hand_labels": 77,
+  "hand_primary_among_auto_labels": 82,
+  "kappa": 0.7098214285714286,
+  "kappa_lo": 0.5255039925296001,
+  "kappa_hi": 0.86074306158049,
+  "kappa_dropped": 0,
+  "variant": "all tasks"
+ },
+ "result_without_ruled": {
+  "n_items": 100,
+  "raw_agreement": 0.74,
+  "agree": 74,
+  "wilson_lo": 0.6462901055081282,
+  "wilson_hi": 0.8159530153525186,
+  "items_not_pair_clean_drift": 0,
+  "hand_ids_not_in_per_program": 0,
+  "auto_primary_among_hand_labels": 77,
+  "hand_primary_among_auto_labels": 82,
+  "kappa": 0.7098214285714286,
+  "kappa_lo": 0.5169766848637911,
+  "kappa_hi": 0.8618755377539985,
+  "kappa_dropped": 0,
+  "variant": "without ruled R tasks (LR61/LR70)"
+ },
+ "unmatched_ids": [],
+ "lr61_without_ruled": {
+  "label": "added report of lead rulings LR42 and LR61: stratum R without the tasks of tasks/RULED_FIDELITY_FAILS.tsv; registered before any study generation; decides nothing",
+  "ruled_file": "tasks/RULED_FIDELITY_FAILS.tsv",
+  "ruled_file_sha256": "293226daf4a868de977a66fd67f8cf2ae62cf0269d84c9923503c068470b0c46",
+  "listed_tasks": [
+   "R_08"
+  ],
+  "tasks_left_out": [
+   "R_08"
+  ],
+  "n_tasks_kept": 199,
+  "n_programs_left_out": 50
+ },
+ "meta": {
+  "label": null,
+  "test_mode": false,
+  "items": [
+   "B.31"
+  ],
+  "inputs_sha256": {
+   "per_program.jsonl": "dfd3b7dc406ffb88c34c7a4cfc9a90eeb71c0feaf0da626b9805bbac40e9401f",
+   "summary.json": "0ce93b74eaf5b0b6e9c6677487156b28c9edcc73fb78b327d8df28521ffdcc1f",
+   "tasks.json": "ac38b07873515cff1488544c81f1acadc80aaad418db13883a3a0423ccad5391",
+   "models.tsv": "93fc8c7f6f8f2b3f0e11e04926e5245f1456534085779a1b2d1cb1c4b2520676",
+   "hand_attribution.tsv": "79c2440f30de363ead020d3cd48241b58165839afd22ffd2a5f4aefc31fcdef7"
+  },
+  "B": 10000,
+  "seed": 20261111,
+  "tool": "sec_attribution.py",
+  "tool_sha256": "1c2f6c4aa007e7266ae63ac16ec5360d57f4f9677e8d052f161e35e2a5061dff",
+  "sec_common_sha256": "c1e87284ed92844ade5c515bb78fe261b3a94431d1389c0b4ec2f854f48d39db",
+  "harness_stats_sha256": "ad28a99b5e3a61dc9a7753e3a019a41d2d5968a83f94d6aaddff91156e0bf41d",
+  "created": "2026-11-13T23:05:27+0900",
+  "numpy_used": true,
+  "pair": "E0a~E1",
+  "hand_file_sha256": "79c2440f30de363ead020d3cd48241b58165839afd22ffd2a5f4aefc31fcdef7",
+  "lr61": {
+   "label": "added report of lead rulings LR42 and LR61: stratum R without the tasks of tasks/RULED_FIDELITY_FAILS.tsv; registered before any study generation; decides nothing",
+   "ruled_file": "tasks/RULED_FIDELITY_FAILS.tsv",
+   "ruled_file_sha256": "293226daf4a868de977a66fd67f8cf2ae62cf0269d84c9923503c068470b0c46",
+   "listed_tasks": [
+    "R_08"
+   ],
+   "tasks_left_out": [
+    "R_08"
+   ],
+   "n_tasks_kept": 199,
+   "n_programs_left_out": 50
+  }
+ },
+ "label": null
+}

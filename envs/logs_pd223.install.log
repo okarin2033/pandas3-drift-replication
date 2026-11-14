@@ -1,0 +1,12 @@
+Using Python 3.12.13 environment at: pd223
+Resolved 6 packages in 55ms
+Downloading pandas (10.8MiB)
+ Downloaded pandas
+Prepared 1 package in 274ms
+Installed 6 packages in 24ms
+ + numpy==2.5.4
+ + pandas==2.2.3
+ + python-dateutil==4.0.0
+ + pytz==2026.6
+ + six==1.17.0
+ + tzdata==2026.6

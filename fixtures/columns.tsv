@@ -1,0 +1,149 @@
+path	column	kind	paraphrase_type
+QF1_STRING/members.csv	member_id	id	-
+QF1_STRING/members.csv	full_name	text	general text
+QF1_STRING/members.csv	home_city	text	general text
+QF1_STRING/members.csv	fee	float	float numeric
+QF1_STRING/branch_sales.csv	branch_code	zpad	zero-padded id
+QF1_STRING/branch_sales.csv	week	int	integer numeric
+QF1_STRING/branch_sales.csv	sales	int	integer numeric
+QF1_STRING/price_list.csv	sku	text	general text
+QF1_STRING/price_list.csv	item	text	general text
+QF1_STRING/price_list.csv	section	cat	category-like key
+QF1_STRING/price_list.csv	price	float	float numeric
+QF2_DATETIME/signups.csv	account_id	id	-
+QF2_DATETIME/signups.csv	signup_day	date	date-like text
+QF2_DATETIME/signups.csv	channel	cat	category-like key
+QF2_DATETIME/signups.csv	first_payment	float	float numeric
+QF2_DATETIME/shipments.csv	shipment_id	id	-
+QF2_DATETIME/shipments.csv	ordered_on	date	date-like text
+QF2_DATETIME/shipments.csv	shipped_on	date	date-like text
+QF2_DATETIME/shipments.csv	carrier	cat	category-like key
+QF2_DATETIME/shipments.csv	weight_kg	float	float numeric
+QF2_DATETIME/shipments.csv	value	float	float numeric
+QF2_DATETIME/clicks.csv	click_ref	zpad	zero-padded id
+QF2_DATETIME/clicks.csv	epoch_s	epoch	integer numeric
+QF2_DATETIME/clicks.csv	epoch_ms	epoch	integer numeric
+QF2_DATETIME/clicks.csv	page	cat	category-like key
+QF2_DATETIME/clicks.csv	dwell_s	float	float numeric
+QF2_DATETIME/appointments.csv	appt_id	id	-
+QF2_DATETIME/appointments.csv	local_start	datetime	date-like text
+QF2_DATETIME/appointments.csv	start_with_offset	dt_offset	date-like text
+QF2_DATETIME/appointments.csv	clinic	cat	category-like key
+QF2_DATETIME/appointments.csv	duration_min	int	integer numeric
+QF2_DATETIME/quarterly_revenue.csv	quarter_start	date	date-like text
+QF2_DATETIME/quarterly_revenue.csv	revenue	int	integer numeric
+QF2_DATETIME/quarterly_revenue.csv	new_accounts	int	integer numeric
+QF2_DATETIME/sessions.csv	session_id	id	-
+QF2_DATETIME/sessions.csv	user_code	zpad	zero-padded id
+QF2_DATETIME/sessions.csv	started_at	datetime	date-like text
+QF2_DATETIME/sessions.csv	pages_viewed	int	integer numeric
+QF2_DATETIME/sessions.csv	device	cat	category-like key
+QF3_COW/bookings.csv	booking_id	id	-
+QF3_COW/bookings.csv	state	cat	category-like key
+QF3_COW/bookings.csv	total	float	float numeric
+QF3_COW/bookings.csv	nights	int	integer numeric
+QF3_COW/admissions.csv	admission_id	id	-
+QF3_COW/admissions.csv	age	int	integer numeric
+QF3_COW/admissions.csv	ward	cat	category-like key
+QF3_COW/admissions.csv	stay_days	int	integer numeric
+QF3_COW/admissions.csv	charge	float	float numeric
+QF3_COW/gauges.csv	gauge	text	general text
+QF3_COW/gauges.csv	reading	float	float numeric
+QF3_COW/gauges.csv	level	int	integer numeric
+QF3_COW/gauges.csv	site	cat	category-like key
+QF4_GROUPBY/subscribers.csv	subscriber_id	id	-
+QF4_GROUPBY/subscribers.csv	age	int	integer numeric
+QF4_GROUPBY/subscribers.csv	tier	cat	category-like key
+QF4_GROUPBY/subscribers.csv	monthly_fee	float	float numeric
+QF4_GROUPBY/subscribers.csv	joined_year	int	integer numeric
+QF4_GROUPBY/purchases.csv	purchase_id	id	-
+QF4_GROUPBY/purchases.csv	subscriber_id	id	-
+QF4_GROUPBY/purchases.csv	store_city	text	general text
+QF4_GROUPBY/purchases.csv	quantity	int	integer numeric
+QF4_GROUPBY/purchases.csv	spend	float	float numeric
+QF4_GROUPBY/unit_sales.csv	region	cat	category-like key
+QF4_GROUPBY/unit_sales.csv	channel	cat	category-like key
+QF4_GROUPBY/unit_sales.csv	week	int	integer numeric
+QF4_GROUPBY/unit_sales.csv	units	int	integer numeric
+QF5_ORDER/footfall_north.csv	day	date	date-like text
+QF5_ORDER/footfall_north.csv	visitors	int	integer numeric
+QF5_ORDER/footfall_north.csv	remark	text	general text
+QF5_ORDER/footfall_south.csv	day	date	date-like text
+QF5_ORDER/footfall_south.csv	visitors	int	integer numeric
+QF5_ORDER/footfall_south.csv	remark	text	general text
+QF5_ORDER/memberships.csv	member_ref	zpad	zero-padded id
+QF5_ORDER/memberships.csv	plan	cat	category-like key
+QF5_ORDER/memberships.csv	city	text	general text
+QF5_ORDER/memberships.csv	points	int	integer numeric
+QF5_ORDER/exam_scores.csv	student	text	general text
+QF5_ORDER/exam_scores.csv	math	int	integer numeric
+QF5_ORDER/exam_scores.csv	art	int	integer numeric
+QF5_ORDER/exam_scores.csv	music	int	integer numeric
+QF5_ORDER/returns_march.csv	return_id	id	-
+QF5_ORDER/returns_march.csv	quantity	int	integer numeric
+QF5_ORDER/returns_march.csv	refund	float	float numeric
+QF5_ORDER/returns_april.csv	return_id	id	-
+QF5_ORDER/returns_april.csv	quantity	int	integer numeric
+QF5_ORDER/returns_april.csv	refund	float	float numeric
+QF6_NA_DTYPE/deliveries.csv	delivery_id	id	-
+QF6_NA_DTYPE/deliveries.csv	city	text	general text
+QF6_NA_DTYPE/deliveries.csv	status	cat	category-like key
+QF6_NA_DTYPE/deliveries.csv	parcels	int	integer numeric
+QF6_NA_DTYPE/deliveries.csv	express	bool	-
+QF6_NA_DTYPE/store_traffic.csv	store	text	general text
+QF6_NA_DTYPE/store_traffic.csv	sales	int	integer numeric
+QF6_NA_DTYPE/store_traffic.csv	visits	int	integer numeric
+QF6_NA_DTYPE/store_traffic.csv	open_sunday	bool	-
+QF6_NA_DTYPE/quiz_scores.csv	quiz_a	int	integer numeric
+QF6_NA_DTYPE/quiz_scores.csv	quiz_b	int	integer numeric
+QF7_INDEX_REDUCE/order_lines.csv	line_id	id	-
+QF7_INDEX_REDUCE/order_lines.csv	product	text	general text
+QF7_INDEX_REDUCE/order_lines.csv	quantity	int	integer numeric
+QF7_INDEX_REDUCE/order_lines.csv	amount	float	float numeric
+QF7_INDEX_REDUCE/code_changes.csv	product	text	general text
+QF7_INDEX_REDUCE/code_changes.csv	stock_qty	int	integer numeric
+QF7_INDEX_REDUCE/code_changes.csv	old_code	int	integer numeric
+QF7_INDEX_REDUCE/code_changes.csv	new_code	int	integer numeric
+QF7_INDEX_REDUCE/parcel_rates.csv	weight_kg	float	float numeric
+QF7_INDEX_REDUCE/parcel_rates.csv	zones	int	integer numeric
+QF7_INDEX_REDUCE/parcel_rates.csv	fee	float	float numeric
+QF7_INDEX_REDUCE/storage_quota.csv	account_id	id	-
+QF7_INDEX_REDUCE/storage_quota.csv	active	bool	-
+QF7_INDEX_REDUCE/storage_quota.csv	quota_bytes	int	integer numeric
+QF7_INDEX_REDUCE/storage_quota.csv	used_bytes	int	integer numeric
+QF8_NUMERIC/daily_temps.csv	date	date	date-like text
+QF8_NUMERIC/daily_temps.csv	temp_c	float	float numeric
+QF8_NUMERIC/daily_temps.csv	humidity	int	integer numeric
+QF8_NUMERIC/panel_scores.csv	panel	cat	category-like key
+QF8_NUMERIC/panel_scores.csv	entrant	text	general text
+QF8_NUMERIC/panel_scores.csv	score	float	float numeric
+GEN/riders.csv	rider_id	zpad	zero-padded id
+GEN/riders.csv	display_name	text	general text
+GEN/riders.csv	home_district	cat	category-like key
+GEN/riders.csv	membership	cat	category-like key
+GEN/riders.csv	joined_on	date	date-like text
+GEN/riders.csv	birth_year	int	integer numeric
+GEN/riders.csv	credit_balance	float	float numeric
+GEN/stations.csv	station_code	zpad	zero-padded id
+GEN/stations.csv	station_name	text	general text
+GEN/stations.csv	district	cat	category-like key
+GEN/stations.csv	docks	int	integer numeric
+GEN/stations.csv	opened_on	date	date-like text
+GEN/trips.csv	trip_id	id	-
+GEN/trips.csv	rider_id	zpad	zero-padded id
+GEN/trips.csv	start_station	zpad	zero-padded id
+GEN/trips.csv	end_station	zpad	zero-padded id
+GEN/trips.csv	started_at	datetime	date-like text
+GEN/trips.csv	duration_min	int	integer numeric
+GEN/trips.csv	distance_km	float	float numeric
+GEN/trips.csv	fare	float	float numeric
+GEN/trips.csv	payment	cat	category-like key
+GEN/trips.csv	rating	int	integer numeric
+GEN/weather_hourly.csv	observed_at	datetime	date-like text
+GEN/weather_hourly.csv	temp_c	float	float numeric
+GEN/weather_hourly.csv	rain_mm	float	float numeric
+GEN/weather_hourly.csv	wind_kmh	int	integer numeric
+GEN/weather_hourly.csv	sky	cat	category-like key
+GEN/fare_changes.csv	station_code	zpad	zero-padded id
+GEN/fare_changes.csv	effective_from	date	date-like text
+GEN/fare_changes.csv	new_base_fare	float	float numeric

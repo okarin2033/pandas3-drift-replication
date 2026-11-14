@@ -1,0 +1,85 @@
+{
+ "id": "M_QF3_09",
+ "stratum": "M",
+ "family": "QF3_COW",
+ "generic_family": null,
+ "catalogue_row": "C03",
+ "files": [
+  {
+   "path": "QF3_COW/admissions.csv",
+   "description": "Hospital admissions (260 rows): admission_id (whole number), age (years, whole number; about 5% empty), ward (cardiology, oncology, maternity, orthopedics or neurology; capital letters and spaces are inconsistent), stay_days (whole number; about 3% empty), charge (two decimals; about 5% empty)."
+  }
+ ],
+ "task_text": "For privacy, ages above 85 must be reported as 85. Apply that rule to the age column, then give per ward (lower case, no extra spaces) the highest reported age and the number of patients whose reported age is 85. `result` should be a table indexed by ward with the columns max_age and patients_at_85.",
+ "allowed_task_words": [],
+ "invited_ids_author": [
+  "C03"
+ ],
+ "order_significant": false,
+ "sort_keys": [],
+ "dtype_significant": false,
+ "intended_computation": "Cap age at 85 (40 patients are older), clean ward (5 wards) and per ward return the maximum capped age (at most 85) and the count of patients whose capped age equals 85.",
+ "acceptable_variants": {
+  "row_order": "any",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": ""
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 5
+   }
+  },
+  {
+   "check": "numeric_in_range",
+   "args": {
+    "columns": [
+     "max_age"
+    ],
+    "min": 0,
+    "max": 85
+   }
+  },
+  {
+   "check": "columns_present",
+   "args": {
+    "columns": [
+     "max_age",
+     "patients_at_85"
+    ]
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "HARM",
+  "reason": "on 3.x writing through the age column held in a separate variable does not reach the table, so ages stay uncapped"
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M1",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 in package TASKS_M1; task text, card, naive solution, reference and predicted direction were prepared there."
+}

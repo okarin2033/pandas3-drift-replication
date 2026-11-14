@@ -1,0 +1,49 @@
+station_code,station_name,district,docks,opened_on
+0040,Market Square North,Old Town,30,2019-08-05
+0063,Ferry Pier North,Southpark,24,2018-05-23
+0069,Library North,Riverbend,16,2017-07-08
+0074,Glassworks North,Eastfield,24,2024-09-10
+0128,Central Station North,northgate,30,2015-04-18
+0135,Café Müller North,Harbourside,16,2023-01-02
+0143,Old Mill North, Old Town,24,2024-08-19
+0161,Rosengård North,Southpark,$12,2018-12-04
+0163,Parkside North,Riverbend,20,2015-12-25
+0168,University North,Eastfield,24,2022-01-17
+0202,Museum North,Northgate,12,2024-09-01
+0206,Fish Market North,Harbourside,30,2019-06-30
+0219,Brewery North,Old Town,12,2018-03-02
+0221,Hospital North,Southpark,20,2021-03-15
+0230,Stadium North,Riverbend,12,2022-11-26
+0251,Zoo North,Eastfield,24,2016-02-24
+0301,Market Square South,Northgate,16,2024-08-14
+0308,Ferry Pier South, harbourside ,12,2018-09-09
+0317,Library South,Old Town,24,2019-06-13
+0324,Glassworks South,Southpark,16,2017-08-08
+0325,Central Station South,Riverbend,16,2024-05-11
+0331,Café Müller South,Eastfield,16,2022-01-10
+0344,Old Mill South,NORTHGATE  ,20,2015-09-28
+0355,Rosengård South,Harbourside,24,2016-06-17
+0378,Parkside South,Old Town,30,2021-05-15
+0394,University South,Southpark,24,2023-08-07
+0408,Museum South,Riverbend,30,2024-05-28
+0426,Fish Market South,Eastfield,16,2016-08-29
+0429,Brewery South,Northgate,24,2021-06-30
+0438,Hospital South,Harbourside,24,2024-08-26
+0439,Stadium South,Old Town,24,2016-05-13
+0448,Zoo South, ,16,2024-04-26
+0450,Market Square East,Riverbend,16,2019-12-17
+0478,Ferry Pier East,Eastfield,24,2024-01-27
+0483,Library East,Northgate,20,2016-10-21
+0506,Glassworks East,Harbourside,30,2024-03-09
+0507,Central Station East,Old Town,24,2024-01-13
+0544,Café Müller East,Southpark,24,2020-08-12
+0547,Old Mill East,RIVERBEND,12,2015-11-02
+0554,Rosengård East,Eastfield,30,2022-08-29
+0555,Parkside East,Northgate,N/A,2022-06-18
+0571,University East,Harbourside,20,2019-04-27
+0576,Museum East,Old Town,20,2022-07-17
+0588,Fish Market East, Southpark,20,2018-02-10
+0640,Brewery East,Riverbend,20,2018-07-14
+0644,Hospital East,Eastfield,30,2022-05-18
+0653,Stadium East,Northgate ,30,2016-06-10
+0681,Zoo East, Harbourside,16,2022-10-15

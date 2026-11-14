@@ -1,0 +1,78 @@
+{
+ "id": "A_BIN_02",
+ "stratum": "A",
+ "family": null,
+ "generic_family": "BIN",
+ "catalogue_row": null,
+ "files": [
+  {
+   "path": "GEN/riders.csv",
+   "description": "Bike-share riders, one per row (400 rows): rider_id (six-digit id with leading zeros), display_name (person name, some with accented letters), home_district (one of 6 districts such as \"Old Town\"), membership (casual, monthly or annual) - these three text columns have inconsistent capital letters and stray spaces; joined_on (date as text, YYYY-MM-DD; about 2% empty), birth_year (whole number; about 4% empty), credit_balance (two decimals, can be negative; about 5% empty)."
+  }
+ ],
+ "task_text": "Using age = 2025 minus birth_year, put riders into the age groups under 25, 25-39, 40-59 and 60 or older, and count the riders in each age group for each membership type (trimmed, lower case); leave out riders without a birth year. `result` should be a table with the age groups as rows and the membership types as columns.",
+ "allowed_task_words": [],
+ "invited_ids_author": [
+  "G01",
+  "G02"
+ ],
+ "order_significant": false,
+ "sort_keys": [],
+ "dtype_significant": false,
+ "intended_computation": "Read riders.csv, drop riders with an empty birth_year, set age = 2025 - birth_year, assign groups under 25 (age < 25), 25-39, 40-59 and 60 or older (age >= 60), normalise membership (strip, lower case), and count riders per age group (rows) and membership type (columns), 0 where none.",
+ "acceptable_variants": {
+  "row_order": "any",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": "group labels may be spelled differently; row and column order free; Where an age group and membership type combination has no riders, its count may be given as 0 or as a missing value."
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 4
+   }
+  },
+  {
+   "check": "no_nulls",
+   "args": {
+    "columns": []
+   }
+  },
+  {
+   "check": "numeric_in_range",
+   "args": {
+    "columns": [],
+    "min": 0,
+    "max": 384
+   }
+  }
+ ],
+ "predicted_direction": null,
+ "naive_path": null,
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_RA",
+ "status": "prepared",
+ "notes": "invited_ids_author labelled by hand after the intents were frozen (step A2); intent not rewritten for it."
+}

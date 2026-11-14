@@ -1,0 +1,177 @@
+{
+ "item": "B.32",
+ "result": {
+  "n_items": 100,
+  "kappa": 0.31580359538502817,
+  "kappa_lo": 0.076287642950441,
+  "kappa_hi": 0.5226392999139642,
+  "kappa_dropped": 0,
+  "ac1": 0.37698509650623013,
+  "ac1_lo": 0.11210792908217912,
+  "ac1_hi": 0.6317794093245058,
+  "ac1_dropped": 0,
+  "raw_agreement": 0.49,
+  "raw_agreement_lo": 0.28377874142799514,
+  "raw_agreement_hi": 0.6935483870967742,
+  "raw_agreement_dropped": 0,
+  "items_left_out_ruled": 0,
+  "threshold_kappa": 0.6,
+  "kappa_meets_threshold": false,
+  "label_of_statistic": "model vs model (agreement between two model coders; not inter-rater reliability of people)",
+  "table": "agreement",
+  "variant": "all tasks"
+ },
+ "result_without_ruled": {
+  "n_items": 100,
+  "kappa": 0.31580359538502817,
+  "kappa_lo": 0.07804589999291431,
+  "kappa_hi": 0.521975560269095,
+  "kappa_dropped": 0,
+  "ac1": 0.37698509650623013,
+  "ac1_lo": 0.1131424246834522,
+  "ac1_hi": 0.6354079458300235,
+  "ac1_dropped": 0,
+  "raw_agreement": 0.49,
+  "raw_agreement_lo": 0.2847142584097859,
+  "raw_agreement_hi": 0.6952484472049688,
+  "raw_agreement_dropped": 0,
+  "items_left_out_ruled": 0,
+  "threshold_kappa": 0.6,
+  "kappa_meets_threshold": false,
+  "label_of_statistic": "model vs model (agreement between two model coders; not inter-rater reliability of people)",
+  "table": "agreement",
+  "variant": "without ruled R tasks (LR61/LR70)"
+ },
+ "confusion": [
+  {
+   "coder_a": "BOTH_ACCEPTABLE",
+   "coder_b": "BOTH_ACCEPTABLE",
+   "count": 23
+  },
+  {
+   "coder_a": "BOTH_ACCEPTABLE",
+   "coder_b": "HARM_3X",
+   "count": 1
+  },
+  {
+   "coder_a": "BOTH_ACCEPTABLE",
+   "coder_b": "NEITHER",
+   "count": 1
+  },
+  {
+   "coder_a": "FIX_3X",
+   "coder_b": "BOTH_ACCEPTABLE",
+   "count": 2
+  },
+  {
+   "coder_a": "FIX_3X",
+   "coder_b": "FIX_3X",
+   "count": 3
+  },
+  {
+   "coder_a": "FIX_3X",
+   "coder_b": "HARM_3X",
+   "count": 8
+  },
+  {
+   "coder_a": "FIX_3X",
+   "coder_b": "NEITHER",
+   "count": 17
+  },
+  {
+   "coder_a": "HARM_3X",
+   "coder_b": "BOTH_ACCEPTABLE",
+   "count": 7
+  },
+  {
+   "coder_a": "HARM_3X",
+   "coder_b": "FIX_3X",
+   "count": 3
+  },
+  {
+   "coder_a": "HARM_3X",
+   "coder_b": "HARM_3X",
+   "count": 23
+  },
+  {
+   "coder_a": "HARM_3X",
+   "coder_b": "NEITHER",
+   "count": 2
+  },
+  {
+   "coder_a": "HARM_3X",
+   "coder_b": "UNDETERMINABLE",
+   "count": 2
+  },
+  {
+   "coder_a": "NEITHER",
+   "coder_b": "BOTH_ACCEPTABLE",
+   "count": 5
+  },
+  {
+   "coder_a": "NEITHER",
+   "coder_b": "FIX_3X",
+   "count": 2
+  },
+  {
+   "coder_a": "NEITHER",
+   "coder_b": "HARM_3X",
+   "count": 1
+  }
+ ],
+ "lr61_without_ruled": {
+  "label": "added report of lead rulings LR42 and LR61: stratum R without the tasks of tasks/RULED_FIDELITY_FAILS.tsv; registered before any study generation; decides nothing",
+  "ruled_file": "tasks/RULED_FIDELITY_FAILS.tsv",
+  "ruled_file_sha256": "293226daf4a868de977a66fd67f8cf2ae62cf0269d84c9923503c068470b0c46",
+  "listed_tasks": [
+   "R_08"
+  ],
+  "tasks_left_out": [
+   "R_08"
+  ],
+  "n_tasks_kept": 199,
+  "n_programs_left_out": 50
+ },
+ "meta": {
+  "label": null,
+  "test_mode": false,
+  "items": [
+   "B.32"
+  ],
+  "inputs_sha256": {
+   "per_program.jsonl": "dfd3b7dc406ffb88c34c7a4cfc9a90eeb71c0feaf0da626b9805bbac40e9401f",
+   "summary.json": "0ce93b74eaf5b0b6e9c6677487156b28c9edcc73fb78b327d8df28521ffdcc1f",
+   "tasks.json": "ac38b07873515cff1488544c81f1acadc80aaad418db13883a3a0423ccad5391",
+   "models.tsv": "93fc8c7f6f8f2b3f0e11e04926e5245f1456534085779a1b2d1cb1c4b2520676",
+   "coder_a.tsv": "a6faae579a4aee76b89d65d63112c025127287ed0556114c5bd42116cc579b53",
+   "coder_b.tsv": "c7c2c99b36276a2797a8b6babc9d54ea3d7bac578c87d04c89ddebb6acfa9e28"
+  },
+  "B": 10000,
+  "seed": 20261111,
+  "tool": "sec_agreement.py",
+  "tool_sha256": "d820d523d2eba67f0aed78b5f448edbff789643c2c78af7110c27203bd60d154",
+  "sec_common_sha256": "c1e87284ed92844ade5c515bb78fe261b3a94431d1389c0b4ec2f854f48d39db",
+  "harness_stats_sha256": "ad28a99b5e3a61dc9a7753e3a019a41d2d5968a83f94d6aaddff91156e0bf41d",
+  "created": "2026-11-13T23:05:52+0900",
+  "numpy_used": true,
+  "coder_a_file_sha256": "a6faae579a4aee76b89d65d63112c025127287ed0556114c5bd42116cc579b53",
+  "coder_b_file_sha256": "c7c2c99b36276a2797a8b6babc9d54ea3d7bac578c87d04c89ddebb6acfa9e28",
+  "bootstrap_unit": "task, stratified by stratum and, within M, family (LR82 general rule (iii), item 7)",
+  "coder_a_kind": "model",
+  "coder_b_kind": "model",
+  "lr61": {
+   "label": "added report of lead rulings LR42 and LR61: stratum R without the tasks of tasks/RULED_FIDELITY_FAILS.tsv; registered before any study generation; decides nothing",
+   "ruled_file": "tasks/RULED_FIDELITY_FAILS.tsv",
+   "ruled_file_sha256": "293226daf4a868de977a66fd67f8cf2ae62cf0269d84c9923503c068470b0c46",
+   "listed_tasks": [
+    "R_08"
+   ],
+   "tasks_left_out": [
+    "R_08"
+   ],
+   "n_tasks_kept": 199,
+   "n_programs_left_out": 50
+  }
+ },
+ "label": null
+}

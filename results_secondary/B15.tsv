@@ -1,0 +1,65 @@
+pair	variant	model	cutoff	cutoff_basis	split	x	n	rate	wilson_lo	wilson_hi	boot_lo	boot_hi	boot_dropped	rare_event	cp_deff_upper
+E0a~E1	all tasks	anthropic__claude-haiku-4.5	2025-02	reliable	after	0	45	0.000000	0.000000	0.078652	0.000000	0.000000	0	yes	0.112928
+E0a~E1	without ruled R tasks (LR61/LR70)	anthropic__claude-haiku-4.5	2025-02	reliable	after	0	40	0.000000	0.000000	0.087622	0.000000	0.000000	0	yes	0.126116
+E0a~E1	all tasks	anthropic__claude-haiku-4.5	2025-07	training data	after	0	45	0.000000	0.000000	0.078652	0.000000	0.000000	0	yes	0.112928
+E0a~E1	without ruled R tasks (LR61/LR70)	anthropic__claude-haiku-4.5	2025-07	training data	after	0	40	0.000000	0.000000	0.087622	0.000000	0.000000	0	yes	0.126116
+E0a~E1	all tasks	anthropic__claude-haiku-5.5	2026-06	reliable/training data	after	0	5	0.000000	0.000000	0.434482	0.000000	0.000000	3474	yes	0.659882
+E0a~E1	all tasks	anthropic__claude-haiku-5.5	2026-06	reliable/training data	before	0	25	0.000000	0.000000	0.133192	0.000000	0.000000	9	yes	0.194017
+E0a~E1	all tasks	anthropic__claude-haiku-5.5	2026-06	reliable/training data	inside	0	15	0.000000	0.000000	0.203883	0.000000	0.000000	275	yes	0.301966
+E0a~E1	without ruled R tasks (LR61/LR70)	anthropic__claude-haiku-5.5	2026-06	reliable/training data	after	0	5	0.000000	0.000000	0.434482	0.000000	0.000000	3418	yes	0.659882
+E0a~E1	without ruled R tasks (LR61/LR70)	anthropic__claude-haiku-5.5	2026-06	reliable/training data	before	0	25	0.000000	0.000000	0.133192	0.000000	0.000000	4	yes	0.194017
+E0a~E1	without ruled R tasks (LR61/LR70)	anthropic__claude-haiku-5.5	2026-06	reliable/training data	inside	0	10	0.000000	0.000000	0.277533	0.000000	0.000000	989	yes	0.416804
+E0a~E1	all tasks	anthropic__claude-sonnet-5.5	2026-06	reliable/training data	after	0	5	0.000000	0.000000	0.434482	0.000000	0.000000	3474	yes	0.659882
+E0a~E1	all tasks	anthropic__claude-sonnet-5.5	2026-06	reliable/training data	before	0	25	0.000000	0.000000	0.133192	0.000000	0.000000	9	yes	0.194017
+E0a~E1	all tasks	anthropic__claude-sonnet-5.5	2026-06	reliable/training data	inside	0	15	0.000000	0.000000	0.203883	0.000000	0.000000	275	yes	0.301966
+E0a~E1	without ruled R tasks (LR61/LR70)	anthropic__claude-sonnet-5.5	2026-06	reliable/training data	after	0	5	0.000000	0.000000	0.434482	0.000000	0.000000	3418	yes	0.659882
+E0a~E1	without ruled R tasks (LR61/LR70)	anthropic__claude-sonnet-5.5	2026-06	reliable/training data	before	0	25	0.000000	0.000000	0.133192	0.000000	0.000000	4	yes	0.194017
+E0a~E1	without ruled R tasks (LR61/LR70)	anthropic__claude-sonnet-5.5	2026-06	reliable/training data	inside	0	10	0.000000	0.000000	0.277533	0.000000	0.000000	989	yes	0.416804
+E0a~E1	all tasks	deepseek__deepseek-v3.2			all (cutoff unknown or not documented)	0	44	0.000000	0.000000	0.080296	0.000000	0.000000	0	yes	0.114001
+E0a~E1	without ruled R tasks (LR61/LR70)	deepseek__deepseek-v3.2			all (cutoff unknown or not documented)	0	39	0.000000	0.000000	0.089667	0.000000	0.000000	0	yes	0.127458
+E0a~E1	all tasks	google__gemma-4-31b-it	2025-01	pre-training data	after	0	41	0.000000	0.000000	0.085668	0.000000	0.000000	0	yes	0.117525
+E0a~E1	without ruled R tasks (LR61/LR70)	google__gemma-4-31b-it	2025-01	pre-training data	after	0	36	0.000000	0.000000	0.096419	0.000000	0.000000	0	yes	0.131915
+E0a~E1	all tasks	openai__gpt-5.4-mini	2025-08-31	vendor	after	0	38	0.000000	0.000000	0.091810	0.000000	0.000000	0	yes	0.128868
+E0a~E1	without ruled R tasks (LR61/LR70)	openai__gpt-5.4-mini	2025-08-31	vendor	after	0	33	0.000000	0.000000	0.104270	0.000000	0.000000	0	yes	0.146335
+E0a~E1	all tasks	openai__gpt-5.6-terra	2026-02-16	vendor	after	0	35	0.000000	0.000000	0.098901	0.000000	0.000000	0	yes	0.142785
+E0a~E1	all tasks	openai__gpt-5.6-terra	2026-02-16	vendor	before	0	10	0.000000	0.000000	0.277533	0.000000	0.000000	1031	yes	0.416804
+E0a~E1	without ruled R tasks (LR61/LR70)	openai__gpt-5.6-terra	2026-02-16	vendor	after	0	30	0.000000	0.000000	0.113513	0.000000	0.000000	0	yes	0.164516
+E0a~E1	without ruled R tasks (LR61/LR70)	openai__gpt-5.6-terra	2026-02-16	vendor	before	0	10	0.000000	0.000000	0.277533	0.000000	0.000000	1053	yes	0.416804
+E0a~E1	all tasks	openai__gpt-oss-20b	2024-06-01	vendor	after	0	38	0.000000	0.000000	0.091810	0.000000	0.000000	0	yes	0.128868
+E0a~E1	without ruled R tasks (LR61/LR70)	openai__gpt-oss-20b	2024-06-01	vendor	after	0	33	0.000000	0.000000	0.104270	0.000000	0.000000	0	yes	0.146335
+E0a~E1	all tasks	qwen__qwen3.5-9b			all (cutoff unknown or not documented)	0	32	0.000000	0.000000	0.107179	0.000000	0.000000	0	yes	0.131915
+E0a~E1	without ruled R tasks (LR61/LR70)	qwen__qwen3.5-9b			all (cutoff unknown or not documented)	0	27	0.000000	0.000000	0.124555	0.000000	0.000000	0	yes	0.150966
+E0a~E1	all tasks	qwen__qwen3.6-35b-a3b			all (cutoff unknown or not documented)	0	43	0.000000	0.000000	0.082010	0.000000	0.000000	0	yes	0.115123
+E0a~E1	without ruled R tasks (LR61/LR70)	qwen__qwen3.6-35b-a3b			all (cutoff unknown or not documented)	0	38	0.000000	0.000000	0.091810	0.000000	0.000000	0	yes	0.128868
+E0a~E2	all tasks	anthropic__claude-haiku-4.5	2025-02	reliable	after	0	45	0.000000	0.000000	0.078652	0.000000	0.000000	0	yes	0.112928
+E0a~E2	without ruled R tasks (LR61/LR70)	anthropic__claude-haiku-4.5	2025-02	reliable	after	0	40	0.000000	0.000000	0.087622	0.000000	0.000000	0	yes	0.126116
+E0a~E2	all tasks	anthropic__claude-haiku-4.5	2025-07	training data	after	0	45	0.000000	0.000000	0.078652	0.000000	0.000000	0	yes	0.112928
+E0a~E2	without ruled R tasks (LR61/LR70)	anthropic__claude-haiku-4.5	2025-07	training data	after	0	40	0.000000	0.000000	0.087622	0.000000	0.000000	0	yes	0.126116
+E0a~E2	all tasks	anthropic__claude-haiku-5.5	2026-06	reliable/training data	after	0	5	0.000000	0.000000	0.434482	0.000000	0.000000	3474	yes	0.659882
+E0a~E2	all tasks	anthropic__claude-haiku-5.5	2026-06	reliable/training data	before	0	25	0.000000	0.000000	0.133192	0.000000	0.000000	9	yes	0.194017
+E0a~E2	all tasks	anthropic__claude-haiku-5.5	2026-06	reliable/training data	inside	0	15	0.000000	0.000000	0.203883	0.000000	0.000000	275	yes	0.301966
+E0a~E2	without ruled R tasks (LR61/LR70)	anthropic__claude-haiku-5.5	2026-06	reliable/training data	after	0	5	0.000000	0.000000	0.434482	0.000000	0.000000	3418	yes	0.659882
+E0a~E2	without ruled R tasks (LR61/LR70)	anthropic__claude-haiku-5.5	2026-06	reliable/training data	before	0	25	0.000000	0.000000	0.133192	0.000000	0.000000	4	yes	0.194017
+E0a~E2	without ruled R tasks (LR61/LR70)	anthropic__claude-haiku-5.5	2026-06	reliable/training data	inside	0	10	0.000000	0.000000	0.277533	0.000000	0.000000	989	yes	0.416804
+E0a~E2	all tasks	anthropic__claude-sonnet-5.5	2026-06	reliable/training data	after	0	5	0.000000	0.000000	0.434482	0.000000	0.000000	3474	yes	0.659882
+E0a~E2	all tasks	anthropic__claude-sonnet-5.5	2026-06	reliable/training data	before	0	25	0.000000	0.000000	0.133192	0.000000	0.000000	9	yes	0.194017
+E0a~E2	all tasks	anthropic__claude-sonnet-5.5	2026-06	reliable/training data	inside	0	15	0.000000	0.000000	0.203883	0.000000	0.000000	275	yes	0.301966
+E0a~E2	without ruled R tasks (LR61/LR70)	anthropic__claude-sonnet-5.5	2026-06	reliable/training data	after	0	5	0.000000	0.000000	0.434482	0.000000	0.000000	3418	yes	0.659882
+E0a~E2	without ruled R tasks (LR61/LR70)	anthropic__claude-sonnet-5.5	2026-06	reliable/training data	before	0	25	0.000000	0.000000	0.133192	0.000000	0.000000	4	yes	0.194017
+E0a~E2	without ruled R tasks (LR61/LR70)	anthropic__claude-sonnet-5.5	2026-06	reliable/training data	inside	0	10	0.000000	0.000000	0.277533	0.000000	0.000000	989	yes	0.416804
+E0a~E2	all tasks	deepseek__deepseek-v3.2			all (cutoff unknown or not documented)	0	44	0.000000	0.000000	0.080296	0.000000	0.000000	0	yes	0.114001
+E0a~E2	without ruled R tasks (LR61/LR70)	deepseek__deepseek-v3.2			all (cutoff unknown or not documented)	0	39	0.000000	0.000000	0.089667	0.000000	0.000000	0	yes	0.127458
+E0a~E2	all tasks	google__gemma-4-31b-it	2025-01	pre-training data	after	0	41	0.000000	0.000000	0.085668	0.000000	0.000000	0	yes	0.117525
+E0a~E2	without ruled R tasks (LR61/LR70)	google__gemma-4-31b-it	2025-01	pre-training data	after	0	36	0.000000	0.000000	0.096419	0.000000	0.000000	0	yes	0.131915
+E0a~E2	all tasks	openai__gpt-5.4-mini	2025-08-31	vendor	after	0	38	0.000000	0.000000	0.091810	0.000000	0.000000	0	yes	0.128868
+E0a~E2	without ruled R tasks (LR61/LR70)	openai__gpt-5.4-mini	2025-08-31	vendor	after	0	33	0.000000	0.000000	0.104270	0.000000	0.000000	0	yes	0.146335
+E0a~E2	all tasks	openai__gpt-5.6-terra	2026-02-16	vendor	after	0	35	0.000000	0.000000	0.098901	0.000000	0.000000	0	yes	0.142785
+E0a~E2	all tasks	openai__gpt-5.6-terra	2026-02-16	vendor	before	0	10	0.000000	0.000000	0.277533	0.000000	0.000000	1031	yes	0.416804
+E0a~E2	without ruled R tasks (LR61/LR70)	openai__gpt-5.6-terra	2026-02-16	vendor	after	0	30	0.000000	0.000000	0.113513	0.000000	0.000000	0	yes	0.164516
+E0a~E2	without ruled R tasks (LR61/LR70)	openai__gpt-5.6-terra	2026-02-16	vendor	before	0	10	0.000000	0.000000	0.277533	0.000000	0.000000	1053	yes	0.416804
+E0a~E2	all tasks	openai__gpt-oss-20b	2024-06-01	vendor	after	0	38	0.000000	0.000000	0.091810	0.000000	0.000000	0	yes	0.128868
+E0a~E2	without ruled R tasks (LR61/LR70)	openai__gpt-oss-20b	2024-06-01	vendor	after	0	33	0.000000	0.000000	0.104270	0.000000	0.000000	0	yes	0.146335
+E0a~E2	all tasks	qwen__qwen3.5-9b			all (cutoff unknown or not documented)	0	32	0.000000	0.000000	0.107179	0.000000	0.000000	0	yes	0.131915
+E0a~E2	without ruled R tasks (LR61/LR70)	qwen__qwen3.5-9b			all (cutoff unknown or not documented)	0	27	0.000000	0.000000	0.124555	0.000000	0.000000	0	yes	0.150966
+E0a~E2	all tasks	qwen__qwen3.6-35b-a3b			all (cutoff unknown or not documented)	0	43	0.000000	0.000000	0.082010	0.000000	0.000000	0	yes	0.115123
+E0a~E2	without ruled R tasks (LR61/LR70)	qwen__qwen3.6-35b-a3b			all (cutoff unknown or not documented)	0	38	0.000000	0.000000	0.091810	0.000000	0.000000	0	yes	0.128868

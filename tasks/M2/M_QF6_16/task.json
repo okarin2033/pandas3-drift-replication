@@ -1,0 +1,84 @@
+{
+ "id": "M_QF6_16",
+ "stratum": "M",
+ "family": "QF6_NA_DTYPE",
+ "generic_family": null,
+ "catalogue_row": "N06",
+ "files": [
+  {
+   "path": "QF6_NA_DTYPE/quiz_scores.csv",
+   "description": "Quiz results (80 rows, one per student in seat order, no other columns): quiz_a and quiz_b (points 0-10, whole numbers, many equal values; about 9% and 6% of cells empty for absent students)."
+  }
+ ],
+ "task_text": "Convert the table to the best-fitting column types after reading, so that the scores stay whole numbers with empty cells. Rank the students in quiz_a from the lowest score (rank 1 = lowest; equal scores share the average of their ranks; absent students get no rank). Give the ranks of the students who scored 9 or 10 points in quiz_a. `result` should be a Series of ranks indexed by row position (0 = first student in the file), in file order.",
+ "allowed_task_words": [],
+ "invited_ids_author": [
+  "N06"
+ ],
+ "order_significant": true,
+ "sort_keys": [
+  "__index__"
+ ],
+ "dtype_significant": false,
+ "intended_computation": "Average ascending ranks of the 73 non-empty quiz_a scores; keep the 8 students with quiz_a 9 or 10, indexed by their 0-based row position.",
+ "acceptable_variants": {
+  "row_order": "ties_only",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": "ranks may be decimals or whole numbers."
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 8
+   }
+  },
+  {
+   "check": "no_nulls",
+   "args": {
+    "columns": []
+   }
+  },
+  {
+   "check": "numeric_in_range",
+   "args": {
+    "columns": [
+     "__values__"
+    ],
+    "min": 1,
+    "max": 73
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "FIX",
+  "reason": "On 2.x rank() on the nullable column gave the absent students ranks below everybody, so every present student's rank rose by 7; on 3.x absent students stay unranked, as the task asks."
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M2",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 by pkg:TASKS_M2 for catalogue row N06; naive.py shows the invited idiom, reference.py is the version-robust reference."
+}

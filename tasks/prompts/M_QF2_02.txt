@@ -1,0 +1,11 @@
+You are given CSV file(s) in the current working directory:
+
+- clicks.csv: Website clicks (500 rows): click_ref (seven-digit reference with leading zeros, e.g. "0000011"), epoch_s (Unix timestamp in seconds, UTC, whole number), epoch_ms (Unix timestamp in milliseconds, UTC, when the click was received, whole number), page (site path such as /home or /pricing), dwell_s (seconds on the page, one decimal; about 8% empty).
+
+Task: Round each click time given in epoch_s down to the start of its minute. `result` should be a table with the columns click_ref (written as in the file, seven digits with leading zeros) and minute_start (the rounded time as a Unix timestamp in seconds), in file order.
+
+Requirements:
+- Write a complete Python script that reads the file(s) from the current directory.
+- Use only pandas, numpy and the Python standard library.
+- Store the final answer in a top-level variable named `result`.
+- Reply with a single Python code block.

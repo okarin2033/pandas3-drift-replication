@@ -1,0 +1,61 @@
+{
+ "schema_version": "run_record/1",
+ "program_id": "example/EX_QF1_01__s0",
+ "task_id": "EX_QF1_01",
+ "run_config": "E1",
+ "config": "E1",
+ "fixture_variant": "main",
+ "venv": "pd31x",
+ "mode": "base",
+ "hash_seed": 0,
+ "versions": {
+  "python": "<x.y.z>",
+  "pandas": "<x.y.z>",
+  "numpy": "<x.y.z>",
+  "pyarrow": null,
+  "dateutil": "<x.y.z>",
+  "tzdata": "<yyyy.n>"
+ },
+ "options": {
+  "mode.copy_on_write": "n/a",
+  "future.infer_string": "True"
+ },
+ "status": "ok",
+ "result_path": "E1/example/EX_QF1_01__s0.result.json.gz",
+ "result_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+ "result_type": "pandas.DataFrame",
+ "warnings": [
+  {
+   "category_qualname": "FutureWarning",
+   "category_module": "builtins",
+   "mro": [
+    "builtins.FutureWarning",
+    "builtins.Warning",
+    "builtins.Exception",
+    "builtins.BaseException",
+    "builtins.object"
+   ],
+   "message": "FICTITIOUS example message",
+   "filename": "prog.py",
+   "lineno": 5,
+   "user_line": 5,
+   "pandas_on_stack": true,
+   "phase": "user",
+   "count": 1
+  }
+ ],
+ "n_warnings": 1,
+ "warning_filter_calls_neutralised": 0,
+ "stdout_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+ "files_written": {},
+ "wall_s": 0.81,
+ "cpu_s": 0.62,
+ "max_rss_bytes": 104857600,
+ "exc_type": null,
+ "exc_msg": null,
+ "exc_user_line": null,
+ "trace_path": null,
+ "trace_truncated": null,
+ "started_at": "2026-11-11T13:00:00+09:00",
+ "_comment": "FICTITIOUS example record (format only; versions are placeholders; not produced by a run)"
+}

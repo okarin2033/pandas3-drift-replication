@@ -1,0 +1,101 @@
+{
+ "id": "R_03",
+ "stratum": "R",
+ "family": null,
+ "generic_family": null,
+ "catalogue_row": null,
+ "files": [
+  {
+   "path": "GEN/trips.csv",
+   "description": "Bike-share trips, 1 September to 1 November 2025 (1500 rows): trip_id (whole number), rider_id (refers to riders.csv), start_station and end_station (refer to station_code in stations.csv), started_at (timestamp written as YYYY-MM-DD HH:MM), duration_min (whole minutes; about 3% empty), distance_km (two decimals), fare (two decimals; about 3% empty), payment (card, app or cash; capital letters and spaces are inconsistent), rating (1-5 stars, whole number; about 19% empty)."
+  },
+  {
+   "path": "GEN/stations.csv",
+   "description": "Bike-share stations (48 rows, one per station): station_code (four-digit code with leading zeros, e.g. \"0040\"), station_name (text, a few with accented letters), district (same 6 districts as riders.csv; capital letters and spaces are inconsistent), docks (whole number), opened_on (date as text, YYYY-MM-DD)."
+  }
+ ],
+ "task_text": "Use stations.csv as a lookup from station_code to docks and replace every station code in the start_station and end_station columns of trips.csv by the docks of that station; a code that does not appear in stations.csv stays as it is. `result` should be a table with the columns start_station and end_station, one row per trip.",
+ "allowed_task_words": [],
+ "invited_ids_author": [
+  "N01"
+ ],
+ "order_significant": false,
+ "sort_keys": [],
+ "dtype_significant": false,
+ "intended_computation": "Read trips.csv and stations.csv; map every start_station and end_station code through station_code -> docks (all codes are found); columns start_station, end_station holding docks numbers; 1500 rows.",
+ "acceptable_variants": {
+  "row_order": "any",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": "values may be int, float or text digits; row order free"
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 1500
+   }
+  },
+  {
+   "check": "columns_present",
+   "args": {
+    "columns": [
+     "start_station",
+     "end_station"
+    ]
+   }
+  },
+  {
+   "check": "no_nulls",
+   "args": {
+    "columns": [
+     "start_station",
+     "end_station"
+    ]
+   }
+  },
+  {
+   "check": "numeric_in_range",
+   "args": {
+    "columns": [
+     "start_station",
+     "end_station"
+    ],
+    "min": 12,
+    "max": 30
+   }
+  }
+ ],
+ "predicted_direction": null,
+ "naive_path": null,
+ "reference_path": "reference.py",
+ "so_question_id": 80001493,
+ "so_url": "https://stackoverflow.com/q/80001493",
+ "so_creation_date": "2026-09-07",
+ "so_score": 4,
+ "so_licence": "CC BY-SA 4.0",
+ "intent_summary": "Replace the codes held in two columns of one table by the value that a second table gives for each code (code column to value column), leaving codes without a match as they are.",
+ "column_map": {
+  "first table: code column 1": "trips.csv:start_station",
+  "first table: code column 2": "trips.csv:end_station",
+  "lookup table: code": "stations.csv:station_code",
+  "lookup table: value": "stations.csv:docks"
+ },
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:R_BUILD",
+ "status": "prepared",
+ "notes": "Stratum R (real question, paraphrased onto the general fixtures under the section 4.3 rule). Intent, summary and column map sealed 2026-11-11T13:44:13Z (tasks/R/INTENTS_FROZEN.sha256) before the catalogue was opened; card, reference and invited_ids_author drafted 2026-11-11 by pkg:R_BUILD. Prepared (Amendment 9). No question text or code is stored in the study folder."
+}

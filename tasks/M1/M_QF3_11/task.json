@@ -1,0 +1,88 @@
+{
+ "id": "M_QF3_11",
+ "stratum": "M",
+ "family": "QF3_COW",
+ "generic_family": null,
+ "catalogue_row": "C05",
+ "files": [
+  {
+   "path": "QF3_COW/admissions.csv",
+   "description": "Hospital admissions (260 rows): admission_id (whole number), age (years, whole number; about 5% empty), ward (cardiology, oncology, maternity, orthopedics or neurology; capital letters and spaces are inconsistent), stay_days (whole number; about 3% empty), charge (two decimals; about 5% empty)."
+  }
+ ],
+ "task_text": "Report, per ward (lower case, no extra spaces), the average charge in two ways: once ignoring admissions without a charge, and once counting a missing charge as 0. Keep the original table unchanged and keep memory use low; a renamed version with the column called charge_eur may hold the zero-filled charges. `result` should be a table indexed by ward with the columns mean_known and mean_zero_filled, rounded to two decimals.",
+ "allowed_task_words": [
+  "keep memory use low"
+ ],
+ "invited_ids_author": [
+  "C05"
+ ],
+ "order_significant": false,
+ "sort_keys": [],
+ "dtype_significant": false,
+ "intended_computation": "Per ward (5 wards): mean_known = mean of non-missing charges; mean_zero_filled = mean with the 12 missing charges counted as 0; both rounded to 2 decimals.",
+ "acceptable_variants": {
+  "row_order": "any",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": ""
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 5
+   }
+  },
+  {
+   "check": "columns_present",
+   "args": {
+    "columns": [
+     "mean_known",
+     "mean_zero_filled"
+    ]
+   }
+  },
+  {
+   "check": "numeric_in_range",
+   "args": {
+    "columns": [
+     "mean_known",
+     "mean_zero_filled"
+    ],
+    "min": 0,
+    "max": null
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "FIX",
+  "reason": "on 2.x the renamed frame shares memory with the original, so zero-filling it also changes the original and the two means coincide"
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M1",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 in package TASKS_M1; task text, card, naive solution, reference and predicted direction were prepared there."
+}

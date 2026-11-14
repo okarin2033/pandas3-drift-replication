@@ -1,0 +1,12 @@
+You are given CSV file(s) in the current working directory:
+
+- price_list.csv: Shop price list (64 rows): sku (text code such as "PL-0007"), item (product name with size; several names have accented letters), section (dairy, pantry, drinks or bakery; capital letters and spaces are inconsistent), price (written with exactly two decimals, e.g. "9.50"; no empty cells).
+
+Task: Produce JSON text that maps each sku to its price, keeping the price exactly as written in the file, two decimals included ('9.50' must stay '9.50'), so read the prices as exact decimals rather than floating-point numbers. `result` should be the parsed JSON (a Python dict from sku to price).
+
+Requirements:
+- Write a complete Python script that reads the file(s) from the current directory.
+- Use only pandas, numpy and the Python standard library.
+- Store the final answer in a top-level variable named `result`.
+- Reply with a single Python code block.
+- The script will run with the latest pandas 3 release.

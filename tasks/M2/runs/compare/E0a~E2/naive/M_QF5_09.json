@@ -1,0 +1,40 @@
+{
+ "baseline_status": "ok",
+ "class": "VALUE_DRIFT",
+ "class_pilot_rule": "VALUE_DRIFT",
+ "class_raw": "VALUE_DRIFT",
+ "clean_on_233": true,
+ "drift": true,
+ "drift_pilot_rule": true,
+ "excluded": null,
+ "exclusion": null,
+ "first_diff": {
+  "a": "[\"TS:2025-09-01T00:00:00\", \"TS:2025-09-03T00:00:00\", \"TS:2025-09-04T00:00:00\", \"TS:2025-09-05T00:00:00\", \"TS:2025-09-06T00:00:00\", \"TS:2025-09-07T00:00:00\", \"TS:2025-09-08T00:00:00\", \"TS:2025-09-09T00...",
+  "b": "[\"TS:2025-10-06T00:00:00\", \"TS:2025-10-07T00:00:00\", \"TS:2025-10-03T00:00:00\", \"TS:2025-09-25T00:00:00\", \"TS:2025-09-10T00:00:00\", \"TS:2025-10-01T00:00:00\", \"TS:2025-09-19T00:00:00\", \"TS:2025-09-04T00...",
+  "column": "<index>",
+  "kind": "label",
+  "row": null
+ },
+ "first_divergent_line": null,
+ "locally_silent": null,
+ "magnitude": "SUBSTANTIVE",
+ "pair": "E0a~E2",
+ "program_id": "naive/M_QF5_09",
+ "run_problem": null,
+ "silent": true,
+ "silent_all_magnitudes": true,
+ "silent_pilot_rule": true,
+ "silent_pilotdef": true,
+ "target_status": "ok",
+ "task_id": "M_QF5_09",
+ "warned_E0a": {
+  "pilot": false,
+  "prereg": false
+ },
+ "warned_target": {
+  "pilot": false,
+  "prereg": false
+ },
+ "warning_lines": [],
+ "warning_only": false
+}

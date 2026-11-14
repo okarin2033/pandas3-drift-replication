@@ -1,0 +1,11 @@
+You are given CSV file(s) in the current working directory:
+
+- admissions.csv: Hospital admissions (260 rows): admission_id (whole number), age (years, whole number; about 5% empty), ward (cardiology, oncology, maternity, orthopedics or neurology; capital letters and spaces are inconsistent), stay_days (whole number; about 3% empty), charge (two decimals; about 5% empty).
+
+Task: Make a table of the charges indexed by admission_id (the ids exactly as in the file). Then renumber the admissions from 1 upward in file order, using NumPy array arithmetic on the ids, and add the new numbers as a column called new_number. `result` should be the table indexed by admission_id with the columns charge and new_number.
+
+Requirements:
+- Write a complete Python script that reads the file(s) from the current directory.
+- Use only pandas, numpy and the Python standard library.
+- Store the final answer in a top-level variable named `result`.
+- Reply with a single Python code block.

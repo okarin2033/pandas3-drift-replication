@@ -1,0 +1,11 @@
+You are given CSV file(s) in the current working directory:
+
+- code_changes.csv: Product code changes (150 rows): product (name with model), stock_qty (whole number), old_code and new_code (four-digit whole numbers; the code is unchanged in 100 rows). No empty cells.
+
+Task: Index the table by old_code so that it can be used as a lookup of the new code. For every row, in file order, tell whether the new code is higher than the old code. `result` should be the sequence of True/False values.
+
+Requirements:
+- Write a complete Python script that reads the file(s) from the current directory.
+- Use only pandas, numpy and the Python standard library.
+- Store the final answer in a top-level variable named `result`.
+- Reply with a single Python code block.

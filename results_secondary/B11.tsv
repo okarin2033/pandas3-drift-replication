@@ -1,0 +1,5 @@
+pair	stratum	tier	models_in_tier	models_present	models_entering	rate_model_equal	boot_lo	boot_hi	boot_dropped
+E0a~E1	M	T-small-open	4	4	4	0.062208	0.041257	0.086339	0
+E0a~E1	M	T-large-open	1	1	1	0.052464	0.027027	0.080131	0
+E0a~E1	M	T-small-closed	3	3	3	0.048842	0.025173	0.075593	0
+E0a~E1	M	T-frontier	2	2	2	0.065158	0.036088	0.098176	0

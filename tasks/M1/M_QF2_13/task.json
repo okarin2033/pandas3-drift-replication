@@ -1,0 +1,91 @@
+{
+ "id": "M_QF2_13",
+ "stratum": "M",
+ "family": "QF2_DATETIME",
+ "generic_family": null,
+ "catalogue_row": "D03",
+ "files": [
+  {
+   "path": "QF2_DATETIME/quarterly_revenue.csv",
+   "description": "Company revenue per calendar quarter (30 rows, oldest first, one row per quarter with no gaps): quarter_start (first day of the quarter as text, YYYY-MM-DD, from 2019-01-01 to 2026-04-01), revenue (whole number), new_accounts (whole number)."
+  }
+ ],
+ "task_text": "For every quarter in the revenue file, report the moment at which the quarter closes (its last instant) together with the revenue. `result` should be a table with the columns quarter_end and revenue, oldest quarter first.",
+ "allowed_task_words": [
+  "last instant"
+ ],
+ "invited_ids_author": [
+  "D03"
+ ],
+ "order_significant": true,
+ "sort_keys": [
+  "quarter_end"
+ ],
+ "dtype_significant": false,
+ "intended_computation": "For each of the 30 quarters, compute the last instant of the quarter that starts at quarter_start (e.g. 2019-03-31 23:59:59.999...) and return it with revenue, ascending by quarter_end.",
+ "acceptable_variants": {
+  "row_order": "ties_only",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": "the last instant may be given to the second, millisecond, microsecond or nanosecond."
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 30
+   }
+  },
+  {
+   "check": "date_year_in_range",
+   "args": {
+    "columns": [
+     "quarter_end"
+    ],
+    "min_year": 2019,
+    "max_year": 2026
+   }
+  },
+  {
+   "check": "sorted_by",
+   "args": {
+    "keys": [
+     "quarter_end"
+    ],
+    "ascending": [
+     true
+    ]
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "BOTH",
+  "reason": "the quarter end moves from the last nanosecond to the last microsecond; both mark the close of the quarter"
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M1",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 in package TASKS_M1; task text, card, naive solution, reference and predicted direction were prepared there."
+}

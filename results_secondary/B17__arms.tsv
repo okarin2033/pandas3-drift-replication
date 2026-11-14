@@ -1,0 +1,9 @@
+model	arm	x	n	generated	rate	wilson_lo	wilson_hi	rare_event	cp_deff_upper
+qwen__qwen3.5-9b	no hint	0	90	120	0.000000	0.000000	0.040936	yes	0.041122
+qwen__qwen3.5-9b	hint	0	89	120	0.000000	0.000000	0.041377	yes	0.041041
+google__gemma-4-31b-it	no hint	1	120	120	0.008333	0.001473	0.045696	yes	0.048826
+google__gemma-4-31b-it	hint	5	120	120	0.041667	0.017927	0.093841	no	0.127662
+anthropic__claude-haiku-4.5	no hint	2	120	120	0.016667	0.004583	0.058736	yes	0.076640
+anthropic__claude-haiku-4.5	hint	3	118	120	0.025424	0.008684	0.072089	yes	0.081080
+openai__gpt-5.4-mini	no hint	4	118	120	0.033898	0.013260	0.083928	yes	0.114238
+openai__gpt-5.4-mini	hint	8	119	120	0.067227	0.034456	0.127065	no	0.152419

@@ -1,0 +1,13 @@
+package	version	first_upload_utc	yanked_any_file	latest_on_pypi_at_access
+pandas	2.2.3	2024-09-20T13:08:42.347501Z	False	3.1.1
+pandas	2.3.3	2025-09-29T23:16:53.287821Z	False	3.1.1
+pandas	3.0.6	2026-09-17T23:20:20.960376Z	False	3.1.1
+pandas	3.1.1	2026-11-04T15:05:30.116324Z	False	3.1.1
+numpy	2.5.4	2026-10-10T20:02:40.843976Z	False	2.5.4
+pyarrow	26.0.1	2026-11-03T09:54:01.046378Z	False	26.0.1
+python-dateutil	4.0.0	2026-11-01T07:02:40.797470Z	False	4.0.0
+tzdata	2026.6	2026-10-28T09:57:07.276552Z	False	2026.6
+pytz	2026.6	2026-10-29T09:05:45.140432Z	False	2026.6
+scipy	1.18.1	2026-08-21T23:23:44.522812Z	False	1.18.1
+statsmodels	0.15.0	2026-08-27T10:34:19.376888Z	False	0.15.0
+jsonschema	4.26.0	2026-01-07T13:41:05.306692Z	False	4.26.0

@@ -1,0 +1,22 @@
+selected	openrouter_id	open_weights	usd_per_M_prompt	usd_per_M_completion	vendor_knowledge_cutoff	cutoff_vs_pandas3_0_0_(2026-01-21)	cutoff_source	openrouter_cutoff_field_(not_vendor)	context	hf_id	usd_per_program_nothink	vendor_lifecycle_status_(2026-11-11)
+yes	openai/gpt-oss-20b	yes	0.030	0.130	2024-06-01	before	https://developers.openai.com/api/docs/models/gpt-oss-20b (accessed 2026-11-11)	2024-06-30	131072	openai/gpt-oss-20b	0.000083	not checked
+yes	anthropic/claude-haiku-5.5	no	0.100	0.500	2026-06 reliable; 2026-06 training data	after	https://platform.claude.com/docs/en/models/overview (2026-11-11)	None	1000000	None	0.000314	not checked
+yes	qwen/qwen3.6-35b-a3b	yes	0.100	0.900	not documented	unknown	https://huggingface.co/Qwen/Qwen3.6-35B-A3B card has no cutoff (2026-11-11)	None	262144	Qwen/Qwen3.6-35B-A3B	0.000534	not checked
+yes	qwen/qwen3.5-9b	yes	0.170	0.250	not documented	unknown	https://huggingface.co/Qwen/Qwen3.5-9B card has no cutoff (2026-11-11)	None	262144	Qwen/Qwen3.5-9B	0.000204	not checked
+yes	google/gemma-4-31b-it	yes	0.200	0.400	2025-01 (pre-training data)	before	https://huggingface.co/google/gemma-4-31b-it and https://ai.google.dev/gemma/docs/core/model_card_4 (2026-11-11)	None	262144	google/gemma-4-31B-it	0.000298	not checked
+yes	deepseek/deepseek-v3.2	yes	0.260	0.380	not documented	unknown	https://huggingface.co/deepseek-ai/DeepSeek-V3.2 card has no cutoff (2026-11-11)	None	163840	deepseek-ai/DeepSeek-V3.2	0.000310	not checked
+yes	openai/gpt-5.4-mini	no	0.750	4.500	2025-08-31	before	https://developers.openai.com/api/docs/models/gpt-5.4-mini (2026-11-11)	2025-08-31	400000		0.002767	not checked
+yes	anthropic/claude-haiku-4.5	no	1.000	5.000	2025-02 reliable; 2025-07 training data	before	https://platform.claude.com/docs/en/models/haiku-4-5/overview (2026-11-11)	None	200000		0.003140	Legacy; retirement "not sooner than October 15, 2026" (date passed; may be retired at any time); still listed on OpenRouter 2026-11-11. Source: https://platform.claude.com/docs/en/models/haiku-4-5/overview (2026-11-11), via REVIEW_PREREG.md M6
+yes	openai/gpt-5.6-terra	no	2.000	12.000	2026-02-16	after	https://developers.openai.com/api/docs/models/gpt-5.6-terra (2026-11-11)	2026-02-16	1050000	None	0.007380	not checked
+yes	anthropic/claude-sonnet-5.5	no	2.000	10.000	2026-06 reliable; 2026-06 training data	after	https://platform.claude.com/docs/en/models/overview (2026-11-11)	None	1000000	None	0.006280	not checked
+no	nvidia/nemotron-3-nano-30b-a3b	yes	0.060	0.240	not checked	unknown	not fetched	None	262144	nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16	0.000155	not checked
+no	ibm-granite/granite-4.2-8b	yes	0.060	0.250	not checked	unknown	not fetched	None	131072	ibm-granite/granite-4.2-8b	0.000161	not checked
+no	z-ai/glm-4.7-flash	yes	0.061	0.400	not checked	unknown	not fetched	None	200000	zai-org/GLM-4.7-Flash	0.000244	not checked
+no	google/gemma-4-26b-a4b-it	yes	0.080	0.100	2025-01 (pre-training data)	before	https://ai.google.dev/gemma/docs/core/model_card_4 (2026-11-11)	None	262144	google/gemma-4-26B-A4B-it	0.000086	not checked
+no	mistralai/ministral-8b-2512	yes	0.150	0.150	not documented	unknown	https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512 card has no cutoff (2026-11-11)	None	262144	mistralai/Ministral-3-8B-Instruct-2512	0.000141	not checked
+no	openai/gpt-oss-120b	yes	0.150	0.600	2024-06 (OpenRouter field only; vendor page not fetched)	before	not verified	2024-06-30	131072	openai/gpt-oss-120b	0.000389	not checked
+no	mistralai/mistral-small-2603	yes	0.150	0.600	not checked	unknown	not fetched	None	262144	mistralai/Mistral-Small-4-119B-2603	0.000389	not checked
+no	qwen/qwen3-coder-30b-a3b-instruct	yes	0.150	0.600	not checked	unknown	not fetched	2025-06-30	262144	Qwen/Qwen3-Coder-30B-A3B-Instruct	0.000389	not checked
+no	google/gemini-3.8-flash	no	0.825	4.125	not documented	unknown	https://aistudio.google.com/docs/models/gemini-3.8-flash states none (2026-11-11)	None	1048576	None	0.002590	not checked
+no	anthropic/claude-sonnet-4.6	no	3.000	15.000	not checked	unknown	not fetched	None	1000000		0.009420	not checked
+no	anthropic/claude-opus-5.5	no	4.000	20.000	2026-06 reliable	after	https://platform.claude.com/docs/en/models/overview (2026-11-11)	None	1000000	None	0.012560	not checked

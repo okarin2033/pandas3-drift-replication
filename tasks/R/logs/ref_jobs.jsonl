@@ -1,0 +1,9 @@
+{"program_id": "ref/R_01", "program_path": "tasks/R/R_01/reference.py", "task_id": "R_01", "card": "tasks/R/R_01/task.json", "files": ["GEN/riders.csv", "GEN/stations.csv"]}
+{"program_id": "ref/R_02", "program_path": "tasks/R/R_02/reference.py", "task_id": "R_02", "card": "tasks/R/R_02/task.json", "files": ["GEN/riders.csv"]}
+{"program_id": "ref/R_03", "program_path": "tasks/R/R_03/reference.py", "task_id": "R_03", "card": "tasks/R/R_03/task.json", "files": ["GEN/trips.csv", "GEN/stations.csv"]}
+{"program_id": "ref/R_04", "program_path": "tasks/R/R_04/reference.py", "task_id": "R_04", "card": "tasks/R/R_04/task.json", "files": ["GEN/trips.csv"]}
+{"program_id": "ref/R_05", "program_path": "tasks/R/R_05/reference.py", "task_id": "R_05", "card": "tasks/R/R_05/task.json", "files": ["GEN/riders.csv"]}
+{"program_id": "ref/R_06", "program_path": "tasks/R/R_06/reference.py", "task_id": "R_06", "card": "tasks/R/R_06/task.json", "files": ["GEN/riders.csv"]}
+{"program_id": "ref/R_07", "program_path": "tasks/R/R_07/reference.py", "task_id": "R_07", "card": "tasks/R/R_07/task.json", "files": ["GEN/riders.csv"]}
+{"program_id": "ref/R_08", "program_path": "tasks/R/R_08/reference.py", "task_id": "R_08", "card": "tasks/R/R_08/task.json", "files": ["GEN/riders.csv"]}
+{"program_id": "ref/R_09", "program_path": "tasks/R/R_09/reference.py", "task_id": "R_09", "card": "tasks/R/R_09/task.json", "files": ["GEN/trips.csv"]}

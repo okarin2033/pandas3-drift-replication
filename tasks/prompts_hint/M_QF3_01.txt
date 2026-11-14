@@ -1,0 +1,12 @@
+You are given CSV file(s) in the current working directory:
+
+- bookings.csv: Hotel bookings (300 rows): booking_id (whole number), state (paid, cancelled, refunded or pending; mostly lower case, some with other capitals or extra spaces), total (booking amount, two decimals; refunded bookings are negative), nights (whole number; about 2% empty).
+
+Task: Cancelled bookings bring no revenue, so set their total to 0 (the state labels vary in capital letters and spaces). Then report the revenue per state, with the state names in lower case without surrounding spaces. `result` should be a Series indexed by state with the summed totals.
+
+Requirements:
+- Write a complete Python script that reads the file(s) from the current directory.
+- Use only pandas, numpy and the Python standard library.
+- Store the final answer in a top-level variable named `result`.
+- Reply with a single Python code block.
+- The script will run with the latest pandas 3 release.

@@ -1,0 +1,11 @@
+You are given CSV file(s) in the current working directory:
+
+- weather_hourly.csv: Hourly weather for the city, September 2025 (720 rows, one per hour in time order, no gaps): observed_at (timestamp written as YYYY-MM-DD HH:MM), temp_c (degrees C, one decimal; about 2% empty), rain_mm (one decimal), wind_kmh (whole number), sky (clear, cloudy, fog or rain; capital letters and spaces are inconsistent).
+
+Task: Compute six-hour averages of temp_c and wind_kmh, in blocks starting at 00:00, 06:00, 12:00 and 18:00 each day. `result` should be a table indexed by the start of each block with the columns temp_c and wind_kmh, rounded to 2 decimals.
+
+Requirements:
+- Write a complete Python script that reads the file(s) from the current directory.
+- Use only pandas, numpy and the Python standard library.
+- Store the final answer in a top-level variable named `result`.
+- Reply with a single Python code block.

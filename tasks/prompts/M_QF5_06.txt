@@ -1,0 +1,11 @@
+You are given CSV file(s) in the current working directory:
+
+- memberships.csv: Loyalty memberships (200 rows): member_ref (six-digit reference with leading zeros), plan (bronze, silver, gold or platinum), city (city name; capital letters and spaces are inconsistent in some rows), points (whole number, multiples of 50; many members share the same points).
+
+Task: Count how many members share each combination of plan and points. List the combinations ordered by plan (alphabetically) and then by points (lowest first). `result` should be the first five combinations of that list with their member counts, as a Series indexed by plan and points.
+
+Requirements:
+- Write a complete Python script that reads the file(s) from the current directory.
+- Use only pandas, numpy and the Python standard library.
+- Store the final answer in a top-level variable named `result`.
+- Reply with a single Python code block.

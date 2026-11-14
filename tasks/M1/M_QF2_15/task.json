@@ -1,0 +1,82 @@
+{
+ "id": "M_QF2_15",
+ "stratum": "M",
+ "family": "QF2_DATETIME",
+ "generic_family": null,
+ "catalogue_row": "D05",
+ "files": [
+  {
+   "path": "QF2_DATETIME/appointments.csv",
+   "description": "Clinic appointments in New York (160 rows, February to November 2025, so the clock changes in March and November fall inside the data): appt_id (whole number), local_start (New York wall-clock start, text YYYY-MM-DD HH:MM, no UTC offset), start_with_offset (the same moment as ISO text with its UTC offset, e.g. \"2025-06-13T08:45:00-04:00\"), clinic (Harbor, Midtown or Riverside; capital letters and spaces are inconsistent), duration_min (whole minutes; about 3% empty)."
+  }
+ ],
+ "task_text": "Every appointment gets a follow-up visit four weeks later at the same New York wall-clock time (local_start is New York local time). `result` should be a table with the columns appt_id and follow_up_utc, the follow-up time converted to UTC and written as text 'YYYY-MM-DD HH:MM', in file order.",
+ "allowed_task_words": [
+  "wall-clock time",
+  "New York",
+  "UTC"
+ ],
+ "invited_ids_author": [
+  "D05"
+ ],
+ "order_significant": true,
+ "sort_keys": [
+  "__index__"
+ ],
+ "dtype_significant": false,
+ "intended_computation": "Add 28 calendar days to each New York wall-clock start (160 appointments), localise to New York and convert to UTC, written as 'YYYY-MM-DD HH:MM'.",
+ "acceptable_variants": {
+  "row_order": "ties_only",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": ""
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 160
+   }
+  },
+  {
+   "check": "date_year_in_range",
+   "args": {
+    "columns": [
+     "follow_up_utc"
+    ],
+    "min_year": 2025,
+    "max_year": 2025
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "FIX",
+  "reason": "with the 2.x time-zone library adding weeks to a stdlib datetime keeps the old offset, so UTC is off by one hour across the clock change"
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M1",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 in package TASKS_M1; task text, card, naive solution, reference and predicted direction were prepared there."
+}

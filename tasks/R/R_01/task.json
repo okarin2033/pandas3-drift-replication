@@ -1,0 +1,102 @@
+{
+ "id": "R_01",
+ "stratum": "R",
+ "family": null,
+ "generic_family": null,
+ "catalogue_row": null,
+ "files": [
+  {
+   "path": "GEN/riders.csv",
+   "description": "Bike-share riders, one per row (400 rows): rider_id (six-digit id with leading zeros), display_name (person name, some with accented letters), home_district (one of 6 districts such as \"Old Town\"), membership (casual, monthly or annual) - these three text columns have inconsistent capital letters and stray spaces; joined_on (date as text, YYYY-MM-DD; about 2% empty), birth_year (whole number; about 4% empty), credit_balance (two decimals, can be negative; about 5% empty)."
+  },
+  {
+   "path": "GEN/stations.csv",
+   "description": "Bike-share stations (48 rows, one per station): station_code (four-digit code with leading zeros, e.g. \"0040\"), station_name (text, a few with accented letters), district (same 6 districts as riders.csv; capital letters and spaces are inconsistent), docks (whole number), opened_on (date as text, YYYY-MM-DD)."
+  }
+ ],
+ "task_text": "For every rider in riders.csv, find in stations.csv the station whose opened_on date is the latest one on or before the rider's joined_on date, and attach that station's docks to the rider. Keep exactly the riders' rows, one per rider; a rider with an empty joined_on, or with no station opened on or before that date, gets an empty docks value. `result` should be a table with the columns joined_on, birth_year and docks.",
+ "allowed_task_words": [],
+ "invited_ids_author": [
+  "D01"
+ ],
+ "order_significant": false,
+ "sort_keys": [],
+ "dtype_significant": false,
+ "intended_computation": "Read riders.csv and stations.csv; for each rider (file order kept or not) take the station with the latest opened_on <= joined_on (dates compared as dates) and attach its docks; riders with an empty joined_on or with no such station get a missing docks; columns joined_on, birth_year, docks; 400 rows.",
+ "acceptable_variants": {
+  "row_order": "any",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": "joined_on may be text or timestamps; birth_year and docks may be float with NaN or nullable integers; row order free; if several stations share that latest opened_on, the docks of any of them is accepted"
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 400
+   }
+  },
+  {
+   "check": "columns_present",
+   "args": {
+    "columns": [
+     "joined_on",
+     "birth_year",
+     "docks"
+    ]
+   }
+  },
+  {
+   "check": "numeric_in_range",
+   "args": {
+    "columns": [
+     "docks"
+    ],
+    "min": 12,
+    "max": 30
+   }
+  },
+  {
+   "check": "date_year_in_range",
+   "args": {
+    "columns": [
+     "joined_on"
+    ],
+    "min_year": 2021,
+    "max_year": 2025
+   }
+  }
+ ],
+ "predicted_direction": null,
+ "naive_path": null,
+ "reference_path": "reference.py",
+ "so_question_id": 79883287,
+ "so_url": "https://stackoverflow.com/q/79883287",
+ "so_creation_date": "2026-02-05",
+ "so_score": 4,
+ "so_licence": "CC BY-SA 4.0",
+ "intent_summary": "Attach to every row of a first time-stamped table the value from a second time-stamped table whose time is the latest one at or before that row's time, keeping exactly the rows of the first table.",
+ "column_map": {
+  "first table: time": "riders.csv:joined_on",
+  "first table: value carried along": "riders.csv:birth_year",
+  "second table: time": "stations.csv:opened_on",
+  "second table: value attached": "stations.csv:docks"
+ },
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:R_BUILD",
+ "status": "prepared",
+ "notes": "Stratum R (real question, paraphrased onto the general fixtures under the section 4.3 rule). Intent, summary and column map sealed 2026-11-11T13:44:13Z (tasks/R/INTENTS_FROZEN.sha256) before the catalogue was opened; card, reference and invited_ids_author drafted 2026-11-11 by pkg:R_BUILD. Prepared (Amendment 9). No question text or code is stored in the study folder."
+}

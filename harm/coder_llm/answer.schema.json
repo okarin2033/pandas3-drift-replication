@@ -1,0 +1,14 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "pandas3_full/harm/coder_llm/answer.schema.json",
+ "title": "One harm-coding answer (coder A, a human coder B, or an LLM coder B from outside the study set)",
+ "$comment": "Written 2026-11-11 by pkg:ATTRIB_HARM (FULL_PREREG sections 10.3, 10.4). drafted_by: pkg:ATTRIB_HARM; status: prepared. Implemented without a JSON-Schema library in harness/coding_sheet.py validate_answer(). Codes are mapped to HARM_3X / FIX_3X / BOTH_ACCEPTABLE / NEITHER / UNDETERMINABLE only after coding, with the separate key file (coding_sheet.py decode).",
+ "type": "object",
+ "additionalProperties": false,
+ "required": ["item_id", "code", "reason"],
+ "properties": {
+  "item_id": {"type": "string", "pattern": "^C\\d{4}$"},
+  "code": {"enum": ["A_ONLY_CORRECT", "B_ONLY_CORRECT", "BOTH_ACCEPTABLE", "NEITHER", "UNDETERMINABLE"]},
+  "reason": {"type": "string", "minLength": 1, "maxLength": 600}
+ }
+}

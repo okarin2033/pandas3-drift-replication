@@ -1,0 +1,76 @@
+{
+ "id": "M_QF7_06",
+ "stratum": "M",
+ "family": "QF7_INDEX_REDUCE",
+ "generic_family": null,
+ "catalogue_row": "I02",
+ "files": [
+  {
+   "path": "QF7_INDEX_REDUCE/parcel_rates.csv",
+   "description": "Parcel price table (120 rows, sorted by weight_kg, each weight once): weight_kg (two decimals, from 0.40 to 54.05, never a whole number), zones (whole number 1-5), fee (two decimals; about 4% empty)."
+  }
+ ],
+ "task_text": "What is the average fee for parcels weighing from 5 kg up to 15 kg (empty fees ignored)? `result` should be that number.",
+ "allowed_task_words": [],
+ "invited_ids_author": [
+  "I02"
+ ],
+ "order_significant": false,
+ "sort_keys": [],
+ "dtype_significant": false,
+ "intended_computation": "Mean of the non-empty fees of the 22 rows with 5 <= weight_kg <= 15.",
+ "acceptable_variants": {
+  "row_order": "any",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": "to 6 significant digits."
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "numeric_in_range",
+   "args": {
+    "columns": [
+     "__values__"
+    ],
+    "min": 0,
+    "max": null
+   }
+  },
+  {
+   "check": "result_kind",
+   "args": {
+    "kind": "scalar"
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "HARM",
+  "reason": "The integer slice on the weight index meant weights 5-15 on 2.x; on 3.x it is positions 5-14, so other parcels are averaged."
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M2",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 by pkg:TASKS_M2 for catalogue row I02; naive.py shows the invited idiom, reference.py is the version-robust reference."
+}

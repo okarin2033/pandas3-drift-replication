@@ -1,0 +1,6 @@
+fit	contrast	estimable	why	estimate	se	lo	hi	odds_ratio	or_lo	or_hi
+GEE silent ~ model	H2a (mean BEFORE - mean AFTER, log-odds)	yes		0.317166	0.205757	-0.086110	0.720443	1.373231	0.917493	2.055344
+GEE silent ~ model	H2b (haiku-4.5 - haiku-5.5, log-odds)	yes		0.079857	0.296917	-0.502089	0.661804	1.083132	0.605265	1.938285
+GEE silent ~ model + reasoning tokens per 1,000	H2a (mean BEFORE - mean AFTER, log-odds)	yes		0.320568	0.208534	-0.088152	0.729288	1.377910	0.915621	2.073603
+GEE silent ~ model + reasoning tokens per 1,000	H2b (haiku-4.5 - haiku-5.5, log-odds)	yes		0.080442	0.299801	-0.507157	0.668042	1.083766	0.602205	1.950415
+GEE silent ~ model + reasoning tokens per 1,000	reasoning tokens per 1,000 (log-odds per 1,000)	yes		-0.069438	0.025619	-0.119650	-0.019226	0.932918	0.887231	0.980957

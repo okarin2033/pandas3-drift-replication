@@ -1,0 +1,497 @@
+pair	variant	outcome	model	stratum	family	split	x	n	n_own	generated	rate	wilson_lo	wilson_hi	boot_lo	boot_hi	boot_dropped	rare_event	cp_deff_upper	entering_models
+V-clean__E0a~V-clean__E1	all tasks	silent	anthropic__claude-haiku-4.5	M			10	629	634	640	0.015898	0.008658	0.029016	0.001582	0.034755	0	no	0.042639	
+V-clean__E0a~V-clean__E1	all tasks	silent	anthropic__claude-haiku-4.5	M	QF1		1	75	80	80	0.013333	0.002358	0.071734				yes	0.089874	
+V-clean__E0a~V-clean__E1	all tasks	silent	anthropic__claude-haiku-4.5	M	QF2		9	79	79	80	0.113924	0.061106	0.202548				no	0.301554	
+V-clean__E0a~V-clean__E1	all tasks	silent	anthropic__claude-haiku-4.5	M	QF3		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+V-clean__E0a~V-clean__E1	all tasks	silent	anthropic__claude-haiku-4.5	M	QF4		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+V-clean__E0a~V-clean__E1	all tasks	silent	anthropic__claude-haiku-4.5	M	QF5		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+V-clean__E0a~V-clean__E1	all tasks	silent	anthropic__claude-haiku-4.5	M	QF6		0	77	77	80	0.000000	0.000000	0.047518				yes	0.066273	
+V-clean__E0a~V-clean__E1	all tasks	silent	anthropic__claude-haiku-4.5	M	QF7		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+V-clean__E0a~V-clean__E1	all tasks	silent	anthropic__claude-haiku-4.5	M	QF8		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+V-clean__E0a~V-clean__E1	all tasks	silent	anthropic__claude-haiku-5.5	M			15	640	640	640	0.023438	0.014254	0.038308	0.006250	0.043750	0	no	0.051490	
+V-clean__E0a~V-clean__E1	all tasks	silent	anthropic__claude-haiku-5.5	M	QF1		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+V-clean__E0a~V-clean__E1	all tasks	silent	anthropic__claude-haiku-5.5	M	QF2		14	80	80	80	0.175000	0.107206	0.272575				no	0.357211	
+V-clean__E0a~V-clean__E1	all tasks	silent	anthropic__claude-haiku-5.5	M	QF3		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+V-clean__E0a~V-clean__E1	all tasks	silent	anthropic__claude-haiku-5.5	M	QF4		1	80	80	80	0.012500	0.002210	0.067463				yes	0.086659	
+V-clean__E0a~V-clean__E1	all tasks	silent	anthropic__claude-haiku-5.5	M	QF5		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+V-clean__E0a~V-clean__E1	all tasks	silent	anthropic__claude-haiku-5.5	M	QF6		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+V-clean__E0a~V-clean__E1	all tasks	silent	anthropic__claude-haiku-5.5	M	QF7		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+V-clean__E0a~V-clean__E1	all tasks	silent	anthropic__claude-haiku-5.5	M	QF8		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+V-clean__E0a~V-clean__E1	all tasks	silent	anthropic__claude-sonnet-5.5	M			16	640	640	640	0.025000	0.015446	0.040222	0.001563	0.054688	0	no	0.060281	
+V-clean__E0a~V-clean__E1	all tasks	silent	anthropic__claude-sonnet-5.5	M	QF1		5	80	80	80	0.062500	0.026989	0.138101				no	0.263957	
+V-clean__E0a~V-clean__E1	all tasks	silent	anthropic__claude-sonnet-5.5	M	QF2		6	80	80	80	0.075000	0.034825	0.154120				no	0.260113	
+V-clean__E0a~V-clean__E1	all tasks	silent	anthropic__claude-sonnet-5.5	M	QF3		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+V-clean__E0a~V-clean__E1	all tasks	silent	anthropic__claude-sonnet-5.5	M	QF4		5	80	80	80	0.062500	0.026989	0.138101				no	0.263957	
+V-clean__E0a~V-clean__E1	all tasks	silent	anthropic__claude-sonnet-5.5	M	QF5		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+V-clean__E0a~V-clean__E1	all tasks	silent	anthropic__claude-sonnet-5.5	M	QF6		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+V-clean__E0a~V-clean__E1	all tasks	silent	anthropic__claude-sonnet-5.5	M	QF7		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+V-clean__E0a~V-clean__E1	all tasks	silent	anthropic__claude-sonnet-5.5	M	QF8		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+V-clean__E0a~V-clean__E1	all tasks	silent	deepseek__deepseek-v3.2	M			18	629	629	640	0.028617	0.018177	0.044780	0.009585	0.049600	0	no	0.056106	
+V-clean__E0a~V-clean__E1	all tasks	silent	deepseek__deepseek-v3.2	M	QF1		1	79	79	80	0.012658	0.002238	0.068276				yes	0.087271	
+V-clean__E0a~V-clean__E1	all tasks	silent	deepseek__deepseek-v3.2	M	QF2		13	76	76	80	0.171053	0.102780	0.270979				no	0.357896	
+V-clean__E0a~V-clean__E1	all tasks	silent	deepseek__deepseek-v3.2	M	QF3		1	79	79	80	0.012658	0.002238	0.068276				yes	0.087271	
+V-clean__E0a~V-clean__E1	all tasks	silent	deepseek__deepseek-v3.2	M	QF4		2	78	78	80	0.025641	0.007060	0.088753				yes	0.114092	
+V-clean__E0a~V-clean__E1	all tasks	silent	deepseek__deepseek-v3.2	M	QF5		1	79	79	80	0.012658	0.002238	0.068276				yes	0.087271	
+V-clean__E0a~V-clean__E1	all tasks	silent	deepseek__deepseek-v3.2	M	QF6		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+V-clean__E0a~V-clean__E1	all tasks	silent	deepseek__deepseek-v3.2	M	QF7		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+V-clean__E0a~V-clean__E1	all tasks	silent	deepseek__deepseek-v3.2	M	QF8		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+V-clean__E0a~V-clean__E1	all tasks	silent	google__gemma-4-31b-it	M			24	638	638	640	0.037618	0.025407	0.055363	0.014085	0.065934	0	no	0.069556	
+V-clean__E0a~V-clean__E1	all tasks	silent	google__gemma-4-31b-it	M	QF1		3	80	80	80	0.037500	0.012835	0.104547				yes	0.165881	
+V-clean__E0a~V-clean__E1	all tasks	silent	google__gemma-4-31b-it	M	QF2		9	80	80	80	0.112500	0.060327	0.200182				no	0.276447	
+V-clean__E0a~V-clean__E1	all tasks	silent	google__gemma-4-31b-it	M	QF3		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+V-clean__E0a~V-clean__E1	all tasks	silent	google__gemma-4-31b-it	M	QF4		3	80	80	80	0.037500	0.012835	0.104547				yes	0.165881	
+V-clean__E0a~V-clean__E1	all tasks	silent	google__gemma-4-31b-it	M	QF5		6	80	80	80	0.075000	0.034825	0.154120				no	0.260113	
+V-clean__E0a~V-clean__E1	all tasks	silent	google__gemma-4-31b-it	M	QF6		3	80	80	80	0.037500	0.012835	0.104547				yes	0.165881	
+V-clean__E0a~V-clean__E1	all tasks	silent	google__gemma-4-31b-it	M	QF7		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+V-clean__E0a~V-clean__E1	all tasks	silent	google__gemma-4-31b-it	M	QF8		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+V-clean__E0a~V-clean__E1	all tasks	silent	openai__gpt-5.4-mini	M			28	635	635	640	0.044094	0.030681	0.062991	0.017323	0.074135	0	no	0.079896	
+V-clean__E0a~V-clean__E1	all tasks	silent	openai__gpt-5.4-mini	M	QF1		3	80	80	80	0.037500	0.012835	0.104547				yes	0.165881	
+V-clean__E0a~V-clean__E1	all tasks	silent	openai__gpt-5.4-mini	M	QF2		17	80	80	80	0.212500	0.137124	0.314222				no	0.406140	
+V-clean__E0a~V-clean__E1	all tasks	silent	openai__gpt-5.4-mini	M	QF3		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+V-clean__E0a~V-clean__E1	all tasks	silent	openai__gpt-5.4-mini	M	QF4		4	79	79	80	0.050633	0.019864	0.123077				yes	0.216979	
+V-clean__E0a~V-clean__E1	all tasks	silent	openai__gpt-5.4-mini	M	QF5		4	78	78	80	0.051282	0.020121	0.124567				yes	0.217871	
+V-clean__E0a~V-clean__E1	all tasks	silent	openai__gpt-5.4-mini	M	QF6		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+V-clean__E0a~V-clean__E1	all tasks	silent	openai__gpt-5.4-mini	M	QF7		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+V-clean__E0a~V-clean__E1	all tasks	silent	openai__gpt-5.4-mini	M	QF8		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+V-clean__E0a~V-clean__E1	all tasks	silent	openai__gpt-5.6-terra	M			42	636	636	640	0.066038	0.049225	0.088062	0.031348	0.104851	0	no	0.109529	
+V-clean__E0a~V-clean__E1	all tasks	silent	openai__gpt-5.6-terra	M	QF1		11	79	79	80	0.139241	0.079565	0.232373				no	0.349223	
+V-clean__E0a~V-clean__E1	all tasks	silent	openai__gpt-5.6-terra	M	QF2		20	80	80	80	0.250000	0.168062	0.354847				no	0.455174	
+V-clean__E0a~V-clean__E1	all tasks	silent	openai__gpt-5.6-terra	M	QF3		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+V-clean__E0a~V-clean__E1	all tasks	silent	openai__gpt-5.6-terra	M	QF4		4	78	78	80	0.051282	0.020121	0.124567				yes	0.217880	
+V-clean__E0a~V-clean__E1	all tasks	silent	openai__gpt-5.6-terra	M	QF5		5	80	80	80	0.062500	0.026989	0.138101				no	0.263957	
+V-clean__E0a~V-clean__E1	all tasks	silent	openai__gpt-5.6-terra	M	QF6		2	80	80	80	0.025000	0.006883	0.086644				yes	0.113188	
+V-clean__E0a~V-clean__E1	all tasks	silent	openai__gpt-5.6-terra	M	QF7		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+V-clean__E0a~V-clean__E1	all tasks	silent	openai__gpt-5.6-terra	M	QF8		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+V-clean__E0a~V-clean__E1	all tasks	silent	openai__gpt-oss-20b	M			27	591	592	640	0.045685	0.031585	0.065653	0.018803	0.077052	0	no	0.082017	
+V-clean__E0a~V-clean__E1	all tasks	silent	openai__gpt-oss-20b	M	QF1		8	77	77	80	0.103896	0.053593	0.191844				no	0.303129	
+V-clean__E0a~V-clean__E1	all tasks	silent	openai__gpt-oss-20b	M	QF2		13	71	71	80	0.183099	0.110247	0.288482				no	0.381142	
+V-clean__E0a~V-clean__E1	all tasks	silent	openai__gpt-oss-20b	M	QF3		0	73	74	80	0.000000	0.000000	0.049992				yes	0.067864	
+V-clean__E0a~V-clean__E1	all tasks	silent	openai__gpt-oss-20b	M	QF4		5	73	73	80	0.068493	0.029609	0.150521				no	0.199593	
+V-clean__E0a~V-clean__E1	all tasks	silent	openai__gpt-oss-20b	M	QF5		1	78	78	80	0.012821	0.002267	0.069109				yes	0.087897	
+V-clean__E0a~V-clean__E1	all tasks	silent	openai__gpt-oss-20b	M	QF6		0	70	70	80	0.000000	0.000000	0.052023				yes	0.069175	
+V-clean__E0a~V-clean__E1	all tasks	silent	openai__gpt-oss-20b	M	QF7		0	77	77	80	0.000000	0.000000	0.047518				yes	0.066273	
+V-clean__E0a~V-clean__E1	all tasks	silent	openai__gpt-oss-20b	M	QF8		0	72	72	80	0.000000	0.000000	0.050651				yes	0.068289	
+V-clean__E0a~V-clean__E1	all tasks	silent	qwen__qwen3.5-9b	M			7	456	464	640	0.015351	0.007455	0.031344	0.002151	0.035874	0	no	0.037361	
+V-clean__E0a~V-clean__E1	all tasks	silent	qwen__qwen3.5-9b	M	QF1		1	62	63	80	0.016129	0.002853	0.085867				yes	0.100580	
+V-clean__E0a~V-clean__E1	all tasks	silent	qwen__qwen3.5-9b	M	QF2		5	47	47	80	0.106383	0.046305	0.225943				no	0.275288	
+V-clean__E0a~V-clean__E1	all tasks	silent	qwen__qwen3.5-9b	M	QF3		0	60	60	80	0.000000	0.000000	0.060172				yes	0.074471	
+V-clean__E0a~V-clean__E1	all tasks	silent	qwen__qwen3.5-9b	M	QF4		0	56	58	80	0.000000	0.000000	0.064194				yes	0.077108	
+V-clean__E0a~V-clean__E1	all tasks	silent	qwen__qwen3.5-9b	M	QF5		0	51	51	80	0.000000	0.000000	0.070047				yes	0.080972	
+V-clean__E0a~V-clean__E1	all tasks	silent	qwen__qwen3.5-9b	M	QF6		1	53	58	80	0.018868	0.003338	0.099429				yes	0.122334	
+V-clean__E0a~V-clean__E1	all tasks	silent	qwen__qwen3.5-9b	M	QF7		0	75	75	80	0.000000	0.000000	0.048724				yes	0.067048	
+V-clean__E0a~V-clean__E1	all tasks	silent	qwen__qwen3.5-9b	M	QF8		0	52	52	80	0.000000	0.000000	0.068792				yes	0.080141	
+V-clean__E0a~V-clean__E1	all tasks	silent	qwen__qwen3.6-35b-a3b	M			8	612	613	640	0.013072	0.006638	0.025580	0.003247	0.026144	0	no	0.029337	
+V-clean__E0a~V-clean__E1	all tasks	silent	qwen__qwen3.6-35b-a3b	M	QF1		2	79	79	80	0.025316	0.006970	0.087686				yes	0.113635	
+V-clean__E0a~V-clean__E1	all tasks	silent	qwen__qwen3.6-35b-a3b	M	QF2		6	74	74	80	0.081081	0.037690	0.165819				no	0.186789	
+V-clean__E0a~V-clean__E1	all tasks	silent	qwen__qwen3.6-35b-a3b	M	QF3		0	78	79	80	0.000000	0.000000	0.046938				yes	0.065900	
+V-clean__E0a~V-clean__E1	all tasks	silent	qwen__qwen3.6-35b-a3b	M	QF4		0	76	76	80	0.000000	0.000000	0.048114				yes	0.066655	
+V-clean__E0a~V-clean__E1	all tasks	silent	qwen__qwen3.6-35b-a3b	M	QF5		0	76	76	80	0.000000	0.000000	0.048114				yes	0.066655	
+V-clean__E0a~V-clean__E1	all tasks	silent	qwen__qwen3.6-35b-a3b	M	QF6		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+V-clean__E0a~V-clean__E1	all tasks	silent	qwen__qwen3.6-35b-a3b	M	QF7		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+V-clean__E0a~V-clean__E1	all tasks	silent	qwen__qwen3.6-35b-a3b	M	QF8		0	72	72	80	0.000000	0.000000	0.050651				yes	0.068289	
+V-clean__E0a~V-clean__E1	all tasks	silent	MODEL_EQUAL_MEAN	M							0.031481			0.015890	0.048987	0			10
+V-clean__E0a~V-clean__E1	all tasks	drift_any	anthropic__claude-haiku-4.5	M			15	629	634	640	0.023847	0.014504	0.038971	0.004739	0.046474	0	no	0.055738	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	anthropic__claude-haiku-4.5	M	QF1		1	75	80	80	0.013333	0.002358	0.071734				yes	0.089874	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	anthropic__claude-haiku-4.5	M	QF2		14	79	79	80	0.177215	0.108604	0.275762				no	0.385748	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	anthropic__claude-haiku-4.5	M	QF3		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	anthropic__claude-haiku-4.5	M	QF4		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	anthropic__claude-haiku-4.5	M	QF5		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	anthropic__claude-haiku-4.5	M	QF6		0	77	77	80	0.000000	0.000000	0.047518				yes	0.066273	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	anthropic__claude-haiku-4.5	M	QF7		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	anthropic__claude-haiku-4.5	M	QF8		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	anthropic__claude-haiku-5.5	M			20	640	640	640	0.031250	0.020319	0.047774	0.010937	0.054688	0	no	0.063852	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	anthropic__claude-haiku-5.5	M	QF1		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	anthropic__claude-haiku-5.5	M	QF2		19	80	80	80	0.237500	0.157647	0.341408				no	0.436559	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	anthropic__claude-haiku-5.5	M	QF3		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	anthropic__claude-haiku-5.5	M	QF4		1	80	80	80	0.012500	0.002210	0.067463				yes	0.086659	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	anthropic__claude-haiku-5.5	M	QF5		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	anthropic__claude-haiku-5.5	M	QF6		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	anthropic__claude-haiku-5.5	M	QF7		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	anthropic__claude-haiku-5.5	M	QF8		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	anthropic__claude-sonnet-5.5	M			21	640	640	640	0.032813	0.021560	0.049640	0.007812	0.064062	0	no	0.071100	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	anthropic__claude-sonnet-5.5	M	QF1		5	80	80	80	0.062500	0.026989	0.138101				no	0.263957	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	anthropic__claude-sonnet-5.5	M	QF2		11	80	80	80	0.137500	0.078547	0.229671				no	0.347167	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	anthropic__claude-sonnet-5.5	M	QF3		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	anthropic__claude-sonnet-5.5	M	QF4		5	80	80	80	0.062500	0.026989	0.138101				no	0.263957	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	anthropic__claude-sonnet-5.5	M	QF5		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	anthropic__claude-sonnet-5.5	M	QF6		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	anthropic__claude-sonnet-5.5	M	QF7		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	anthropic__claude-sonnet-5.5	M	QF8		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	deepseek__deepseek-v3.2	M			22	629	629	640	0.034976	0.023209	0.052388	0.014286	0.057416	0	no	0.065103	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	deepseek__deepseek-v3.2	M	QF1		1	79	79	80	0.012658	0.002238	0.068276				yes	0.087271	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	deepseek__deepseek-v3.2	M	QF2		17	76	76	80	0.223684	0.144612	0.329346				no	0.415548	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	deepseek__deepseek-v3.2	M	QF3		1	79	79	80	0.012658	0.002238	0.068276				yes	0.087271	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	deepseek__deepseek-v3.2	M	QF4		2	78	78	80	0.025641	0.007060	0.088753				yes	0.114092	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	deepseek__deepseek-v3.2	M	QF5		1	79	79	80	0.012658	0.002238	0.068276				yes	0.087271	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	deepseek__deepseek-v3.2	M	QF6		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	deepseek__deepseek-v3.2	M	QF7		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	deepseek__deepseek-v3.2	M	QF8		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	google__gemma-4-31b-it	M			29	638	638	640	0.045455	0.031832	0.064518	0.018779	0.076806	0	no	0.080955	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	google__gemma-4-31b-it	M	QF1		3	80	80	80	0.037500	0.012835	0.104547				yes	0.165881	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	google__gemma-4-31b-it	M	QF2		14	80	80	80	0.175000	0.107206	0.272575				no	0.367940	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	google__gemma-4-31b-it	M	QF3		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	google__gemma-4-31b-it	M	QF4		3	80	80	80	0.037500	0.012835	0.104547				yes	0.165881	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	google__gemma-4-31b-it	M	QF5		6	80	80	80	0.075000	0.034825	0.154120				no	0.260113	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	google__gemma-4-31b-it	M	QF6		3	80	80	80	0.037500	0.012835	0.104547				yes	0.165881	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	google__gemma-4-31b-it	M	QF7		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	google__gemma-4-31b-it	M	QF8		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	openai__gpt-5.4-mini	M			33	635	635	640	0.051969	0.037241	0.072084	0.023548	0.083728	0	no	0.090739	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	openai__gpt-5.4-mini	M	QF1		3	80	80	80	0.037500	0.012835	0.104547				yes	0.165881	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	openai__gpt-5.4-mini	M	QF2		22	80	80	80	0.275000	0.189178	0.381441				no	0.479774	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	openai__gpt-5.4-mini	M	QF3		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	openai__gpt-5.4-mini	M	QF4		4	79	79	80	0.050633	0.019864	0.123077				yes	0.216979	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	openai__gpt-5.4-mini	M	QF5		4	78	78	80	0.051282	0.020121	0.124567				yes	0.217871	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	openai__gpt-5.4-mini	M	QF6		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	openai__gpt-5.4-mini	M	QF7		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	openai__gpt-5.4-mini	M	QF8		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	openai__gpt-5.6-terra	M			47	636	636	640	0.073899	0.056026	0.096889	0.037500	0.113386	0	no	0.119459	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	openai__gpt-5.6-terra	M	QF1		11	79	79	80	0.139241	0.079565	0.232373				no	0.349223	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	openai__gpt-5.6-terra	M	QF2		25	80	80	80	0.312500	0.221504	0.420678				no	0.523958	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	openai__gpt-5.6-terra	M	QF3		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	openai__gpt-5.6-terra	M	QF4		4	78	78	80	0.051282	0.020121	0.124567				yes	0.217880	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	openai__gpt-5.6-terra	M	QF5		5	80	80	80	0.062500	0.026989	0.138101				no	0.263957	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	openai__gpt-5.6-terra	M	QF6		2	80	80	80	0.025000	0.006883	0.086644				yes	0.113188	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	openai__gpt-5.6-terra	M	QF7		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	openai__gpt-5.6-terra	M	QF8		0	80	80	80	0.000000	0.000000	0.045818				yes	0.065183	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	openai__gpt-oss-20b	M			32	591	592	640	0.054146	0.038612	0.075438	0.023850	0.087988	0	no	0.093566	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	openai__gpt-oss-20b	M	QF1		8	77	77	80	0.103896	0.053593	0.191844				no	0.303129	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	openai__gpt-oss-20b	M	QF2		18	71	71	80	0.253521	0.166806	0.365539				no	0.465028	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	openai__gpt-oss-20b	M	QF3		0	73	74	80	0.000000	0.000000	0.049992				yes	0.067864	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	openai__gpt-oss-20b	M	QF4		5	73	73	80	0.068493	0.029609	0.150521				no	0.199593	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	openai__gpt-oss-20b	M	QF5		1	78	78	80	0.012821	0.002267	0.069109				yes	0.087897	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	openai__gpt-oss-20b	M	QF6		0	70	70	80	0.000000	0.000000	0.052023				yes	0.069175	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	openai__gpt-oss-20b	M	QF7		0	77	77	80	0.000000	0.000000	0.047518				yes	0.066273	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	openai__gpt-oss-20b	M	QF8		0	72	72	80	0.000000	0.000000	0.050651				yes	0.068289	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	qwen__qwen3.5-9b	M			7	456	464	640	0.015351	0.007455	0.031344	0.002151	0.035874	0	no	0.037361	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	qwen__qwen3.5-9b	M	QF1		1	62	63	80	0.016129	0.002853	0.085867				yes	0.100580	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	qwen__qwen3.5-9b	M	QF2		5	47	47	80	0.106383	0.046305	0.225943				no	0.275288	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	qwen__qwen3.5-9b	M	QF3		0	60	60	80	0.000000	0.000000	0.060172				yes	0.074471	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	qwen__qwen3.5-9b	M	QF4		0	56	58	80	0.000000	0.000000	0.064194				yes	0.077108	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	qwen__qwen3.5-9b	M	QF5		0	51	51	80	0.000000	0.000000	0.070047				yes	0.080972	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	qwen__qwen3.5-9b	M	QF6		1	53	58	80	0.018868	0.003338	0.099429				yes	0.122334	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	qwen__qwen3.5-9b	M	QF7		0	75	75	80	0.000000	0.000000	0.048724				yes	0.067048	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	qwen__qwen3.5-9b	M	QF8		0	52	52	80	0.000000	0.000000	0.068792				yes	0.080141	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	qwen__qwen3.6-35b-a3b	M			13	612	613	640	0.021242	0.012455	0.036001	0.004967	0.041322	0	no	0.046643	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	qwen__qwen3.6-35b-a3b	M	QF1		2	79	79	80	0.025316	0.006970	0.087686				yes	0.113635	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	qwen__qwen3.6-35b-a3b	M	QF2		11	74	74	80	0.148649	0.085081	0.246895				no	0.316499	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	qwen__qwen3.6-35b-a3b	M	QF3		0	78	79	80	0.000000	0.000000	0.046938				yes	0.065900	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	qwen__qwen3.6-35b-a3b	M	QF4		0	76	76	80	0.000000	0.000000	0.048114				yes	0.066655	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	qwen__qwen3.6-35b-a3b	M	QF5		0	76	76	80	0.000000	0.000000	0.048114				yes	0.066655	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	qwen__qwen3.6-35b-a3b	M	QF6		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	qwen__qwen3.6-35b-a3b	M	QF7		0	79	79	80	0.000000	0.000000	0.046371				yes	0.065537	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	qwen__qwen3.6-35b-a3b	M	QF8		0	72	72	80	0.000000	0.000000	0.050651				yes	0.068289	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	MODEL_EQUAL_MEAN	M							0.038495			0.019900	0.059423	0			10
+V-clean__E0a~V-clean__E1	all tasks	silent	anthropic__claude-haiku-4.5	R			0	45	45	45	0.000000	0.000000	0.078652	0.000000	0.000000	0	yes	0.112928	
+V-clean__E0a~V-clean__E1	all tasks	silent	anthropic__claude-haiku-5.5	R			0	45	45	45	0.000000	0.000000	0.078652	0.000000	0.000000	0	yes	0.112928	
+V-clean__E0a~V-clean__E1	all tasks	silent	anthropic__claude-sonnet-5.5	R			0	45	45	45	0.000000	0.000000	0.078652	0.000000	0.000000	0	yes	0.112928	
+V-clean__E0a~V-clean__E1	all tasks	silent	deepseek__deepseek-v3.2	R			0	44	44	45	0.000000	0.000000	0.080296	0.000000	0.000000	0	yes	0.114001	
+V-clean__E0a~V-clean__E1	all tasks	silent	google__gemma-4-31b-it	R			0	41	45	45	0.000000	0.000000	0.085668	0.000000	0.000000	0	yes	0.117525	
+V-clean__E0a~V-clean__E1	all tasks	silent	openai__gpt-5.4-mini	R			0	38	43	45	0.000000	0.000000	0.091810	0.000000	0.000000	0	yes	0.128868	
+V-clean__E0a~V-clean__E1	all tasks	silent	openai__gpt-5.6-terra	R			0	45	45	45	0.000000	0.000000	0.078652	0.000000	0.000000	0	yes	0.112928	
+V-clean__E0a~V-clean__E1	all tasks	silent	openai__gpt-oss-20b	R			0	38	41	45	0.000000	0.000000	0.091810	0.000000	0.000000	0	yes	0.128868	
+V-clean__E0a~V-clean__E1	all tasks	silent	qwen__qwen3.5-9b	R			0	32	33	45	0.000000	0.000000	0.107179	0.000000	0.000000	0	yes	0.131915	
+V-clean__E0a~V-clean__E1	all tasks	silent	qwen__qwen3.6-35b-a3b	R			0	43	43	45	0.000000	0.000000	0.082010	0.000000	0.000000	0	yes	0.115123	
+V-clean__E0a~V-clean__E1	all tasks	silent	MODEL_EQUAL_MEAN	R							0.000000			0.000000	0.000000	0			10
+V-clean__E0a~V-clean__E1	all tasks	drift_any	anthropic__claude-haiku-4.5	R			0	45	45	45	0.000000	0.000000	0.078652	0.000000	0.000000	0	yes	0.112928	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	anthropic__claude-haiku-5.5	R			0	45	45	45	0.000000	0.000000	0.078652	0.000000	0.000000	0	yes	0.112928	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	anthropic__claude-sonnet-5.5	R			0	45	45	45	0.000000	0.000000	0.078652	0.000000	0.000000	0	yes	0.112928	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	deepseek__deepseek-v3.2	R			0	44	44	45	0.000000	0.000000	0.080296	0.000000	0.000000	0	yes	0.114001	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	google__gemma-4-31b-it	R			0	41	45	45	0.000000	0.000000	0.085668	0.000000	0.000000	0	yes	0.117525	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	openai__gpt-5.4-mini	R			0	38	43	45	0.000000	0.000000	0.091810	0.000000	0.000000	0	yes	0.128868	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	openai__gpt-5.6-terra	R			0	45	45	45	0.000000	0.000000	0.078652	0.000000	0.000000	0	yes	0.112928	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	openai__gpt-oss-20b	R			0	38	41	45	0.000000	0.000000	0.091810	0.000000	0.000000	0	yes	0.128868	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	qwen__qwen3.5-9b	R			0	32	33	45	0.000000	0.000000	0.107179	0.000000	0.000000	0	yes	0.131915	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	qwen__qwen3.6-35b-a3b	R			0	43	43	45	0.000000	0.000000	0.082010	0.000000	0.000000	0	yes	0.115123	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	MODEL_EQUAL_MEAN	R							0.000000			0.000000	0.000000	0			10
+V-clean__E0a~V-clean__E1	all tasks	silent	anthropic__claude-haiku-4.5	A			6	305	305	315	0.019672	0.009046	0.042247	0.000000	0.056667	0	no	0.072990	
+V-clean__E0a~V-clean__E1	all tasks	silent	anthropic__claude-haiku-5.5	A			0	314	314	315	0.000000	0.000000	0.012086	0.000000	0.000000	0	yes	0.016997	
+V-clean__E0a~V-clean__E1	all tasks	silent	anthropic__claude-sonnet-5.5	A			0	315	315	315	0.000000	0.000000	0.012048	0.000000	0.000000	0	yes	0.016973	
+V-clean__E0a~V-clean__E1	all tasks	silent	deepseek__deepseek-v3.2	A			1	309	309	315	0.003236	0.000572	0.018101	0.000000	0.009804	0	yes	0.022903	
+V-clean__E0a~V-clean__E1	all tasks	silent	google__gemma-4-31b-it	A			5	313	313	315	0.015974	0.006842	0.036844	0.000000	0.048232	0	no	0.073256	
+V-clean__E0a~V-clean__E1	all tasks	silent	openai__gpt-5.4-mini	A			0	310	311	315	0.000000	0.000000	0.012240	0.000000	0.000000	0	yes	0.017093	
+V-clean__E0a~V-clean__E1	all tasks	silent	openai__gpt-5.6-terra	A			5	314	315	315	0.015924	0.006820	0.036728	0.000000	0.047923	0	no	0.073177	
+V-clean__E0a~V-clean__E1	all tasks	silent	openai__gpt-oss-20b	A			9	286	294	315	0.031469	0.016642	0.058714	0.003597	0.066202	0	no	0.073037	
+V-clean__E0a~V-clean__E1	all tasks	silent	qwen__qwen3.5-9b	A			2	195	202	315	0.010256	0.002817	0.036619	0.000000	0.026882	0	yes	0.040675	
+V-clean__E0a~V-clean__E1	all tasks	silent	qwen__qwen3.6-35b-a3b	A			6	298	298	315	0.020134	0.009260	0.043223	0.000000	0.057627	0	no	0.073678	
+V-clean__E0a~V-clean__E1	all tasks	silent	MODEL_EQUAL_MEAN	A							0.011667			0.000697	0.030722	0			10
+V-clean__E0a~V-clean__E1	all tasks	drift_any	anthropic__claude-haiku-4.5	A			6	305	305	315	0.019672	0.009046	0.042247	0.000000	0.056667	0	no	0.072990	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	anthropic__claude-haiku-5.5	A			0	314	314	315	0.000000	0.000000	0.012086	0.000000	0.000000	0	yes	0.016997	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	anthropic__claude-sonnet-5.5	A			0	315	315	315	0.000000	0.000000	0.012048	0.000000	0.000000	0	yes	0.016973	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	deepseek__deepseek-v3.2	A			1	309	309	315	0.003236	0.000572	0.018101	0.000000	0.009804	0	yes	0.022903	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	google__gemma-4-31b-it	A			5	313	313	315	0.015974	0.006842	0.036844	0.000000	0.048232	0	no	0.073256	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	openai__gpt-5.4-mini	A			0	310	311	315	0.000000	0.000000	0.012240	0.000000	0.000000	0	yes	0.017093	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	openai__gpt-5.6-terra	A			5	314	315	315	0.015924	0.006820	0.036728	0.000000	0.047923	0	no	0.073177	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	openai__gpt-oss-20b	A			9	286	294	315	0.031469	0.016642	0.058714	0.003597	0.066202	0	no	0.073037	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	qwen__qwen3.5-9b	A			2	195	202	315	0.010256	0.002817	0.036619	0.000000	0.026882	0	yes	0.040675	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	qwen__qwen3.6-35b-a3b	A			6	298	298	315	0.020134	0.009260	0.043223	0.000000	0.057627	0	no	0.073678	
+V-clean__E0a~V-clean__E1	all tasks	drift_any	MODEL_EQUAL_MEAN	A							0.011667			0.000697	0.030722	0			10
+V-clean__E0a~V-clean__E1	without ruled R tasks (LR61/LR70)	silent	anthropic__claude-haiku-4.5	R			0	40	40	40	0.000000	0.000000	0.087622	0.000000	0.000000	0	yes	0.126116	
+V-clean__E0a~V-clean__E1	without ruled R tasks (LR61/LR70)	silent	anthropic__claude-haiku-5.5	R			0	40	40	40	0.000000	0.000000	0.087622	0.000000	0.000000	0	yes	0.126116	
+V-clean__E0a~V-clean__E1	without ruled R tasks (LR61/LR70)	silent	anthropic__claude-sonnet-5.5	R			0	40	40	40	0.000000	0.000000	0.087622	0.000000	0.000000	0	yes	0.126116	
+V-clean__E0a~V-clean__E1	without ruled R tasks (LR61/LR70)	silent	deepseek__deepseek-v3.2	R			0	39	39	40	0.000000	0.000000	0.089667	0.000000	0.000000	0	yes	0.127458	
+V-clean__E0a~V-clean__E1	without ruled R tasks (LR61/LR70)	silent	google__gemma-4-31b-it	R			0	36	40	40	0.000000	0.000000	0.096419	0.000000	0.000000	0	yes	0.131915	
+V-clean__E0a~V-clean__E1	without ruled R tasks (LR61/LR70)	silent	openai__gpt-5.4-mini	R			0	33	38	40	0.000000	0.000000	0.104270	0.000000	0.000000	0	yes	0.146335	
+V-clean__E0a~V-clean__E1	without ruled R tasks (LR61/LR70)	silent	openai__gpt-5.6-terra	R			0	40	40	40	0.000000	0.000000	0.087622	0.000000	0.000000	0	yes	0.126116	
+V-clean__E0a~V-clean__E1	without ruled R tasks (LR61/LR70)	silent	openai__gpt-oss-20b	R			0	33	36	40	0.000000	0.000000	0.104270	0.000000	0.000000	0	yes	0.146335	
+V-clean__E0a~V-clean__E1	without ruled R tasks (LR61/LR70)	silent	qwen__qwen3.5-9b	R			0	27	28	40	0.000000	0.000000	0.124555	0.000000	0.000000	0	yes	0.150966	
+V-clean__E0a~V-clean__E1	without ruled R tasks (LR61/LR70)	silent	qwen__qwen3.6-35b-a3b	R			0	38	38	40	0.000000	0.000000	0.091810	0.000000	0.000000	0	yes	0.128868	
+V-clean__E0a~V-clean__E1	without ruled R tasks (LR61/LR70)	silent	MODEL_EQUAL_MEAN	R							0.000000			0.000000	0.000000	0			10
+V-clean__E0a~V-clean__E1	without ruled R tasks (LR61/LR70)	drift_any	anthropic__claude-haiku-4.5	R			0	40	40	40	0.000000	0.000000	0.087622	0.000000	0.000000	0	yes	0.126116	
+V-clean__E0a~V-clean__E1	without ruled R tasks (LR61/LR70)	drift_any	anthropic__claude-haiku-5.5	R			0	40	40	40	0.000000	0.000000	0.087622	0.000000	0.000000	0	yes	0.126116	
+V-clean__E0a~V-clean__E1	without ruled R tasks (LR61/LR70)	drift_any	anthropic__claude-sonnet-5.5	R			0	40	40	40	0.000000	0.000000	0.087622	0.000000	0.000000	0	yes	0.126116	
+V-clean__E0a~V-clean__E1	without ruled R tasks (LR61/LR70)	drift_any	deepseek__deepseek-v3.2	R			0	39	39	40	0.000000	0.000000	0.089667	0.000000	0.000000	0	yes	0.127458	
+V-clean__E0a~V-clean__E1	without ruled R tasks (LR61/LR70)	drift_any	google__gemma-4-31b-it	R			0	36	40	40	0.000000	0.000000	0.096419	0.000000	0.000000	0	yes	0.131915	
+V-clean__E0a~V-clean__E1	without ruled R tasks (LR61/LR70)	drift_any	openai__gpt-5.4-mini	R			0	33	38	40	0.000000	0.000000	0.104270	0.000000	0.000000	0	yes	0.146335	
+V-clean__E0a~V-clean__E1	without ruled R tasks (LR61/LR70)	drift_any	openai__gpt-5.6-terra	R			0	40	40	40	0.000000	0.000000	0.087622	0.000000	0.000000	0	yes	0.126116	
+V-clean__E0a~V-clean__E1	without ruled R tasks (LR61/LR70)	drift_any	openai__gpt-oss-20b	R			0	33	36	40	0.000000	0.000000	0.104270	0.000000	0.000000	0	yes	0.146335	
+V-clean__E0a~V-clean__E1	without ruled R tasks (LR61/LR70)	drift_any	qwen__qwen3.5-9b	R			0	27	28	40	0.000000	0.000000	0.124555	0.000000	0.000000	0	yes	0.150966	
+V-clean__E0a~V-clean__E1	without ruled R tasks (LR61/LR70)	drift_any	qwen__qwen3.6-35b-a3b	R			0	38	38	40	0.000000	0.000000	0.091810	0.000000	0.000000	0	yes	0.128868	
+V-clean__E0a~V-clean__E1	without ruled R tasks (LR61/LR70)	drift_any	MODEL_EQUAL_MEAN	R							0.000000			0.000000	0.000000	0			10
+V-dirty__E0a~V-dirty__E1	all tasks	silent	anthropic__claude-haiku-4.5	M			22	273	273	640	0.080586	0.053818	0.118994	0.027343	0.145392	0	no	0.150020	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	anthropic__claude-haiku-4.5	M	QF1		9	51	51	80	0.176471	0.095724	0.302541				no	0.397190	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	anthropic__claude-haiku-4.5	M	QF2		9	66	66	80	0.136364	0.073433	0.239296				no	0.345955	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	anthropic__claude-haiku-4.5	M	QF3		0	24	24	80	0.000000	0.000000	0.137976				yes	0.197230	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	anthropic__claude-haiku-4.5	M	QF4		0	43	43	80	0.000000	0.000000	0.082010				yes	0.109212	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	anthropic__claude-haiku-4.5	M	QF5		0	36	36	80	0.000000	0.000000	0.096419				yes	0.131915	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	anthropic__claude-haiku-4.5	M	QF6		4	26	26	80	0.153846	0.061500	0.335312				yes	0.515736	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	anthropic__claude-haiku-4.5	M	QF7		0	20	20	80	0.000000	0.000000	0.161125				yes	0.236327	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	anthropic__claude-haiku-4.5	M	QF8		0	7	7	80	0.000000	0.000000	0.354330				yes	0.418465	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	anthropic__claude-haiku-5.5	M			26	384	384	640	0.067708	0.046622	0.097358	0.025070	0.116720	0	no	0.118890	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	anthropic__claude-haiku-5.5	M	QF1		3	59	59	80	0.050847	0.017443	0.139165				yes	0.207276	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	anthropic__claude-haiku-5.5	M	QF2		13	71	71	80	0.183099	0.110247	0.288482				no	0.385374	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	anthropic__claude-haiku-5.5	M	QF3		0	61	61	80	0.000000	0.000000	0.059244				yes	0.078806	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	anthropic__claude-haiku-5.5	M	QF4		0	51	51	80	0.000000	0.000000	0.070047				yes	0.088879	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	anthropic__claude-haiku-5.5	M	QF5		3	46	46	80	0.065217	0.022428	0.175027				yes	0.261457	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	anthropic__claude-haiku-5.5	M	QF6		7	38	38	80	0.184211	0.092218	0.334189				no	0.452813	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	anthropic__claude-haiku-5.5	M	QF7		0	33	33	80	0.000000	0.000000	0.104270				yes	0.137152	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	anthropic__claude-haiku-5.5	M	QF8		0	25	25	80	0.000000	0.000000	0.133192				yes	0.165945	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	anthropic__claude-sonnet-5.5	M			17	513	513	640	0.033138	0.020791	0.052426	0.006060	0.066417	0	no	0.069144	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	anthropic__claude-sonnet-5.5	M	QF1		5	51	51	80	0.098039	0.042608	0.209782				no	0.373196	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	anthropic__claude-sonnet-5.5	M	QF2		6	80	80	80	0.075000	0.034825	0.154120				no	0.260113	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	anthropic__claude-sonnet-5.5	M	QF3		1	68	68	80	0.014706	0.002601	0.078710				yes	0.100102	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	anthropic__claude-sonnet-5.5	M	QF4		2	75	75	80	0.026667	0.007344	0.092115				yes	0.115583	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	anthropic__claude-sonnet-5.5	M	QF5		0	65	65	80	0.000000	0.000000	0.055802				yes	0.076576	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	anthropic__claude-sonnet-5.5	M	QF6		3	75	75	80	0.040000	0.013696	0.111130				yes	0.176121	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	anthropic__claude-sonnet-5.5	M	QF7		0	47	47	80	0.000000	0.000000	0.075558				yes	0.104977	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	anthropic__claude-sonnet-5.5	M	QF8		0	52	52	80	0.000000	0.000000	0.068792				yes	0.082434	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	deepseek__deepseek-v3.2	M			24	499	500	640	0.048096	0.032531	0.070566	0.021484	0.077359	0	no	0.081524	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	deepseek__deepseek-v3.2	M	QF1		4	61	61	80	0.065574	0.025794	0.156828				yes	0.177175	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	deepseek__deepseek-v3.2	M	QF2		13	70	70	80	0.185714	0.111873	0.292256				no	0.388497	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	deepseek__deepseek-v3.2	M	QF3		2	69	69	80	0.028986	0.007985	0.099666				yes	0.118953	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	deepseek__deepseek-v3.2	M	QF4		0	78	78	80	0.000000	0.000000	0.046938				yes	0.065900	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	deepseek__deepseek-v3.2	M	QF5		0	61	61	80	0.000000	0.000000	0.059244				yes	0.076174	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	deepseek__deepseek-v3.2	M	QF6		5	61	61	80	0.081967	0.035520	0.177947				no	0.209938	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	deepseek__deepseek-v3.2	M	QF7		0	46	47	80	0.000000	0.000000	0.077074				yes	0.101086	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	deepseek__deepseek-v3.2	M	QF8		0	53	53	80	0.000000	0.000000	0.067582				yes	0.084253	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	google__gemma-4-31b-it	M			27	285	285	640	0.094737	0.065927	0.134327	0.042705	0.158251	0	no	0.158315	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	google__gemma-4-31b-it	M	QF1		13	57	57	80	0.228070	0.138419	0.352060				no	0.434055	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	google__gemma-4-31b-it	M	QF2		9	70	70	80	0.128571	0.069141	0.226648				no	0.310786	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	google__gemma-4-31b-it	M	QF3		0	26	26	80	0.000000	0.000000	0.128729				yes	0.174721	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	google__gemma-4-31b-it	M	QF4		2	37	37	80	0.054054	0.014951	0.177047				yes	0.206475	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	google__gemma-4-31b-it	M	QF5		0	40	40	80	0.000000	0.000000	0.087622				yes	0.126116	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	google__gemma-4-31b-it	M	QF6		3	34	34	80	0.088235	0.030466	0.229605				yes	0.325613	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	google__gemma-4-31b-it	M	QF7		0	18	18	80	0.000000	0.000000	0.175879				yes	0.246428	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	google__gemma-4-31b-it	M	QF8		0	3	3	80	0.000000	0.000000	0.561497				yes	0.752911	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	openai__gpt-5.4-mini	M			33	373	373	640	0.088472	0.063690	0.121644	0.045455	0.137640	0	no	0.139639	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	openai__gpt-5.4-mini	M	QF1		8	66	66	80	0.121212	0.062718	0.221374				no	0.251019	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	openai__gpt-5.4-mini	M	QF2		17	70	70	80	0.242857	0.157519	0.354950				no	0.453942	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	openai__gpt-5.4-mini	M	QF3		0	42	42	80	0.000000	0.000000	0.083799				yes	0.110394	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	openai__gpt-5.4-mini	M	QF4		0	56	56	80	0.000000	0.000000	0.064194				yes	0.082032	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	openai__gpt-5.4-mini	M	QF5		0	45	45	80	0.000000	0.000000	0.078652				yes	0.107003	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	openai__gpt-5.4-mini	M	QF6		8	38	38	80	0.210526	0.110748	0.363458				no	0.455987	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	openai__gpt-5.4-mini	M	QF7		0	28	28	80	0.000000	0.000000	0.120643				yes	0.130694	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	openai__gpt-5.4-mini	M	QF8		0	28	28	80	0.000000	0.000000	0.120643				yes	0.141153	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	openai__gpt-5.6-terra	M			43	421	421	640	0.102138	0.076715	0.134755	0.051280	0.158140	0	no	0.160882	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	openai__gpt-5.6-terra	M	QF1		10	57	57	80	0.175439	0.098189	0.293674				no	0.432382	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	openai__gpt-5.6-terra	M	QF2		19	69	69	80	0.275362	0.183945	0.390473				no	0.498041	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	openai__gpt-5.6-terra	M	QF3		0	55	55	80	0.000000	0.000000	0.065285				yes	0.085760	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	openai__gpt-5.6-terra	M	QF4		0	58	58	80	0.000000	0.000000	0.062118				yes	0.083697	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	openai__gpt-5.6-terra	M	QF5		2	56	56	80	0.035714	0.009849	0.121188				yes	0.151906	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	openai__gpt-5.6-terra	M	QF6		12	30	30	80	0.400000	0.245906	0.576796				no	0.688657	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	openai__gpt-5.6-terra	M	QF7		0	34	34	80	0.000000	0.000000	0.101515				yes	0.122258	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	openai__gpt-5.6-terra	M	QF8		0	62	62	80	0.000000	0.000000	0.058344				yes	0.078222	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	openai__gpt-oss-20b	M			28	235	235	640	0.119149	0.083735	0.166814	0.059112	0.189655	0	no	0.180736	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	openai__gpt-oss-20b	M	QF1		8	38	38	80	0.210526	0.110748	0.363458				no	0.429623	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	openai__gpt-oss-20b	M	QF2		13	46	46	80	0.282609	0.173242	0.425486				no	0.501314	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	openai__gpt-oss-20b	M	QF3		0	35	35	80	0.000000	0.000000	0.098901				yes	0.115685	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	openai__gpt-oss-20b	M	QF4		6	37	37	80	0.162162	0.076512	0.311365				no	0.335105	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	openai__gpt-oss-20b	M	QF5		0	28	28	80	0.000000	0.000000	0.120643				yes	0.141153	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	openai__gpt-oss-20b	M	QF6		1	16	16	80	0.062500	0.011119	0.283287				yes	0.286639	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	openai__gpt-oss-20b	M	QF7		0	27	27	80	0.000000	0.000000	0.124555				yes	0.150966	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	openai__gpt-oss-20b	M	QF8		0	8	8	80	0.000000	0.000000	0.324408				yes	0.342560	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	qwen__qwen3.5-9b	M			19	236	237	640	0.080508	0.052144	0.122310	0.038136	0.129167	0	no	0.126797	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	qwen__qwen3.5-9b	M	QF1		7	38	38	80	0.184211	0.092218	0.334189				no	0.351379	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	qwen__qwen3.5-9b	M	QF2		8	40	41	80	0.200000	0.105000	0.347573				no	0.393937	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	qwen__qwen3.5-9b	M	QF3		0	36	36	80	0.000000	0.000000	0.096419				yes	0.109971	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	qwen__qwen3.5-9b	M	QF4		1	35	35	80	0.028571	0.005061	0.145331				yes	0.151698	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	qwen__qwen3.5-9b	M	QF5		0	24	24	80	0.000000	0.000000	0.137976				yes	0.135796	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	qwen__qwen3.5-9b	M	QF6		3	25	25	80	0.120000	0.041668	0.299558				yes	0.352647	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	qwen__qwen3.5-9b	M	QF7		0	22	22	80	0.000000	0.000000	0.148655				yes	0.176777	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	qwen__qwen3.5-9b	M	QF8		0	16	16	80	0.000000	0.000000	0.193608				yes	0.189174	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	qwen__qwen3.6-35b-a3b	M			27	326	327	640	0.082822	0.057543	0.117819	0.049019	0.122581	0	no	0.121994	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	qwen__qwen3.6-35b-a3b	M	QF1		15	56	57	80	0.267857	0.169573	0.395946				no	0.420587	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	qwen__qwen3.6-35b-a3b	M	QF2		6	62	62	80	0.096774	0.045112	0.195488				no	0.230737	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	qwen__qwen3.6-35b-a3b	M	QF3		0	36	36	80	0.000000	0.000000	0.096419				yes	0.109971	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	qwen__qwen3.6-35b-a3b	M	QF4		4	55	55	80	0.072727	0.028644	0.172599				yes	0.193880	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	qwen__qwen3.6-35b-a3b	M	QF5		0	31	31	80	0.000000	0.000000	0.110255				yes	0.134009	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	qwen__qwen3.6-35b-a3b	M	QF6		2	45	45	80	0.044444	0.012274	0.148275				yes	0.187003	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	qwen__qwen3.6-35b-a3b	M	QF7		0	30	30	80	0.000000	0.000000	0.113513				yes	0.164516	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	qwen__qwen3.6-35b-a3b	M	QF8		0	11	11	80	0.000000	0.000000	0.258833				yes	0.261743	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	MODEL_EQUAL_MEAN	M							0.079735			0.051078	0.111851	0			10
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	anthropic__claude-haiku-4.5	M			27	273	273	640	0.098901	0.068863	0.140070	0.038462	0.169358	0	no	0.174329	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	anthropic__claude-haiku-4.5	M	QF1		9	51	51	80	0.176471	0.095724	0.302541				no	0.397190	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	anthropic__claude-haiku-4.5	M	QF2		14	66	66	80	0.212121	0.130780	0.325131				no	0.442058	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	anthropic__claude-haiku-4.5	M	QF3		0	24	24	80	0.000000	0.000000	0.137976				yes	0.197230	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	anthropic__claude-haiku-4.5	M	QF4		0	43	43	80	0.000000	0.000000	0.082010				yes	0.109212	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	anthropic__claude-haiku-4.5	M	QF5		0	36	36	80	0.000000	0.000000	0.096419				yes	0.131915	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	anthropic__claude-haiku-4.5	M	QF6		4	26	26	80	0.153846	0.061500	0.335312				yes	0.515736	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	anthropic__claude-haiku-4.5	M	QF7		0	20	20	80	0.000000	0.000000	0.161125				yes	0.236327	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	anthropic__claude-haiku-4.5	M	QF8		0	7	7	80	0.000000	0.000000	0.354330				yes	0.418465	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	anthropic__claude-haiku-5.5	M			31	384	384	640	0.080729	0.057454	0.112310	0.033941	0.133508	0	no	0.136177	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	anthropic__claude-haiku-5.5	M	QF1		3	59	59	80	0.050847	0.017443	0.139165				yes	0.207276	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	anthropic__claude-haiku-5.5	M	QF2		18	71	71	80	0.253521	0.166806	0.365539				no	0.468211	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	anthropic__claude-haiku-5.5	M	QF3		0	61	61	80	0.000000	0.000000	0.059244				yes	0.078806	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	anthropic__claude-haiku-5.5	M	QF4		0	51	51	80	0.000000	0.000000	0.070047				yes	0.088879	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	anthropic__claude-haiku-5.5	M	QF5		3	46	46	80	0.065217	0.022428	0.175027				yes	0.261457	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	anthropic__claude-haiku-5.5	M	QF6		7	38	38	80	0.184211	0.092218	0.334189				no	0.452813	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	anthropic__claude-haiku-5.5	M	QF7		0	33	33	80	0.000000	0.000000	0.104270				yes	0.137152	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	anthropic__claude-haiku-5.5	M	QF8		0	25	25	80	0.000000	0.000000	0.133192				yes	0.165945	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	anthropic__claude-sonnet-5.5	M			27	513	513	640	0.052632	0.036421	0.075493	0.017475	0.094595	0	no	0.096931	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	anthropic__claude-sonnet-5.5	M	QF1		5	51	51	80	0.098039	0.042608	0.209782				no	0.373196	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	anthropic__claude-sonnet-5.5	M	QF2		11	80	80	80	0.137500	0.078547	0.229671				no	0.347167	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	anthropic__claude-sonnet-5.5	M	QF3		1	68	68	80	0.014706	0.002601	0.078710				yes	0.100102	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	anthropic__claude-sonnet-5.5	M	QF4		7	75	75	80	0.093333	0.045949	0.180347				no	0.277407	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	anthropic__claude-sonnet-5.5	M	QF5		0	65	65	80	0.000000	0.000000	0.055802				yes	0.076576	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	anthropic__claude-sonnet-5.5	M	QF6		3	75	75	80	0.040000	0.013696	0.111130				yes	0.176121	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	anthropic__claude-sonnet-5.5	M	QF7		0	47	47	80	0.000000	0.000000	0.075558				yes	0.104977	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	anthropic__claude-sonnet-5.5	M	QF8		0	52	52	80	0.000000	0.000000	0.068792				yes	0.082434	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	deepseek__deepseek-v3.2	M			30	499	500	640	0.060120	0.042434	0.084528	0.030488	0.091982	0	no	0.096325	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	deepseek__deepseek-v3.2	M	QF1		4	61	61	80	0.065574	0.025794	0.156828				yes	0.177175	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	deepseek__deepseek-v3.2	M	QF2		17	70	70	80	0.242857	0.157519	0.354950				no	0.448411	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	deepseek__deepseek-v3.2	M	QF3		2	69	69	80	0.028986	0.007985	0.099666				yes	0.118953	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	deepseek__deepseek-v3.2	M	QF4		2	78	78	80	0.025641	0.007060	0.088753				yes	0.114092	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	deepseek__deepseek-v3.2	M	QF5		0	61	61	80	0.000000	0.000000	0.059244				yes	0.076174	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	deepseek__deepseek-v3.2	M	QF6		5	61	61	80	0.081967	0.035520	0.177947				no	0.209938	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	deepseek__deepseek-v3.2	M	QF7		0	46	47	80	0.000000	0.000000	0.077074				yes	0.101086	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	deepseek__deepseek-v3.2	M	QF8		0	53	53	80	0.000000	0.000000	0.067582				yes	0.084253	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	google__gemma-4-31b-it	M			33	285	285	640	0.115789	0.083647	0.158152	0.056537	0.184783	0	no	0.186798	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	google__gemma-4-31b-it	M	QF1		13	57	57	80	0.228070	0.138419	0.352060				no	0.434055	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	google__gemma-4-31b-it	M	QF2		14	70	70	80	0.200000	0.123047	0.308166				no	0.412035	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	google__gemma-4-31b-it	M	QF3		0	26	26	80	0.000000	0.000000	0.128729				yes	0.174721	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	google__gemma-4-31b-it	M	QF4		3	37	37	80	0.081081	0.027961	0.213007				yes	0.297731	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	google__gemma-4-31b-it	M	QF5		0	40	40	80	0.000000	0.000000	0.087622				yes	0.126116	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	google__gemma-4-31b-it	M	QF6		3	34	34	80	0.088235	0.030466	0.229605				yes	0.325613	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	google__gemma-4-31b-it	M	QF7		0	18	18	80	0.000000	0.000000	0.175879				yes	0.246428	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	google__gemma-4-31b-it	M	QF8		0	3	3	80	0.000000	0.000000	0.561497				yes	0.752911	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	openai__gpt-5.4-mini	M			38	373	373	640	0.101877	0.075126	0.136744	0.055118	0.154047	0	no	0.156978	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	openai__gpt-5.4-mini	M	QF1		8	66	66	80	0.121212	0.062718	0.221374				no	0.251019	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	openai__gpt-5.4-mini	M	QF2		22	70	70	80	0.314286	0.217623	0.430271				no	0.534543	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	openai__gpt-5.4-mini	M	QF3		0	42	42	80	0.000000	0.000000	0.083799				yes	0.110394	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	openai__gpt-5.4-mini	M	QF4		0	56	56	80	0.000000	0.000000	0.064194				yes	0.082032	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	openai__gpt-5.4-mini	M	QF5		0	45	45	80	0.000000	0.000000	0.078652				yes	0.107003	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	openai__gpt-5.4-mini	M	QF6		8	38	38	80	0.210526	0.110748	0.363458				no	0.455987	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	openai__gpt-5.4-mini	M	QF7		0	28	28	80	0.000000	0.000000	0.120643				yes	0.130694	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	openai__gpt-5.4-mini	M	QF8		0	28	28	80	0.000000	0.000000	0.120643				yes	0.141153	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	openai__gpt-5.6-terra	M			50	421	421	640	0.118765	0.091257	0.153167	0.065116	0.177160	0	no	0.179497	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	openai__gpt-5.6-terra	M	QF1		10	57	57	80	0.175439	0.098189	0.293674				no	0.432382	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	openai__gpt-5.6-terra	M	QF2		24	69	69	80	0.347826	0.246181	0.465521				no	0.574730	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	openai__gpt-5.6-terra	M	QF3		1	55	55	80	0.018182	0.003217	0.096058				yes	0.116284	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	openai__gpt-5.6-terra	M	QF4		1	58	58	80	0.017241	0.003050	0.091409				yes	0.112743	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	openai__gpt-5.6-terra	M	QF5		2	56	56	80	0.035714	0.009849	0.121188				yes	0.151906	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	openai__gpt-5.6-terra	M	QF6		12	30	30	80	0.400000	0.245906	0.576796				no	0.688657	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	openai__gpt-5.6-terra	M	QF7		0	34	34	80	0.000000	0.000000	0.101515				yes	0.122258	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	openai__gpt-5.6-terra	M	QF8		0	62	62	80	0.000000	0.000000	0.058344				yes	0.078222	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	openai__gpt-oss-20b	M			35	235	235	640	0.148936	0.109079	0.200086	0.079832	0.225356	0	no	0.217429	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	openai__gpt-oss-20b	M	QF1		8	38	38	80	0.210526	0.110748	0.363458				no	0.429623	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	openai__gpt-oss-20b	M	QF2		18	46	46	80	0.391304	0.263932	0.535432				no	0.613984	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	openai__gpt-oss-20b	M	QF3		2	35	35	80	0.057143	0.015813	0.186071				yes	0.320847	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	openai__gpt-oss-20b	M	QF4		6	37	37	80	0.162162	0.076512	0.311365				no	0.335105	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	openai__gpt-oss-20b	M	QF5		0	28	28	80	0.000000	0.000000	0.120643				yes	0.141153	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	openai__gpt-oss-20b	M	QF6		1	16	16	80	0.062500	0.011119	0.283287				yes	0.286639	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	openai__gpt-oss-20b	M	QF7		0	27	27	80	0.000000	0.000000	0.124555				yes	0.150966	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	openai__gpt-oss-20b	M	QF8		0	8	8	80	0.000000	0.000000	0.324408				yes	0.342560	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	qwen__qwen3.5-9b	M			20	236	237	640	0.084746	0.055528	0.127265	0.042017	0.134454	0	no	0.130577	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	qwen__qwen3.5-9b	M	QF1		7	38	38	80	0.184211	0.092218	0.334189				no	0.351379	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	qwen__qwen3.5-9b	M	QF2		8	40	41	80	0.200000	0.105000	0.347573				no	0.393937	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	qwen__qwen3.5-9b	M	QF3		1	36	36	80	0.027778	0.004920	0.141697				yes	0.155117	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	qwen__qwen3.5-9b	M	QF4		1	35	35	80	0.028571	0.005061	0.145331				yes	0.151698	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	qwen__qwen3.5-9b	M	QF5		0	24	24	80	0.000000	0.000000	0.137976				yes	0.135796	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	qwen__qwen3.5-9b	M	QF6		3	25	25	80	0.120000	0.041668	0.299558				yes	0.352647	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	qwen__qwen3.5-9b	M	QF7		0	22	22	80	0.000000	0.000000	0.148655				yes	0.176777	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	qwen__qwen3.5-9b	M	QF8		0	16	16	80	0.000000	0.000000	0.193608				yes	0.189174	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	qwen__qwen3.6-35b-a3b	M			35	326	327	640	0.107362	0.078215	0.145655	0.064327	0.157895	0	no	0.155382	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	qwen__qwen3.6-35b-a3b	M	QF1		17	56	57	80	0.303571	0.199003	0.433359				no	0.458264	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	qwen__qwen3.6-35b-a3b	M	QF2		11	62	62	80	0.177419	0.102064	0.290416				no	0.366042	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	qwen__qwen3.6-35b-a3b	M	QF3		1	36	36	80	0.027778	0.004920	0.141697				yes	0.155117	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	qwen__qwen3.6-35b-a3b	M	QF4		4	55	55	80	0.072727	0.028644	0.172599				yes	0.193880	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	qwen__qwen3.6-35b-a3b	M	QF5		0	31	31	80	0.000000	0.000000	0.110255				yes	0.134009	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	qwen__qwen3.6-35b-a3b	M	QF6		2	45	45	80	0.044444	0.012274	0.148275				yes	0.187003	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	qwen__qwen3.6-35b-a3b	M	QF7		0	30	30	80	0.000000	0.000000	0.113513				yes	0.164516	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	qwen__qwen3.6-35b-a3b	M	QF8		0	11	11	80	0.000000	0.000000	0.258833				yes	0.261743	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	MODEL_EQUAL_MEAN	M							0.096986			0.063733	0.134804	0			10
+V-dirty__E0a~V-dirty__E1	all tasks	silent	anthropic__claude-haiku-4.5	R			0	35	35	45	0.000000	0.000000	0.098901	0.000000	0.000000	0	yes	0.142785	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	anthropic__claude-haiku-5.5	R			0	40	40	45	0.000000	0.000000	0.087622	0.000000	0.000000	0	yes	0.118814	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	anthropic__claude-sonnet-5.5	R			0	45	45	45	0.000000	0.000000	0.078652	0.000000	0.000000	0	yes	0.112928	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	deepseek__deepseek-v3.2	R			0	44	44	45	0.000000	0.000000	0.080296	0.000000	0.000000	0	yes	0.114001	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	google__gemma-4-31b-it	R			0	25	25	45	0.000000	0.000000	0.133192	0.000000	0.000000	0	yes	0.156973	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	openai__gpt-5.4-mini	R			0	37	37	45	0.000000	0.000000	0.094058	0.000000	0.000000	0	yes	0.130351	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	openai__gpt-5.6-terra	R			0	44	44	45	0.000000	0.000000	0.080296	0.000000	0.000000	0	yes	0.114001	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	openai__gpt-oss-20b	R			0	34	34	45	0.000000	0.000000	0.101515	0.000000	0.000000	0	yes	0.135307	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	qwen__qwen3.5-9b	R			0	23	24	45	0.000000	0.000000	0.143117	0.000000	0.000000	0	yes	0.163972	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	qwen__qwen3.6-35b-a3b	R			0	38	38	45	0.000000	0.000000	0.091810	0.000000	0.000000	0	yes	0.128868	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	MODEL_EQUAL_MEAN	R							0.000000			0.000000	0.000000	0			10
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	anthropic__claude-haiku-4.5	R			0	35	35	45	0.000000	0.000000	0.098901	0.000000	0.000000	0	yes	0.142785	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	anthropic__claude-haiku-5.5	R			0	40	40	45	0.000000	0.000000	0.087622	0.000000	0.000000	0	yes	0.118814	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	anthropic__claude-sonnet-5.5	R			0	45	45	45	0.000000	0.000000	0.078652	0.000000	0.000000	0	yes	0.112928	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	deepseek__deepseek-v3.2	R			0	44	44	45	0.000000	0.000000	0.080296	0.000000	0.000000	0	yes	0.114001	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	google__gemma-4-31b-it	R			0	25	25	45	0.000000	0.000000	0.133192	0.000000	0.000000	0	yes	0.156973	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	openai__gpt-5.4-mini	R			0	37	37	45	0.000000	0.000000	0.094058	0.000000	0.000000	0	yes	0.130351	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	openai__gpt-5.6-terra	R			0	44	44	45	0.000000	0.000000	0.080296	0.000000	0.000000	0	yes	0.114001	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	openai__gpt-oss-20b	R			0	34	34	45	0.000000	0.000000	0.101515	0.000000	0.000000	0	yes	0.135307	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	qwen__qwen3.5-9b	R			0	23	24	45	0.000000	0.000000	0.143117	0.000000	0.000000	0	yes	0.163972	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	qwen__qwen3.6-35b-a3b	R			0	38	38	45	0.000000	0.000000	0.091810	0.000000	0.000000	0	yes	0.128868	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	MODEL_EQUAL_MEAN	R							0.000000			0.000000	0.000000	0			10
+V-dirty__E0a~V-dirty__E1	all tasks	silent	anthropic__claude-haiku-4.5	A			5	163	163	315	0.030675	0.013172	0.069790	0.000000	0.101351	0	no	0.123462	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	anthropic__claude-haiku-5.5	A			0	269	269	315	0.000000	0.000000	0.014079	0.000000	0.000000	0	yes	0.019233	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	anthropic__claude-sonnet-5.5	A			0	312	312	315	0.000000	0.000000	0.012163	0.000000	0.000000	0	yes	0.017045	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	deepseek__deepseek-v3.2	A			1	306	306	315	0.003268	0.000577	0.018276	0.000000	0.009934	0	yes	0.023033	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	google__gemma-4-31b-it	A			5	147	147	315	0.034014	0.014614	0.077147	0.000000	0.112782	0	no	0.143931	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	openai__gpt-5.4-mini	A			0	244	244	315	0.000000	0.000000	0.015500	0.000000	0.000000	0	yes	0.020503	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	openai__gpt-5.6-terra	A			5	276	276	315	0.018116	0.007762	0.041700	0.000000	0.056818	0	no	0.079695	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	openai__gpt-oss-20b	A			5	160	160	315	0.031250	0.013421	0.071060	0.005747	0.067073	0	no	0.078300	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	qwen__qwen3.5-9b	A			2	124	128	315	0.016129	0.004434	0.056903	0.000000	0.040984	0	yes	0.056850	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	qwen__qwen3.6-35b-a3b	A			6	189	189	315	0.031746	0.014629	0.067518	0.000000	0.091398	0	no	0.101386	
+V-dirty__E0a~V-dirty__E1	all tasks	silent	MODEL_EQUAL_MEAN	A							0.016520			0.001250	0.046223	0			10
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	anthropic__claude-haiku-4.5	A			5	163	163	315	0.030675	0.013172	0.069790	0.000000	0.101351	0	no	0.123462	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	anthropic__claude-haiku-5.5	A			0	269	269	315	0.000000	0.000000	0.014079	0.000000	0.000000	0	yes	0.019233	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	anthropic__claude-sonnet-5.5	A			0	312	312	315	0.000000	0.000000	0.012163	0.000000	0.000000	0	yes	0.017045	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	deepseek__deepseek-v3.2	A			1	306	306	315	0.003268	0.000577	0.018276	0.000000	0.009934	0	yes	0.023033	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	google__gemma-4-31b-it	A			5	147	147	315	0.034014	0.014614	0.077147	0.000000	0.112782	0	no	0.143931	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	openai__gpt-5.4-mini	A			0	244	244	315	0.000000	0.000000	0.015500	0.000000	0.000000	0	yes	0.020503	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	openai__gpt-5.6-terra	A			5	276	276	315	0.018116	0.007762	0.041700	0.000000	0.056818	0	no	0.079695	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	openai__gpt-oss-20b	A			6	160	160	315	0.037500	0.017298	0.079390	0.006803	0.075342	0	no	0.085736	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	qwen__qwen3.5-9b	A			2	124	128	315	0.016129	0.004434	0.056903	0.000000	0.040984	0	yes	0.056850	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	qwen__qwen3.6-35b-a3b	A			6	189	189	315	0.031746	0.014629	0.067518	0.000000	0.091398	0	no	0.101386	
+V-dirty__E0a~V-dirty__E1	all tasks	drift_any	MODEL_EQUAL_MEAN	A							0.017145			0.001794	0.046792	0			10
+V-dirty__E0a~V-dirty__E1	without ruled R tasks (LR61/LR70)	silent	anthropic__claude-haiku-4.5	R			0	30	30	40	0.000000	0.000000	0.113513	0.000000	0.000000	0	yes	0.164516	
+V-dirty__E0a~V-dirty__E1	without ruled R tasks (LR61/LR70)	silent	anthropic__claude-haiku-5.5	R			0	35	35	40	0.000000	0.000000	0.098901	0.000000	0.000000	0	yes	0.133564	
+V-dirty__E0a~V-dirty__E1	without ruled R tasks (LR61/LR70)	silent	anthropic__claude-sonnet-5.5	R			0	40	40	40	0.000000	0.000000	0.087622	0.000000	0.000000	0	yes	0.126116	
+V-dirty__E0a~V-dirty__E1	without ruled R tasks (LR61/LR70)	silent	deepseek__deepseek-v3.2	R			0	39	39	40	0.000000	0.000000	0.089667	0.000000	0.000000	0	yes	0.127458	
+V-dirty__E0a~V-dirty__E1	without ruled R tasks (LR61/LR70)	silent	google__gemma-4-31b-it	R			0	20	20	40	0.000000	0.000000	0.161125	0.000000	0.000000	0	yes	0.185696	
+V-dirty__E0a~V-dirty__E1	without ruled R tasks (LR61/LR70)	silent	openai__gpt-5.4-mini	R			0	32	32	40	0.000000	0.000000	0.107179	0.000000	0.000000	0	yes	0.148270	
+V-dirty__E0a~V-dirty__E1	without ruled R tasks (LR61/LR70)	silent	openai__gpt-5.6-terra	R			0	39	39	40	0.000000	0.000000	0.089667	0.000000	0.000000	0	yes	0.127458	
+V-dirty__E0a~V-dirty__E1	without ruled R tasks (LR61/LR70)	silent	openai__gpt-oss-20b	R			0	29	29	40	0.000000	0.000000	0.116970	0.000000	0.000000	0	yes	0.154843	
+V-dirty__E0a~V-dirty__E1	without ruled R tasks (LR61/LR70)	silent	qwen__qwen3.5-9b	R			0	18	19	40	0.000000	0.000000	0.175879	0.000000	0.000000	0	yes	0.196466	
+V-dirty__E0a~V-dirty__E1	without ruled R tasks (LR61/LR70)	silent	qwen__qwen3.6-35b-a3b	R			0	33	33	40	0.000000	0.000000	0.104270	0.000000	0.000000	0	yes	0.146335	
+V-dirty__E0a~V-dirty__E1	without ruled R tasks (LR61/LR70)	silent	MODEL_EQUAL_MEAN	R							0.000000			0.000000	0.000000	0			10
+V-dirty__E0a~V-dirty__E1	without ruled R tasks (LR61/LR70)	drift_any	anthropic__claude-haiku-4.5	R			0	30	30	40	0.000000	0.000000	0.113513	0.000000	0.000000	0	yes	0.164516	
+V-dirty__E0a~V-dirty__E1	without ruled R tasks (LR61/LR70)	drift_any	anthropic__claude-haiku-5.5	R			0	35	35	40	0.000000	0.000000	0.098901	0.000000	0.000000	0	yes	0.133564	
+V-dirty__E0a~V-dirty__E1	without ruled R tasks (LR61/LR70)	drift_any	anthropic__claude-sonnet-5.5	R			0	40	40	40	0.000000	0.000000	0.087622	0.000000	0.000000	0	yes	0.126116	
+V-dirty__E0a~V-dirty__E1	without ruled R tasks (LR61/LR70)	drift_any	deepseek__deepseek-v3.2	R			0	39	39	40	0.000000	0.000000	0.089667	0.000000	0.000000	0	yes	0.127458	
+V-dirty__E0a~V-dirty__E1	without ruled R tasks (LR61/LR70)	drift_any	google__gemma-4-31b-it	R			0	20	20	40	0.000000	0.000000	0.161125	0.000000	0.000000	0	yes	0.185696	
+V-dirty__E0a~V-dirty__E1	without ruled R tasks (LR61/LR70)	drift_any	openai__gpt-5.4-mini	R			0	32	32	40	0.000000	0.000000	0.107179	0.000000	0.000000	0	yes	0.148270	
+V-dirty__E0a~V-dirty__E1	without ruled R tasks (LR61/LR70)	drift_any	openai__gpt-5.6-terra	R			0	39	39	40	0.000000	0.000000	0.089667	0.000000	0.000000	0	yes	0.127458	
+V-dirty__E0a~V-dirty__E1	without ruled R tasks (LR61/LR70)	drift_any	openai__gpt-oss-20b	R			0	29	29	40	0.000000	0.000000	0.116970	0.000000	0.000000	0	yes	0.154843	
+V-dirty__E0a~V-dirty__E1	without ruled R tasks (LR61/LR70)	drift_any	qwen__qwen3.5-9b	R			0	18	19	40	0.000000	0.000000	0.175879	0.000000	0.000000	0	yes	0.196466	
+V-dirty__E0a~V-dirty__E1	without ruled R tasks (LR61/LR70)	drift_any	qwen__qwen3.6-35b-a3b	R			0	33	33	40	0.000000	0.000000	0.104270	0.000000	0.000000	0	yes	0.146335	
+V-dirty__E0a~V-dirty__E1	without ruled R tasks (LR61/LR70)	drift_any	MODEL_EQUAL_MEAN	R							0.000000			0.000000	0.000000	0			10

@@ -1,0 +1,88 @@
+{
+ "id": "M_QF4_05",
+ "stratum": "M",
+ "family": "QF4_GROUPBY",
+ "generic_family": null,
+ "catalogue_row": "G05",
+ "files": [
+  {
+   "path": "QF4_GROUPBY/subscribers.csv",
+   "description": "Streaming subscribers, one per row (320 rows): subscriber_id (whole number), age (years, from 19 to 87; about 1% empty), tier (basic, plus or premium; capital letters and spaces are inconsistent), monthly_fee (two decimals; about 3% empty), joined_year (whole number)."
+  }
+ ],
+ "task_text": "For each tier (lower case, no surrounding spaces), compute the mean monthly fee and its sample standard deviation (the version that divides by n - 1), both rounded to three decimals; NumPy functions may be used for the statistics. `result` should be a table indexed by tier with the columns mean and std.",
+ "allowed_task_words": [
+  "standard deviation",
+  "NumPy functions"
+ ],
+ "invited_ids_author": [
+  "G05"
+ ],
+ "order_significant": false,
+ "sort_keys": [],
+ "dtype_significant": false,
+ "intended_computation": "Clean tier (3 tiers) and per tier return the mean and the n-1 standard deviation of monthly_fee (missing fees skipped), rounded to 3 decimals.",
+ "acceptable_variants": {
+  "row_order": "any",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": ""
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 3
+   }
+  },
+  {
+   "check": "numeric_in_range",
+   "args": {
+    "columns": [
+     "std"
+    ],
+    "min": 0,
+    "max": null
+   }
+  },
+  {
+   "check": "columns_present",
+   "args": {
+    "columns": [
+     "mean",
+     "std"
+    ]
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "HARM",
+  "reason": "on 2.x passing the NumPy function is mapped to the pandas n-1 version; 3.x calls NumPy, which divides by n"
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M1",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 in package TASKS_M1; task text, card, naive solution, reference and predicted direction were prepared there."
+}

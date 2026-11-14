@@ -1,0 +1,75 @@
+{
+ "id": "M_QF1_13",
+ "stratum": "M",
+ "family": "QF1_STRING",
+ "generic_family": null,
+ "catalogue_row": "S03",
+ "files": [
+  {
+   "path": "QF1_STRING/branch_sales.csv",
+   "description": "Weekly sales per shop branch (180 rows): branch_code (five-digit branch code written with leading zeros, e.g. \"01005\"; 12 different branches, each appearing in many rows), week (week number 1-15), sales (units sold, whole number; about 3% of cells are empty)."
+  }
+ ],
+ "task_text": "For each branch, count the weeks whose sales figure is missing. Keep the branch codes exactly as written (five digits with leading zeros) and list only branches with at least one missing week. `result` should be a Series indexed by branch code with these counts.",
+ "allowed_task_words": [
+  "leading zeros"
+ ],
+ "invited_ids_author": [
+  "S03"
+ ],
+ "order_significant": false,
+ "sort_keys": [],
+ "dtype_significant": false,
+ "intended_computation": "Read branch_code as text, select the rows whose sales cell is empty (6 rows) and count them per branch code: 5 branches, counts adding up to 6.",
+ "acceptable_variants": {
+  "row_order": "any",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": ""
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 5
+   }
+  },
+  {
+   "check": "counts_sum_to_rows",
+   "args": {
+    "column": "__values__",
+    "expected": 6
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "HARM",
+  "reason": "on 3.x converting the numbers to text keeps missing values as NaN, so the comparison with the text 'nan' finds nothing"
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M1",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 in package TASKS_M1; task text, card, naive solution, reference and predicted direction were prepared there."
+}

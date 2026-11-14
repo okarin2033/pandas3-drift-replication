@@ -1,0 +1,5 @@
+model	difference	minuend	subtrahend	boot_lo	boot_hi	boot_dropped	boot_valid
+qwen__qwen3.5-9b	0.000000	no hint	hint	0.000000	0.000000	0	10000
+google__gemma-4-31b-it	-0.033333	no hint	hint	-0.083333	0.000000	0	10000
+anthropic__claude-haiku-4.5	-0.008757	no hint	hint	-0.025706	0.000000	0	10000
+openai__gpt-5.4-mini	-0.033329	no hint	hint	-0.074276	-0.001261	0	10000

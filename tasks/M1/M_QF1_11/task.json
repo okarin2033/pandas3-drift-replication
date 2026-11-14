@@ -1,0 +1,78 @@
+{
+ "id": "M_QF1_11",
+ "stratum": "M",
+ "family": "QF1_STRING",
+ "generic_family": null,
+ "catalogue_row": "S01",
+ "files": [
+  {
+   "path": "QF1_STRING/members.csv",
+   "description": "Club members, one per row (240 rows): member_id (whole number), full_name (first and last name; many names have accented letters; capital letters and spaces around the name are inconsistent), home_city (city name, several with accented letters; capital letters and spaces around the name are inconsistent; about 3% of cells are empty and about 3% hold \"-\" for an unknown city), fee (yearly fee, two decimals)."
+  }
+ ],
+ "task_text": "Some members were entered more than once with different capital letters or extra spaces in their names. Normalise every text column of the members file (remove surrounding spaces, capitalise each word) and count how many distinct full names remain. `result` should be that number (an integer).",
+ "allowed_task_words": [
+  "text column"
+ ],
+ "invited_ids_author": [
+  "S01"
+ ],
+ "order_significant": false,
+ "sort_keys": [],
+ "dtype_significant": false,
+ "intended_computation": "Strip and title-case full_name (and the other text columns), then count the distinct normalised full names: the answer is one integer.",
+ "acceptable_variants": {
+  "row_order": "any",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": ""
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "result_kind",
+   "args": {
+    "kind": "scalar"
+   }
+  },
+  {
+   "check": "numeric_in_range",
+   "args": {
+    "columns": [
+     "__values__"
+    ],
+    "min": 1,
+    "max": 240
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "HARM",
+  "reason": "on 3.x the object-type test skips the text columns, so case and space variants are counted as different names"
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M1",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 in package TASKS_M1; task text, card, naive solution, reference and predicted direction were prepared there."
+}

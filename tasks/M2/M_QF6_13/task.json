@@ -1,0 +1,83 @@
+{
+ "id": "M_QF6_13",
+ "stratum": "M",
+ "family": "QF6_NA_DTYPE",
+ "generic_family": null,
+ "catalogue_row": "N01",
+ "files": [
+  {
+   "path": "QF6_NA_DTYPE/deliveries.csv",
+   "description": "Parcel deliveries (240 rows): delivery_id (whole number), city (city name; capital letters and spaces are inconsistent), status (exactly \"shipped\" or \"pending\", always lower case, no empty cells), parcels (whole number; about 2% empty), express (True or False; about 5% empty)."
+  }
+ ],
+ "task_text": "The deliveries are listed in time order. Fill each empty express cell with the express value of the previous delivery in the file. Tidy the city names (remove surrounding spaces and write each word with a capital first letter, as in 'Oslo'). For each city, give the share of express deliveries and the average number of parcels. `result` should be a table indexed by city with the columns express and parcels.",
+ "allowed_task_words": [],
+ "invited_ids_author": [
+  "N01"
+ ],
+ "order_significant": false,
+ "sort_keys": [],
+ "dtype_significant": false,
+ "intended_computation": "Forward-fill express in file order (the first row is not empty), then per tidied city the mean of express (True = 1) and the mean of the non-empty parcels values.",
+ "acceptable_variants": {
+  "row_order": "any",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": "shares as 0-1 values to 6 significant digits."
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 6
+   }
+  },
+  {
+   "check": "columns_present",
+   "args": {
+    "columns": [
+     "express",
+     "parcels"
+    ]
+   }
+  },
+  {
+   "check": "rate_in_unit_interval",
+   "args": {
+    "columns": [
+     "express"
+    ]
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "HARM",
+  "reason": "ffill() downcast express to a true/false column on 2.x, which mean(numeric_only=True) keeps; on 3.x the filled column stays generic and is dropped."
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M2",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 by pkg:TASKS_M2 for catalogue row N01; naive.py shows the invited idiom, reference.py is the version-robust reference."
+}

@@ -1,0 +1,70 @@
+{
+ "id": "M_QF1_02",
+ "stratum": "M",
+ "family": "QF1_STRING",
+ "generic_family": null,
+ "catalogue_row": "S02",
+ "files": [
+  {
+   "path": "QF1_STRING/members.csv",
+   "description": "Club members, one per row (240 rows): member_id (whole number), full_name (first and last name; many names have accented letters; capital letters and spaces around the name are inconsistent), home_city (city name, several with accented letters; capital letters and spaces around the name are inconsistent; about 3% of cells are empty and about 3% hold \"-\" for an unknown city), fee (yearly fee, two decimals)."
+  }
+ ],
+ "task_text": "Convert the members file into JSON text: a list with one JSON record per member, holding the keys member_id, full_name, home_city and fee, in file order. A city that is empty or '-' must appear as JSON null; all other values stay as they are. `result` should be that JSON text (a string).",
+ "allowed_task_words": [
+  "JSON null"
+ ],
+ "invited_ids_author": [
+  "S02"
+ ],
+ "order_significant": true,
+ "sort_keys": [
+  "__index__"
+ ],
+ "dtype_significant": false,
+ "intended_computation": "Build one record per member (240 records, file order) with member_id, full_name and fee unchanged and home_city unchanged except that empty cells and '-' become null, and serialise the list as JSON text.",
+ "acceptable_variants": {
+  "row_order": "ties_only",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": "whitespace and key order inside the JSON text, and escaping of non-ASCII letters, may differ; fee and member_id may be JSON numbers (fee 104.5, 104.50, 150 or 150.0) or the text as written in the file ('104.50')"
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "result_kind",
+   "args": {
+    "kind": "scalar"
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "HARM",
+  "reason": "on 3.x the None written into the text column is stored as NaN, so the JSON text contains NaN instead of null (invalid JSON)"
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M1",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 in package TASKS_M1; task text, card, naive solution, reference and predicted direction were prepared there."
+}

@@ -1,0 +1,12 @@
+You are given CSV file(s) in the current working directory:
+
+- stations.csv: Bike-share stations (48 rows, one per station): station_code (four-digit code with leading zeros, e.g. "0040"), station_name (text, a few with accented letters), district (same 6 districts as riders.csv; capital letters and spaces are inconsistent), docks (whole number), opened_on (date as text, YYYY-MM-DD).
+- fare_changes.csv: Planned fare changes (30 rows, one per affected station): station_code (refers to stations.csv; four digits with leading zeros), effective_from (date as text, YYYY-MM-DD), new_base_fare (two decimals; about 3% empty).
+
+Task: Give every station in stations.csv a base_fare of 1.00, then, for stations listed in fare_changes.csv with an effective_from on or before 2025-11-30 and a non-empty new_base_fare, replace it with new_base_fare. `result` should be a Series of base_fare values indexed by station_code (text, leading zeros kept), in the order of stations.csv.
+
+Requirements:
+- Write a complete Python script that reads the file(s) from the current directory.
+- Use only pandas, numpy and the Python standard library.
+- Store the final answer in a top-level variable named `result`.
+- Reply with a single Python code block.

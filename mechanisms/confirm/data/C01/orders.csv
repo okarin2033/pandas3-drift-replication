@@ -1,0 +1,6 @@
+order_id,status,amount
+1,paid,10.0
+2,cancelled,20.0
+3,paid,7.5
+4,cancelled,3.0
+5,paid,12.0

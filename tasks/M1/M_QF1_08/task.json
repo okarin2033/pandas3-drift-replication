@@ -1,0 +1,87 @@
+{
+ "id": "M_QF1_08",
+ "stratum": "M",
+ "family": "QF1_STRING",
+ "generic_family": null,
+ "catalogue_row": "S03",
+ "files": [
+  {
+   "path": "QF1_STRING/members.csv",
+   "description": "Club members, one per row (240 rows): member_id (whole number), full_name (first and last name; many names have accented letters; capital letters and spaces around the name are inconsistent), home_city (city name, several with accented letters; capital letters and spaces around the name are inconsistent; about 3% of cells are empty and about 3% hold \"-\" for an unknown city), fee (yearly fee, two decimals)."
+  }
+ ],
+ "task_text": "Give every distinct home city a number: tidy the names first (remove surrounding spaces, capitalise each word), then number the cities 0, 1, 2, ... in alphabetical order. Members whose city is empty or '-' get the number -1. `result` should be a table with the columns member_id and city_code, one row per member in file order.",
+ "allowed_task_words": [],
+ "invited_ids_author": [
+  "S03"
+ ],
+ "order_significant": true,
+ "sort_keys": [
+  "__index__"
+ ],
+ "dtype_significant": false,
+ "intended_computation": "Tidy home_city; the 8 known cities in alphabetical order get codes 0-7; empty and '-' cities get -1; return member_id and city_code for all 240 members in file order.",
+ "acceptable_variants": {
+  "row_order": "ties_only",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": "codes from any alphabetical collation of the accented city names are accepted (code-point or accent-insensitive/locale order)"
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 240
+   }
+  },
+  {
+   "check": "numeric_in_range",
+   "args": {
+    "columns": [
+     "city_code"
+    ],
+    "min": -1,
+    "max": 7
+   }
+  },
+  {
+   "check": "columns_present",
+   "args": {
+    "columns": [
+     "member_id",
+     "city_code"
+    ]
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "FIX",
+  "reason": "on 2.x converting to text makes the empty cells a city called 'Nan' that takes a code and shifts the later codes"
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M1",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 in package TASKS_M1; task text, card, naive solution, reference and predicted direction were prepared there."
+}

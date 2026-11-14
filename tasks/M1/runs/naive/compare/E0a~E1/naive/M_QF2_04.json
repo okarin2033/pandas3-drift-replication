@@ -1,0 +1,40 @@
+{
+ "baseline_status": "ok",
+ "class": "VALUE_DRIFT",
+ "class_pilot_rule": "VALUE_DRIFT",
+ "class_raw": "VALUE_DRIFT",
+ "clean_on_233": true,
+ "drift": true,
+ "drift_pilot_rule": true,
+ "excluded": null,
+ "exclusion": null,
+ "first_diff": {
+  "a": "[1672876800, 1672963200, 1673049600, 1673136000, 1673222400, 1673308800, 1673395200, 1673481600, 1673568000, 1673654400, 1673740800, 1673827200, 1673913600, 1674000000, 1674086400, 1674172800, 1674259...",
+  "b": "[1672876, 1672963, 1673049, 1673136, 1673222, 1673308, 1673395, 1673481, 1673568, 1673654, 1673740, 1673827, 1673913, 1674000, 1674086, 1674172, 1674259, 1674345, 1674432, 1674518, 1674604, 1674691, 1...",
+  "column": "<index>",
+  "kind": "label",
+  "row": null
+ },
+ "first_divergent_line": null,
+ "locally_silent": null,
+ "magnitude": "SUBSTANTIVE",
+ "pair": "E0a~E1",
+ "program_id": "naive/M_QF2_04",
+ "run_problem": null,
+ "silent": true,
+ "silent_all_magnitudes": true,
+ "silent_pilot_rule": true,
+ "silent_pilotdef": true,
+ "target_status": "ok",
+ "task_id": "M_QF2_04",
+ "warned_E0a": {
+  "pilot": false,
+  "prereg": false
+ },
+ "warned_target": {
+  "pilot": false,
+  "prereg": false
+ },
+ "warning_lines": [],
+ "warning_only": false
+}

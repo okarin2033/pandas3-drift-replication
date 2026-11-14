@@ -1,0 +1,39 @@
+{
+ "baseline_status": "ok",
+ "class": "LOUD",
+ "class_pilot_rule": "LOUD",
+ "clean_on_233": true,
+ "drift": false,
+ "drift_pilot_rule": false,
+ "excluded": null,
+ "exclusion": null,
+ "first_diff": {
+  "a": "ok",
+  "b": "error",
+  "column": null,
+  "kind": "status",
+  "row": null
+ },
+ "first_divergent_line": null,
+ "locally_silent": null,
+ "magnitude": null,
+ "pair": "E0pa~E4",
+ "program_id": "confirm/L06",
+ "run_problem": null,
+ "silent": false,
+ "silent_all_magnitudes": false,
+ "silent_pilot_rule": false,
+ "silent_pilotdef": false,
+ "target_status": "error",
+ "task_id": null,
+ "warned_E0a": {
+  "pilot": true,
+  "prereg": true
+ },
+ "warned_target": {
+  "pilot": false,
+  "prereg": false
+ },
+ "warning_lines": [],
+ "warning_only": false
+}

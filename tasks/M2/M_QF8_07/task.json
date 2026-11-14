@@ -1,0 +1,76 @@
+{
+ "id": "M_QF8_07",
+ "stratum": "M",
+ "family": "QF8_NUMERIC",
+ "generic_family": null,
+ "catalogue_row": "X01",
+ "files": [
+  {
+   "path": "QF8_NUMERIC/daily_temps.csv",
+   "description": "Daily weather at one station (90 rows, one per day in date order from 2025-06-01, no gaps): date (YYYY-MM-DD), temp_c (mean temperature in degrees C, two decimals; about 1% empty), humidity (percent, whole number)."
+  }
+ ],
+ "task_text": "The standard error of the mean of a window is the sample standard deviation of its values (dividing by n - 1) divided by the square root of n, the number of values in the window. Using 7-day windows of temperature (each day and the 6 days before it; only windows with 7 temperatures count), on how many days does the standard error of the mean exceed 0.8 degrees? `result` should be that number.",
+ "allowed_task_words": [],
+ "invited_ids_author": [
+  "X01"
+ ],
+ "order_significant": false,
+ "sort_keys": [],
+ "dtype_significant": false,
+ "intended_computation": "Count of days whose complete trailing 7-day window has sample sd / sqrt(7) > 0.8.",
+ "acceptable_variants": {
+  "row_order": "any",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": "a whole number."
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "numeric_in_range",
+   "args": {
+    "columns": [
+     "__values__"
+    ],
+    "min": 0,
+    "max": 90
+   }
+  },
+  {
+   "check": "result_kind",
+   "args": {
+    "kind": "scalar"
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "FIX",
+  "reason": "rolling().sem() was larger on 2.x (sqrt(n - 1) divisor), so more days crossed the threshold; 3.x follows the task's definition."
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M2",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 by pkg:TASKS_M2 for catalogue row X01; naive.py shows the invited idiom, reference.py is the version-robust reference."
+}

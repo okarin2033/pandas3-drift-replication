@@ -1,0 +1,12 @@
+You are given CSV file(s) in the current working directory:
+
+- footfall_north.csv: Daily visitor counts at the north entrance (36 rows, rows not in date order, each day at most once, some days missing): day (date as text, YYYY-MM-DD, September-October 2025), visitors (whole number; equal counts are common), remark (short note; about 47% empty). The dates overlap only partly with footfall_south.csv.
+- footfall_south.csv: Daily visitor counts at the south entrance (36 rows, rows not in date order, each day at most once, some days missing): day (date as text, YYYY-MM-DD, September-October 2025), visitors (whole number; equal counts are common), remark (short note; about 47% empty). The dates overlap only partly with footfall_north.csv.
+
+Task: Add up the visitors of both entrances for each day (an entrance with no count for a day adds 0). Going through the days in calendar order, work out for each day how much the total changed compared with the previous day listed. `result` should be a Series indexed by day in calendar order holding that change (empty for the first day).
+
+Requirements:
+- Write a complete Python script that reads the file(s) from the current directory.
+- Use only pandas, numpy and the Python standard library.
+- Store the final answer in a top-level variable named `result`.
+- Reply with a single Python code block.

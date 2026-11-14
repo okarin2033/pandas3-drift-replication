@@ -1,0 +1,40 @@
+{"program_id": "ref/A_BIN_04", "program_path": "tasks/A_fresh/A_BIN_04/reference.py", "task_id": "A_BIN_04", "card": "tasks/A_fresh/A_BIN_04/task.json", "files": ["GEN/trips.csv"]}
+{"program_id": "ref/A_BIN_05", "program_path": "tasks/A_fresh/A_BIN_05/reference.py", "task_id": "A_BIN_05", "card": "tasks/A_fresh/A_BIN_05/task.json", "files": ["GEN/riders.csv"]}
+{"program_id": "ref/A_BIN_06", "program_path": "tasks/A_fresh/A_BIN_06/reference.py", "task_id": "A_BIN_06", "card": "tasks/A_fresh/A_BIN_06/task.json", "files": ["GEN/weather_hourly.csv"]}
+{"program_id": "ref/A_CONV_04", "program_path": "tasks/A_fresh/A_CONV_04/reference.py", "task_id": "A_CONV_04", "card": "tasks/A_fresh/A_CONV_04/task.json", "files": ["GEN/trips.csv"]}
+{"program_id": "ref/A_CONV_05", "program_path": "tasks/A_fresh/A_CONV_05/reference.py", "task_id": "A_CONV_05", "card": "tasks/A_fresh/A_CONV_05/task.json", "files": ["GEN/riders.csv"]}
+{"program_id": "ref/A_CONV_06", "program_path": "tasks/A_fresh/A_CONV_06/reference.py", "task_id": "A_CONV_06", "card": "tasks/A_fresh/A_CONV_06/task.json", "files": ["GEN/fare_changes.csv"]}
+{"program_id": "ref/A_DATE_04", "program_path": "tasks/A_fresh/A_DATE_04/reference.py", "task_id": "A_DATE_04", "card": "tasks/A_fresh/A_DATE_04/task.json", "files": ["GEN/riders.csv"]}
+{"program_id": "ref/A_DATE_05", "program_path": "tasks/A_fresh/A_DATE_05/reference.py", "task_id": "A_DATE_05", "card": "tasks/A_fresh/A_DATE_05/task.json", "files": ["GEN/trips.csv"]}
+{"program_id": "ref/A_DATE_06", "program_path": "tasks/A_fresh/A_DATE_06/reference.py", "task_id": "A_DATE_06", "card": "tasks/A_fresh/A_DATE_06/task.json", "files": ["GEN/stations.csv"]}
+{"program_id": "ref/A_ENC_03", "program_path": "tasks/A_fresh/A_ENC_03/reference.py", "task_id": "A_ENC_03", "card": "tasks/A_fresh/A_ENC_03/task.json", "files": ["GEN/riders.csv"]}
+{"program_id": "ref/A_ENC_04", "program_path": "tasks/A_fresh/A_ENC_04/reference.py", "task_id": "A_ENC_04", "card": "tasks/A_fresh/A_ENC_04/task.json", "files": ["GEN/stations.csv"]}
+{"program_id": "ref/A_ENC_05", "program_path": "tasks/A_fresh/A_ENC_05/reference.py", "task_id": "A_ENC_05", "card": "tasks/A_fresh/A_ENC_05/task.json", "files": ["GEN/trips.csv"]}
+{"program_id": "ref/A_ENC_06", "program_path": "tasks/A_fresh/A_ENC_06/reference.py", "task_id": "A_ENC_06", "card": "tasks/A_fresh/A_ENC_06/task.json", "files": ["GEN/trips.csv"]}
+{"program_id": "ref/A_IMP_04", "program_path": "tasks/A_fresh/A_IMP_04/reference.py", "task_id": "A_IMP_04", "card": "tasks/A_fresh/A_IMP_04/task.json", "files": ["GEN/riders.csv"]}
+{"program_id": "ref/A_IMP_05", "program_path": "tasks/A_fresh/A_IMP_05/reference.py", "task_id": "A_IMP_05", "card": "tasks/A_fresh/A_IMP_05/task.json", "files": ["GEN/weather_hourly.csv"]}
+{"program_id": "ref/A_IMP_06", "program_path": "tasks/A_fresh/A_IMP_06/reference.py", "task_id": "A_IMP_06", "card": "tasks/A_fresh/A_IMP_06/task.json", "files": ["GEN/trips.csv"]}
+{"program_id": "ref/A_MRG_04", "program_path": "tasks/A_fresh/A_MRG_04/reference.py", "task_id": "A_MRG_04", "card": "tasks/A_fresh/A_MRG_04/task.json", "files": ["GEN/trips.csv", "GEN/stations.csv"]}
+{"program_id": "ref/A_MRG_05", "program_path": "tasks/A_fresh/A_MRG_05/reference.py", "task_id": "A_MRG_05", "card": "tasks/A_fresh/A_MRG_05/task.json", "files": ["GEN/trips.csv", "GEN/riders.csv"]}
+{"program_id": "ref/A_MRG_06", "program_path": "tasks/A_fresh/A_MRG_06/reference.py", "task_id": "A_MRG_06", "card": "tasks/A_fresh/A_MRG_06/task.json", "files": ["GEN/trips.csv", "GEN/weather_hourly.csv"]}
+{"program_id": "ref/A_PIV_03", "program_path": "tasks/A_fresh/A_PIV_03/reference.py", "task_id": "A_PIV_03", "card": "tasks/A_fresh/A_PIV_03/task.json", "files": ["GEN/trips.csv"]}
+{"program_id": "ref/A_PIV_04", "program_path": "tasks/A_fresh/A_PIV_04/reference.py", "task_id": "A_PIV_04", "card": "tasks/A_fresh/A_PIV_04/task.json", "files": ["GEN/riders.csv"]}
+{"program_id": "ref/A_PIV_05", "program_path": "tasks/A_fresh/A_PIV_05/reference.py", "task_id": "A_PIV_05", "card": "tasks/A_fresh/A_PIV_05/task.json", "files": ["GEN/weather_hourly.csv"]}
+{"program_id": "ref/A_PIV_06", "program_path": "tasks/A_fresh/A_PIV_06/reference.py", "task_id": "A_PIV_06", "card": "tasks/A_fresh/A_PIV_06/task.json", "files": ["GEN/trips.csv"]}
+{"program_id": "ref/A_RPT_03", "program_path": "tasks/A_fresh/A_RPT_03/reference.py", "task_id": "A_RPT_03", "card": "tasks/A_fresh/A_RPT_03/task.json", "files": ["GEN/weather_hourly.csv"]}
+{"program_id": "ref/A_RPT_04", "program_path": "tasks/A_fresh/A_RPT_04/reference.py", "task_id": "A_RPT_04", "card": "tasks/A_fresh/A_RPT_04/task.json", "files": ["GEN/riders.csv"]}
+{"program_id": "ref/A_RPT_05", "program_path": "tasks/A_fresh/A_RPT_05/reference.py", "task_id": "A_RPT_05", "card": "tasks/A_fresh/A_RPT_05/task.json", "files": ["GEN/trips.csv"]}
+{"program_id": "ref/A_RPT_06", "program_path": "tasks/A_fresh/A_RPT_06/reference.py", "task_id": "A_RPT_06", "card": "tasks/A_fresh/A_RPT_06/task.json", "files": ["GEN/stations.csv"]}
+{"program_id": "ref/A_TOP_04", "program_path": "tasks/A_fresh/A_TOP_04/reference.py", "task_id": "A_TOP_04", "card": "tasks/A_fresh/A_TOP_04/task.json", "files": ["GEN/trips.csv"]}
+{"program_id": "ref/A_TOP_05", "program_path": "tasks/A_fresh/A_TOP_05/reference.py", "task_id": "A_TOP_05", "card": "tasks/A_fresh/A_TOP_05/task.json", "files": ["GEN/stations.csv"]}
+{"program_id": "ref/A_TOP_06", "program_path": "tasks/A_fresh/A_TOP_06/reference.py", "task_id": "A_TOP_06", "card": "tasks/A_fresh/A_TOP_06/task.json", "files": ["GEN/riders.csv"]}
+{"program_id": "ref/A_TS_04", "program_path": "tasks/A_fresh/A_TS_04/reference.py", "task_id": "A_TS_04", "card": "tasks/A_fresh/A_TS_04/task.json", "files": ["GEN/trips.csv"]}
+{"program_id": "ref/A_TS_05", "program_path": "tasks/A_fresh/A_TS_05/reference.py", "task_id": "A_TS_05", "card": "tasks/A_fresh/A_TS_05/task.json", "files": ["GEN/weather_hourly.csv"]}
+{"program_id": "ref/A_TS_06", "program_path": "tasks/A_fresh/A_TS_06/reference.py", "task_id": "A_TS_06", "card": "tasks/A_fresh/A_TS_06/task.json", "files": ["GEN/trips.csv"]}
+{"program_id": "ref/A_TXT_04", "program_path": "tasks/A_fresh/A_TXT_04/reference.py", "task_id": "A_TXT_04", "card": "tasks/A_fresh/A_TXT_04/task.json", "files": ["GEN/riders.csv"]}
+{"program_id": "ref/A_TXT_05", "program_path": "tasks/A_fresh/A_TXT_05/reference.py", "task_id": "A_TXT_05", "card": "tasks/A_fresh/A_TXT_05/task.json", "files": ["GEN/stations.csv"]}
+{"program_id": "ref/A_TXT_06", "program_path": "tasks/A_fresh/A_TXT_06/reference.py", "task_id": "A_TXT_06", "card": "tasks/A_fresh/A_TXT_06/task.json", "files": ["GEN/riders.csv"]}
+{"program_id": "ref/A_UPD_03", "program_path": "tasks/A_fresh/A_UPD_03/reference.py", "task_id": "A_UPD_03", "card": "tasks/A_fresh/A_UPD_03/task.json", "files": ["GEN/riders.csv"]}
+{"program_id": "ref/A_UPD_04", "program_path": "tasks/A_fresh/A_UPD_04/reference.py", "task_id": "A_UPD_04", "card": "tasks/A_fresh/A_UPD_04/task.json", "files": ["GEN/trips.csv"]}
+{"program_id": "ref/A_UPD_05", "program_path": "tasks/A_fresh/A_UPD_05/reference.py", "task_id": "A_UPD_05", "card": "tasks/A_fresh/A_UPD_05/task.json", "files": ["GEN/riders.csv"]}
+{"program_id": "ref/A_UPD_06", "program_path": "tasks/A_fresh/A_UPD_06/reference.py", "task_id": "A_UPD_06", "card": "tasks/A_fresh/A_UPD_06/task.json", "files": ["GEN/stations.csv", "GEN/fare_changes.csv"]}

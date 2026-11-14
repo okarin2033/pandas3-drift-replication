@@ -1,0 +1,40 @@
+{
+ "baseline_status": "ok",
+ "class": "VALUE_DRIFT",
+ "class_pilot_rule": "VALUE_DRIFT",
+ "class_raw": "VALUE_DRIFT",
+ "clean_on_233": true,
+ "drift": true,
+ "drift_pilot_rule": true,
+ "excluded": null,
+ "exclusion": null,
+ "first_diff": {
+  "a": 0.5282833835483883,
+  "b": 0.48909537486494986,
+  "column": "sem",
+  "kind": "cell",
+  "row": 6
+ },
+ "first_divergent_line": null,
+ "locally_silent": null,
+ "magnitude": "SUBSTANTIVE",
+ "pair": "V-clean__E0a~V-clean__E1",
+ "program_id": "fmain/X01",
+ "run_problem": null,
+ "silent": true,
+ "silent_all_magnitudes": true,
+ "silent_pilot_rule": true,
+ "silent_pilotdef": true,
+ "target_status": "ok",
+ "task_id": null,
+ "warned_E0a": {
+  "pilot": false,
+  "prereg": false
+ },
+ "warned_target": {
+  "pilot": false,
+  "prereg": false
+ },
+ "warning_lines": [],
+ "warning_only": false
+}

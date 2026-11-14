@@ -1,0 +1,80 @@
+{
+ "id": "M_QF2_01",
+ "stratum": "M",
+ "family": "QF2_DATETIME",
+ "generic_family": null,
+ "catalogue_row": "D01",
+ "files": [
+  {
+   "path": "QF2_DATETIME/signups.csv",
+   "description": "Account sign-ups (300 rows, not in date order): account_id (whole number), signup_day (date as text, YYYY-MM-DD, between 2023 and 2025; no empty cells), channel (web, app, referral or partner; capital letters and spaces are inconsistent; about 2% empty), first_payment (amount with two decimals; about 5% empty)."
+  }
+ ],
+ "task_text": "For each sign-up channel (written in lower case without surrounding spaces; rows without a channel are left out), give the first and the last sign-up day as Unix timestamps in seconds (midnight UTC of that day). `result` should be a table indexed by channel with the columns first_signup and last_signup (whole numbers).",
+ "allowed_task_words": [
+  "Unix timestamps in seconds",
+  "midnight UTC"
+ ],
+ "invited_ids_author": [
+  "D01"
+ ],
+ "order_significant": false,
+ "sort_keys": [],
+ "dtype_significant": false,
+ "intended_computation": "Parse signup_day, clean channel (4 channels), and per channel return the minimum and maximum sign-up day as seconds since 1970-01-01 00:00 UTC (values between 2023-01-01 and 2026-01-01, i.e. 1672531200-1767225600).",
+ "acceptable_variants": {
+  "row_order": "any",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": ""
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 4
+   }
+  },
+  {
+   "check": "numeric_in_range",
+   "args": {
+    "columns": [
+     "first_signup",
+     "last_signup"
+    ],
+    "min": 1672531200,
+    "max": 1767225600
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "HARM",
+  "reason": "on 3.x parsed dates are stored at a coarser unit, so the integer cast divided by 10**9 gives numbers 1000 times too small"
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M1",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 in package TASKS_M1; task text, card, naive solution, reference and predicted direction were prepared there."
+}

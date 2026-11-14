@@ -1,0 +1,11 @@
+{
+ "state": "complete",
+ "started": "2026-11-13T05:51:18+09:00",
+ "pid": 97168,
+ "updated": "2026-11-13T05:59:49+09:00",
+ "last_success_at": "2026-11-13T05:59:49+09:00",
+ "unavailable_since": null,
+ "consecutive_provider_mismatches": 0,
+ "provider_mismatch_events": [],
+ "stop_rule": null
+}

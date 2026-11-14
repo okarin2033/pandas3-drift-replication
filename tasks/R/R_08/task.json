@@ -1,0 +1,84 @@
+{
+ "id": "R_08",
+ "stratum": "R",
+ "family": null,
+ "generic_family": null,
+ "catalogue_row": null,
+ "files": [
+  {
+   "path": "GEN/riders.csv",
+   "description": "Bike-share riders, one per row (400 rows): rider_id (six-digit id with leading zeros), display_name (person name, some with accented letters), home_district (one of 6 districts such as \"Old Town\"), membership (casual, monthly or annual) - these three text columns have inconsistent capital letters and stray spaces; joined_on (date as text, YYYY-MM-DD; about 2% empty), birth_year (whole number; about 4% empty), credit_balance (two decimals, can be negative; about 5% empty)."
+  }
+ ],
+ "task_text": "Going down riders.csv in file order and comparing home_district values without regard to capital letters or surrounding spaces, mark every rider whose home_district is Harbourside while the rider just above has Riverbend. `result` should hold one True/False value per rider, in file order (False for the first rider).",
+ "allowed_task_words": [],
+ "invited_ids_author": [],
+ "order_significant": true,
+ "sort_keys": [
+  "__index__"
+ ],
+ "dtype_significant": false,
+ "intended_computation": "Read riders.csv; d = home_district stripped and lower-cased, in file order; flag[i] = (i > 0 and d[i] == \"harbourside\" and d[i-1] == \"riverbend\"); 400 booleans in file order.",
+ "acceptable_variants": {
+  "row_order": "ties_only",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": "flags may be booleans, 0/1 or a list"
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 400
+   }
+  },
+  {
+   "check": "no_nulls",
+   "args": {
+    "columns": [
+     "__values__"
+    ]
+   }
+  },
+  {
+   "check": "values_in_set",
+   "args": {
+    "column": "__values__",
+    "values": [
+     true,
+     false
+    ]
+   }
+  }
+ ],
+ "predicted_direction": null,
+ "naive_path": null,
+ "reference_path": "reference.py",
+ "so_question_id": 79960740,
+ "so_url": "https://stackoverflow.com/q/79960740",
+ "so_creation_date": "2026-06-16",
+ "so_score": 0,
+ "so_licence": "CC BY-SA 4.0",
+ "intent_summary": "In a column of text states, flag each row whose state is B while the row just before it has state A (a two-row sequence A then B).",
+ "column_map": {
+  "state column": "riders.csv:home_district",
+  "states A and B (placeholders)": "A = riverbend, B = harbourside (first two distinct values in file order, compared without capital letters and stray spaces)"
+ },
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:R_BUILD",
+ "status": "prepared",
+ "notes": "Stratum R (real question, paraphrased onto the general fixtures under the section 4.3 rule). Intent, summary and column map sealed 2026-11-11T13:44:13Z (tasks/R/INTENTS_FROZEN.sha256) before the catalogue was opened; card, reference and invited_ids_author drafted 2026-11-11 by pkg:R_BUILD. Prepared (Amendment 9). No question text or code is stored in the study folder."
+}

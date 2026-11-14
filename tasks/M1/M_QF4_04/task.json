@@ -1,0 +1,75 @@
+{
+ "id": "M_QF4_04",
+ "stratum": "M",
+ "family": "QF4_GROUPBY",
+ "generic_family": null,
+ "catalogue_row": "G04",
+ "files": [
+  {
+   "path": "QF4_GROUPBY/purchases.csv",
+   "description": "Shop purchases (900 rows): purchase_id (whole number), subscriber_id (refers to subscribers.csv; most subscribers have several purchases), store_city (city name; the same city is written with different capitals and extra spaces, e.g. \"lisbon\" and \"LISBON\"; about 2% empty), quantity (whole number), spend (two decimals)."
+  }
+ ],
+ "task_text": "Total the spend per store city. The city names are written inconsistently, so group on the name with surrounding spaces removed and each word capitalised; purchases without a city are left out. `result` should be a table with the columns store_city and spend, one row per city.",
+ "allowed_task_words": [],
+ "invited_ids_author": [
+  "G04"
+ ],
+ "order_significant": false,
+ "sort_keys": [],
+ "dtype_significant": false,
+ "intended_computation": "Tidy store_city (6 cities), drop missing cities and return store_city with the summed spend per city.",
+ "acceptable_variants": {
+  "row_order": "any",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": "spend may be rounded to 2 decimals."
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 6
+   }
+  },
+  {
+   "check": "columns_present",
+   "args": {
+    "columns": [
+     "store_city",
+     "spend"
+    ]
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "FIX",
+  "reason": "on 2.x keeping groups as columns drops a derived grouping key, so the table has no city column; 3.x keeps it"
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M1",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 in package TASKS_M1; task text, card, naive solution, reference and predicted direction were prepared there."
+}

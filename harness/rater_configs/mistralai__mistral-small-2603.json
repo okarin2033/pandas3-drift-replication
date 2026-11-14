@@ -1,0 +1,20 @@
+{
+ "_written": "2026-11-12 (REPAIR5 fixes, MF4 (a)); status: draft",
+ "model": "mistralai/mistral-small-2603",
+ "model_key": "mistralai__mistral-small-2603",
+ "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+ "provider": "Mistral",
+ "provider_response": [
+  "Mistral"
+ ],
+ "reasoning": null,
+ "seed_supported": false,
+ "k": 1,
+ "max_tokens": 16000,
+ "price_in_per_m": 0.165,
+ "price_out_per_m": 0.66,
+ "total_cap_usd": 40.0,
+ "notes": "Second blind invitation rater of lead ruling LR4 (coder B model of Amendment 9; Mistral has no studied model). Prices here are the frame snapshot (models/models.tsv) and are NOT used: harness/lr4_second_rating.py takes the pinned provider's prices from <gen-root>/calibration/mistralai__mistral-small-2603/endpoints.json (calibrate.py endpoints --config this file) unless this file pins that provider with prices_checked_at (LR5). No temperature, top_p or system message is sent; no reasoning parameter (null).",
+ "prices_checked_at": "2026-11-13T03:37:15+09:00",
+ "_filled_at_t7": "2026-11-12T20:09:18Z by the lead from the calibration summary of the rater model (provider pinned by rule P; reasoning stays null: no reasoning parameter is sent)"
+}

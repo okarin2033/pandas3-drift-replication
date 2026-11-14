@@ -1,0 +1,98 @@
+{
+ "id": "M_QF8_12",
+ "stratum": "M",
+ "family": "QF8_NUMERIC",
+ "generic_family": null,
+ "catalogue_row": "X02",
+ "files": [
+  {
+   "path": "QF8_NUMERIC/panel_scores.csv",
+   "description": "Tasting competition scores (96 rows): panel (one of 8 panels, e.g. bread or cheese; 12 entrants each), entrant (person name; capital letters and spaces are inconsistent), score (4.0-10.0, one decimal; no empty cells)."
+  }
+ ],
+ "task_text": "The 'middle score' of a panel is the score actually given that sits in the middle of the panel's sorted scores; each panel has 12 entries, so two scores are equally near the middle, and then the lower of the two is used. List the entries whose score equals their panel's middle score. `result` should be a table with the columns panel, entrant (surrounding spaces removed) and score, in file order.",
+ "allowed_task_words": [],
+ "invited_ids_author": [
+  "X02"
+ ],
+ "order_significant": true,
+ "sort_keys": [
+  "__index__"
+ ],
+ "dtype_significant": false,
+ "intended_computation": "Rows whose score equals the 6th smallest score of their panel, with panel, stripped entrant and score.",
+ "acceptable_variants": {
+  "row_order": "ties_only",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": "row labels are free."
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "columns_present",
+   "args": {
+    "columns": [
+     "panel",
+     "entrant",
+     "score"
+    ]
+   }
+  },
+  {
+   "check": "values_in_set",
+   "args": {
+    "column": "panel",
+    "values": [
+     "bread",
+     "cheese",
+     "cider",
+     "honey",
+     "jam",
+     "pickles",
+     "pies",
+     "soup"
+    ]
+   }
+  },
+  {
+   "check": "numeric_in_range",
+   "args": {
+    "columns": [
+     "score"
+    ],
+    "min": 4,
+    "max": 10
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "HARM",
+  "reason": "The middle score from groupby().quantile(0.5, interpolation='nearest') was the lower one on 2.x, as the task says; on 3.x the higher one selects other entries."
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M2",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 by pkg:TASKS_M2 for catalogue row X02; naive.py shows the invited idiom, reference.py is the version-robust reference."
+}

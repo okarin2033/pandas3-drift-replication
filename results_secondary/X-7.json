@@ -1,0 +1,115 @@
+{
+ "item": "X-7",
+ "table": [
+  {
+   "Model": "anthropic/claude-haiku-4.5",
+   "Provider of the main run (place in the order of rule P)": "Anthropic (1)",
+   "Stated precision": "unknown",
+   "Reasoning setting of record": "{\"enabled\": false}",
+   "Calls answered": "20 of 20",
+   "Earlier pins (note)": "none"
+  },
+  {
+   "Model": "anthropic/claude-haiku-5.5",
+   "Provider of the main run (place in the order of rule P)": "Anthropic (1)",
+   "Stated precision": "unknown",
+   "Reasoning setting of record": "{\"enabled\": false}",
+   "Calls answered": "20 of 20",
+   "Earlier pins (note)": "none"
+  },
+  {
+   "Model": "anthropic/claude-sonnet-5.5",
+   "Provider of the main run (place in the order of rule P)": "Anthropic (1)",
+   "Stated precision": "unknown",
+   "Reasoning setting of record": "{\"effort\": \"minimal\"}",
+   "Calls answered": "20 of 20",
+   "Earlier pins (note)": "none"
+  },
+  {
+   "Model": "deepseek/deepseek-v3.2",
+   "Provider of the main run (place in the order of rule P)": "GMICloud (1)",
+   "Stated precision": "fp8",
+   "Reasoning setting of record": "{\"enabled\": false}",
+   "Calls answered": "20 of 20",
+   "Earlier pins (note)": "none"
+  },
+  {
+   "Model": "google/gemma-4-31b-it",
+   "Provider of the main run (place in the order of rule P)": "Novita (2)",
+   "Stated precision": "bf16",
+   "Reasoning setting of record": "{\"enabled\": false}",
+   "Calls answered": "20 of 20",
+   "Earlier pins (note)": "earlier: 1_Crusoe"
+  },
+  {
+   "Model": "openai/gpt-5.4-mini",
+   "Provider of the main run (place in the order of rule P)": "OpenAI (1)",
+   "Stated precision": "unknown",
+   "Reasoning setting of record": "{\"enabled\": false}",
+   "Calls answered": "20 of 20",
+   "Earlier pins (note)": "none"
+  },
+  {
+   "Model": "openai/gpt-5.6-terra",
+   "Provider of the main run (place in the order of rule P)": "OpenAI (1)",
+   "Stated precision": "unknown",
+   "Reasoning setting of record": "{\"enabled\": false}",
+   "Calls answered": "20 of 20",
+   "Earlier pins (note)": "none"
+  },
+  {
+   "Model": "openai/gpt-oss-20b",
+   "Provider of the main run (place in the order of rule P)": "DekaLLM (1)",
+   "Stated precision": "bf16",
+   "Reasoning setting of record": "{\"effort\": \"minimal\"}",
+   "Calls answered": "20 of 20",
+   "Earlier pins (note)": "none"
+  },
+  {
+   "Model": "qwen/qwen3.5-9b",
+   "Provider of the main run (place in the order of rule P)": "SiliconFlow (3)",
+   "Stated precision": "fp8",
+   "Reasoning setting of record": "{\"enabled\": false}",
+   "Calls answered": "20 of 20",
+   "Earlier pins (note)": "Amendment 13 pinned PrimeIntellect (2) (earlier: 1_DeepInfra); Amendment 14: first pin DeepInfra (16 of 20 calibration calls answered), second pin PrimeIntellect (billed above its listed prices; 3 programs, not analysed)"
+  },
+  {
+   "Model": "qwen/qwen3.6-35b-a3b",
+   "Provider of the main run (place in the order of rule P)": "PrimeIntellect (1)",
+   "Stated precision": "fp8",
+   "Reasoning setting of record": "{\"enabled\": false}",
+   "Calls answered": "20 of 20",
+   "Earlier pins (note)": "none"
+  }
+ ],
+ "columns": [
+  "Model",
+  "Provider of the main run (place in the order of rule P)",
+  "Stated precision",
+  "Reasoning setting of record",
+  "Calls answered",
+  "Earlier pins (note)"
+ ],
+ "amendment14_sentence": "first pin DeepInfra (16 of 20 calibration calls answered), second pin PrimeIntellect (billed above its listed prices; 3 programs, not analysed), provider of the main run SiliconFlow (fp8). The stated precision of the endpoint used in the main run differs from that of the first two pins (bf16).",
+ "meta": {
+  "label": null,
+  "test_mode": false,
+  "items": [
+   "X-7"
+  ],
+  "inputs_sha256": {
+   "FULL_PREREG_AMENDMENT_13.md": "8ffd4a7e0a6949fddfb32a0b22272170c68a05daf4362894602f664f95da6a0b",
+   "FULL_PREREG_AMENDMENT_14.md": "3c7649434e83bc3e747757e39c5bb6f94ba2963012c1d92993a3c0dd58490bf3"
+  },
+  "B": 10000,
+  "seed": 20261111,
+  "tool": "sec_static_tables.py",
+  "tool_sha256": "c644b4fbf3a6ecbbe70d4b77ac6dbb0308c9ccaa24db013b3a85e7d36c519b10",
+  "sec_common_sha256": "c1e87284ed92844ade5c515bb78fe261b3a94431d1389c0b4ec2f854f48d39db",
+  "harness_stats_sha256": "ad28a99b5e3a61dc9a7753e3a019a41d2d5968a83f94d6aaddff91156e0bf41d",
+  "created": "2026-11-13T16:49:55+0900",
+  "numpy_used": true,
+  "rows": 10
+ },
+ "label": null
+}

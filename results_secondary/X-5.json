@@ -1,0 +1,76 @@
+{
+ "item": "X-5",
+ "controls": [
+  {
+   "control": "P+ (positive oracle controls, deciding checks)",
+   "source": "controls of record: LR74 run before the freeze (T8 apply step)",
+   "scored": 88,
+   "passed": 88,
+   "failed_checks": "none"
+  },
+  {
+   "control": "P- (negative oracle controls and matching positives)",
+   "source": "controls of record: LR74 run before the freeze (T8 apply step)",
+   "scored": 52,
+   "passed": 52,
+   "failed_checks": "none"
+  },
+  {
+   "control": "LR16 control (4 checks)",
+   "source": "controls of record: LR74 run before the freeze (T8 apply step)",
+   "scored": 4,
+   "passed": 4,
+   "failed_checks": "none"
+  },
+  {
+   "control": "harm pre-label wiring check",
+   "source": "first run of 2026-11-11 (not repeated under LR74)",
+   "scored": 6,
+   "passed": 6,
+   "failed_checks": "none"
+  }
+ ],
+ "extra": {
+  "P-_specificity": [
+   27,
+   27
+  ],
+  "P-_sensitivity_matching_positives": [
+   25,
+   25
+  ]
+ },
+ "first_runs_note": "P+: first run 86 of 88 passed (failed: N01_b/E0a~E1, N01_b/E0a~E2); controls of record 88 of 88 passed; P-: first run 40 of 40 passed; controls of record 52 of 52 passed; specificity 20 of 20 -> 27 of 27, sensitivity 20 of 20 -> 25 of 25; harm wiring: first run 6 of 6 passed, mismatches 0; not repeated under LR74 (the row is the first run)",
+ "meta": {
+  "label": "oracle and harm controls, not study data",
+  "test_mode": true,
+  "items": [
+   "X-5"
+  ],
+  "inputs_sha256": {
+   "pplus_eval.json": "7f5e17c89cc65045ab62907b9218801c0fc4e7b154aff8b65f6112e45284499d",
+   "pminus_eval.json": "1af61375ae375b44c95eb397a15f720348c6079ee7edd3de252859550b6c0b45",
+   "lr16_eval.json": "854195b14a8ca89ba36118d743f5420aab60e5a5bf5ecd0b6fb5f4018570db50",
+   "harm_wiring_eval.txt": "d39053a1e8640748d4289969227a96a9f9c4ec79c8ceea315241d201b66ff988",
+   "first_pplus_eval_2026-11-11.json": "9057a19589c6bdcbc604fdb66bb94ccee11264df15846cf87642b41f5d185636",
+   "first_pminus_eval_2026-11-11.json": "6ff8642c5b0e87d39c4301eb2d76f371296a432c6a845640d7ab5516ee921e7c"
+  },
+  "B": 10000,
+  "seed": 20261111,
+  "tool": "sec_static_tables.py",
+  "tool_sha256": "c644b4fbf3a6ecbbe70d4b77ac6dbb0308c9ccaa24db013b3a85e7d36c519b10",
+  "sec_common_sha256": "c1e87284ed92844ade5c515bb78fe261b3a94431d1389c0b4ec2f854f48d39db",
+  "harness_stats_sha256": "ad28a99b5e3a61dc9a7753e3a019a41d2d5968a83f94d6aaddff91156e0bf41d",
+  "created": "2026-11-13T16:49:55+0900",
+  "numpy_used": true,
+  "P-_specificity": [
+   27,
+   27
+  ],
+  "P-_sensitivity_matching_positives": [
+   25,
+   25
+  ]
+ },
+ "label": "oracle and harm controls, not study data"
+}

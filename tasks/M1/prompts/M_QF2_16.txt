@@ -1,0 +1,11 @@
+You are given CSV file(s) in the current working directory:
+
+- appointments.csv: Clinic appointments in New York (160 rows, February to November 2025, so the clock changes in March and November fall inside the data): appt_id (whole number), local_start (New York wall-clock start, text YYYY-MM-DD HH:MM, no UTC offset), start_with_offset (the same moment as ISO text with its UTC offset, e.g. "2025-06-13T08:45:00-04:00"), clinic (Harbor, Midtown or Riverside; capital letters and spaces are inconsistent), duration_min (whole minutes; about 3% empty).
+
+Task: For each appointment a check-up is booked 14 calendar days later at the same New York wall-clock time (local_start is New York local time). Count how many check-ups start in each hour of the New York day. `result` should be a Series indexed by hour (0-23) with the number of check-ups, only for hours that occur.
+
+Requirements:
+- Write a complete Python script that reads the file(s) from the current directory.
+- Use only pandas, numpy and the Python standard library.
+- Store the final answer in a top-level variable named `result`.
+- Reply with a single Python code block.

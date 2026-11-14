@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="478" height="389" viewBox="0 6 478 389">
+<rect width="480" height="400" fill="#ffffff"/>
+<text x="170" y="18" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle" font-weight="bold" fill="#1a1a1a">Stratum M</text>
+<rect x="120" y="36" width="100" height="272" fill="none" stroke="#8c8c8c" stroke-width="1"/>
+<line x1="120" y1="36" x2="120" y2="308" stroke="#d9d9d9" stroke-width="1"/>
+<text x="120" y="322" font-family="Arial, Helvetica, sans-serif" font-size="11.2" text-anchor="middle" fill="#1a1a1a">0%</text>
+<line x1="151.25" y1="36" x2="151.25" y2="308" stroke="#d9d9d9" stroke-width="1"/>
+<text x="151.25" y="322" font-family="Arial, Helvetica, sans-serif" font-size="11.2" text-anchor="middle" fill="#1a1a1a">5%</text>
+<line x1="182.5" y1="36" x2="182.5" y2="308" stroke="#d9d9d9" stroke-width="1"/>
+<text x="182.5" y="322" font-family="Arial, Helvetica, sans-serif" font-size="11.2" text-anchor="middle" fill="#1a1a1a">10%</text>
+<line x1="213.75" y1="36" x2="213.75" y2="308" stroke="#d9d9d9" stroke-width="1"/>
+<text x="213.75" y="322" font-family="Arial, Helvetica, sans-serif" font-size="11.2" text-anchor="middle" fill="#1a1a1a">15%</text>
+<text x="170" y="336" font-family="Arial, Helvetica, sans-serif" font-size="11.2" text-anchor="middle" fill="#1a1a1a">silent-drift rate</text>
+<line x1="152.24" y1="66" x2="193.72" y2="66" stroke="#1a1a1a" stroke-width="1.5"/>
+<line x1="152.24" y1="63" x2="152.24" y2="69" stroke="#1a1a1a" stroke-width="1.5"/>
+<line x1="193.72" y1="63" x2="193.72" y2="69" stroke="#1a1a1a" stroke-width="1.5"/>
+<circle cx="171.82" cy="66" r="4" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="1.2"/>
+<line x1="145.47" y1="86" x2="191.29" y2="86" stroke="#1a1a1a" stroke-width="1.5"/>
+<line x1="145.47" y1="83" x2="145.47" y2="89" stroke="#1a1a1a" stroke-width="1.5"/>
+<line x1="191.29" y1="83" x2="191.29" y2="89" stroke="#1a1a1a" stroke-width="1.5"/>
+<circle cx="167.02" cy="86" r="4" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="1.2"/>
+<line x1="128.94" y1="106" x2="163.07" y2="106" stroke="#1a1a1a" stroke-width="1.5"/>
+<line x1="128.94" y1="103" x2="128.94" y2="109" stroke="#1a1a1a" stroke-width="1.5"/>
+<line x1="163.07" y1="103" x2="163.07" y2="109" stroke="#1a1a1a" stroke-width="1.5"/>
+<circle cx="144.84" cy="106" r="4" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="1.2"/>
+<line x1="141.58" y1="126" x2="185.84" y2="126" stroke="#1a1a1a" stroke-width="1.5"/>
+<line x1="141.58" y1="123" x2="141.58" y2="129" stroke="#1a1a1a" stroke-width="1.5"/>
+<line x1="185.84" y1="123" x2="185.84" y2="129" stroke="#1a1a1a" stroke-width="1.5"/>
+<circle cx="162.32" cy="126" r="4" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="1.2"/>
+<line x1="156.3" y1="166" x2="212.37" y2="166" stroke="#1a1a1a" stroke-width="1.5"/>
+<line x1="156.3" y1="163" x2="156.3" y2="169" stroke="#1a1a1a" stroke-width="1.5"/>
+<line x1="212.37" y1="163" x2="212.37" y2="169" stroke="#1a1a1a" stroke-width="1.5"/>
+<circle cx="182.89" cy="166" r="4" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="1.2"/>
+<line x1="128.79" y1="186" x2="161.99" y2="186" stroke="#1a1a1a" stroke-width="1.5"/>
+<line x1="128.79" y1="183" x2="128.79" y2="189" stroke="#1a1a1a" stroke-width="1.5"/>
+<line x1="161.99" y1="183" x2="161.99" y2="189" stroke="#1a1a1a" stroke-width="1.5"/>
+<circle cx="144.41" cy="186" r="4" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="1.2"/>
+<line x1="123.91" y1="206" x2="157.11" y2="206" stroke="#1a1a1a" stroke-width="1.5"/>
+<line x1="123.91" y1="203" x2="123.91" y2="209" stroke="#1a1a1a" stroke-width="1.5"/>
+<line x1="157.11" y1="203" x2="157.11" y2="209" stroke="#1a1a1a" stroke-width="1.5"/>
+<circle cx="138.55" cy="206" r="4" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="1.2"/>
+<line x1="130.92" y1="246" x2="164.74" y2="246" stroke="#1a1a1a" stroke-width="1.5"/>
+<line x1="130.92" y1="243" x2="130.92" y2="249" stroke="#1a1a1a" stroke-width="1.5"/>
+<line x1="164.74" y1="243" x2="164.74" y2="249" stroke="#1a1a1a" stroke-width="1.5"/>
+<circle cx="146.04" cy="246" r="4" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="1.2"/>
+<line x1="138.2" y1="266" x2="165.08" y2="266" stroke="#1a1a1a" stroke-width="1.5"/>
+<line x1="138.2" y1="263" x2="138.2" y2="269" stroke="#1a1a1a" stroke-width="1.5"/>
+<line x1="165.08" y1="263" x2="165.08" y2="269" stroke="#1a1a1a" stroke-width="1.5"/>
+<circle cx="150.64" cy="266" r="4" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="1.2"/>
+<line x1="136.89" y1="286" x2="170.08" y2="286" stroke="#1a1a1a" stroke-width="1.5"/>
+<line x1="136.89" y1="283" x2="136.89" y2="289" stroke="#1a1a1a" stroke-width="1.5"/>
+<line x1="170.08" y1="283" x2="170.08" y2="289" stroke="#1a1a1a" stroke-width="1.5"/>
+<circle cx="152.79" cy="286" r="4" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="1.2"/>
+<text x="298" y="18" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle" font-weight="bold" fill="#1a1a1a">Stratum A</text>
+<rect x="248" y="36" width="100" height="272" fill="none" stroke="#8c8c8c" stroke-width="1"/>
+<line x1="248" y1="36" x2="248" y2="308" stroke="#d9d9d9" stroke-width="1"/>
+<text x="248" y="322" font-family="Arial, Helvetica, sans-serif" font-size="11.2" text-anchor="middle" fill="#1a1a1a">0%</text>
+<line x1="298" y1="36" x2="298" y2="308" stroke="#d9d9d9" stroke-width="1"/>
+<text x="298" y="322" font-family="Arial, Helvetica, sans-serif" font-size="11.2" text-anchor="middle" fill="#1a1a1a">4%</text>
+<line x1="348" y1="36" x2="348" y2="308" stroke="#d9d9d9" stroke-width="1"/>
+<text x="348" y="322" font-family="Arial, Helvetica, sans-serif" font-size="11.2" text-anchor="middle" fill="#1a1a1a">8%</text>
+<text x="298" y="336" font-family="Arial, Helvetica, sans-serif" font-size="11.2" text-anchor="middle" fill="#1a1a1a">silent-drift rate</text>
+<line x1="256.8" y1="66" x2="335.32" y2="66" stroke="#1a1a1a" stroke-width="1.5"/>
+<line x1="256.8" y1="63" x2="256.8" y2="69" stroke="#1a1a1a" stroke-width="1.5"/>
+<line x1="335.32" y1="63" x2="335.32" y2="69" stroke="#1a1a1a" stroke-width="1.5"/>
+<rect x="287.71" y="62" width="8" height="8" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="1.2"/>
+<line x1="248" y1="86" x2="308.29" y2="86" stroke="#1a1a1a" stroke-width="1.5"/>
+<line x1="248" y1="83" x2="248" y2="89" stroke="#1a1a1a" stroke-width="1.5"/>
+<line x1="308.29" y1="83" x2="308.29" y2="89" stroke="#1a1a1a" stroke-width="1.5"/>
+<rect x="263.97" y="82" width="8" height="8" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="1.2"/>
+<line x1="248" y1="106" x2="318.83" y2="106" stroke="#1a1a1a" stroke-width="1.5"/>
+<line x1="248" y1="103" x2="248" y2="109" stroke="#1a1a1a" stroke-width="1.5"/>
+<line x1="318.83" y1="103" x2="318.83" y2="109" stroke="#1a1a1a" stroke-width="1.5"/>
+<rect x="268.59" y="102" width="8" height="8" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="1.2"/>
+<line x1="248" y1="126" x2="269.37" y2="126" stroke="#1a1a1a" stroke-width="1.2" stroke-dasharray="3 2"/>
+<line x1="269.37" y1="121" x2="269.37" y2="131" stroke="#1a1a1a" stroke-width="2"/>
+<rect x="244" y="122" width="8" height="8" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="1.2"/>
+<line x1="248" y1="166" x2="307.9" y2="166" stroke="#1a1a1a" stroke-width="1.5"/>
+<line x1="248" y1="163" x2="248" y2="169" stroke="#1a1a1a" stroke-width="1.5"/>
+<line x1="307.9" y1="163" x2="307.9" y2="169" stroke="#1a1a1a" stroke-width="1.5"/>
+<rect x="263.9" y="162" width="8" height="8" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="1.2"/>
+<line x1="248" y1="186" x2="269.25" y2="186" stroke="#1a1a1a" stroke-width="1.2" stroke-dasharray="3 2"/>
+<line x1="269.25" y1="181" x2="269.25" y2="191" stroke="#1a1a1a" stroke-width="2"/>
+<rect x="244" y="182" width="8" height="8" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="1.2"/>
+<line x1="248" y1="206" x2="269.22" y2="206" stroke="#1a1a1a" stroke-width="1.2" stroke-dasharray="3 2"/>
+<line x1="269.22" y1="201" x2="269.22" y2="211" stroke="#1a1a1a" stroke-width="2"/>
+<rect x="244" y="202" width="8" height="8" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="1.2"/>
+<line x1="248" y1="246" x2="291.75" y2="246" stroke="#1a1a1a" stroke-width="1.5"/>
+<line x1="248" y1="243" x2="248" y2="249" stroke="#1a1a1a" stroke-width="1.5"/>
+<line x1="291.75" y1="243" x2="291.75" y2="249" stroke="#1a1a1a" stroke-width="1.5"/>
+<line x1="267.23" y1="246" x2="305.89" y2="246" stroke="#1a1a1a" stroke-width="1.2" stroke-dasharray="3 2"/>
+<line x1="305.89" y1="241" x2="305.89" y2="251" stroke="#1a1a1a" stroke-width="2"/>
+<rect x="263.23" y="242" width="8" height="8" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="1.2"/>
+<line x1="248" y1="266" x2="326.38" y2="266" stroke="#1a1a1a" stroke-width="1.5"/>
+<line x1="248" y1="263" x2="248" y2="269" stroke="#1a1a1a" stroke-width="1.5"/>
+<line x1="326.38" y1="263" x2="326.38" y2="269" stroke="#1a1a1a" stroke-width="1.5"/>
+<rect x="273.36" y="262" width="8" height="8" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="1.2"/>
+<line x1="248" y1="286" x2="260.25" y2="286" stroke="#1a1a1a" stroke-width="1.5"/>
+<line x1="248" y1="283" x2="248" y2="289" stroke="#1a1a1a" stroke-width="1.5"/>
+<line x1="260.25" y1="283" x2="260.25" y2="289" stroke="#1a1a1a" stroke-width="1.5"/>
+<line x1="252.05" y1="286" x2="276.63" y2="286" stroke="#1a1a1a" stroke-width="1.2" stroke-dasharray="3 2"/>
+<line x1="276.63" y1="281" x2="276.63" y2="291" stroke="#1a1a1a" stroke-width="2"/>
+<rect x="248.05" y="282" width="8" height="8" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="1.2"/>
+<text x="426" y="18" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle" font-weight="bold" fill="#1a1a1a">Stratum R</text>
+<rect x="376" y="36" width="100" height="272" fill="none" stroke="#8c8c8c" stroke-width="1"/>
+<line x1="376" y1="36" x2="376" y2="308" stroke="#d9d9d9" stroke-width="1"/>
+<text x="376" y="322" font-family="Arial, Helvetica, sans-serif" font-size="11.2" text-anchor="middle" fill="#1a1a1a">0%</text>
+<line x1="411.71" y1="36" x2="411.71" y2="308" stroke="#d9d9d9" stroke-width="1"/>
+<text x="411.71" y="322" font-family="Arial, Helvetica, sans-serif" font-size="11.2" text-anchor="middle" fill="#1a1a1a">5%</text>
+<line x1="447.43" y1="36" x2="447.43" y2="308" stroke="#d9d9d9" stroke-width="1"/>
+<text x="447.43" y="322" font-family="Arial, Helvetica, sans-serif" font-size="11.2" text-anchor="middle" fill="#1a1a1a">10%</text>
+<text x="426" y="336" font-family="Arial, Helvetica, sans-serif" font-size="11.2" text-anchor="middle" fill="#1a1a1a">silent-drift rate</text>
+<line x1="376" y1="66" x2="468.05" y2="66" stroke="#1a1a1a" stroke-width="1.2" stroke-dasharray="3 2"/>
+<line x1="468.05" y1="61" x2="468.05" y2="71" stroke="#1a1a1a" stroke-width="2"/>
+<polygon points="376,61 381,66 376,71 371,66" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="1.2"/>
+<line x1="376" y1="86" x2="459.95" y2="86" stroke="#1a1a1a" stroke-width="1.2" stroke-dasharray="3 2"/>
+<line x1="459.95" y1="81" x2="459.95" y2="91" stroke="#1a1a1a" stroke-width="2"/>
+<polygon points="376,81 381,86 376,91 371,86" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="1.2"/>
+<line x1="376" y1="106" x2="456.66" y2="106" stroke="#1a1a1a" stroke-width="1.2" stroke-dasharray="3 2"/>
+<line x1="456.66" y1="101" x2="456.66" y2="111" stroke="#1a1a1a" stroke-width="2"/>
+<polygon points="376,101 381,106 376,111 371,106" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="1.2"/>
+<line x1="376" y1="126" x2="468.05" y2="126" stroke="#1a1a1a" stroke-width="1.2" stroke-dasharray="3 2"/>
+<line x1="468.05" y1="121" x2="468.05" y2="131" stroke="#1a1a1a" stroke-width="2"/>
+<polygon points="376,121 381,126 376,131 371,126" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="1.2"/>
+<line x1="376" y1="166" x2="456.66" y2="166" stroke="#1a1a1a" stroke-width="1.2" stroke-dasharray="3 2"/>
+<line x1="456.66" y1="161" x2="456.66" y2="171" stroke="#1a1a1a" stroke-width="2"/>
+<polygon points="376,161 381,166 376,171 371,166" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="1.2"/>
+<line x1="376" y1="186" x2="456.66" y2="186" stroke="#1a1a1a" stroke-width="1.2" stroke-dasharray="3 2"/>
+<line x1="456.66" y1="181" x2="456.66" y2="191" stroke="#1a1a1a" stroke-width="2"/>
+<polygon points="376,181 381,186 376,191 371,186" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="1.2"/>
+<line x1="376" y1="206" x2="456.66" y2="206" stroke="#1a1a1a" stroke-width="1.2" stroke-dasharray="3 2"/>
+<line x1="456.66" y1="201" x2="456.66" y2="211" stroke="#1a1a1a" stroke-width="2"/>
+<polygon points="376,201 381,206 376,211 371,206" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="1.2"/>
+<line x1="376" y1="246" x2="470.22" y2="246" stroke="#1a1a1a" stroke-width="1.2" stroke-dasharray="3 2"/>
+<line x1="470.22" y1="241" x2="470.22" y2="251" stroke="#1a1a1a" stroke-width="2"/>
+<polygon points="376,241 381,246 376,251 371,246" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="1.2"/>
+<line x1="376" y1="266" x2="458.23" y2="266" stroke="#1a1a1a" stroke-width="1.2" stroke-dasharray="3 2"/>
+<line x1="458.23" y1="261" x2="458.23" y2="271" stroke="#1a1a1a" stroke-width="2"/>
+<polygon points="376,261 381,266 376,271 371,266" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="1.2"/>
+<line x1="376" y1="286" x2="457.43" y2="286" stroke="#1a1a1a" stroke-width="1.2" stroke-dasharray="3 2"/>
+<line x1="457.43" y1="281" x2="457.43" y2="291" stroke="#1a1a1a" stroke-width="2"/>
+<polygon points="376,281 381,286 376,291 371,286" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="1.2"/>
+<text x="2" y="50" font-family="Arial, Helvetica, sans-serif" font-size="11.2" text-anchor="start" font-style="italic" fill="#1a1a1a">Cutoff group BEFORE</text>
+<line x1="2" y1="54" x2="476" y2="54" stroke="#8c8c8c" stroke-width="0.8"/>
+<text x="12" y="70" font-family="Arial, Helvetica, sans-serif" font-size="11.2" text-anchor="start" fill="#1a1a1a">gpt-oss-20b</text>
+<text x="12" y="90" font-family="Arial, Helvetica, sans-serif" font-size="11.2" text-anchor="start" fill="#1a1a1a">gemma-4-31b-it</text>
+<text x="12" y="110" font-family="Arial, Helvetica, sans-serif" font-size="11.2" text-anchor="start" fill="#1a1a1a">claude-haiku-4.5</text>
+<text x="12" y="130" font-family="Arial, Helvetica, sans-serif" font-size="11.2" text-anchor="start" fill="#1a1a1a">gpt-5.4-mini</text>
+<text x="2" y="150" font-family="Arial, Helvetica, sans-serif" font-size="11.2" text-anchor="start" font-style="italic" fill="#1a1a1a">Cutoff group AFTER</text>
+<line x1="2" y1="154" x2="476" y2="154" stroke="#8c8c8c" stroke-width="0.8"/>
+<text x="12" y="170" font-family="Arial, Helvetica, sans-serif" font-size="11.2" text-anchor="start" fill="#1a1a1a">gpt-5.6-terra</text>
+<text x="12" y="190" font-family="Arial, Helvetica, sans-serif" font-size="11.2" text-anchor="start" fill="#1a1a1a">claude-haiku-5.5</text>
+<text x="12" y="210" font-family="Arial, Helvetica, sans-serif" font-size="11.2" text-anchor="start" fill="#1a1a1a">claude-sonnet-5.5</text>
+<text x="2" y="230" font-family="Arial, Helvetica, sans-serif" font-size="11.2" text-anchor="start" font-style="italic" fill="#1a1a1a">Cutoff group UNKNOWN</text>
+<line x1="2" y1="234" x2="476" y2="234" stroke="#8c8c8c" stroke-width="0.8"/>
+<text x="12" y="250" font-family="Arial, Helvetica, sans-serif" font-size="11.2" text-anchor="start" fill="#1a1a1a">qwen3.5-9b</text>
+<text x="12" y="270" font-family="Arial, Helvetica, sans-serif" font-size="11.2" text-anchor="start" fill="#1a1a1a">qwen3.6-35b-a3b</text>
+<text x="12" y="290" font-family="Arial, Helvetica, sans-serif" font-size="11.2" text-anchor="start" fill="#1a1a1a">deepseek-v3.2</text>
+<circle cx="8" cy="354" r="4" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="1.2"/>
+<line x1="18" y1="354" x2="38" y2="354" stroke="#1a1a1a" stroke-width="1.5"/>
+<text x="44" y="358" font-family="Arial, Helvetica, sans-serif" font-size="11.2" text-anchor="start" fill="#1a1a1a">rate (circle, square, diamond: strata M, A, R) with 95%</text>
+<text x="44" y="372" font-family="Arial, Helvetica, sans-serif" font-size="11.2" text-anchor="start" fill="#1a1a1a">task-cluster bootstrap interval</text>
+<line x1="8" y1="387" x2="38" y2="387" stroke="#1a1a1a" stroke-width="1.2" stroke-dasharray="3 2"/>
+<line x1="38" y1="382" x2="38" y2="392" stroke="#1a1a1a" stroke-width="2"/>
+<text x="44" y="391" font-family="Arial, Helvetica, sans-serif" font-size="11.2" text-anchor="start" fill="#1a1a1a">exact upper bound, shown for cells with fewer than 5 events</text>
+</svg>

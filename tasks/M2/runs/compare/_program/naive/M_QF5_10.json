@@ -1,0 +1,170 @@
+{
+ "clean_on_233": true,
+ "exclusion": null,
+ "exclusion_detail": null,
+ "program_id": "naive/M_QF5_10",
+ "targets": {
+  "E0a~E1": {
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "drift_pilot_rule": true,
+   "excluded": null,
+   "first_diff": {
+    "a": [
+     [
+      "bronze",
+      0
+     ],
+     [
+      "bronze",
+      50
+     ],
+     [
+      "bronze",
+      100
+     ],
+     [
+      "gold",
+      50
+     ],
+     [
+      "gold",
+      100
+     ],
+     [
+      "gold",
+      150
+     ],
+     [
+      "platinum",
+      50
+     ],
+     [
+      "platinum",
+      100
+     ],
+     [
+      "platinum",
+      250
+     ],
+     [
+      "silver",
+      0
+     ],
+     [
+      "silver",
+      50
+     ],
+     [
+      "silver",
+      100
+     ]
+    ],
+    "b": "[[\"bronze\", 1650], [\"bronze\", 600], [\"bronze\", 1550], [\"gold\", 2000], [\"gold\", 1200], [\"gold\", 1800], [\"platinum\", 850], [\"platinum\", 800], [\"platinum\", 600], [\"silver\", 450], [\"silver\", 1000], [\"silv...",
+    "column": "<index>",
+    "kind": "label",
+    "row": null
+   },
+   "first_divergent_line": null,
+   "locally_silent": null,
+   "magnitude": "SUBSTANTIVE",
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "silent_pilot_rule": true,
+   "silent_pilotdef": true,
+   "trace_truncated": null,
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warning_lines": [],
+   "warning_only": false
+  },
+  "E0a~E2": {
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "drift_pilot_rule": true,
+   "excluded": null,
+   "first_diff": {
+    "a": [
+     [
+      "bronze",
+      0
+     ],
+     [
+      "bronze",
+      50
+     ],
+     [
+      "bronze",
+      100
+     ],
+     [
+      "gold",
+      50
+     ],
+     [
+      "gold",
+      100
+     ],
+     [
+      "gold",
+      150
+     ],
+     [
+      "platinum",
+      50
+     ],
+     [
+      "platinum",
+      100
+     ],
+     [
+      "platinum",
+      250
+     ],
+     [
+      "silver",
+      0
+     ],
+     [
+      "silver",
+      50
+     ],
+     [
+      "silver",
+      100
+     ]
+    ],
+    "b": "[[\"bronze\", 1650], [\"bronze\", 600], [\"bronze\", 1550], [\"gold\", 2000], [\"gold\", 1200], [\"gold\", 1800], [\"platinum\", 850], [\"platinum\", 800], [\"platinum\", 600], [\"silver\", 450], [\"silver\", 1000], [\"silv...",
+    "column": "<index>",
+    "kind": "label",
+    "row": null
+   },
+   "first_divergent_line": null,
+   "locally_silent": null,
+   "magnitude": "SUBSTANTIVE",
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "silent_pilot_rule": true,
+   "silent_pilotdef": true,
+   "trace_truncated": null,
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warning_lines": [],
+   "warning_only": false
+  }
+ },
+ "task_id": "M_QF5_10",
+ "three_x_only": false,
+ "warned_E0a": {
+  "pilot": false,
+  "prereg": false
+ }
+}

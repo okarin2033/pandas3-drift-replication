@@ -1,0 +1,41 @@
+{
+ "baseline_status": "ok",
+ "class": "ORDER_DRIFT",
+ "class_pilot_rule": "ORDER_ONLY",
+ "class_raw": "ORDER_DRIFT",
+ "clean_on_233": true,
+ "drift": true,
+ "drift_pilot_rule": false,
+ "excluded": null,
+ "exclusion": null,
+ "first_diff": {
+  "a": null,
+  "b": null,
+  "column": null,
+  "kind": "order",
+  "row": null
+ },
+ "first_divergent_line": null,
+ "locally_silent": null,
+ "magnitude": "SUBSTANTIVE",
+ "order_note": "sort key not found in the result: any row-order change counts as ORDER_DRIFT",
+ "pair": "E0a~E2",
+ "program_id": "naive/M_QF5_02",
+ "run_problem": null,
+ "silent": true,
+ "silent_all_magnitudes": true,
+ "silent_pilot_rule": false,
+ "silent_pilotdef": true,
+ "target_status": "ok",
+ "task_id": "M_QF5_02",
+ "warned_E0a": {
+  "pilot": false,
+  "prereg": false
+ },
+ "warned_target": {
+  "pilot": false,
+  "prereg": false
+ },
+ "warning_lines": [],
+ "warning_only": false
+}

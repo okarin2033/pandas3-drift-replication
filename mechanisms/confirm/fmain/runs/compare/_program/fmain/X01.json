@@ -1,0 +1,134 @@
+{
+ "clean_on_233": true,
+ "exclusion": null,
+ "exclusion_detail": null,
+ "program_id": "fmain/X01",
+ "targets": {
+  "E0a~E1": {
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "drift_pilot_rule": true,
+   "excluded": null,
+   "first_diff": {
+    "a": 0.5282833835483883,
+    "b": 0.48909537486494986,
+    "column": "sem",
+    "kind": "cell",
+    "row": 6
+   },
+   "first_divergent_line": null,
+   "locally_silent": null,
+   "magnitude": "SUBSTANTIVE",
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "silent_pilot_rule": true,
+   "silent_pilotdef": true,
+   "trace_truncated": null,
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warning_lines": [],
+   "warning_only": false
+  },
+  "E0a~E2": {
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "drift_pilot_rule": true,
+   "excluded": null,
+   "first_diff": {
+    "a": 0.5282833835483883,
+    "b": 0.48909537486494986,
+    "column": "sem",
+    "kind": "cell",
+    "row": 6
+   },
+   "first_divergent_line": null,
+   "locally_silent": null,
+   "magnitude": "SUBSTANTIVE",
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "silent_pilot_rule": true,
+   "silent_pilotdef": true,
+   "trace_truncated": null,
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warning_lines": [],
+   "warning_only": false
+  },
+  "V-clean__E0a~V-clean__E1": {
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "drift": true,
+   "drift_pilot_rule": true,
+   "excluded": null,
+   "first_diff": {
+    "a": 0.5282833835483883,
+    "b": 0.48909537486494986,
+    "column": "sem",
+    "kind": "cell",
+    "row": 6
+   },
+   "first_divergent_line": null,
+   "locally_silent": null,
+   "magnitude": "SUBSTANTIVE",
+   "run_problem": null,
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "silent_pilot_rule": true,
+   "silent_pilotdef": true,
+   "trace_truncated": null,
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warning_lines": [],
+   "warning_only": false
+  },
+  "V-dirty__E0a~V-dirty__E1": {
+   "class": null,
+   "class_pilot_rule": null,
+   "drift": false,
+   "drift_pilot_rule": false,
+   "excluded": "EXCL_FAIL",
+   "first_diff": null,
+   "first_divergent_line": null,
+   "locally_silent": null,
+   "magnitude": null,
+   "run_problem": null,
+   "silent": false,
+   "silent_all_magnitudes": false,
+   "silent_pilot_rule": false,
+   "silent_pilotdef": false,
+   "trace_truncated": null,
+   "warned_target": {
+    "pilot": false,
+    "prereg": false
+   },
+   "warning_lines": [],
+   "warning_only": false
+  }
+ },
+ "task_id": null,
+ "three_x_only": false,
+ "variant_clean": {
+  "clean": {
+   "detail": null,
+   "exclusion": null
+  },
+  "dirty": {
+   "detail": "E0a status error:DataError",
+   "exclusion": "EXCL_FAIL"
+  }
+ },
+ "warned_E0a": {
+  "pilot": false,
+  "prereg": false
+ }
+}

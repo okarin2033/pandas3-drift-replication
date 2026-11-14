@@ -1,0 +1,76 @@
+{
+ "id": "M_QF6_02",
+ "stratum": "M",
+ "family": "QF6_NA_DTYPE",
+ "generic_family": null,
+ "catalogue_row": "N02",
+ "files": [
+  {
+   "path": "QF6_NA_DTYPE/store_traffic.csv",
+   "description": "Daily store traffic (90 rows): store (name such as \"Store 07\"), sales (whole number of sales, zero on some days), visits (whole number of visits, zero on some days; about 3% empty), open_sunday (True or False; about 8% empty)."
+  }
+ ],
+ "task_text": "Read sales and visits as whole-number columns that allow empty cells. The conversion rate of a store-day is sales divided by visits. How many store-days have no usable conversion rate, because visits is empty or zero? `result` should be that number.",
+ "allowed_task_words": [],
+ "invited_ids_author": [
+  "N02"
+ ],
+ "order_significant": false,
+ "sort_keys": [],
+ "dtype_significant": false,
+ "intended_computation": "Count rows where visits is empty (3 rows) or visits is 0 (3 rows): 6.",
+ "acceptable_variants": {
+  "row_order": "any",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": "a whole number."
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "numeric_in_range",
+   "args": {
+    "columns": [
+     "__values__"
+    ],
+    "min": 0,
+    "max": 90
+   }
+  },
+  {
+   "check": "result_kind",
+   "args": {
+    "kind": "scalar"
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "FIX",
+  "reason": "With nullable columns, 0/0 gave NaN that isna() did not count on 2.x (3 instead of 6); on 3.x 0/0 is missing and the count is right."
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M2",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 by pkg:TASKS_M2 for catalogue row N02; naive.py shows the invited idiom, reference.py is the version-robust reference."
+}

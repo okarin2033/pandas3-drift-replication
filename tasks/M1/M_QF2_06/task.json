@@ -1,0 +1,82 @@
+{
+ "id": "M_QF2_06",
+ "stratum": "M",
+ "family": "QF2_DATETIME",
+ "generic_family": null,
+ "catalogue_row": "D06",
+ "files": [
+  {
+   "path": "QF2_DATETIME/appointments.csv",
+   "description": "Clinic appointments in New York (160 rows, February to November 2025, so the clock changes in March and November fall inside the data): appt_id (whole number), local_start (New York wall-clock start, text YYYY-MM-DD HH:MM, no UTC offset), start_with_offset (the same moment as ISO text with its UTC offset, e.g. \"2025-06-13T08:45:00-04:00\"), clinic (Harbor, Midtown or Riverside; capital letters and spaces are inconsistent), duration_min (whole minutes; about 3% empty)."
+  }
+ ],
+ "task_text": "Offer every patient a slot on the next calendar day at the same New York wall-clock time as their appointment (local_start is New York local time). `result` should be a table with the columns appt_id and next_day_slot, the slot as New York local time text 'YYYY-MM-DD HH:MM', in file order.",
+ "allowed_task_words": [
+  "calendar day",
+  "wall-clock time",
+  "New York"
+ ],
+ "invited_ids_author": [
+  "D06"
+ ],
+ "order_significant": true,
+ "sort_keys": [
+  "__index__"
+ ],
+ "dtype_significant": false,
+ "intended_computation": "For each of the 160 appointments return the same local clock time one calendar day later as 'YYYY-MM-DD HH:MM'.",
+ "acceptable_variants": {
+  "row_order": "ties_only",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": ""
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 160
+   }
+  },
+  {
+   "check": "date_year_in_range",
+   "args": {
+    "columns": [
+     "next_day_slot"
+    ],
+    "min_year": 2025,
+    "max_year": 2025
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "FIX",
+  "reason": "on 2.x the day offset adds 24 hours, which shifts the wall-clock time across the clock change; 3.x adds a calendar day"
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M1",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 in package TASKS_M1; task text, card, naive solution, reference and predicted direction were prepared there."
+}

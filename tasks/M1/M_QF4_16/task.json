@@ -1,0 +1,87 @@
+{
+ "id": "M_QF4_16",
+ "stratum": "M",
+ "family": "QF4_GROUPBY",
+ "generic_family": null,
+ "catalogue_row": "G04",
+ "files": [
+  {
+   "path": "QF4_GROUPBY/subscribers.csv",
+   "description": "Streaming subscribers, one per row (320 rows): subscriber_id (whole number), age (years, from 19 to 87; about 1% empty), tier (basic, plus or premium; capital letters and spaces are inconsistent), monthly_fee (two decimals; about 3% empty), joined_year (whole number)."
+  }
+ ],
+ "task_text": "Group the subscribers by the five-year period in which they joined (2015-2019, 2020-2024, 2025-2029; a period is identified by its first year) and give the mean monthly fee per period, rounded to two decimals. `result` should be a table with the columns period_start and mean_fee.",
+ "allowed_task_words": [
+  "five-year period"
+ ],
+ "invited_ids_author": [
+  "G04"
+ ],
+ "order_significant": false,
+ "sort_keys": [],
+ "dtype_significant": false,
+ "intended_computation": "Map joined_year to the first year of its five-year period (2015, 2020 or 2025) and return period_start with the mean monthly_fee (missing fees skipped) rounded to 2 decimals; 3 periods.",
+ "acceptable_variants": {
+  "row_order": "any",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": ""
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 3
+   }
+  },
+  {
+   "check": "columns_present",
+   "args": {
+    "columns": [
+     "period_start",
+     "mean_fee"
+    ]
+   }
+  },
+  {
+   "check": "numeric_in_range",
+   "args": {
+    "columns": [
+     "period_start"
+    ],
+    "min": 2015,
+    "max": 2025
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "FIX",
+  "reason": "on 2.x the computed period key is dropped from the column-style group output; 3.x keeps it"
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M1",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 in package TASKS_M1; task text, card, naive solution, reference and predicted direction were prepared there."
+}

@@ -1,0 +1,89 @@
+{
+ "id": "M_QF1_12",
+ "stratum": "M",
+ "family": "QF1_STRING",
+ "generic_family": null,
+ "catalogue_row": "S02",
+ "files": [
+  {
+   "path": "QF1_STRING/members.csv",
+   "description": "Club members, one per row (240 rows): member_id (whole number), full_name (first and last name; many names have accented letters; capital letters and spaces around the name are inconsistent), home_city (city name, several with accented letters; capital letters and spaces around the name are inconsistent; about 3% of cells are empty and about 3% hold \"-\" for an unknown city), fee (yearly fee, two decimals)."
+  }
+ ],
+ "task_text": "List the member_id of every member whose home city is not known (the cell is empty or holds '-'). `result` should be a Python list of these ids in increasing order.",
+ "allowed_task_words": [],
+ "invited_ids_author": [
+  "S02"
+ ],
+ "order_significant": true,
+ "sort_keys": [
+  "__values__"
+ ],
+ "dtype_significant": false,
+ "intended_computation": "Select the members with an empty home_city or '-' (14 members) and return their member_id values as a sorted list.",
+ "acceptable_variants": {
+  "row_order": "ties_only",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": ""
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 14
+   }
+  },
+  {
+   "check": "numeric_in_range",
+   "args": {
+    "columns": [
+     "__values__"
+    ],
+    "min": 5001,
+    "max": 5240
+   }
+  },
+  {
+   "check": "sorted_by",
+   "args": {
+    "keys": [
+     "__values__"
+    ],
+    "ascending": [
+     true
+    ]
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "HARM",
+  "reason": "on 3.x the None placeholders become NaN, so the identity test for None finds no member"
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M1",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 in package TASKS_M1; task text, card, naive solution, reference and predicted direction were prepared there."
+}

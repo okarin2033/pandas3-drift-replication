@@ -1,0 +1,42 @@
+id	files	columns_used
+S01	QF1_STRING/members.csv	home_city;fee;all text columns
+S02	QF1_STRING/members.csv	home_city
+S03	QF1_STRING/members.csv	home_city
+S06	QF1_STRING/branch_sales.csv	branch_code;sales
+O01	QF1_STRING/price_list.csv	price;all columns
+D01	QF2_DATETIME/signups.csv	account_id;signup_day
+D02	QF2_DATETIME/clicks.csv	epoch_s
+D03	QF2_DATETIME/shipments.csv	ordered_on;value
+D04	QF2_DATETIME/signups.csv	signup_day
+D05	QF2_DATETIME/appointments.csv	appt_id;local_start
+D06	QF2_DATETIME/appointments.csv	appt_id;local_start
+D07	QF2_DATETIME/clicks.csv	click_ref;epoch_s
+D08	QF2_DATETIME/shipments.csv	ordered_on;shipped_on;all columns
+D09	QF2_DATETIME/quarterly_revenue.csv	quarter_start
+D10	QF2_DATETIME/sessions.csv	started_at
+C01	QF3_COW/bookings.csv	state;total
+C02	QF3_COW/admissions.csv	age
+C03	QF3_COW/bookings.csv	total
+C04	QF3_COW/admissions.csv	all columns
+C05	QF3_COW/gauges.csv	reading (second column)
+C06	QF3_COW/gauges.csv	level
+G01	QF4_GROUPBY/subscribers.csv	age;monthly_fee
+G02	QF4_GROUPBY/unit_sales.csv	region;channel;units
+G03	QF4_GROUPBY/purchases.csv	subscriber_id;numeric columns
+G04	QF4_GROUPBY/purchases.csv	store_city;spend
+G05	QF4_GROUPBY/subscribers.csv	tier;monthly_fee
+G06	QF4_GROUPBY/subscribers.csv	tier;monthly_fee
+R01	QF5_ORDER/footfall_north.csv,QF5_ORDER/footfall_south.csv	day;visitors
+R02	QF5_ORDER/memberships.csv	plan;city
+R04	QF5_ORDER/exam_scores.csv	student;math;art;music
+R05	QF5_ORDER/returns_march.csv,QF5_ORDER/returns_april.csv	all columns
+N01	QF6_NA_DTYPE/deliveries.csv	city;status
+N02	QF6_NA_DTYPE/store_traffic.csv	sales;visits
+N05	QF6_NA_DTYPE/quiz_scores.csv	quiz_a;quiz_b
+N06	QF6_NA_DTYPE/quiz_scores.csv	quiz_a
+I01	QF7_INDEX_REDUCE/order_lines.csv	quantity;amount
+I02	QF7_INDEX_REDUCE/parcel_rates.csv	weight_kg;fee
+I05	QF7_INDEX_REDUCE/code_changes.csv	old_code;new_code
+I06	QF7_INDEX_REDUCE/storage_quota.csv	active;quota_bytes
+X01	QF8_NUMERIC/daily_temps.csv	temp_c
+X02	QF8_NUMERIC/panel_scores.csv	panel;score

@@ -1,0 +1,55 @@
+{
+ "schema_version": "per_program/1",
+ "program_id": "example/EX_QF1_01__s0",
+ "model": "example",
+ "task_id": "EX_QF1_01",
+ "sample": 0,
+ "stratum": "M",
+ "family": "QF1_STRING",
+ "generic_family": null,
+ "clean_on_233": true,
+ "exclusion": null,
+ "exclusion_detail": null,
+ "three_x_only": false,
+ "warned_E0a": {
+  "prereg": false,
+  "pilot": false
+ },
+ "exposure_match": [
+  "S02"
+ ],
+ "duplicate_body_of": null,
+ "targets": {
+  "E0a~E1": {
+   "class": "VALUE_DRIFT",
+   "class_pilot_rule": "VALUE_DRIFT",
+   "run_problem": null,
+   "drift": true,
+   "magnitude": "SUBSTANTIVE",
+   "silent": true,
+   "silent_all_magnitudes": true,
+   "locally_silent": true,
+   "warned_target": {
+    "prereg": false,
+    "pilot": false
+   },
+   "warning_only": false,
+   "first_diff": {
+    "kind": "cell",
+    "row": 2,
+    "column": "colour",
+    "a": "none",
+    "b": null,
+    "line": 5
+   },
+   "labels": [
+    "S02"
+   ],
+   "primary_label": "S02",
+   "attribution_step": "line",
+   "trace_truncated": false,
+   "harm_prelabel": "HARM_3X"
+  }
+ },
+ "_comment": "FICTITIOUS example line (format only; not produced by the analyzer)"
+}

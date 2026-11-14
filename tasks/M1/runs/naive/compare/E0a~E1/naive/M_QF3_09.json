@@ -1,0 +1,40 @@
+{
+ "baseline_status": "ok",
+ "class": "VALUE_DRIFT",
+ "class_pilot_rule": "VALUE_DRIFT",
+ "class_raw": "VALUE_DRIFT",
+ "clean_on_233": true,
+ "drift": true,
+ "drift_pilot_rule": true,
+ "excluded": null,
+ "exclusion": null,
+ "first_diff": {
+  "a": 85.0,
+  "b": 94.0,
+  "column": "max_age",
+  "kind": "cell",
+  "row": 0
+ },
+ "first_divergent_line": null,
+ "locally_silent": null,
+ "magnitude": "SUBSTANTIVE",
+ "pair": "E0a~E1",
+ "program_id": "naive/M_QF3_09",
+ "run_problem": null,
+ "silent": true,
+ "silent_all_magnitudes": true,
+ "silent_pilot_rule": true,
+ "silent_pilotdef": true,
+ "target_status": "ok",
+ "task_id": "M_QF3_09",
+ "warned_E0a": {
+  "pilot": false,
+  "prereg": false
+ },
+ "warned_target": {
+  "pilot": false,
+  "prereg": false
+ },
+ "warning_lines": [],
+ "warning_only": false
+}

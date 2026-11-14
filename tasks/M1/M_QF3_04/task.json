@@ -1,0 +1,86 @@
+{
+ "id": "M_QF3_04",
+ "stratum": "M",
+ "family": "QF3_COW",
+ "generic_family": null,
+ "catalogue_row": "C04",
+ "files": [
+  {
+   "path": "QF3_COW/admissions.csv",
+   "description": "Hospital admissions (260 rows): admission_id (whole number), age (years, whole number; about 5% empty), ward (cardiology, oncology, maternity, orthopedics or neurology; capital letters and spaces are inconsistent), stay_days (whole number; about 3% empty), charge (two decimals; about 5% empty)."
+  }
+ ],
+ "task_text": "Replace every missing value in the admissions table by 0 and give back the completed table. `result` should be the table with all original columns, in file order.",
+ "allowed_task_words": [],
+ "invited_ids_author": [
+  "C04"
+ ],
+ "order_significant": true,
+ "sort_keys": [
+  "__index__"
+ ],
+ "dtype_significant": false,
+ "intended_computation": "Fill the missing ages, stays and charges with 0 and return all 260 rows with the five columns unchanged otherwise.",
+ "acceptable_variants": {
+  "row_order": "ties_only",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": ""
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 260
+   }
+  },
+  {
+   "check": "no_nulls",
+   "args": {
+    "columns": []
+   }
+  },
+  {
+   "check": "columns_present",
+   "args": {
+    "columns": [
+     "admission_id",
+     "age",
+     "ward",
+     "stay_days",
+     "charge"
+    ]
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "FIX",
+  "reason": "on 2.x the fill with the in-place flag returns None, so the stored answer is empty; 3.x returns the filled table"
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M1",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 in package TASKS_M1; task text, card, naive solution, reference and predicted direction were prepared there."
+}

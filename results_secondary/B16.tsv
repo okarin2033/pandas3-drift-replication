@@ -1,0 +1,5 @@
+variant	model	arm	x	n	generated	rate	wilson_lo	wilson_hi	rare_event	cp_deff_upper
+all tasks	anthropic__claude-sonnet-5.5	main (set effort)	0	45	45	0.000000	0.000000	0.078652	yes	0.112928
+all tasks	anthropic__claude-sonnet-5.5	default effort	0	45	45	0.000000	0.000000	0.078652	yes	0.112928
+without ruled R tasks (LR61/LR70)	anthropic__claude-sonnet-5.5	main (set effort)	0	40	40	0.000000	0.000000	0.087622	yes	0.126116
+without ruled R tasks (LR61/LR70)	anthropic__claude-sonnet-5.5	default effort	0	40	40	0.000000	0.000000	0.087622	yes	0.126116

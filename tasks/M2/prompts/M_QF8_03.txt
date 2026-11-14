@@ -1,0 +1,11 @@
+You are given CSV file(s) in the current working directory:
+
+- daily_temps.csv: Daily weather at one station (90 rows, one per day in date order from 2025-06-01, no gaps): date (YYYY-MM-DD), temp_c (mean temperature in degrees C, two decimals; about 1% empty), humidity (percent, whole number).
+
+Task: The standard error of the mean of a window is the sample standard deviation of its values (dividing by n - 1) divided by the square root of n, the number of values in the window. For each day, take the 7-day window of temperatures (that day and the 6 days before it) and give the window mean and a band of the mean minus and plus 1.96 standard errors of the mean; leave all three empty when the window has fewer than 7 temperatures. `result` should be a table indexed by date with the columns mean, lower and upper.
+
+Requirements:
+- Write a complete Python script that reads the file(s) from the current directory.
+- Use only pandas, numpy and the Python standard library.
+- Store the final answer in a top-level variable named `result`.
+- Reply with a single Python code block.

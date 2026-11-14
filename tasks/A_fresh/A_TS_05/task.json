@@ -1,0 +1,100 @@
+{
+ "id": "A_TS_05",
+ "stratum": "A",
+ "family": null,
+ "generic_family": "TS",
+ "catalogue_row": null,
+ "files": [
+  {
+   "path": "GEN/weather_hourly.csv",
+   "description": "Hourly weather for the city, September 2025 (720 rows, one per hour in time order, no gaps): observed_at (timestamp written as YYYY-MM-DD HH:MM), temp_c (degrees C, one decimal; about 2% empty), rain_mm (one decimal), wind_kmh (whole number), sky (clear, cloudy, fog or rain; capital letters and spaces are inconsistent)."
+  }
+ ],
+ "task_text": "From weather_hourly.csv, compute the daily average of temp_c for each day of September 2025 (ignoring empty values), then a 3-day rolling average of those daily values that uses the day itself and the two days before. `result` should be a Series indexed by date in time order, rounded to 2 decimals, empty for 1 and 2 September.",
+ "allowed_task_words": [],
+ "invited_ids_author": [],
+ "order_significant": true,
+ "sort_keys": [
+  "__index__"
+ ],
+ "dtype_significant": false,
+ "intended_computation": "Read weather_hourly.csv; daily mean of non-empty temp_c for each day of September 2025; then the mean over a 3-day window ending on each day (the day and the two before), missing for 1 and 2 September; a Series indexed by date in time order, rounded to 2 decimals.",
+ "acceptable_variants": {
+  "row_order": "ties_only",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": "the index may be dates, timestamps at midnight, or YYYY-MM-DD text"
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "result_kind",
+   "args": {
+    "kind": "series"
+   }
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 30
+   }
+  },
+  {
+   "check": "numeric_in_range",
+   "args": {
+    "columns": [
+     "__values__"
+    ],
+    "min": -40,
+    "max": 50
+   }
+  },
+  {
+   "check": "date_year_in_range",
+   "args": {
+    "columns": [
+     "__index__"
+    ],
+    "min_year": 2025,
+    "max_year": 2025
+   }
+  },
+  {
+   "check": "sorted_by",
+   "args": {
+    "keys": [
+     "__index__"
+    ],
+    "ascending": [
+     true
+    ]
+   }
+  }
+ ],
+ "predicted_direction": null,
+ "naive_path": null,
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:REPAIR3_INTEGRATE",
+ "status": "prepared",
+ "notes": "Intent written in a separate step that did not use the catalogue or the pre-registration (Amendment 8 item 3; INTENTS_FRESH.tsv sha256 ffae987c...e666). Card, reference and invited_ids_author drafted 2026-11-11 by pkg:REPAIR3_INTEGRATE after the intents were sealed; intent not rewritten. Prepared (Amendment 9)."
+}

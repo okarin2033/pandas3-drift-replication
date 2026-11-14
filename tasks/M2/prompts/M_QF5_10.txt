@@ -1,0 +1,11 @@
+You are given CSV file(s) in the current working directory:
+
+- memberships.csv: Loyalty memberships (200 rows): member_ref (six-digit reference with leading zeros), plan (bronze, silver, gold or platinum), city (city name; capital letters and spaces are inconsistent in some rows), points (whole number, multiples of 50; many members share the same points).
+
+Task: For each plan, count how many members have each points value, and keep only the three lowest points values of each plan. `result` should be a Series of counts indexed by plan and points, with the plans in alphabetical order and the points from lowest to highest within each plan.
+
+Requirements:
+- Write a complete Python script that reads the file(s) from the current directory.
+- Use only pandas, numpy and the Python standard library.
+- Store the final answer in a top-level variable named `result`.
+- Reply with a single Python code block.

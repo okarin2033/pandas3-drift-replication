@@ -1,0 +1,34 @@
+{
+ "baseline_status": "ok",
+ "class": "IDENTICAL",
+ "class_pilot_rule": "IDENTICAL",
+ "class_raw": "IDENTICAL",
+ "clean_on_233": true,
+ "drift": false,
+ "drift_pilot_rule": false,
+ "excluded": null,
+ "exclusion": null,
+ "first_diff": null,
+ "first_divergent_line": null,
+ "locally_silent": null,
+ "magnitude": null,
+ "pair": "E0a~E0b",
+ "program_id": "naive/M_QF2_05",
+ "run_problem": null,
+ "silent": false,
+ "silent_all_magnitudes": false,
+ "silent_pilot_rule": false,
+ "silent_pilotdef": false,
+ "target_status": "ok",
+ "task_id": "M_QF2_05",
+ "warned_E0a": {
+  "pilot": false,
+  "prereg": false
+ },
+ "warned_target": {
+  "pilot": false,
+  "prereg": false
+ },
+ "warning_lines": [],
+ "warning_only": false
+}

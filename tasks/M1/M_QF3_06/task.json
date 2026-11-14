@@ -1,0 +1,90 @@
+{
+ "id": "M_QF3_06",
+ "stratum": "M",
+ "family": "QF3_COW",
+ "generic_family": null,
+ "catalogue_row": "C06",
+ "files": [
+  {
+   "path": "QF3_COW/gauges.csv",
+   "description": "Water gauge log (120 rows): gauge (gauge name such as \"LA-01\"), reading (meters, three decimals; about 3% empty), level (alert level, whole number from 3 to 80, no empty cells), site (dam, canal or lake; capital letters and spaces are inconsistent)."
+  }
+ ],
+ "task_text": "Build a table of the readings indexed by alert level, where the index holds the levels exactly as in the file, and add a column level_above_min that gives each level minus the lowest level in the file. Work with NumPy arrays for the level arithmetic. `result` should be that table with the columns reading and level_above_min, rows in file order.",
+ "allowed_task_words": [
+  "NumPy arrays"
+ ],
+ "invited_ids_author": [
+  "C06"
+ ],
+ "order_significant": true,
+ "sort_keys": [
+  "__index__"
+ ],
+ "dtype_significant": false,
+ "intended_computation": "Return 120 rows in file order: index = level as in the file (values 3-80), reading unchanged, level_above_min = level - min(level) (0-77).",
+ "acceptable_variants": {
+  "row_order": "ties_only",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": ""
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 120
+   }
+  },
+  {
+   "check": "numeric_in_range",
+   "args": {
+    "columns": [
+     "level_above_min"
+    ],
+    "min": 0,
+    "max": 77
+   }
+  },
+  {
+   "check": "numeric_in_range",
+   "args": {
+    "columns": [
+     "__index__"
+    ],
+    "min": 3,
+    "max": 80
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "FIX",
+  "reason": "on 2.x the index shares the NumPy array, so the later subtraction also shifts the index; 3.x keeps the original levels"
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M1",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 in package TASKS_M1; task text, card, naive solution, reference and predicted direction were prepared there."
+}

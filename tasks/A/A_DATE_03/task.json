@@ -1,0 +1,81 @@
+{
+ "id": "A_DATE_03",
+ "stratum": "A",
+ "family": null,
+ "generic_family": "DATE",
+ "catalogue_row": null,
+ "files": [
+  {
+   "path": "GEN/stations.csv",
+   "description": "Bike-share stations (48 rows, one per station): station_code (four-digit code with leading zeros, e.g. \"0040\"), station_name (text, a few with accented letters), district (same 6 districts as riders.csv; capital letters and spaces are inconsistent), docks (whole number), opened_on (date as text, YYYY-MM-DD)."
+  }
+ ],
+ "task_text": "For each station, compute the year it opened and the number of days from its opening date to 2025-12-31. `result` should be a table with the columns station_code, opened_year and days_open.",
+ "allowed_task_words": [],
+ "invited_ids_author": [],
+ "order_significant": false,
+ "sort_keys": [],
+ "dtype_significant": false,
+ "intended_computation": "Read stations.csv, parse opened_on as a date, and give for every station its station_code, the year of opened_on and the number of days from opened_on to 2025-12-31.",
+ "acceptable_variants": {
+  "row_order": "any",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": "id columns (rider_id, station codes) may be written as integers without leading zeros"
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 48
+   }
+  },
+  {
+   "check": "numeric_in_range",
+   "args": {
+    "columns": [
+     "opened_year"
+    ],
+    "min": 2015,
+    "max": 2024
+   }
+  },
+  {
+   "check": "numeric_in_range",
+   "args": {
+    "columns": [
+     "days_open"
+    ],
+    "min": 0,
+    "max": null
+   }
+  }
+ ],
+ "predicted_direction": null,
+ "naive_path": null,
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_RA",
+ "status": "prepared",
+ "notes": "invited_ids_author labelled by hand after the intents were frozen (step A2); intent not rewritten for it."
+}

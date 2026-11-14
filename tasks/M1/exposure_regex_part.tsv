@@ -1,0 +1,32 @@
+id	family	regex	matches_naive	matches_reference	note
+S01	QF1_STRING	dtypes?\s*[!=]=\s*(?:object\b|np\.object_|["\'](?:O|object)["\'])|is_object_dtype\(|dtype\.kind\s*[!=]=\s*["\']O["\']	4/4	0/4	equality test of a column type with object / "O", is_object_dtype, or dtype.kind == "O" (select_dtypes("object") is not matched: it also selects the new text type)
+S02	QF1_STRING	\.where\([^\n]*,\s*None\s*\)|\.replace\([^\n]*,\s*None\s*\)|\.replace\(\s*\{[^\n]*:\s*None\b|\.loc\[(?:[^\[\]\n]|\[[^\[\]\n]*\])+\]\s*=\s*None\b|\.isin\(\[[^\]\n]*(?<!["\'])\bNone\b(?!["\'])|[!=]=\s*None\b|lambda[^\n]*\bis\s+(?:not\s+)?None\b|\bfor\b[^\n]*\bif\s+\w+\s+is\s+(?:not\s+)?None\b	3/3	0/3	None written into a column (where/replace/loc) or None used as the missing-value test (is None in a lambda or comprehension, == None, isin([None]))
+S03	QF1_STRING	\.astype\(\s*(?:str|["\']str["\']|["\']U["\'])\s*\)	3/3	0/3	astype(str) / astype("str")
+S04	QF1_STRING	\.values\s*(?:[!=]=|\.tolist\(\))|np\.(?:where|array_equal|unique)\([^\n]*\.values\b	0/0	0/0	NumPy semantics on .values (no task: row NOT_REPRODUCED); no task invites this row in M1
+S05	QF1_STRING	\.str\.(?:extract|extractall|contains|match|fullmatch|findall|replace|count|split|rsplit)\([^\n]*\\[wdsbWDSB]	0/0	0/0	str regex methods with \w \d \s \b classes (no task: row NOT_REPRODUCED); no task invites this row in M1
+S06	QF1_STRING	read_csv\([^)]*dtype\s*=\s*(?:["\']category["\']|\{[^}]*["\']category["\'])	3/3	0/3	read_csv with dtype "category" (whole file or per column)
+D01	QF2_DATETIME	\.view\(\s*["\'](?:int64|i8|<i8)["\']\s*\)|\.asi8\b|\b(?:10\s*\*\*\s*9|1e9|1_?000_?000_?000)\b|\.astype\(\s*["\']?(?:int64|i8|<i8)["\']?\s*\)\s*(?://|/)	4/4	0/4	integer view/asi8 of datetimes, nanosecond scale constants (10**9, 1e9), or an int64 cast followed by a division
+D02	QF2_DATETIME	(?:to_datetime|to_timedelta|Timestamp|Timedelta)\([^)]*\bunit\s*=	2/2	1/2	numeric input with a unit argument to to_datetime / to_timedelta / Timestamp / Timedelta
+D03	QF2_DATETIME	\.end_time\b|to_timestamp\([^)]*how\s*=\s*["\']e(?:nd)?["\']	2/2	0/2	Period end_time or to_timestamp(how="end")
+D04	QF2_DATETIME	\b(?:date_range|timedelta_range|bdate_range)\(	2/2	0/2	date_range / timedelta_range / bdate_range
+D05	QF2_DATETIME	\.to_pydatetime\(\)\s*[+-]\s*(?:dt\.|datetime\.)?timedelta\(|\.tz\.zone\b|\.localize\(|\bpytz\b|\.to_pydatetime\(\)[^\n]*\.(?:astimezone|replace)\(|\bstr\([^\n]*\.tz\s*\)|\.tzinfo\b	2/2	0/2	stdlib arithmetic or tz handling on a converted tz-aware Timestamp, text of the tz attribute, tzinfo, pytz-specific calls
+D06	QF2_DATETIME	\b(?:pd\.)?(?:offsets\.)?Day\(|shift\([^)]*freq\s*=\s*["\']\d*D["\']|to_offset\(\s*["\']\d*D["\']	2/2	0/2	Day offset arithmetic (pd.offsets.Day, shift(freq="D"), to_offset("D"))
+D07	QF2_DATETIME	(?s)\A(?=.*(?:read_csv\([^)]*dtype\s*=\s*(?:str\b|["\']str["\']|object\b|["\']object["\'])|\.astype\(\s*(?:str|["\']str["\'])\s*\)))(?=.*to_datetime\([^)]*\bunit\s*=)	1/1	0/1	to_datetime(..., unit=...) in a program that reads columns as text (dtype=str/object) or casts them to str
+D08	QF2_DATETIME	select_dtypes\([^)]*datetime64\[ns	1/1	0/1	select_dtypes with the "datetime64[ns]" type name
+D09	QF2_DATETIME	\binfer_freq\(|\.inferred_freq\b|\.isocalendar\(	1/1	0/1	infer_freq / inferred_freq / isocalendar
+D10	QF2_DATETIME	\.dt\.to_pydatetime\(	1/1	0/1	Series.dt.to_pydatetime
+C01	QF3_COW	\b\w+(?:\.\w+)?\[(?:[^\[\]\n]|\[[^\[\]\n]*\])+\]\s*\[(?:[^\[\]\n]|\[[^\[\]\n]*\])+\]\s*=(?!=)|\b\w+\.(?!loc\b|iloc\b|at\b|iat\b|values\b|columns\b|index\b)\w+\[(?:[^\[\]\n]|\[[^\[\]\n]*\])+\]\s*=(?!=)	3/3	0/3	two-step indexing assignment df[col][mask] = v (or df.col[mask] = v)
+C02	QF3_COW	(?:\]|\b\w+\.\w+)\.(?:fillna|replace|ffill|bfill|pad|backfill|interpolate|clip|where|mask|update)\([^\n]*\binplace\s*=\s*True	3/3	0/3	in-place method called on a selected column (df[col].fillna(..., inplace=True))
+C03	QF3_COW	(?ms)^\s*(\w+)\s*=\s*\w+(?:\[["\'][^"\'\n]+["\']\]|\.(?!loc\b|iloc\b)\w+)(?:\.values|\.to_numpy\(\))?\s*$.*?^\s*\1(?:\.(?:iloc|loc|at|iat))?\[(?:[^\[\]\n]|\[[^\[\]\n]*\])+\]\s*=(?!=)	3/3	0/3	a column taken into its own variable and then written through that variable
+C04	QF3_COW	(?:(?<![=!<>])=|\breturn)\s*[\w\.\[\]"\']+\.(?:fillna|replace|ffill|bfill|pad|backfill|interpolate|where|mask|clip)\([^\n]*\binplace\s*=\s*True	3/3	0/3	the return value of an in-place call is assigned or returned
+C05	QF3_COW	\bcopy\s*=\s*False\b	2/2	0/2	copy=False keyword
+C06	QF3_COW	(?ms)\b(?:pd\.)?(?:Index|DatetimeIndex)\(\s*(\w+)\b[^\n]*$.*?^\s*\1\s*(?:[-+*/]=|\[(?:[^\[\]\n]|\[[^\[\]\n]*\])+\]\s*=(?!=))	2/2	0/2	an Index built from an array variable that is later modified in place
+G01	QF4_GROUPBY	(?s)\A(?!.*\bobserved\s*=)(?=.*(?:\bcut\(|\bqcut\(|["\']category["\']|\bCategorical(?:Dtype)?\())(?=.*\.groupby\()	3/3	0/3	groupby in a program that builds categorical keys (cut, qcut, category, Categorical) and never passes observed=
+G02	QF4_GROUPBY	\bobserved\s*=\s*False\)[^\n]*\.(?:apply|agg|aggregate)\((?:[^\n]*\blambda\b|\s*[A-Za-z_][\w.]*\s*[,)])	3/3	0/3	observed=False followed on the same line by apply/agg/aggregate with a lambda or a function name as first argument (narrowed 2026-11-11 in the repair step, review SF4: named aggregation with a string does not drift)
+G03	QF4_GROUPBY	\.groupby\((?:[^()\n]|\([^()\n]*\))*\)(?:\[\[[^\n]*?\]\])?\.apply\(	3/3	0/3	DataFrameGroupBy.apply (whole groups passed to the function)
+G04	QF4_GROUPBY	\bas_index\s*=\s*False\b	3/3	0/3	groupby with as_index=False
+G05	QF4_GROUPBY	\.(?:agg|aggregate|apply|transform)\([^\n]*\bnp\.(?:std|var|sum|mean|min|max|median|prod|nanstd|nanvar|nansum|nanmean)\b(?!\()|\.(?:agg|aggregate|transform)\(\s*(?:sum|max|min)\s*\)	2/2	0/2	NumPy or builtin function objects passed to agg/apply/transform
+G06	QF4_GROUPBY	groupby\([^\n]*\blevel\s*=\s*\[[^\],\n]+\]|\bfor\b[^\n]*\bin\b[^\n]*groupby\(\s*\[[^\],\n]+\]|\.get_group\(	2/2	0/2	groupby over a one-element level list, iteration over groupby of a one-element key list, get_group
+G07	QF4_GROUPBY	\.groupby\((?:[^()\n]|\([^()\n]*\))*\)(?:\[[^\n]*?\]|\.\w+)?\.(?:sum|mean|cumsum)\(	0/0	0/0	groupby float sum/mean (no task: row NOT_REPRODUCED); no task invites this row in M1
+G08	QF4_GROUPBY	\.groupby\((?:[^()\n]|\([^()\n]*\))*\)(?:\[[^\n]*?\]|\.\w+)?\.(?:any|all|median|sum)\(	0/0	0/0	groupby any/all/median/sum (integer overflow, NaT cases; no task: row NOT_REPRODUCED); no task invites this row in M1
+O01	QF1_STRING	(?s)\A(?=.*\bDecimal\b).*?\.to_json\(|json_normalize\(|read_table\(	3/3	0/3	to_json in a program that uses Decimal; json_normalize; read_table

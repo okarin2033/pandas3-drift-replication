@@ -1,0 +1,75 @@
+[G06 b] 7 runs to do, 0 finished (skipped)
+[G06 b] 7/7 done (3s); last E4 confirm/G06_b ok
+[G06 b] wrote 5 pair comparisons under <workspace>/research/studies/pandas3_full/mechanisms/confirm/runs/G06/compare
+[G06 b] statuses: ok=7
+[G06 b] 7 run records under <workspace>/research/studies/pandas3_full/mechanisms/confirm/runs/G06
+[G07 b] 7 runs to do, 0 finished (skipped)
+[G07 b] 7/7 done (3s); last E4 confirm/G07_b ok
+[G07 b] wrote 5 pair comparisons under <workspace>/research/studies/pandas3_full/mechanisms/confirm/runs/G07/compare
+[G07 b] statuses: ok=7
+[G07 b] 7 run records under <workspace>/research/studies/pandas3_full/mechanisms/confirm/runs/G07
+[G08 b] 7 runs to do, 0 finished (skipped)
+[G08 b] 7/7 done (3s); last E4 confirm/G08_b error
+[G08 b] wrote 5 pair comparisons under <workspace>/research/studies/pandas3_full/mechanisms/confirm/runs/G08/compare
+[G08 b] statuses: error=4, ok=3
+[G08 b] 7 run records under <workspace>/research/studies/pandas3_full/mechanisms/confirm/runs/G08
+[R03 b] 7 runs to do, 0 finished (skipped)
+[R03 b] 7/7 done (3s); last E4 confirm/R03_b ok
+[R03 b] wrote 5 pair comparisons under <workspace>/research/studies/pandas3_full/mechanisms/confirm/runs/R03/compare
+[R03 b] statuses: ok=7
+[R03 b] 7 run records under <workspace>/research/studies/pandas3_full/mechanisms/confirm/runs/R03
+[R06 b] 7 runs to do, 0 finished (skipped)
+[R06 b] 7/7 done (3s); last E4 confirm/R06_b ok
+[R06 b] wrote 5 pair comparisons under <workspace>/research/studies/pandas3_full/mechanisms/confirm/runs/R06/compare
+[R06 b] statuses: ok=7
+[R06 b] 7 run records under <workspace>/research/studies/pandas3_full/mechanisms/confirm/runs/R06
+[R07 b] 7 runs to do, 0 finished (skipped)
+[R07 b] 7/7 done (3s); last E4 confirm/R07_b ok
+[R07 b] wrote 5 pair comparisons under <workspace>/research/studies/pandas3_full/mechanisms/confirm/runs/R07/compare
+[R07 b] statuses: ok=7
+[R07 b] 7 run records under <workspace>/research/studies/pandas3_full/mechanisms/confirm/runs/R07
+[N01 b] 7 runs to do, 0 finished (skipped)
+[N01 b] 7/7 done (3s); last E4 confirm/N01_b ok
+[N01 b] wrote 5 pair comparisons under <workspace>/research/studies/pandas3_full/mechanisms/confirm/runs/N01/compare
+[N01 b] statuses: ok=7
+[N01 b] 7 run records under <workspace>/research/studies/pandas3_full/mechanisms/confirm/runs/N01
+[N03 b] 7 runs to do, 0 finished (skipped)
+[N03 b] 7/7 done (3s); last E4 confirm/N03_b ok
+[N03 b] wrote 5 pair comparisons under <workspace>/research/studies/pandas3_full/mechanisms/confirm/runs/N03/compare
+[N03 b] statuses: ok=7
+[N03 b] 7 run records under <workspace>/research/studies/pandas3_full/mechanisms/confirm/runs/N03
+[N04 b] 7 runs to do, 0 finished (skipped)
+[N04 b] 7/7 done (3s); last E4 confirm/N04_b ok
+[N04 b] wrote 5 pair comparisons under <workspace>/research/studies/pandas3_full/mechanisms/confirm/runs/N04/compare
+[N04 b] statuses: ok=7
+[N04 b] 7 run records under <workspace>/research/studies/pandas3_full/mechanisms/confirm/runs/N04
+[N05 b] 7 runs to do, 0 finished (skipped)
+[N05 b] 7/7 done (3s); last E4 confirm/N05_b ok
+[N05 b] wrote 5 pair comparisons under <workspace>/research/studies/pandas3_full/mechanisms/confirm/runs/N05/compare
+[N05 b] statuses: ok=7
+[N05 b] 7 run records under <workspace>/research/studies/pandas3_full/mechanisms/confirm/runs/N05
+[N07 b] 7 runs to do, 0 finished (skipped)
+[N07 b] 7/7 done (3s); last E4 confirm/N07_b error
+[N07 b] wrote 5 pair comparisons under <workspace>/research/studies/pandas3_full/mechanisms/confirm/runs/N07/compare
+[N07 b] statuses: error=4, ok=3
+[N07 b] 7 run records under <workspace>/research/studies/pandas3_full/mechanisms/confirm/runs/N07
+[I03 b] 7 runs to do, 0 finished (skipped)
+[I03 b] 7/7 done (3s); last E4 confirm/I03_b ok
+[I03 b] wrote 5 pair comparisons under <workspace>/research/studies/pandas3_full/mechanisms/confirm/runs/I03/compare
+[I03 b] statuses: ok=7
+[I03 b] 7 run records under <workspace>/research/studies/pandas3_full/mechanisms/confirm/runs/I03
+[I04 b] 7 runs to do, 0 finished (skipped)
+[I04 b] 7/7 done (3s); last E4 confirm/I04_b ok
+[I04 b] wrote 5 pair comparisons under <workspace>/research/studies/pandas3_full/mechanisms/confirm/runs/I04/compare
+[I04 b] statuses: ok=7
+[I04 b] 7 run records under <workspace>/research/studies/pandas3_full/mechanisms/confirm/runs/I04
+[I05 b] 7 runs to do, 0 finished (skipped)
+[I05 b] 7/7 done (3s); last E4 confirm/I05_b ok
+[I05 b] wrote 5 pair comparisons under <workspace>/research/studies/pandas3_full/mechanisms/confirm/runs/I05/compare
+[I05 b] statuses: ok=7
+[I05 b] 7 run records under <workspace>/research/studies/pandas3_full/mechanisms/confirm/runs/I05
+[I06 b] 7 runs to do, 0 finished (skipped)
+[I06 b] 7/7 done (3s); last E4 confirm/I06_b ok
+[I06 b] wrote 5 pair comparisons under <workspace>/research/studies/pandas3_full/mechanisms/confirm/runs/I06/compare
+[I06 b] statuses: ok=7
+[I06 b] 7 run records under <workspace>/research/studies/pandas3_full/mechanisms/confirm/runs/I06

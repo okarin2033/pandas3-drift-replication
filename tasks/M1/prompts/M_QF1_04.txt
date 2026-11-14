@@ -1,0 +1,11 @@
+You are given CSV file(s) in the current working directory:
+
+- branch_sales.csv: Weekly sales per shop branch (180 rows): branch_code (five-digit branch code written with leading zeros, e.g. "01005"; 12 different branches, each appearing in many rows), week (week number 1-15), sales (units sold, whole number; about 3% of cells are empty).
+
+Task: Total the sales of each branch over all weeks. The branch codes must keep their leading zeros exactly as written in the file (for example '01005'). There are only a few distinct branches, so read the branch code as a categorical column. `result` should be a Series indexed by branch code with the total sales.
+
+Requirements:
+- Write a complete Python script that reads the file(s) from the current directory.
+- Use only pandas, numpy and the Python standard library.
+- Store the final answer in a top-level variable named `result`.
+- Reply with a single Python code block.

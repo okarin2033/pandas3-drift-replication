@@ -1,0 +1,82 @@
+{
+ "id": "A_BIN_06",
+ "stratum": "A",
+ "family": null,
+ "generic_family": "BIN",
+ "catalogue_row": null,
+ "files": [
+  {
+   "path": "GEN/weather_hourly.csv",
+   "description": "Hourly weather for the city, September 2025 (720 rows, one per hour in time order, no gaps): observed_at (timestamp written as YYYY-MM-DD HH:MM), temp_c (degrees C, one decimal; about 2% empty), rain_mm (one decimal), wind_kmh (whole number), sky (clear, cloudy, fog or rain; capital letters and spaces are inconsistent)."
+  }
+ ],
+ "task_text": "Group the hours in weather_hourly.csv by wind_kmh into bands calm (0 to 5), light (6 to 19), moderate (20 to 38) and strong (39 and above). `result` should be a table indexed by those band labels in that order with columns hours (count), total_rain_mm (1 decimal) and mean_temp_c (average of non-empty values, 1 decimal).",
+ "allowed_task_words": [],
+ "invited_ids_author": [
+  "G01"
+ ],
+ "order_significant": true,
+ "sort_keys": [
+  "__index__"
+ ],
+ "dtype_significant": false,
+ "intended_computation": "Read weather_hourly.csv; band wind_kmh into calm (0-5), light (6-19), moderate (20-38), strong (39 and above); per band: hours = count, total_rain_mm = sum of rain_mm (1 decimal), mean_temp_c = mean of non-empty temp_c (1 decimal). Index: the four band labels in that order.",
+ "acceptable_variants": {
+  "row_order": "ties_only",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": "the band may be a column"
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 4
+   }
+  },
+  {
+   "check": "counts_sum_to_rows",
+   "args": {
+    "column": "hours",
+    "expected": 720
+   }
+  },
+  {
+   "check": "numeric_in_range",
+   "args": {
+    "columns": [
+     "total_rain_mm"
+    ],
+    "min": 0,
+    "max": null
+   }
+  }
+ ],
+ "predicted_direction": null,
+ "naive_path": null,
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:REPAIR3_INTEGRATE",
+ "status": "prepared",
+ "notes": "Intent written in a separate step that did not use the catalogue or the pre-registration (Amendment 8 item 3; INTENTS_FRESH.tsv sha256 ffae987c...e666). Card, reference and invited_ids_author drafted 2026-11-11 by pkg:REPAIR3_INTEGRATE after the intents were sealed; intent not rewritten. Prepared (Amendment 9)."
+}

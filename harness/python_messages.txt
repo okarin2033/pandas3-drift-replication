@@ -1,0 +1,11 @@
+Bitwise inversion '~' on bool is deprecated
+# Frozen at T8 together with numpy_messages.txt (FULL_PREREG_AMENDMENT_5.md, lead decision C4, 2026-11-11). One message PREFIX per
+# non-comment line; a warning whose category module is 'builtins' and whose message starts with an entry (after strip) is
+# Python-originated and is not a pandas warning under the 'prereg' definition (the 'pilot' definition still counts it).
+# Rule: add a message only with its source: a string in the pinned CPython binary, or a message observed in our own test programs.
+# Entry 1 (written 2026-11-11, REPAIR2). Sources:
+#   (a) CPython binary: ~/.local/share/uv/python/cpython-3.12.13-macos-aarch64-none/bin/python3.12 contains the full text
+#       "Bitwise inversion '~' on bool is deprecated and will be removed in Python 3.16. ..." (`strings -a`;
+#       logs/repair2_2026-11-11/python_message_source.txt).
+#   (b) observed: naive solution of M_QF6_05 on E1 and E2 (pandas 3.1.1 / 3.0.6; raised inside pandas/core/internals/blocks.py),
+#       8 records listed in logs/repair2_2026-11-11/python_depwarn_scan.tsv (deviations/TASKS_M2.md M2-8).

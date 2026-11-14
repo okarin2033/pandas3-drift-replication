@@ -1,0 +1,11 @@
+You are given CSV file(s) in the current working directory:
+
+- members.csv: Club members, one per row (240 rows): member_id (whole number), full_name (first and last name; many names have accented letters; capital letters and spaces around the name are inconsistent), home_city (city name, several with accented letters; capital letters and spaces around the name are inconsistent; about 3% of cells are empty and about 3% hold "-" for an unknown city), fee (yearly fee, two decimals).
+
+Task: Count the members per home city. Write the city names without surrounding spaces and with each word capitalised. Members whose city is empty or '-' are counted under the name 'Unknown'. `result` should be a Series indexed by city name with the member counts, sorted by city name.
+
+Requirements:
+- Write a complete Python script that reads the file(s) from the current directory.
+- Use only pandas, numpy and the Python standard library.
+- Store the final answer in a top-level variable named `result`.
+- Reply with a single Python code block.

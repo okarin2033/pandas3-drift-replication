@@ -1,0 +1,66 @@
+{
+ "baseline_status": "ok",
+ "class": "VALUE_DRIFT",
+ "class_pilot_rule": "VALUE_DRIFT",
+ "class_raw": "VALUE_DRIFT",
+ "clean_on_233": true,
+ "drift": true,
+ "drift_pilot_rule": true,
+ "excluded": null,
+ "exclusion": null,
+ "first_diff": {
+  "a": [
+   "104.50",
+   "120.00",
+   "127.75",
+   "134.50",
+   "150.00",
+   "157.75",
+   "164.50",
+   "180.00",
+   "217.75",
+   "224.50",
+   "240.00",
+   "97.75"
+  ],
+  "b": [
+   97.75,
+   104.5,
+   120.0,
+   127.75,
+   134.5,
+   150.0,
+   157.75,
+   164.5,
+   180.0,
+   217.75,
+   224.5,
+   240.0
+  ],
+  "column": "<index>",
+  "kind": "label",
+  "row": null
+ },
+ "first_divergent_line": null,
+ "locally_silent": null,
+ "magnitude": "SUBSTANTIVE",
+ "pair": "E0a~E1",
+ "program_id": "naive/M_QF1_09",
+ "run_problem": null,
+ "silent": true,
+ "silent_all_magnitudes": true,
+ "silent_pilot_rule": true,
+ "silent_pilotdef": true,
+ "target_status": "ok",
+ "task_id": "M_QF1_09",
+ "warned_E0a": {
+  "pilot": false,
+  "prereg": false
+ },
+ "warned_target": {
+  "pilot": false,
+  "prereg": false
+ },
+ "warning_lines": [],
+ "warning_only": false
+}

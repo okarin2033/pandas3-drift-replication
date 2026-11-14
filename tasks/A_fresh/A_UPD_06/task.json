@@ -1,0 +1,91 @@
+{
+ "id": "A_UPD_06",
+ "stratum": "A",
+ "family": null,
+ "generic_family": "UPD",
+ "catalogue_row": null,
+ "files": [
+  {
+   "path": "GEN/stations.csv",
+   "description": "Bike-share stations (48 rows, one per station): station_code (four-digit code with leading zeros, e.g. \"0040\"), station_name (text, a few with accented letters), district (same 6 districts as riders.csv; capital letters and spaces are inconsistent), docks (whole number), opened_on (date as text, YYYY-MM-DD)."
+  },
+  {
+   "path": "GEN/fare_changes.csv",
+   "description": "Planned fare changes (30 rows, one per affected station): station_code (refers to stations.csv; four digits with leading zeros), effective_from (date as text, YYYY-MM-DD), new_base_fare (two decimals; about 3% empty)."
+  }
+ ],
+ "task_text": "Give every station in stations.csv a base_fare of 1.00, then, for stations listed in fare_changes.csv with an effective_from on or before 2025-11-30 and a non-empty new_base_fare, replace it with new_base_fare. `result` should be a Series of base_fare values indexed by station_code (text, leading zeros kept), in the order of stations.csv.",
+ "allowed_task_words": [],
+ "invited_ids_author": [
+  "C01"
+ ],
+ "order_significant": false,
+ "sort_keys": [],
+ "dtype_significant": false,
+ "intended_computation": "Read stations.csv and fare_changes.csv keeping station codes as text; base_fare = 1.00 for every station; for stations in fare_changes.csv with effective_from on or before 2025-11-30 and a non-empty new_base_fare, base_fare = new_base_fare; a Series indexed by station_code in the order of stations.csv.",
+ "acceptable_variants": {
+  "row_order": "any",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": "id columns (rider_id, station codes) may be written as integers without leading zeros"
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "result_kind",
+   "args": {
+    "kind": "series"
+   }
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 48
+   }
+  },
+  {
+   "check": "no_nulls",
+   "args": {
+    "columns": [
+     "__values__"
+    ]
+   }
+  },
+  {
+   "check": "numeric_in_range",
+   "args": {
+    "columns": [
+     "__values__"
+    ],
+    "min": 0,
+    "max": null
+   }
+  }
+ ],
+ "predicted_direction": null,
+ "naive_path": null,
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:REPAIR3_INTEGRATE",
+ "status": "prepared",
+ "notes": "Intent written in a separate step that did not use the catalogue or the pre-registration (Amendment 8 item 3; INTENTS_FRESH.tsv sha256 ffae987c...e666). Card, reference and invited_ids_author drafted 2026-11-11 by pkg:REPAIR3_INTEGRATE after the intents were sealed; intent not rewritten. Prepared (Amendment 9)."
+}

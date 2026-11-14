@@ -1,0 +1,78 @@
+{
+ "id": "M_QF5_14",
+ "stratum": "M",
+ "family": "QF5_ORDER",
+ "generic_family": null,
+ "catalogue_row": "R02",
+ "files": [
+  {
+   "path": "QF5_ORDER/memberships.csv",
+   "description": "Loyalty memberships (200 rows): member_ref (six-digit reference with leading zeros), plan (bronze, silver, gold or platinum), city (city name; capital letters and spaces are inconsistent in some rows), points (whole number, multiples of 50; many members share the same points)."
+  }
+ ],
+ "task_text": "Tidy the city names (remove surrounding spaces and write each word with a capital first letter, as in 'Oslo'). List the combinations of plan and city in the order in which each combination first occurs in the file, with the number of members for each. `result` should be the first six combinations of that list with their counts, as a Series indexed by plan and city.",
+ "allowed_task_words": [],
+ "invited_ids_author": [
+  "R02"
+ ],
+ "order_significant": true,
+ "sort_keys": [
+  "__index__"
+ ],
+ "dtype_significant": false,
+ "intended_computation": "Normalise city as stated, walk through the rows in file order and record each (plan, city) pair when it first appears; the result holds the first six such pairs with the total number of members of each pair over the whole file.",
+ "acceptable_variants": {
+  "row_order": "ties_only",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": "the six pairs are fixed by the file order."
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 6
+   }
+  },
+  {
+   "check": "numeric_in_range",
+   "args": {
+    "columns": [
+     "__values__"
+    ],
+    "min": 1,
+    "max": 200
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "FIX",
+  "reason": "The task asks for first-occurrence order, which value_counts(sort=False) gives on 3.x; 2.x sorted the pairs by label, so head(6) returned the alphabetically first pairs."
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M2",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 by pkg:TASKS_M2 for catalogue row R02; naive.py shows the invited idiom, reference.py is the version-robust reference."
+}

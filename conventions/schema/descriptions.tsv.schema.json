@@ -1,0 +1,30 @@
+{
+ "$schema": "pandas3_full/tsv-schema/1",
+ "title": "fixtures/descriptions.tsv (FIX)",
+ "$comment": "Written 2026-11-11 by pkg:SHARED. One F-main description line per fixture file (FULL_PREREG 4.4, 5); lint-clean; copied verbatim into task.json files[].description. Basenames must be unique across fixtures/main and must not contain family codes or banned words.",
+ "format": "tsv",
+ "encoding": "utf-8",
+ "header": true,
+ "columns": [
+  {
+   "name": "path",
+   "pattern": "^(QF1_STRING|QF2_DATETIME|QF3_COW|QF4_GROUPBY|QF5_ORDER|QF6_NA_DTYPE|QF7_INDEX_REDUCE|QF8_NUMERIC|GEN)/[a-z0-9][a-z0-9_\\-]*\\.csv$",
+   "description": "relative to fixtures/<variant>/"
+  },
+  {
+   "name": "rows",
+   "pattern": "^[0-9]+$",
+   "description": "data rows (same in all variants)"
+  },
+  {
+   "name": "columns",
+   "pattern": "^[0-9]+$",
+   "description": "columns (same in all variants)"
+  },
+  {
+   "name": "description",
+   "pattern": "^[^\\t]{10,}$",
+   "description": "one fixture-true line describing F-main"
+  }
+ ]
+}

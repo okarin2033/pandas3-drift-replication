@@ -1,0 +1,5 @@
+variant	coder	n_items	kappa	kappa_lo	kappa_hi	kappa_dropped	ac1	ac1_lo	ac1_hi	ac1_dropped	raw_agreement	raw_agreement_lo	raw_agreement_hi	items_without_prelabel
+all tasks	coder A	400	0.679949	0.439885	0.929553	0	0.744567	0.482268	0.954082	0	0.797500	0.597067	0.962407	0
+all tasks	coder B	100	0.248772	0.056697	0.439820	0	0.377693	0.093600	0.642253	0	0.480000	0.264697	0.690730	0
+without ruled R tasks (LR61/LR70)	coder A	400	0.679949	0.440124	0.927951	0	0.744567	0.483904	0.953282	0	0.797500	0.598508	0.961638	0
+without ruled R tasks (LR61/LR70)	coder B	100	0.248772	0.054173	0.441944	0	0.377693	0.086954	0.643614	0	0.480000	0.257426	0.692308	0

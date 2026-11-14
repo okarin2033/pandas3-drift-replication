@@ -1,0 +1,17 @@
+unit	first_rating	second_rating	count
+tasks (quota row)	1	1	4
+tasks (quota row)	1	2	27
+tasks (quota row)	1	3	26
+tasks (quota row)	2	1	2
+tasks (quota row)	2	2	18
+tasks (quota row)	2	3	29
+tasks (quota row)	3	2	8
+tasks (quota row)	3	3	14
+pairs (task, invited idiom)	1	1	4
+pairs (task, invited idiom)	1	2	27
+pairs (task, invited idiom)	1	3	26
+pairs (task, invited idiom)	2	1	3
+pairs (task, invited idiom)	2	2	19
+pairs (task, invited idiom)	2	3	29
+pairs (task, invited idiom)	3	2	8
+pairs (task, invited idiom)	3	3	14

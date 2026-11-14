@@ -1,0 +1,8 @@
+# LR2 closed phrase list (FULL_PREREG_AMENDMENT_10.md). One expression per line: name<TAB>regular expression (Python re).
+# Applied with re.search to the task text in lower case. The first two are copied unchanged from
+# logs/repair4_2026-11-11/tools/scan_order_flags.py; the last three are the patterns named in lead ruling LR2.2.
+phrase_file_order	file order|order of the file|order in the file|order they appear|original order|in time order|time order
+phrase_listed_order	in the order above|order above|in that order|in the band order|as listed|listed order|monday to sunday|monday through sunday
+keep_preserve_order	(keep|preserve) the (original |input |file )?(row )?order
+original_row_order	original (row )?order
+same_row_order_as	same (row )?order as

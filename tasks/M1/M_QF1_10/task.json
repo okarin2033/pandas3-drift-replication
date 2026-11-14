@@ -1,0 +1,78 @@
+{
+ "id": "M_QF1_10",
+ "stratum": "M",
+ "family": "QF1_STRING",
+ "generic_family": null,
+ "catalogue_row": "O01",
+ "files": [
+  {
+   "path": "QF1_STRING/price_list.csv",
+   "description": "Shop price list (64 rows): sku (text code such as \"PL-0007\"), item (product name with size; several names have accented letters), section (dairy, pantry, drinks or bakery; capital letters and spaces are inconsistent), price (written with exactly two decimals, e.g. \"9.50\"; no empty cells)."
+  }
+ ],
+ "task_text": "Add up the prices of the items in each section exactly, using decimal arithmetic so that no rounding error appears. Write the section names in lower case without surrounding spaces. Produce JSON text that maps each section to its total as a JSON number, and set `result` to the parsed JSON (a Python dict).",
+ "allowed_task_words": [
+  "decimal arithmetic"
+ ],
+ "invited_ids_author": [
+  "O01"
+ ],
+ "order_significant": false,
+ "sort_keys": [],
+ "dtype_significant": false,
+ "intended_computation": "Clean section (strip, lower), sum the prices per section exactly (4 sections) and return a dict section -> total as a number, e.g. {'bakery': ..., 'dairy': ...}.",
+ "acceptable_variants": {
+  "row_order": "any",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": "totals may be written with or without trailing zeros."
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 4
+   }
+  },
+  {
+   "check": "numeric_in_range",
+   "args": {
+    "columns": [
+     "__values__"
+    ],
+    "min": 0,
+    "max": null
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "HARM",
+  "reason": "on 3.x the decimal totals are written into the JSON as text, not as numbers"
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M1",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 in package TASKS_M1; task text, card, naive solution, reference and predicted direction were prepared there."
+}

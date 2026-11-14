@@ -1,0 +1,11 @@
+You are given CSV file(s) in the current working directory:
+
+- weather_hourly.csv: Hourly weather for the city, September 2025 (720 rows, one per hour in time order, no gaps): observed_at (timestamp written as YYYY-MM-DD HH:MM), temp_c (degrees C, one decimal; about 2% empty), rain_mm (one decimal), wind_kmh (whole number), sky (clear, cloudy, fog or rain; capital letters and spaces are inconsistent).
+
+Task: Classify each hour's wind_kmh as calm (0-5), breeze (6-20), windy (21-35) or strong (36 and above), and report for each class the number of hours and the total rain_mm (rounded to 1 decimal). `result` should be a table indexed by class with the columns hours and rain_total.
+
+Requirements:
+- Write a complete Python script that reads the file(s) from the current directory.
+- Use only pandas, numpy and the Python standard library.
+- Store the final answer in a top-level variable named `result`.
+- Reply with a single Python code block.

@@ -1,0 +1,39 @@
+{
+ "venv": "pd233pa",
+ "python": "3.12.13",
+ "executable": "<workspace>/research/studies/pandas3_full/envs/pd233pa/bin/python",
+ "errors": [],
+ "pandas": "2.3.3",
+ "numpy": "2.5.4",
+ "python_dateutil": "4.0.0",
+ "tzdata": "2026.6",
+ "pytz": "2026.6",
+ "pyarrow": "26.0.1",
+ "scipy": null,
+ "statsmodels": null,
+ "jsonschema": null,
+ "pyarrow_spec_found": true,
+ "import_pyarrow": "ok 26.0.1",
+ "default_string_dtype": {
+  "repr": "dtype('O')",
+  "str": "object",
+  "storage": null,
+  "na_value": "None",
+  "type": "ObjectDType"
+ },
+ "default_df_columns_dtype": "dtype('O')",
+ "mode_string_storage_option": "auto",
+ "future_infer_string_set": {
+  "ok": true,
+  "series_dtype": {
+   "repr": "<StringDtype(na_value=nan)>",
+   "str": "str",
+   "storage": "pyarrow",
+   "na_value": "nan",
+   "type": "StringDtype"
+  },
+  "frame_dtype": "<StringDtype(na_value=nan)>",
+  "groupby_sum_ok": true
+ },
+ "ok": true
+}

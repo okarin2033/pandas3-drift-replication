@@ -1,0 +1,720 @@
+{
+ "item": "B.35",
+ "results": [
+  {
+   "estimate": 0.9736842105263158,
+   "boot_lo": 0.75,
+   "boot_hi": 1.0,
+   "dropped": 1,
+   "n_valid": 9999,
+   "pair": "E0a~E1",
+   "estimator": "pooled_program_weighted",
+   "n_entering": 7,
+   "per_model": {
+    "anthropic__claude-haiku-4.5": {
+     "drift": 6,
+     "drift_unwarned": 6,
+     "share": 1.0,
+     "enters": true
+    },
+    "anthropic__claude-haiku-5.5": {
+     "drift": 0,
+     "drift_unwarned": 0,
+     "share": null,
+     "enters": false
+    },
+    "anthropic__claude-sonnet-5.5": {
+     "drift": 0,
+     "drift_unwarned": 0,
+     "share": null,
+     "enters": false
+    },
+    "deepseek__deepseek-v3.2": {
+     "drift": 1,
+     "drift_unwarned": 1,
+     "share": 1.0,
+     "enters": true
+    },
+    "google__gemma-4-31b-it": {
+     "drift": 5,
+     "drift_unwarned": 5,
+     "share": 1.0,
+     "enters": true
+    },
+    "openai__gpt-5.4-mini": {
+     "drift": 0,
+     "drift_unwarned": 0,
+     "share": null,
+     "enters": false
+    },
+    "openai__gpt-5.6-terra": {
+     "drift": 5,
+     "drift_unwarned": 5,
+     "share": 1.0,
+     "enters": true
+    },
+    "openai__gpt-oss-20b": {
+     "drift": 11,
+     "drift_unwarned": 10,
+     "share": 0.9090909090909091,
+     "enters": true
+    },
+    "qwen__qwen3.5-9b": {
+     "drift": 3,
+     "drift_unwarned": 3,
+     "share": 1.0,
+     "enters": true
+    },
+    "qwen__qwen3.6-35b-a3b": {
+     "drift": 7,
+     "drift_unwarned": 7,
+     "share": 1.0,
+     "enters": true
+    }
+   },
+   "entering_models": [
+    "anthropic__claude-haiku-4.5",
+    "deepseek__deepseek-v3.2",
+    "google__gemma-4-31b-it",
+    "openai__gpt-5.6-terra",
+    "openai__gpt-oss-20b",
+    "qwen__qwen3.5-9b",
+    "qwen__qwen3.6-35b-a3b"
+   ],
+   "frozen_estimate": 0.9736842105263158,
+   "frozen_lo": 0.75,
+   "frozen_hi": 1.0,
+   "variant": "all tasks"
+  },
+  {
+   "estimate": 0.987012987012987,
+   "boot_lo": 0.9591836734693878,
+   "boot_hi": 1.0,
+   "dropped": 3645,
+   "n_valid": 6355,
+   "pair": "E0a~E1",
+   "estimator": "model_equal",
+   "n_entering": 7,
+   "per_model": {
+    "anthropic__claude-haiku-4.5": {
+     "drift": 6,
+     "drift_unwarned": 6,
+     "share": 1.0,
+     "enters": true
+    },
+    "anthropic__claude-haiku-5.5": {
+     "drift": 0,
+     "drift_unwarned": 0,
+     "share": null,
+     "enters": false
+    },
+    "anthropic__claude-sonnet-5.5": {
+     "drift": 0,
+     "drift_unwarned": 0,
+     "share": null,
+     "enters": false
+    },
+    "deepseek__deepseek-v3.2": {
+     "drift": 1,
+     "drift_unwarned": 1,
+     "share": 1.0,
+     "enters": true
+    },
+    "google__gemma-4-31b-it": {
+     "drift": 5,
+     "drift_unwarned": 5,
+     "share": 1.0,
+     "enters": true
+    },
+    "openai__gpt-5.4-mini": {
+     "drift": 0,
+     "drift_unwarned": 0,
+     "share": null,
+     "enters": false
+    },
+    "openai__gpt-5.6-terra": {
+     "drift": 5,
+     "drift_unwarned": 5,
+     "share": 1.0,
+     "enters": true
+    },
+    "openai__gpt-oss-20b": {
+     "drift": 11,
+     "drift_unwarned": 10,
+     "share": 0.9090909090909091,
+     "enters": true
+    },
+    "qwen__qwen3.5-9b": {
+     "drift": 3,
+     "drift_unwarned": 3,
+     "share": 1.0,
+     "enters": true
+    },
+    "qwen__qwen3.6-35b-a3b": {
+     "drift": 7,
+     "drift_unwarned": 7,
+     "share": 1.0,
+     "enters": true
+    }
+   },
+   "entering_models": [
+    "anthropic__claude-haiku-4.5",
+    "deepseek__deepseek-v3.2",
+    "google__gemma-4-31b-it",
+    "openai__gpt-5.6-terra",
+    "openai__gpt-oss-20b",
+    "qwen__qwen3.5-9b",
+    "qwen__qwen3.6-35b-a3b"
+   ],
+   "variant": "all tasks"
+  },
+  {
+   "estimate": 0.9736842105263158,
+   "boot_lo": 0.75,
+   "boot_hi": 1.0,
+   "dropped": 1,
+   "n_valid": 9999,
+   "pair": "E0a~E2",
+   "estimator": "pooled_program_weighted",
+   "n_entering": 7,
+   "per_model": {
+    "anthropic__claude-haiku-4.5": {
+     "drift": 6,
+     "drift_unwarned": 6,
+     "share": 1.0,
+     "enters": true
+    },
+    "anthropic__claude-haiku-5.5": {
+     "drift": 0,
+     "drift_unwarned": 0,
+     "share": null,
+     "enters": false
+    },
+    "anthropic__claude-sonnet-5.5": {
+     "drift": 0,
+     "drift_unwarned": 0,
+     "share": null,
+     "enters": false
+    },
+    "deepseek__deepseek-v3.2": {
+     "drift": 1,
+     "drift_unwarned": 1,
+     "share": 1.0,
+     "enters": true
+    },
+    "google__gemma-4-31b-it": {
+     "drift": 5,
+     "drift_unwarned": 5,
+     "share": 1.0,
+     "enters": true
+    },
+    "openai__gpt-5.4-mini": {
+     "drift": 0,
+     "drift_unwarned": 0,
+     "share": null,
+     "enters": false
+    },
+    "openai__gpt-5.6-terra": {
+     "drift": 5,
+     "drift_unwarned": 5,
+     "share": 1.0,
+     "enters": true
+    },
+    "openai__gpt-oss-20b": {
+     "drift": 11,
+     "drift_unwarned": 10,
+     "share": 0.9090909090909091,
+     "enters": true
+    },
+    "qwen__qwen3.5-9b": {
+     "drift": 3,
+     "drift_unwarned": 3,
+     "share": 1.0,
+     "enters": true
+    },
+    "qwen__qwen3.6-35b-a3b": {
+     "drift": 7,
+     "drift_unwarned": 7,
+     "share": 1.0,
+     "enters": true
+    }
+   },
+   "entering_models": [
+    "anthropic__claude-haiku-4.5",
+    "deepseek__deepseek-v3.2",
+    "google__gemma-4-31b-it",
+    "openai__gpt-5.6-terra",
+    "openai__gpt-oss-20b",
+    "qwen__qwen3.5-9b",
+    "qwen__qwen3.6-35b-a3b"
+   ],
+   "frozen_estimate": 0.9736842105263158,
+   "frozen_lo": 0.75,
+   "frozen_hi": 1.0,
+   "variant": "all tasks"
+  },
+  {
+   "estimate": 0.987012987012987,
+   "boot_lo": 0.9591836734693878,
+   "boot_hi": 1.0,
+   "dropped": 3645,
+   "n_valid": 6355,
+   "pair": "E0a~E2",
+   "estimator": "model_equal",
+   "n_entering": 7,
+   "per_model": {
+    "anthropic__claude-haiku-4.5": {
+     "drift": 6,
+     "drift_unwarned": 6,
+     "share": 1.0,
+     "enters": true
+    },
+    "anthropic__claude-haiku-5.5": {
+     "drift": 0,
+     "drift_unwarned": 0,
+     "share": null,
+     "enters": false
+    },
+    "anthropic__claude-sonnet-5.5": {
+     "drift": 0,
+     "drift_unwarned": 0,
+     "share": null,
+     "enters": false
+    },
+    "deepseek__deepseek-v3.2": {
+     "drift": 1,
+     "drift_unwarned": 1,
+     "share": 1.0,
+     "enters": true
+    },
+    "google__gemma-4-31b-it": {
+     "drift": 5,
+     "drift_unwarned": 5,
+     "share": 1.0,
+     "enters": true
+    },
+    "openai__gpt-5.4-mini": {
+     "drift": 0,
+     "drift_unwarned": 0,
+     "share": null,
+     "enters": false
+    },
+    "openai__gpt-5.6-terra": {
+     "drift": 5,
+     "drift_unwarned": 5,
+     "share": 1.0,
+     "enters": true
+    },
+    "openai__gpt-oss-20b": {
+     "drift": 11,
+     "drift_unwarned": 10,
+     "share": 0.9090909090909091,
+     "enters": true
+    },
+    "qwen__qwen3.5-9b": {
+     "drift": 3,
+     "drift_unwarned": 3,
+     "share": 1.0,
+     "enters": true
+    },
+    "qwen__qwen3.6-35b-a3b": {
+     "drift": 7,
+     "drift_unwarned": 7,
+     "share": 1.0,
+     "enters": true
+    }
+   },
+   "entering_models": [
+    "anthropic__claude-haiku-4.5",
+    "deepseek__deepseek-v3.2",
+    "google__gemma-4-31b-it",
+    "openai__gpt-5.6-terra",
+    "openai__gpt-oss-20b",
+    "qwen__qwen3.5-9b",
+    "qwen__qwen3.6-35b-a3b"
+   ],
+   "variant": "all tasks"
+  },
+  {
+   "estimate": 0.9736842105263158,
+   "boot_lo": 0.75,
+   "boot_hi": 1.0,
+   "dropped": 2,
+   "n_valid": 9998,
+   "pair": "E0a~E1",
+   "estimator": "pooled_program_weighted",
+   "n_entering": 7,
+   "per_model": {
+    "anthropic__claude-haiku-4.5": {
+     "drift": 6,
+     "drift_unwarned": 6,
+     "share": 1.0,
+     "enters": true
+    },
+    "anthropic__claude-haiku-5.5": {
+     "drift": 0,
+     "drift_unwarned": 0,
+     "share": null,
+     "enters": false
+    },
+    "anthropic__claude-sonnet-5.5": {
+     "drift": 0,
+     "drift_unwarned": 0,
+     "share": null,
+     "enters": false
+    },
+    "deepseek__deepseek-v3.2": {
+     "drift": 1,
+     "drift_unwarned": 1,
+     "share": 1.0,
+     "enters": true
+    },
+    "google__gemma-4-31b-it": {
+     "drift": 5,
+     "drift_unwarned": 5,
+     "share": 1.0,
+     "enters": true
+    },
+    "openai__gpt-5.4-mini": {
+     "drift": 0,
+     "drift_unwarned": 0,
+     "share": null,
+     "enters": false
+    },
+    "openai__gpt-5.6-terra": {
+     "drift": 5,
+     "drift_unwarned": 5,
+     "share": 1.0,
+     "enters": true
+    },
+    "openai__gpt-oss-20b": {
+     "drift": 11,
+     "drift_unwarned": 10,
+     "share": 0.9090909090909091,
+     "enters": true
+    },
+    "qwen__qwen3.5-9b": {
+     "drift": 3,
+     "drift_unwarned": 3,
+     "share": 1.0,
+     "enters": true
+    },
+    "qwen__qwen3.6-35b-a3b": {
+     "drift": 7,
+     "drift_unwarned": 7,
+     "share": 1.0,
+     "enters": true
+    }
+   },
+   "entering_models": [
+    "anthropic__claude-haiku-4.5",
+    "deepseek__deepseek-v3.2",
+    "google__gemma-4-31b-it",
+    "openai__gpt-5.6-terra",
+    "openai__gpt-oss-20b",
+    "qwen__qwen3.5-9b",
+    "qwen__qwen3.6-35b-a3b"
+   ],
+   "variant": "without ruled R tasks (LR61/LR70)"
+  },
+  {
+   "estimate": 0.987012987012987,
+   "boot_lo": 0.9591836734693878,
+   "boot_hi": 1.0,
+   "dropped": 3629,
+   "n_valid": 6371,
+   "pair": "E0a~E1",
+   "estimator": "model_equal",
+   "n_entering": 7,
+   "per_model": {
+    "anthropic__claude-haiku-4.5": {
+     "drift": 6,
+     "drift_unwarned": 6,
+     "share": 1.0,
+     "enters": true
+    },
+    "anthropic__claude-haiku-5.5": {
+     "drift": 0,
+     "drift_unwarned": 0,
+     "share": null,
+     "enters": false
+    },
+    "anthropic__claude-sonnet-5.5": {
+     "drift": 0,
+     "drift_unwarned": 0,
+     "share": null,
+     "enters": false
+    },
+    "deepseek__deepseek-v3.2": {
+     "drift": 1,
+     "drift_unwarned": 1,
+     "share": 1.0,
+     "enters": true
+    },
+    "google__gemma-4-31b-it": {
+     "drift": 5,
+     "drift_unwarned": 5,
+     "share": 1.0,
+     "enters": true
+    },
+    "openai__gpt-5.4-mini": {
+     "drift": 0,
+     "drift_unwarned": 0,
+     "share": null,
+     "enters": false
+    },
+    "openai__gpt-5.6-terra": {
+     "drift": 5,
+     "drift_unwarned": 5,
+     "share": 1.0,
+     "enters": true
+    },
+    "openai__gpt-oss-20b": {
+     "drift": 11,
+     "drift_unwarned": 10,
+     "share": 0.9090909090909091,
+     "enters": true
+    },
+    "qwen__qwen3.5-9b": {
+     "drift": 3,
+     "drift_unwarned": 3,
+     "share": 1.0,
+     "enters": true
+    },
+    "qwen__qwen3.6-35b-a3b": {
+     "drift": 7,
+     "drift_unwarned": 7,
+     "share": 1.0,
+     "enters": true
+    }
+   },
+   "entering_models": [
+    "anthropic__claude-haiku-4.5",
+    "deepseek__deepseek-v3.2",
+    "google__gemma-4-31b-it",
+    "openai__gpt-5.6-terra",
+    "openai__gpt-oss-20b",
+    "qwen__qwen3.5-9b",
+    "qwen__qwen3.6-35b-a3b"
+   ],
+   "variant": "without ruled R tasks (LR61/LR70)"
+  },
+  {
+   "estimate": 0.9736842105263158,
+   "boot_lo": 0.75,
+   "boot_hi": 1.0,
+   "dropped": 2,
+   "n_valid": 9998,
+   "pair": "E0a~E2",
+   "estimator": "pooled_program_weighted",
+   "n_entering": 7,
+   "per_model": {
+    "anthropic__claude-haiku-4.5": {
+     "drift": 6,
+     "drift_unwarned": 6,
+     "share": 1.0,
+     "enters": true
+    },
+    "anthropic__claude-haiku-5.5": {
+     "drift": 0,
+     "drift_unwarned": 0,
+     "share": null,
+     "enters": false
+    },
+    "anthropic__claude-sonnet-5.5": {
+     "drift": 0,
+     "drift_unwarned": 0,
+     "share": null,
+     "enters": false
+    },
+    "deepseek__deepseek-v3.2": {
+     "drift": 1,
+     "drift_unwarned": 1,
+     "share": 1.0,
+     "enters": true
+    },
+    "google__gemma-4-31b-it": {
+     "drift": 5,
+     "drift_unwarned": 5,
+     "share": 1.0,
+     "enters": true
+    },
+    "openai__gpt-5.4-mini": {
+     "drift": 0,
+     "drift_unwarned": 0,
+     "share": null,
+     "enters": false
+    },
+    "openai__gpt-5.6-terra": {
+     "drift": 5,
+     "drift_unwarned": 5,
+     "share": 1.0,
+     "enters": true
+    },
+    "openai__gpt-oss-20b": {
+     "drift": 11,
+     "drift_unwarned": 10,
+     "share": 0.9090909090909091,
+     "enters": true
+    },
+    "qwen__qwen3.5-9b": {
+     "drift": 3,
+     "drift_unwarned": 3,
+     "share": 1.0,
+     "enters": true
+    },
+    "qwen__qwen3.6-35b-a3b": {
+     "drift": 7,
+     "drift_unwarned": 7,
+     "share": 1.0,
+     "enters": true
+    }
+   },
+   "entering_models": [
+    "anthropic__claude-haiku-4.5",
+    "deepseek__deepseek-v3.2",
+    "google__gemma-4-31b-it",
+    "openai__gpt-5.6-terra",
+    "openai__gpt-oss-20b",
+    "qwen__qwen3.5-9b",
+    "qwen__qwen3.6-35b-a3b"
+   ],
+   "variant": "without ruled R tasks (LR61/LR70)"
+  },
+  {
+   "estimate": 0.987012987012987,
+   "boot_lo": 0.9591836734693878,
+   "boot_hi": 1.0,
+   "dropped": 3629,
+   "n_valid": 6371,
+   "pair": "E0a~E2",
+   "estimator": "model_equal",
+   "n_entering": 7,
+   "per_model": {
+    "anthropic__claude-haiku-4.5": {
+     "drift": 6,
+     "drift_unwarned": 6,
+     "share": 1.0,
+     "enters": true
+    },
+    "anthropic__claude-haiku-5.5": {
+     "drift": 0,
+     "drift_unwarned": 0,
+     "share": null,
+     "enters": false
+    },
+    "anthropic__claude-sonnet-5.5": {
+     "drift": 0,
+     "drift_unwarned": 0,
+     "share": null,
+     "enters": false
+    },
+    "deepseek__deepseek-v3.2": {
+     "drift": 1,
+     "drift_unwarned": 1,
+     "share": 1.0,
+     "enters": true
+    },
+    "google__gemma-4-31b-it": {
+     "drift": 5,
+     "drift_unwarned": 5,
+     "share": 1.0,
+     "enters": true
+    },
+    "openai__gpt-5.4-mini": {
+     "drift": 0,
+     "drift_unwarned": 0,
+     "share": null,
+     "enters": false
+    },
+    "openai__gpt-5.6-terra": {
+     "drift": 5,
+     "drift_unwarned": 5,
+     "share": 1.0,
+     "enters": true
+    },
+    "openai__gpt-oss-20b": {
+     "drift": 11,
+     "drift_unwarned": 10,
+     "share": 0.9090909090909091,
+     "enters": true
+    },
+    "qwen__qwen3.5-9b": {
+     "drift": 3,
+     "drift_unwarned": 3,
+     "share": 1.0,
+     "enters": true
+    },
+    "qwen__qwen3.6-35b-a3b": {
+     "drift": 7,
+     "drift_unwarned": 7,
+     "share": 1.0,
+     "enters": true
+    }
+   },
+   "entering_models": [
+    "anthropic__claude-haiku-4.5",
+    "deepseek__deepseek-v3.2",
+    "google__gemma-4-31b-it",
+    "openai__gpt-5.6-terra",
+    "openai__gpt-oss-20b",
+    "qwen__qwen3.5-9b",
+    "qwen__qwen3.6-35b-a3b"
+   ],
+   "variant": "without ruled R tasks (LR61/LR70)"
+  }
+ ],
+ "lr61_without_ruled": {
+  "label": "added report of lead rulings LR42 and LR61: stratum R without the tasks of tasks/RULED_FIDELITY_FAILS.tsv; registered before any study generation; decides nothing",
+  "ruled_file": "tasks/RULED_FIDELITY_FAILS.tsv",
+  "ruled_file_sha256": "293226daf4a868de977a66fd67f8cf2ae62cf0269d84c9923503c068470b0c46",
+  "listed_tasks": [
+   "R_08"
+  ],
+  "tasks_left_out": [
+   "R_08"
+  ],
+  "n_tasks_kept": 199,
+  "n_programs_left_out": 50
+ },
+ "meta": {
+  "label": null,
+  "test_mode": false,
+  "items": [
+   "B.35"
+  ],
+  "inputs_sha256": {
+   "per_program.jsonl": "dfd3b7dc406ffb88c34c7a4cfc9a90eeb71c0feaf0da626b9805bbac40e9401f",
+   "summary.json": "064443d62d3ec2e0e383c7084734282d191377593cfa13cf26134d10f53a5096",
+   "tasks.json": "ac38b07873515cff1488544c81f1acadc80aaad418db13883a3a0423ccad5391",
+   "models.tsv": "93fc8c7f6f8f2b3f0e11e04926e5245f1456534085779a1b2d1cb1c4b2520676"
+  },
+  "B": 10000,
+  "seed": 20261111,
+  "tool": "sec_model_level.py",
+  "tool_sha256": "a83c368a415fd2713a936f5c1de7e2a7f1af45e46191d6ced2b5a99c6b0c284b",
+  "sec_common_sha256": "c1e87284ed92844ade5c515bb78fe261b3a94431d1389c0b4ec2f854f48d39db",
+  "harness_stats_sha256": "ad28a99b5e3a61dc9a7753e3a019a41d2d5968a83f94d6aaddff91156e0bf41d",
+  "created": "2026-11-13T16:34:35+0900",
+  "numpy_used": true,
+  "pairs": [
+   "E0a~E1",
+   "E0a~E2"
+  ],
+  "entry_rule": "at least one drift program in R+A",
+  "lr61": {
+   "label": "added report of lead rulings LR42 and LR61: stratum R without the tasks of tasks/RULED_FIDELITY_FAILS.tsv; registered before any study generation; decides nothing",
+   "ruled_file": "tasks/RULED_FIDELITY_FAILS.tsv",
+   "ruled_file_sha256": "293226daf4a868de977a66fd67f8cf2ae62cf0269d84c9923503c068470b0c46",
+   "listed_tasks": [
+    "R_08"
+   ],
+   "tasks_left_out": [
+    "R_08"
+   ],
+   "n_tasks_kept": 199,
+   "n_programs_left_out": 50
+  }
+ },
+ "label": null
+}

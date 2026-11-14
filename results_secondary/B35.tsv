@@ -1,0 +1,9 @@
+variant	pair	estimator	estimate	boot_lo	boot_hi	dropped	n_valid	n_entering	frozen_estimate	frozen_lo	frozen_hi
+all tasks	E0a~E1	pooled_program_weighted	0.973684	0.750000	1.000000	1	9999	7	0.973684	0.750000	1.000000
+all tasks	E0a~E1	model_equal	0.987013	0.959184	1.000000	3645	6355	7			
+all tasks	E0a~E2	pooled_program_weighted	0.973684	0.750000	1.000000	1	9999	7	0.973684	0.750000	1.000000
+all tasks	E0a~E2	model_equal	0.987013	0.959184	1.000000	3645	6355	7			
+without ruled R tasks (LR61/LR70)	E0a~E1	pooled_program_weighted	0.973684	0.750000	1.000000	2	9998	7			
+without ruled R tasks (LR61/LR70)	E0a~E1	model_equal	0.987013	0.959184	1.000000	3629	6371	7			
+without ruled R tasks (LR61/LR70)	E0a~E2	pooled_program_weighted	0.973684	0.750000	1.000000	2	9998	7			
+without ruled R tasks (LR61/LR70)	E0a~E2	model_equal	0.987013	0.959184	1.000000	3629	6371	7			

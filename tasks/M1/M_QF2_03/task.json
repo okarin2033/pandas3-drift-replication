@@ -1,0 +1,92 @@
+{
+ "id": "M_QF2_03",
+ "stratum": "M",
+ "family": "QF2_DATETIME",
+ "generic_family": null,
+ "catalogue_row": "D03",
+ "files": [
+  {
+   "path": "QF2_DATETIME/shipments.csv",
+   "description": "Shipments (400 rows): shipment_id (whole number), ordered_on and shipped_on (dates as text, YYYY-MM-DD, in 2025; shipped_on is empty for about 4% of rows that have not shipped yet), carrier (DHL, UPS, PostNord or GLS; capital letters and spaces are inconsistent), weight_kg (one decimal), value (order value, two decimals)."
+  }
+ ],
+ "task_text": "Total the order value per calendar month of ordered_on. Label each month by the moment at which the month ends (its last instant), not by its first day. `result` should be a Series indexed by that month-end moment with the summed value, in time order.",
+ "allowed_task_words": [
+  "month-end",
+  "last instant"
+ ],
+ "invited_ids_author": [
+  "D03"
+ ],
+ "order_significant": true,
+ "sort_keys": [
+  "__index__"
+ ],
+ "dtype_significant": false,
+ "intended_computation": "Group the 400 shipments by the month of ordered_on (12 months of 2025), sum value per month and index each sum by the last instant of its month (e.g. 2025-01-31 23:59:59.999...), ascending.",
+ "acceptable_variants": {
+  "row_order": "ties_only",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": "the last instant may be given to the second, millisecond, microsecond or nanosecond."
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 12
+   }
+  },
+  {
+   "check": "date_year_in_range",
+   "args": {
+    "columns": [
+     "__index__"
+    ],
+    "min_year": 2025,
+    "max_year": 2025
+   }
+  },
+  {
+   "check": "sorted_by",
+   "args": {
+    "keys": [
+     "__index__"
+    ],
+    "ascending": [
+     true
+    ]
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "BOTH",
+  "reason": "the month end moves from the last nanosecond to the last microsecond; both mark the end of the month"
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M1",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 in package TASKS_M1; task text, card, naive solution, reference and predicted direction were prepared there."
+}

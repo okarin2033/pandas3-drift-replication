@@ -1,0 +1,11 @@
+You are given CSV file(s) in the current working directory:
+
+- stations.csv: Bike-share stations (48 rows, one per station): station_code (four-digit code with leading zeros, e.g. "0040"), station_name (text, a few with accented letters), district (same 6 districts as riders.csv; capital letters and spaces are inconsistent), docks (whole number), opened_on (date as text, YYYY-MM-DD).
+
+Task: From stations.csv, build a web-address-style slug for each station_name: lower-case, accented letters replaced by their plain base letter (é becomes e, ü becomes u, å becomes a), and spaces replaced by hyphens, so Café Müller North becomes cafe-muller-north. `result` should be a Series of slugs indexed by station_code (text, leading zeros kept), in file order.
+
+Requirements:
+- Write a complete Python script that reads the file(s) from the current directory.
+- Use only pandas, numpy and the Python standard library.
+- Store the final answer in a top-level variable named `result`.
+- Reply with a single Python code block.

@@ -1,0 +1,86 @@
+{
+ "id": "M_QF4_14",
+ "stratum": "M",
+ "family": "QF4_GROUPBY",
+ "generic_family": null,
+ "catalogue_row": "G02",
+ "files": [
+  {
+   "path": "QF4_GROUPBY/unit_sales.csv",
+   "description": "Weekly unit sales (144 rows): region (north, south or west), channel (online, store or kiosk; the west region has no kiosk, so that pair never occurs), week (week number 1-18), units (whole number; about 2% empty)."
+  }
+ ],
+ "task_text": "Count, for each region and channel, the weeks whose unit figure is missing. List all nine region-channel combinations (regions north, south, west; channels online, store, kiosk), also those that have no rows at all (count 0); treat region and channel as categories with these fixed values. `result` should be a table with the columns region, channel and missing_weeks.",
+ "allowed_task_words": [
+  "categories",
+  "combinations"
+ ],
+ "invited_ids_author": [
+  "G02"
+ ],
+ "order_significant": false,
+ "sort_keys": [],
+ "dtype_significant": false,
+ "intended_computation": "For all 9 combinations count rows with missing units (3 in total); combinations without rows get 0.",
+ "acceptable_variants": {
+  "row_order": "any",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": "the combination order may differ."
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 9
+   }
+  },
+  {
+   "check": "counts_sum_to_rows",
+   "args": {
+    "column": "missing_weeks",
+    "expected": 3
+   }
+  },
+  {
+   "check": "columns_present",
+   "args": {
+    "columns": [
+     "region",
+     "channel",
+     "missing_weeks"
+    ]
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "FIX",
+  "reason": "on 2.x the applied count leaves out the combination without rows; 3.x lists it with 0"
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M1",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 in package TASKS_M1; task text, card, naive solution, reference and predicted direction were prepared there."
+}

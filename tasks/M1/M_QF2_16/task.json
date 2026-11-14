@@ -1,0 +1,81 @@
+{
+ "id": "M_QF2_16",
+ "stratum": "M",
+ "family": "QF2_DATETIME",
+ "generic_family": null,
+ "catalogue_row": "D06",
+ "files": [
+  {
+   "path": "QF2_DATETIME/appointments.csv",
+   "description": "Clinic appointments in New York (160 rows, February to November 2025, so the clock changes in March and November fall inside the data): appt_id (whole number), local_start (New York wall-clock start, text YYYY-MM-DD HH:MM, no UTC offset), start_with_offset (the same moment as ISO text with its UTC offset, e.g. \"2025-06-13T08:45:00-04:00\"), clinic (Harbor, Midtown or Riverside; capital letters and spaces are inconsistent), duration_min (whole minutes; about 3% empty)."
+  }
+ ],
+ "task_text": "For each appointment a check-up is booked 14 calendar days later at the same New York wall-clock time (local_start is New York local time). Count how many check-ups start in each hour of the New York day. `result` should be a Series indexed by hour (0-23) with the number of check-ups, only for hours that occur.",
+ "allowed_task_words": [
+  "calendar days",
+  "wall-clock time",
+  "New York"
+ ],
+ "invited_ids_author": [
+  "D06"
+ ],
+ "order_significant": false,
+ "sort_keys": [],
+ "dtype_significant": false,
+ "intended_computation": "The check-up keeps the local clock time, so its local hour equals the appointment's hour; count the 160 check-ups per local hour.",
+ "acceptable_variants": {
+  "row_order": "any",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": ""
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "counts_sum_to_rows",
+   "args": {
+    "column": "__values__",
+    "expected": 160
+   }
+  },
+  {
+   "check": "numeric_in_range",
+   "args": {
+    "columns": [
+     "__index__"
+    ],
+    "min": 0,
+    "max": 23
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "FIX",
+  "reason": "on 2.x the day offset adds 14 x 24 hours, so check-ups across the clock change land one hour off; 3.x keeps the local hour"
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M1",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 in package TASKS_M1; task text, card, naive solution, reference and predicted direction were prepared there."
+}

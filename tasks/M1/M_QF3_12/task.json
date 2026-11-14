@@ -1,0 +1,88 @@
+{
+ "id": "M_QF3_12",
+ "stratum": "M",
+ "family": "QF3_COW",
+ "generic_family": null,
+ "catalogue_row": "C06",
+ "files": [
+  {
+   "path": "QF3_COW/admissions.csv",
+   "description": "Hospital admissions (260 rows): admission_id (whole number), age (years, whole number; about 5% empty), ward (cardiology, oncology, maternity, orthopedics or neurology; capital letters and spaces are inconsistent), stay_days (whole number; about 3% empty), charge (two decimals; about 5% empty)."
+  }
+ ],
+ "task_text": "Make a table of the charges indexed by admission_id (the ids exactly as in the file). Then renumber the admissions from 1 upward in file order, using NumPy array arithmetic on the ids, and add the new numbers as a column called new_number. `result` should be the table indexed by admission_id with the columns charge and new_number.",
+ "allowed_task_words": [
+  "NumPy array arithmetic"
+ ],
+ "invited_ids_author": [
+  "C06"
+ ],
+ "order_significant": false,
+ "sort_keys": [],
+ "dtype_significant": false,
+ "intended_computation": "Return 260 rows in file order: index = admission_id as in the file (600-859), charge unchanged, new_number = 1..260.",
+ "acceptable_variants": {
+  "row_order": "any",
+  "label_spelling": true,
+  "missing_value_representation": true,
+  "rounding_sig_digits": 6,
+  "notes": ""
+ },
+ "property_checks": [
+  {
+   "check": "no_null_text",
+   "args": {}
+  },
+  {
+   "check": "no_all_missing_column",
+   "args": {}
+  },
+  {
+   "check": "n_groups_equals",
+   "args": {
+    "n": 260
+   }
+  },
+  {
+   "check": "numeric_in_range",
+   "args": {
+    "columns": [
+     "new_number"
+    ],
+    "min": 1,
+    "max": 260
+   }
+  },
+  {
+   "check": "numeric_in_range",
+   "args": {
+    "columns": [
+     "__index__"
+    ],
+    "min": 600,
+    "max": 859
+   }
+  }
+ ],
+ "predicted_direction": {
+  "direction": "FIX",
+  "reason": "on 2.x the index is built on the same NumPy array, so renumbering the array also renumbers the index"
+ },
+ "naive_path": "naive.py",
+ "reference_path": "reference.py",
+ "so_question_id": null,
+ "so_url": null,
+ "so_creation_date": null,
+ "so_score": null,
+ "so_licence": null,
+ "intent_summary": null,
+ "column_map": null,
+ "invitation_strength": null,
+ "invited_ids_reviewer": null,
+ "fidelity": null,
+ "independent_card_ref": null,
+ "blind_provenance": null,
+ "drafted_by": "pkg:TASKS_M1",
+ "status": "prepared",
+ "notes": "Drafted 2026-11-11 in package TASKS_M1; task text, card, naive solution, reference and predicted direction were prepared there."
+}

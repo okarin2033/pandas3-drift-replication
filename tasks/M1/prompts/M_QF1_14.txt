@@ -1,0 +1,11 @@
+You are given CSV file(s) in the current working directory:
+
+- branch_sales.csv: Weekly sales per shop branch (180 rows): branch_code (five-digit branch code written with leading zeros, e.g. "01005"; 12 different branches, each appearing in many rows), week (week number 1-15), sales (units sold, whole number; about 3% of cells are empty).
+
+Task: Make a wide table of weekly sales: one row per week (1-15) and one column per branch, with the branch codes as column names exactly as written in the file (five digits with leading zeros). The branch codes are a fixed set of labels, so read them as categories. A missing sales figure counts as 0, and several rows for the same branch and week are added up. `result` should be that table, rows in week order.
+
+Requirements:
+- Write a complete Python script that reads the file(s) from the current directory.
+- Use only pandas, numpy and the Python standard library.
+- Store the final answer in a top-level variable named `result`.
+- Reply with a single Python code block.

@@ -1,0 +1,11 @@
+You are given CSV file(s) in the current working directory:
+
+- gauges.csv: Water gauge log (120 rows): gauge (gauge name such as "LA-01"), reading (meters, three decimals; about 3% empty), level (alert level, whole number from 3 to 80, no empty cells), site (dam, canal or lake; capital letters and spaces are inconsistent).
+
+Task: The display can only show alert levels up to 50, so any level above 50 is shown as 50. Apply that limit and return the gauge log as a table with the columns gauge, site (in lower case without extra spaces) and level, in file order.
+
+Requirements:
+- Write a complete Python script that reads the file(s) from the current directory.
+- Use only pandas, numpy and the Python standard library.
+- Store the final answer in a top-level variable named `result`.
+- Reply with a single Python code block.
