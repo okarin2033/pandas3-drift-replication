@@ -1,7 +1,7 @@
 # Replication package: Born Legacy, silent result drift of LLM-generated pandas code under pandas 3
 
 Package version 1.0.0, built 2026-11-14. Author and licence holder: Evgenii Palii (ORCID 0009-0003-9031-0431).
-Repository: https://github.com/okarin2033/pandas3-drift-replication. The DOI of the archived copy is added with the Zenodo deposit.
+Repository: https://github.com/okarin2033/pandas3-drift-replication. Archived copy: Zenodo, DOI 10.5281/zenodo.24241094.
 Citation: `CITATION.cff`. Licences: `LICENSE` (MIT, code) and `LICENSE-DATA` (CC BY 4.0, data, text and figures).
 
 ## Abstract

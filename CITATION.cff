@@ -3,6 +3,7 @@ message: "If you use this package, please cite it as below."
 type: dataset
 title: "Replication package: Born Legacy: Silent Result Drift of LLM-Generated pandas Code under pandas 3"
 version: 1.0.0
+doi: 10.5281/zenodo.24241094
 date-released: 2026-11-14
 authors:
   - family-names: "Palii"
